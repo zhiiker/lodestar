@@ -79,7 +79,7 @@
 					<a href="https://gitter.im/chainsafe/lodestar?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/chainsafe/lodestar.svg" alt=""></a>
 					<a href="https://codecov.io/gh/ChainSafe/lodestar"><img src="https://codecov.io/gh/ChainSafe/lodestar/branch/master/graph/badge.svg" alt="codecov"></a>
 					<a href="https://codeclimate.com/github/ChainSafe/lodestar/maintainability"><img src="https://api.codeclimate.com/v1/badges/678099476c401e1af503/maintainability" alt="Maintainability"></a>
-				<img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.6.0-2e86c1.svg" alt="ETH2.0_Spec_Version 0.6.0"></p>
+				<img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.6.3-2e86c1.svg" alt="ETH2.0_Spec_Version 0.6.3"></p>
 				<h1 id="overview">Overview</h1>
 				<p>The goal of this repository is to provide an implementation of the beacon chain. As even the Ethereum Core dev team don&#39;t know how the finalized beacon chain
 				will be implemented, this is our contribution to the effort to transitioning Ethereum from a PoW blockchain to a PoS blockchain.</p>
@@ -88,8 +88,10 @@
 				<h2 id="run">Run</h2>
 				<ol>
 					<li><code>yarn install</code></li>
+					<li><code>git submodule foreach git lfs pull</code></li>
 					<li><code>yarn test</code></li>
 				</ol>
+				<p>Note: to run spec tests execute <code>git submodules foreach git lfs pull</code></p>
 				<h2 id="usage">Usage</h2>
 				<ol>
 					<li>If you haven&#39;t <code>yarn install</code></li>
@@ -119,7 +121,52 @@
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_attestation_data_.html">"chain/factory/attestation/data"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_attestation_index_.html">"chain/factory/attestation/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_duties_index_.html">"chain/factory/duties/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_index_.html">"chain/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_interface_.html">"chain/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_constants_network_.html">"constants/network"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_api_abstract_.html">"db/api/abstract"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_network_util_.html">"network/util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_wire_.html">"types/wire"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_validator_rpc_abstract_.html">"validator/rpc/abstract"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_validator_rpc_impl_instance_.html">"validator/rpc/impl/instance"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_validator_rpc_impl_ws_.html">"validator/rpc/impl/ws"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_validator_rpc_index_.html">"validator/rpc/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_validator_rpc_interface_.html">"validator/rpc/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/chain.html">chain</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/chain_blockassembly.html">chain/block<wbr>Assembly</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/chain_forkchoice.html">chain/fork<wbr>Choice</a>
@@ -158,6 +205,21 @@
 						<a href="modules/db.html">db</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/db_api.html">db/api</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/db_api_beacon.html">db/api/beacon</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/db_api_validator.html">db/api/validator</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/db_controller.html">db/controller</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/db_controller_impl.html">db/controller/impl</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/db_schema.html">db/schema</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -170,13 +232,19 @@
 						<a href="modules/logger.html">logger</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/network.html">network</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/network_libp2p.html">network/libp2p</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/network_libp2p_nodejs.html">network/libp2p/nodejs</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/node.html">node</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/oppool.html">op<wbr>Pool</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/p2p.html">p2p</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/rpc.html">rpc</a>
@@ -189,9 +257,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/rpc_transport.html">rpc/transport</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/stubs.html">stubs</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/sync.html">sync</a>
@@ -209,7 +274,16 @@
 						<a href="modules/util_crypto.html">util/crypto</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/util_encrypt.html">util/encrypt</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/util_file.html">util/file</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/util_math.html">util/math</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/util_merkletree.html">util/merkle<wbr>Tree</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/util_objects.html">util/objects</a>
@@ -218,7 +292,10 @@
 						<a href="modules/validator.html">validator</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/validator_stubs.html">validator/stubs</a>
+						<a href="modules/validator_attestation.html">validator/attestation</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/validator_keystore.html">validator/keystore</a>
 					</li>
 				</ul>
 			</nav>

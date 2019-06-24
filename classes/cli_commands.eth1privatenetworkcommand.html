@@ -103,31 +103,22 @@
 					<a name="action" class="tsd-anchor"></a>
 					<h3>action</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, network<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, database<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="eth1_dev.privateeth1network.html" class="tsd-signature-type">PrivateEth1Network</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/cli_commands.ieth1commandoptions.html" class="tsd-signature-type">IEth1CommandOptions</a>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="eth1_dev.privateeth1network.html" class="tsd-signature-type">PrivateEth1Network</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/cli/commands/eth1-private-network.ts#L31">cli/commands/eth1-private-network.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/cli/commands/eth1-private-network.ts#L48">cli/commands/eth1-private-network.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>host: <span class="tsd-signature-type">string</span></h5>
+									<h5>options: <a href="../interfaces/cli_commands.ieth1commandoptions.html" class="tsd-signature-type">IEth1CommandOptions</a></h5>
 								</li>
 								<li>
-									<h5>port: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>network: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>mnemonic: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>database: <span class="tsd-signature-type">string</span></h5>
+									<h5>logger: <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="eth1_dev.privateeth1network.html" class="tsd-signature-type">PrivateEth1Network</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -145,7 +136,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/cli_commands.clicommand.html">CliCommand</a>.<a href="../interfaces/cli_commands.clicommand.html#register">register</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/cli/commands/eth1-private-network.ts#L12">cli/commands/eth1-private-network.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/cli/commands/eth1-private-network.ts#L22">cli/commands/eth1-private-network.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,6 +168,12 @@
 						<a href="cli_commands.beaconnodecommand.html" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="cli_commands.createconfigcommand.html" class="tsd-kind-icon">Create<wbr>Config<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="cli_commands.createwalletcommand.html" class="tsd-kind-icon">Create<wbr>Wallet<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="cli_commands.depositcommand.html" class="tsd-kind-icon">Deposit<wbr>Command</a>
 					</li>
 				</ul>
@@ -196,6 +193,30 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/cli_commands.clicommand.html" class="tsd-kind-icon">Cli<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.ibeaconcommandoptions.html" class="tsd-kind-icon">IBeacon<wbr>Command<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.icreateconfigoptions.html" class="tsd-kind-icon">ICreate<wbr>Config<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.idepositcommandoptions.html" class="tsd-kind-icon">IDeposit<wbr>Command<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.ieth1commandoptions.html" class="tsd-kind-icon">IEth1<wbr>Command<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.ihiddenreadlineinterface.html" class="tsd-kind-icon">IHidden<wbr>Readline<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/cli_commands.iwalletcommandoptions.html" class="tsd-kind-icon">IWallet<wbr>Command<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/cli_commands.html#passwordprompt" class="tsd-kind-icon">password<wbr>Prompt</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/cli_commands.html#promptpassword" class="tsd-kind-icon">prompt<wbr>Password</a>
 					</li>
 				</ul>
 			</nav>

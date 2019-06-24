@@ -110,6 +110,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#getcommitteeassignment" class="tsd-kind-icon">get<wbr>Committee<wbr>Assignment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#getduties" class="tsd-kind-icon">get<wbr>Duties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#getindex" class="tsd-kind-icon">get<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#isproposer" class="tsd-kind-icon">is<wbr>Proposer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#produceattestation" class="tsd-kind-icon">produce<wbr>Attestation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="rpc_api.ivalidatorapi.html#produceblock" class="tsd-kind-icon">produce<wbr>Block</a></li>
@@ -129,7 +130,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="rpc_api.iapi.html">IApi</a>.<a href="rpc_api.iapi.html#namespace">namespace</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/interface.ts#L9">rpc/api/interface.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/interface.ts#L9">rpc/api/interface.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,12 +152,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L43">rpc/api/validator/interface.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L50">rpc/api/validator/interface.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Requests a validators committeeAssignment, can be used for past, current and one epoch in the future</p>
+									<p>Requests a validators committeeAssignment,
+									can be used for past, current and one epoch in the future</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -176,28 +178,59 @@
 					<a name="getduties" class="tsd-anchor"></a>
 					<h3>get<wbr>Duties</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Duties<span class="tsd-signature-symbol">(</span>validatorPubkey<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes48" class="tsd-signature-type">bytes48</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Duties<span class="tsd-signature-symbol">(</span>validatorPublicKeys<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#blspubkey" class="tsd-signature-type">BLSPubkey</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#validatorduty" class="tsd-signature-type">ValidatorDuty</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L33">rpc/api/validator/interface.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L37">rpc/api/validator/interface.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Requests the BeaconNode to provide a set of “duties”, which are actions that should be performed by ValidatorClients. This API call should be polled at every slot, to ensure that any chain reorganisations are catered for, and to ensure that the currently connected BeaconNode is properly synchronised.</p>
+									<p>Requests the BeaconNode to provide a set of “duties”,
+										which are actions that should be performed by ValidatorClients.
+										This API call should be polled at every slot,
+										to ensure that any chain reorganisations are catered for,
+									and to ensure that the currently connected BeaconNode is properly synchronised.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>validatorPubkey: <a href="../modules/types.html#bytes48" class="tsd-signature-type">bytes48</a></h5>
+									<h5>validatorPublicKeys: <a href="../modules/types.html#blspubkey" class="tsd-signature-type">BLSPubkey</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A list of unique validator public keys, where each item is a 0x encoded hex string.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#validatorduty" class="tsd-signature-type">ValidatorDuty</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getindex" class="tsd-anchor"></a>
+					<h3>get<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Index<span class="tsd-signature-symbol">(</span>validatorPublicKey<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#blspubkey" class="tsd-signature-type">BLSPubkey</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L28">rpc/api/validator/interface.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Obtains validator index attached to his public key</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>validatorPublicKey: <a href="../modules/types.html#blspubkey" class="tsd-signature-type">BLSPubkey</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -211,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L38">rpc/api/validator/interface.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L44">rpc/api/validator/interface.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,18 +269,19 @@
 					<a name="produceattestation" class="tsd-anchor"></a>
 					<h3>produce<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">produce<wbr>Attestation<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a>, shard<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#shard" class="tsd-signature-type">Shard</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestationdata" class="tsd-signature-type">AttestationData</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">produce<wbr>Attestation<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a>, shard<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#shard" class="tsd-signature-type">Shard</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#indexedattestation" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L54">rpc/api/validator/interface.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L64">rpc/api/validator/interface.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Requests that the BeaconNode produce an IndexedAttestation, with a blank signature field, which the ValidatorClient will then sign.</p>
+									<p>Requests that the BeaconNode produce an IndexedAttestation,
+									with a blank signature field, which the ValidatorClient will then sign.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,7 +293,7 @@
 									<h5>shard: <a href="../modules/types.html#shard" class="tsd-signature-type">Shard</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestationdata" class="tsd-signature-type">AttestationData</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#indexedattestation" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -273,12 +307,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L49">rpc/api/validator/interface.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L58">rpc/api/validator/interface.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Requests a BeaconNode to produce a valid block, which can then be signed by a ValidatorClient.</p>
+									<p>Requests a BeaconNode to produce a valid block,
+									which can then be signed by a ValidatorClient.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,7 +326,8 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A proposed BeaconBlock object, but with the signature field left blank.</p>
+							<p>A proposed BeaconBlock object,
+							but with the signature field left blank.</p>
 						</li>
 					</ul>
 				</section>
@@ -305,12 +341,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L64">rpc/api/validator/interface.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L76">rpc/api/validator/interface.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Instructs the BeaconNode to publish a newly signed IndexedAttestation object, to be incorporated into the beacon chain.</p>
+									<p>Instructs the BeaconNode to publish a newly signed IndexedAttestation object,
+									to be incorporated into the beacon chain.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -333,12 +370,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/rpc/api/validator/interface.ts#L59">rpc/api/validator/interface.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/rpc/api/validator/interface.ts#L70">rpc/api/validator/interface.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Instructs the BeaconNode to publish a newly signed beacon block to the beacon network, to be included in the beacon chain.</p>
+									<p>Instructs the BeaconNode to publish a newly signed beacon block
+									to the beacon network, to be included in the beacon chain.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -394,6 +432,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="rpc_api.ivalidatorapi.html#getduties" class="tsd-kind-icon">get<wbr>Duties</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="rpc_api.ivalidatorapi.html#getindex" class="tsd-kind-icon">get<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="rpc_api.ivalidatorapi.html#isproposer" class="tsd-kind-icon">is<wbr>Proposer</a>

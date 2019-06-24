@@ -69,14 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The BeaconChain service deals with processing incoming blocks, advancing a state transition
-						and applying the fork choice rule to update the chain head</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -88,6 +80,12 @@
 							</li>
 						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_chain_interface_.ibeaconchain.html" class="tsd-signature-type">IBeaconChain</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -105,10 +103,13 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chain.beaconchain.html#_latestblock" class="tsd-kind-icon">_latest<wbr>Block</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chain.beaconchain.html#chain" class="tsd-kind-icon">chain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chain.beaconchain.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chain.beaconchain.html#db" class="tsd-kind-icon">db</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chain.beaconchain.html#eth1" class="tsd-kind-icon">eth1</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chain.beaconchain.html#forkchoice" class="tsd-kind-icon">fork<wbr>Choice</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chain.beaconchain.html#forkchoice" class="tsd-kind-icon">fork<wbr>Choice</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chain.beaconchain.html#genesistime" class="tsd-kind-icon">genesis<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chain.beaconchain.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chain.beaconchain.html#networkid" class="tsd-kind-icon">network<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="chain.beaconchain.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
@@ -130,6 +131,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chain.beaconchain.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chain.beaconchain.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chain.beaconchain.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chain.beaconchain.html#receiveattestation" class="tsd-kind-icon">receive<wbr>Attestation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chain.beaconchain.html#receiveblock" class="tsd-kind-icon">receive<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chain.beaconchain.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chain.beaconchain.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
@@ -155,7 +157,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L33">chain/index.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L34">chain/chain.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,10 +169,13 @@
 									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>db<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+											<h5>db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>eth1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+											<h5>eth1<span class="tsd-signature-symbol">: </span><a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
 										</li>
 									</ul>
 								</li>
@@ -188,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">_latest<wbr>Block<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L32">chain/index.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L33">chain/chain.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -198,37 +203,49 @@
 					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L28">chain/index.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L26">chain/chain.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="chainid" class="tsd-anchor"></a>
+					<h3>chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint16" class="tsd-signature-type">uint16</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#chainid">chainId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L29">chain/chain.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="db" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../interfaces/db.db-1.html" class="tsd-signature-type">DB</a></div>
+					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L30">chain/index.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L31">chain/chain.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="eth1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> eth1</h3>
-					<div class="tsd-signature tsd-kind-icon">eth1<span class="tsd-signature-symbol">:</span> <a href="../interfaces/eth1.eth1notifier.html" class="tsd-signature-type">Eth1Notifier</a></div>
+					<div class="tsd-signature tsd-kind-icon">eth1<span class="tsd-signature-symbol">:</span> <a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L31">chain/index.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L32">chain/chain.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="forkchoice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fork<wbr>Choice</h3>
+					<h3>fork<wbr>Choice</h3>
 					<div class="tsd-signature tsd-kind-icon">fork<wbr>Choice<span class="tsd-signature-symbol">:</span> <a href="../interfaces/chain_forkchoice.lmdghost.html" class="tsd-signature-type">LMDGHOST</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#forkchoice">forkChoice</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L33">chain/index.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L28">chain/chain.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,8 +254,30 @@
 					<h3>genesis<wbr>Time</h3>
 					<div class="tsd-signature tsd-kind-icon">genesis<wbr>Time<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#genesistime">genesisTime</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L29">chain/index.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L27">chain/chain.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L34">chain/chain.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="networkid" class="tsd-anchor"></a>
+					<h3>network<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">network<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint64" class="tsd-signature-type">uint64</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#networkid">networkId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L30">chain/chain.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -247,6 +286,7 @@
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Max<wbr>Listeners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#defaultmaxlisteners">defaultMaxListeners</a></p>
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
 							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/@types/node/events.d.ts:8</li>
@@ -311,15 +351,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#applyforkchoicerule">applyForkChoiceRule</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L111">chain/index.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L114">chain/chain.ts:114</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update the chain head using LMD GHOST</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -333,6 +369,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#emit">emit</a></p>
 								<p>Inherited from EventEmitter.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
@@ -361,6 +398,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#eventnames">eventNames</a></p>
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
@@ -380,6 +418,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#getmaxlisteners">getMaxListeners</a></p>
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
@@ -399,15 +438,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#initializechain">initializeChain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L64">chain/index.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L63">chain/chain.ts:63</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Initialize the beacon chain with a genesis beacon state / block</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -433,15 +468,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#isvalidblock">isValidBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L124">chain/index.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L126">chain/chain.ts:126</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Ensure that the block is compliant with block processing validity conditions</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -464,6 +495,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#listenercount">listenerCount</a></p>
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
@@ -489,6 +521,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#listeners">listeners</a></p>
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
@@ -744,6 +777,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#rawlisteners">rawListeners</a></p>
 								<p>Inherited from EventEmitter.rawListeners</p>
 								<p>Overrides EventEmitter.rawListeners</p>
 								<ul>
@@ -761,30 +795,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="receiveblock" class="tsd-anchor"></a>
-					<h3>receive<wbr>Block</h3>
+					<a name="receiveattestation" class="tsd-anchor"></a>
+					<h3>receive<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">receive<wbr>Block<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">receive<wbr>Attestation<span class="tsd-signature-symbol">(</span>attestation<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#receiveattestation">receiveAttestation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L85">chain/index.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L87">chain/chain.ts:87</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Pre-process and run the per slot state transition function</p>
-								</div>
-							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>attestation: <a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="receiveblock" class="tsd-anchor"></a>
+					<h3>receive<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">receive<wbr>Block<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#receiveblock">receiveBlock</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L98">chain/chain.ts:98</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>block: <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -797,6 +851,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#removealllisteners">removeAllListeners</a></p>
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
@@ -869,7 +924,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L142">chain/index.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L144">chain/chain.ts:144</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -894,6 +949,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#setmaxlisteners">setMaxListeners</a></p>
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
@@ -919,15 +975,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L46">chain/index.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L48">chain/chain.ts:48</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Start beacon chain processing</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -941,15 +993,11 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/faf4716/src/chain/index.ts#L59">chain/index.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4340310/src/chain/chain.ts#L61">chain/chain.ts:61</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Stop beacon chain processing</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -963,6 +1011,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_chain_interface_.ibeaconchain.html">IBeaconChain</a>.<a href="../interfaces/_chain_interface_.ibeaconchain.html#listenercount-1">listenerCount</a></p>
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
 									<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/@types/node/events.d.ts:7</li>
@@ -1017,17 +1066,26 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="chain.beaconchain.html#chain" class="tsd-kind-icon">chain</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="chain.beaconchain.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="chain.beaconchain.html#db" class="tsd-kind-icon">db</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="chain.beaconchain.html#eth1" class="tsd-kind-icon">eth1</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="chain.beaconchain.html#forkchoice" class="tsd-kind-icon">fork<wbr>Choice</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="chain.beaconchain.html#genesistime" class="tsd-kind-icon">genesis<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="chain.beaconchain.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="chain.beaconchain.html#networkid" class="tsd-kind-icon">network<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="chain.beaconchain.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
@@ -1076,6 +1134,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="chain.beaconchain.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="chain.beaconchain.html#receiveattestation" class="tsd-kind-icon">receive<wbr>Attestation</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="chain.beaconchain.html#receiveblock" class="tsd-kind-icon">receive<wbr>Block</a>
