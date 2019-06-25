@@ -108,10 +108,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#_latestblockhash" class="tsd-kind-icon">_latest<wbr>Block<wbr>Hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#_depositcount" class="tsd-kind-icon">_deposit<wbr>Count</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#contract" class="tsd-kind-icon">contract</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#depositcount" class="tsd-kind-icon">deposit<wbr>Count</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#genesisblockhash" class="tsd-kind-icon">genesis<wbr>Block<wbr>Hash</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#opts" class="tsd-kind-icon">opts</a></li>
@@ -125,16 +124,18 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#contractexists" class="tsd-kind-icon">contract<wbr>Exists</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#createdeposit" class="tsd-kind-icon">create<wbr>Deposit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#depositcount" class="tsd-kind-icon">deposit<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#depositroot" class="tsd-kind-icon">deposit<wbr>Root</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#genesisdeposits" class="tsd-kind-icon">genesis<wbr>Deposits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#getblock" class="tsd-kind-icon">get<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#getcontractdeposits" class="tsd-kind-icon">get<wbr>Contract<wbr>Deposits</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#getcontractpastlogs" class="tsd-kind-icon">get<wbr>Contract<wbr>Past<wbr>Logs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#gethead" class="tsd-kind-icon">get<wbr>Head</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="eth1.etherseth1notifier.html#initcontract" class="tsd-kind-icon">init<wbr>Contract</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#isaftereth2genesis" class="tsd-kind-icon">is<wbr>After<wbr>Eth2<wbr>Genesis</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="eth1.etherseth1notifier.html#latestblockhash" class="tsd-kind-icon">latest<wbr>Block<wbr>Hash</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="eth1.etherseth1notifier.html#off" class="tsd-kind-icon">off</a></li>
@@ -169,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L42">eth1/impl/ethers.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L40">eth1/impl/ethers.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -197,12 +198,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_latestblockhash" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _latest<wbr>Block<wbr>Hash</h3>
-					<div class="tsd-signature tsd-kind-icon">_latest<wbr>Block<wbr>Hash<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></div>
+					<a name="_depositcount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _deposit<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">_deposit<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L34">eth1/impl/ethers.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L38">eth1/impl/ethers.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">contract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Contract</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L30">eth1/impl/ethers.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L30">eth1/impl/ethers.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,17 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDB</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L32">eth1/impl/ethers.ts:32</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="depositcount" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> deposit<wbr>Count</h3>
-					<div class="tsd-signature tsd-kind-icon">deposit<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L38">eth1/impl/ethers.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L32">eth1/impl/ethers.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">genesis<wbr>Block<wbr>Hash<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L36">eth1/impl/ethers.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L34">eth1/impl/ethers.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -252,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L42">eth1/impl/ethers.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L40">eth1/impl/ethers.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,7 +253,7 @@
 					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/eth1.etherseth1options.html" class="tsd-signature-type">EthersEth1Options</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L40">eth1/impl/ethers.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L36">eth1/impl/ethers.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -272,7 +263,7 @@
 					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BaseProvider</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L28">eth1/impl/ethers.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L28">eth1/impl/ethers.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L206">eth1/impl/ethers.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L211">eth1/impl/ethers.ts:211</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -370,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L231">eth1/impl/ethers.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L236">eth1/impl/ethers.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -396,19 +387,49 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="depositcount" class="tsd-anchor"></a>
+					<h3>deposit<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">deposit<wbr>Count<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#depositcount">depositCount</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L193">eth1/impl/ethers.ts:193</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="depositroot" class="tsd-anchor"></a>
 					<h3>deposit<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">deposit<wbr>Root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">deposit<wbr>Root<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#depositroot">depositRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L188">eth1/impl/ethers.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L188">eth1/impl/ethers.ts:188</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -473,10 +494,34 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#genesisdeposits">genesisDeposits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L180">eth1/impl/ethers.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L176">eth1/impl/ethers.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#deposit" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblock" class="tsd-anchor"></a>
+					<h3>get<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">(</span>blockHashOrBlockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#getblock">getBlock</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L184">eth1/impl/ethers.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockHashOrBlockNumber: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -490,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L159">eth1/impl/ethers.ts:159</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L155">eth1/impl/ethers.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -516,7 +561,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L217">eth1/impl/ethers.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L222">eth1/impl/ethers.ts:222</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -532,6 +577,24 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Log</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gethead" class="tsd-anchor"></a>
+					<h3>get<wbr>Head</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#gethead">getHead</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L180">eth1/impl/ethers.ts:180</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -565,7 +628,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L193">eth1/impl/ethers.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L198">eth1/impl/ethers.ts:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -583,28 +646,10 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#isaftereth2genesis">isAfterEth2Genesis</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L212">eth1/impl/ethers.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L217">eth1/impl/ethers.ts:217</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="latestblockhash" class="tsd-anchor"></a>
-					<h3>latest<wbr>Block<wbr>Hash</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">latest<wbr>Block<wbr>Hash<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#latestblockhash">latestBlockHash</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L184">eth1/impl/ethers.ts:184</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -901,7 +946,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#processblockheadupdate">processBlockHeadUpdate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L86">eth1/impl/ethers.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L83">eth1/impl/ethers.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -925,7 +970,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#processdepositlog">processDepositLog</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L93">eth1/impl/ethers.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L89">eth1/impl/ethers.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -960,7 +1005,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L129">eth1/impl/ethers.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L125">eth1/impl/ethers.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1117,7 +1162,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L57">eth1/impl/ethers.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L54">eth1/impl/ethers.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1135,7 +1180,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ca910c1/src/eth1/impl/ethers.ts#L80">eth1/impl/ethers.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a409f9e/src/eth1/impl/ethers.ts#L77">eth1/impl/ethers.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1204,16 +1249,13 @@
 								<a href="eth1.etherseth1notifier.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="eth1.etherseth1notifier.html#_latestblockhash" class="tsd-kind-icon">_latest<wbr>Block<wbr>Hash</a>
+								<a href="eth1.etherseth1notifier.html#_depositcount" class="tsd-kind-icon">_deposit<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="eth1.etherseth1notifier.html#contract" class="tsd-kind-icon">contract</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="eth1.etherseth1notifier.html#db" class="tsd-kind-icon">db</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="eth1.etherseth1notifier.html#depositcount" class="tsd-kind-icon">deposit<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="eth1.etherseth1notifier.html#genesisblockhash" class="tsd-kind-icon">genesis<wbr>Block<wbr>Hash</a>
@@ -1240,6 +1282,9 @@
 								<a href="eth1.etherseth1notifier.html#createdeposit" class="tsd-kind-icon">create<wbr>Deposit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="eth1.etherseth1notifier.html#depositcount" class="tsd-kind-icon">deposit<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="eth1.etherseth1notifier.html#depositroot" class="tsd-kind-icon">deposit<wbr>Root</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -1252,10 +1297,16 @@
 								<a href="eth1.etherseth1notifier.html#genesisdeposits" class="tsd-kind-icon">genesis<wbr>Deposits</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="eth1.etherseth1notifier.html#getblock" class="tsd-kind-icon">get<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="eth1.etherseth1notifier.html#getcontractdeposits" class="tsd-kind-icon">get<wbr>Contract<wbr>Deposits</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="eth1.etherseth1notifier.html#getcontractpastlogs" class="tsd-kind-icon">get<wbr>Contract<wbr>Past<wbr>Logs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="eth1.etherseth1notifier.html#gethead" class="tsd-kind-icon">get<wbr>Head</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="eth1.etherseth1notifier.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
@@ -1265,9 +1316,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="eth1.etherseth1notifier.html#isaftereth2genesis" class="tsd-kind-icon">is<wbr>After<wbr>Eth2<wbr>Genesis</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="eth1.etherseth1notifier.html#latestblockhash" class="tsd-kind-icon">latest<wbr>Block<wbr>Hash</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="eth1.etherseth1notifier.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
