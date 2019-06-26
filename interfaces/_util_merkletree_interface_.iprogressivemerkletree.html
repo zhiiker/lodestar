@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ReputationStore | @chainsafe/lodestar</title>
+	<title>IProgressiveMerkleTree | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/sync.html">sync</a>
+					<a href="../modules/_util_merkletree_interface_.html">&quot;util/merkleTree/interface&quot;</a>
 				</li>
 				<li>
-					<a href="sync.reputationstore.html">ReputationStore</a>
+					<a href="_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>
 				</li>
 			</ul>
-			<h1>Class ReputationStore</h1>
+			<h1>Interface IProgressiveMerkleTree</h1>
 		</div>
 	</div>
 </header>
@@ -73,8 +73,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ReputationStore</span>
+						<span class="target">IProgressiveMerkleTree</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -82,129 +88,151 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="sync.reputationstore.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="sync.reputationstore.html#reputations" class="tsd-kind-icon">reputations</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="sync.reputationstore.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="sync.reputationstore.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="sync.reputationstore.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#depth" class="tsd-kind-icon">depth</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#getproof" class="tsd-kind-icon">get<wbr>Proof</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#root" class="tsd-kind-icon">root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_util_merkletree_interface_.iprogressivemerkletree.html#serialize" class="tsd-kind-icon">serialize</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Reputation<wbr>Store<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sync.reputationstore.html" class="tsd-signature-type">ReputationStore</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/sync/reputation.ts#L13">sync/reputation.ts:13</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="sync.reputationstore.html" class="tsd-signature-type">ReputationStore</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="reputations" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> reputations</h3>
-					<div class="tsd-signature tsd-kind-icon">reputations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/sync.reputation.html" class="tsd-signature-type">Reputation</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/sync/reputation.ts#L13">sync/reputation.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/sync.reputation.html" class="tsd-signature-type">Reputation</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#number64" class="tsd-signature-type">number64</a>, item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/sync/reputation.ts#L17">sync/reputation.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L12">util/merkleTree/interface.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>peerId: <span class="tsd-signature-type">string</span></h5>
+									<h5>index: <a href="../modules/types.html#number64" class="tsd-signature-type">number64</a></h5>
 								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/sync.reputation.html" class="tsd-signature-type">Reputation</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/sync.reputation.html" class="tsd-signature-type">Reputation</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/sync/reputation.ts#L29">sync/reputation.ts:29</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
 								<li>
-									<h5>peerId: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/sync.reputation.html" class="tsd-signature-type">Reputation</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="remove" class="tsd-anchor"></a>
-					<h3>remove</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/sync/reputation.ts#L26">sync/reputation.ts:26</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>peerId: <span class="tsd-signature-type">string</span></h5>
+									<h5>item: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="depth" class="tsd-anchor"></a>
+					<h3>depth</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L5">util/merkleTree/interface.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getproof" class="tsd-anchor"></a>
+					<h3>get<wbr>Proof</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Proof<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#number64" class="tsd-signature-type">number64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L14">util/merkleTree/interface.ts:14</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <a href="../modules/types.html#number64" class="tsd-signature-type">number64</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="push" class="tsd-anchor"></a>
+					<h3>push</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L10">util/merkleTree/interface.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>push new item into the tree</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>item: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="root" class="tsd-anchor"></a>
+					<h3>root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L19">util/merkleTree/interface.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The merkle root of the tree</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="serialize" class="tsd-anchor"></a>
+					<h3>serialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa55f28/src/util/merkleTree/interface.ts#L21">util/merkleTree/interface.ts:21</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -217,57 +245,39 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/sync.html">sync</a>
+						<a href="../modules/_util_merkletree_interface_.html">"util/merkle<wbr>Tree/interface"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="sync.regularsync.html" class="tsd-kind-icon">Regular<wbr>Sync</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="sync.reputationstore.html" class="tsd-kind-icon">Reputation<wbr>Store</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-kind-icon">IProgressive<wbr>Merkle<wbr>Tree</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="sync.reputationstore.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#add" class="tsd-kind-icon">add</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="sync.reputationstore.html#reputations" class="tsd-kind-icon">reputations</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#depth" class="tsd-kind-icon">depth</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="sync.reputationstore.html#add" class="tsd-kind-icon">add</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#getproof" class="tsd-kind-icon">get<wbr>Proof</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="sync.reputationstore.html#get" class="tsd-kind-icon">get</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#push" class="tsd-kind-icon">push</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="sync.reputationstore.html#remove" class="tsd-kind-icon">remove</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#root" class="tsd-kind-icon">root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_util_merkletree_interface_.iprogressivemerkletree.html#serialize" class="tsd-kind-icon">serialize</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="sync.sync-1.html" class="tsd-kind-icon">Sync</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="sync.syncrpc.html" class="tsd-kind-icon">Sync<wbr>Rpc</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/sync.reputation.html" class="tsd-kind-icon">Reputation</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/sync.syncmodules.html" class="tsd-kind-icon">Sync<wbr>Modules</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/sync.syncoptions.html" class="tsd-kind-icon">Sync<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/sync.syncoptions-1.html" class="tsd-kind-icon">Sync<wbr>Options</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
