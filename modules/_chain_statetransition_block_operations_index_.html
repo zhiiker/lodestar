@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RpcCtx | @chainsafe/lodestar</title>
+	<title>&quot;chain/stateTransition/block/operations/index&quot; | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,51 +56,75 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/node.html">node</a>
-				</li>
-				<li>
-					<a href="node.rpcctx.html">RpcCtx</a>
+					<a href="_chain_statetransition_block_operations_index_.html">&quot;chain/stateTransition/block/operations/index&quot;</a>
 				</li>
 			</ul>
-			<h1>Interface RpcCtx</h1>
+			<h1>External module &quot;chain/stateTransition/block/operations/index&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">RpcCtx</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Properties</h3>
+							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="node.rpcctx.html#apis" class="tsd-kind-icon">apis</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_chain_statetransition_block_operations_index_.html#operation" class="tsd-kind-icon">Operation</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chain_statetransition_block_operations_index_.html#processoperations" class="tsd-kind-icon">process<wbr>Operations</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="apis" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> apis</h3>
-					<div class="tsd-signature tsd-kind-icon">apis<span class="tsd-signature-symbol">:</span> <a href="rpc_api.iapiconstructor.html" class="tsd-signature-type">IApiConstructor</a><span class="tsd-signature-symbol">[]</span></div>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="operation" class="tsd-anchor"></a>
+					<h3>Operation</h3>
+					<div class="tsd-signature tsd-kind-icon">Operation<span class="tsd-signature-symbol">:</span> <a href="types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol"> | </span><a href="types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol"> | </span><a href="types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol"> | </span><a href="types.html#deposit" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol"> | </span><a href="types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol"> | </span><a href="types.html#transfer" class="tsd-signature-type">Transfer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c567332/src/node/index.ts#L43">node/index.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c567332/src/chain/stateTransition/block/operations/index.ts#L32">chain/stateTransition/block/operations/index.ts:32</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="processoperations" class="tsd-anchor"></a>
+					<h3>process<wbr>Operations</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Operations<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="types.html#beaconstate" class="tsd-signature-type">BeaconState</a>, body<span class="tsd-signature-symbol">: </span><a href="types.html#beaconblockbody" class="tsd-signature-type">BeaconBlockBody</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c567332/src/chain/stateTransition/block/operations/index.ts#L35">chain/stateTransition/block/operations/index.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+								</li>
+								<li>
+									<h5>body: <a href="types.html#beaconblockbody" class="tsd-signature-type">BeaconBlockBody</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -111,32 +135,17 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/node.html">node</a>
+						<a href="_chain_statetransition_block_operations_index_.html">"chain/state<wbr>Transition/block/operations/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/node.beaconnode.html" class="tsd-kind-icon">Beacon<wbr>Node</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_chain_statetransition_block_operations_index_.html#operation" class="tsd-kind-icon">Operation</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="node.beaconnodectx.html" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Ctx</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="node.rpcctx.html" class="tsd-kind-icon">Rpc<wbr>Ctx</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="node.rpcctx.html#apis" class="tsd-kind-icon">apis</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="node.service.html" class="tsd-kind-icon">Service</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_chain_statetransition_block_operations_index_.html#processoperations" class="tsd-kind-icon">process<wbr>Operations</a>
 					</li>
 				</ul>
 			</nav>
