@@ -92,6 +92,13 @@
 					<li><code>yarn test</code></li>
 				</ol>
 				<p>Note: to run spec tests execute <code>git submodules foreach git lfs pull</code></p>
+				<h4 id="generating-flame-graphs-from-spec-tests">Generating flame graphs from spec tests</h4>
+				<p>Example of cpu-profile generation of blocksanity tests in current directory</p>
+				<p><code>GEN_PROFILE_DIR=$PWD mocha -r ./.babel-register &#39;test/spec/sanity/blocks/blocksanity_s_mainnet.test.ts&#39;</code></p>
+				<p>To view results:</p>
+				<pre><code class="language-bash">npm i -g ox
+0x --visualize-cpu-profile ./0\ -\ blocksanity-1561705313935.cpuprofile</code></pre>
+				<p>Open resulting html file in favorite browser.</p>
 				<h2 id="usage">Usage</h2>
 				<ol>
 					<li>If you haven&#39;t <code>yarn install</code></li>
