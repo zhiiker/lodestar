@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateConfigCommand | @chainsafe/lodestar</title>
+	<title>&quot;node/validator&quot; | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,96 +56,77 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/cli_commands.html">cli/commands</a>
-				</li>
-				<li>
-					<a href="cli_commands.createconfigcommand.html">CreateConfigCommand</a>
+					<a href="_node_validator_.html">&quot;node/validator&quot;</a>
 				</li>
 			</ul>
-			<h1>Class CreateConfigCommand</h1>
+			<h1>External module &quot;node/validator&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">CreateConfigCommand</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/cli_commands.clicommand.html" class="tsd-signature-type">CliCommand</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cli_commands.createconfigcommand.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cli_commands.createconfigcommand.html#register" class="tsd-kind-icon">register</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_node_validator_.html#initvalidator" class="tsd-kind-icon">init<wbr>Validator</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="action" class="tsd-anchor"></a>
-					<h3>action</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/cli_commands.icreateconfigoptions.html" class="tsd-signature-type">ICreateConfigOptions</a>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="initvalidator" class="tsd-anchor"></a>
+					<h3>init<wbr>Validator</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Validator<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/validator.validator-1.html" class="tsd-signature-type">Validator</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/83ee92c/src/cli/commands/create-config.ts#L40">cli/commands/create-config.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/83ee92c/src/node/validator.ts#L26">node/validator.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/cli_commands.icreateconfigoptions.html" class="tsd-signature-type">ICreateConfigOptions</a></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>chain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>db<wbr>Beacon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>db<wbr>Validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>eth1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>op<wbr>Pool<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5>logger: <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="register" class="tsd-anchor"></a>
-					<h3>register</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>commander<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CommanderStatic</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/cli_commands.clicommand.html">CliCommand</a>.<a href="../interfaces/cli_commands.clicommand.html#register">register</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/83ee92c/src/cli/commands/create-config.ts#L19">cli/commands/create-config.ts:19</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>commander: <span class="tsd-signature-type">CommanderStatic</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/validator.validator-1.html" class="tsd-signature-type">Validator</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -158,68 +139,14 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/cli_commands.html">cli/commands</a>
+						<a href="_node_validator_.html">"node/validator"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.beaconnodecommand.html" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Command</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.createconfigcommand.html" class="tsd-kind-icon">Create<wbr>Config<wbr>Command</a>
-						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="cli_commands.createconfigcommand.html#action" class="tsd-kind-icon">action</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="cli_commands.createconfigcommand.html#register" class="tsd-kind-icon">register</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.createwalletcommand.html" class="tsd-kind-icon">Create<wbr>Wallet<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.depositcommand.html" class="tsd-kind-icon">Deposit<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.eth1privatenetworkcommand.html" class="tsd-kind-icon">Eth1<wbr>Private<wbr>Network<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.startcommand.html" class="tsd-kind-icon">Start<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="cli_commands.validatorcommand.html" class="tsd-kind-icon">Validator<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/cli_commands.clicommand.html" class="tsd-kind-icon">Cli<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.ibeaconcommandoptions.html" class="tsd-kind-icon">IBeacon<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.icreateconfigoptions.html" class="tsd-kind-icon">ICreate<wbr>Config<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.idepositcommandoptions.html" class="tsd-kind-icon">IDeposit<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.ieth1commandoptions.html" class="tsd-kind-icon">IEth1<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.istartcommandoptions.html" class="tsd-kind-icon">IStart<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.ivalidatorcommandoptions.html" class="tsd-kind-icon">IValidator<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/cli_commands.iwalletcommandoptions.html" class="tsd-kind-icon">IWallet<wbr>Command<wbr>Options</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_node_validator_.html#initvalidator" class="tsd-kind-icon">init<wbr>Validator</a>
 					</li>
 				</ul>
 			</nav>
