@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EthersEth1Options | @chainsafe/lodestar</title>
+	<title>InitialSyncModules | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/eth1.html">eth1</a>
+					<a href="../modules/sync.html">sync</a>
 				</li>
 				<li>
-					<a href="eth1.etherseth1options.html">EthersEth1Options</a>
+					<a href="sync.initialsyncmodules.html">InitialSyncModules</a>
 				</li>
 			</ul>
-			<h1>Interface EthersEth1Options</h1>
+			<h1>Interface InitialSyncModules</h1>
 		</div>
 	</div>
 </header>
@@ -73,12 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="eth1.ieth1options.html" class="tsd-signature-type">IEth1Options</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">EthersEth1Options</span>
-							</li>
-						</ul>
+						<span class="target">InitialSyncModules</span>
 					</li>
 				</ul>
 			</section>
@@ -86,61 +81,79 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eth1.etherseth1options.html#contract" class="tsd-kind-icon">contract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="eth1.etherseth1options.html#depositcontract" class="tsd-kind-icon">deposit<wbr>Contract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="eth1.etherseth1options.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#chain" class="tsd-kind-icon">chain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#db" class="tsd-kind-icon">db</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#network" class="tsd-kind-icon">network</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#reps" class="tsd-kind-icon">reps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="sync.initialsyncmodules.html#rpc" class="tsd-kind-icon">rpc</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contract" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> contract</h3>
-					<div class="tsd-signature tsd-kind-icon">contract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Contract</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="chain" class="tsd-anchor"></a>
+					<h3>chain</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="_chain_interface_.ibeaconchain.html" class="tsd-signature-type">IBeaconChain</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/eth1/impl/ethers.ts#L21">eth1/impl/ethers.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L19">sync/initial.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="depositcontract" class="tsd-anchor"></a>
-					<h3>deposit<wbr>Contract</h3>
-					<div class="tsd-signature tsd-kind-icon">deposit<wbr>Contract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="db" class="tsd-anchor"></a>
+					<h3>db</h3>
+					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="eth1.ieth1options.html">IEth1Options</a>.<a href="eth1.ieth1options.html#depositcontract">depositContract</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/eth1/interface.ts#L11">eth1/interface.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L18">sync/initial.ts:18</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>abi<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>deployed<wbr>At<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3>provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BaseProvider</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3>logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/eth1/impl/ethers.ts#L20">eth1/impl/ethers.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L23">sync/initial.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="network" class="tsd-anchor"></a>
+					<h3>network</h3>
+					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="network.inetwork.html" class="tsd-signature-type">INetwork</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L21">sync/initial.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="reps" class="tsd-anchor"></a>
+					<h3>reps</h3>
+					<div class="tsd-signature tsd-kind-icon">reps<span class="tsd-signature-symbol">:</span> <a href="../classes/sync.reputationstore.html" class="tsd-signature-type">ReputationStore</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L22">sync/initial.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="rpc" class="tsd-anchor"></a>
+					<h3>rpc</h3>
+					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <a href="../classes/sync.syncrpc.html" class="tsd-signature-type">SyncRpc</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/sync/initial.ts#L20">sync/initial.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,41 +166,65 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/eth1.html">eth1</a>
+						<a href="../modules/sync.html">sync</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/eth1.eth1wallet.html" class="tsd-kind-icon">Eth1<wbr>Wallet</a>
+						<a href="../classes/sync.initialsync.html" class="tsd-kind-icon">Initial<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/eth1.etherseth1notifier.html" class="tsd-kind-icon">Ethers<wbr>Eth1<wbr>Notifier</a>
+						<a href="../classes/sync.regularsync.html" class="tsd-kind-icon">Regular<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.reputationstore.html" class="tsd-kind-icon">Reputation<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.sync-1.html" class="tsd-kind-icon">Sync</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.syncrpc.html" class="tsd-kind-icon">Sync<wbr>Rpc</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="eth1.etherseth1options.html" class="tsd-kind-icon">Ethers<wbr>Eth1<wbr>Options</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="sync.initialsyncmodules.html" class="tsd-kind-icon">Initial<wbr>Sync<wbr>Modules</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eth1.etherseth1options.html#contract" class="tsd-kind-icon">contract</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#chain" class="tsd-kind-icon">chain</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="eth1.etherseth1options.html#depositcontract" class="tsd-kind-icon">deposit<wbr>Contract</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#db" class="tsd-kind-icon">db</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="eth1.etherseth1options.html#provider" class="tsd-kind-icon">provider</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#network" class="tsd-kind-icon">network</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#reps" class="tsd-kind-icon">reps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="sync.initialsyncmodules.html#rpc" class="tsd-kind-icon">rpc</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="eth1.ieth1notifier.html" class="tsd-kind-icon">IEth1<wbr>Notifier</a>
+						<a href="sync.reputation.html" class="tsd-kind-icon">Reputation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="sync.syncmodules.html" class="tsd-kind-icon">Sync<wbr>Modules</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="sync.syncoptions.html" class="tsd-kind-icon">Sync<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="eth1.ieth1options.html" class="tsd-kind-icon">IEth1<wbr>Options</a>
+						<a href="sync.syncoptions-1.html" class="tsd-kind-icon">Sync<wbr>Options</a>
 					</li>
 				</ul>
 			</nav>
