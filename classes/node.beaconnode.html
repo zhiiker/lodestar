@@ -107,7 +107,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.beaconnode.html#reps" class="tsd-kind-icon">reps</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.beaconnode.html#rpc" class="tsd-kind-icon">rpc</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.beaconnode.html#sync" class="tsd-kind-icon">sync</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="node.beaconnode.html#validator" class="tsd-kind-icon">validator</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -126,19 +125,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Beacon<wbr>Node<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/node.beaconnodectx.html" class="tsd-signature-type">BeaconNodeCtx</a>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="node.beaconnode.html" class="tsd-signature-type">BeaconNode</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Beacon<wbr>Node<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/node.ibeaconnodeoptions.html" class="tsd-signature-type">IBeaconNodeOptions</a><span class="tsd-signature-symbol">&gt;</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="node.beaconnode.html" class="tsd-signature-type">BeaconNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L68">node/index.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L41">node/nodejs.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>opts: <a href="../interfaces/node.beaconnodectx.html" class="tsd-signature-type">BeaconNodeCtx</a></h5>
+									<h5>opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/node.ibeaconnodeoptions.html" class="tsd-signature-type">IBeaconNodeOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
@@ -162,17 +161,17 @@
 					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_chain_interface_.ibeaconchain.html" class="tsd-signature-type">IBeaconChain</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L62">node/index.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L36">node/nodejs.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="conf" class="tsd-anchor"></a>
 					<h3>conf</h3>
-					<div class="tsd-signature tsd-kind-icon">conf<span class="tsd-signature-symbol">:</span> <a href="../interfaces/node.beaconnodectx.html" class="tsd-signature-type">BeaconNodeCtx</a></div>
+					<div class="tsd-signature tsd-kind-icon">conf<span class="tsd-signature-symbol">:</span> <a href="../interfaces/node.ibeaconnodeoptions.html" class="tsd-signature-type">IBeaconNodeOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L58">node/index.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L32">node/nodejs.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDB</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L59">node/index.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L33">node/nodejs.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">eth1<span class="tsd-signature-symbol">:</span> <a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L60">node/index.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L34">node/nodejs.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L68">node/index.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L41">node/nodejs.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="../interfaces/network.inetwork.html" class="tsd-signature-type">INetwork</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L61">node/index.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L35">node/nodejs.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">op<wbr>Pool<span class="tsd-signature-symbol">:</span> <a href="oppool.oppool-1.html" class="tsd-signature-type">OpPool</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L63">node/index.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L37">node/nodejs.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">reps<span class="tsd-signature-symbol">:</span> <a href="sync.reputationstore.html" class="tsd-signature-type">ReputationStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L67">node/index.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L40">node/nodejs.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <a href="../interfaces/node.service.html" class="tsd-signature-type">Service</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L64">node/index.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L38">node/nodejs.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -252,17 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">:</span> <a href="sync.sync-1.html" class="tsd-signature-type">Sync</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L66">node/index.ts:66</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="validator" class="tsd-anchor"></a>
-					<h3>validator</h3>
-					<div class="tsd-signature tsd-kind-icon">validator<span class="tsd-signature-symbol">:</span> <a href="validator.validator-1.html" class="tsd-signature-type">Validator</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L65">node/index.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L39">node/nodejs.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L137">node/index.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L100">node/nodejs.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -296,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/node/index.ts#L152">node/index.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/node/nodejs.ts#L111">node/nodejs.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -356,9 +345,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="node.beaconnode.html#sync" class="tsd-kind-icon">sync</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="node.beaconnode.html#validator" class="tsd-kind-icon">validator</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="node.beaconnode.html#start" class="tsd-kind-icon">start</a>
 							</li>
@@ -370,13 +356,16 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/node.beaconnodectx.html" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Ctx</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/node.rpcctx.html" class="tsd-kind-icon">Rpc<wbr>Ctx</a>
+						<a href="../interfaces/node.ibeaconnodeoptions.html" class="tsd-kind-icon">IBeacon<wbr>Node<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/node.service.html" class="tsd-kind-icon">Service</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/node.html#beaconnodeoptions" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/node.html#config" class="tsd-kind-icon">config</a>
 					</li>
 				</ul>
 			</nav>

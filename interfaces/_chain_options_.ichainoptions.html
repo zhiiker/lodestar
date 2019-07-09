@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ValidatorCtx | @chainsafe/lodestar</title>
+	<title>IChainOptions | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/validator.html">validator</a>
+					<a href="../modules/_chain_options_.html">&quot;chain/options&quot;</a>
 				</li>
 				<li>
-					<a href="validator.validatorctx.html">ValidatorCtx</a>
+					<a href="_chain_options_.ichainoptions.html">IChainOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ValidatorCtx</h1>
+			<h1>Interface IChainOptions</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ValidatorCtx</span>
+						<span class="target">IChainOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -84,11 +84,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="validator.validatorctx.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="validator.validatorctx.html#dbname" class="tsd-kind-icon">db<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="validator.validatorctx.html#keypair" class="tsd-kind-icon">keypair</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="validator.validatorctx.html#rpc" class="tsd-kind-icon">rpc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="validator.validatorctx.html#rpcurl" class="tsd-kind-icon">rpc<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_chain_options_.ichainoptions.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,52 +93,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="db" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="db_api_validator.ivalidatordb.html" class="tsd-signature-type">IValidatorDB</a></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/validator/types.ts#L14">validator/types.ts:14</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dbname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> db<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">db<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/validator/types.ts#L15">validator/types.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="keypair" class="tsd-anchor"></a>
-					<h3>keypair</h3>
-					<div class="tsd-signature tsd-kind-icon">keypair<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Keypair</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/validator/types.ts#L13">validator/types.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rpc" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rpc</h3>
-					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <a href="_validator_rpc_interface_.rpcclient.html" class="tsd-signature-type">RpcClient</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/validator/types.ts#L12">validator/types.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rpcurl" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rpc<wbr>Url</h3>
-					<div class="tsd-signature tsd-kind-icon">rpc<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/32e4457/src/validator/types.ts#L11">validator/types.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0e6201f/src/chain/options.ts#L5">chain/options.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,48 +111,30 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/validator.html">validator</a>
+						<a href="../modules/_chain_options_.html">"chain/options"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/validator.blockproposingservice.html" class="tsd-kind-icon">Block<wbr>Proposing<wbr>Service</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/validator.validator-1.html" class="tsd-kind-icon">Validator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="validator.committeeassignment.html" class="tsd-kind-icon">Committee<wbr>Assignment</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="validator.genesisinfo.html" class="tsd-kind-icon">Genesis<wbr>Info</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="validator.validatorctx.html" class="tsd-kind-icon">Validator<wbr>Ctx</a>
+						<a href="_chain_options_.ichainoptions.html" class="tsd-kind-icon">IChain<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="validator.validatorctx.html#db" class="tsd-kind-icon">db</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="validator.validatorctx.html#dbname" class="tsd-kind-icon">db<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="validator.validatorctx.html#keypair" class="tsd-kind-icon">keypair</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="validator.validatorctx.html#rpc" class="tsd-kind-icon">rpc</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="validator.validatorctx.html#rpcurl" class="tsd-kind-icon">rpc<wbr>Url</a>
+								<a href="_chain_options_.ichainoptions.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_chain_options_.html#chainoptions" class="tsd-kind-icon">Chain<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_chain_options_.html#config" class="tsd-kind-icon">config</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
