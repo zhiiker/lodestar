@@ -102,6 +102,7 @@
 						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="db_api_beacon.beacondb.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="db_api_beacon.beacondb.html#db" class="tsd-kind-icon">db</a></li>
 							</ul>
 						</section>
@@ -176,7 +177,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_db_api_abstract_.databaseservice.html">DatabaseService</a>.<a href="_db_api_abstract_.databaseservice.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L27">db/api/beacon/beacon.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L27">db/api/beacon/beacon.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -193,13 +194,24 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_db_api_abstract_.databaseservice.html">DatabaseService</a>.<a href="_db_api_abstract_.databaseservice.html#config">config</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/abstract.ts#L12">db/api/abstract.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="db" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> db</h3>
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../interfaces/db_controller.idatabasecontroller.html" class="tsd-signature-type">IDatabaseController</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_db_api_abstract_.databaseservice.html">DatabaseService</a>.<a href="_db_api_abstract_.databaseservice.html#db">db</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/abstract.ts#L10">db/api/abstract.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/abstract.ts#L13">db/api/abstract.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,20 +222,20 @@
 					<a name="deleteattestations" class="tsd-anchor"></a>
 					<h3>delete<wbr>Attestations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Attestations<span class="tsd-signature-symbol">(</span>attestations<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Attestations<span class="tsd-signature-symbol">(</span>attestations<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deleteattestations">deleteAttestations</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L208">db/api/beacon/beacon.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L208">db/api/beacon/beacon.ts:208</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attestations: <a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>attestations: <a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -234,20 +246,20 @@
 					<a name="deleteattesterslashings" class="tsd-anchor"></a>
 					<h3>delete<wbr>Attester<wbr>Slashings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Attester<wbr>Slashings<span class="tsd-signature-symbol">(</span>attesterSlashings<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Attester<wbr>Slashings<span class="tsd-signature-symbol">(</span>attesterSlashings<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deleteattesterslashings">deleteAttesterSlashings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L262">db/api/beacon/beacon.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L262">db/api/beacon/beacon.ts:262</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attesterSlashings: <a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>attesterSlashings: <a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -264,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L290">db/api/beacon/beacon.ts:290</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L290">db/api/beacon/beacon.ts:290</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,7 +306,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deletedeposits">deleteDeposits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L274">db/api/beacon/beacon.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L274">db/api/beacon/beacon.ts:274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -305,20 +317,20 @@
 					<a name="deleteproposerslashings" class="tsd-anchor"></a>
 					<h3>delete<wbr>Proposer<wbr>Slashings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Proposer<wbr>Slashings<span class="tsd-signature-symbol">(</span>proposerSlashings<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Proposer<wbr>Slashings<span class="tsd-signature-symbol">(</span>proposerSlashings<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deleteproposerslashings">deleteProposerSlashings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L248">db/api/beacon/beacon.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L248">db/api/beacon/beacon.ts:248</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proposerSlashings: <a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>proposerSlashings: <a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -329,20 +341,20 @@
 					<a name="deletetransfers" class="tsd-anchor"></a>
 					<h3>delete<wbr>Transfers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Transfers<span class="tsd-signature-symbol">(</span>transfers<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Transfers<span class="tsd-signature-symbol">(</span>transfers<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deletetransfers">deleteTransfers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L234">db/api/beacon/beacon.ts:234</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L234">db/api/beacon/beacon.ts:234</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>transfers: <a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>transfers: <a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -353,20 +365,20 @@
 					<a name="deletevoluntaryexits" class="tsd-anchor"></a>
 					<h3>delete<wbr>Voluntary<wbr>Exits</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Voluntary<wbr>Exits<span class="tsd-signature-symbol">(</span>exits<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Voluntary<wbr>Exits<span class="tsd-signature-symbol">(</span>exits<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#deletevoluntaryexits">deleteVoluntaryExits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L221">db/api/beacon/beacon.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L221">db/api/beacon/beacon.ts:221</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>exits: <a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>exits: <a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -383,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L282">db/api/beacon/beacon.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L282">db/api/beacon/beacon.ts:282</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -403,23 +415,23 @@
 					<a name="getattestation" class="tsd-anchor"></a>
 					<h3>get<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestation<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestation<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getattestation">getAttestation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L187">db/api/beacon/beacon.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L187">db/api/beacon/beacon.ts:187</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -427,17 +439,17 @@
 					<a name="getattestations" class="tsd-anchor"></a>
 					<h3>get<wbr>Attestations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getattestations">getAttestations</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L183">db/api/beacon/beacon.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L183">db/api/beacon/beacon.ts:183</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -445,17 +457,17 @@
 					<a name="getattesterslashings" class="tsd-anchor"></a>
 					<h3>get<wbr>Attester<wbr>Slashings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Attester<wbr>Slashings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attester<wbr>Slashings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getattesterslashings">getAttesterSlashings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L252">db/api/beacon/beacon.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L252">db/api/beacon/beacon.ts:252</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -463,23 +475,23 @@
 					<a name="getblock" class="tsd-anchor"></a>
 					<h3>get<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getblock">getBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L84">db/api/beacon/beacon.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L84">db/api/beacon/beacon.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -487,14 +499,14 @@
 					<a name="getblockbyslot" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>BySlot</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>BySlot<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>BySlot<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getblockbyslot">getBlockBySlot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L125">db/api/beacon/beacon.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L125">db/api/beacon/beacon.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -503,7 +515,7 @@
 									<h5>slot: <a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -511,14 +523,14 @@
 					<a name="getblockroot" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>slot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getblockroot">getBlockRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L117">db/api/beacon/beacon.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L117">db/api/beacon/beacon.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -527,7 +539,7 @@
 									<h5>slot: <a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -535,17 +547,17 @@
 					<a name="getchainhead" class="tsd-anchor"></a>
 					<h3>get<wbr>Chain<wbr>Head</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getchainhead">getChainHead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L149">db/api/beacon/beacon.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L149">db/api/beacon/beacon.ts:149</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -553,17 +565,17 @@
 					<a name="getchainheadroot" class="tsd-anchor"></a>
 					<h3>get<wbr>Chain<wbr>Head<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<wbr>Root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<wbr>Root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getchainheadroot">getChainHeadRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L141">db/api/beacon/beacon.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L141">db/api/beacon/beacon.ts:141</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -578,7 +590,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getchainheadslot">getChainHeadSlot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L132">db/api/beacon/beacon.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L132">db/api/beacon/beacon.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -589,17 +601,17 @@
 					<a name="getdeposits" class="tsd-anchor"></a>
 					<h3>get<wbr>Deposits</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Deposits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#deposit" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Deposits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getdeposits">getDeposits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L266">db/api/beacon/beacon.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L266">db/api/beacon/beacon.ts:266</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#deposit" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -607,17 +619,17 @@
 					<a name="getfinalizedblock" class="tsd-anchor"></a>
 					<h3>get<wbr>Finalized<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Finalized<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Finalized<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getfinalizedblock">getFinalizedBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L101">db/api/beacon/beacon.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L101">db/api/beacon/beacon.ts:101</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -625,17 +637,17 @@
 					<a name="getfinalizedstate" class="tsd-anchor"></a>
 					<h3>get<wbr>Finalized<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Finalized<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Finalized<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getfinalizedstate">getFinalizedState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L68">db/api/beacon/beacon.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L68">db/api/beacon/beacon.ts:68</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -643,17 +655,17 @@
 					<a name="getjustifiedblock" class="tsd-anchor"></a>
 					<h3>get<wbr>Justified<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Justified<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Justified<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getjustifiedblock">getJustifiedBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L109">db/api/beacon/beacon.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L109">db/api/beacon/beacon.ts:109</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -661,17 +673,17 @@
 					<a name="getjustifiedstate" class="tsd-anchor"></a>
 					<h3>get<wbr>Justified<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Justified<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Justified<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getjustifiedstate">getJustifiedState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L76">db/api/beacon/beacon.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L76">db/api/beacon/beacon.ts:76</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -679,17 +691,17 @@
 					<a name="getlateststate" class="tsd-anchor"></a>
 					<h3>get<wbr>Latest<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Latest<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Latest<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getlateststate">getLatestState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L60">db/api/beacon/beacon.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L60">db/api/beacon/beacon.ts:60</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -704,7 +716,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getmerkletree">getMerkleTree</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L304">db/api/beacon/beacon.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L304">db/api/beacon/beacon.ts:304</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -721,17 +733,17 @@
 					<a name="getproposerslashings" class="tsd-anchor"></a>
 					<h3>get<wbr>Proposer<wbr>Slashings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Proposer<wbr>Slashings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Proposer<wbr>Slashings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getproposerslashings">getProposerSlashings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L238">db/api/beacon/beacon.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L238">db/api/beacon/beacon.ts:238</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -745,7 +757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L49">db/api/beacon/beacon.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L49">db/api/beacon/beacon.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,14 +781,14 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>r<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>r: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+															<h5>r: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
@@ -797,23 +809,23 @@
 					<a name="getstate" class="tsd-anchor"></a>
 					<h3>get<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>State<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>State<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getstate">getState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L33">db/api/beacon/beacon.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L33">db/api/beacon/beacon.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -821,17 +833,17 @@
 					<a name="gettransfers" class="tsd-anchor"></a>
 					<h3>get<wbr>Transfers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Transfers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transfers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#gettransfers">getTransfers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L225">db/api/beacon/beacon.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L225">db/api/beacon/beacon.ts:225</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -845,7 +857,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L298">db/api/beacon/beacon.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L298">db/api/beacon/beacon.ts:298</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -862,17 +874,17 @@
 					<a name="getvoluntaryexits" class="tsd-anchor"></a>
 					<h3>get<wbr>Voluntary<wbr>Exits</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Voluntary<wbr>Exits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Voluntary<wbr>Exits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#getvoluntaryexits">getVoluntaryExits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L212">db/api/beacon/beacon.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L212">db/api/beacon/beacon.ts:212</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -880,20 +892,20 @@
 					<a name="hasattestation" class="tsd-anchor"></a>
 					<h3>has<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Attestation<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Attestation<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#hasattestation">hasAttestation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L191">db/api/beacon/beacon.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L191">db/api/beacon/beacon.ts:191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -904,20 +916,20 @@
 					<a name="hasblock" class="tsd-anchor"></a>
 					<h3>has<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#hasblock">hasBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L93">db/api/beacon/beacon.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L93">db/api/beacon/beacon.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -928,20 +940,20 @@
 					<a name="setattestation" class="tsd-anchor"></a>
 					<h3>set<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Attestation<span class="tsd-signature-symbol">(</span>attestation<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Attestation<span class="tsd-signature-symbol">(</span>attestation<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setattestation">setAttestation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L200">db/api/beacon/beacon.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L200">db/api/beacon/beacon.ts:200</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attestation: <a href="../modules/types.html#attestation" class="tsd-signature-type">Attestation</a></h5>
+									<h5>attestation: <a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -952,20 +964,20 @@
 					<a name="setattesterslashing" class="tsd-anchor"></a>
 					<h3>set<wbr>Attester<wbr>Slashing</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Attester<wbr>Slashing<span class="tsd-signature-symbol">(</span>attesterSlashing<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Attester<wbr>Slashing<span class="tsd-signature-symbol">(</span>attesterSlashing<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setattesterslashing">setAttesterSlashing</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L256">db/api/beacon/beacon.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L256">db/api/beacon/beacon.ts:256</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>attesterSlashing: <a href="../modules/types.html#attesterslashing" class="tsd-signature-type">AttesterSlashing</a></h5>
+									<h5>attesterSlashing: <a href="../interfaces/types.attesterslashing.html" class="tsd-signature-type">AttesterSlashing</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -976,23 +988,23 @@
 					<a name="setblock" class="tsd-anchor"></a>
 					<h3>set<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Block<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setblock">setBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L97">db/api/beacon/beacon.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L97">db/api/beacon/beacon.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5>block: <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5>block: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1003,29 +1015,29 @@
 					<a name="setchainheadroots" class="tsd-anchor"></a>
 					<h3>set<wbr>Chain<wbr>Head<wbr>Roots</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Chain<wbr>Head<wbr>Roots<span class="tsd-signature-symbol">(</span>blockRoot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, stateRoot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a>, state<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Chain<wbr>Head<wbr>Roots<span class="tsd-signature-symbol">(</span>blockRoot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, stateRoot<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a>, state<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setchainheadroots">setChainHeadRoots</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L157">db/api/beacon/beacon.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L157">db/api/beacon/beacon.ts:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>blockRoot: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>blockRoot: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5>stateRoot: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>stateRoot: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1036,14 +1048,14 @@
 					<a name="setdeposit" class="tsd-anchor"></a>
 					<h3>set<wbr>Deposit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Deposit<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deposit<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#deposit" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Deposit<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, deposit<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setdeposit">setDeposit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L270">db/api/beacon/beacon.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L270">db/api/beacon/beacon.ts:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1052,7 +1064,7 @@
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>deposit: <a href="../modules/types.html#deposit" class="tsd-signature-type">Deposit</a></h5>
+									<h5>deposit: <a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1063,23 +1075,23 @@
 					<a name="setfinalizedblockroot" class="tsd-anchor"></a>
 					<h3>set<wbr>Finalized<wbr>Block<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Finalized<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Finalized<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setfinalizedblockroot">setFinalizedBlockRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L105">db/api/beacon/beacon.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L105">db/api/beacon/beacon.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1090,23 +1102,23 @@
 					<a name="setfinalizedstateroot" class="tsd-anchor"></a>
 					<h3>set<wbr>Finalized<wbr>State<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Finalized<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Finalized<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setfinalizedstateroot">setFinalizedStateRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L72">db/api/beacon/beacon.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L72">db/api/beacon/beacon.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1117,23 +1129,23 @@
 					<a name="setjustifiedblockroot" class="tsd-anchor"></a>
 					<h3>set<wbr>Justified<wbr>Block<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Justified<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Justified<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, block<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setjustifiedblockroot">setJustifiedBlockRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L113">db/api/beacon/beacon.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L113">db/api/beacon/beacon.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../modules/types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1144,23 +1156,23 @@
 					<a name="setjustifiedstateroot" class="tsd-anchor"></a>
 					<h3>set<wbr>Justified<wbr>State<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Justified<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Justified<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setjustifiedstateroot">setJustifiedStateRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L80">db/api/beacon/beacon.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L80">db/api/beacon/beacon.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1171,23 +1183,23 @@
 					<a name="setlateststateroot" class="tsd-anchor"></a>
 					<h3>set<wbr>Latest<wbr>State<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Latest<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Latest<wbr>State<wbr>Root<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">?: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setlateststateroot">setLatestStateRoot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L64">db/api/beacon/beacon.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L64">db/api/beacon/beacon.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1205,7 +1217,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setmerkletree">setMerkleTree</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L314">db/api/beacon/beacon.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L314">db/api/beacon/beacon.ts:314</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1225,20 +1237,20 @@
 					<a name="setproposerslashing" class="tsd-anchor"></a>
 					<h3>set<wbr>Proposer<wbr>Slashing</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Proposer<wbr>Slashing<span class="tsd-signature-symbol">(</span>proposerSlashing<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Proposer<wbr>Slashing<span class="tsd-signature-symbol">(</span>proposerSlashing<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setproposerslashing">setProposerSlashing</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L242">db/api/beacon/beacon.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L242">db/api/beacon/beacon.ts:242</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proposerSlashing: <a href="../modules/types.html#proposerslashing" class="tsd-signature-type">ProposerSlashing</a></h5>
+									<h5>proposerSlashing: <a href="../interfaces/types.proposerslashing.html" class="tsd-signature-type">ProposerSlashing</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1249,13 +1261,13 @@
 					<a name="setref" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Ref</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Ref<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../enums/db_schema.key.html" class="tsd-signature-type">Key</a>, root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Ref<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><a href="../enums/db_schema.key.html" class="tsd-signature-type">Key</a>, root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L53">db/api/beacon/beacon.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L53">db/api/beacon/beacon.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1264,7 +1276,7 @@
 									<h5>key: <a href="../enums/db_schema.key.html" class="tsd-signature-type">Key</a></h5>
 								</li>
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1275,23 +1287,23 @@
 					<a name="setstate" class="tsd-anchor"></a>
 					<h3>set<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>State<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>State<span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setstate">setState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L42">db/api/beacon/beacon.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L42">db/api/beacon/beacon.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>root: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>root: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../modules/types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1302,20 +1314,20 @@
 					<a name="settransfer" class="tsd-anchor"></a>
 					<h3>set<wbr>Transfer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Transfer<span class="tsd-signature-symbol">(</span>transfer<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Transfer<span class="tsd-signature-symbol">(</span>transfer<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#settransfer">setTransfer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L229">db/api/beacon/beacon.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L229">db/api/beacon/beacon.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>transfer: <a href="../modules/types.html#transfer" class="tsd-signature-type">Transfer</a></h5>
+									<h5>transfer: <a href="../interfaces/types.transfer.html" class="tsd-signature-type">Transfer</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1326,20 +1338,20 @@
 					<a name="setvoluntaryexit" class="tsd-anchor"></a>
 					<h3>set<wbr>Voluntary<wbr>Exit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Voluntary<wbr>Exit<span class="tsd-signature-symbol">(</span>exit<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Voluntary<wbr>Exit<span class="tsd-signature-symbol">(</span>exit<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/db_api_beacon.ibeacondb.html">IBeaconDb</a>.<a href="../interfaces/db_api_beacon.ibeacondb.html#setvoluntaryexit">setVoluntaryExit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/beacon/beacon.ts#L216">db/api/beacon/beacon.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/beacon/beacon.ts#L216">db/api/beacon/beacon.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>exit: <a href="../modules/types.html#voluntaryexit" class="tsd-signature-type">VoluntaryExit</a></h5>
+									<h5>exit: <a href="../interfaces/types.voluntaryexit.html" class="tsd-signature-type">VoluntaryExit</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1358,7 +1370,7 @@
 								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#start">start</a></p>
 								<p>Inherited from <a href="_db_api_abstract_.databaseservice.html">DatabaseService</a>.<a href="_db_api_abstract_.databaseservice.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/abstract.ts#L16">db/api/abstract.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/abstract.ts#L20">db/api/abstract.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1377,7 +1389,7 @@
 								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#stop">stop</a></p>
 								<p>Inherited from <a href="_db_api_abstract_.databaseservice.html">DatabaseService</a>.<a href="_db_api_abstract_.databaseservice.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/db/api/abstract.ts#L20">db/api/abstract.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/db/api/abstract.ts#L24">db/api/abstract.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1406,6 +1418,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="db_api_beacon.beacondb.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="db_api_beacon.beacondb.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="db_api_beacon.beacondb.html#db" class="tsd-kind-icon">db</a>

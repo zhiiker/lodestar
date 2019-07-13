@@ -114,8 +114,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="util_merkletree.progressivemerkletree.html#push" class="tsd-kind-icon">push</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="util_merkletree.progressivemerkletree.html#root" class="tsd-kind-icon">root</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="util_merkletree.progressivemerkletree.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="util_merkletree.progressivemerkletree.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="util_merkletree.progressivemerkletree.html#empty" class="tsd-kind-icon">empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="util_merkletree.progressivemerkletree.html#fromobject" class="tsd-kind-icon">from<wbr>Object</a></li>
 							</ul>
 						</section>
 					</div>
@@ -127,13 +127,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Progressive<wbr>Merkle<wbr>Tree<span class="tsd-signature-symbol">(</span>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tree<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Progressive<wbr>Merkle<wbr>Tree<span class="tsd-signature-symbol">(</span>depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tree<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L16">util/merkleTree/merkleTree.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L24">util/merkleTree/merkleTree.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -142,7 +142,7 @@
 									<h5>depth: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>tree: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tree: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></h4>
@@ -158,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">_depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L13">util/merkleTree/merkleTree.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L21">util/merkleTree/merkleTree.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -168,27 +168,27 @@
 					<div class="tsd-signature tsd-kind-icon">_dirty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L16">util/merkleTree/merkleTree.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L24">util/merkleTree/merkleTree.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_tree" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _tree</h3>
-					<div class="tsd-signature tsd-kind-icon">_tree<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_tree<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L15">util/merkleTree/merkleTree.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L23">util/merkleTree/merkleTree.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_zerohashes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _zerohashes</h3>
-					<div class="tsd-signature tsd-kind-icon">_zerohashes<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_zerohashes<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L14">util/merkleTree/merkleTree.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L22">util/merkleTree/merkleTree.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,14 +199,14 @@
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#number64" class="tsd-signature-type">number64</a>, item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#number64" class="tsd-signature-type">number64</a>, item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>.<a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html#add">add</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L50">util/merkleTree/merkleTree.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L51">util/merkleTree/merkleTree.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -215,7 +215,7 @@
 									<h5>index: <a href="../modules/types.html#number64" class="tsd-signature-type">number64</a></h5>
 								</li>
 								<li>
-									<h5>item: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>item: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -232,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L93">util/merkleTree/merkleTree.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L102">util/merkleTree/merkleTree.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -249,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L70">util/merkleTree/merkleTree.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L71">util/merkleTree/merkleTree.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -267,7 +267,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>.<a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html#depth">depth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L41">util/merkleTree/merkleTree.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L42">util/merkleTree/merkleTree.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -278,16 +278,16 @@
 					<a name="generatezerohashes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> generate<wbr>Zero<wbr>Hashes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Zero<wbr>Hashes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Zero<wbr>Hashes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L108">util/merkleTree/merkleTree.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L117">util/merkleTree/merkleTree.ts:117</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -295,13 +295,13 @@
 					<a name="getproof" class="tsd-anchor"></a>
 					<h3>get<wbr>Proof</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Proof<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Proof<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L55">util/merkleTree/merkleTree.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L56">util/merkleTree/merkleTree.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -310,7 +310,7 @@
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -318,20 +318,20 @@
 					<a name="push" class="tsd-anchor"></a>
 					<h3>push</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>.<a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L45">util/merkleTree/merkleTree.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L46">util/merkleTree/merkleTree.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>item: <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h5>
+									<h5>item: <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -342,17 +342,17 @@
 					<a name="root" class="tsd-anchor"></a>
 					<h3>root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></li>
+						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>.<a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html#root">root</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L76">util/merkleTree/merkleTree.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L77">util/merkleTree/merkleTree.ts:77</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32-1" class="tsd-signature-type">bytes32</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -367,10 +367,33 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html">IProgressiveMerkleTree</a>.<a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html#serialize">serialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L81">util/merkleTree/merkleTree.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L90">util/merkleTree/merkleTree.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="deserialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> deserialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L82">util/merkleTree/merkleTree.ts:82</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -384,36 +407,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L26">util/merkleTree/merkleTree.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/util/merkleTree/merkleTree.ts#L34">util/merkleTree/merkleTree.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>depth: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="fromobject" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> from<wbr>Object</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Object<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/types.html#merkletree" class="tsd-signature-type">MerkleTree</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/util/merkleTree/merkleTree.ts#L34">util/merkleTree/merkleTree.ts:34</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="../modules/types.html#merkletree" class="tsd-signature-type">MerkleTree</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="util_merkletree.progressivemerkletree.html" class="tsd-signature-type">ProgressiveMerkleTree</a></h4>
@@ -483,15 +483,18 @@
 								<a href="util_merkletree.progressivemerkletree.html#serialize" class="tsd-kind-icon">serialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="util_merkletree.progressivemerkletree.html#empty" class="tsd-kind-icon">empty</a>
+								<a href="util_merkletree.progressivemerkletree.html#deserialize" class="tsd-kind-icon">deserialize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="util_merkletree.progressivemerkletree.html#fromobject" class="tsd-kind-icon">from<wbr>Object</a>
+								<a href="util_merkletree.progressivemerkletree.html#empty" class="tsd-kind-icon">empty</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/util_merkletree.html#merkletreetype" class="tsd-kind-icon">Merkle<wbr>Tree<wbr>Type</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

@@ -85,25 +85,28 @@
 					<a name="assembleattestation" class="tsd-anchor"></a>
 					<h3>assemble<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Attestation<span class="tsd-signature-symbol">(</span>db<span class="tsd-signature-symbol">: </span><a href="../classes/db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDB</a>, state<span class="tsd-signature-symbol">: </span><a href="types.html#beaconstate" class="tsd-signature-type">BeaconState</a>, headBlock<span class="tsd-signature-symbol">: </span><a href="types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a>, slot<span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a>, shard<span class="tsd-signature-symbol">: </span><a href="types.html#shard" class="tsd-signature-type">Shard</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="types.html#indexedattestation" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, db<span class="tsd-signature-symbol">: </span><a href="../classes/db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDB</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, headBlock<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a>, slot<span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a>, shard<span class="tsd-signature-symbol">: </span><a href="types.html#shard" class="tsd-signature-type">Shard</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6d5de57/src/chain/factory/attestation/index.ts#L6">chain/factory/attestation/index.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b6ef71e/src/chain/factory/attestation/index.ts#L7">chain/factory/attestation/index.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
+									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+								</li>
+								<li>
 									<h5>db: <a href="../classes/db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDB</a></h5>
 								</li>
 								<li>
-									<h5>state: <a href="types.html#beaconstate" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
 								</li>
 								<li>
-									<h5>headBlock: <a href="types.html#beaconblock" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5>headBlock: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
 								</li>
 								<li>
 									<h5>slot: <a href="types.html#slot" class="tsd-signature-type">Slot</a></h5>
@@ -112,7 +115,7 @@
 									<h5>shard: <a href="types.html#shard" class="tsd-signature-type">Shard</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="types.html#indexedattestation" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
