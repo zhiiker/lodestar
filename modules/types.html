@@ -81,6 +81,8 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.beaconblockbody.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Body</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.beaconblockheader.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Header</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.beaconstate.html" class="tsd-kind-icon">Beacon<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.checkpoint.html" class="tsd-kind-icon">Checkpoint</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.compactcommittee.html" class="tsd-kind-icon">Compact<wbr>Committee</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.crosslink.html" class="tsd-kind-icon">Crosslink</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.deposit.html" class="tsd-kind-icon">Deposit</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/types.depositdata.html" class="tsd-kind-icon">Deposit<wbr>Data</a></li>
@@ -106,9 +108,11 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#blssignature" class="tsd-kind-icon">BLSSignature</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#epoch" class="tsd-kind-icon">Epoch</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#gwei" class="tsd-kind-icon">Gwei</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#hash" class="tsd-kind-icon">Hash</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#shard" class="tsd-kind-icon">Shard</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#slot" class="tsd-kind-icon">Slot</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#validatorindex" class="tsd-kind-icon">Validator<wbr>Index</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#version" class="tsd-kind-icon">Version</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#bool" class="tsd-kind-icon">bool</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#bytes" class="tsd-kind-icon">bytes</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="types.html#bytes32" class="tsd-kind-icon">bytes32</a></li>
@@ -135,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">BLSPubkey<span class="tsd-signature-symbol">:</span> <a href="types.html#bytes48" class="tsd-signature-type">bytes48</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L31">types/primitive.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L33">types/primitive.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">BLSSignature<span class="tsd-signature-symbol">:</span> <a href="types.html#bytes96" class="tsd-signature-type">bytes96</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L32">types/primitive.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L34">types/primitive.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">Epoch<span class="tsd-signature-symbol">:</span> <a href="types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L27">types/primitive.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L27">types/primitive.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,7 +169,17 @@
 					<div class="tsd-signature tsd-kind-icon">Gwei<span class="tsd-signature-symbol">:</span> <a href="types.html#uint64" class="tsd-signature-type">uint64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L30">types/primitive.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L30">types/primitive.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="hash" class="tsd-anchor"></a>
+					<h3>Hash</h3>
+					<div class="tsd-signature tsd-kind-icon">Hash<span class="tsd-signature-symbol">:</span> <a href="types.html#bytes32" class="tsd-signature-type">bytes32</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L31">types/primitive.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">Shard<span class="tsd-signature-symbol">:</span> <a href="types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L28">types/primitive.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L28">types/primitive.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">Slot<span class="tsd-signature-symbol">:</span> <a href="types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L26">types/primitive.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L26">types/primitive.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +209,17 @@
 					<div class="tsd-signature tsd-kind-icon">Validator<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="types.html#number64" class="tsd-signature-type">number64</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L29">types/primitive.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L29">types/primitive.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="version" class="tsd-anchor"></a>
+					<h3>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">Version<span class="tsd-signature-symbol">:</span> <a href="types.html#bytes4" class="tsd-signature-type">bytes4</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L32">types/primitive.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">bool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L10">types/primitive.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L10">types/primitive.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L11">types/primitive.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L11">types/primitive.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L14">types/primitive.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L14">types/primitive.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes4<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L12">types/primitive.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L12">types/primitive.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -245,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes48<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L15">types/primitive.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L15">types/primitive.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -255,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L13">types/primitive.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L13">types/primitive.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +289,7 @@
 					<div class="tsd-signature tsd-kind-icon">bytes96<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L16">types/primitive.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L16">types/primitive.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -275,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">number64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L20">types/primitive.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L20">types/primitive.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -285,7 +309,7 @@
 					<div class="tsd-signature tsd-kind-icon">uint16<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L18">types/primitive.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L18">types/primitive.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -295,7 +319,7 @@
 					<div class="tsd-signature tsd-kind-icon">uint24<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L19">types/primitive.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L19">types/primitive.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -305,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">uint256<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BN</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L22">types/primitive.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L22">types/primitive.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -315,7 +339,7 @@
 					<div class="tsd-signature tsd-kind-icon">uint64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BN</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L21">types/primitive.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L21">types/primitive.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -325,7 +349,7 @@
 					<div class="tsd-signature tsd-kind-icon">uint8<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/primitive.ts#L17">types/primitive.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/primitive.ts#L17">types/primitive.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -367,6 +391,12 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/types.beaconstate.html" class="tsd-kind-icon">Beacon<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/types.checkpoint.html" class="tsd-kind-icon">Checkpoint</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/types.compactcommittee.html" class="tsd-kind-icon">Compact<wbr>Committee</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/types.crosslink.html" class="tsd-kind-icon">Crosslink</a>
@@ -429,6 +459,9 @@
 						<a href="types.html#gwei" class="tsd-kind-icon">Gwei</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="types.html#hash" class="tsd-kind-icon">Hash</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="types.html#shard" class="tsd-kind-icon">Shard</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -436,6 +469,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="types.html#validatorindex" class="tsd-kind-icon">Validator<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="types.html#version" class="tsd-kind-icon">Version</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="types.html#bool" class="tsd-kind-icon">bool</a>

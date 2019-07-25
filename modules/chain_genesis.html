@@ -76,6 +76,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="chain_genesis.html#getemptyblock" class="tsd-kind-icon">get<wbr>Empty<wbr>Block</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="chain_genesis.html#getemptyblockbody" class="tsd-kind-icon">get<wbr>Empty<wbr>Block<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="chain_genesis.html#getgenesisbeaconstate" class="tsd-kind-icon">get<wbr>Genesis<wbr>Beacon<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="chain_genesis.html#initializebeaconstatefrometh1" class="tsd-kind-icon">initialize<wbr>Beacon<wbr>State<wbr>From<wbr>Eth1</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="chain_genesis.html#isvalidgenesisstate" class="tsd-kind-icon">is<wbr>Valid<wbr>Genesis<wbr>State</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/chain/genesis.ts#L53">chain/genesis.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/chain/genesis/genesis.ts#L164">chain/genesis/genesis.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -115,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/chain/genesis.ts#L32">chain/genesis.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/chain/genesis/genesis.ts#L143">chain/genesis/genesis.ts:143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.beaconblockbody.html" class="tsd-signature-type">BeaconBlockBody</a></h4>
@@ -126,13 +128,13 @@
 					<a name="getgenesisbeaconstate" class="tsd-anchor"></a>
 					<h3>get<wbr>Genesis<wbr>Beacon<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Genesis<wbr>Beacon<wbr>State<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, genesisValidatorDeposits<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span>, genesisTime<span class="tsd-signature-symbol">: </span><a href="types.html#number64" class="tsd-signature-type">number64</a>, genesisEth1Data<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.eth1data.html" class="tsd-signature-type">Eth1Data</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Genesis<wbr>Beacon<wbr>State<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, genesisTime<span class="tsd-signature-symbol">: </span><a href="types.html#number64" class="tsd-signature-type">number64</a>, genesisEth1Data<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.eth1data.html" class="tsd-signature-type">Eth1Data</a>, latestBlockHeader<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconblockheader.html" class="tsd-signature-type">BeaconBlockHeader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/chain/genesis.ts#L66">chain/genesis.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/chain/genesis/genesis.ts#L99">chain/genesis/genesis.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -146,16 +148,74 @@
 									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
 								</li>
 								<li>
-									<h5>genesisValidatorDeposits: <a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-								<li>
 									<h5>genesisTime: <a href="types.html#number64" class="tsd-signature-type">number64</a></h5>
 								</li>
 								<li>
 									<h5>genesisEth1Data: <a href="../interfaces/types.eth1data.html" class="tsd-signature-type">Eth1Data</a></h5>
 								</li>
+								<li>
+									<h5>latestBlockHeader: <a href="../interfaces/types.beaconblockheader.html" class="tsd-signature-type">BeaconBlockHeader</a></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="initializebeaconstatefrometh1" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Beacon<wbr>State<wbr>From<wbr>Eth1</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Beacon<wbr>State<wbr>From<wbr>Eth1<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, eth1BlockHash<span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a>, eth1Timestamp<span class="tsd-signature-symbol">: </span><a href="types.html#number64" class="tsd-signature-type">number64</a>, deposits<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/chain/genesis/genesis.ts#L35">chain/genesis/genesis.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+								</li>
+								<li>
+									<h5>eth1BlockHash: <a href="types.html#hash" class="tsd-signature-type">Hash</a></h5>
+								</li>
+								<li>
+									<h5>eth1Timestamp: <a href="types.html#number64" class="tsd-signature-type">number64</a></h5>
+								</li>
+								<li>
+									<h5>deposits: <a href="../interfaces/types.deposit.html" class="tsd-signature-type">Deposit</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isvalidgenesisstate" class="tsd-anchor"></a>
+					<h3>is<wbr>Valid<wbr>Genesis<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Genesis<wbr>State<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/chain/genesis/genesis.ts#L86">chain/genesis/genesis.ts:86</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+								</li>
+								<li>
+									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -182,6 +242,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="chain_genesis.html#getgenesisbeaconstate" class="tsd-kind-icon">get<wbr>Genesis<wbr>Beacon<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="chain_genesis.html#initializebeaconstatefrometh1" class="tsd-kind-icon">initialize<wbr>Beacon<wbr>State<wbr>From<wbr>Eth1</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="chain_genesis.html#isvalidgenesisstate" class="tsd-kind-icon">is<wbr>Valid<wbr>Genesis<wbr>State</a>
 					</li>
 				</ul>
 			</nav>

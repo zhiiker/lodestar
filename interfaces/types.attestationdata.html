@@ -86,10 +86,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#beaconblockroot" class="tsd-kind-icon">beacon<wbr>Block<wbr>Root</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#crosslink" class="tsd-kind-icon">crosslink</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#sourceepoch" class="tsd-kind-icon">source<wbr>Epoch</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#sourceroot" class="tsd-kind-icon">source<wbr>Root</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#targetepoch" class="tsd-kind-icon">target<wbr>Epoch</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#targetroot" class="tsd-kind-icon">target<wbr>Root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#source" class="tsd-kind-icon">source</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.attestationdata.html#target" class="tsd-kind-icon">target</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,10 +98,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="beaconblockroot" class="tsd-anchor"></a>
 					<h3>beacon<wbr>Block<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">beacon<wbr>Block<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></div>
+					<div class="tsd-signature tsd-kind-icon">beacon<wbr>Block<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#hash" class="tsd-signature-type">Hash</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L51">types/misc.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/misc.ts#L68">types/misc.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -113,47 +111,27 @@
 					<div class="tsd-signature tsd-kind-icon">crosslink<span class="tsd-signature-symbol">:</span> <a href="types.crosslink.html" class="tsd-signature-type">Crosslink</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L58">types/misc.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/misc.ts#L73">types/misc.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sourceepoch" class="tsd-anchor"></a>
-					<h3>source<wbr>Epoch</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Epoch<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#epoch" class="tsd-signature-type">Epoch</a></div>
+					<a name="source" class="tsd-anchor"></a>
+					<h3>source</h3>
+					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="types.checkpoint.html" class="tsd-signature-type">Checkpoint</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L53">types/misc.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/misc.ts#L70">types/misc.ts:70</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sourceroot" class="tsd-anchor"></a>
-					<h3>source<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></div>
+					<a name="target" class="tsd-anchor"></a>
+					<h3>target</h3>
+					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="types.checkpoint.html" class="tsd-signature-type">Checkpoint</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L54">types/misc.ts:54</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="targetepoch" class="tsd-anchor"></a>
-					<h3>target<wbr>Epoch</h3>
-					<div class="tsd-signature tsd-kind-icon">target<wbr>Epoch<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#epoch" class="tsd-signature-type">Epoch</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L55">types/misc.ts:55</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="targetroot" class="tsd-anchor"></a>
-					<h3>target<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">target<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes32" class="tsd-signature-type">bytes32</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eafd6a8/packages/lodestar/src/types/misc.ts#L56">types/misc.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4ce7b74/packages/lodestar/src/types/misc.ts#L71">types/misc.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,16 +162,10 @@
 								<a href="types.attestationdata.html#crosslink" class="tsd-kind-icon">crosslink</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="types.attestationdata.html#sourceepoch" class="tsd-kind-icon">source<wbr>Epoch</a>
+								<a href="types.attestationdata.html#source" class="tsd-kind-icon">source</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="types.attestationdata.html#sourceroot" class="tsd-kind-icon">source<wbr>Root</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="types.attestationdata.html#targetepoch" class="tsd-kind-icon">target<wbr>Epoch</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="types.attestationdata.html#targetroot" class="tsd-kind-icon">target<wbr>Root</a>
+								<a href="types.attestationdata.html#target" class="tsd-kind-icon">target</a>
 							</li>
 						</ul>
 					</li>
