@@ -122,13 +122,13 @@
 					<a name="computeactivationexitepoch" class="tsd-anchor"></a>
 					<h3>compute<wbr>Activation<wbr>Exit<wbr>Epoch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Activation<wbr>Exit<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Activation<wbr>Exit<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L31">chain/stateTransition/util/epoch.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L31">chain/stateTransition/util/epoch.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -139,13 +139,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Epoch</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,31 +153,31 @@
 					<a name="computecommittee" class="tsd-anchor"></a>
 					<h3>compute<wbr>Committee</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Committee<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, indices<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span>, seed<span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Committee<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, indices<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span>, seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L29">chain/stateTransition/util/committee.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L29">chain/stateTransition/util/committee.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the [[index]]&#39;th shuffled committee out of a total <a href="../interfaces/_types_wire_.beaconblockrootsrequest.html#count">count</a>
+									<p>Return the [[index]]&#39;th shuffled committee out of a total <a href="../interfaces/util_objects.elementdescription.html#count">count</a>
 									using [[indices]] and [[seed]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>indices: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>indices: <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>seed: <a href="types.html#hash" class="tsd-signature-type">Hash</a></h5>
+									<h5>seed: <span class="tsd-signature-type">Hash</span></h5>
 								</li>
 								<li>
 									<h5>index: <span class="tsd-signature-type">number</span></h5>
@@ -186,7 +186,7 @@
 									<h5>count: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -194,28 +194,28 @@
 					<a name="computecompactvalidator" class="tsd-anchor"></a>
 					<h3>compute<wbr>Compact<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Compact<wbr>Validator<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, validator<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a>, index<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#uint64" class="tsd-signature-type">uint64</a></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Compact<wbr>Validator<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">uint64</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validator.ts#L21">chain/stateTransition/util/validator.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validator.ts#L21">chain/stateTransition/util/validator.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>validator: <a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a></h5>
+									<h5>validator: <span class="tsd-signature-type">Validator</span></h5>
 								</li>
 								<li>
-									<h5>index: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>index: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#uint64" class="tsd-signature-type">uint64</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">uint64</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -223,13 +223,13 @@
 					<a name="computedomain" class="tsd-anchor"></a>
 					<h3>compute<wbr>Domain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Domain<span class="tsd-signature-symbol">(</span>domainType<span class="tsd-signature-symbol">: </span><a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a>, forkVersion<span class="tsd-signature-symbol">?: </span><a href="types.html#version" class="tsd-signature-type">Version</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSDomain</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Domain<span class="tsd-signature-symbol">(</span>domainType<span class="tsd-signature-symbol">: </span><a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a>, forkVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Version</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSDomain</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/domain.ts#L22">chain/stateTransition/util/domain.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/domain.ts#L21">chain/stateTransition/util/domain.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +243,7 @@
 									<h5>domainType: <a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> forkVersion: <a href="types.html#version" class="tsd-signature-type">Version</a><span class="tsd-signature-symbol"> =&nbsp;Buffer.alloc(4)</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> forkVersion: <span class="tsd-signature-type">Version</span><span class="tsd-signature-symbol"> =&nbsp;Buffer.alloc(4)</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BLSDomain</span></h4>
@@ -254,13 +254,13 @@
 					<a name="computeepochofslot" class="tsd-anchor"></a>
 					<h3>compute<wbr>Epoch<wbr>OfSlot</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Epoch<wbr>OfSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, slot<span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Epoch<wbr>OfSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L17">chain/stateTransition/util/epoch.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L17">chain/stateTransition/util/epoch.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,13 +271,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>slot: <a href="types.html#slot" class="tsd-signature-type">Slot</a></h5>
+									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Epoch</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -285,13 +285,13 @@
 					<a name="computeshuffledindex" class="tsd-anchor"></a>
 					<h3>compute<wbr>Shuffled<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Shuffled<wbr>Index<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, index<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a>, indexCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, seed<span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Shuffled<wbr>Index<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span>, indexCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, seed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/seed.ts#L28">chain/stateTransition/util/seed.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/seed.ts#L28">chain/stateTransition/util/seed.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,16 +305,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>index: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>index: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 								<li>
 									<h5>indexCount: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>seed: <a href="types.html#hash" class="tsd-signature-type">Hash</a></h5>
+									<h5>seed: <span class="tsd-signature-type">Hash</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -325,13 +325,13 @@
 					<a name="computestartslotofepoch" class="tsd-anchor"></a>
 					<h3>compute<wbr>Start<wbr>Slot<wbr>OfEpoch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Start<wbr>Slot<wbr>OfEpoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a></li>
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Start<wbr>Slot<wbr>OfEpoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L24">chain/stateTransition/util/epoch.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L24">chain/stateTransition/util/epoch.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,13 +342,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#slot" class="tsd-signature-type">Slot</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Slot</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -356,13 +356,13 @@
 					<a name="decreasebalance" class="tsd-anchor"></a>
 					<h3>decrease<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">decrease<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, index<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a>, delta<span class="tsd-signature-symbol">: </span><a href="types.html#gwei" class="tsd-signature-type">Gwei</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">decrease<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span>, delta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Gwei</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/balance.ts#L50">chain/stateTransition/util/balance.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/balance.ts#L50">chain/stateTransition/util/balance.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,13 +374,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>index: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>index: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 								<li>
-									<h5>delta: <a href="types.html#gwei" class="tsd-signature-type">Gwei</a></h5>
+									<h5>delta: <span class="tsd-signature-type">Gwei</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -391,30 +391,30 @@
 					<a name="getactivevalidatorindices" class="tsd-anchor"></a>
 					<h3>get<wbr>Active<wbr>Validator<wbr>Indices</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Validator<wbr>Indices<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Validator<wbr>Indices<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validator.ts#L52">chain/stateTransition/util/validator.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validator.ts#L52">chain/stateTransition/util/validator.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the sequence of active validator indices at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the sequence of active validator indices at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -422,33 +422,33 @@
 					<a name="getattestationdataslot" class="tsd-anchor"></a>
 					<h3>get<wbr>Attestation<wbr>Data<wbr>Slot</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestation<wbr>Data<wbr>Slot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, data<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attestation<wbr>Data<wbr>Slot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AttestationData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L34">chain/stateTransition/util/attestation.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L33">chain/stateTransition/util/attestation.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the slot corresponding to the attestation <a href="../interfaces/types.attestationdataandcustodybit.html#data">data</a>.</p>
+									<p>Return the slot corresponding to the attestation [[data]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>data: <a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a></h5>
+									<h5>data: <span class="tsd-signature-type">AttestationData</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#slot" class="tsd-signature-type">Slot</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Slot</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -456,36 +456,36 @@
 					<a name="getattestingindices" class="tsd-anchor"></a>
 					<h3>get<wbr>Attesting<wbr>Indices</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Attesting<wbr>Indices<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, data<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a>, bits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BitList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Attesting<wbr>Indices<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AttestationData</span>, bits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BitList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L113">chain/stateTransition/util/attestation.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L112">chain/stateTransition/util/attestation.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the sorted attesting indices corresponding to <a href="../interfaces/types.attestationdataandcustodybit.html#data">data</a> and [[bits]].</p>
+									<p>Return the sorted attesting indices corresponding to [[data]] and [[bits]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>data: <a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a></h5>
+									<h5>data: <span class="tsd-signature-type">AttestationData</span></h5>
 								</li>
 								<li>
 									<h5>bits: <span class="tsd-signature-type">BitList</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -493,13 +493,13 @@
 					<a name="getbeaconproposerindex" class="tsd-anchor"></a>
 					<h3>get<wbr>Beacon<wbr>Proposer<wbr>Index</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Beacon<wbr>Proposer<wbr>Index<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Beacon<wbr>Proposer<wbr>Index<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/proposer.ts#L24">chain/stateTransition/util/proposer.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/proposer.ts#L24">chain/stateTransition/util/proposer.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,13 +510,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidatorIndex</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -524,33 +524,33 @@
 					<a name="getblockroot" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L37">chain/stateTransition/util/blockRoot.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L36">chain/stateTransition/util/blockRoot.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the block root at the start of a recent <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the block root at the start of a recent [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#hash" class="tsd-signature-type">Hash</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Hash</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -558,33 +558,33 @@
 					<a name="getblockrootatslot" class="tsd-anchor"></a>
 					<h3>get<wbr>Block<wbr>Root<wbr>AtSlot</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<wbr>AtSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, slot<span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>Root<wbr>AtSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L28">chain/stateTransition/util/blockRoot.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L27">chain/stateTransition/util/blockRoot.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the block root at a recent <a href="../interfaces/types.beaconblockheader.html#slot">slot</a>.</p>
+									<p>Return the block root at a recent [[slot]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>slot: <a href="types.html#slot" class="tsd-signature-type">Slot</a></h5>
+									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#hash" class="tsd-signature-type">Hash</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Hash</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -592,13 +592,13 @@
 					<a name="getcommitteeassignment" class="tsd-anchor"></a>
 					<h3>get<wbr>Committee<wbr>Assignment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Committee<wbr>Assignment<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a>, validatorIndex<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validator.committeeassignment.html" class="tsd-signature-type">CommitteeAssignment</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Committee<wbr>Assignment<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span>, validatorIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/validator.committeeassignment.html" class="tsd-signature-type">CommitteeAssignment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/duties.ts#L33">chain/stateTransition/util/duties.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/duties.ts#L33">chain/stateTransition/util/duties.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -614,16 +614,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 								<li>
-									<h5>validatorIndex: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>validatorIndex: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/validator.committeeassignment.html" class="tsd-signature-type">CommitteeAssignment</a></h4>
@@ -634,30 +634,30 @@
 					<a name="getcommitteecount" class="tsd-anchor"></a>
 					<h3>get<wbr>Committee<wbr>Count</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Committee<wbr>Count<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Committee<wbr>Count<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L46">chain/stateTransition/util/committee.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L46">chain/stateTransition/util/committee.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the number of committees at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the number of committees at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -668,33 +668,33 @@
 					<a name="getcompactcommitteesroot" class="tsd-anchor"></a>
 					<h3>get<wbr>Compact<wbr>Committees<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Compact<wbr>Committees<wbr>Root<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Compact<wbr>Committees<wbr>Root<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L104">chain/stateTransition/util/committee.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L104">chain/stateTransition/util/committee.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the compact committee root at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the compact committee root at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#hash" class="tsd-signature-type">Hash</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Hash</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -702,13 +702,13 @@
 					<a name="getcrosslinkcommittee" class="tsd-anchor"></a>
 					<h3>get<wbr>Crosslink<wbr>Committee</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Crosslink<wbr>Committee<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a>, shard<span class="tsd-signature-symbol">: </span><a href="types.html#shard" class="tsd-signature-type">Shard</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Crosslink<wbr>Committee<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span>, shard<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L86">chain/stateTransition/util/committee.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L86">chain/stateTransition/util/committee.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -719,19 +719,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 								<li>
-									<h5>shard: <a href="types.html#shard" class="tsd-signature-type">Shard</a></h5>
+									<h5>shard: <span class="tsd-signature-type">Shard</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -739,13 +739,13 @@
 					<a name="getcurrentepoch" class="tsd-anchor"></a>
 					<h3>get<wbr>Current<wbr>Epoch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L38">chain/stateTransition/util/epoch.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L38">chain/stateTransition/util/epoch.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -756,13 +756,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Epoch</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -770,13 +770,13 @@
 					<a name="getdomain" class="tsd-anchor"></a>
 					<h3>get<wbr>Domain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Domain<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, domainType<span class="tsd-signature-symbol">: </span><a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a>, messageEpoch<span class="tsd-signature-symbol">?: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSDomain</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Domain<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, domainType<span class="tsd-signature-symbol">: </span><a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a>, messageEpoch<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSDomain</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/domain.ts#L32">chain/stateTransition/util/domain.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/domain.ts#L31">chain/stateTransition/util/domain.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -787,16 +787,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
 									<h5>domainType: <a href="../enums/constants.domaintype.html" class="tsd-signature-type">DomainType</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> messageEpoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> messageEpoch: <span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BLSDomain</span></h4>
@@ -807,13 +807,13 @@
 					<a name="getindexedattestation" class="tsd-anchor"></a>
 					<h3>get<wbr>Indexed<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Indexed<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, attestation<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Indexed<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, attestation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Attestation</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IndexedAttestation</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L129">chain/stateTransition/util/attestation.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L128">chain/stateTransition/util/attestation.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -824,16 +824,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>attestation: <a href="../interfaces/types.attestation.html" class="tsd-signature-type">Attestation</a></h5>
+									<h5>attestation: <span class="tsd-signature-type">Attestation</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IndexedAttestation</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -841,13 +841,13 @@
 					<a name="getpreviousepoch" class="tsd-anchor"></a>
 					<h3>get<wbr>Previous<wbr>Epoch</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Epoch<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L45">chain/stateTransition/util/epoch.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/epoch.ts#L45">chain/stateTransition/util/epoch.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,13 +858,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Epoch</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -872,33 +872,33 @@
 					<a name="getrandaomix" class="tsd-anchor"></a>
 					<h3>get<wbr>Randao<wbr>Mix</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Randao<wbr>Mix<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Randao<wbr>Mix<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/seed.ts#L59">chain/stateTransition/util/seed.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/seed.ts#L59">chain/stateTransition/util/seed.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the randao mix at a recent <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the randao mix at a recent [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#hash" class="tsd-signature-type">Hash</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Hash</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -906,33 +906,33 @@
 					<a name="getseed" class="tsd-anchor"></a>
 					<h3>get<wbr>Seed</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Seed<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#hash" class="tsd-signature-type">Hash</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Seed<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/seed.ts#L66">chain/stateTransition/util/seed.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/seed.ts#L66">chain/stateTransition/util/seed.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the seed at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the seed at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#hash" class="tsd-signature-type">Hash</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Hash</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -940,30 +940,30 @@
 					<a name="getsharddelta" class="tsd-anchor"></a>
 					<h3>get<wbr>Shard<wbr>Delta</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Shard<wbr>Delta<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Shard<wbr>Delta<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L60">chain/stateTransition/util/committee.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L60">chain/stateTransition/util/committee.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the number of shards to increment [[state.latestStartShard]] at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the number of shards to increment [[state.latestStartShard]] at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -974,33 +974,33 @@
 					<a name="getstartshard" class="tsd-anchor"></a>
 					<h3>get<wbr>Start<wbr>Shard</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Start<wbr>Shard<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#shard" class="tsd-signature-type">Shard</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Start<wbr>Shard<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/committee.ts#L70">chain/stateTransition/util/committee.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/committee.ts#L70">chain/stateTransition/util/committee.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return the start shard of the 0th committee at <a href="../interfaces/types.fork.html#epoch">epoch</a>.</p>
+									<p>Return the start shard of the 0th committee at [[epoch]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#shard" class="tsd-signature-type">Shard</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Shard</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1008,13 +1008,13 @@
 					<a name="gettemporaryblockheader" class="tsd-anchor"></a>
 					<h3>get<wbr>Temporary<wbr>Block<wbr>Header</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Temporary<wbr>Block<wbr>Header<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, block<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconblockheader.html" class="tsd-signature-type">BeaconBlockHeader</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Temporary<wbr>Block<wbr>Header<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlockHeader</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L43">chain/stateTransition/util/blockRoot.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/blockRoot.ts#L42">chain/stateTransition/util/blockRoot.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1025,13 +1025,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>block: <a href="../interfaces/types.beaconblock.html" class="tsd-signature-type">BeaconBlock</a></h5>
+									<h5>block: <span class="tsd-signature-type">BeaconBlock</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/types.beaconblockheader.html" class="tsd-signature-type">BeaconBlockHeader</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BeaconBlockHeader</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1039,13 +1039,13 @@
 					<a name="gettotalactivebalance" class="tsd-anchor"></a>
 					<h3>get<wbr>Total<wbr>Active<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Active<wbr>Balance<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#gwei" class="tsd-signature-type">Gwei</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Active<wbr>Balance<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Gwei</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/balance.ts#L34">chain/stateTransition/util/balance.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/balance.ts#L34">chain/stateTransition/util/balance.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1056,13 +1056,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#gwei" class="tsd-signature-type">Gwei</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Gwei</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1070,13 +1070,13 @@
 					<a name="gettotalbalance" class="tsd-anchor"></a>
 					<h3>get<wbr>Total<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, indices<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="types.html#gwei" class="tsd-signature-type">Gwei</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, indices<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Gwei</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/balance.ts#L23">chain/stateTransition/util/balance.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/balance.ts#L23">chain/stateTransition/util/balance.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1087,13 +1087,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>indices: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>indices: <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="types.html#gwei" class="tsd-signature-type">Gwei</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Gwei</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1101,13 +1101,13 @@
 					<a name="getvalidatorchurnlimit" class="tsd-anchor"></a>
 					<h3>get<wbr>Validator<wbr>Churn<wbr>Limit</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Validator<wbr>Churn<wbr>Limit<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Validator<wbr>Churn<wbr>Limit<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validator.ts#L65">chain/stateTransition/util/validator.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validator.ts#L65">chain/stateTransition/util/validator.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1118,10 +1118,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1132,13 +1132,13 @@
 					<a name="increasebalance" class="tsd-anchor"></a>
 					<h3>increase<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">increase<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, index<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a>, delta<span class="tsd-signature-symbol">: </span><a href="types.html#gwei" class="tsd-signature-type">Gwei</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">increase<wbr>Balance<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span>, delta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Gwei</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/balance.ts#L41">chain/stateTransition/util/balance.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/balance.ts#L41">chain/stateTransition/util/balance.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1149,13 +1149,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>index: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>index: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 								<li>
-									<h5>delta: <a href="types.html#gwei" class="tsd-signature-type">Gwei</a></h5>
+									<h5>delta: <span class="tsd-signature-type">Gwei</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1166,13 +1166,13 @@
 					<a name="initiatevalidatorexit" class="tsd-anchor"></a>
 					<h3>initiate<wbr>Validator<wbr>Exit</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">initiate<wbr>Validator<wbr>Exit<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, index<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">initiate<wbr>Validator<wbr>Exit<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validatorStatus.ts#L26">chain/stateTransition/util/validatorStatus.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validatorStatus.ts#L26">chain/stateTransition/util/validatorStatus.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1184,13 +1184,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>index: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>index: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1201,13 +1201,13 @@
 					<a name="isactivevalidator" class="tsd-anchor"></a>
 					<h3>is<wbr>Active<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Active<wbr>Validator<span class="tsd-signature-symbol">(</span>validator<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Active<wbr>Validator<span class="tsd-signature-symbol">(</span>validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validator.ts#L34">chain/stateTransition/util/validator.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validator.ts#L34">chain/stateTransition/util/validator.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1218,10 +1218,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>validator: <a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a></h5>
+									<h5>validator: <span class="tsd-signature-type">Validator</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1232,13 +1232,13 @@
 					<a name="isproposeratslot" class="tsd-anchor"></a>
 					<h3>is<wbr>Proposer<wbr>AtSlot</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Proposer<wbr>AtSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, slot<span class="tsd-signature-symbol">: </span><a href="types.html#slot" class="tsd-signature-type">Slot</a>, validatorIndex<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Proposer<wbr>AtSlot<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, validatorIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/duties.ts#L65">chain/stateTransition/util/duties.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/duties.ts#L65">chain/stateTransition/util/duties.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1249,16 +1249,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>slot: <a href="types.html#slot" class="tsd-signature-type">Slot</a></h5>
+									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
 								</li>
 								<li>
-									<h5>validatorIndex: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>validatorIndex: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1269,13 +1269,13 @@
 					<a name="isslashableattestationdata" class="tsd-anchor"></a>
 					<h3>is<wbr>Slashable<wbr>Attestation<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Slashable<wbr>Attestation<wbr>Data<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, data1<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a>, data2<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Slashable<wbr>Attestation<wbr>Data<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, data1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AttestationData</span>, data2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AttestationData</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L44">chain/stateTransition/util/attestation.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L43">chain/stateTransition/util/attestation.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1286,13 +1286,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>data1: <a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a></h5>
+									<h5>data1: <span class="tsd-signature-type">AttestationData</span></h5>
 								</li>
 								<li>
-									<h5>data2: <a href="../interfaces/types.attestationdata.html" class="tsd-signature-type">AttestationData</a></h5>
+									<h5>data2: <span class="tsd-signature-type">AttestationData</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1303,13 +1303,13 @@
 					<a name="isslashablevalidator" class="tsd-anchor"></a>
 					<h3>is<wbr>Slashable<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Slashable<wbr>Validator<span class="tsd-signature-symbol">(</span>validator<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a>, epoch<span class="tsd-signature-symbol">: </span><a href="types.html#epoch" class="tsd-signature-type">Epoch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Slashable<wbr>Validator<span class="tsd-signature-symbol">(</span>validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Validator</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validator.ts#L41">chain/stateTransition/util/validator.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validator.ts#L41">chain/stateTransition/util/validator.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1320,10 +1320,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>validator: <a href="../interfaces/types.validator.html" class="tsd-signature-type">Validator</a></h5>
+									<h5>validator: <span class="tsd-signature-type">Validator</span></h5>
 								</li>
 								<li>
-									<h5>epoch: <a href="types.html#epoch" class="tsd-signature-type">Epoch</a></h5>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1334,13 +1334,13 @@
 					<a name="isvalidindexedattestation" class="tsd-anchor"></a>
 					<h3>is<wbr>Valid<wbr>Indexed<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Indexed<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, indexedAttestation<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Indexed<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, indexedAttestation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IndexedAttestation</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L62">chain/stateTransition/util/attestation.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/attestation.ts#L61">chain/stateTransition/util/attestation.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1351,13 +1351,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>indexedAttestation: <a href="../interfaces/types.indexedattestation.html" class="tsd-signature-type">IndexedAttestation</a></h5>
+									<h5>indexedAttestation: <span class="tsd-signature-type">IndexedAttestation</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1368,13 +1368,13 @@
 					<a name="slashvalidator" class="tsd-anchor"></a>
 					<h3>slash<wbr>Validator</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">slash<wbr>Validator<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a>, slashedIndex<span class="tsd-signature-symbol">: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a>, whistleblowerIndex<span class="tsd-signature-symbol">?: </span><a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">slash<wbr>Validator<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, slashedIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span>, whistleblowerIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0aa86f0/packages/lodestar/src/chain/stateTransition/util/validatorStatus.ts#L57">chain/stateTransition/util/validatorStatus.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/57989a2/packages/lodestar/src/chain/stateTransition/util/validatorStatus.ts#L57">chain/stateTransition/util/validatorStatus.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,16 +1386,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../interfaces/_config_interface_.ibeaconconfig.html" class="tsd-signature-type">IBeaconConfig</a></h5>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
 								</li>
 								<li>
-									<h5>state: <a href="../interfaces/types.beaconstate.html" class="tsd-signature-type">BeaconState</a></h5>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
 								</li>
 								<li>
-									<h5>slashedIndex: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a></h5>
+									<h5>slashedIndex: <span class="tsd-signature-type">ValidatorIndex</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> whistleblowerIndex: <a href="types.html#validatorindex" class="tsd-signature-type">ValidatorIndex</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> whistleblowerIndex: <span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
