@@ -88,7 +88,6 @@
 				<h2 id="run">Run</h2>
 				<ol>
 					<li><code>yarn install</code></li>
-					<li><code>git submodule foreach git lfs pull</code></li>
 					<li><code>yarn test</code></li>
 				</ol>
 				<p>Note: to run spec tests execute <code>git submodules foreach git lfs pull</code></p>
@@ -102,8 +101,8 @@
 				<h2 id="usage">Usage</h2>
 				<ol>
 					<li>If you haven&#39;t <code>yarn install</code></li>
-					<li><code>yarn build</code></li>
-					<li><code>./bin/lodestar --help</code></li>
+					<li><code>lerna run build</code></li>
+					<li><code>packages/lodestar/./bin/lodestar --help</code></li>
 				</ol>
 				<h3 id="starting-private-eth1-chain">Starting private eth1 chain</h3>
 				<p><code>./bin/lodestar eth1:dev -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot;</code></p>
