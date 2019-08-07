@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IWalletCommandOptions | @chainsafe/lodestar</title>
+	<title>INetworkRpcEvents | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/cli_commands.html">cli/commands</a>
+					<a href="../modules/network_libp2p.html">network/libp2p</a>
 				</li>
 				<li>
-					<a href="cli_commands.iwalletcommandoptions.html">IWalletCommandOptions</a>
+					<a href="network_libp2p.inetworkrpcevents.html">INetworkRpcEvents</a>
 				</li>
 			</ul>
-			<h1>Interface IWalletCommandOptions</h1>
+			<h1>Interface INetworkRpcEvents</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IWalletCommandOptions</span>
+						<span class="target">INetworkRpcEvents</span>
 					</li>
 				</ul>
 			</section>
@@ -84,7 +84,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="cli_commands.iwalletcommandoptions.html#outputfile" class="tsd-kind-icon">output<wbr>File</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="network_libp2p.inetworkrpcevents.html#peer_connect" class="tsd-kind-icon">peer:connect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="network_libp2p.inetworkrpcevents.html#peer_disconnect" class="tsd-kind-icon">peer:disconnect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="network_libp2p.inetworkrpcevents.html#request" class="tsd-kind-icon">request</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,14 +95,106 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="outputfile" class="tsd-anchor"></a>
-					<h3>output<wbr>File</h3>
-					<div class="tsd-signature tsd-kind-icon">output<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="peer_connect" class="tsd-anchor"></a>
+					<h3>peer:connect</h3>
+					<div class="tsd-signature tsd-kind-icon">peer:connect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e09a0eb/packages/lodestar/src/cli/commands/wallet.ts#L15">cli/commands/wallet.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e09a0eb/packages/lodestar/src/network/libp2p/rpc.ts#L29">network/libp2p/rpc.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peerInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>peerInfo: <span class="tsd-signature-type">PeerInfo</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="peer_disconnect" class="tsd-anchor"></a>
+					<h3>peer:disconnect</h3>
+					<div class="tsd-signature tsd-kind-icon">peer:disconnect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e09a0eb/packages/lodestar/src/network/libp2p/rpc.ts#L30">network/libp2p/rpc.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peerInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>peerInfo: <span class="tsd-signature-type">PeerInfo</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e09a0eb/packages/lodestar/src/network/libp2p/rpc.ts#L31">network/libp2p/rpc.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peerInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span>, method<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_network_.method.html" class="tsd-signature-type">Method</a>, id<span class="tsd-signature-symbol">: </span><a href="../modules/_constants_network_.html#requestid" class="tsd-signature-type">RequestId</a>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>peerInfo: <span class="tsd-signature-type">PeerInfo</span></h5>
+											</li>
+											<li>
+												<h5>method: <a href="../enums/_constants_network_.method.html" class="tsd-signature-type">Method</a></h5>
+											</li>
+											<li>
+												<h5>id: <a href="../modules/_constants_network_.html#requestid" class="tsd-signature-type">RequestId</a></h5>
+											</li>
+											<li>
+												<h5>body: <span class="tsd-signature-type">RequestBody</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -111,60 +205,51 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/cli_commands.html">cli/commands</a>
+						<a href="../modules/network_libp2p.html">network/libp2p</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.beaconnodecommand.html" class="tsd-kind-icon">Beacon<wbr>Node<wbr>Command</a>
+						<a href="../classes/network_libp2p.libp2pnetwork.html" class="tsd-kind-icon">Libp2p<wbr>Network</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.createconfigcommand.html" class="tsd-kind-icon">Create<wbr>Config<wbr>Command</a>
+						<a href="../classes/network_libp2p.networkrpc.html" class="tsd-kind-icon">Network<wbr>Rpc</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.createwalletcommand.html" class="tsd-kind-icon">Create<wbr>Wallet<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.depositcommand.html" class="tsd-kind-icon">Deposit<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.eth1privatenetworkcommand.html" class="tsd-kind-icon">Eth1<wbr>Private<wbr>Network<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/cli_commands.validatorcommand.html" class="tsd-kind-icon">Validator<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="cli_commands.clicommand.html" class="tsd-kind-icon">Cli<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.ibeaconcommandoptions.html" class="tsd-kind-icon">IBeacon<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.icreateconfigoptions.html" class="tsd-kind-icon">ICreate<wbr>Config<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.idepositcommandoptions.html" class="tsd-kind-icon">IDeposit<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.ieth1commandoptions.html" class="tsd-kind-icon">IEth1<wbr>Command<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.ivalidatorcommandoptions.html" class="tsd-kind-icon">IValidator<wbr>Command<wbr>Options</a>
+						<a href="../classes/network_libp2p.peer.html" class="tsd-kind-icon">Peer</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="cli_commands.iwalletcommandoptions.html" class="tsd-kind-icon">IWallet<wbr>Command<wbr>Options</a>
+						<a href="network_libp2p.inetworkrpcevents.html" class="tsd-kind-icon">INetwork<wbr>Rpc<wbr>Events</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="cli_commands.iwalletcommandoptions.html#outputfile" class="tsd-kind-icon">output<wbr>File</a>
+								<a href="network_libp2p.inetworkrpcevents.html#peer_connect" class="tsd-kind-icon">peer:connect</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="network_libp2p.inetworkrpcevents.html#peer_disconnect" class="tsd-kind-icon">peer:disconnect</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="network_libp2p.inetworkrpcevents.html#request" class="tsd-kind-icon">request</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/network_libp2p.html#networkrpceventemitter" class="tsd-kind-icon">Network<wbr>Rpc<wbr>Event<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/network_libp2p.html#createpeerid" class="tsd-kind-icon">create<wbr>Peer<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/network_libp2p.html#createpeerinfo" class="tsd-kind-icon">create<wbr>Peer<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/network_libp2p.html#initializepeerinfo" class="tsd-kind-icon">initialize<wbr>Peer<wbr>Info</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
