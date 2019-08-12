@@ -1,0 +1,518 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BeaconMetrics | @chainsafe/lodestar</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@chainsafe/lodestar</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/metrics.html">metrics</a>
+				</li>
+				<li>
+					<a href="metrics.beaconmetrics.html">BeaconMetrics</a>
+				</li>
+			</ul>
+			<h1>Class BeaconMetrics</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="metrics.metrics-1.html" class="tsd-signature-type">Metrics</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">BeaconMetrics</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/metrics.imetrics.html" class="tsd-signature-type">IMetrics</a></li>
+					<li><a href="../interfaces/metrics.ibeaconmetrics.html" class="tsd-signature-type">IBeaconMetrics</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="metrics.beaconmetrics.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#currentepochlivevalidators" class="tsd-kind-icon">current<wbr>Epoch<wbr>Live<wbr>Validators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#currentfinalizedepoch" class="tsd-kind-icon">current<wbr>Finalized<wbr>Epoch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#currentjustifiedepoch" class="tsd-kind-icon">current<wbr>Justified<wbr>Epoch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#currentslot" class="tsd-kind-icon">current<wbr>Slot</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#peers" class="tsd-kind-icon">peers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#pendingdeposits" class="tsd-kind-icon">pending<wbr>Deposits</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#pendingexits" class="tsd-kind-icon">pending<wbr>Exits</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#previousepochlivevalidators" class="tsd-kind-icon">previous<wbr>Epoch<wbr>Live<wbr>Validators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#previousepochstaleblocks" class="tsd-kind-icon">previous<wbr>Epoch<wbr>Stale<wbr>Blocks</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#previousjustifiedepoch" class="tsd-kind-icon">previous<wbr>Justified<wbr>Epoch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#propagatedattestations" class="tsd-kind-icon">propagated<wbr>Attestations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="metrics.beaconmetrics.html#registry" class="tsd-kind-icon">registry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#reorgeventstotal" class="tsd-kind-icon">reorg<wbr>Events<wbr>Total</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="metrics.beaconmetrics.html#totaldeposits" class="tsd-kind-icon">total<wbr>Deposits</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="metrics.beaconmetrics.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="metrics.beaconmetrics.html#stop" class="tsd-kind-icon">stop</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Beacon<wbr>Metrics<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/metrics.imetricsoptions.html" class="tsd-signature-type">IMetricsOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="metrics.beaconmetrics.html" class="tsd-signature-type">BeaconMetrics</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="metrics.metrics-1.html">Metrics</a>.<a href="metrics.metrics-1.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L24">metrics/beacon.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>opts: <a href="../interfaces/metrics.imetricsoptions.html" class="tsd-signature-type">IMetricsOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="metrics.beaconmetrics.html" class="tsd-signature-type">BeaconMetrics</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentepochlivevalidators" class="tsd-anchor"></a>
+					<h3>current<wbr>Epoch<wbr>Live<wbr>Validators</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Epoch<wbr>Live<wbr>Validators<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#currentepochlivevalidators">currentEpochLiveValidators</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L18">metrics/beacon.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentfinalizedepoch" class="tsd-anchor"></a>
+					<h3>current<wbr>Finalized<wbr>Epoch</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Finalized<wbr>Epoch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#currentfinalizedepoch">currentFinalizedEpoch</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L16">metrics/beacon.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentjustifiedepoch" class="tsd-anchor"></a>
+					<h3>current<wbr>Justified<wbr>Epoch</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Justified<wbr>Epoch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#currentjustifiedepoch">currentJustifiedEpoch</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L15">metrics/beacon.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentslot" class="tsd-anchor"></a>
+					<h3>current<wbr>Slot</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#currentslot">currentSlot</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L13">metrics/beacon.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="peers" class="tsd-anchor"></a>
+					<h3>peers</h3>
+					<div class="tsd-signature tsd-kind-icon">peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#peers">peers</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L12">metrics/beacon.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pendingdeposits" class="tsd-anchor"></a>
+					<h3>pending<wbr>Deposits</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Deposits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#pendingdeposits">pendingDeposits</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L20">metrics/beacon.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pendingexits" class="tsd-anchor"></a>
+					<h3>pending<wbr>Exits</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Exits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#pendingexits">pendingExits</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L21">metrics/beacon.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="previousepochlivevalidators" class="tsd-anchor"></a>
+					<h3>previous<wbr>Epoch<wbr>Live<wbr>Validators</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Epoch<wbr>Live<wbr>Validators<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#previousepochlivevalidators">previousEpochLiveValidators</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L17">metrics/beacon.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="previousepochstaleblocks" class="tsd-anchor"></a>
+					<h3>previous<wbr>Epoch<wbr>Stale<wbr>Blocks</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Epoch<wbr>Stale<wbr>Blocks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#previousepochstaleblocks">previousEpochStaleBlocks</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L23">metrics/beacon.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="previousjustifiedepoch" class="tsd-anchor"></a>
+					<h3>previous<wbr>Justified<wbr>Epoch</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<wbr>Justified<wbr>Epoch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#previousjustifiedepoch">previousJustifiedEpoch</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L14">metrics/beacon.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="propagatedattestations" class="tsd-anchor"></a>
+					<h3>propagated<wbr>Attestations</h3>
+					<div class="tsd-signature tsd-kind-icon">propagated<wbr>Attestations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#propagatedattestations">propagatedAttestations</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L24">metrics/beacon.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="registry" class="tsd-anchor"></a>
+					<h3>registry</h3>
+					<div class="tsd-signature tsd-kind-icon">registry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Registry</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#registry">registry</a></p>
+						<p>Inherited from <a href="metrics.metrics-1.html">Metrics</a>.<a href="metrics.metrics-1.html#registry">registry</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/metrics.ts#L11">metrics/metrics.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="reorgeventstotal" class="tsd-anchor"></a>
+					<h3>reorg<wbr>Events<wbr>Total</h3>
+					<div class="tsd-signature tsd-kind-icon">reorg<wbr>Events<wbr>Total<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Counter</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#reorgeventstotal">reorgEventsTotal</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L19">metrics/beacon.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="totaldeposits" class="tsd-anchor"></a>
+					<h3>total<wbr>Deposits</h3>
+					<div class="tsd-signature tsd-kind-icon">total<wbr>Deposits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Gauge</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/metrics.ibeaconmetrics.html">IBeaconMetrics</a>.<a href="../interfaces/metrics.ibeaconmetrics.html#totaldeposits">totalDeposits</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L22">metrics/beacon.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="metrics.metrics-1.html">Metrics</a>.<a href="metrics.metrics-1.html#start">start</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L96">metrics/beacon.ts:96</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="stop" class="tsd-anchor"></a>
+					<h3>stop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="metrics.metrics-1.html">Metrics</a>.<a href="metrics.metrics-1.html#stop">stop</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/000ba41/packages/lodestar/src/metrics/beacon.ts#L100">metrics/beacon.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/metrics.html">metrics</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="metrics.beaconmetrics.html" class="tsd-kind-icon">Beacon<wbr>Metrics</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="metrics.beaconmetrics.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#currentepochlivevalidators" class="tsd-kind-icon">current<wbr>Epoch<wbr>Live<wbr>Validators</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#currentfinalizedepoch" class="tsd-kind-icon">current<wbr>Finalized<wbr>Epoch</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#currentjustifiedepoch" class="tsd-kind-icon">current<wbr>Justified<wbr>Epoch</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#currentslot" class="tsd-kind-icon">current<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#peers" class="tsd-kind-icon">peers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#pendingdeposits" class="tsd-kind-icon">pending<wbr>Deposits</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#pendingexits" class="tsd-kind-icon">pending<wbr>Exits</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#previousepochlivevalidators" class="tsd-kind-icon">previous<wbr>Epoch<wbr>Live<wbr>Validators</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#previousepochstaleblocks" class="tsd-kind-icon">previous<wbr>Epoch<wbr>Stale<wbr>Blocks</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#previousjustifiedepoch" class="tsd-kind-icon">previous<wbr>Justified<wbr>Epoch</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#propagatedattestations" class="tsd-kind-icon">propagated<wbr>Attestations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="metrics.beaconmetrics.html#registry" class="tsd-kind-icon">registry</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#reorgeventstotal" class="tsd-kind-icon">reorg<wbr>Events<wbr>Total</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="metrics.beaconmetrics.html#totaldeposits" class="tsd-kind-icon">total<wbr>Deposits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="metrics.beaconmetrics.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="metrics.beaconmetrics.html#stop" class="tsd-kind-icon">stop</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="metrics.metrics-1.html" class="tsd-kind-icon">Metrics</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/metrics.ibeaconmetrics.html" class="tsd-kind-icon">IBeacon<wbr>Metrics</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/metrics.imetrics.html" class="tsd-kind-icon">IMetrics</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/metrics.imetricsoptions.html" class="tsd-kind-icon">IMetrics<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/metrics.imetricsserver.html" class="tsd-kind-icon">IMetrics<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/metrics.html#config" class="tsd-kind-icon">config</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
