@@ -64,33 +64,13 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h3 id="chainsafe-eth2-0-projects">ChainSafe ETH2.0 Projects</h3>
-				<p>Note:
-					There is a lot of work being done that are core infrastructural pieces for Eth2.0. Contributions to any of the below repositories would be greatly appreciated. All the libraries are written in TypeScript (or in the process of being converted from pure JS to TypeScript):
-					<br />
-					-- <a href="https://github.com/ChainSafe/Sharding">PM / Meta Repo</a><br />
-					|-- <a href="https://github.com/ChainSafe/lodestar">Beacon Chain</a><br />
-					|-- <a href="https://github.com/ChainSafe/lodestar/tree/master/src/validator">Validator Client</a><br />
-					|-- <a href="https://github.com/ChainSafe/ssz-js">Simple Serialize (SSZ)</a><br />
-					|-- <a href="https://github.com/ChainSafe/bls-js">BLS Signatures and Signature Aggregation</a><br />
-					|-- <a href="https://github.com/ChainSafe/hobbits-ts">Hobbits</a><br />
-				|-- <a href="https://github.com/ChainSafe/gossipsub-js">Gossipsub</a><br /></p>
+				<h1 id="lodestar">Lodestar</h1>
 				<p><a href="https://travis-ci.com/ChainSafe/lodestar"><img src="https://img.shields.io/travis/com/ChainSafe/lodestar/master.svg?label=master&logo=travis" alt="" title="Master Branch (Travis)"></a>
 					<a href="https://discord.gg/aMxzVcr"><img src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&logo=discord" alt="Discord"></a>
-					<a href="https://codecov.io/gh/ChainSafe/lodestar"><img src="https://codecov.io/gh/ChainSafe/lodestar/branch/master/graph/badge.svg" alt="codecov"></a>
-					<a href="https://codeclimate.com/github/ChainSafe/lodestar/maintainability"><img src="https://api.codeclimate.com/v1/badges/678099476c401e1af503/maintainability" alt="Maintainability"></a>
 				<img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.8.1-2e86c1.svg" alt="ETH2.0_Spec_Version 0.8.1"></p>
-				<h1 id="overview">Overview</h1>
-				<p>The goal of this repository is to provide an implementation of the beacon chain. As even the Ethereum Core dev team don&#39;t know how the finalized beacon chain
-				will be implemented, this is our contribution to the effort to transitioning Ethereum from a PoW blockchain to a PoS blockchain.</p>
+				<p>Typescript imlementation of the Eth2.0 beacon chain</p>
 				<h2 id="what-you-need">What you need</h2>
 				<p>You will need to go over the <a href="https://github.com/ethereum/eth2.0-specs">specification</a>. You will also need to have a <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQs">basic understanding of sharding</a>. Note that that the specification is an ongoing document and will get outdated. The reference implementation by the Ethereum development team is written in Python and can be found <a href="https://github.com/ethereum/beacon_chain">here</a>.</p>
-				<h2 id="run">Run</h2>
-				<ol>
-					<li><code>yarn install</code></li>
-					<li><code>yarn test</code></li>
-				</ol>
-				<p>Note: to run spec tests execute <code>git submodules foreach git lfs pull</code></p>
 				<h4 id="generating-flame-graphs-from-spec-tests">Generating flame graphs from spec tests</h4>
 				<p>Example of cpu-profile generation of blocksanity tests in current directory</p>
 				<p><code>GEN_PROFILE_DIR=$PWD mocha -r ./.babel-register &#39;test/spec/sanity/blocks/blocksanity_s_mainnet.test.ts&#39;</code></p>
@@ -113,11 +93,6 @@
 				<h3 id="making-validator-deposit">Making validator deposit</h3>
 				<p><code>./bin/lodestar deposit -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot; -n http://127.0.0.1:8545 -c &lt;depositContractAddress&gt;&gt;</code></p>
 				<p>This will trigger 10 deposits to deposit contract which will trigger beacon chain initialization. Make sure to use same mnemonic which you used to start eth1 network.</p>
-				<h2 id="contributors">Contributors</h2>
-				<p>If you would like to contribute, please submit an issue or talk to us on our <a href="https://discord.gg/yjyvFRP">discord</a>.</p>
-				<h2 id="donations">Donations</h2>
-				<p>We are a local group of Toronto open source developers. As such, all of our open source work is funded by grants. We all take the time out of our hectic lives to contribute to the Ethereum ecosystem.
-				If you want to donate, you can send us ETH at the following address: 0xBceDE714283f348EBB3e5cBaF8A947Cab3C8bE8d</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

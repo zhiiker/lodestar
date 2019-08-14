@@ -64,57 +64,55 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h3 id="chainsafe-eth2-0-projects">ChainSafe ETH2.0 Projects</h3>
-				<p>Note:
-					There is a lot of work being done that are core infrastructural pieces for Eth2.0. Contributions to any of the below repositories would be greatly appreciated. All the libraries are written in TypeScript (or in the process of being converted from pure JS to TypeScript):
-					<br />
-					-- <a href="https://github.com/ChainSafe/Sharding">PM / Meta Repo</a><br />
-					|-- <a href="https://github.com/ChainSafe/lodestar">Beacon Chain</a><br />
-					|-- <a href="https://github.com/ChainSafe/lodestar/tree/master/src/validator">Validator Client</a><br />
-					|-- <a href="https://github.com/ChainSafe/ssz-js">Simple Serialize (SSZ)</a><br />
-					|-- <a href="https://github.com/ChainSafe/bls-js">BLS Signatures and Signature Aggregation</a><br />
-					|-- <a href="https://github.com/ChainSafe/hobbits-ts">Hobbits</a><br />
-				|-- <a href="https://github.com/ChainSafe/gossipsub-js">Gossipsub</a><br /></p>
-				<p><a href="https://travis-ci.com/ChainSafe/lodestar"><img src="https://img.shields.io/travis/com/ChainSafe/lodestar/master.svg?label=master&logo=travis" alt="" title="Master Branch (Travis)"></a>
+				<h1 id="lodestar-monorepo">Lodestar Monorepo</h1>
+				<p><img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.8.1-2e86c1.svg" alt="ETH2.0_Spec_Version 0.8.1">
 					<a href="https://discord.gg/aMxzVcr"><img src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&logo=discord" alt="Discord"></a>
 					<a href="https://codecov.io/gh/ChainSafe/lodestar"><img src="https://codecov.io/gh/ChainSafe/lodestar/branch/master/graph/badge.svg" alt="codecov"></a>
-					<a href="https://codeclimate.com/github/ChainSafe/lodestar/maintainability"><img src="https://api.codeclimate.com/v1/badges/678099476c401e1af503/maintainability" alt="Maintainability"></a>
-				<img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.8.1-2e86c1.svg" alt="ETH2.0_Spec_Version 0.8.1"></p>
-				<h1 id="overview">Overview</h1>
-				<p>The goal of this repository is to provide an implementation of the beacon chain. As even the Ethereum Core dev team don&#39;t know how the finalized beacon chain
-				will be implemented, this is our contribution to the effort to transitioning Ethereum from a PoW blockchain to a PoS blockchain.</p>
-				<h2 id="what-you-need">What you need</h2>
-				<p>You will need to go over the <a href="https://github.com/ethereum/eth2.0-specs">specification</a>. You will also need to have a <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQs">basic understanding of sharding</a>. Note that that the specification is an ongoing document and will get outdated. The reference implementation by the Ethereum development team is written in Python and can be found <a href="https://github.com/ethereum/beacon_chain">here</a>.</p>
-				<h2 id="run">Run</h2>
-				<ol>
-					<li><code>yarn install</code></li>
-					<li><code>yarn test</code></li>
-				</ol>
-				<p>Note: to run spec tests execute <code>git submodules foreach git lfs pull</code></p>
-				<h4 id="generating-flame-graphs-from-spec-tests">Generating flame graphs from spec tests</h4>
-				<p>Example of cpu-profile generation of blocksanity tests in current directory</p>
-				<p><code>GEN_PROFILE_DIR=$PWD mocha -r ./.babel-register &#39;test/spec/sanity/blocks/blocksanity_s_mainnet.test.ts&#39;</code></p>
-				<p>To view results:</p>
-				<pre><code class="language-bash">npm i -g ox
-0x --visualize-cpu-profile ./0\ -\ blocksanity-1561705313935.cpuprofile</code></pre>
-				<p>Open resulting html file in favorite browser.</p>
-				<h2 id="usage">Usage</h2>
-				<ol>
-					<li>If you haven&#39;t <code>yarn install</code></li>
-					<li><code>lerna run build</code></li>
-					<li><code>packages/lodestar/./bin/lodestar --help</code></li>
-				</ol>
-				<h3 id="starting-private-eth1-chain">Starting private eth1 chain</h3>
-				<p><code>./bin/lodestar eth1:dev -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot;</code></p>
-				<p>This will start ganache server on <code>http://127.0.0.1:8545</code>. For more configuration check <code>./bin/lodestar eth1:dev --help</code></p>
-				<h3 id="starting-lodestar-beacon-chain">Starting lodestar beacon chain</h3>
-				<p><code>./bin/lodestar beacon --db test-db --eth1RpcUrl http://127.0.0.1:8545 --depositContract &lt;depositContractAddress&gt;</code></p>
-				<p>You will see deposit contract address in console if you used <code>./bin/lodestar eth1:dev</code>.</p>
-				<h3 id="making-validator-deposit">Making validator deposit</h3>
-				<p><code>./bin/lodestar deposit -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot; -n http://127.0.0.1:8545 -c &lt;depositContractAddress&gt;&gt;</code></p>
-				<p>This will trigger 10 deposits to deposit contract which will trigger beacon chain initialization. Make sure to use same mnemonic which you used to start eth1 network.</p>
+				<a href="https://codeclimate.com/github/ChainSafe/lodestar/maintainability"><img src="https://api.codeclimate.com/v1/badges/678099476c401e1af503/maintainability" alt="Maintainability"></a></p>
+				<p>Welcome to the ChainSafe lodestar monorepo!
+				This repository contains a suite of Ethereum 2.0 packages.</p>
+				<h3 id="-chainsafe-bls"><a href="/packages/bls">@chainsafe/bls</a></h3>
+				<p>Ethereum 2.0 BLS signature verification</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/bls"><img src="https://img.shields.io/npm/v/@chainsafe/bls" alt="npm"></a>
+					<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+				<a href="https://chainsafe.github.io/lodestar/bls"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-ssz"><a href="/packages/ssz">@chainsafe/ssz</a></h3>
+				<p>Simple Serialize</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/ssz"><img src="https://img.shields.io/npm/v/@chainsafe/ssz" alt="npm"></a>
+					<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+				<a href="https://chainsafe.github.io/lodestar/ssz"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-eth2-0-types"><a href="/packages/eth2.0-types">@chainsafe/eth2.0-types</a></h3>
+				<p>Typescript types for Ethereum 2.0 datastructures</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/eth2.0-types"><img src="https://img.shields.io/npm/v/@chainsafe/eth2.0-types" alt="npm"></a>
+					<a href="https://www.gnu.org/licenses/lgpl-3.0"><img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="License: LGPL v3"></a>
+				<a href="https://chainsafe.github.io/lodestar/eth2.0-types"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-eth2-0-params"><a href="/packages/eth2.0-params">@chainsafe/eth2.0-params</a></h3>
+				<p>Beacon chain parameters</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/eth2.0-params"><img src="https://img.shields.io/npm/v/@chainsafe/eth2.0-params" alt="npm"></a>
+					<a href="https://www.gnu.org/licenses/lgpl-3.0"><img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="License: LGPL v3"></a>
+				<a href="https://chainsafe.github.io/lodestar/eth2.0-params"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-eth2-0-ssz-types"><a href="/packages/eth2.0-ssz-types">@chainsafe/eth2.0-ssz-types</a></h3>
+				<p>Beacon chain ssz types</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/eth2.0-ssz-types"><img src="https://img.shields.io/npm/v/@chainsafe/eth2.0-ssz-types" alt="npm"></a>
+					<a href="https://www.gnu.org/licenses/lgpl-3.0"><img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="License: LGPL v3"></a>
+				<a href="https://chainsafe.github.io/lodestar/eth2.0-types"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-eth2-0-config"><a href="/packages/eth2.0-config">@chainsafe/eth2.0-config</a></h3>
+				<p>Beacon chain configuration</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/eth2.0-config"><img src="https://img.shields.io/npm/v/@chainsafe/eth2.0-config" alt="npm"></a>
+					<a href="https://www.gnu.org/licenses/lgpl-3.0"><img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="License: LGPL v3"></a>
+				<a href="https://chainsafe.github.io/lodestar/eth2.0-config"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-eth2-0-spec-test-util"><a href="/packages/eth2.0-spec-test-util">@chainsafe/eth2.0-spec-test-util</a></h3>
+				<p>Ethereum 2.0 spec test utilities</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/eth2.0-spec-test-util"><img src="https://img.shields.io/npm/v/@chainsafe/eth2.0-spec-test-util" alt="npm"></a>
+					<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+				<a href="https://chainsafe.github.io/lodestar/eth2.0-spec-test-util"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
+				<h3 id="-chainsafe-lodestar"><a href="/packages/lodestar">@chainsafe/lodestar</a></h3>
+				<p>Beacon chain implementation</p>
+				<p><a href="https://www.npmjs.com/package/@chainsafe/lodestar"><img src="https://img.shields.io/npm/v/@chainsafe/lodestar" alt="npm"></a>
+					<a href="https://www.gnu.org/licenses/lgpl-3.0"><img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="License: LGPL v3"></a>
+				<a href="https://chainsafe.github.io/lodestar/lodestar"><img src="https://img.shields.io/badge/documentation-typedoc-blue" alt="documentation"></a></p>
 				<h2 id="contributors">Contributors</h2>
-				<p>If you would like to contribute, please submit an issue or talk to us on our <a href="https://discord.gg/yjyvFRP">discord</a>.</p>
+				<p>Read our <a href="/CONTRIBUTING.md">contributors document</a>, <a href="https://github.com/ChainSafe/lodestar/issues/new/choose">submit an issue</a> or talk to us on our <a href="https://discord.gg/yjyvFRP">discord</a>!</p>
 				<h2 id="donations">Donations</h2>
 				<p>We are a local group of Toronto open source developers. As such, all of our open source work is funded by grants. We all take the time out of our hectic lives to contribute to the Ethereum ecosystem.
 				If you want to donate, you can send us ETH at the following address: 0xBceDE714283f348EBB3e5cBaF8A947Cab3C8bE8d</p>
