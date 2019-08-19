@@ -1,0 +1,10 @@
+{
+  "name": "nite-lite",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "@chainsafe/eth2.0-config": "^0.1.0",
+    "bn.js": "^5.0.0"
+  }
+}

@@ -18,6 +18,7 @@ export interface IBeaconSSZTypes {
   Epoch: AnySSZType;
   Shard: AnySSZType;
   ValidatorIndex: AnySSZType;
+  CompactValidator: AnySSZType;
   Gwei: AnySSZType;
   Hash: AnySSZType;
   Version: AnySSZType;
@@ -58,6 +59,8 @@ export interface IBeaconSSZTypes {
   BeaconBlocksResponse: AnyContainerType;
   RecentBeaconBlocksRequest: AnyContainerType;
   RecentBeaconBlocksResponse: AnyContainerType;
+  // light client
+  LightClientUpdate: AnyContainerType;
 }
 
 export const typeNames: (keyof IBeaconSSZTypes)[] = [
@@ -119,4 +122,6 @@ export const typeNames: (keyof IBeaconSSZTypes)[] = [
   "BeaconBlocksResponse",
   "RecentBeaconBlocksRequest",
   "RecentBeaconBlocksResponse",
+  // light client
+  "LightClientUpdate",
 ];

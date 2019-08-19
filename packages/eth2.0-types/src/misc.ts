@@ -7,6 +7,7 @@ import {BitList} from "@chainsafe/bit-utils";
 import {
   BLSPubkey,
   BLSSignature,
+  CompactValidator,
   bool,
   Epoch,
   Gwei,
@@ -131,7 +132,7 @@ export interface DepositData {
 
 export interface CompactCommittee {
   pubkeys: BLSPubkey[];
-  compactValidators: uint64[];
+  compactValidators: CompactValidator[];
 }
 
 export interface BeaconBlockHeader {

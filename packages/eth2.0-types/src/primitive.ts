@@ -27,6 +27,7 @@ export type Slot = number64;
 export type Epoch = number64;
 export type Shard = number64;
 export type ValidatorIndex = number64;
+export type CompactValidator = uint64;
 export type Gwei = uint64;
 export type Hash = bytes32;
 export type Version = bytes4;
