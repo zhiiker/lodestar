@@ -73,12 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="logger.abstractlogger.html" class="tsd-signature-type">AbstractLogger</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">WinstonLogger</span>
-							</li>
-						</ul>
+						<span class="target">WinstonLogger</span>
 					</li>
 				</ul>
 			</section>
@@ -101,19 +96,27 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="logger.winstonlogger.html#_level" class="tsd-kind-icon">_level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="logger.winstonlogger.html#_silent" class="tsd-kind-icon">_silent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="logger.winstonlogger.html#winston" class="tsd-kind-icon">winston</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="logger.winstonlogger.html#level" class="tsd-kind-icon">level</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="logger.winstonlogger.html#silent" class="tsd-kind-icon">silent</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="logger.winstonlogger.html#child" class="tsd-kind-icon">child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="logger.winstonlogger.html#createlogentry" class="tsd-kind-icon">create<wbr>Log<wbr>Entry</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#debug" class="tsd-kind-icon">debug</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#info" class="tsd-kind-icon">info</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#setloglevel" class="tsd-kind-icon">set<wbr>Log<wbr>Level</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#silent" class="tsd-kind-icon">silent</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="logger.winstonlogger.html#warn" class="tsd-kind-icon">warn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="logger.winstonlogger.html#debug" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="logger.winstonlogger.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="logger.winstonlogger.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="logger.winstonlogger.html#warn" class="tsd-kind-icon">warn</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,15 +128,21 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Winston<wbr>Logger<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Winston<wbr>Logger<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L10">logger/winston.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L11">logger/winston.ts:11</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></h4>
 						</li>
 					</ul>
@@ -142,18 +151,129 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_level" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _level</h3>
+					<div class="tsd-signature tsd-kind-icon">_level<span class="tsd-signature-symbol">:</span> <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L10">logger/winston.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_silent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _silent</h3>
+					<div class="tsd-signature tsd-kind-icon">_silent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L11">logger/winston.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="winston" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> winston</h3>
 					<div class="tsd-signature tsd-kind-icon">winston<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L10">logger/winston.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L9">logger/winston.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="level" class="tsd-anchor"></a>
+					<h3>level</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> level<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> level<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">: </span><a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L75">logger/winston.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L71">logger/winston.ts:71</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>level: <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="silent" class="tsd-anchor"></a>
+					<h3>silent</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> silent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> silent<span class="tsd-signature-symbol">(</span>silent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L82">logger/winston.ts:82</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L79">logger/winston.ts:79</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>silent: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="child" class="tsd-anchor"></a>
+					<h3>child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">child<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#child">child</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L86">logger/winston.ts:86</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../interfaces/logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="createlogentry" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Log<wbr>Entry</h3>
@@ -164,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L49">logger/winston.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L60">logger/winston.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,19 +303,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3>debug</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#debug">debug</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#debug">debug</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L33">logger/winston.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L44">logger/winston.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -211,19 +330,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="error" class="tsd-anchor"></a>
 					<h3>error</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#error">error</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#error">error</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L37">logger/winston.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L52">logger/winston.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,19 +357,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="info" class="tsd-anchor"></a>
 					<h3>info</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#info">info</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#info">info</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L41">logger/winston.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L48">logger/winston.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -267,69 +384,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="setloglevel" class="tsd-anchor"></a>
-					<h3>set<wbr>Log<wbr>Level</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Log<wbr>Level<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">: </span><a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#setloglevel">setLogLevel</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#setloglevel">setLogLevel</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L57">logger/winston.ts:57</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>level: <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="silent" class="tsd-anchor"></a>
-					<h3>silent</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">(</span>silent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#silent">silent</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#silent">silent</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L61">logger/winston.ts:61</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>silent: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="warn" class="tsd-anchor"></a>
 					<h3>warn</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">warn<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/logger.ilogger.html">ILogger</a>.<a href="../interfaces/logger.ilogger.html#warn">warn</a></p>
-								<p>Overrides <a href="logger.abstractlogger.html">AbstractLogger</a>.<a href="logger.abstractlogger.html#warn">warn</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/winston.ts#L45">logger/winston.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/winston.ts#L56">logger/winston.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,9 +429,6 @@
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="../enums/logger.loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="logger.abstractlogger.html" class="tsd-kind-icon">Abstract<wbr>Logger</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
@@ -375,27 +438,36 @@
 								<a href="logger.winstonlogger.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="logger.winstonlogger.html#_level" class="tsd-kind-icon">_level</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="logger.winstonlogger.html#_silent" class="tsd-kind-icon">_silent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="logger.winstonlogger.html#winston" class="tsd-kind-icon">winston</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="logger.winstonlogger.html#level" class="tsd-kind-icon">level</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="logger.winstonlogger.html#silent" class="tsd-kind-icon">silent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="logger.winstonlogger.html#child" class="tsd-kind-icon">child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="logger.winstonlogger.html#createlogentry" class="tsd-kind-icon">create<wbr>Log<wbr>Entry</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="logger.winstonlogger.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="logger.winstonlogger.html#error" class="tsd-kind-icon">error</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="logger.winstonlogger.html#info" class="tsd-kind-icon">info</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="logger.winstonlogger.html#setloglevel" class="tsd-kind-icon">set<wbr>Log<wbr>Level</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="logger.winstonlogger.html#silent" class="tsd-kind-icon">silent</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="logger.winstonlogger.html#warn" class="tsd-kind-icon">warn</a>
 							</li>
 						</ul>
@@ -404,6 +476,15 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/logger.ilogger.html" class="tsd-kind-icon">ILogger</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/logger.iloggeroptions.html" class="tsd-kind-icon">ILogger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/logger.html#loglevels" class="tsd-kind-icon">Log<wbr>Levels</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/logger.html#defaultloglevel" class="tsd-kind-icon">default<wbr>Log<wbr>Level</a>
 					</li>
 				</ul>
 			</nav>

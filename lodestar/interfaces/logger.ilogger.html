@@ -80,7 +80,6 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/logger.abstractlogger.html" class="tsd-signature-type">AbstractLogger</a></li>
 					<li><a href="../classes/logger.winstonlogger.html" class="tsd-signature-type">WinstonLogger</a></li>
 				</ul>
 			</section>
@@ -89,13 +88,19 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="logger.ilogger.html#level" class="tsd-kind-icon">level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="logger.ilogger.html#silent" class="tsd-kind-icon">silent</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#child" class="tsd-kind-icon">child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#debug" class="tsd-kind-icon">debug</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#error" class="tsd-kind-icon">error</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#info" class="tsd-kind-icon">info</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#setloglevel" class="tsd-kind-icon">set<wbr>Log<wbr>Level</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#silent" class="tsd-kind-icon">silent</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="logger.ilogger.html#warn" class="tsd-kind-icon">warn</a></li>
 							</ul>
 						</section>
@@ -103,7 +108,53 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="level" class="tsd-anchor"></a>
+					<h3>level</h3>
+					<div class="tsd-signature tsd-kind-icon">level<span class="tsd-signature-symbol">:</span> <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L27">logger/interface.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="silent" class="tsd-anchor"></a>
+					<h3>silent</h3>
+					<div class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L28">logger/interface.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="child" class="tsd-anchor"></a>
+					<h3>child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">child<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="logger.ilogger.html" class="tsd-signature-type">ILogger</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L35">logger/interface.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="logger.iloggeroptions.html" class="tsd-signature-type">ILoggerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="logger.ilogger.html" class="tsd-signature-type">ILogger</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3>debug</h3>
@@ -114,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L13">logger/interface.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L33">logger/interface.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -140,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L12">logger/interface.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L32">logger/interface.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L10">logger/interface.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L30">logger/interface.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,67 +234,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setloglevel" class="tsd-anchor"></a>
-					<h3>set<wbr>Log<wbr>Level</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Log<wbr>Level<span class="tsd-signature-symbol">(</span>level<span class="tsd-signature-symbol">: </span><a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L19">logger/interface.ts:19</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Should change which log levels are recorded.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>level: <a href="../enums/logger.loglevel.html" class="tsd-signature-type">LogLevel</a></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="silent" class="tsd-anchor"></a>
-					<h3>silent</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">(</span>silent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L27">logger/interface.ts:27</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Disables all logging. Setting it to true is same as setting <a href="logger.ilogger.html#setloglevel">setLogLevel</a>
-									with <a href="../enums/logger.loglevel.html#none">LogLevel.NONE</a></p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>silent: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="warn" class="tsd-anchor"></a>
 					<h3>warn</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -253,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/490aadb/packages/lodestar/src/logger/interface.ts#L11">logger/interface.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e4c45b5/packages/lodestar/src/logger/interface.ts#L31">logger/interface.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,9 +278,6 @@
 						<a href="../enums/logger.loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/logger.abstractlogger.html" class="tsd-kind-icon">Abstract<wbr>Logger</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/logger.winstonlogger.html" class="tsd-kind-icon">Winston<wbr>Logger</a>
 					</li>
 				</ul>
@@ -298,6 +285,15 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="logger.ilogger.html" class="tsd-kind-icon">ILogger</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="logger.ilogger.html#level" class="tsd-kind-icon">level</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="logger.ilogger.html#silent" class="tsd-kind-icon">silent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="logger.ilogger.html#child" class="tsd-kind-icon">child</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="logger.ilogger.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
@@ -308,18 +304,21 @@
 								<a href="logger.ilogger.html#info" class="tsd-kind-icon">info</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="logger.ilogger.html#setloglevel" class="tsd-kind-icon">set<wbr>Log<wbr>Level</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="logger.ilogger.html#silent" class="tsd-kind-icon">silent</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="logger.ilogger.html#warn" class="tsd-kind-icon">warn</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="logger.iloggeroptions.html" class="tsd-kind-icon">ILogger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/logger.html#loglevels" class="tsd-kind-icon">Log<wbr>Levels</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/logger.html#defaultloglevel" class="tsd-kind-icon">default<wbr>Log<wbr>Level</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
