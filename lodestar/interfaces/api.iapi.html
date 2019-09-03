@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WSServerOpts | @chainsafe/lodestar</title>
+	<title>IApi | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc_transport.html">rpc/transport</a>
+					<a href="../modules/api.html">api</a>
 				</li>
 				<li>
-					<a href="rpc_transport.wsserveropts.html">WSServerOpts</a>
+					<a href="api.iapi.html">IApi</a>
 				</li>
 			</ul>
-			<h1>Interface WSServerOpts</h1>
+			<h1>Interface IApi</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WSServerOpts</span>
+						<span class="target">IApi</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="api_rpc.ivalidatorapi.html" class="tsd-signature-type">IValidatorApi</a>
+							</li>
+							<li>
+								<a href="api_rpc.ibeaconapi.html" class="tsd-signature-type">IBeaconApi</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,7 +92,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="rpc_transport.wsserveropts.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="api.iapi.html#namespace" class="tsd-kind-icon">namespace</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,14 +101,19 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3>port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="namespace" class="tsd-anchor"></a>
+					<h3>namespace</h3>
+					<div class="tsd-signature tsd-kind-icon">namespace<span class="tsd-signature-symbol">:</span> <a href="../enums/_api_index_.apinamespace.html" class="tsd-signature-type">ApiNamespace</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/ws.ts#L12">rpc/transport/ws.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/interface.ts#L35">api/interface.ts:35</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Name space for API commands</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -111,36 +124,30 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/rpc_transport.html">rpc/transport</a>
+						<a href="../modules/api.html">api</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/rpc_transport.transporttype.html" class="tsd-kind-icon">Transport<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/rpc_transport.messagerequest.html" class="tsd-kind-icon">Message<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.wsserver.html" class="tsd-kind-icon">WSServer</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="rpc_transport.wsserveropts.html" class="tsd-kind-icon">WSServer<wbr>Opts</a>
+						<a href="api.iapi.html" class="tsd-kind-icon">IApi</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="rpc_transport.wsserveropts.html#port" class="tsd-kind-icon">port</a>
+								<a href="api.iapi.html#namespace" class="tsd-kind-icon">namespace</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="api.iapiconstructor.html" class="tsd-kind-icon">IApi<wbr>Constructor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="api.iapimodules.html" class="tsd-kind-icon">IApi<wbr>Modules</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

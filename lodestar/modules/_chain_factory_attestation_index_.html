@@ -74,6 +74,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chain_factory_attestation_index_.html#assembleattestation" class="tsd-kind-icon">assemble<wbr>Attestation</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chain_factory_attestation_index_.html#getaggregationbits" class="tsd-kind-icon">get<wbr>Aggregation<wbr>Bits</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chain_factory_attestation_index_.html#getemptyattestationbitlist" class="tsd-kind-icon">get<wbr>Empty<wbr>Attestation<wbr>Bit<wbr>List</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,22 +87,27 @@
 					<a name="assembleattestation" class="tsd-anchor"></a>
 					<h3>assemble<wbr>Attestation</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Attestation<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, db<span class="tsd-signature-symbol">: </span><a href="../classes/db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDb</a>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, headBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, shard<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IndexedAttestation</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Attestation<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, headBlock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span>, validatorIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, shard<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attestation</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/chain/factory/attestation/index.ts#L7">chain/factory/attestation/index.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/chain/factory/attestation/index.ts#L10">chain/factory/attestation/index.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
-								</li>
-								<li>
-									<h5>db: <a href="../classes/db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDb</a></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
@@ -109,13 +116,74 @@
 									<h5>headBlock: <span class="tsd-signature-type">BeaconBlock</span></h5>
 								</li>
 								<li>
+									<h5>validatorIndex: <span class="tsd-signature-type">ValidatorIndex</span></h5>
+								</li>
+								<li>
 									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
 								</li>
 								<li>
 									<h5>shard: <span class="tsd-signature-type">Shard</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IndexedAttestation</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attestation</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getaggregationbits" class="tsd-anchor"></a>
+					<h3>get<wbr>Aggregation<wbr>Bits</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Aggregation<wbr>Bits<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, shard<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span>, validatorIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BitList</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/chain/factory/attestation/index.ts#L32">chain/factory/attestation/index.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
+								</li>
+								<li>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
+								</li>
+								<li>
+									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
+								</li>
+								<li>
+									<h5>shard: <span class="tsd-signature-type">Shard</span></h5>
+								</li>
+								<li>
+									<h5>validatorIndex: <span class="tsd-signature-type">ValidatorIndex</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BitList</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getemptyattestationbitlist" class="tsd-anchor"></a>
+					<h3>get<wbr>Empty<wbr>Attestation<wbr>Bit<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Empty<wbr>Attestation<wbr>Bit<wbr>List<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BitList</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/chain/factory/attestation/index.ts#L45">chain/factory/attestation/index.ts:45</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BitList</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -136,6 +204,12 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_chain_factory_attestation_index_.html#assembleattestation" class="tsd-kind-icon">assemble<wbr>Attestation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_chain_factory_attestation_index_.html#getaggregationbits" class="tsd-kind-icon">get<wbr>Aggregation<wbr>Bits</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_chain_factory_attestation_index_.html#getemptyattestationbitlist" class="tsd-kind-icon">get<wbr>Empty<wbr>Attestation<wbr>Bit<wbr>List</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransportType | @chainsafe/lodestar</title>
+	<title>&quot;api/impl/validator/produceAttestation&quot; | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc_transport.html">rpc/transport</a>
-				</li>
-				<li>
-					<a href="rpc_transport.transporttype.html">TransportType</a>
+					<a href="_api_impl_validator_produceattestation_.html">&quot;api/impl/validator/produceAttestation&quot;</a>
 				</li>
 			</ul>
-			<h1>Enumeration TransportType</h1>
+			<h1>External module &quot;api/impl/validator/produceAttestation&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -74,36 +71,58 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="rpc_transport.transporttype.html#http" class="tsd-kind-icon">HTTP</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="rpc_transport.transporttype.html#ws" class="tsd-kind-icon">WS</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_impl_validator_produceattestation_.html#produceattestation" class="tsd-kind-icon">produce<wbr>Attestation</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="http" class="tsd-anchor"></a>
-					<h3>HTTP</h3>
-					<div class="tsd-signature tsd-kind-icon">HTTP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;http&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/index.ts#L9">rpc/transport/index.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="ws" class="tsd-anchor"></a>
-					<h3>WS</h3>
-					<div class="tsd-signature tsd-kind-icon">WS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;&quot;ws&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/index.ts#L8">rpc/transport/index.ts:8</a></li>
-						</ul>
-					</aside>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="produceattestation" class="tsd-anchor"></a>
+					<h3>produce<wbr>Attestation</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">produce<wbr>Attestation<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, validatorPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSPubkey</span>, shard<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Shard</span>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attestation</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/impl/validator/produceAttestation.ts#L7">api/impl/validator/produceAttestation.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>chain<span class="tsd-signature-symbol">: </span><a href="../interfaces/_chain_interface_.ibeaconchain.html" class="tsd-signature-type">IBeaconChain</a></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>validatorPubKey: <span class="tsd-signature-type">BLSPubkey</span></h5>
+								</li>
+								<li>
+									<h5>shard: <span class="tsd-signature-type">Shard</span></h5>
+								</li>
+								<li>
+									<h5>slot: <span class="tsd-signature-type">Slot</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Attestation</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -114,38 +133,14 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/rpc_transport.html">rpc/transport</a>
+						<a href="_api_impl_validator_produceattestation_.html">"api/impl/validator/produce<wbr>Attestation"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="rpc_transport.transporttype.html" class="tsd-kind-icon">Transport<wbr>Type</a>
-						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="rpc_transport.transporttype.html#http" class="tsd-kind-icon">HTTP</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="rpc_transport.transporttype.html#ws" class="tsd-kind-icon">WS</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/rpc_transport.messagerequest.html" class="tsd-kind-icon">Message<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.wsserver.html" class="tsd-kind-icon">WSServer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_transport.wsserveropts.html" class="tsd-kind-icon">WSServer<wbr>Opts</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_impl_validator_produceattestation_.html#produceattestation" class="tsd-kind-icon">produce<wbr>Attestation</a>
 					</li>
 				</ul>
 			</nav>

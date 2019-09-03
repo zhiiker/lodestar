@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BeaconApi | @chainsafe/lodestar</title>
+	<title>IBeaconApi | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc_api.html">rpc/api</a>
+					<a href="../modules/api_rpc.html">api/rpc</a>
 				</li>
 				<li>
-					<a href="rpc_api.beaconapi.html">BeaconApi</a>
+					<a href="api_rpc.ibeaconapi.html">IBeaconApi</a>
 				</li>
 			</ul>
-			<h1>Class BeaconApi</h1>
+			<h1>Interface IBeaconApi</h1>
 		</div>
 	</div>
 </header>
@@ -73,240 +73,205 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">BeaconApi</span>
+						<a href="api.iapi.html" class="tsd-signature-type">IApi</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IBeaconApi</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implements</h3>
+				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/rpc_api.ibeaconapi.html" class="tsd-signature-type">IBeaconApi</a></li>
+					<li><a href="../classes/api_rpc.beaconapi.html" class="tsd-signature-type">BeaconApi</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_api.beaconapi.html#chain" class="tsd-kind-icon">chain</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_api.beaconapi.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_api.beaconapi.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#namespace" class="tsd-kind-icon">namespace</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="api_rpc.ibeaconapi.html#namespace" class="tsd-kind-icon">namespace</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getfork" class="tsd-kind-icon">get<wbr>Fork</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getgenesistime" class="tsd-kind-icon">get<wbr>Genesis<wbr>Time</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_api.beaconapi.html#getsyncingstatus" class="tsd-kind-icon">get<wbr>Syncing<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getfork" class="tsd-kind-icon">get<wbr>Fork</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getgenesistime" class="tsd-kind-icon">get<wbr>Genesis<wbr>Time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getsyncingstatus" class="tsd-kind-icon">get<wbr>Syncing<wbr>Status</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Beacon<wbr>Api<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="rpc_api.beaconapi.html" class="tsd-signature-type">BeaconApi</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L17">rpc/api/beacon/beacon.ts:17</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>opts: <span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>chain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>db<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="rpc_api.beaconapi.html" class="tsd-signature-type">BeaconApi</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="chain" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> chain</h3>
-					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="chain.beaconchain.html" class="tsd-signature-type">BeaconChain</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L16">rpc/api/beacon/beacon.ts:16</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="config" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config</h3>
-					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBeaconConfig</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L15">rpc/api/beacon/beacon.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="db" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="db_api_beacon.beacondb.html" class="tsd-signature-type">BeaconDb</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L17">rpc/api/beacon/beacon.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="namespace" class="tsd-anchor"></a>
 					<h3>namespace</h3>
-					<div class="tsd-signature tsd-kind-icon">namespace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">namespace<span class="tsd-signature-symbol">:</span> <a href="../enums/_api_index_.apinamespace.html" class="tsd-signature-type">ApiNamespace</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#namespace">namespace</a></p>
+						<p>Inherited from <a href="api.iapi.html">IApi</a>.<a href="api.iapi.html#namespace">namespace</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L13">rpc/api/beacon/beacon.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/interface.ts#L35">api/interface.ts:35</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Name space for API commands</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getbeaconstate" class="tsd-anchor"></a>
 					<h3>get<wbr>Beacon<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Beacon<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getbeaconstate">getBeaconState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L46">rpc/api/beacon/beacon.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L48">api/rpc/api/beacon/interface.ts:48</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns latest beacon state</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getchainhead" class="tsd-anchor"></a>
 					<h3>get<wbr>Chain<wbr>Head</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getchainhead">getChainHead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L50">rpc/api/beacon/beacon.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L43">api/rpc/api/beacon/interface.ts:43</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the current chain head</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getclientversion" class="tsd-anchor"></a>
 					<h3>get<wbr>Client<wbr>Version</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Client<wbr>Version<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bytes32</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getclientversion">getClientVersion</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L27">rpc/api/beacon/beacon.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L16">api/rpc/api/beacon/interface.ts:16</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests that the BeaconNode identify information about its
+									implementation in a format similar to a HTTP User-Agent field.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">bytes32</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An ASCII-encoded hex string which
+							uniquely defines the implementation of the BeaconNode and its current software version.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getfork" class="tsd-anchor"></a>
 					<h3>get<wbr>Fork</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Fork<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Fork</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getfork">getFork</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L31">rpc/api/beacon/beacon.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L21">api/rpc/api/beacon/interface.ts:21</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests the BeaconNode to provide which fork version it is currently on.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Fork</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getgenesistime" class="tsd-anchor"></a>
 					<h3>get<wbr>Genesis<wbr>Time</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Genesis<wbr>Time<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number64</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getgenesistime">getGenesisTime</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L36">rpc/api/beacon/beacon.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L29">api/rpc/api/beacon/interface.ts:29</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests the genesis_time parameter from the BeaconNode,
+									which should be consistent across all BeaconNodes that follow the same beacon chain.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number64</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The genesis_time,
+							which is a fairly static configuration option for the BeaconNode.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getsyncingstatus" class="tsd-anchor"></a>
 					<h3>get<wbr>Syncing<wbr>Status</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Syncing<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">SyncingStatus</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_api.ibeaconapi.html">IBeaconApi</a>.<a href="../interfaces/rpc_api.ibeaconapi.html#getsyncingstatus">getSyncingStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/api/beacon/beacon.ts#L40">rpc/api/beacon/beacon.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L38">api/rpc/api/beacon/interface.ts:38</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests the BeaconNode to describe if it&#39;s currently syncing or not,
+										and if it is, what block it is up to.
+									This is modelled after the Eth1.0 JSON-RPC eth_syncing call.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">SyncingStatus</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Either false if the node is not syncing,
+							or a SyncingStatus object if it is.</p>
 						</li>
 					</ul>
 				</section>
@@ -319,68 +284,59 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/rpc_api.html">rpc/api</a>
+						<a href="../modules/api_rpc.html">api/rpc</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/api_rpc.beaconapi.html" class="tsd-kind-icon">Beacon<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/api_rpc.jsonrpc.html" class="tsd-kind-icon">Json<wbr>Rpc</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/api_rpc.validatorapi.html" class="tsd-kind-icon">Validator<wbr>Api</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="rpc_api.beaconapi.html" class="tsd-kind-icon">Beacon<wbr>Api</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="api_rpc.ibeaconapi.html" class="tsd-kind-icon">IBeacon<wbr>Api</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="api_rpc.ibeaconapi.html#namespace" class="tsd-kind-icon">namespace</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_api.beaconapi.html#chain" class="tsd-kind-icon">chain</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_api.beaconapi.html#config" class="tsd-kind-icon">config</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_api.beaconapi.html#db" class="tsd-kind-icon">db</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#namespace" class="tsd-kind-icon">namespace</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getfork" class="tsd-kind-icon">get<wbr>Fork</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getgenesistime" class="tsd-kind-icon">get<wbr>Genesis<wbr>Time</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getfork" class="tsd-kind-icon">get<wbr>Fork</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getgenesistime" class="tsd-kind-icon">get<wbr>Genesis<wbr>Time</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_api.beaconapi.html#getsyncingstatus" class="tsd-kind-icon">get<wbr>Syncing<wbr>Status</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="api_rpc.ibeaconapi.html#getsyncingstatus" class="tsd-kind-icon">get<wbr>Syncing<wbr>Status</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="rpc_api.validatorapi.html" class="tsd-kind-icon">Validator<wbr>Api</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="api_rpc.irpcoptions.html" class="tsd-kind-icon">IRpc<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_api.iapi.html" class="tsd-kind-icon">IApi</a>
+						<a href="api_rpc.ivalidatorapi.html" class="tsd-kind-icon">IValidator<wbr>Api</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_api.iapiconstructor.html" class="tsd-kind-icon">IApi<wbr>Constructor</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_api.ibeaconapi.html" class="tsd-kind-icon">IBeacon<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_api.ivalidatorapi.html" class="tsd-kind-icon">IValidator<wbr>Api</a>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/api_rpc.html#rpcoptions" class="tsd-kind-icon">Rpc<wbr>Options</a>
 					</li>
 				</ul>
 			</nav>

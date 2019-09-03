@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JSONRPC | @chainsafe/lodestar</title>
+	<title>JsonRpc | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,32 +56,31 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc_protocol.html">rpc/protocol</a>
+					<a href="../modules/api_rpc.html">api/rpc</a>
 				</li>
 				<li>
-					<a href="rpc_protocol.jsonrpc.html">JSONRPC</a>
+					<a href="api_rpc.jsonrpc.html">JsonRpc</a>
 				</li>
 			</ul>
-			<h1>Class JSONRPC</h1>
+			<h1>Class JsonRpc</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>JSON-RPC over some transport</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">JSONRPC</span>
+						<span class="target">JsonRpc</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/node.service.html" class="tsd-signature-type">Service</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -91,20 +90,24 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="rpc_protocol.jsonrpc.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="api_rpc.jsonrpc.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_protocol.jsonrpc.html#transports" class="tsd-kind-icon">transports</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="api_rpc.jsonrpc.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="api_rpc.jsonrpc.html#opts" class="tsd-kind-icon">opts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="api_rpc.jsonrpc.html#transports" class="tsd-kind-icon">transports</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_protocol.jsonrpc.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_protocol.jsonrpc.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="api_rpc.jsonrpc.html#setupapis" class="tsd-kind-icon">setupAPIs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="api_rpc.jsonrpc.html#setuptransports" class="tsd-kind-icon">setup<wbr>Transports</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="api_rpc.jsonrpc.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="api_rpc.jsonrpc.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,52 +119,110 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new JSONRPC<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rpc_options_.ipublicapioptions.html" class="tsd-signature-type">IPublicApiOptions</a><span class="tsd-signature-symbol">&gt;</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="rpc_protocol.jsonrpc.html" class="tsd-signature-type">JSONRPC</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Json<wbr>Rpc<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/api_rpc.irpcoptions.html" class="tsd-signature-type">IRpcOptions</a><span class="tsd-signature-symbol">&gt;</span>, modules<span class="tsd-signature-symbol">: </span><a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="api_rpc.jsonrpc.html" class="tsd-signature-type">JsonRpc</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/protocol/jsonRpc.ts#L19">rpc/protocol/jsonRpc.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L24">api/rpc/index.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rpc_options_.ipublicapioptions.html" class="tsd-signature-type">IPublicApiOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>opts: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/api_rpc.irpcoptions.html" class="tsd-signature-type">IRpcOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>apis<span class="tsd-signature-symbol">: </span><a href="../interfaces/rpc_api.iapi.html" class="tsd-signature-type">IApi</a><span class="tsd-signature-symbol">[]</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>transports<span class="tsd-signature-symbol">: </span><a href="../interfaces/rpc_protocol.likesocketserver.html" class="tsd-signature-type">LikeSocketServer</a><span class="tsd-signature-symbol">[]</span></h5>
-										</li>
-									</ul>
+									<h5>modules: <a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="rpc_protocol.jsonrpc.html" class="tsd-signature-type">JSONRPC</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="api_rpc.jsonrpc.html" class="tsd-signature-type">JsonRpc</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="transports" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> transports</h3>
-					<div class="tsd-signature tsd-kind-icon">transports<span class="tsd-signature-symbol">:</span> <a href="../interfaces/rpc_protocol.likesocketserver.html" class="tsd-signature-type">LikeSocketServer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/protocol/jsonRpc.ts#L19">rpc/protocol/jsonRpc.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L24">api/rpc/index.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="opts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> opts</h3>
+					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/api_rpc.irpcoptions.html" class="tsd-signature-type">IRpcOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L22">api/rpc/index.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="transports" class="tsd-anchor"></a>
+					<h3>transports</h3>
+					<div class="tsd-signature tsd-kind-icon">transports<span class="tsd-signature-symbol">:</span> <a href="../interfaces/api_rpc_transport.irpcserver.html" class="tsd-signature-type">IRpcServer</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L20">api/rpc/index.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setupapis" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setupAPIs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setupAPIs<span class="tsd-signature-symbol">(</span>modules<span class="tsd-signature-symbol">: </span><a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L57">api/rpc/index.ts:57</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>modules: <a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setuptransports" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setup<wbr>Transports</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Transports<span class="tsd-signature-symbol">(</span>modules<span class="tsd-signature-symbol">: </span><a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L41">api/rpc/index.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>modules: <a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="start" class="tsd-anchor"></a>
 					<h3>start</h3>
@@ -171,8 +232,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/protocol/jsonRpc.ts#L43">rpc/protocol/jsonRpc.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L33">api/rpc/index.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -188,8 +250,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/protocol/jsonRpc.ts#L47">rpc/protocol/jsonRpc.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rpc/index.ts#L37">api/rpc/index.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -205,35 +268,62 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/rpc_protocol.html">rpc/protocol</a>
+						<a href="../modules/api_rpc.html">api/rpc</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="api_rpc.beaconapi.html" class="tsd-kind-icon">Beacon<wbr>Api</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="rpc_protocol.jsonrpc.html" class="tsd-kind-icon">JSONRPC</a>
+						<a href="api_rpc.jsonrpc.html" class="tsd-kind-icon">Json<wbr>Rpc</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="rpc_protocol.jsonrpc.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="api_rpc.jsonrpc.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_protocol.jsonrpc.html#transports" class="tsd-kind-icon">transports</a>
+								<a href="api_rpc.jsonrpc.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="api_rpc.jsonrpc.html#opts" class="tsd-kind-icon">opts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="api_rpc.jsonrpc.html#transports" class="tsd-kind-icon">transports</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="api_rpc.jsonrpc.html#setupapis" class="tsd-kind-icon">setupAPIs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="api_rpc.jsonrpc.html#setuptransports" class="tsd-kind-icon">setup<wbr>Transports</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_protocol.jsonrpc.html#start" class="tsd-kind-icon">start</a>
+								<a href="api_rpc.jsonrpc.html#start" class="tsd-kind-icon">start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_protocol.jsonrpc.html#stop" class="tsd-kind-icon">stop</a>
+								<a href="api_rpc.jsonrpc.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="api_rpc.validatorapi.html" class="tsd-kind-icon">Validator<wbr>Api</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_protocol.likesocketserver.html" class="tsd-kind-icon">Like<wbr>Socket<wbr>Server</a>
+						<a href="../interfaces/api_rpc.ibeaconapi.html" class="tsd-kind-icon">IBeacon<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/api_rpc.irpcoptions.html" class="tsd-kind-icon">IRpc<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/api_rpc.ivalidatorapi.html" class="tsd-kind-icon">IValidator<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/api_rpc.html#rpcoptions" class="tsd-kind-icon">Rpc<wbr>Options</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HttpServer | @chainsafe/lodestar</title>
+	<title>RestApi | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/rpc_transport.html">rpc/transport</a>
+					<a href="../modules/_api_rest_index_.html">&quot;api/rest/index&quot;</a>
 				</li>
 				<li>
-					<a href="rpc_transport.httpserver.html">HttpServer</a>
+					<a href="_api_rest_index_.restapi.html">RestApi</a>
 				</li>
 			</ul>
-			<h1>Class HttpServer</h1>
+			<h1>Class RestApi</h1>
 		</div>
 	</div>
 </header>
@@ -73,14 +73,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">HttpServer</span>
+						<span class="target">RestApi</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/rpc_protocol.likesocketserver.html" class="tsd-signature-type">LikeSocketServer</a></li>
+					<li><a href="../interfaces/node.service.html" class="tsd-signature-type">Service</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -90,24 +90,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="rpc_transport.httpserver.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_api_rest_index_.restapi.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_transport.httpserver.html#connectioncallback" class="tsd-kind-icon">connection<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_transport.httpserver.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="rpc_transport.httpserver.html#opts" class="tsd-kind-icon">opts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="rpc_transport.httpserver.html#server" class="tsd-kind-icon">server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_api_rest_index_.restapi.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_api_rest_index_.restapi.html#opts" class="tsd-kind-icon">opts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_api_rest_index_.restapi.html#server" class="tsd-kind-icon">server</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_transport.httpserver.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_transport.httpserver.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="rpc_transport.httpserver.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_api_rest_index_.restapi.html#setupserver" class="tsd-kind-icon">setup<wbr>Server</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_api_rest_index_.restapi.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_api_rest_index_.restapi.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
 						</section>
 					</div>
@@ -119,30 +118,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Http<wbr>Server<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rpc_options_.itransportoption.html" class="tsd-signature-type">ITransportOption</a>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="rpc_transport.httpserver.html" class="tsd-signature-type">HttpServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Rest<wbr>Api<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_api_rest_options_.irestapioptions.html" class="tsd-signature-type">IRestApiOptions</a>, modules<span class="tsd-signature-symbol">: </span><a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_api_rest_index_.restapi.html" class="tsd-signature-type">RestApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L73">rpc/transport/http.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L22">api/rest/index.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>opts: <a href="../interfaces/_rpc_options_.itransportoption.html" class="tsd-signature-type">ITransportOption</a></h5>
+									<h5>opts: <a href="../interfaces/_api_rest_options_.irestapioptions.html" class="tsd-signature-type">IRestApiOptions</a></h5>
 								</li>
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">object</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
-										</li>
-									</ul>
+									<h5>modules: <a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="rpc_transport.httpserver.html" class="tsd-signature-type">HttpServer</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_api_rest_index_.restapi.html" class="tsd-signature-type">RestApi</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -150,72 +144,58 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="connectioncallback" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> connection<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">connection<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L71">rpc/transport/http.ts:71</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L73">rpc/transport/http.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L22">api/rest/index.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="opts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> opts</h3>
-					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_rpc_options_.itransportoption.html" class="tsd-signature-type">ITransportOption</a></div>
+					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_api_rest_options_.irestapioptions.html" class="tsd-signature-type">IRestApiOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L69">rpc/transport/http.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L21">api/rest/index.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="server" class="tsd-anchor"></a>
 					<h3>server</h3>
-					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Server</span></div>
+					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_api_rest_index_.ifastifyserver.html" class="tsd-signature-type">IFastifyServer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L67">rpc/transport/http.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L19">api/rest/index.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="on" class="tsd-anchor"></a>
-					<h3>on</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setupserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> setup<wbr>Server</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Server<span class="tsd-signature-symbol">(</span>modules<span class="tsd-signature-symbol">: </span><a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_api_rest_index_.ifastifyserver.html" class="tsd-signature-type">IFastifyServer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_protocol.likesocketserver.html">LikeSocketServer</a>.<a href="../interfaces/rpc_protocol.likesocketserver.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L91">rpc/transport/http.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L44">api/rest/index.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>cb: <span class="tsd-signature-type">Function</span></h5>
+									<h5>modules: <a href="../interfaces/api.iapimodules.html" class="tsd-signature-type">IApiModules</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_api_rest_index_.ifastifyserver.html" class="tsd-signature-type">IFastifyServer</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -228,9 +208,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_protocol.likesocketserver.html">LikeSocketServer</a>.<a href="../interfaces/rpc_protocol.likesocketserver.html#start">start</a></p>
+								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L97">rpc/transport/http.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L30">api/rest/index.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -246,9 +226,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/rpc_protocol.likesocketserver.html">LikeSocketServer</a>.<a href="../interfaces/rpc_protocol.likesocketserver.html#stop">stop</a></p>
+								<p>Implementation of <a href="../interfaces/node.service.html">Service</a>.<a href="../interfaces/node.service.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84f3507/packages/lodestar/src/rpc/transport/http.ts#L113">rpc/transport/http.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/rest/index.ts#L40">api/rest/index.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -264,56 +244,44 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/rpc_transport.html">rpc/transport</a>
+						<a href="../modules/_api_rest_index_.html">"api/rest/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/rpc_transport.transporttype.html" class="tsd-kind-icon">Transport<wbr>Type</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="rpc_transport.httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a>
+						<a href="_api_rest_index_.restapi.html" class="tsd-kind-icon">Rest<wbr>Api</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="rpc_transport.httpserver.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_api_rest_index_.restapi.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_transport.httpserver.html#connectioncallback" class="tsd-kind-icon">connection<wbr>Callback</a>
+								<a href="_api_rest_index_.restapi.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_transport.httpserver.html#logger" class="tsd-kind-icon">logger</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="rpc_transport.httpserver.html#opts" class="tsd-kind-icon">opts</a>
+								<a href="_api_rest_index_.restapi.html#opts" class="tsd-kind-icon">opts</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="rpc_transport.httpserver.html#server" class="tsd-kind-icon">server</a>
+								<a href="_api_rest_index_.restapi.html#server" class="tsd-kind-icon">server</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_api_rest_index_.restapi.html#setupserver" class="tsd-kind-icon">setup<wbr>Server</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_transport.httpserver.html#on" class="tsd-kind-icon">on</a>
+								<a href="_api_rest_index_.restapi.html#start" class="tsd-kind-icon">start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_transport.httpserver.html#start" class="tsd-kind-icon">start</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="rpc_transport.httpserver.html#stop" class="tsd-kind-icon">stop</a>
+								<a href="_api_rest_index_.restapi.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="rpc_transport.messagerequest.html" class="tsd-kind-icon">Message<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="rpc_transport.wsserver.html" class="tsd-kind-icon">WSServer</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_transport.wsserveropts.html" class="tsd-kind-icon">WSServer<wbr>Opts</a>
+						<a href="../interfaces/_api_rest_index_.ifastifyserver.html" class="tsd-kind-icon">IFastify<wbr>Server</a>
 					</li>
 				</ul>
 			</nav>

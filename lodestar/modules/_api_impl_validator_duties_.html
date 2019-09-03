@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>rpc/transport | @chainsafe/lodestar</title>
+	<title>&quot;api/impl/validator/duties&quot; | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="rpc_transport.html">rpc/transport</a>
+					<a href="_api_impl_validator_duties_.html">&quot;api/impl/validator/duties&quot;</a>
 				</li>
 			</ul>
-			<h1>External module rpc/transport</h1>
+			<h1>External module &quot;api/impl/validator/duties&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,26 +71,47 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumerations</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/rpc_transport.transporttype.html" class="tsd-kind-icon">Transport<wbr>Type</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/rpc_transport.httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/rpc_transport.messagerequest.html" class="tsd-kind-icon">Message<wbr>Request</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/rpc_transport.wsserver.html" class="tsd-kind-icon">WSServer</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/rpc_transport.wsserveropts.html" class="tsd-kind-icon">WSServer<wbr>Opts</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_impl_validator_duties_.html#getvalidatorduties" class="tsd-kind-icon">get<wbr>Validator<wbr>Duties</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getvalidatorduties" class="tsd-anchor"></a>
+					<h3>get<wbr>Validator<wbr>Duties</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Validator<wbr>Duties<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a>, validatorPublicKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSPubkey</span><span class="tsd-signature-symbol">[]</span>, epoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValidatorDuty</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/653b9cd/packages/lodestar/src/api/impl/validator/duties.ts#L7">api/impl/validator/duties.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
+								</li>
+								<li>
+									<h5>db: <a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></h5>
+								</li>
+								<li>
+									<h5>validatorPublicKeys: <span class="tsd-signature-type">BLSPubkey</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>epoch: <span class="tsd-signature-type">Epoch</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValidatorDuty</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -101,26 +122,14 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="rpc_transport.html">rpc/transport</a>
+						<a href="_api_impl_validator_duties_.html">"api/impl/validator/duties"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/rpc_transport.transporttype.html" class="tsd-kind-icon">Transport<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.httpserver.html" class="tsd-kind-icon">Http<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/rpc_transport.messagerequest.html" class="tsd-kind-icon">Message<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/rpc_transport.wsserver.html" class="tsd-kind-icon">WSServer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/rpc_transport.wsserveropts.html" class="tsd-kind-icon">WSServer<wbr>Opts</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_impl_validator_duties_.html#getvalidatorduties" class="tsd-kind-icon">get<wbr>Validator<wbr>Duties</a>
 					</li>
 				</ul>
 			</nav>
