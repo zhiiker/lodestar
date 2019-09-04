@@ -86,6 +86,7 @@
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../classes/api_rpc.beaconapi.html" class="tsd-signature-type">BeaconApi</a></li>
+					<li><a href="../classes/_validator_rest_beacon_beacon_.restbeaconapi.html" class="tsd-signature-type">RestBeaconApi</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -101,8 +102,6 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getfork" class="tsd-kind-icon">get<wbr>Fork</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="api_rpc.ibeaconapi.html#getgenesistime" class="tsd-kind-icon">get<wbr>Genesis<wbr>Time</a></li>
@@ -121,7 +120,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="api.iapi.html">IApi</a>.<a href="api.iapi.html#namespace">namespace</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/interface.ts#L35">api/interface.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/api/interface.ts#L35">api/interface.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,50 +133,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getbeaconstate" class="tsd-anchor"></a>
-					<h3>get<wbr>Beacon<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Beacon<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L48">api/rpc/api/beacon/interface.ts:48</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns latest beacon state</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getchainhead" class="tsd-anchor"></a>
-					<h3>get<wbr>Chain<wbr>Head</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Chain<wbr>Head<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L43">api/rpc/api/beacon/interface.ts:43</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return the current chain head</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getclientversion" class="tsd-anchor"></a>
 					<h3>get<wbr>Client<wbr>Version</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -187,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L16">api/rpc/api/beacon/interface.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L16">api/rpc/api/beacon/interface.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L21">api/rpc/api/beacon/interface.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L21">api/rpc/api/beacon/interface.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L29">api/rpc/api/beacon/interface.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L29">api/rpc/api/beacon/interface.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -259,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L38">api/rpc/api/beacon/interface.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/api/rpc/api/beacon/interface.ts#L38">api/rpc/api/beacon/interface.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,12 +261,6 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="api_rpc.ibeaconapi.html#namespace" class="tsd-kind-icon">namespace</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="api_rpc.ibeaconapi.html#getbeaconstate" class="tsd-kind-icon">get<wbr>Beacon<wbr>State</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="api_rpc.ibeaconapi.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="api_rpc.ibeaconapi.html#getclientversion" class="tsd-kind-icon">get<wbr>Client<wbr>Version</a>

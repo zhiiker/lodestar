@@ -97,6 +97,7 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#apiclient" class="tsd-kind-icon">api<wbr>Client</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#attestationservice" class="tsd-kind-icon">attestation<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#blockservice" class="tsd-kind-icon">block<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#config" class="tsd-kind-icon">config</a></li>
@@ -106,13 +107,13 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#opts" class="tsd-kind-icon">opts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#rpcclient" class="tsd-kind-icon">rpc<wbr>Client</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#checkduties" class="tsd-kind-icon">check<wbr>Duties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#initapiclient" class="tsd-kind-icon">init<wbr>Api<wbr>Client</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#ischainlive" class="tsd-kind-icon">is<wbr>Chain<wbr>Live</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#lookahead" class="tsd-kind-icon">look<wbr>Ahead</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="validator.validator-1.html#run" class="tsd-kind-icon">run</a></li>
@@ -137,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L43">validator/validator.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L44">validator/validator.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -165,12 +166,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="apiclient" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> api<wbr>Client</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_validator_rpc_interface_.rpcclient.html" class="tsd-signature-type">RpcClient</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L37">validator/validator.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="attestationservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> attestation<wbr>Service</h3>
 					<div class="tsd-signature tsd-kind-icon">attestation<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="validator_attestation.attestationservice.html" class="tsd-signature-type">AttestationService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L38">validator/validator.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L39">validator/validator.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">block<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="validator.blockproposingservice.html" class="tsd-signature-type">BlockProposingService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L37">validator/validator.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L38">validator/validator.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBeaconConfig</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L35">validator/validator.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L36">validator/validator.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../interfaces/db_api_validator.ivalidatordb.html" class="tsd-signature-type">IValidatorDB</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L40">validator/validator.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L41">validator/validator.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">genesis<wbr>Info<span class="tsd-signature-symbol">:</span> <a href="../interfaces/validator.genesisinfo.html" class="tsd-signature-type">GenesisInfo</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L39">validator/validator.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L40">validator/validator.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L42">validator/validator.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L43">validator/validator.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L43">validator/validator.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L44">validator/validator.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/logger.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L41">validator/validator.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L42">validator/validator.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,17 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_validator_options_.ivalidatoroptions.html" class="tsd-signature-type">IValidatorOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L34">validator/validator.ts:34</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="rpcclient" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rpc<wbr>Client</h3>
-					<div class="tsd-signature tsd-kind-icon">rpc<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_validator_rpc_interface_.rpcclient.html" class="tsd-signature-type">RpcClient</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L36">validator/validator.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L35">validator/validator.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -277,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L147">validator/validator.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L154">validator/validator.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,6 +292,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="initapiclient" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> init<wbr>Api<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Api<wbr>Client<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L63">validator/validator.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="ischainlive" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Chain<wbr>Live</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -300,7 +318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L127">validator/validator.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L134">validator/validator.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,7 +340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L172">validator/validator.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L179">validator/validator.ts:179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -345,7 +363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L142">validator/validator.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L149">validator/validator.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -362,7 +380,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L85">validator/validator.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L92">validator/validator.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -379,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L118">validator/validator.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L125">validator/validator.ts:125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -401,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L71">validator/validator.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L78">validator/validator.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4a2ded3/packages/lodestar/src/validator/validator.ts#L80">validator/validator.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/lodestar/src/validator/validator.ts#L87">validator/validator.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,6 +480,9 @@
 								<a href="validator.validator-1.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="validator.validator-1.html#apiclient" class="tsd-kind-icon">api<wbr>Client</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="validator.validator-1.html#attestationservice" class="tsd-kind-icon">attestation<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -488,11 +509,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="validator.validator-1.html#opts" class="tsd-kind-icon">opts</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="validator.validator-1.html#rpcclient" class="tsd-kind-icon">rpc<wbr>Client</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="validator.validator-1.html#checkduties" class="tsd-kind-icon">check<wbr>Duties</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="validator.validator-1.html#initapiclient" class="tsd-kind-icon">init<wbr>Api<wbr>Client</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="validator.validator-1.html#ischainlive" class="tsd-kind-icon">is<wbr>Chain<wbr>Live</a>
