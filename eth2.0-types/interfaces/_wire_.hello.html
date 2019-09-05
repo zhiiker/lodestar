@@ -84,12 +84,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#bestroot" class="tsd-kind-icon">best<wbr>Root</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#bestslot" class="tsd-kind-icon">best<wbr>Slot</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#latestfinalizedepoch" class="tsd-kind-icon">latest<wbr>Finalized<wbr>Epoch</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#latestfinalizedroot" class="tsd-kind-icon">latest<wbr>Finalized<wbr>Root</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#networkid" class="tsd-kind-icon">network<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#finalizedepoch" class="tsd-kind-icon">finalized<wbr>Epoch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#finalizedroot" class="tsd-kind-icon">finalized<wbr>Root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#forkversion" class="tsd-kind-icon">fork<wbr>Version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#headroot" class="tsd-kind-icon">head<wbr>Root</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.hello.html#headslot" class="tsd-kind-icon">head<wbr>Slot</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,62 +97,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bestroot" class="tsd-anchor"></a>
-					<h3>best<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">best<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#hash" class="tsd-signature-type">Hash</a></div>
+					<a name="finalizedepoch" class="tsd-anchor"></a>
+					<h3>finalized<wbr>Epoch</h3>
+					<div class="tsd-signature tsd-kind-icon">finalized<wbr>Epoch<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#epoch" class="tsd-signature-type">Epoch</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L55">wire.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/eth2.0-types/src/wire.ts#L23">wire.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bestslot" class="tsd-anchor"></a>
-					<h3>best<wbr>Slot</h3>
-					<div class="tsd-signature tsd-kind-icon">best<wbr>Slot<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a></div>
+					<a name="finalizedroot" class="tsd-anchor"></a>
+					<h3>finalized<wbr>Root</h3>
+					<div class="tsd-signature tsd-kind-icon">finalized<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#hash" class="tsd-signature-type">Hash</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L56">wire.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/eth2.0-types/src/wire.ts#L22">wire.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chainid" class="tsd-anchor"></a>
-					<h3>chain<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint16" class="tsd-signature-type">uint16</a></div>
+					<a name="forkversion" class="tsd-anchor"></a>
+					<h3>fork<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">fork<wbr>Version<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#version" class="tsd-signature-type">Version</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L52">wire.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/eth2.0-types/src/wire.ts#L21">wire.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="latestfinalizedepoch" class="tsd-anchor"></a>
-					<h3>latest<wbr>Finalized<wbr>Epoch</h3>
-					<div class="tsd-signature tsd-kind-icon">latest<wbr>Finalized<wbr>Epoch<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#epoch" class="tsd-signature-type">Epoch</a></div>
+					<a name="headroot" class="tsd-anchor"></a>
+					<h3>head<wbr>Root</h3>
+					<div class="tsd-signature tsd-kind-icon">head<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#hash" class="tsd-signature-type">Hash</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L54">wire.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/eth2.0-types/src/wire.ts#L24">wire.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="latestfinalizedroot" class="tsd-anchor"></a>
-					<h3>latest<wbr>Finalized<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">latest<wbr>Finalized<wbr>Root<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#hash" class="tsd-signature-type">Hash</a></div>
+					<a name="headslot" class="tsd-anchor"></a>
+					<h3>head<wbr>Slot</h3>
+					<div class="tsd-signature tsd-kind-icon">head<wbr>Slot<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#slot" class="tsd-signature-type">Slot</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L53">wire.ts:53</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="networkid" class="tsd-anchor"></a>
-					<h3>network<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">network<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint64" class="tsd-signature-type">uint64</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L51">wire.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/eth2.0-types/src/wire.ts#L25">wire.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,31 +165,10 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Request</a>
+						<a href="_wire_.beaconblocksrequest.html" class="tsd-kind-icon">Beacon<wbr>Blocks<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesrequest.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesresponse.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.blockrootslot.html" class="tsd-kind-icon">Block<wbr>Root<wbr>Slot</a>
+						<a href="_wire_.beaconblocksresponse.html" class="tsd-kind-icon">Beacon<wbr>Blocks<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_wire_.goodbye.html" class="tsd-kind-icon">Goodbye</a>
@@ -211,44 +179,29 @@
 						<a href="_wire_.hello.html" class="tsd-kind-icon">Hello</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#bestroot" class="tsd-kind-icon">best<wbr>Root</a>
+								<a href="_wire_.hello.html#finalizedepoch" class="tsd-kind-icon">finalized<wbr>Epoch</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#bestslot" class="tsd-kind-icon">best<wbr>Slot</a>
+								<a href="_wire_.hello.html#finalizedroot" class="tsd-kind-icon">finalized<wbr>Root</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#chainid" class="tsd-kind-icon">chain<wbr>Id</a>
+								<a href="_wire_.hello.html#forkversion" class="tsd-kind-icon">fork<wbr>Version</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#latestfinalizedepoch" class="tsd-kind-icon">latest<wbr>Finalized<wbr>Epoch</a>
+								<a href="_wire_.hello.html#headroot" class="tsd-kind-icon">head<wbr>Root</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#latestfinalizedroot" class="tsd-kind-icon">latest<wbr>Finalized<wbr>Root</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.hello.html#networkid" class="tsd-kind-icon">network<wbr>Id</a>
+								<a href="_wire_.hello.html#headslot" class="tsd-kind-icon">head<wbr>Slot</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcrequest.html" class="tsd-kind-icon">Rpc<wbr>Request</a>
+						<a href="_wire_.recentbeaconblocksrequest.html" class="tsd-kind-icon">Recent<wbr>Beacon<wbr>Blocks<wbr>Request</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcresponse.html" class="tsd-kind-icon">Rpc<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.status.html" class="tsd-kind-icon">Status</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wirerequest.html" class="tsd-kind-icon">Wire<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wireresponse.html" class="tsd-kind-icon">Wire<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#method" class="tsd-kind-icon">Method</a>
+						<a href="_wire_.recentbeaconblocksresponse.html" class="tsd-kind-icon">Recent<wbr>Beacon<wbr>Blocks<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_wire_.html#requestbody" class="tsd-kind-icon">Request<wbr>Body</a>

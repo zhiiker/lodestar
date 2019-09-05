@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RpcRequest | @chainsafe/eth2.0-types</title>
+	<title>Libp2pOptions | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@chainsafe/eth2.0-types</a>
+					<a href="../index.html" class="title">@chainsafe/lodestar</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_wire_.html">&quot;wire&quot;</a>
+					<a href="../modules/network_nodejs.html">network/nodejs</a>
 				</li>
 				<li>
-					<a href="_wire_.rpcrequest.html">RpcRequest</a>
+					<a href="network_nodejs.libp2poptions.html">Libp2pOptions</a>
 				</li>
 			</ul>
-			<h1>Interface RpcRequest</h1>
+			<h1>Interface Libp2pOptions</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RpcRequest</span>
+						<span class="target">Libp2pOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -84,9 +84,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.rpcrequest.html#body" class="tsd-kind-icon">body</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.rpcrequest.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.rpcrequest.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="network_nodejs.libp2poptions.html#bootnodes" class="tsd-kind-icon">bootnodes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="network_nodejs.libp2poptions.html#peerinfo" class="tsd-kind-icon">peer<wbr>Info</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,32 +94,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="body" class="tsd-anchor"></a>
-					<h3>body</h3>
-					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <a href="../modules/_wire_.html#requestbody" class="tsd-signature-type">RequestBody</a></div>
+					<a name="bootnodes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> bootnodes</h3>
+					<div class="tsd-signature tsd-kind-icon">bootnodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L29">wire.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/network/nodejs/bundle.ts#L16">network/nodejs/bundle.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint64" class="tsd-signature-type">uint64</a></div>
+					<a name="peerinfo" class="tsd-anchor"></a>
+					<h3>peer<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">peer<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PeerInfo</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L27">wire.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="method" class="tsd-anchor"></a>
-					<h3>method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint16" class="tsd-signature-type">uint16</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L28">wire.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/network/nodejs/bundle.ts#L15">network/nodejs/bundle.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -133,89 +122,35 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_wire_.html">"wire"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/types.html">types</a>
+						<a href="../modules/network_nodejs.html">network/nodejs</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesrequest.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesresponse.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.blockrootslot.html" class="tsd-kind-icon">Block<wbr>Root<wbr>Slot</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.goodbye.html" class="tsd-kind-icon">Goodbye</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.hello.html" class="tsd-kind-icon">Hello</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/network_nodejs.nodejsnode.html" class="tsd-kind-icon">Nodejs<wbr>Node</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcrequest.html" class="tsd-kind-icon">Rpc<wbr>Request</a>
+						<a href="network_nodejs.libp2poptions.html" class="tsd-kind-icon">Libp2p<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.rpcrequest.html#body" class="tsd-kind-icon">body</a>
+								<a href="network_nodejs.libp2poptions.html#bootnodes" class="tsd-kind-icon">bootnodes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.rpcrequest.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.rpcrequest.html#method" class="tsd-kind-icon">method</a>
+								<a href="network_nodejs.libp2poptions.html#peerinfo" class="tsd-kind-icon">peer<wbr>Info</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcresponse.html" class="tsd-kind-icon">Rpc<wbr>Response</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/network_nodejs.html#loadpeerid" class="tsd-kind-icon">load<wbr>Peer<wbr>Id</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.status.html" class="tsd-kind-icon">Status</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wirerequest.html" class="tsd-kind-icon">Wire<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wireresponse.html" class="tsd-kind-icon">Wire<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#method" class="tsd-kind-icon">Method</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#requestbody" class="tsd-kind-icon">Request<wbr>Body</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#requestid" class="tsd-kind-icon">Request<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#responsebody" class="tsd-kind-icon">Response<wbr>Body</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/network_nodejs.html#savepeerid" class="tsd-kind-icon">save<wbr>Peer<wbr>Id</a>
 					</li>
 				</ul>
 			</nav>

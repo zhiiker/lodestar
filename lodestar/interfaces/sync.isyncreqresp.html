@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WireRequest | @chainsafe/eth2.0-types</title>
+	<title>ISyncReqResp | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@chainsafe/eth2.0-types</a>
+					<a href="../index.html" class="title">@chainsafe/lodestar</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,25 +56,39 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_wire_.html">&quot;wire&quot;</a>
+					<a href="../modules/sync.html">sync</a>
 				</li>
 				<li>
-					<a href="_wire_.wirerequest.html">WireRequest</a>
+					<a href="sync.isyncreqresp.html">ISyncReqResp</a>
 				</li>
 			</ul>
-			<h1>Interface WireRequest</h1>
+			<h1>Interface ISyncReqResp</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The ISyncReqResp module handles app-level requests / responses from other peers,
+						fetching state from the chain and database as needed.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WireRequest</span>
+						<span class="target">ISyncReqResp</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/sync.syncreqresp.html" class="tsd-signature-type">SyncReqResp</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -84,9 +98,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.wirerequest.html#body" class="tsd-kind-icon">body</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.wirerequest.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_wire_.wirerequest.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sync.isyncreqresp.html#onrequest" class="tsd-kind-icon">on<wbr>Request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sync.isyncreqresp.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sync.isyncreqresp.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,34 +109,94 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="body" class="tsd-anchor"></a>
-					<h3>body</h3>
-					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes" class="tsd-signature-type">bytes</a></div>
+					<a name="onrequest" class="tsd-anchor"></a>
+					<h3>on<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L17">wire.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/sync/reqResp/interface.ts#L22">sync/reqResp/interface.ts:22</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peerInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span>, method<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_network_.method.html" class="tsd-signature-type">Method</a>, id<span class="tsd-signature-symbol">: </span><a href="../modules/_constants_network_.html#requestid" class="tsd-signature-type">RequestId</a>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>peerInfo: <span class="tsd-signature-type">PeerInfo</span></h5>
+											</li>
+											<li>
+												<h5>method: <a href="../enums/_constants_network_.method.html" class="tsd-signature-type">Method</a></h5>
+											</li>
+											<li>
+												<h5>id: <a href="../modules/_constants_network_.html#requestid" class="tsd-signature-type">RequestId</a></h5>
+											</li>
+											<li>
+												<h5>body: <span class="tsd-signature-type">RequestBody</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#bytes8" class="tsd-signature-type">bytes8</a></div>
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L15">wire.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/sync/reqResp/interface.ts#L19">sync/reqResp/interface.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="method" class="tsd-anchor"></a>
-					<h3>method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <a href="../modules/types.html#uint16" class="tsd-signature-type">uint16</a></div>
+					<a name="stop" class="tsd-anchor"></a>
+					<h3>stop</h3>
+					<div class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2f6ff94/packages/eth2.0-types/src/wire.ts#L16">wire.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/sync/reqResp/interface.ts#L20">sync/reqResp/interface.ts:20</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -133,89 +207,59 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_wire_.html">"wire"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/types.html">types</a>
+						<a href="../modules/sync.html">sync</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Request</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.initialsync.html" class="tsd-kind-icon">Initial<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.regularsync.html" class="tsd-kind-icon">Regular<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.reputationstore.html" class="tsd-kind-icon">Reputation<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.sync-1.html" class="tsd-kind-icon">Sync</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/sync.syncreqresp.html" class="tsd-kind-icon">Sync<wbr>Req<wbr>Resp</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockbodiesresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Bodies<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockheadersresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Headers<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsrequest.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconblockrootsresponse.html" class="tsd-kind-icon">Beacon<wbr>Block<wbr>Roots<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesrequest.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.beaconstatesresponse.html" class="tsd-kind-icon">Beacon<wbr>States<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.blockrootslot.html" class="tsd-kind-icon">Block<wbr>Root<wbr>Slot</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.goodbye.html" class="tsd-kind-icon">Goodbye</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.hello.html" class="tsd-kind-icon">Hello</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcrequest.html" class="tsd-kind-icon">Rpc<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.rpcresponse.html" class="tsd-kind-icon">Rpc<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.status.html" class="tsd-kind-icon">Status</a>
+						<a href="sync.isyncoptions.html" class="tsd-kind-icon">ISync<wbr>Options</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wirerequest.html" class="tsd-kind-icon">Wire<wbr>Request</a>
+						<a href="sync.isyncreqresp.html" class="tsd-kind-icon">ISync<wbr>Req<wbr>Resp</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.wirerequest.html#body" class="tsd-kind-icon">body</a>
+								<a href="sync.isyncreqresp.html#onrequest" class="tsd-kind-icon">on<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.wirerequest.html#id" class="tsd-kind-icon">id</a>
+								<a href="sync.isyncreqresp.html#start" class="tsd-kind-icon">start</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_wire_.wirerequest.html#method" class="tsd-kind-icon">method</a>
+								<a href="sync.isyncreqresp.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="sync.initialsyncmodules.html" class="tsd-kind-icon">Initial<wbr>Sync<wbr>Modules</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_wire_.wireresponse.html" class="tsd-kind-icon">Wire<wbr>Response</a>
+						<a href="sync.reputation.html" class="tsd-kind-icon">Reputation</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#method" class="tsd-kind-icon">Method</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="sync.syncmodules.html" class="tsd-kind-icon">Sync<wbr>Modules</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#requestbody" class="tsd-kind-icon">Request<wbr>Body</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#requestid" class="tsd-kind-icon">Request<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_wire_.html#responsebody" class="tsd-kind-icon">Response<wbr>Body</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="sync.syncreqrespmodules.html" class="tsd-kind-icon">Sync<wbr>Req<wbr>Resp<wbr>Modules</a>
 					</li>
 				</ul>
 			</nav>
