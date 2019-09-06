@@ -113,6 +113,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_eth1_impl_interop_.interopeth1notifier.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_eth1_impl_interop_.interopeth1notifier.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_eth1_impl_interop_.interopeth1notifier.html#getblock" class="tsd-kind-icon">get<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_eth1_impl_interop_.interopeth1notifier.html#geteth1data" class="tsd-kind-icon">get<wbr>Eth1<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_eth1_impl_interop_.interopeth1notifier.html#gethead" class="tsd-kind-icon">get<wbr>Head</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_eth1_impl_interop_.interopeth1notifier.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_eth1_impl_interop_.interopeth1notifier.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
@@ -149,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L8">eth1/impl/interop.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L12">eth1/impl/interop.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_eth1_impl_interop_.interopeth1notifier.html" class="tsd-signature-type">InteropEth1Notifier</a></h4>
@@ -230,7 +231,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#depositcount">depositCount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L37">eth1/impl/interop.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L41">eth1/impl/interop.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L25">eth1/impl/interop.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L29">eth1/impl/interop.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Hash</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -318,7 +319,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#getblock">getBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L29">eth1/impl/interop.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L33">eth1/impl/interop.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -328,6 +329,36 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="geteth1data" class="tsd-anchor"></a>
+					<h3>get<wbr>Eth1<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Eth1<wbr>Data<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, currentEpoch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Epoch</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Eth1Data</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#geteth1data">getEth1Data</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L49">eth1/impl/interop.ts:49</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">IBeaconConfig</span></h5>
+								</li>
+								<li>
+									<h5>state: <span class="tsd-signature-type">BeaconState</span></h5>
+								</li>
+								<li>
+									<h5>currentEpoch: <span class="tsd-signature-type">Epoch</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Eth1Data</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -342,7 +373,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#gethead">getHead</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L33">eth1/impl/interop.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L37">eth1/impl/interop.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -659,7 +690,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#processblockheadupdate">processBlockHeadUpdate</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L19">eth1/impl/interop.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L23">eth1/impl/interop.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -682,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L22">eth1/impl/interop.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L26">eth1/impl/interop.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -708,7 +739,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L41">eth1/impl/interop.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L45">eth1/impl/interop.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -856,7 +887,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L13">eth1/impl/interop.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L17">eth1/impl/interop.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -874,7 +905,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/eth1.ieth1notifier.html">IEth1Notifier</a>.<a href="../interfaces/eth1.ieth1notifier.html#stop">stop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1719b56/packages/lodestar/src/eth1/impl/interop.ts#L16">eth1/impl/interop.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f645dd3/packages/lodestar/src/eth1/impl/interop.ts#L20">eth1/impl/interop.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -958,6 +989,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_eth1_impl_interop_.interopeth1notifier.html#getblock" class="tsd-kind-icon">get<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_eth1_impl_interop_.interopeth1notifier.html#geteth1data" class="tsd-kind-icon">get<wbr>Eth1<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_eth1_impl_interop_.interopeth1notifier.html#gethead" class="tsd-kind-icon">get<wbr>Head</a>
