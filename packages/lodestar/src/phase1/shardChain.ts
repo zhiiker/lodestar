@@ -178,6 +178,9 @@ function flattenShardHeader(header: ShardBlockHeader): bytes[SHARD_HEADER_SIZE] 
     for (let j = 0; j < 8; j++) {
       count += attesterBits[i + j] << j;
     }
-    attesterBytes.conc
   }
+}
+
+function computeCrosslinkDataRoot(block: Shardblock[]) {
+
 }
