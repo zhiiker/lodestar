@@ -87,13 +87,13 @@
 					<a name="assembleblock" class="tsd-anchor"></a>
 					<h3>assemble<wbr>Block</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Block<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, eth1<span class="tsd-signature-symbol">: </span><a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, randao<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes96</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Block<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, db<span class="tsd-signature-symbol">: </span><a href="../interfaces/db_api_beacon.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, eth1<span class="tsd-signature-symbol">: </span><a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a>, slot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Slot</span>, randao<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes96</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d992405/packages/lodestar/src/chain/factory/block/index.ts#L15">chain/factory/block/index.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/dcc6461/packages/lodestar/src/chain/factory/block/index.ts#L15">packages/lodestar/src/chain/factory/block/index.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -117,7 +117,7 @@
 									<h5>randao: <span class="tsd-signature-type">bytes96</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -125,13 +125,13 @@
 					<a name="assemblebody" class="tsd-anchor"></a>
 					<h3>assemble<wbr>Body</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Body<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, eth1<span class="tsd-signature-symbol">: </span><a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a>, merkleTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a>, currentState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, randao<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes96</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlockBody</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">assemble<wbr>Body<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, eth1<span class="tsd-signature-symbol">: </span><a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a>, merkleTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_lodestar_src_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a>, currentState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, randao<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes96</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlockBody</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d992405/packages/lodestar/src/chain/factory/block/body.ts#L15">chain/factory/block/body.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/dcc6461/packages/lodestar/src/chain/factory/block/body.ts#L15">packages/lodestar/src/chain/factory/block/body.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -146,7 +146,7 @@
 									<h5>eth1: <a href="../interfaces/eth1.ieth1notifier.html" class="tsd-signature-type">IEth1Notifier</a></h5>
 								</li>
 								<li>
-									<h5>merkleTree: <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a></h5>
+									<h5>merkleTree: <a href="../interfaces/_packages_lodestar_src_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a></h5>
 								</li>
 								<li>
 									<h5>currentState: <span class="tsd-signature-type">BeaconState</span></h5>
@@ -163,13 +163,13 @@
 					<a name="generatedeposits" class="tsd-anchor"></a>
 					<h3>generate<wbr>Deposits</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Deposits<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, eth1Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Eth1Data</span>, merkleTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Deposit</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Deposits<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span>, opPool<span class="tsd-signature-symbol">: </span><a href="../classes/oppool.oppool-1.html" class="tsd-signature-type">OpPool</a>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconState</span>, eth1Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Eth1Data</span>, merkleTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_lodestar_src_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Deposit</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d992405/packages/lodestar/src/chain/factory/block/deposits.ts#L12">chain/factory/block/deposits.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/dcc6461/packages/lodestar/src/chain/factory/block/deposits.ts#L12">packages/lodestar/src/chain/factory/block/deposits.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -187,7 +187,7 @@
 									<h5>eth1Data: <span class="tsd-signature-type">Eth1Data</span></h5>
 								</li>
 								<li>
-									<h5>merkleTree: <a href="../interfaces/_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a></h5>
+									<h5>merkleTree: <a href="../interfaces/_packages_lodestar_src_util_merkletree_interface_.iprogressivemerkletree.html" class="tsd-signature-type">IProgressiveMerkleTree</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Deposit</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
