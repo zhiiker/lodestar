@@ -118,7 +118,14 @@ function legendreBit(a: number, q: number): number {
   return 0;
 }
 
-// function custodySubchunkify(bytez: bytes) {}
+function custodySubchunkify(bytez: bytes): bytes[] {
+  const buf = Buffer.concat([bytez, new Buffer(-bytez.length % BYTES_PER_CUSTODY_SUBCHUNK)]);
+  const bufArray = [];
+  for (let i = 0; i < bytez.length; i+=BYTES_PER_CUSTODY_SUBCHUNK) {
+    bufArray.push(buf.slice(i, i + BYTES_PER_CUSTODY_SUBCHUNK));
+  }
+  return bufArray;
+}
 
 // function getCustodyChunkBit(key: BLSSignature, chunk: bytes) {
 //   full_G2_element = bls_signature_to_G2(key)
