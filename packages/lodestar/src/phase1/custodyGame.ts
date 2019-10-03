@@ -15,9 +15,9 @@ import assert from "assert";
 import {getCurrentEpoch} from "../chain/stateTransition/util";
 import {IBeaconConfig} from "@chainsafe/eth2.0-config";
 
-const ceillog2 = (n: number): number => {
-  return n.toString(2).length;
-};
+function ceillog2(x: uint64): number {
+  return x.subn(1).bitLength();
+}
 
 // Misc
 const BLS12_381_Q = 4002409555221667393417789825735904156556882819939007885332058136124031650490837864442687629129015664037894272559787;
@@ -68,17 +68,17 @@ function isValidMerkleBranchWithMixin(
   let value = leaf;
   for (let i=0; i < depth.toNumber(); i++) {
     if (index.divn((2**i)).modn(2)) {
-      value = branch[i] + value;
+      let buf = 
+      value = hash(new Buffer([branch[i], value]));
     } else {
-      value = hash(value + branch[i]);
+      value = hash(new Buffer([value, branch[i]]));
     }
   }
-  const buf = new Buffer.alloc();
-  value = hash(value + buf.writeUInt16LE(mixin));
+  value = hash(new Buffer([value, mixin.toArray('le')]));
   return value === root;
 }
 
-function getCrosslinkChunkCount(crosslink: Crosslink): int {
+function getCrosslinkChunkCount(crosslink: Crosslink): number {
   const crosslinkLength = Math.min(MAX_EPOCHS_PER_CROSSLINK, crosslink.endEpoch - crosslink.startEpoch);
   return crosslinkLength * CHUNKS_PER_EPOCH;
 }
@@ -127,14 +127,14 @@ function custodySubchunkify(bytez: bytes): bytes[] {
   return bufArray;
 }
 
-// function getCustodyChunkBit(key: BLSSignature, chunk: bytes) {
-//   full_G2_element = bls_signature_to_G2(key)
-//   s = full_G2_element[0].coeffs
-//   bits = [legendre_bit((i + 1) * s[i % 2] + int.from_bytes(subchunk, "little"), BLS12_381_Q)
-//   for i, subchunk in enumerate(custody_subchunkify(chunk))]
-//
-//   return bool(sum(bits) % 2)
-// }
+function getCustodyChunkBit(key: BLSSignature, chunk: bytes[]) {
+  // const fullG2Element = bls(key);
+  const s: bytes[] = [];
+  const bits: number[] = s.map((subchunk: bytes, i: number) => {
+    return legendreBit((i + 1) * s[i % 2].readUIntLE(0, s[i % 2].length), BLS12_381_Q);
+  })
+  return bits.reduce((a: number, b: number) => a + b, 0) !== 0;
+}
 
 // def get_chunk_bits_root(chunk_bits: Bitlist[MAX_CUSTODY_CHUNKS]) -> bit:
 //   aggregated_bits = 0
