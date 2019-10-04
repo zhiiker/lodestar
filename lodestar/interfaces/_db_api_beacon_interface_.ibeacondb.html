@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IBeaconDb | @chainsafe/lodestar</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@chainsafe/lodestar</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_db_api_beacon_interface_.html">&quot;db/api/beacon/interface&quot;</a>
+				</li>
+				<li>
+					<a href="_db_api_beacon_interface_.ibeacondb.html">IBeaconDb</a>
+				</li>
+			</ul>
+			<h1>Interface IBeaconDb</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The DB service manages the data layer of the beacon chain
+							The exposed methods do not refer to the underlying data engine,
+						but instead expose relevent beacon chain objects</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IBeaconDb</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_db_api_beacon_beacon_.beacondb.html" class="tsd-signature-type">BeaconDb</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#attestation" class="tsd-kind-icon">attestation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#attesterslashing" class="tsd-kind-icon">attester<wbr>Slashing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#block" class="tsd-kind-icon">block</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#chain" class="tsd-kind-icon">chain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#deposit" class="tsd-kind-icon">deposit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#merkletree" class="tsd-kind-icon">merkle<wbr>Tree</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#proposerslashing" class="tsd-kind-icon">proposer<wbr>Slashing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#transfer" class="tsd-kind-icon">transfer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#voluntaryexit" class="tsd-kind-icon">voluntary<wbr>Exit</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#getvalidatorindex" class="tsd-kind-icon">get<wbr>Validator<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_db_api_beacon_interface_.ibeacondb.html#setchainheadroots" class="tsd-kind-icon">set<wbr>Chain<wbr>Head<wbr>Roots</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="attestation" class="tsd-anchor"></a>
+					<h3>attestation</h3>
+					<div class="tsd-signature tsd-kind-icon">attestation<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_attestations_.attestationrepository.html" class="tsd-signature-type">AttestationRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L39">db/api/beacon/interface.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="attesterslashing" class="tsd-anchor"></a>
+					<h3>attester<wbr>Slashing</h3>
+					<div class="tsd-signature tsd-kind-icon">attester<wbr>Slashing<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_attesterslashing_.attesterslashingrepository.html" class="tsd-signature-type">AttesterSlashingRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L47">db/api/beacon/interface.ts:47</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="block" class="tsd-anchor"></a>
+					<h3>block</h3>
+					<div class="tsd-signature tsd-kind-icon">block<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_block_.blockrepository.html" class="tsd-signature-type">BlockRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L37">db/api/beacon/interface.ts:37</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="chain" class="tsd-anchor"></a>
+					<h3>chain</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_chain_.chainrepository.html" class="tsd-signature-type">ChainRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L33">db/api/beacon/interface.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="deposit" class="tsd-anchor"></a>
+					<h3>deposit</h3>
+					<div class="tsd-signature tsd-kind-icon">deposit<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_deposit_.depositrepository.html" class="tsd-signature-type">DepositRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L49">db/api/beacon/interface.ts:49</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="merkletree" class="tsd-anchor"></a>
+					<h3>merkle<wbr>Tree</h3>
+					<div class="tsd-signature tsd-kind-icon">merkle<wbr>Tree<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_merkletree_.merkletreerepository.html" class="tsd-signature-type">MerkleTreeRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L51">db/api/beacon/interface.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="proposerslashing" class="tsd-anchor"></a>
+					<h3>proposer<wbr>Slashing</h3>
+					<div class="tsd-signature tsd-kind-icon">proposer<wbr>Slashing<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_proposerslashing_.proposerslashingrepository.html" class="tsd-signature-type">ProposerSlashingRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L45">db/api/beacon/interface.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_state_.staterepository.html" class="tsd-signature-type">StateRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L35">db/api/beacon/interface.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="transfer" class="tsd-anchor"></a>
+					<h3>transfer</h3>
+					<div class="tsd-signature tsd-kind-icon">transfer<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_transfer_.transfersrepository.html" class="tsd-signature-type">TransfersRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L43">db/api/beacon/interface.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="voluntaryexit" class="tsd-anchor"></a>
+					<h3>voluntary<wbr>Exit</h3>
+					<div class="tsd-signature tsd-kind-icon">voluntary<wbr>Exit<span class="tsd-signature-symbol">:</span> <a href="../classes/_db_api_beacon_repositories_voluntaryexits_.voluntaryexitrepository.html" class="tsd-signature-type">VoluntaryExitRepository</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L41">db/api/beacon/interface.ts:41</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getvalidatorindex" class="tsd-anchor"></a>
+					<h3>get<wbr>Validator<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Validator<wbr>Index<span class="tsd-signature-symbol">(</span>publicKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BLSPubkey</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L58">db/api/beacon/interface.ts:58</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns validator index coresponding to validator
+									public key in registry,</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>publicKey: <span class="tsd-signature-type">BLSPubkey</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ValidatorIndex</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setchainheadroots" class="tsd-anchor"></a>
+					<h3>set<wbr>Chain<wbr>Head<wbr>Roots</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Chain<wbr>Head<wbr>Roots<span class="tsd-signature-symbol">(</span>blockRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span>, stateRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span>, block<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">BeaconBlock</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">BeaconState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ad5d9f9/packages/lodestar/src/db/api/beacon/interface.ts#L63">db/api/beacon/interface.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the head of the chain</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockRoot: <span class="tsd-signature-type">Hash</span></h5>
+								</li>
+								<li>
+									<h5>stateRoot: <span class="tsd-signature-type">Hash</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> block: <span class="tsd-signature-type">BeaconBlock</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">BeaconState</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_db_api_beacon_interface_.html">"db/api/beacon/interface"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_db_api_beacon_interface_.ibeacondb.html" class="tsd-kind-icon">IBeacon<wbr>Db</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#attestation" class="tsd-kind-icon">attestation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#attesterslashing" class="tsd-kind-icon">attester<wbr>Slashing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#block" class="tsd-kind-icon">block</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#chain" class="tsd-kind-icon">chain</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#deposit" class="tsd-kind-icon">deposit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#merkletree" class="tsd-kind-icon">merkle<wbr>Tree</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#proposerslashing" class="tsd-kind-icon">proposer<wbr>Slashing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#transfer" class="tsd-kind-icon">transfer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#voluntaryexit" class="tsd-kind-icon">voluntary<wbr>Exit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#getvalidatorindex" class="tsd-kind-icon">get<wbr>Validator<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_db_api_beacon_interface_.ibeacondb.html#setchainheadroots" class="tsd-kind-icon">set<wbr>Chain<wbr>Head<wbr>Roots</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

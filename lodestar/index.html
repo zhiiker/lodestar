@@ -64,33 +64,59 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="lodestar">Lodestar</h1>
+				<a href="#lodestar" id="lodestar" style="color: inherit; text-decoration: none;">
+					<h1>Lodestar</h1>
+				</a>
 				<p><a href="https://travis-ci.com/ChainSafe/lodestar"><img src="https://img.shields.io/travis/com/ChainSafe/lodestar/master.svg?label=master&logo=travis" alt="" title="Master Branch (Travis)"></a>
 					<a href="https://discord.gg/aMxzVcr"><img src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&logo=discord" alt="Discord"></a>
 				<img src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.8.1-2e86c1.svg" alt="ETH2.0_Spec_Version 0.8.1"></p>
 				<p>Typescript imlementation of the Eth2.0 beacon chain</p>
-				<h2 id="what-you-need">What you need</h2>
+				<a href="#what-you-need" id="what-you-need" style="color: inherit; text-decoration: none;">
+					<h2>What you need</h2>
+				</a>
 				<p>You will need to go over the <a href="https://github.com/ethereum/eth2.0-specs">specification</a>. You will also need to have a <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQs">basic understanding of sharding</a>. Note that that the specification is an ongoing document and will get outdated. The reference implementation by the Ethereum development team is written in Python and can be found <a href="https://github.com/ethereum/beacon_chain">here</a>.</p>
-				<h4 id="generating-flame-graphs-from-spec-tests">Generating flame graphs from spec tests</h4>
+				<a href="#run-interop" id="run-interop" style="color: inherit; text-decoration: none;">
+					<h2>Run interop</h2>
+				</a>
+				<p><code>./bin/lodestar interop -q 1,8 -v 8 -p minimal</code></p>
+				<a href="#using-start-multish" id="using-start-multish" style="color: inherit; text-decoration: none;">
+					<h4>Using start-multi.sh</h4>
+				</a>
+				<p><code>sh ./start-multi.sh &lt;number_of_beacon_nodes&gt; &lt;total_validators&gt; &lt;validator_distribution_per_node&gt;</code>
+				<code>sh ./start-multi.sh 4 8 8,0,0,0</code></p>
+				<a href="#generating-flame-graphs-from-spec-tests" id="generating-flame-graphs-from-spec-tests" style="color: inherit; text-decoration: none;">
+					<h4>Generating flame graphs from spec tests</h4>
+				</a>
 				<p>Example of cpu-profile generation of blocksanity tests in current directory</p>
 				<p><code>GEN_PROFILE_DIR=$PWD mocha -r ./.babel-register &#39;test/spec/sanity/blocks/blocksanity_s_mainnet.test.ts&#39;</code></p>
 				<p>To view results:</p>
 				<pre><code class="language-bash">npm i -g 0x
 0x --visualize-cpu-profile ./0\ -\ blocksanity-1561705313935.cpuprofile</code></pre>
 				<p>Open resulting html file in favorite browser.</p>
-				<h2 id="usage">Usage</h2>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
 				<ol>
 					<li>If you haven&#39;t <code>yarn install</code></li>
 					<li><code>lerna run build</code></li>
 					<li><code>packages/lodestar/./bin/lodestar --help</code></li>
 				</ol>
-				<h3 id="starting-private-eth1-chain">Starting private eth1 chain</h3>
+				<p>Note:</p>
+				<p>Spec test cases are optional dependency which can be skipped by adding <code>--ignore-optional</code> when installing dependencies.
+				You can always download spec test cases by running <code>yarn install --force</code>.</p>
+				<a href="#starting-private-eth1-chain" id="starting-private-eth1-chain" style="color: inherit; text-decoration: none;">
+					<h3>Starting private eth1 chain</h3>
+				</a>
 				<p><code>./bin/lodestar eth1:dev -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot;</code></p>
 				<p>This will start ganache server on <code>http://127.0.0.1:8545</code>. For more configuration check <code>./bin/lodestar eth1:dev --help</code></p>
-				<h3 id="starting-lodestar-beacon-chain">Starting lodestar beacon chain</h3>
+				<a href="#starting-lodestar-beacon-chain" id="starting-lodestar-beacon-chain" style="color: inherit; text-decoration: none;">
+					<h3>Starting lodestar beacon chain</h3>
+				</a>
 				<p><code>./bin/lodestar beacon --db test-db --eth1RpcUrl http://127.0.0.1:8545 --depositContract &lt;depositContractAddress&gt;</code></p>
 				<p>You will see deposit contract address in console if you used <code>./bin/lodestar eth1:dev</code>.</p>
-				<h3 id="making-validator-deposit">Making validator deposit</h3>
+				<a href="#making-validator-deposit" id="making-validator-deposit" style="color: inherit; text-decoration: none;">
+					<h3>Making validator deposit</h3>
+				</a>
 				<p><code>./bin/lodestar deposit -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot; -n http://127.0.0.1:8545 -c &lt;depositContractAddress&gt;&gt;</code></p>
 				<p>This will trigger 10 deposits to deposit contract which will trigger beacon chain initialization. Make sure to use same mnemonic which you used to start eth1 network.</p>
 			</div>
@@ -101,416 +127,662 @@
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_impl_beacon_fork_.html">"api/impl/beacon/fork"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_impl_validator_duties_.html">"api/impl/validator/duties"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_impl_validator_index_.html">"api/impl/validator/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_impl_validator_produceattestation_.html">"api/impl/validator/produce<wbr>Attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_index_.html">"api/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_interface_.html">"api/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_options_.html">"api/options"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_index_.html">"api/rest/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_options_.html">"api/rest/options"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_beacon_fork_.html">"api/rest/routes/beacon/fork"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_beacon_genesistime_.html">"api/rest/routes/beacon/genesis<wbr>Time"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_beacon_index_.html">"api/rest/routes/beacon/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_beacon_syncing_.html">"api/rest/routes/beacon/syncing"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_beacon_version_.html">"api/rest/routes/beacon/version"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_index_.html">"api/rest/routes/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_duties_.html">"api/rest/routes/validator/duties"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_index_.html">"api/rest/routes/validator/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_produceattestation_.html">"api/rest/routes/validator/produce<wbr>Attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_produceblock_.html">"api/rest/routes/validator/produce<wbr>Block"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_publishattestation_.html">"api/rest/routes/validator/publish<wbr>Attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_publishblock_.html">"api/rest/routes/validator/publish<wbr>Block"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rest_routes_validator_syncing_.html">"api/rest/routes/validator/syncing"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_beacon_beacon_.html">"api/rpc/api/beacon/beacon"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_beacon_index_.html">"api/rpc/api/beacon/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_beacon_interface_.html">"api/rpc/api/beacon/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_index_.html">"api/rpc/api/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_validator_index_.html">"api/rpc/api/validator/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_validator_interface_.html">"api/rpc/api/validator/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_api_validator_validator_.html">"api/rpc/api/validator/validator"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_index_.html">"api/rpc/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_options_.html">"api/rpc/options"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_transport_http_.html">"api/rpc/transport/http"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_transport_index_.html">"api/rpc/transport/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_rpc_transport_ws_.html">"api/rpc/transport/ws"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_utils_.html">"api/utils"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_chain_.html">"chain/chain"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_attestation_data_.html">"chain/factory/attestation/data"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_attestation_index_.html">"chain/factory/attestation/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_block_body_.html">"chain/factory/block/body"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_block_deposits_.html">"chain/factory/block/deposits"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_block_index_.html">"chain/factory/block/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_factory_duties_index_.html">"chain/factory/duties/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_forkchoice_index_.html">"chain/fork<wbr>Choice/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_forkchoice_interface_.html">"chain/fork<wbr>Choice/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_forkchoice_statefuldag_attestationaggregator_.html">"chain/fork<wbr>Choice/stateful<wbr>Dag/attestation<wbr>Aggregator"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_forkchoice_statefuldag_index_.html">"chain/fork<wbr>Choice/stateful<wbr>Dag/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_forkchoice_statefuldag_lmdghost_.html">"chain/fork<wbr>Choice/stateful<wbr>Dag/lmd<wbr>Ghost"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_genesis_genesis_.html">"chain/genesis/genesis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_index_.html">"chain/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_interface_.html">"chain/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_options_.html">"chain/options"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_blockheader_.html">"chain/state<wbr>Transition/block/block<wbr>Header"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_eth1data_.html">"chain/state<wbr>Transition/block/eth1<wbr>Data"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_index_.html">"chain/state<wbr>Transition/block/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_attestation_.html">"chain/state<wbr>Transition/block/operations/attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_attesterslashing_.html">"chain/state<wbr>Transition/block/operations/attester<wbr>Slashing"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_deposit_.html">"chain/state<wbr>Transition/block/operations/deposit"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_index_.html">"chain/state<wbr>Transition/block/operations/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_proposerslashing_.html">"chain/state<wbr>Transition/block/operations/proposer<wbr>Slashing"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_transfer_.html">"chain/state<wbr>Transition/block/operations/transfer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_operations_voluntaryexit_.html">"chain/state<wbr>Transition/block/operations/voluntary<wbr>Exit"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_block_randao_.html">"chain/state<wbr>Transition/block/randao"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_balanceupdates_attestation_.html">"chain/state<wbr>Transition/epoch/balance<wbr>Updates/attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_balanceupdates_basereward_.html">"chain/state<wbr>Transition/epoch/balance<wbr>Updates/base<wbr>Reward"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_balanceupdates_crosslink_.html">"chain/state<wbr>Transition/epoch/balance<wbr>Updates/crosslink"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_balanceupdates_index_.html">"chain/state<wbr>Transition/epoch/balance<wbr>Updates/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_crosslinks_.html">"chain/state<wbr>Transition/epoch/crosslinks"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_finalupdates_.html">"chain/state<wbr>Transition/epoch/final<wbr>Updates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_index_.html">"chain/state<wbr>Transition/epoch/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_justification_.html">"chain/state<wbr>Transition/epoch/justification"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_registryupdates_.html">"chain/state<wbr>Transition/epoch/registry<wbr>Updates"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_slashings_.html">"chain/state<wbr>Transition/epoch/slashings"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_epoch_util_.html">"chain/state<wbr>Transition/epoch/util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_index_.html">"chain/state<wbr>Transition/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_slot_.html">"chain/state<wbr>Transition/slot"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_attestation_.html">"chain/state<wbr>Transition/util/attestation"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_balance_.html">"chain/state<wbr>Transition/util/balance"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_blockroot_.html">"chain/state<wbr>Transition/util/block<wbr>Root"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_committee_.html">"chain/state<wbr>Transition/util/committee"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_domain_.html">"chain/state<wbr>Transition/util/domain"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_duties_.html">"chain/state<wbr>Transition/util/duties"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_epoch_.html">"chain/state<wbr>Transition/util/epoch"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_genesis_.html">"chain/state<wbr>Transition/util/genesis"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_index_.html">"chain/state<wbr>Transition/util/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_proposer_.html">"chain/state<wbr>Transition/util/proposer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_seed_.html">"chain/state<wbr>Transition/util/seed"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_chain_statetransition_util_validator_.html">"chain/state<wbr>Transition/util/validator"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_impl_beacon_fork_.html">"packages/lodestar/src/api/impl/beacon/fork"</a>
+						<a href="modules/_chain_statetransition_util_validatorstatus_.html">"chain/state<wbr>Transition/util/validator<wbr>Status"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_impl_validator_duties_.html">"packages/lodestar/src/api/impl/validator/duties"</a>
+						<a href="modules/_cli_commands_beacon_.html">"cli/commands/beacon"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_impl_validator_index_.html">"packages/lodestar/src/api/impl/validator/index"</a>
+						<a href="modules/_cli_commands_create_config_.html">"cli/commands/create-<wbr>config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_impl_validator_produceattestation_.html">"packages/lodestar/src/api/impl/validator/produce<wbr>Attestation"</a>
+						<a href="modules/_cli_commands_deposit_.html">"cli/commands/deposit"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_index_.html">"packages/lodestar/src/api/index"</a>
+						<a href="modules/_cli_commands_eth1_private_network_.html">"cli/commands/eth1-<wbr>private-<wbr>network"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_options_.html">"packages/lodestar/src/api/options"</a>
+						<a href="modules/_cli_commands_index_.html">"cli/commands/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_index_.html">"packages/lodestar/src/api/rest/index"</a>
+						<a href="modules/_cli_commands_interface_.html">"cli/commands/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_options_.html">"packages/lodestar/src/api/rest/options"</a>
+						<a href="modules/_cli_commands_interop_.html">"cli/commands/interop"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_beacon_fork_.html">"packages/lodestar/src/api/rest/routes/beacon/fork"</a>
+						<a href="modules/_cli_commands_validator_.html">"cli/commands/validator"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_beacon_genesistime_.html">"packages/lodestar/src/api/rest/routes/beacon/genesis<wbr>Time"</a>
+						<a href="modules/_cli_commands_wallet_.html">"cli/commands/wallet"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_beacon_index_.html">"packages/lodestar/src/api/rest/routes/beacon/index"</a>
+						<a href="modules/_cli_error_.html">"cli/error"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_beacon_syncing_.html">"packages/lodestar/src/api/rest/routes/beacon/syncing"</a>
+						<a href="modules/_cli_index_.html">"cli/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_beacon_version_.html">"packages/lodestar/src/api/rest/routes/beacon/version"</a>
+						<a href="modules/_cli_util_.html">"cli/util"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_index_.html">"packages/lodestar/src/api/rest/routes/index"</a>
+						<a href="modules/_constants_constants_.html">"constants/constants"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_duties_.html">"packages/lodestar/src/api/rest/routes/validator/duties"</a>
+						<a href="modules/_constants_index_.html">"constants/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_index_.html">"packages/lodestar/src/api/rest/routes/validator/index"</a>
+						<a href="modules/_constants_network_.html">"constants/network"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_produceattestation_.html">"packages/lodestar/src/api/rest/routes/validator/produce<wbr>Attestation"</a>
+						<a href="modules/_db_api_abstract_.html">"db/api/abstract"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_produceblock_.html">"packages/lodestar/src/api/rest/routes/validator/produce<wbr>Block"</a>
+						<a href="modules/_db_api_beacon_beacon_.html">"db/api/beacon/beacon"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_publishattestation_.html">"packages/lodestar/src/api/rest/routes/validator/publish<wbr>Attestation"</a>
+						<a href="modules/_db_api_beacon_interface_.html">"db/api/beacon/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_publishblock_.html">"packages/lodestar/src/api/rest/routes/validator/publish<wbr>Block"</a>
+						<a href="modules/_db_api_beacon_repositories_attestations_.html">"db/api/beacon/repositories/attestations"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_routes_validator_syncing_.html">"packages/lodestar/src/api/rest/routes/validator/syncing"</a>
+						<a href="modules/_db_api_beacon_repositories_attesterslashing_.html">"db/api/beacon/repositories/attester<wbr>Slashing"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_rest_utils_.html">"packages/lodestar/src/api/rest/utils"</a>
+						<a href="modules/_db_api_beacon_repositories_block_.html">"db/api/beacon/repositories/block"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_api_utils_.html">"packages/lodestar/src/api/utils"</a>
+						<a href="modules/_db_api_beacon_repositories_chain_.html">"db/api/beacon/repositories/chain"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_factory_attestation_data_.html">"packages/lodestar/src/chain/factory/attestation/data"</a>
+						<a href="modules/_db_api_beacon_repositories_deposit_.html">"db/api/beacon/repositories/deposit"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_factory_attestation_index_.html">"packages/lodestar/src/chain/factory/attestation/index"</a>
+						<a href="modules/_db_api_beacon_repositories_index_.html">"db/api/beacon/repositories/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_factory_duties_index_.html">"packages/lodestar/src/chain/factory/duties/index"</a>
+						<a href="modules/_db_api_beacon_repositories_merkletree_.html">"db/api/beacon/repositories/merkle<wbr>Tree"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_index_.html">"packages/lodestar/src/chain/index"</a>
+						<a href="modules/_db_api_beacon_repositories_proposerslashing_.html">"db/api/beacon/repositories/proposer<wbr>Slashing"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_interface_.html">"packages/lodestar/src/chain/interface"</a>
+						<a href="modules/_db_api_beacon_repositories_state_.html">"db/api/beacon/repositories/state"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_options_.html">"packages/lodestar/src/chain/options"</a>
+						<a href="modules/_db_api_beacon_repositories_transfer_.html">"db/api/beacon/repositories/transfer"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_chain_statetransition_block_operations_index_.html">"packages/lodestar/src/chain/state<wbr>Transition/block/operations/index"</a>
+						<a href="modules/_db_api_beacon_repositories_voluntaryexits_.html">"db/api/beacon/repositories/voluntary<wbr>Exits"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_cli_util_.html">"packages/lodestar/src/cli/util"</a>
+						<a href="modules/_db_api_beacon_repository_.html">"db/api/beacon/repository"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_constants_network_.html">"packages/lodestar/src/constants/network"</a>
+						<a href="modules/_db_api_index_.html">"db/api/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_abstract_.html">"packages/lodestar/src/db/api/abstract"</a>
+						<a href="modules/_db_api_validator_interface_.html">"db/api/validator/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_attestations_.html">"packages/lodestar/src/db/api/beacon/repositories/attestations"</a>
+						<a href="modules/_db_api_validator_validator_.html">"db/api/validator/validator"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_attesterslashing_.html">"packages/lodestar/src/db/api/beacon/repositories/attester<wbr>Slashing"</a>
+						<a href="modules/_db_controller_impl_level_.html">"db/controller/impl/level"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_block_.html">"packages/lodestar/src/db/api/beacon/repositories/block"</a>
+						<a href="modules/_db_controller_impl_pouch_.html">"db/controller/impl/pouch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_chain_.html">"packages/lodestar/src/db/api/beacon/repositories/chain"</a>
+						<a href="modules/_db_controller_index_.html">"db/controller/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_deposit_.html">"packages/lodestar/src/db/api/beacon/repositories/deposit"</a>
+						<a href="modules/_db_controller_interface_.html">"db/controller/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_index_.html">"packages/lodestar/src/db/api/beacon/repositories/index"</a>
+						<a href="modules/_db_index_.html">"db/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_merkletree_.html">"packages/lodestar/src/db/api/beacon/repositories/merkle<wbr>Tree"</a>
+						<a href="modules/_db_options_.html">"db/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_proposerslashing_.html">"packages/lodestar/src/db/api/beacon/repositories/proposer<wbr>Slashing"</a>
+						<a href="modules/_db_schema_.html">"db/schema"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_state_.html">"packages/lodestar/src/db/api/beacon/repositories/state"</a>
+						<a href="modules/_eth1_dev_index_.html">"eth1/dev/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_transfer_.html">"packages/lodestar/src/db/api/beacon/repositories/transfer"</a>
+						<a href="modules/_eth1_dev_network_.html">"eth1/dev/network"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repositories_voluntaryexits_.html">"packages/lodestar/src/db/api/beacon/repositories/voluntary<wbr>Exits"</a>
+						<a href="modules/_eth1_dev_options_.html">"eth1/dev/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_api_beacon_repository_.html">"packages/lodestar/src/db/api/beacon/repository"</a>
+						<a href="modules/_eth1_impl_ethers_.html">"eth1/impl/ethers"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_db_options_.html">"packages/lodestar/src/db/options"</a>
+						<a href="modules/_eth1_impl_interop_.html">"eth1/impl/interop"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_eth1_impl_interop_.html">"packages/lodestar/src/eth1/impl/interop"</a>
+						<a href="modules/_eth1_index_.html">"eth1/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_eth1_options_.html">"packages/lodestar/src/eth1/options"</a>
+						<a href="modules/_eth1_interface_.html">"eth1/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_interop_cli_.html">"packages/lodestar/src/interop/cli"</a>
+						<a href="modules/_eth1_options_.html">"eth1/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_interop_deposits_.html">"packages/lodestar/src/interop/deposits"</a>
+						<a href="modules/_eth1_wallet_.html">"eth1/wallet"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_interop_keypairs_.html">"packages/lodestar/src/interop/keypairs"</a>
+						<a href="modules/_interop_cli_.html">"interop/cli"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_interop_state_.html">"packages/lodestar/src/interop/state"</a>
+						<a href="modules/_interop_createpeerid_.html">"interop/create<wbr>Peer<wbr>Id"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_network_options_.html">"packages/lodestar/src/network/options"</a>
+						<a href="modules/_interop_deposits_.html">"interop/deposits"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_node_index_.html">"packages/lodestar/src/node/index"</a>
+						<a href="modules/_interop_dump_.html">"interop/dump"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_node_loggeroptions_.html">"packages/lodestar/src/node/logger<wbr>Options"</a>
+						<a href="modules/_interop_keypairs_.html">"interop/keypairs"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_abstract_.html">"packages/lodestar/src/op<wbr>Pool/modules/abstract"</a>
+						<a href="modules/_interop_state_.html">"interop/state"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_attestation_.html">"packages/lodestar/src/op<wbr>Pool/modules/attestation"</a>
+						<a href="modules/_logger_index_.html">"logger/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_attesterslashing_.html">"packages/lodestar/src/op<wbr>Pool/modules/attester<wbr>Slashing"</a>
+						<a href="modules/_logger_interface_.html">"logger/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_deposit_.html">"packages/lodestar/src/op<wbr>Pool/modules/deposit"</a>
+						<a href="modules/_logger_winston_.html">"logger/winston"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_index_.html">"packages/lodestar/src/op<wbr>Pool/modules/index"</a>
+						<a href="modules/_metrics_beacon_.html">"metrics/beacon"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_proposerslashing_.html">"packages/lodestar/src/op<wbr>Pool/modules/proposer<wbr>Slashing"</a>
+						<a href="modules/_metrics_index_.html">"metrics/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_transfer_.html">"packages/lodestar/src/op<wbr>Pool/modules/transfer"</a>
+						<a href="modules/_metrics_interface_.html">"metrics/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_modules_voluntaryexit_.html">"packages/lodestar/src/op<wbr>Pool/modules/voluntary<wbr>Exit"</a>
+						<a href="modules/_metrics_metrics_.html">"metrics/metrics"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_oppool_options_.html">"packages/lodestar/src/op<wbr>Pool/options"</a>
+						<a href="modules/_metrics_options_.html">"metrics/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_sync_options_.html">"packages/lodestar/src/sync/options"</a>
+						<a href="modules/_metrics_server_http_.html">"metrics/server/http"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_sync_reqresp_index_.html">"packages/lodestar/src/sync/req<wbr>Resp/index"</a>
+						<a href="modules/_metrics_server_index_.html">"metrics/server/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_config_.html">"packages/lodestar/src/util/config"</a>
+						<a href="modules/_metrics_server_push_.html">"metrics/server/push"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_createvalue_.html">"packages/lodestar/src/util/create<wbr>Value"</a>
+						<a href="modules/_network_defaults_.html">"network/defaults"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_deposits_.html">"packages/lodestar/src/util/deposits"</a>
+						<a href="modules/_network_gossip_.html">"network/gossip"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_expandyamlvalue_.html">"packages/lodestar/src/util/expand<wbr>Yaml<wbr>Value"</a>
+						<a href="modules/_network_index_.html">"network/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_httpclient_.html">"packages/lodestar/src/util/http<wbr>Client"</a>
+						<a href="modules/_network_interface_.html">"network/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_io_.html">"packages/lodestar/src/util/io"</a>
+						<a href="modules/_network_network_.html">"network/network"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_merkletree_index_.html">"packages/lodestar/src/util/merkle<wbr>Tree/index"</a>
+						<a href="modules/_network_nodejs_bundle_.html">"network/nodejs/bundle"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_merkletree_interface_.html">"packages/lodestar/src/util/merkle<wbr>Tree/interface"</a>
+						<a href="modules/_network_nodejs_index_.html">"network/nodejs/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_merkletree_lightmerkletree_.html">"packages/lodestar/src/util/merkle<wbr>Tree/light<wbr>Merkle<wbr>Tree"</a>
+						<a href="modules/_network_nodejs_util_.html">"network/nodejs/util"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_merkletree_utils_.html">"packages/lodestar/src/util/merkle<wbr>Tree/utils"</a>
+						<a href="modules/_network_options_.html">"network/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_sort_.html">"packages/lodestar/src/util/sort"</a>
+						<a href="modules/_network_reqresp_.html">"network/req<wbr>Resp"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_util_toml_.html">"packages/lodestar/src/util/toml"</a>
+						<a href="modules/_network_util_.html">"network/util"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_defaults_.html">"packages/lodestar/src/validator/defaults"</a>
+						<a href="modules/_node_index_.html">"node/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_options_.html">"packages/lodestar/src/validator/options"</a>
+						<a href="modules/_node_loggeroptions_.html">"node/logger<wbr>Options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rest_apiclient_.html">"packages/lodestar/src/validator/rest/api<wbr>Client"</a>
+						<a href="modules/_node_nodejs_.html">"node/nodejs"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rest_beacon_beacon_.html">"packages/lodestar/src/validator/rest/beacon/beacon"</a>
+						<a href="modules/_node_options_.html">"node/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rest_index_.html">"packages/lodestar/src/validator/rest/index"</a>
+						<a href="modules/_oppool_index_.html">"op<wbr>Pool/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rest_validator_validator_.html">"packages/lodestar/src/validator/rest/validator/validator"</a>
+						<a href="modules/_oppool_modules_abstract_.html">"op<wbr>Pool/modules/abstract"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rpc_abstract_.html">"packages/lodestar/src/validator/rpc/abstract"</a>
+						<a href="modules/_oppool_modules_attestation_.html">"op<wbr>Pool/modules/attestation"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rpc_impl_instance_.html">"packages/lodestar/src/validator/rpc/impl/instance"</a>
+						<a href="modules/_oppool_modules_attesterslashing_.html">"op<wbr>Pool/modules/attester<wbr>Slashing"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rpc_impl_ws_.html">"packages/lodestar/src/validator/rpc/impl/ws"</a>
+						<a href="modules/_oppool_modules_deposit_.html">"op<wbr>Pool/modules/deposit"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rpc_index_.html">"packages/lodestar/src/validator/rpc/index"</a>
+						<a href="modules/_oppool_modules_index_.html">"op<wbr>Pool/modules/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_packages_lodestar_src_validator_rpc_interface_.html">"packages/lodestar/src/validator/rpc/interface"</a>
+						<a href="modules/_oppool_modules_proposerslashing_.html">"op<wbr>Pool/modules/proposer<wbr>Slashing"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/api.html">api</a>
+						<a href="modules/_oppool_modules_transfer_.html">"op<wbr>Pool/modules/transfer"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/api_rpc.html">api/rpc</a>
+						<a href="modules/_oppool_modules_voluntaryexit_.html">"op<wbr>Pool/modules/voluntary<wbr>Exit"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/api_rpc_transport.html">api/rpc/transport</a>
+						<a href="modules/_oppool_oppool_.html">"op<wbr>Pool/op<wbr>Pool"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain.html">chain</a>
+						<a href="modules/_oppool_options_.html">"op<wbr>Pool/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_blockassembly.html">chain/block<wbr>Assembly</a>
+						<a href="modules/_sync_ireputation_.html">"sync/IReputation"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_forkchoice.html">chain/fork<wbr>Choice</a>
+						<a href="modules/_sync_index_.html">"sync/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_genesis.html">chain/genesis</a>
+						<a href="modules/_sync_initial_.html">"sync/initial"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition.html">chain/state<wbr>Transition</a>
+						<a href="modules/_sync_options_.html">"sync/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition_block.html">chain/state<wbr>Transition/block</a>
+						<a href="modules/_sync_regular_.html">"sync/regular"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition_epoch.html">chain/state<wbr>Transition/epoch</a>
+						<a href="modules/_sync_reqresp_index_.html">"sync/req<wbr>Resp/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition_epoch_util.html">chain/state<wbr>Transition/epoch/util</a>
+						<a href="modules/_sync_reqresp_interface_.html">"sync/req<wbr>Resp/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition_slot.html">chain/state<wbr>Transition/slot</a>
+						<a href="modules/_sync_reqresp_reqresp_.html">"sync/req<wbr>Resp/req<wbr>Resp"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/chain_statetransition_util.html">chain/state<wbr>Transition/util</a>
+						<a href="modules/_util_address_.html">"util/address"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/cli.html">cli</a>
+						<a href="modules/_util_bytes_.html">"util/bytes"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/cli_commands.html">cli/commands</a>
+						<a href="modules/_util_config_.html">"util/config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/constants.html">constants</a>
+						<a href="modules/_util_createvalue_.html">"util/create<wbr>Value"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db.html">db</a>
+						<a href="modules/_util_deposits_.html">"util/deposits"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_api.html">db/api</a>
+						<a href="modules/_util_encrypt_.html">"util/encrypt"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_api_beacon.html">db/api/beacon</a>
+						<a href="modules/_util_file_.html">"util/file"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_api_validator.html">db/api/validator</a>
+						<a href="modules/_util_httpclient_.html">"util/http<wbr>Client"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_controller.html">db/controller</a>
+						<a href="modules/_util_io_.html">"util/io"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_controller_impl.html">db/controller/impl</a>
+						<a href="modules/_util_objects_.html">"util/objects"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/db_schema.html">db/schema</a>
+						<a href="modules/_util_serialization_.html">"util/serialization"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/eth1.html">eth1</a>
+						<a href="modules/_util_sleep_.html">"util/sleep"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/eth1_dev.html">eth1/dev</a>
+						<a href="modules/_util_sort_.html">"util/sort"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/logger.html">logger</a>
+						<a href="modules/_util_toml_.html">"util/toml"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/metrics.html">metrics</a>
+						<a href="modules/_validator_defaults_.html">"validator/defaults"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/metrics_server.html">metrics/server</a>
+						<a href="modules/_validator_index_.html">"validator/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/network.html">network</a>
+						<a href="modules/_validator_keystore_.html">"validator/keystore"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/network_nodejs.html">network/nodejs</a>
+						<a href="modules/_validator_options_.html">"validator/options"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/node.html">node</a>
+						<a href="modules/_validator_rest_apiclient_.html">"validator/rest/api<wbr>Client"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/oppool.html">op<wbr>Pool</a>
+						<a href="modules/_validator_rest_beacon_beacon_.html">"validator/rest/beacon/beacon"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/rpc_api.html">rpc/api</a>
+						<a href="modules/_validator_rest_index_.html">"validator/rest/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/sync.html">sync</a>
+						<a href="modules/_validator_rest_validator_validator_.html">"validator/rest/validator/validator"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_address.html">util/address</a>
+						<a href="modules/_validator_rpc_abstract_.html">"validator/rpc/abstract"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_bytes.html">util/bytes</a>
+						<a href="modules/_validator_rpc_impl_instance_.html">"validator/rpc/impl/instance"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_crypto.html">util/crypto</a>
+						<a href="modules/_validator_rpc_impl_ws_.html">"validator/rpc/impl/ws"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_encrypt.html">util/encrypt</a>
+						<a href="modules/_validator_rpc_index_.html">"validator/rpc/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_file.html">util/file</a>
+						<a href="modules/_validator_rpc_interface_.html">"validator/rpc/interface"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_math.html">util/math</a>
+						<a href="modules/_validator_services_attestation_.html">"validator/services/attestation"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_merkletree.html">util/merkle<wbr>Tree</a>
+						<a href="modules/_validator_services_block_.html">"validator/services/block"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/util_objects.html">util/objects</a>
+						<a href="modules/_validator_types_.html">"validator/types"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/validator.html">validator</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/validator_attestation.html">validator/attestation</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/validator_keystore.html">validator/keystore</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="modules/params_presets_mainnet.html">params/presets/mainnet</a>
 					</li>
 				</ul>
 			</nav>
@@ -533,6 +805,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -581,7 +854,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
