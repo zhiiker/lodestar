@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DomainType | @chainsafe/lodestar</title>
+	<title>IRpcClientEvents | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,98 +56,66 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_constants_constants_.html">&quot;constants/constants&quot;</a>
+					<a href="../modules/_validator_rpc_interface_.html">&quot;validator/rpc/interface&quot;</a>
 				</li>
 				<li>
-					<a href="_constants_constants_.domaintype.html">DomainType</a>
+					<a href="_validator_rpc_interface_.irpcclientevents.html">IRpcClientEvents</a>
 				</li>
 			</ul>
-			<h1>Enumeration DomainType</h1>
+			<h1>Interface IRpcClientEvents</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IRpcClientEvents</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#attestation" class="tsd-kind-icon">ATTESTATION</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#beacon_proposer" class="tsd-kind-icon">BEACON_<wbr>PROPOSER</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#deposit" class="tsd-kind-icon">DEPOSIT</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#randao" class="tsd-kind-icon">RANDAO</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#transfer" class="tsd-kind-icon">TRANSFER</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_constants_.domaintype.html#voluntary_exit" class="tsd-kind-icon">VOLUNTARY_<wbr>EXIT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_validator_rpc_interface_.irpcclientevents.html#beaconchainstarted" class="tsd-kind-icon">beacon<wbr>Chain<wbr>Started</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="attestation" class="tsd-anchor"></a>
-					<h3>ATTESTATION</h3>
-					<div class="tsd-signature tsd-kind-icon">ATTESTATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="beaconchainstarted" class="tsd-anchor"></a>
+					<h3>beacon<wbr>Chain<wbr>Started</h3>
+					<div class="tsd-signature tsd-kind-icon">beacon<wbr>Chain<wbr>Started<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L18">constants/constants.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L15">validator/rpc/interface.ts:15</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="beacon_proposer" class="tsd-anchor"></a>
-					<h3>BEACON_<wbr>PROPOSER</h3>
-					<div class="tsd-signature tsd-kind-icon">BEACON_<wbr>PROPOSER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L16">constants/constants.ts:16</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="deposit" class="tsd-anchor"></a>
-					<h3>DEPOSIT</h3>
-					<div class="tsd-signature tsd-kind-icon">DEPOSIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L19">constants/constants.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="randao" class="tsd-anchor"></a>
-					<h3>RANDAO</h3>
-					<div class="tsd-signature tsd-kind-icon">RANDAO<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L17">constants/constants.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="transfer" class="tsd-anchor"></a>
-					<h3>TRANSFER</h3>
-					<div class="tsd-signature tsd-kind-icon">TRANSFER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L21">constants/constants.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="voluntary_exit" class="tsd-anchor"></a>
-					<h3>VOLUNTARY_<wbr>EXIT</h3>
-					<div class="tsd-signature tsd-kind-icon">VOLUNTARY_<wbr>EXIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/constants/constants.ts#L20">constants/constants.ts:20</a></li>
-						</ul>
-					</aside>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -158,62 +126,35 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_constants_constants_.html">"constants/constants"</a>
+						<a href="../modules/_validator_rpc_interface_.html">"validator/rpc/interface"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_validator_rpc_interface_.inewepochcallback.html" class="tsd-kind-icon">INew<wbr>Epoch<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_validator_rpc_interface_.inewslotcallback.html" class="tsd-kind-icon">INew<wbr>Slot<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_validator_rpc_interface_.irpcclient.html" class="tsd-kind-icon">IRpc<wbr>Client</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="_constants_constants_.domaintype.html" class="tsd-kind-icon">Domain<wbr>Type</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_validator_rpc_interface_.irpcclientevents.html" class="tsd-kind-icon">IRpc<wbr>Client<wbr>Events</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#attestation" class="tsd-kind-icon">ATTESTATION</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#beacon_proposer" class="tsd-kind-icon">BEACON_<wbr>PROPOSER</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#deposit" class="tsd-kind-icon">DEPOSIT</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#randao" class="tsd-kind-icon">RANDAO</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#transfer" class="tsd-kind-icon">TRANSFER</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_constants_.domaintype.html#voluntary_exit" class="tsd-kind-icon">VOLUNTARY_<wbr>EXIT</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_validator_rpc_interface_.irpcclientevents.html#beaconchainstarted" class="tsd-kind-icon">beacon<wbr>Chain<wbr>Started</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#deposit_contract_tree_depth" class="tsd-kind-icon">DEPOSIT_<wbr>CONTRACT_<wbr>TREE_<wbr>DEPTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#empty_signature" class="tsd-kind-icon">EMPTY_<wbr>SIGNATURE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#far_future_epoch" class="tsd-kind-icon">FAR_<wbr>FUTURE_<wbr>EPOCH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#genesis_epoch" class="tsd-kind-icon">GENESIS_<wbr>EPOCH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#genesis_slot" class="tsd-kind-icon">GENESIS_<wbr>SLOT</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#genesis_start_shard" class="tsd-kind-icon">GENESIS_<wbr>START_<wbr>SHARD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#seconds_per_day" class="tsd-kind-icon">SECONDS_<wbr>PER_<wbr>DAY</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_constants_constants_.html#zero_hash" class="tsd-kind-icon">ZERO_<wbr>HASH</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_validator_rpc_interface_.html#rpcclienteventemitter" class="tsd-kind-icon">Rpc<wbr>Client<wbr>Event<wbr>Emitter</a>
 					</li>
 				</ul>
 			</nav>

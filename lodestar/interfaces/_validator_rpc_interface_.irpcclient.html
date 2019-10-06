@@ -62,18 +62,41 @@
 					<a href="_validator_rpc_interface_.irpcclient.html">IRpcClient</a>
 				</li>
 			</ul>
-			<h1>Interface IRpcClient</h1>
+			<h1>Interface IRpcClient&lt;T, U, V&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+					<li>
+						<h4>U</h4>
+					</li>
+					<li>
+						<h4>V</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRpcClient</span>
+						<span class="tsd-signature-type">TypeRecord</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">, </span><a href="_validator_rpc_interface_.irpcclientevents.html" class="tsd-signature-type">IRpcClientEvents</a><span class="tsd-signature-symbol">, </span><a href="_validator_rpc_interface_.irpcclientevents.html" class="tsd-signature-type">IRpcClientEvents</a><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IRpcClient</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -93,6 +116,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_validator_rpc_interface_.irpcclient.html#__emittype" class="tsd-kind-icon"> _<wbr>emit<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_validator_rpc_interface_.irpcclient.html#__emittertype" class="tsd-kind-icon"> _<wbr>emitter<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_validator_rpc_interface_.irpcclient.html#__eventstype" class="tsd-kind-icon"> _<wbr>events<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_validator_rpc_interface_.irpcclient.html#beacon" class="tsd-kind-icon">beacon</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_validator_rpc_interface_.irpcclient.html#url" class="tsd-kind-icon">url</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_validator_rpc_interface_.irpcclient.html#validator" class="tsd-kind-icon">validator</a></li>
@@ -112,13 +138,46 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="__emittype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>emit<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>emit<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">V</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _emitType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="__emittertype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>emitter<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>emitter<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _emitterType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="__eventstype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>events<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>events<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">U</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _eventsType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="beacon" class="tsd-anchor"></a>
 					<h3>beacon</h3>
 					<div class="tsd-signature tsd-kind-icon">beacon<span class="tsd-signature-symbol">:</span> <a href="_api_rpc_api_beacon_interface_.ibeaconapi.html" class="tsd-signature-type">IBeaconApi</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L14">validator/rpc/interface.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L22">validator/rpc/interface.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L18">validator/rpc/interface.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L26">validator/rpc/interface.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -138,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">validator<span class="tsd-signature-symbol">:</span> <a href="_api_rpc_api_validator_interface_.ivalidatorapi.html" class="tsd-signature-type">IValidatorApi</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L16">validator/rpc/interface.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L24">validator/rpc/interface.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L23">validator/rpc/interface.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L31">validator/rpc/interface.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L28">validator/rpc/interface.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L36">validator/rpc/interface.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L43">validator/rpc/interface.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L51">validator/rpc/interface.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -230,7 +289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c3136c/packages/lodestar/src/validator/rpc/interface.ts#L35">validator/rpc/interface.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/99d56b4/packages/lodestar/src/validator/rpc/interface.ts#L43">validator/rpc/interface.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,9 +333,18 @@
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_validator_rpc_interface_.irpcclient.html" class="tsd-kind-icon">IRpc<wbr>Client</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_validator_rpc_interface_.irpcclient.html#__emittype" class="tsd-kind-icon">_emit<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_validator_rpc_interface_.irpcclient.html#__emittertype" class="tsd-kind-icon">_emitter<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_validator_rpc_interface_.irpcclient.html#__eventstype" class="tsd-kind-icon">_events<wbr>Type</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_validator_rpc_interface_.irpcclient.html#beacon" class="tsd-kind-icon">beacon</a>
 							</li>
@@ -302,6 +370,12 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_validator_rpc_interface_.irpcclientevents.html" class="tsd-kind-icon">IRpc<wbr>Client<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_validator_rpc_interface_.html#rpcclienteventemitter" class="tsd-kind-icon">Rpc<wbr>Client<wbr>Event<wbr>Emitter</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
