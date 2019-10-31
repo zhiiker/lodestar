@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InteropCommand | @chainsafe/lodestar</title>
+	<title>DevCommand | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cli_commands_interop_.html">&quot;cli/commands/interop&quot;</a>
+					<a href="../modules/_cli_commands_dev_.html">&quot;cli/commands/dev&quot;</a>
 				</li>
 				<li>
-					<a href="_cli_commands_interop_.interopcommand.html">InteropCommand</a>
+					<a href="_cli_commands_dev_.devcommand.html">DevCommand</a>
 				</li>
 			</ul>
-			<h1>Class InteropCommand</h1>
+			<h1>Class DevCommand</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InteropCommand</span>
+						<span class="target">DevCommand</span>
 					</li>
 				</ul>
 			</section>
@@ -90,17 +90,17 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_cli_commands_interop_.interopcommand.html#node" class="tsd-kind-icon">node</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_interop_.interopcommand.html#validatordir" class="tsd-kind-icon">validator<wbr>Dir</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_cli_commands_dev_.devcommand.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_dev_.devcommand.html#validatordir" class="tsd-kind-icon">validator<wbr>Dir</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cli_commands_interop_.interopcommand.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cli_commands_interop_.interopcommand.html#register" class="tsd-kind-icon">register</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_interop_.interopcommand.html#startvalidator" class="tsd-kind-icon">start<wbr>Validator</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_interop_.interopcommand.html#startvalidators" class="tsd-kind-icon">start<wbr>Validators</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cli_commands_dev_.devcommand.html#action" class="tsd-kind-icon">action</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cli_commands_dev_.devcommand.html#register" class="tsd-kind-icon">register</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_dev_.devcommand.html#startvalidator" class="tsd-kind-icon">start<wbr>Validator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_cli_commands_dev_.devcommand.html#startvalidators" class="tsd-kind-icon">start<wbr>Validators</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <a href="_node_nodejs_.beaconnode.html" class="tsd-signature-type">BeaconNode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L43">cli/commands/interop.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L49">cli/commands/dev.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +124,7 @@
 					<div class="tsd-signature tsd-kind-icon">validator<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;./validators&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L45">cli/commands/interop.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L51">cli/commands/dev.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,19 +135,19 @@
 					<a name="action" class="tsd-anchor"></a>
 					<h3>action</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_cli_commands_interop_.iinteropcommandoptions.html" class="tsd-signature-type">IInteropCommandOptions</a>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logger_interface_.ilogger.html" class="tsd-signature-type">ILogger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/_cli_commands_dev_.idevcommandoptions.html" class="tsd-signature-type">IDevCommandOptions</a>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logger_interface_.ilogger.html" class="tsd-signature-type">ILogger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L75">cli/commands/interop.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L83">cli/commands/dev.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/_cli_commands_interop_.iinteropcommandoptions.html" class="tsd-signature-type">IInteropCommandOptions</a></h5>
+									<h5>options: <a href="../interfaces/_cli_commands_dev_.idevcommandoptions.html" class="tsd-signature-type">IDevCommandOptions</a></h5>
 								</li>
 								<li>
 									<h5>logger: <a href="../interfaces/_logger_interface_.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
@@ -168,7 +168,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_cli_commands_interface_.iclicommand.html">ICliCommand</a>.<a href="../interfaces/_cli_commands_interface_.iclicommand.html#register">register</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L47">cli/commands/interop.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L53">cli/commands/dev.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L161">cli/commands/interop.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L173">cli/commands/dev.ts:173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -217,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/aa77c10/packages/lodestar/src/cli/commands/interop.ts#L153">cli/commands/interop.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/08a8b88/packages/lodestar/src/cli/commands/dev.ts#L166">cli/commands/dev.ts:166</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -245,7 +245,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_cli_commands_interop_.html">"cli/commands/interop"</a>
+						<a href="../modules/_cli_commands_dev_.html">"cli/commands/dev"</a>
 					</li>
 				</ul>
 			</nav>
@@ -254,32 +254,32 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_cli_commands_interop_.interopcommand.html" class="tsd-kind-icon">Interop<wbr>Command</a>
+						<a href="_cli_commands_dev_.devcommand.html" class="tsd-kind-icon">Dev<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_cli_commands_interop_.interopcommand.html#node" class="tsd-kind-icon">node</a>
+								<a href="_cli_commands_dev_.devcommand.html#node" class="tsd-kind-icon">node</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_cli_commands_interop_.interopcommand.html#validatordir" class="tsd-kind-icon">validator<wbr>Dir</a>
+								<a href="_cli_commands_dev_.devcommand.html#validatordir" class="tsd-kind-icon">validator<wbr>Dir</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_cli_commands_interop_.interopcommand.html#action" class="tsd-kind-icon">action</a>
+								<a href="_cli_commands_dev_.devcommand.html#action" class="tsd-kind-icon">action</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_cli_commands_interop_.interopcommand.html#register" class="tsd-kind-icon">register</a>
+								<a href="_cli_commands_dev_.devcommand.html#register" class="tsd-kind-icon">register</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_cli_commands_interop_.interopcommand.html#startvalidator" class="tsd-kind-icon">start<wbr>Validator</a>
+								<a href="_cli_commands_dev_.devcommand.html#startvalidator" class="tsd-kind-icon">start<wbr>Validator</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_cli_commands_interop_.interopcommand.html#startvalidators" class="tsd-kind-icon">start<wbr>Validators</a>
+								<a href="_cli_commands_dev_.devcommand.html#startvalidators" class="tsd-kind-icon">start<wbr>Validators</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_cli_commands_interop_.iinteropcommandoptions.html" class="tsd-kind-icon">IInterop<wbr>Command<wbr>Options</a>
+						<a href="../interfaces/_cli_commands_dev_.idevcommandoptions.html" class="tsd-kind-icon">IDev<wbr>Command<wbr>Options</a>
 					</li>
 				</ul>
 			</nav>
