@@ -113,12 +113,13 @@
 					<h3>Starting lodestar beacon chain</h3>
 				</a>
 				<p><code>./bin/lodestar beacon --db test-db --eth1RpcUrl http://127.0.0.1:8545 --depositContract &lt;depositContractAddress&gt;</code></p>
-				<p>You will see deposit contract address in console if you used <code>./bin/lodestar eth1:dev</code>.</p>
+				<p>You will see deposit contract address in console if you used <code>./bin/lodestar eth1:dev</code>.  </p>
 				<a href="#making-validator-deposit" id="making-validator-deposit" style="color: inherit; text-decoration: none;">
 					<h3>Making validator deposit</h3>
 				</a>
 				<p><code>./bin/lodestar deposit -m &quot;vast thought differ pull jewel broom cook wrist tribe word before omit&quot; -n http://127.0.0.1:8545 -c &lt;depositContractAddress&gt;&gt;</code></p>
-				<p>This will trigger 10 deposits to deposit contract which will trigger beacon chain initialization. Make sure to use same mnemonic which you used to start eth1 network.</p>
+				<p>This will trigger 10 deposits to deposit contract which will trigger beacon chain initialization. Make sure to use same mnemonic which you used to start eth1 network.  </p>
+				<p><strong>NOTE:</strong> If you&#39;d like to silence the client&#39;s logs, set the <code>LODESTAR_SILENCE</code> environment variable to <code>true</code>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
