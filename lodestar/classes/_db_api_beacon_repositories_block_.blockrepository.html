@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_db_api_beacon_repository_.repository.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="_db_api_beacon_repository_.bulkrepository.html" class="tsd-signature-type">BulkRepository</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">BlockRepository</span>
@@ -105,16 +105,21 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_db_api_beacon_repositories_block_.blockrepository.html#add" class="tsd-kind-icon">add</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#deleteall" class="tsd-kind-icon">delete<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#deletemany" class="tsd-kind-icon">delete<wbr>Many</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_db_api_beacon_repositories_block_.blockrepository.html#deletemanybyvalue" class="tsd-kind-icon">delete<wbr>Many<wbr>ByValue</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getall" class="tsd-kind-icon">get<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getallbetween" class="tsd-kind-icon">get<wbr>All<wbr>Between</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getblockbyslot" class="tsd-kind-icon">get<wbr>Block<wbr>BySlot</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getchainhead" class="tsd-kind-icon">get<wbr>Chain<wbr>Head</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getfinalizedblock" class="tsd-kind-icon">get<wbr>Finalized<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#getjustifiedblock" class="tsd-kind-icon">get<wbr>Justified<wbr>Block</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#isbadblock" class="tsd-kind-icon">is<wbr>Bad<wbr>Block</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_db_api_beacon_repositories_block_.blockrepository.html#setunderroot" class="tsd-kind-icon">set<wbr>Under<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_db_api_beacon_repositories_block_.blockrepository.html#set" class="tsd-kind-icon">set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_api_beacon_repositories_block_.blockrepository.html#storebadblock" class="tsd-kind-icon">store<wbr>Bad<wbr>Block</a></li>
 							</ul>
 						</section>
@@ -134,7 +139,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L12">db/api/beacon/repositories/block.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L12">db/api/beacon/repositories/block.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -163,7 +168,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#bucket">bucket</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L15">db/api/beacon/repository.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L15">db/api/beacon/repository.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="_db_api_beacon_repositories_chain_.chainrepository.html" class="tsd-signature-type">ChainRepository</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L12">db/api/beacon/repositories/block.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L12">db/api/beacon/repositories/block.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +189,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#config">config</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L11">db/api/beacon/repository.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L11">db/api/beacon/repository.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +200,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#db">db</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L13">db/api/beacon/repository.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L13">db/api/beacon/repository.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,13 +211,37 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L17">db/api/beacon/repository.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L17">db/api/beacon/repository.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#add">add</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L34">db/api/beacon/repositories/block.ts:34</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <span class="tsd-signature-type">BeaconBlock</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
@@ -224,13 +253,103 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#delete">delete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L52">db/api/beacon/repository.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L52">db/api/beacon/repository.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deleteall" class="tsd-anchor"></a>
+					<h3>delete<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>All<span class="tsd-signature-symbol">(</span>idFunction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_db_api_beacon_repository_.bulkrepository.html">BulkRepository</a>.<a href="_db_api_beacon_repository_.bulkrepository.html#deleteall">deleteAll</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L88">db/api/beacon/repository.ts:88</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> idFunction: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">BeaconBlock</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="deletemany" class="tsd-anchor"></a>
+					<h3>delete<wbr>Many</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Many<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_db_api_beacon_repository_.bulkrepository.html">BulkRepository</a>.<a href="_db_api_beacon_repository_.bulkrepository.html#deletemany">deleteMany</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L76">db/api/beacon/repository.ts:76</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ids: <a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="deletemanybyvalue" class="tsd-anchor"></a>
+					<h3>delete<wbr>Many<wbr>ByValue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Many<wbr>ByValue<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_db_api_beacon_repository_.bulkrepository.html">BulkRepository</a>.<a href="_db_api_beacon_repository_.bulkrepository.html#deletemanybyvalue">deleteManyByValue</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L30">db/api/beacon/repositories/block.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>values: <span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -248,7 +367,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L30">db/api/beacon/repository.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L30">db/api/beacon/repository.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -258,6 +377,51 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getall" class="tsd-anchor"></a>
+					<h3>get<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_db_api_beacon_repository_.bulkrepository.html">BulkRepository</a>.<a href="_db_api_beacon_repository_.bulkrepository.html#getall">getAll</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L60">db/api/beacon/repository.ts:60</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getallbetween" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Between</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Between<span class="tsd-signature-symbol">(</span>lowerLimit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, upperLimit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_db_api_beacon_repository_.bulkrepository.html">BulkRepository</a>.<a href="_db_api_beacon_repository_.bulkrepository.html#getallbetween">getAllBetween</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L68">db/api/beacon/repository.ts:68</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lowerLimit: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+								</li>
+								<li>
+									<h5>upperLimit: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -271,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L34">db/api/beacon/repositories/block.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L50">db/api/beacon/repositories/block.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,7 +458,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L42">db/api/beacon/repositories/block.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L58">db/api/beacon/repositories/block.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -311,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L22">db/api/beacon/repositories/block.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L38">db/api/beacon/repositories/block.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -328,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L28">db/api/beacon/repositories/block.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L44">db/api/beacon/repositories/block.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -346,7 +510,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L40">db/api/beacon/repository.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repository.ts#L40">db/api/beacon/repository.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -369,7 +533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L57">db/api/beacon/repositories/block.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L73">db/api/beacon/repositories/block.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -382,49 +546,25 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="set" class="tsd-anchor"></a>
 					<h3>set</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Hash</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#set">set</a></p>
+								<p>Overrides <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#set">set</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L48">db/api/beacon/repository.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L22">db/api/beacon/repositories/block.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <a href="../modules/_db_api_beacon_repository_.html#id" class="tsd-signature-type">Id</a></h5>
+									<h5>id: <span class="tsd-signature-type">Hash</span></h5>
 								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">BeaconBlock</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="setunderroot" class="tsd-anchor"></a>
-					<h3>set<wbr>Under<wbr>Root</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Under<wbr>Root<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BeaconBlock</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_db_api_beacon_repository_.repository.html">Repository</a>.<a href="_db_api_beacon_repository_.repository.html#setunderroot">setUnderRoot</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repository.ts#L44">db/api/beacon/repository.ts:44</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
 								<li>
 									<h5>value: <span class="tsd-signature-type">BeaconBlock</span></h5>
 								</li>
@@ -443,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a0b6d83/packages/lodestar/src/db/api/beacon/repositories/block.ts#L50">db/api/beacon/repositories/block.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d513a33/packages/lodestar/src/db/api/beacon/repositories/block.ts#L66">db/api/beacon/repositories/block.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -494,11 +634,29 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#type" class="tsd-kind-icon">type</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#add" class="tsd-kind-icon">add</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#delete" class="tsd-kind-icon">delete</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#deleteall" class="tsd-kind-icon">delete<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#deletemany" class="tsd-kind-icon">delete<wbr>Many</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#deletemanybyvalue" class="tsd-kind-icon">delete<wbr>Many<wbr>ByValue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#getall" class="tsd-kind-icon">get<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_db_api_beacon_repositories_block_.blockrepository.html#getallbetween" class="tsd-kind-icon">get<wbr>All<wbr>Between</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#getblockbyslot" class="tsd-kind-icon">get<wbr>Block<wbr>BySlot</a>
@@ -518,11 +676,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#isbadblock" class="tsd-kind-icon">is<wbr>Bad<wbr>Block</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#set" class="tsd-kind-icon">set</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_db_api_beacon_repositories_block_.blockrepository.html#setunderroot" class="tsd-kind-icon">set<wbr>Under<wbr>Root</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_db_api_beacon_repositories_block_.blockrepository.html#storebadblock" class="tsd-kind-icon">store<wbr>Bad<wbr>Block</a>
