@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InitialSync | @chainsafe/lodestar</title>
+	<title>FastSync | @chainsafe/lodestar</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,24 +56,60 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sync_initial_.html">&quot;sync/initial&quot;</a>
+					<a href="../modules/_sync_initial_fast_index_.html">&quot;sync/initial/fast/index&quot;</a>
 				</li>
 				<li>
-					<a href="_sync_initial_.initialsync.html">InitialSync</a>
+					<a href="_sync_initial_fast_index_.fastsync.html">FastSync</a>
 				</li>
 			</ul>
-			<h1>Class InitialSync</h1>
+			<h1>Class FastSync&lt;T, U, V&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+					<li>
+						<h4>U</h4>
+					</li>
+					<li>
+						<h4>V</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InitialSync</span>
+						<span class="tsd-signature-type">TypeRecord</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_sync_initial_interface_.iinitialsyncevents.html" class="tsd-signature-type">IInitialSyncEvents</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_sync_initial_interface_.iinitialsyncevents.html" class="tsd-signature-type">IInitialSyncEvents</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">FastSync</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_node_nodejs_.iservice.html" class="tsd-signature-type">IService</a>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">TypeRecord</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_sync_initial_interface_.iinitialsyncevents.html" class="tsd-signature-type">IInitialSyncEvents</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_sync_initial_interface_.iinitialsyncevents.html" class="tsd-signature-type">IInitialSyncEvents</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
+						<span class="tsd-signature-symbol"> &amp; </span>
+						<span class="tsd-signature-type">object</span>
 					</li>
 				</ul>
 			</section>
@@ -84,27 +120,30 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_sync_initial_.initialsync.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_sync_initial_fast_index_.fastsync.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#chain" class="tsd-kind-icon">chain</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#network" class="tsd-kind-icon">network</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_.initialsync.html#reps" class="tsd-kind-icon">reps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_sync_initial_fast_index_.fastsync.html#__emittype" class="tsd-kind-icon"> _<wbr>emit<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_sync_initial_fast_index_.fastsync.html#__emittertype" class="tsd-kind-icon"> _<wbr>emitter<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_sync_initial_fast_index_.fastsync.html#__eventstype" class="tsd-kind-icon"> _<wbr>events<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#chain" class="tsd-kind-icon">chain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#opts" class="tsd-kind-icon">opts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#peers" class="tsd-kind-icon">peers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#reps" class="tsd-kind-icon">reps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#rpc" class="tsd-kind-icon">rpc</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_.initialsync.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_.initialsync.html#stop" class="tsd-kind-icon">stop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_.initialsync.html#synctopeer" class="tsd-kind-icon">sync<wbr>ToPeer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_.initialsync.html#synctopeers" class="tsd-kind-icon">sync<wbr>ToPeers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_fast_index_.fastsync.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sync_initial_fast_index_.fastsync.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_sync_initial_fast_index_.fastsync.html#sync" class="tsd-kind-icon">sync</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,13 +155,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Initial<wbr>Sync<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_sync_options_.isyncoptions.html" class="tsd-signature-type">ISyncOptions</a>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sync_initial_.initialsync.html" class="tsd-signature-type">InitialSync</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fast<wbr>Sync<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_sync_options_.isyncoptions.html" class="tsd-signature-type">ISyncOptions</a>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sync_initial_fast_index_.fastsync.html" class="tsd-signature-type">FastSync</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L30">sync/initial.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L27">sync/initial/fast/index.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -140,13 +179,13 @@
 											<h5>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IBeaconConfig</span></h5>
 										</li>
 										<li class="tsd-parameter">
-											<h5>db<span class="tsd-signature-symbol">: </span><a href="../interfaces/_db_api_beacon_interface_.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></h5>
-										</li>
-										<li class="tsd-parameter">
 											<h5>logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logger_interface_.ilogger.html" class="tsd-signature-type">ILogger</a></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>network<span class="tsd-signature-symbol">: </span><a href="../interfaces/_network_interface_.inetwork.html" class="tsd-signature-type">INetwork</a></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>peers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span><span class="tsd-signature-symbol">[]</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>reps<span class="tsd-signature-symbol">: </span><a href="_sync_ireputation_.reputationstore.html" class="tsd-signature-type">ReputationStore</a></h5>
@@ -154,20 +193,53 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_sync_initial_.initialsync.html" class="tsd-signature-type">InitialSync</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_sync_initial_fast_index_.fastsync.html" class="tsd-signature-type">FastSync</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="__emittype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>emit<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>emit<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">V</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _emitType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="__emittertype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>emitter<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>emitter<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _emitterType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:5</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="__eventstype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span>  _<wbr>events<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>events<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">U</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from TypeRecord.&#x27; _eventsType&#x27;</p>
+						<ul>
+							<li>Defined in /home/travis/build/ChainSafe/lodestar/node_modules/strict-event-emitter-types/types/src/index.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="chain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> chain</h3>
 					<div class="tsd-signature tsd-kind-icon">chain<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_chain_interface_.ibeaconchain.html" class="tsd-signature-type">IBeaconChain</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L27">sync/initial.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L23">sync/initial/fast/index.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,17 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBeaconConfig</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L25">sync/initial.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="db" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_db_api_beacon_interface_.ibeacondb.html" class="tsd-signature-type">IBeaconDb</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L26">sync/initial.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L21">sync/initial/fast/index.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -197,17 +259,27 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_logger_interface_.ilogger.html" class="tsd-signature-type">ILogger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L30">sync/initial.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L26">sync/initial/fast/index.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="network" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> network</h3>
-					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_network_interface_.inetwork.html" class="tsd-signature-type">INetwork</a></div>
+					<a name="opts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> opts</h3>
+					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_sync_options_.isyncoptions.html" class="tsd-signature-type">ISyncOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L28">sync/initial.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L22">sync/initial/fast/index.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="peers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> peers</h3>
+					<div class="tsd-signature tsd-kind-icon">peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PeerInfo</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L27">sync/initial/fast/index.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +289,17 @@
 					<div class="tsd-signature tsd-kind-icon">reps<span class="tsd-signature-symbol">:</span> <a href="_sync_ireputation_.reputationstore.html" class="tsd-signature-type">ReputationStore</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L29">sync/initial.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L24">sync/initial/fast/index.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rpc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rpc</h3>
+					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_network_interface_.ireqresp.html" class="tsd-signature-type">IReqResp</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L25">sync/initial/fast/index.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L83">sync/initial.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L40">sync/initial/fast/index.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -251,49 +333,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L87">sync/initial.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L59">sync/initial/fast/index.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="synctopeer" class="tsd-anchor"></a>
-					<h3>sync<wbr>ToPeer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">sync<wbr>ToPeer<span class="tsd-signature-symbol">(</span>peerInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PeerInfo</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="sync" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> sync</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>chainCheckPoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Checkpoint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L62">sync/initial.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/366227f/packages/lodestar/src/sync/initial/fast/index.ts#L64">sync/initial/fast/index.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>peerInfo: <span class="tsd-signature-type">PeerInfo</span></h5>
+									<h5>chainCheckPoint: <span class="tsd-signature-type">Checkpoint</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="synctopeers" class="tsd-anchor"></a>
-					<h3>sync<wbr>ToPeers</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">sync<wbr>ToPeers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de75c69/packages/lodestar/src/sync/initial.ts#L39">sync/initial.ts:39</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -307,7 +372,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_sync_initial_.html">"sync/initial"</a>
+						<a href="../modules/_sync_initial_fast_index_.html">"sync/initial/fast/index"</a>
 					</li>
 				</ul>
 			</nav>
@@ -315,49 +380,55 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_sync_initial_.initialsync.html" class="tsd-kind-icon">Initial<wbr>Sync</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_sync_initial_fast_index_.fastsync.html" class="tsd-kind-icon">Fast<wbr>Sync</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_sync_initial_.initialsync.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sync_initial_fast_index_.fastsync.html#__emittype" class="tsd-kind-icon">_emit<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sync_initial_fast_index_.fastsync.html#__emittertype" class="tsd-kind-icon">_emitter<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sync_initial_fast_index_.fastsync.html#__eventstype" class="tsd-kind-icon">_events<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#chain" class="tsd-kind-icon">chain</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#chain" class="tsd-kind-icon">chain</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#config" class="tsd-kind-icon">config</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#db" class="tsd-kind-icon">db</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#logger" class="tsd-kind-icon">logger</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#opts" class="tsd-kind-icon">opts</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#network" class="tsd-kind-icon">network</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#peers" class="tsd-kind-icon">peers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sync_initial_.initialsync.html#reps" class="tsd-kind-icon">reps</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#reps" class="tsd-kind-icon">reps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_sync_initial_fast_index_.fastsync.html#rpc" class="tsd-kind-icon">rpc</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sync_initial_.initialsync.html#start" class="tsd-kind-icon">start</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#start" class="tsd-kind-icon">start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sync_initial_.initialsync.html#stop" class="tsd-kind-icon">stop</a>
+								<a href="_sync_initial_fast_index_.fastsync.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sync_initial_.initialsync.html#synctopeer" class="tsd-kind-icon">sync<wbr>ToPeer</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sync_initial_.initialsync.html#synctopeers" class="tsd-kind-icon">sync<wbr>ToPeers</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_sync_initial_fast_index_.fastsync.html#sync" class="tsd-kind-icon">sync</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_sync_initial_.iinitialsyncmodules.html" class="tsd-kind-icon">IInitial<wbr>Sync<wbr>Modules</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
