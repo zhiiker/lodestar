@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;util/bytes&quot; | @chainsafe/lodestar</title>
+	<title>util/math | @chainsafe/eth2.0-utils</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@chainsafe/lodestar</a>
+					<a href="../index.html" class="title">@chainsafe/eth2.0-utils</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,16 +56,20 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_util_bytes_.html">&quot;util/bytes&quot;</a>
+					<a href="util_math.html">util/math</a>
 				</li>
 			</ul>
-			<h1>External module &quot;util/bytes&quot;</h1>
+			<h1>External module util/math</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -73,10 +77,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_bytes_.html#blsprivatekeytohex" class="tsd-kind-icon">bls<wbr>Private<wbr>Key<wbr>ToHex</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_bytes_.html#bytestobn" class="tsd-kind-icon">bytes<wbr>ToBN</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_bytes_.html#inttobytes" class="tsd-kind-icon">int<wbr>ToBytes</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_bytes_.html#tohex" class="tsd-kind-icon">to<wbr>Hex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="util_math.html#bigintmax" class="tsd-kind-icon">big<wbr>Int<wbr>Max</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="util_math.html#bigintmin" class="tsd-kind-icon">big<wbr>Int<wbr>Min</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="util_math.html#bigintsqrt" class="tsd-kind-icon">big<wbr>Int<wbr>Sqrt</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="util_math.html#intdiv" class="tsd-kind-icon">int<wbr>Div</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="util_math.html#intsqrt" class="tsd-kind-icon">int<wbr>Sqrt</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,108 +90,141 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="blsprivatekeytohex" class="tsd-anchor"></a>
-					<h3>bls<wbr>Private<wbr>Key<wbr>ToHex</h3>
+					<a name="bigintmax" class="tsd-anchor"></a>
+					<h3>big<wbr>Int<wbr>Max</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">bls<wbr>Private<wbr>Key<wbr>ToHex<span class="tsd-signature-symbol">(</span>privateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PrivateKey</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">big<wbr>Int<wbr>Max<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/lodestar/src/util/bytes.ts#L35">util/bytes.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/math.ts#L16">math.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Converts PrivateKey to hex string</p>
+									<p>Return the max number between two big numbers.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>privateKey: <span class="tsd-signature-type">PrivateKey</span></h5>
+									<h5>a: <span class="tsd-signature-type">bigint</span></h5>
 								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>hex representation of bls key</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="bytestobn" class="tsd-anchor"></a>
-					<h3>bytes<wbr>ToBN</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToBN<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/lodestar/src/util/bytes.ts#L26">util/bytes.ts:26</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <span class="tsd-signature-type">bytes</span></h5>
+									<h5>b: <span class="tsd-signature-type">bigint</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BN</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="inttobytes" class="tsd-anchor"></a>
-					<h3>int<wbr>ToBytes</h3>
+					<a name="bigintmin" class="tsd-anchor"></a>
+					<h3>big<wbr>Int<wbr>Min</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">int<wbr>ToBytes<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span></li>
+						<li class="tsd-signature tsd-kind-icon">big<wbr>Int<wbr>Min<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/lodestar/src/util/bytes.ts#L13">util/bytes.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/math.ts#L9">math.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return a byte array from a number or BN</p>
+									<p>Return the min number between two big numbers.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5>a: <span class="tsd-signature-type">bigint</span></h5>
 								</li>
 								<li>
-									<h5>length: <span class="tsd-signature-type">number</span></h5>
+									<h5>b: <span class="tsd-signature-type">bigint</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bytes</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="tohex" class="tsd-anchor"></a>
-					<h3>to<wbr>Hex</h3>
+					<a name="bigintsqrt" class="tsd-anchor"></a>
+					<h3>big<wbr>Int<wbr>Sqrt</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Hex<span class="tsd-signature-symbol">(</span>buffer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">big<wbr>Int<wbr>Sqrt<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/lodestar/src/util/bytes.ts#L43">util/bytes.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/math.ts#L37">math.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>buffer: <span class="tsd-signature-type">Buffer</span></h5>
+									<h5>n: <span class="tsd-signature-type">bigint</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="intdiv" class="tsd-anchor"></a>
+					<h3>int<wbr>Div</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">int<wbr>Div<span class="tsd-signature-symbol">(</span>dividend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, divisor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/math.ts#L20">math.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dividend: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>divisor: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="intsqrt" class="tsd-anchor"></a>
+					<h3>int<wbr>Sqrt</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">int<wbr>Sqrt<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/math.ts#L27">math.ts:27</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the largest integer k such that k**2 &lt;= n.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -198,24 +236,81 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_bytes_.html">"bytes"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_converters_index_.html">"converters/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_converters_json_.html">"converters/json"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_converters_yaml_.html">"converters/yaml"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_crypto_.html">"crypto"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_merkletree_index_.html">"merkle<wbr>Tree/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_merkletree_interface_.html">"merkle<wbr>Tree/interface"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_merkletree_lightmerkletree_.html">"merkle<wbr>Tree/light<wbr>Merkle<wbr>Tree"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_merkletree_merkletree_.html">"merkle<wbr>Tree/merkle<wbr>Tree"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_merkletree_utils_.html">"merkle<wbr>Tree/utils"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_misc_.html">"misc"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_nodejs_index_.html">"nodejs/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_nodejs_yaml_.html">"nodejs/yaml"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_objects_.html">"objects"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_sort_.html">"sort"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_yaml_index_.html">"yaml/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_yaml_int_.html">"yaml/int"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_yaml_schema_.html">"yaml/schema"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_util_bytes_.html">"util/bytes"</a>
+						<a href="util_math.html">util/math</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_bytes_.html#blsprivatekeytohex" class="tsd-kind-icon">bls<wbr>Private<wbr>Key<wbr>ToHex</a>
+						<a href="util_math.html#bigintmax" class="tsd-kind-icon">big<wbr>Int<wbr>Max</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_bytes_.html#bytestobn" class="tsd-kind-icon">bytes<wbr>ToBN</a>
+						<a href="util_math.html#bigintmin" class="tsd-kind-icon">big<wbr>Int<wbr>Min</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_bytes_.html#inttobytes" class="tsd-kind-icon">int<wbr>ToBytes</a>
+						<a href="util_math.html#bigintsqrt" class="tsd-kind-icon">big<wbr>Int<wbr>Sqrt</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_bytes_.html#tohex" class="tsd-kind-icon">to<wbr>Hex</a>
+						<a href="util_math.html#intdiv" class="tsd-kind-icon">int<wbr>Div</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="util_math.html#intsqrt" class="tsd-kind-icon">int<wbr>Sqrt</a>
 					</li>
 				</ul>
 			</nav>

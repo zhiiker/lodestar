@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_bytes_.html#bytestobn" class="tsd-kind-icon">bytes<wbr>ToBN</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_bytes_.html#bytestobigint" class="tsd-kind-icon">bytes<wbr>ToBig<wbr>Int</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_bytes_.html#inttobytes" class="tsd-kind-icon">int<wbr>ToBytes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_bytes_.html#tohex" class="tsd-kind-icon">to<wbr>Hex</a></li>
 							</ul>
@@ -84,16 +84,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="bytestobn" class="tsd-anchor"></a>
-					<h3>bytes<wbr>ToBN</h3>
+					<a name="bytestobigint" class="tsd-anchor"></a>
+					<h3>bytes<wbr>ToBig<wbr>Int</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToBN<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span></li>
+						<li class="tsd-signature tsd-kind-icon">bytes<wbr>ToBig<wbr>Int<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/eth2.0-utils/src/bytes.ts#L20">bytes.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/bytes.ts#L17">bytes.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -102,7 +102,7 @@
 									<h5>value: <span class="tsd-signature-type">bytes</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BN</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">bigint</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -110,24 +110,24 @@
 					<a name="inttobytes" class="tsd-anchor"></a>
 					<h3>int<wbr>ToBytes</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">int<wbr>ToBytes<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span></li>
+						<li class="tsd-signature tsd-kind-icon">int<wbr>ToBytes<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">bytes</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/eth2.0-utils/src/bytes.ts#L7">bytes.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/bytes.ts#L6">bytes.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Return a byte array from a number or BN</p>
+									<p>Return a byte array from a number or BigInt</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5>value: <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5>length: <span class="tsd-signature-type">number</span></h5>
@@ -147,7 +147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/eth2.0-utils/src/bytes.ts#L25">bytes.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/eth2.0-utils/src/bytes.ts#L22">bytes.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,9 +182,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_crypto_.html">"crypto"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_math_.html">"math"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_merkletree_index_.html">"merkle<wbr>Tree/index"</a>
@@ -225,12 +222,15 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_yaml_schema_.html">"yaml/schema"</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="util_math.html">util/math</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_bytes_.html#bytestobn" class="tsd-kind-icon">bytes<wbr>ToBN</a>
+						<a href="_bytes_.html#bytestobigint" class="tsd-kind-icon">bytes<wbr>ToBig<wbr>Int</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_bytes_.html#inttobytes" class="tsd-kind-icon">int<wbr>ToBytes</a>

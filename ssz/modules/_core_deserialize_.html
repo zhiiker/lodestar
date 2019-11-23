@@ -91,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8a896c8/packages/ssz/src/core/deserialize.ts#L112">core/deserialize.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31e1842/packages/ssz/src/core/deserialize.ts#L111">core/deserialize.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -106,9 +106,8 @@
   <span class="hljs-string">"uint32"</span> <span class="hljs-comment">// "uintN", N == length in bits, N &lt;= 32</span>
 );
 
-<span class="hljs-comment">// deserialize a BN bignumber</span>
-<span class="hljs-keyword">import</span> BN <span class="hljs-keyword">from</span> <span class="hljs-string">"bn.js"</span>;
-<span class="hljs-keyword">const</span> bn: BN = deserialize(
+<span class="hljs-comment">// deserialize a BigInt</span>
+<span class="hljs-keyword">const</span> bi: bigint = deserialize(
   data,
   <span class="hljs-string">"uint64"</span> <span class="hljs-comment">// "uintN", N == length in bits, N &gt;= 64</span>
 );
