@@ -1,0 +1,21 @@
+[@chainsafe/lodestar](../README.md) › [Globals](../globals.md) › ["sync/options"](../modules/_sync_options_.md) › [ISyncOptions](_sync_options_.isyncoptions.md)
+
+# Interface: ISyncOptions
+
+## Hierarchy
+
+* **ISyncOptions**
+
+## Index
+
+### Properties
+
+* [blockPerChunk](_sync_options_.isyncoptions.md#blockperchunk)
+
+## Properties
+
+###  blockPerChunk
+
+• **blockPerChunk**: *number*
+
+*Defined in [packages/lodestar/src/sync/options.ts:2](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/options.ts#L2)*
