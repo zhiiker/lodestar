@@ -17,7 +17,7 @@
 
 • **BeaconBlocksByRange**: = "beacon_blocks_by_range"
 
-*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/constants/network.ts#L13)*
+*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L13)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **BeaconBlocksByRoot**: = "beacon_blocks_by_root"
 
-*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/constants/network.ts#L14)*
+*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L14)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **Goodbye**: = "goodbye"
 
-*Defined in [packages/lodestar/src/constants/network.ts:12](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/constants/network.ts#L12)*
+*Defined in [packages/lodestar/src/constants/network.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L12)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **Status**: = "status"
 
-*Defined in [packages/lodestar/src/constants/network.ts:11](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/constants/network.ts#L11)*
+*Defined in [packages/lodestar/src/constants/network.ts:11](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L11)*

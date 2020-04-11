@@ -15,7 +15,7 @@
 
 ▸ **getBlockRange**(`rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `reps`: [ReputationStore](../classes/_sync_ireputation_.reputationstore.md), `peers`: PeerInfo[], `range`: [ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md), `blocksPerChunk`: number, `maxRetry`: number): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:7](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/utils/blocks.ts#L7)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:7](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/utils/blocks.ts#L7)*
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **sortBlocks**(`blocks`: SignedBeaconBlock[]): *SignedBeaconBlock[]*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:43](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/utils/blocks.ts#L43)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:43](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/utils/blocks.ts#L43)*
 
 **Parameters:**
 

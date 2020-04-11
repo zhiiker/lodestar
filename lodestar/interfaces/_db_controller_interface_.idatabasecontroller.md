@@ -91,7 +91,7 @@ ___
 
 ▸ **batchDelete**(`items`: any[]): *Promise‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L19)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L19)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **batchPut**(`items`: object[]): *Promise‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L17)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L17)*
 
 **Parameters:**
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **delete**(`key`: any): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L41)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L41)*
 
 **Parameters:**
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **get**(`key`: any): *Promise‹Buffer | null›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L15)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L15)*
 
 **Parameters:**
 
@@ -384,7 +384,7 @@ ___
 
 ▸ **put**(`key`: any, `value`: any): *Promise‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L39)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L39)*
 
 Should insert or update
 
@@ -471,7 +471,7 @@ ___
 
 ▸ **search**(`opts`: [ISearchOptions](_db_controller_interface_.isearchoptions.md)): *Promise‹any[]›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L25)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L25)*
 
 Should return items which has key prefix >= opts.gt && prefix < opt.lt
 
@@ -489,7 +489,7 @@ ___
 
 ▸ **searchStream**(`opts`: [ISearchOptions](_db_controller_interface_.isearchoptions.md)): *AsyncIterable‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L32)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L32)*
 
 Similar to search but returns data chunk asap instead of waiting for the whole
 data array to return.
@@ -528,7 +528,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L43)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L43)*
 
 **Returns:** *Promise‹void›*
 
@@ -538,7 +538,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/controller/interface.ts#L45)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/interface.ts#L45)*
 
 **Returns:** *Promise‹void›*
 

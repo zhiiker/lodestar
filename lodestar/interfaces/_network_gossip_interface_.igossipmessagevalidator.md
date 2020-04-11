@@ -28,7 +28,7 @@
 
 ▸ **isValidIncomingAggregateAndProof**(`aggregateAndProof`: AggregateAndProof): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:76](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L76)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:76](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L76)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **isValidIncomingAttesterSlashing**(`attesterSlashing`: AttesterSlashing): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:80](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L80)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:80](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L80)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **isValidIncomingBlock**(`signedBlock`: SignedBeaconBlock): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L74)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L74)*
 
 **Parameters:**
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **isValidIncomingCommitteeAttestation**(`attestation`: Attestation, `subnet`: number): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:75](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L75)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:75](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L75)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@ ___
 
 ▸ **isValidIncomingProposerSlashing**(`proposerSlashing`: ProposerSlashing): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:79](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L79)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:79](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L79)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **isValidIncomingUnaggregatedAttestation**(`attestation`: Attestation): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:77](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L77)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:77](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L77)*
 
 **Parameters:**
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **isValidIncomingVoluntaryExit**(`voluntaryExit`: SignedVoluntaryExit): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:78](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/gossip/interface.ts#L78)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:78](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L78)*
 
 **Parameters:**
 

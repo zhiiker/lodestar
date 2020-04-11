@@ -177,7 +177,7 @@ Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:63
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:19](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/nodejs/bundle.ts#L19)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/nodejs/bundle.ts#L19)*
 
 **Parameters:**
 

@@ -14,7 +14,7 @@
 
 ▸ **getEth1Vote**(`this`: [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md), `config`: IBeaconConfig, `state`: BeaconState): *Promise‹Eth1Data›*
 
-*Defined in [packages/lodestar/src/eth1/impl/eth1Vote.ts:7](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/eth1/impl/eth1Vote.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/impl/eth1Vote.ts:7](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/eth1Vote.ts#L7)*
 
 **Parameters:**
 

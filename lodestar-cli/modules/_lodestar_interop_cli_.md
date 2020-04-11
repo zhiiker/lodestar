@@ -14,7 +14,7 @@
 
 ▸ **quickStartOptionToState**(`config`: IBeaconConfig, `depositDataRootList`: TreeBacked‹List‹Root››, `option`: string): *BeaconState*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/cli.ts:10](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-cli/src/lodestar/interop/cli.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/cli.ts:10](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-cli/src/lodestar/interop/cli.ts#L10)*
 
 **Parameters:**
 

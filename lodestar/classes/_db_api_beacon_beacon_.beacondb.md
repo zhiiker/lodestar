@@ -51,7 +51,7 @@
 
 *Overrides [DatabaseService](_db_api_abstract_.databaseservice.md).[constructor](_db_api_abstract_.databaseservice.md#protected-constructor)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:44](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L44)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L44)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ Name | Type |
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[aggregateAndProof](../interfaces/_db_api_beacon_interface_.ibeacondb.md#aggregateandproof)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:34](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L34)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:34](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L34)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[attestation](../interfaces/_db_api_beacon_interface_.ibeacondb.md#attestation)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:32](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L32)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L32)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[attesterSlashing](../interfaces/_db_api_beacon_interface_.ibeacondb.md#attesterslashing)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:40](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L40)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:40](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L40)*
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[block](../interfaces/_db_api_beacon_interface_.ibeacondb.md#block)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:28](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L28)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:28](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L28)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[blockArchive](../interfaces/_db_api_beacon_interface_.ibeacondb.md#blockarchive)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:30](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L30)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:30](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L30)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[chain](../interfaces/_db_api_beacon_interface_.ibeacondb.md#chain)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L24)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[config](_db_api_abstract_.databaseservice.md#protected-config)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/abstract.ts#L12)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[db](_db_api_abstract_.databaseservice.md#protected-db)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/abstract.ts#L13)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/abstract.ts#L13)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[depositData](../interfaces/_db_api_beacon_interface_.ibeacondb.md#depositdata)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:42](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L42)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L42)*
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[depositDataRootList](../interfaces/_db_api_beacon_interface_.ibeacondb.md#depositdatarootlist)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:44](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L44)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L44)*
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[proposerSlashing](../interfaces/_db_api_beacon_interface_.ibeacondb.md#proposerslashing)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:38](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L38)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L38)*
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[state](../interfaces/_db_api_beacon_interface_.ibeacondb.md#state)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L26)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L26)*
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md).[voluntaryExit](../interfaces/_db_api_beacon_interface_.ibeacondb.md#voluntaryexit)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:36](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L36)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:36](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L36)*
 
 ## Methods
 
@@ -199,7 +199,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:99](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L99)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:99](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L99)*
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[start](_db_api_abstract_.databaseservice.md#start)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/abstract.ts#L20)*
 
 **Returns:** *Promise‹void›*
 
@@ -233,7 +233,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[stop](_db_api_abstract_.databaseservice.md#stop)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/abstract.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/abstract.ts#L24)*
 
 **Returns:** *Promise‹void›*
 
@@ -245,7 +245,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:61](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L61)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:61](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L61)*
 
 **Parameters:**
 
@@ -264,7 +264,7 @@ ___
 
 *Implementation of [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:76](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/db/api/beacon/beacon.ts#L76)*
+*Defined in [packages/lodestar/src/db/api/beacon/beacon.ts:76](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/api/beacon/beacon.ts#L76)*
 
 **Parameters:**
 

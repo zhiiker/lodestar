@@ -16,7 +16,7 @@
 
 ▸ **postProcess**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/chain/blocks/post.ts#L10)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/blocks/post.ts#L10)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **setFinalized**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preFinalizedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:59](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/chain/blocks/post.ts#L59)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:59](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/blocks/post.ts#L59)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **setJustified**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preJustifiedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:40](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/chain/blocks/post.ts#L40)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:40](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/blocks/post.ts#L40)*
 
 **Parameters:**
 

@@ -19,7 +19,7 @@
 
 • **bootnodes**? : *string[]*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:16](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/nodejs/bundle.ts#L16)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/nodejs/bundle.ts#L16)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **peerInfo**: *PeerInfo*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:15](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/nodejs/bundle.ts#L15)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:15](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/nodejs/bundle.ts#L15)*

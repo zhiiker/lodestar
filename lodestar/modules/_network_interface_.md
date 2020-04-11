@@ -26,7 +26,7 @@
 
 Ƭ **NetworkEventEmitter**: *StrictEventEmitter‹EventEmitter, [INetworkEvents](../interfaces/_network_interface_.inetworkevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:53](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/interface.ts#L53)*
+*Defined in [packages/lodestar/src/network/interface.ts:53](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L53)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 Ƭ **ReqEventEmitter**: *StrictEventEmitter‹EventEmitter, [IReqEvents](../interfaces/_network_interface_.ireqevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/interface.ts#L33)*
+*Defined in [packages/lodestar/src/network/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L33)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 Ƭ **RespEventEmitter**: *StrictEventEmitter‹EventEmitter, [IRespEvents](../interfaces/_network_interface_.irespevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:34](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/interface.ts#L34)*
+*Defined in [packages/lodestar/src/network/interface.ts:34](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L34)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 Ƭ **ResponseCallbackFn**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/interface.ts#L21)*
+*Defined in [packages/lodestar/src/network/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L21)*
 
 #### Type declaration:
 
@@ -68,7 +68,7 @@ ___
 
 Ƭ **ResponseChunk**: *object*
 
-*Defined in [packages/lodestar/src/network/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/interface.ts#L23)*
+*Defined in [packages/lodestar/src/network/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L23)*
 
 #### Type declaration:
 

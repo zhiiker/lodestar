@@ -19,7 +19,7 @@
 
 • **end**: *Slot*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:80](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/utils/sync.ts#L80)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:80](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/utils/sync.ts#L80)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **start**: *Slot*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:79](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/utils/sync.ts#L79)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:79](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/utils/sync.ts#L79)*

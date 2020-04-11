@@ -19,7 +19,7 @@
 
 • **address**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:35](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-cli/src/commands/deposit.ts#L35)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:35](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-cli/src/commands/deposit.ts#L35)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **privkey**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:36](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-cli/src/commands/deposit.ts#L36)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:36](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-cli/src/commands/deposit.ts#L36)*

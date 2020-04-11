@@ -28,7 +28,7 @@
 
 ▸ **decode**(`type`: T, `data`: unknown): *unknown*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/encoders/interface.ts#L5)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/encoders/interface.ts#L5)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **encode**(`type`: T, `data`: unknown): *unknown*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/network/encoders/interface.ts#L4)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/encoders/interface.ts#L4)*
 
 **Parameters:**
 

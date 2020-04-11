@@ -49,7 +49,7 @@
 
 \+ **new NaiveRegularSync**(`options`: Partial‹[IRegularSyncOptions](../interfaces/_sync_regular_options_.iregularsyncoptions.md)›, `modules`: [IRegularSyncModules](../modules/_sync_regular_interface_.md#iregularsyncmodules)): *[NaiveRegularSync](_sync_regular_naive_naive_.naiveregularsync.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:41](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L41)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L41)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ Name | Type |
 
 • **attestationCollector**: *[AttestationCollector](_sync_utils_attestation_collector_.attestationcollector.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:37](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L37)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:37](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L37)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:29](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L29)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:29](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L29)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:21](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L21)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:21](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L21)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:23](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L23)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L23)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:35](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L35)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:35](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L35)*
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:27](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L27)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:27](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L27)*
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 • **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:25](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L25)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L25)*
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 • **opts**: *[IRegularSyncOptions](../interfaces/_sync_regular_options_.iregularsyncoptions.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:39](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L39)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:39](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L39)*
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 • **peers**: *PeerInfo[]*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:33](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L33)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:33](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L33)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 • **reps**: *[ReputationStore](_sync_ireputation_.reputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:31](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L31)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:31](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L31)*
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 • **targetSlot**: *Slot*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:41](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L41)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L41)*
 
 ## Methods
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **collectAttestations**(`slot`: number, `committeeIndex`: number): *void*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:78](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L78)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:78](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L78)*
 
 **Parameters:**
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **onAggregatedAttestation**(`aggregate`: AggregateAndProof): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:150](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L150)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:150](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L150)*
 
 **Parameters:**
 
@@ -187,7 +187,7 @@ ___
 
 ▸ **onBlock**(`block`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:154](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L154)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:154](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L154)*
 
 **Parameters:**
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **onProcessedBlock**(`block`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:139](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L139)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:139](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L139)*
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ ___
 
 ▸ **onUnknownBlockRoot**(`root`: Root): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:158](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L158)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:158](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L158)*
 
 **Parameters:**
 
@@ -237,7 +237,7 @@ ___
 
 *Implementation of [IRegularSync](../interfaces/_sync_regular_interface_.iregularsync.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:59](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L59)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:59](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L59)*
 
 **Returns:** *Promise‹void›*
 
@@ -247,7 +247,7 @@ ___
 
 ▸ **startGossiping**(): *void*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:82](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L82)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:82](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L82)*
 
 **Returns:** *void*
 
@@ -259,7 +259,7 @@ ___
 
 *Implementation of [IRegularSync](../interfaces/_sync_regular_interface_.iregularsync.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:71](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L71)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:71](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L71)*
 
 **Returns:** *Promise‹void›*
 
@@ -269,7 +269,7 @@ ___
 
 ▸ **stopGossiping**(): *void*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:90](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L90)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:90](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L90)*
 
 **Returns:** *void*
 
@@ -279,7 +279,7 @@ ___
 
 ▸ **syncUp**(): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:101](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/sync/regular/naive/naive.ts#L101)*
+*Defined in [packages/lodestar/src/sync/regular/naive/naive.ts:101](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/naive/naive.ts#L101)*
 
 **Returns:** *Promise‹boolean›*
 

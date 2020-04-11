@@ -15,7 +15,7 @@
 
 ▸ **bufferToHex**(`buffer`: Buffer): *string*
 
-*Defined in [packages/lodestar/src/util/hex.ts:1](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/util/hex.ts#L1)*
+*Defined in [packages/lodestar/src/util/hex.ts:1](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/util/hex.ts#L1)*
 
 **Parameters:**
 
@@ -31,7 +31,7 @@ ___
 
 ▸ **hexToBuffer**(`v`: string): *Buffer*
 
-*Defined in [packages/lodestar/src/util/hex.ts:5](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar/src/util/hex.ts#L5)*
+*Defined in [packages/lodestar/src/util/hex.ts:5](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/util/hex.ts#L5)*
 
 **Parameters:**
 

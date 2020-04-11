@@ -35,7 +35,7 @@
 
 \+ **new RestBeaconApi**(`restUrl`: string, `logger`: ILogger): *[RestBeaconApi](_api_impl_rest_beacon_beacon_.restbeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:8](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L8)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L8)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **client**: *[HttpClient](_util_httpclient_.httpclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:8](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L8)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L8)*
 
 ## Methods
 
@@ -60,7 +60,7 @@ Name | Type |
 
 ▸ **getBeaconState**(): *Promise‹BeaconState›*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:33](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L33)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:33](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L33)*
 
 **Returns:** *Promise‹BeaconState›*
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **getChainHead**(): *Promise‹BeaconBlock›*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:30](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L30)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:30](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L30)*
 
 **Returns:** *Promise‹BeaconBlock›*
 
@@ -82,7 +82,7 @@ ___
 
 *Implementation of [IBeaconApi](../interfaces/_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:14](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L14)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:14](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L14)*
 
 **Returns:** *Promise‹Bytes32›*
 
@@ -94,7 +94,7 @@ ___
 
 *Implementation of [IBeaconApi](../interfaces/_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:18](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L18)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:18](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L18)*
 
 **Returns:** *Promise‹object›*
 
@@ -106,7 +106,7 @@ ___
 
 *Implementation of [IBeaconApi](../interfaces/_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:22](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L22)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L22)*
 
 **Returns:** *Promise‹Number64›*
 
@@ -118,6 +118,6 @@ ___
 
 *Implementation of [IBeaconApi](../interfaces/_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/c806550/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L26)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/impl/rest/beacon/beacon.ts#L26)*
 
 **Returns:** *Promise‹boolean | SyncingStatus›*
