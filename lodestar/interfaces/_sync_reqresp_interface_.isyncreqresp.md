@@ -27,7 +27,7 @@ fetching state from the chain and database as needed.
 
 • **onRequest**: *function*
 
-*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/reqResp/interface.ts#L22)*
+*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/reqResp/interface.ts#L22)*
 
 #### Type declaration:
 
@@ -48,7 +48,7 @@ ___
 
 • **start**: *function*
 
-*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/reqResp/interface.ts#L19)*
+*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/reqResp/interface.ts#L19)*
 
 #### Type declaration:
 
@@ -60,7 +60,7 @@ ___
 
 • **stop**: *function*
 
-*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/reqResp/interface.ts#L20)*
+*Defined in [packages/lodestar/src/sync/reqResp/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/reqResp/interface.ts#L20)*
 
 #### Type declaration:
 

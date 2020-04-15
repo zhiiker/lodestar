@@ -11,6 +11,7 @@
 ### Properties
 
 * [bootnodes](_network_nodejs_bundle_.ilibp2poptions.md#optional-bootnodes)
+* [discv5](_network_nodejs_bundle_.ilibp2poptions.md#discv5)
 * [peerInfo](_network_nodejs_bundle_.ilibp2poptions.md#peerinfo)
 
 ## Properties
@@ -19,7 +20,23 @@
 
 • **bootnodes**? : *string[]*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/nodejs/bundle.ts#L16)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/nodejs/bundle.ts#L23)*
+
+___
+
+###  discv5
+
+• **discv5**: *object*
+
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/nodejs/bundle.ts#L18)*
+
+#### Type declaration:
+
+* **bindAddr**: *string*
+
+* **bootEnrs**? : *ENR[]*
+
+* **enr**: *ENR*
 
 ___
 
@@ -27,4 +44,4 @@ ___
 
 • **peerInfo**: *PeerInfo*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:15](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/nodejs/bundle.ts#L15)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/nodejs/bundle.ts#L17)*

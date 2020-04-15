@@ -22,7 +22,7 @@
 
 ▸ **registerPublishAggregateAndProofEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:31](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L31)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L31)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:11](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L11)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L12)*
 
 * **body**: *object*
 

@@ -73,7 +73,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **beaconBlocksByRange**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRangeRequest): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L43)*
+*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L43)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **beaconBlocksByRoot**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRootRequest): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L44)*
+*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L44)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **goodbye**(`peerInfo`: PeerInfo, `request`: [Goodbye](../enums/_constants_network_.method.md#goodbye)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L42)*
+*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L42)*
 
 **Parameters:**
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **sendResponse**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [Error](../classes/_network_error_.rpcerror.md#static-error) | null, `result`: ResponseBody[]): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L38)*
+*Defined in [packages/lodestar/src/network/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L38)*
 
 **Parameters:**
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **sendResponseStream**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](../classes/_network_error_.rpcerror.md), `chunkIter`: AsyncIterable‹ResponseBody›): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L39)*
+*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L39)*
 
 **Parameters:**
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **status**(`peerInfo`: PeerInfo, `request`: Status): *Promise‹Status›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/interface.ts#L41)*
+*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L41)*
 
 **Parameters:**
 

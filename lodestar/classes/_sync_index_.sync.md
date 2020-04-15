@@ -67,7 +67,7 @@ The strategy may differ depending on whether the chain is synced or not
 
 \+ **new Sync**(`opts`: [ISyncOptions](../interfaces/_sync_options_.isyncoptions.md), `modules`: [ISyncModules](../interfaces/_sync_index_.isyncmodules.md)): *[Sync](_sync_index_.sync.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:52](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L52)*
+*Defined in [packages/lodestar/src/sync/index.ts:52](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L52)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L42)*
+*Defined in [packages/lodestar/src/sync/index.ts:42](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L42)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/index.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L41)*
+*Defined in [packages/lodestar/src/sync/index.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L41)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **initialSync**: *[InitialSync](../modules/_sync_initial_interface_.md#initialsync)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:50](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L50)*
+*Defined in [packages/lodestar/src/sync/index.ts:50](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L50)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/index.ts:47](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L47)*
+*Defined in [packages/lodestar/src/sync/index.ts:47](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L47)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:43](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L43)*
+*Defined in [packages/lodestar/src/sync/index.ts:43](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L43)*
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 • **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L44)*
+*Defined in [packages/lodestar/src/sync/index.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L44)*
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • **opts**: *[ISyncOptions](../interfaces/_sync_options_.isyncoptions.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:40](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L40)*
+*Defined in [packages/lodestar/src/sync/index.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L40)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • **peerCheckingTimeout**: *Timeout*
 
-*Defined in [packages/lodestar/src/sync/index.ts:52](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L52)*
+*Defined in [packages/lodestar/src/sync/index.ts:52](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L52)*
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 • **peers**: *PeerInfo[]* = []
 
-*Defined in [packages/lodestar/src/sync/index.ts:49](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L49)*
+*Defined in [packages/lodestar/src/sync/index.ts:49](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L49)*
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 • **regularSync**: *[IRegularSync](../interfaces/_sync_regular_interface_.iregularsync.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L38)*
+*Defined in [packages/lodestar/src/sync/index.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L38)*
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 • **reps**: *[ReputationStore](_sync_ireputation_.reputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:46](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L46)*
+*Defined in [packages/lodestar/src/sync/index.ts:46](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L46)*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 • **reqResp**: *[ISyncReqResp](../interfaces/_sync_reqresp_interface_.isyncreqresp.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:45](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L45)*
+*Defined in [packages/lodestar/src/sync/index.ts:45](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L45)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 • **waitingForPeer**: *boolean* = true
 
-*Defined in [packages/lodestar/src/sync/index.ts:51](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L51)*
+*Defined in [packages/lodestar/src/sync/index.ts:51](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L51)*
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 ▸ **getValidPeers**(): *Promise‹PeerInfo[]›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:113](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L113)*
+*Defined in [packages/lodestar/src/sync/index.ts:113](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L113)*
 
 **Returns:** *Promise‹PeerInfo[]›*
 
@@ -285,7 +285,7 @@ ___
 
 ▸ **handleLostPeer**(`peer`: PeerInfo): *void*
 
-*Defined in [packages/lodestar/src/sync/index.ts:129](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L129)*
+*Defined in [packages/lodestar/src/sync/index.ts:129](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L129)*
 
 **Parameters:**
 
@@ -301,7 +301,7 @@ ___
 
 ▸ **handleNewPeer**(`peer`: PeerInfo): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:119](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L119)*
+*Defined in [packages/lodestar/src/sync/index.ts:119](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L119)*
 
 **Parameters:**
 
@@ -317,7 +317,7 @@ ___
 
 ▸ **isSynced**(): *boolean*
 
-*Defined in [packages/lodestar/src/sync/index.ts:93](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L93)*
+*Defined in [packages/lodestar/src/sync/index.ts:93](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L93)*
 
 **Returns:** *boolean*
 
@@ -595,7 +595,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:75](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L75)*
+*Defined in [packages/lodestar/src/sync/index.ts:75](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L75)*
 
 **Returns:** *Promise‹void›*
 
@@ -605,7 +605,7 @@ ___
 
 ▸ **startInitialSync**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:97](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L97)*
+*Defined in [packages/lodestar/src/sync/index.ts:97](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L97)*
 
 **Returns:** *Promise‹void›*
 
@@ -615,7 +615,7 @@ ___
 
 ▸ **startRegularSync**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:107](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L107)*
+*Defined in [packages/lodestar/src/sync/index.ts:107](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L107)*
 
 **Returns:** *Promise‹void›*
 
@@ -625,7 +625,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/index.ts:84](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L84)*
+*Defined in [packages/lodestar/src/sync/index.ts:84](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L84)*
 
 **Returns:** *Promise‹void›*
 

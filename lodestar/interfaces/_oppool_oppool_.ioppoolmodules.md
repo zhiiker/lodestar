@@ -20,7 +20,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:26](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/opPool.ts#L26)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L26)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:28](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/opPool.ts#L28)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L28)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **eth1**: *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:27](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/opPool.ts#L27)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L27)*

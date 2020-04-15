@@ -25,7 +25,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L23)*
+*Defined in [packages/lodestar/src/sync/index.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L23)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/index.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L22)*
+*Defined in [packages/lodestar/src/sync/index.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L22)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L24)*
+*Defined in [packages/lodestar/src/sync/index.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L24)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L25)*
+*Defined in [packages/lodestar/src/sync/index.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L25)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/index.ts:29](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L29)*
+*Defined in [packages/lodestar/src/sync/index.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L29)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:26](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L26)*
+*Defined in [packages/lodestar/src/sync/index.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L26)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **opPool**: *[OpPool](../classes/_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:27](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L27)*
+*Defined in [packages/lodestar/src/sync/index.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L27)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **reps**: *[ReputationStore](../classes/_sync_ireputation_.reputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/index.ts:28](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/index.ts#L28)*
+*Defined in [packages/lodestar/src/sync/index.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/index.ts#L28)*

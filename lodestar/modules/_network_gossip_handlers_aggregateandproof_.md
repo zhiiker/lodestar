@@ -15,7 +15,7 @@
 
 ▸ **handleIncomingAggregateAndProof**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `obj`: [GossipObject](_network_gossip_interface_.md#gossipobject)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts#L12)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts#L12)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **publishAggregatedAttestation**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `aggregateAndProof`: AggregateAndProof): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts#L25)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/handlers/aggregateAndProof.ts#L25)*
 
 **Parameters:**
 

@@ -26,7 +26,7 @@
 
 ▸ **collectAttestations**(`slot`: Slot, `committeeIndex`: CommitteeIndex): *void*
 
-*Defined in [packages/lodestar/src/sync/regular/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/sync/regular/interface.ts#L6)*
+*Defined in [packages/lodestar/src/sync/regular/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/regular/interface.ts#L6)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[start](_network_gossip_interface_.igossip.md#start)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -57,6 +57,6 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[stop](_network_gossip_interface_.igossip.md#stop)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

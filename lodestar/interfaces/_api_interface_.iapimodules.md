@@ -25,7 +25,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L18)*
+*Defined in [packages/lodestar/src/api/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L18)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/api/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L16)*
+*Defined in [packages/lodestar/src/api/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L16)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L22)*
+*Defined in [packages/lodestar/src/api/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L22)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L23)*
+*Defined in [packages/lodestar/src/api/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L23)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/api/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L17)*
+*Defined in [packages/lodestar/src/api/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L17)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L21)*
+*Defined in [packages/lodestar/src/api/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L21)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **opPool**: *[OpPool](../classes/_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L19)*
+*Defined in [packages/lodestar/src/api/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L19)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **sync**: *[Sync](../classes/_sync_index_.sync.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/interface.ts#L20)*
+*Defined in [packages/lodestar/src/api/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/interface.ts#L20)*

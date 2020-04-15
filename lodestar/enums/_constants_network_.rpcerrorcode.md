@@ -15,7 +15,7 @@
 
 • **ERR_INVALID_REQ**: = 1
 
-*Defined in [packages/lodestar/src/constants/network.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L23)*
+*Defined in [packages/lodestar/src/constants/network.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L23)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **ERR_RESP_TIMEOUT**: = 2
 
-*Defined in [packages/lodestar/src/constants/network.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L24)*
+*Defined in [packages/lodestar/src/constants/network.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L24)*

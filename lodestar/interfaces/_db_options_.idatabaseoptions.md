@@ -20,4 +20,4 @@
 
 • **name**: *string*
 
-*Defined in [packages/lodestar/src/db/options.ts:2](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/options.ts#L2)*
+*Defined in [packages/lodestar/src/db/options.ts:2](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/options.ts#L2)*

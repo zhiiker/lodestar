@@ -23,7 +23,7 @@
 
 • **finalizedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L24)*
+*Defined in [packages/lodestar/src/chain/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L24)*
 
 #### Type declaration:
 
@@ -41,7 +41,7 @@ ___
 
 • **justifiedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L23)*
+*Defined in [packages/lodestar/src/chain/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L23)*
 
 #### Type declaration:
 
@@ -59,7 +59,7 @@ ___
 
 • **processedAttestation**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L22)*
+*Defined in [packages/lodestar/src/chain/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L22)*
 
 #### Type declaration:
 
@@ -77,7 +77,7 @@ ___
 
 • **processedBlock**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L20)*
+*Defined in [packages/lodestar/src/chain/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L20)*
 
 #### Type declaration:
 
@@ -95,7 +95,7 @@ ___
 
 • **processedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L21)*
+*Defined in [packages/lodestar/src/chain/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L21)*
 
 #### Type declaration:
 
@@ -113,7 +113,7 @@ ___
 
 • **unknownBlockRoot**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/interface.ts#L19)*
+*Defined in [packages/lodestar/src/chain/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/interface.ts#L19)*
 
 #### Type declaration:
 

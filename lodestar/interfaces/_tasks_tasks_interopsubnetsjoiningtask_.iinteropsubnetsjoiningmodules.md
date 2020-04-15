@@ -18,4 +18,4 @@
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L8)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L8)*

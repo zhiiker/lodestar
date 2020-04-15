@@ -47,7 +47,7 @@
 
 \+ **new ValidatorApi**(`opts`: Partial‹[IApiOptions](../interfaces/_api_options_.iapioptions.md)›, `modules`: Pick‹[IApiModules](../interfaces/_api_interface_.iapimodules.md), "config" | "chain" | "db" | "opPool" | "eth1" | "sync" | "network" | "logger"›): *[ValidatorApi](_api_impl_validator_validator_.validatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:56](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L56)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:56](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L56)*
 
 **Parameters:**
 
@@ -64,7 +64,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:50](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L50)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:50](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L50)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:49](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L49)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:49](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L49)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L51)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L51)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:55](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L55)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:55](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L55)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:56](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L56)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:56](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L56)*
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md).[namespace](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md#namespace)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L47)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L47)*
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L52)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L52)*
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 • **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:54](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L54)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:54](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L54)*
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 • **sync**: *[Sync](_sync_index_.sync.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:53](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L53)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:53](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L53)*
 
 ## Methods
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **getAttesterDuties**(`epoch`: number, `validatorPubKeys`: BLSPubkey[]): *Promise‹ValidatorDuty[]›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:133](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L133)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:133](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L133)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:117](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L117)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:117](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L117)*
 
 **Parameters:**
 
@@ -173,7 +173,7 @@ ___
 
 ▸ **getWireAttestations**(`epoch`: number, `committeeIndex`: number): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:166](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L166)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:166](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L166)*
 
 **Parameters:**
 
@@ -192,7 +192,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:170](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L170)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:170](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L170)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:77](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L77)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:77](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L77)*
 
 **Parameters:**
 
@@ -233,7 +233,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:73](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L73)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:73](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L73)*
 
 **Parameters:**
 
@@ -252,7 +252,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:150](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L150)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:150](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L150)*
 
 **Parameters:**
 
@@ -272,7 +272,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:110](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L110)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:110](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L110)*
 
 **Parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:103](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L103)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:103](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L103)*
 
 **Parameters:**
 
@@ -308,7 +308,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_impl_validator_interface_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:174](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/impl/validator/validator.ts#L174)*
+*Defined in [packages/lodestar/src/api/impl/validator/validator.ts:174](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/impl/validator/validator.ts#L174)*
 
 **Parameters:**
 

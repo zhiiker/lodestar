@@ -19,7 +19,7 @@
 
 ▸ **bigIntToBytes**(`value`: bigint, `length`: number): *Uint8Array*
 
-*Defined in [bytes.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L32)*
+*Defined in [bytes.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L32)*
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **bytesToBigInt**(`value`: Uint8Array): *bigint*
 
-*Defined in [bytes.ts:28](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L28)*
+*Defined in [bytes.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L28)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **bytesToInt**(`value`: Uint8Array): *number*
 
-*Defined in [bytes.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L19)*
+*Defined in [bytes.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L19)*
 
 Convert byte array in LE to integer.
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **fromHex**(`hex`: string): *Uint8Array*
 
-*Defined in [bytes.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L42)*
+*Defined in [bytes.ts:42](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L42)*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **intToBytes**(`value`: bigint | number, `length`: number): *Buffer*
 
-*Defined in [bytes.ts:5](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L5)*
+*Defined in [bytes.ts:5](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L5)*
 
 Return a byte array from a number or BigInt
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **toHex**(`buffer`: Uint8Array): *string*
 
-*Defined in [bytes.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-utils/src/bytes.ts#L38)*
+*Defined in [bytes.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-utils/src/bytes.ts#L38)*
 
 **Parameters:**
 

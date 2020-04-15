@@ -38,7 +38,7 @@
 
 \+ **new BlockProposingService**(`config`: IBeaconConfig, `keypair`: Keypair, `provider`: [IApiClient](../interfaces/_api_interface_.iapiclient.md), `db`: [IValidatorDB](../interfaces/_db_interface_.ivalidatordb.md), `logger`: ILogger): *[BlockProposingService](_services_block_.blockproposingservice.md)*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L24)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L24)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:17](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L17)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L17)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **db**: *[IValidatorDB](../interfaces/_db_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:21](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L21)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L21)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L22)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L22)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **nextProposalSlot**: *Slot | null* = null
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L24)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L24)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 • **privateKey**: *PrivateKey*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L19)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L19)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 • **provider**: *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:18](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L18)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L18)*
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 • **publicKey**: *BLSPubkey*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L20)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L20)*
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **createAndPublishBlock**(`slot`: Slot, `fork`: Fork): *Promise‹SignedBeaconBlock | null›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:70](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L70)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:70](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L70)*
 
 IFF a validator is selected construct a block to propose.
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **getRpcClient**(): *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:113](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L113)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:113](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L113)*
 
 **Returns:** *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
@@ -143,7 +143,7 @@ ___
 
 ▸ **hasProposedAlready**(`slot`: Slot): *Promise‹boolean›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:117](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L117)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:117](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L117)*
 
 **Parameters:**
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **onNewEpoch**(`epoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:47](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L47)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:47](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L47)*
 
 **Parameters:**
 
@@ -175,7 +175,7 @@ ___
 
 ▸ **onNewSlot**(`slot`: Slot): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:61](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L61)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:61](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L61)*
 
 **Parameters:**
 
@@ -191,7 +191,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L41)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L41)*
 
 **Returns:** *Promise‹void›*
 
@@ -201,7 +201,7 @@ ___
 
 ▸ **storeBlock**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/block.ts:124](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/block.ts#L124)*
+*Defined in [packages/lodestar-validator/src/services/block.ts:124](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/block.ts#L124)*
 
 **Parameters:**
 

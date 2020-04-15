@@ -27,7 +27,7 @@
 
 ▸ **decode**(`type`: SszType, `data`: unknown): *ObjectLike*
 
-*Defined in [packages/lodestar/src/network/encoders/ssz.ts:7](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/encoders/ssz.ts#L7)*
+*Defined in [packages/lodestar/src/network/encoders/ssz.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/encoders/ssz.ts#L7)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **encode**<**T**>(`type`: Type‹T›, `data`: T): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoders/ssz.ts:11](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/encoders/ssz.ts#L11)*
+*Defined in [packages/lodestar/src/network/encoders/ssz.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/encoders/ssz.ts#L11)*
 
 **Type parameters:**
 

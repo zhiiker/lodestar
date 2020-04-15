@@ -35,7 +35,7 @@
 
 *Overrides [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[constructor](_oppool_modules_abstract_.operationsmodule.md#constructor)*
 
-*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/attestation.ts#L8)*
+*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/attestation.ts#L8)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/attestation.ts#L8)*
+*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/attestation.ts#L8)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[db](_oppool_modules_abstract_.operationsmodule.md#protected-db)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 ## Methods
 
@@ -75,7 +75,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[getAll](_oppool_modules_abstract_.operationsmodule.md#getall)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
 
 **Returns:** *Promise‹Attestation[]›*
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **getCommiteeAttestations**(`epoch`: Epoch, `committeeIndex`: CommitteeIndex): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:15](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/attestation.ts#L15)*
+*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/attestation.ts#L15)*
 
 **Parameters:**
 
@@ -104,7 +104,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[receive](_oppool_modules_abstract_.operationsmodule.md#receive)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
 
 **Parameters:**
 
@@ -122,7 +122,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[remove](_oppool_modules_abstract_.operationsmodule.md#remove)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
 
 **Parameters:**
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **removeOld**(`state`: BeaconState): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:25](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/attestation.ts#L25)*
+*Defined in [packages/lodestar/src/opPool/modules/attestation.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/attestation.ts#L25)*
 
 **Parameters:**
 

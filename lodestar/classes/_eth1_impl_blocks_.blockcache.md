@@ -36,7 +36,7 @@
 
 • **blocks**: *T[]*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:5](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L5)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:5](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L5)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **distanceToHead**: *number*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L6)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L6)*
 
 ## Methods
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **addBlock**(`block`: T): *void*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:13](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L13)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 *Implementation of [IBlockCache](../interfaces/_eth1_interface_.iblockcache.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L42)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:42](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L42)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **hasBlock**(`block`: T): *boolean*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:23](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L23)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L23)*
 
 **Parameters:**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **init**(`blocks`: T[], `head`: T): *void*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L8)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L8)*
 
 **Parameters:**
 
@@ -122,7 +122,7 @@ ___
 
 *Implementation of [IBlockCache](../interfaces/_eth1_interface_.iblockcache.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:31](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L31)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L31)*
 
 Remove blocks older than timestamp
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **requestNewBlock**(`head`: T): *number | undefined*
 
-*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:49](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/blocks.ts#L49)*
+*Defined in [packages/lodestar/src/eth1/impl/blocks.ts:49](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/blocks.ts#L49)*
 
 **Parameters:**
 

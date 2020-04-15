@@ -58,7 +58,7 @@
 
 \+ **new PouchDbController**(`opts`: [IDatabaseOptions](../interfaces/_db_options_.idatabaseoptions.md)): *[PouchDbController](_db_controller_impl_pouch_.pouchdbcontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ Name | Type |
 
 • **db**: *PouchDB.Database*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:45](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L45)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:45](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L45)*
 
 **Parameters:**
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **batchPut**(`items`: object[]): *Promise‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:59](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L59)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:59](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L59)*
 
 **Parameters:**
 
@@ -156,7 +156,7 @@ ___
 
 ▸ **clean**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:41](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L41)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L41)*
 
 **Returns:** *Promise‹void›*
 
@@ -168,7 +168,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:113](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L113)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:113](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L113)*
 
 **Parameters:**
 
@@ -225,7 +225,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:70](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L70)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:70](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L70)*
 
 **Parameters:**
 
@@ -443,7 +443,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:79](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L79)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:79](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L79)*
 
 **Parameters:**
 
@@ -534,7 +534,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:93](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L93)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:93](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L93)*
 
 **Parameters:**
 
@@ -552,7 +552,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:105](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L105)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:105](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L105)*
 
 **Parameters:**
 
@@ -592,7 +592,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:35](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L35)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L35)*
 
 **Returns:** *Promise‹void›*
 
@@ -604,7 +604,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:37](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/controller/impl/pouch.ts#L37)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:37](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/controller/impl/pouch.ts#L37)*
 
 **Returns:** *Promise‹void›*
 

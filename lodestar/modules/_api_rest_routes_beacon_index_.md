@@ -14,7 +14,7 @@
 
 ▸ **beacon**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `opts`: [ILodestarApiOpts](../interfaces/_api_rest_interface_.ilodestarapiopts.md), `done`: Function): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/index.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/beacon/index.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/index.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/beacon/index.ts#L8)*
 
 **Parameters:**
 

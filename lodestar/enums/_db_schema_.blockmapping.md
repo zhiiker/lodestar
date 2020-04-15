@@ -15,7 +15,7 @@
 
 • **rootToSlot**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/schema.ts#L32)*
+*Defined in [packages/lodestar/src/db/schema.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/schema.ts#L32)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **slotToRoot**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:31](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/db/schema.ts#L31)*
+*Defined in [packages/lodestar/src/db/schema.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/schema.ts#L31)*

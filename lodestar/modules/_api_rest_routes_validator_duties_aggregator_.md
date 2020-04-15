@@ -23,7 +23,7 @@
 
 ▸ **registerIsAggregatorEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:43](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L43)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:43](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L43)*
 
 **Parameters:**
 
@@ -44,11 +44,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L16)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L16)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:17](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L17)*
 
 * **params**: *object*
 

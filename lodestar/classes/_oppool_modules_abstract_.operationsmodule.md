@@ -42,7 +42,7 @@
 
 \+ **new OperationsModule**(`db`: [BulkRepository](_db_api_beacon_repository_.bulkrepository.md)‹T›): *[OperationsModule](_oppool_modules_abstract_.operationsmodule.md)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Name | Type |
 
 • **db**: *[BulkRepository](_db_api_beacon_repository_.bulkrepository.md)‹T›*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 ## Methods
 
@@ -66,7 +66,7 @@ Name | Type |
 
 ▸ **getAll**(): *Promise‹T[]›*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
 
 **Returns:** *Promise‹T[]›*
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **receive**(`value`: T): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **remove**(`values`: ArrayLike‹T›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
 
 **Parameters:**
 

@@ -18,7 +18,7 @@
 
 • **BEACON_ATTESTER**: = 1
 
-*Defined in [packages/lodestar/src/constants/constants.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/constants.ts#L16)*
+*Defined in [packages/lodestar/src/constants/constants.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L16)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **BEACON_PROPOSER**: = 0
 
-*Defined in [packages/lodestar/src/constants/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/constants.ts#L15)*
+*Defined in [packages/lodestar/src/constants/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L15)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **DEPOSIT**: = 3
 
-*Defined in [packages/lodestar/src/constants/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/constants.ts#L18)*
+*Defined in [packages/lodestar/src/constants/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L18)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **RANDAO**: = 2
 
-*Defined in [packages/lodestar/src/constants/constants.ts:17](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/constants.ts#L17)*
+*Defined in [packages/lodestar/src/constants/constants.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L17)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **VOLUNTARY_EXIT**: = 4
 
-*Defined in [packages/lodestar/src/constants/constants.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/constants.ts#L19)*
+*Defined in [packages/lodestar/src/constants/constants.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L19)*

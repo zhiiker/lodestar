@@ -15,7 +15,7 @@
 
 • **SSZ**: = "ssz"
 
-*Defined in [packages/lodestar/src/constants/network.ts:18](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L18)*
+*Defined in [packages/lodestar/src/constants/network.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L18)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **SSZ_SNAPPY**: = "ssz_snappy"
 
-*Defined in [packages/lodestar/src/constants/network.ts:19](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/constants/network.ts#L19)*
+*Defined in [packages/lodestar/src/constants/network.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L19)*

@@ -25,7 +25,7 @@
 
 • **slot_signature**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:8](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L8)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 • **validator_pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:7](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L7)*

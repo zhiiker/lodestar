@@ -25,7 +25,7 @@
 
 • **committee_index**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:12](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L12)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 • **slot_signature**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:11](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/duties/aggregator.ts#L11)*

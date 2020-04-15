@@ -15,7 +15,7 @@
 
 ▸ **assembleValidatorDuty**(`config`: IBeaconConfig, `validator`: object, `state`: BeaconState, `epoch`: Epoch): *ValidatorDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:6](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/factory/duties/index.ts#L6)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/factory/duties/index.ts#L6)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **generateEmptyValidatorDuty**(`publicKey`: BLSPubkey, `duty?`: Partial‹ValidatorDuty›): *ValidatorDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:30](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/chain/factory/duties/index.ts#L30)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/factory/duties/index.ts#L30)*
 
 **Parameters:**
 

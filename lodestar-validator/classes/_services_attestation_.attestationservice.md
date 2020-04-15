@@ -40,7 +40,7 @@
 
 \+ **new AttestationService**(`config`: IBeaconConfig, `keypair`: Keypair, `rpcClient`: [IApiClient](../interfaces/_api_interface_.iapiclient.md), `db`: [IValidatorDB](../interfaces/_db_interface_.ivalidatordb.md), `logger`: ILogger): *[AttestationService](_services_attestation_.attestationservice.md)*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L38)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L38)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L31)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L31)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **db**: *[IValidatorDB](../interfaces/_db_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:35](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L35)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L35)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:36](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L36)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:36](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L36)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **nextAttesterDuties**: *Map‹Slot, [IAttesterDuty](../interfaces/_types_.iattesterduty.md)›* = new Map<Slot, IAttesterDuty>()
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L38)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L38)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **privateKey**: *PrivateKey*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:33](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L33)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:33](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L33)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **provider**: *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L32)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L32)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **publicKey**: *BLSPubkey*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:34](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L34)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L34)*
 
 ## Methods
 
@@ -116,7 +116,7 @@ ___
 
 ▸ **aggregateAttestations**(`duty`: [IAttesterDuty](../interfaces/_types_.iattesterduty.md), `attestation`: Attestation, `fork`: Fork): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:137](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L137)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:137](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L137)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **createAttestation**(`slot`: Slot, `committeeIndex`: CommitteeIndex, `fork`: Fork): *Promise‹Attestation›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:191](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L191)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:191](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L191)*
 
 **Parameters:**
 
@@ -152,7 +152,7 @@ ___
 
 ▸ **getSlotSignature**(`slot`: Slot, `fork`: Fork): *BLSSignature*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:180](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L180)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:180](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L180)*
 
 **Parameters:**
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **isConflictingAttestation**(`other`: AttestationData): *Promise‹boolean›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:231](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L231)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:231](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L231)*
 
 **Parameters:**
 
@@ -185,7 +185,7 @@ ___
 
 ▸ **onNewEpoch**(`epoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:61](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L61)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:61](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L61)*
 
 **Parameters:**
 
@@ -201,7 +201,7 @@ ___
 
 ▸ **onNewSlot**(`slot`: Slot): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:92](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L92)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:92](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L92)*
 
 **Parameters:**
 
@@ -217,7 +217,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:55](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L55)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:55](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L55)*
 
 **Returns:** *Promise‹void›*
 
@@ -227,7 +227,7 @@ ___
 
 ▸ **storeAttestation**(`attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:239](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L239)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:239](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L239)*
 
 **Parameters:**
 
@@ -243,7 +243,7 @@ ___
 
 ▸ **waitForAttestationBlock**(`slot`: Slot): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/services/attestation.ts:116](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/services/attestation.ts#L116)*
+*Defined in [packages/lodestar-validator/src/services/attestation.ts:116](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/services/attestation.ts#L116)*
 
 **Parameters:**
 

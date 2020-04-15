@@ -25,7 +25,7 @@
 
 ▸ **getClientVersion**(): *Promise‹Bytes32›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:11](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/interface/beacon.ts#L11)*
+*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/interface/beacon.ts#L11)*
 
 Requests that the BeaconNode identify information about its
 implementation in a format similar to a HTTP User-Agent field.
@@ -41,7 +41,7 @@ ___
 
 ▸ **getFork**(): *Promise‹object›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:16](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/interface/beacon.ts#L16)*
+*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/interface/beacon.ts#L16)*
 
 Requests the BeaconNode to provide which fork version it is currently on.
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **getGenesisTime**(): *Promise‹Number64›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/interface/beacon.ts#L24)*
+*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/interface/beacon.ts#L24)*
 
 Requests the genesis_time parameter from the BeaconNode,
 which should be consistent across all BeaconNodes that follow the same beacon chain.
@@ -69,7 +69,7 @@ ___
 
 ▸ **getSyncingStatus**(): *Promise‹boolean | SyncingStatus›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:33](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar-validator/src/api/interface/beacon.ts#L33)*
+*Defined in [packages/lodestar-validator/src/api/interface/beacon.ts:33](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/interface/beacon.ts#L33)*
 
 Requests the BeaconNode to describe if it's currently syncing or not,
 and if it is, what block it is up to.

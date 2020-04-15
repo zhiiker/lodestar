@@ -21,7 +21,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L35)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L35)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L36)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L36)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L37)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L37)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **validator**: *[IGossipMessageValidator](_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/network/gossip/interface.ts#L38)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L38)*

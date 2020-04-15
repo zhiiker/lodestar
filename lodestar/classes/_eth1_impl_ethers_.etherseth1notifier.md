@@ -67,7 +67,7 @@ Watch the Eth1.0 chain using Ethers
 
 \+ **new EthersEth1Notifier**(`opts`: [IEthersEth1Options](../interfaces/_eth1_impl_ethers_.ietherseth1options.md), `__namedParameters`: object): *[EthersEth1Notifier](_eth1_impl_ethers_.etherseth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L44)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L44)*
 
 **Parameters:**
 
@@ -124,7 +124,7 @@ ___
 
 • **blocksCache**: *[IBlockCache](../interfaces/_eth1_interface_.iblockcache.md)‹Block›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:34](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L34)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L34)*
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:40](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L40)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L40)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • **contract**: *Contract*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:38](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L38)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L38)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md).[getEth1Vote](../interfaces/_eth1_interface_.ieth1notifier.md#geteth1vote)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:32](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L32)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L32)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:44](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L44)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L44)*
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 • **opts**: *[IEthersEth1Options](../interfaces/_eth1_impl_ethers_.ietherseth1options.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:42](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L42)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:42](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L42)*
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 • **provider**: *BaseProvider*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:36](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L36)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:36](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L36)*
 
 ## Methods
 
@@ -182,7 +182,7 @@ ___
 
 ▸ **contractExists**(`address`: string): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:217](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L217)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:217](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L217)*
 
 **Parameters:**
 
@@ -198,7 +198,7 @@ ___
 
 ▸ **createDepositData**(`pubkey`: string, `withdrawalCredentials`: string, `amount`: string, `signature`: string): *DepositData*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:240](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L240)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:240](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L240)*
 
 Parse deposit log elements to a [[DepositData]]
 
@@ -221,7 +221,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:186](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L186)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:186](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L186)*
 
 **Parameters:**
 
@@ -239,7 +239,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:181](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L181)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:181](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L181)*
 
 **Parameters:**
 
@@ -257,7 +257,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:97](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L97)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:97](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L97)*
 
 **Parameters:**
 
@@ -276,7 +276,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:177](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L177)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:177](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L177)*
 
 **Parameters:**
 
@@ -292,7 +292,7 @@ ___
 
 ▸ **getContractPastLogs**(`topics`: string[], `fromBlock`: Number64 | string, `toBlock`: Number64 | string | null): *Promise‹Log[]›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:223](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L223)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:223](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L223)*
 
 **Parameters:**
 
@@ -312,7 +312,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:191](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L191)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:191](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L191)*
 
 **Parameters:**
 
@@ -330,7 +330,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:173](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L173)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:173](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L173)*
 
 **Returns:** *Promise‹Block›*
 
@@ -342,7 +342,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:76](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L76)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:76](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L76)*
 
 **Parameters:**
 
@@ -359,7 +359,7 @@ ___
 
 ▸ **initContract**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:204](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L204)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:204](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L204)*
 
 **Returns:** *Promise‹void›*
 
@@ -369,7 +369,7 @@ ___
 
 ▸ **processBlockHeadUpdate**(`blockNumber`: number): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:102](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L102)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:102](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L102)*
 
 **Parameters:**
 
@@ -387,7 +387,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:127](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L127)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:127](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L127)*
 
 **Parameters:**
 
@@ -407,7 +407,7 @@ ___
 
 ▸ **processPastDeposits**(`fromBlock`: string | number, `toBlock?`: string | number): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:150](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L150)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:150](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L150)*
 
 **Parameters:**
 
@@ -426,7 +426,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:92](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L92)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:92](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L92)*
 
 **Parameters:**
 
@@ -445,7 +445,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:64](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L64)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:64](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L64)*
 
 **Returns:** *Promise‹void›*
 
@@ -457,6 +457,6 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:87](https://github.com/ChainSafe/lodestar/blob/2fb982b/packages/lodestar/src/eth1/impl/ethers.ts#L87)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:87](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/impl/ethers.ts#L87)*
 
 **Returns:** *Promise‹void›*
