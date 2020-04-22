@@ -14,8 +14,7 @@
 * [config](_sync_initial_interface_.iinitialsyncmodules.md#config)
 * [logger](_sync_initial_interface_.iinitialsyncmodules.md#logger)
 * [network](_sync_initial_interface_.iinitialsyncmodules.md#network)
-* [peers](_sync_initial_interface_.iinitialsyncmodules.md#peers)
-* [reps](_sync_initial_interface_.iinitialsyncmodules.md#reps)
+* [reputationStore](_sync_initial_interface_.iinitialsyncmodules.md#reputationstore)
 
 ## Properties
 
@@ -23,7 +22,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L14)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/interface.ts#L13)*
 
 ___
 
@@ -31,7 +30,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L13)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/interface.ts#L12)*
 
 ___
 
@@ -39,7 +38,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L17)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/interface.ts#L16)*
 
 ___
 
@@ -47,20 +46,12 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L15)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/interface.ts#L14)*
 
 ___
 
-###  peers
+###  reputationStore
 
-• **peers**: *PeerInfo[]*
+• **reputationStore**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L18)*
-
-___
-
-###  reps
-
-• **reps**: *[ReputationStore](../classes/_sync_ireputation_.reputationstore.md)*
-
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/interface.ts#L16)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/interface.ts#L15)*

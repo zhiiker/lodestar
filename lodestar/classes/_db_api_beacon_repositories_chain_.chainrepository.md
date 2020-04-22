@@ -41,7 +41,7 @@
 
 \+ **new ChainRepository**(`config`: IBeaconConfig, `db`: [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)): *[ChainRepository](_db_api_beacon_repositories_chain_.chainrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L11)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L11)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:9](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L9)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L9)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **db**: *[IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L11)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L11)*
 
 ## Methods
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **getBlockRoot**(`slot`: Slot): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:71](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L71)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:71](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L71)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **getChainHeadRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:95](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L95)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:95](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L95)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **getChainHeadSlot**(): *Promise‹Slot | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:79](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L79)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:79](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L79)*
 
 **Returns:** *Promise‹Slot | null›*
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **getFinalizedBlockRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:55](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L55)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:55](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L55)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **getFinalizedStateRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L44)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:44](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L44)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **getJustifiedBlockRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:63](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L63)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:63](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L63)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **getJustifiedStateRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:33](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L33)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L33)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **getKey**(`id`: [Key](../enums/_db_schema_.key.md)): *Buffer | string*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L18)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L18)*
 
 **Parameters:**
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **getLatestStateRoot**(): *Promise‹Uint8Array | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L22)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:22](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L22)*
 
 **Returns:** *Promise‹Uint8Array | null›*
 
@@ -176,7 +176,7 @@ ___
 
 ▸ **setChainHeadSlot**(`slot`: number): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:91](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L91)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:91](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L91)*
 
 **Parameters:**
 
@@ -192,7 +192,7 @@ ___
 
 ▸ **setFinalizedBlockRoot**(`root`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:59](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L59)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:59](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L59)*
 
 **Parameters:**
 
@@ -208,7 +208,7 @@ ___
 
 ▸ **setFinalizedStateRoot**(`root`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:48](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L48)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:48](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L48)*
 
 **Parameters:**
 
@@ -224,7 +224,7 @@ ___
 
 ▸ **setJustifiedBlockRoot**(`root`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:67](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L67)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:67](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L67)*
 
 **Parameters:**
 
@@ -240,7 +240,7 @@ ___
 
 ▸ **setJustifiedStateRoot**(`root`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:37](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L37)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L37)*
 
 **Parameters:**
 
@@ -256,7 +256,7 @@ ___
 
 ▸ **setLatestStateRoot**(`root`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L26)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/chain.ts:26](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/chain.ts#L26)*
 
 **Parameters:**
 

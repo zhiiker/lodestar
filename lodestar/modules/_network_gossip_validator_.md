@@ -7,3 +7,7 @@
 ### Classes
 
 * [GossipMessageValidator](../classes/_network_gossip_validator_.gossipmessagevalidator.md)
+
+### Interfaces
+
+* [GossipMessageValidatorModules](../interfaces/_network_gossip_validator_.gossipmessagevalidatormodules.md)

@@ -66,7 +66,7 @@ We don't want to double deserialize messages for performance benefit.
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L28)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L28)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ Name | Type | Default |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L24)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:24](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L24)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **interval**: *Timeout*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L26)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:26](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L26)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L28)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L28)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **timeToLive**: *number*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L27)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L27)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 • **transformedObjects**: *Map‹string, object›*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L23)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:23](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L23)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 • **validator**: *[IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L25)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:25](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L25)*
 
 ___
 
@@ -147,7 +147,7 @@ Defined in node_modules/@types/node/events.d.ts:18
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:82](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L82)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:82](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L82)*
 
 **Parameters:**
 
@@ -210,7 +210,7 @@ ___
 
 ▸ **cleanUp**(): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:158](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L158)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:160](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L160)*
 
 **Returns:** *void*
 
@@ -220,7 +220,7 @@ ___
 
 ▸ **deserializeGossipMessage**(`topic`: string, `message`: IGossipMessage): *object*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:126](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L126)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:127](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L127)*
 
 **Parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **getTopicValidator**(`topic`: string): *[GossipMessageValidatorFn](../modules/_network_gossip_interface_.md#gossipmessagevalidatorfn)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:95](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L95)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:95](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L95)*
 
 **Parameters:**
 
@@ -607,7 +607,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L41)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:41](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L41)*
 
 **Returns:** *Promise‹void›*
 
@@ -619,7 +619,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:48](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L48)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:48](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L48)*
 
 **Returns:** *Promise‹void›*
 
@@ -667,7 +667,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:55](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/gossipsub.ts#L55)*
+*Defined in [packages/lodestar/src/network/gossip/gossipsub.ts:55](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/gossipsub.ts#L55)*
 
 **Parameters:**
 

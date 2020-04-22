@@ -14,7 +14,7 @@
 
 ▸ **registerGenesisTimeEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts:4](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts#L4)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts:4](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts#L4)*
 
 **Parameters:**
 

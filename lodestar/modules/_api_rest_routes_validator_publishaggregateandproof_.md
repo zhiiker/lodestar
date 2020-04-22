@@ -4,9 +4,9 @@
 
 ## Index
 
-### Interfaces
+### Type aliases
 
-* [IQuery](../interfaces/_api_rest_routes_validator_publishaggregateandproof_.iquery.md)
+* [IBody](_api_rest_routes_validator_publishaggregateandproof_.md#ibody)
 
 ### Functions
 
@@ -16,13 +16,21 @@
 
 * [opts](_api_rest_routes_validator_publishaggregateandproof_.md#const-opts)
 
+## Type aliases
+
+###  IBody
+
+Ƭ **IBody**: *Json[]*
+
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L6)*
+
 ## Functions
 
 ### `Const` registerPublishAggregateAndProofEndpoint
 
 ▸ **registerPublishAggregateAndProofEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L31)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L18)*
 
 **Parameters:**
 
@@ -43,28 +51,12 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L8)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L11)*
 
 * **body**: *object*
 
-  * **type**: *string* = "object"
-
-* **querystring**: *object*
-
-  * **required**: *string[]* = ["validator_pubkey", "slot_signature"]
-
-  * **type**: *string* = "object"
-
-  * **properties**: *object*
-
-    * **slot_signature**: *object*
-
-      * **type**: *string* = "string"
-
-    * **validator_pubkey**: *object*
-
-      * **type**: *string* = "string"
+  * **type**: *string* = "array"

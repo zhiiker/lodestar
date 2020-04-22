@@ -6,31 +6,24 @@
 
 ### References
 
-* [ISyncOptions](_sync_reqresp_index_.md#isyncoptions)
-* [ISyncReqResp](_sync_reqresp_index_.md#isyncreqresp)
-* [ISyncReqRespModules](_sync_reqresp_index_.md#isyncreqrespmodules)
-* [SyncReqResp](_sync_reqresp_index_.md#syncreqresp)
+* [BeaconReqRespHandler](_sync_reqresp_index_.md#beaconreqresphandler)
+* [IReqRespHandler](_sync_reqresp_index_.md#ireqresphandler)
+* [IReqRespHandlerModules](_sync_reqresp_index_.md#ireqresphandlermodules)
 
 ## References
 
-###  ISyncOptions
+###  BeaconReqRespHandler
 
-• **ISyncOptions**:
-
-___
-
-###  ISyncReqResp
-
-• **ISyncReqResp**:
+• **BeaconReqRespHandler**:
 
 ___
 
-###  ISyncReqRespModules
+###  IReqRespHandler
 
-• **ISyncReqRespModules**:
+• **IReqRespHandler**:
 
 ___
 
-###  SyncReqResp
+###  IReqRespHandlerModules
 
-• **SyncReqResp**:
+• **IReqRespHandlerModules**:

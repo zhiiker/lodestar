@@ -6,19 +6,29 @@
 
 ### Enumeration members
 
+* [AGGREGATE_AND_PROOF](_constants_constants_.domaintype.md#aggregate_and_proof)
 * [BEACON_ATTESTER](_constants_constants_.domaintype.md#beacon_attester)
 * [BEACON_PROPOSER](_constants_constants_.domaintype.md#beacon_proposer)
 * [DEPOSIT](_constants_constants_.domaintype.md#deposit)
 * [RANDAO](_constants_constants_.domaintype.md#randao)
+* [SELECTION_PROOF](_constants_constants_.domaintype.md#selection_proof)
 * [VOLUNTARY_EXIT](_constants_constants_.domaintype.md#voluntary_exit)
 
 ## Enumeration members
+
+###  AGGREGATE_AND_PROOF
+
+• **AGGREGATE_AND_PROOF**: = 6
+
+*Defined in [packages/lodestar/src/constants/constants.ts:21](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L21)*
+
+___
 
 ###  BEACON_ATTESTER
 
 • **BEACON_ATTESTER**: = 1
 
-*Defined in [packages/lodestar/src/constants/constants.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L16)*
+*Defined in [packages/lodestar/src/constants/constants.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L16)*
 
 ___
 
@@ -26,7 +36,7 @@ ___
 
 • **BEACON_PROPOSER**: = 0
 
-*Defined in [packages/lodestar/src/constants/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L15)*
+*Defined in [packages/lodestar/src/constants/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L15)*
 
 ___
 
@@ -34,7 +44,7 @@ ___
 
 • **DEPOSIT**: = 3
 
-*Defined in [packages/lodestar/src/constants/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L18)*
+*Defined in [packages/lodestar/src/constants/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L18)*
 
 ___
 
@@ -42,7 +52,15 @@ ___
 
 • **RANDAO**: = 2
 
-*Defined in [packages/lodestar/src/constants/constants.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L17)*
+*Defined in [packages/lodestar/src/constants/constants.ts:17](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L17)*
+
+___
+
+###  SELECTION_PROOF
+
+• **SELECTION_PROOF**: = 5
+
+*Defined in [packages/lodestar/src/constants/constants.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L20)*
 
 ___
 
@@ -50,4 +68,4 @@ ___
 
 • **VOLUNTARY_EXIT**: = 4
 
-*Defined in [packages/lodestar/src/constants/constants.ts:19](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/constants.ts#L19)*
+*Defined in [packages/lodestar/src/constants/constants.ts:19](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/constants.ts#L19)*

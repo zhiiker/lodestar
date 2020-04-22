@@ -30,7 +30,7 @@
 
 Ƭ **RequestId**: *string*
 
-*Defined in [packages/lodestar/src/constants/network.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L8)*
+*Defined in [packages/lodestar/src/constants/network.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L8)*
 
 ## Variables
 
@@ -38,7 +38,7 @@
 
 • **ATTESTATION_PROPAGATION_SLOT_RANGE**: *23* = 23
 
-*Defined in [packages/lodestar/src/constants/network.ts:4](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L4)*
+*Defined in [packages/lodestar/src/constants/network.ts:4](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L4)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **ATTESTATION_SUBNET_COUNT**: *64* = 64
 
-*Defined in [packages/lodestar/src/constants/network.ts:3](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L3)*
+*Defined in [packages/lodestar/src/constants/network.ts:3](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L3)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **GOSSIP_MAX_SIZE**: *number* = 2**20
 
-*Defined in [packages/lodestar/src/constants/network.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L27)*
+*Defined in [packages/lodestar/src/constants/network.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L29)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **MAXIMUM_GOSSIP_CLOCK_DISPARITY**: *500* = 500
 
-*Defined in [packages/lodestar/src/constants/network.ts:5](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L5)*
+*Defined in [packages/lodestar/src/constants/network.ts:5](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L5)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **MAX_CHUNK_SIZE**: *number* = 2**20
 
-*Defined in [packages/lodestar/src/constants/network.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L28)*
+*Defined in [packages/lodestar/src/constants/network.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L30)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **RESP_TIMEOUT**: *number* = 10 * 1000
 
-*Defined in [packages/lodestar/src/constants/network.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L30)*
+*Defined in [packages/lodestar/src/constants/network.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L32)*
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 • **TTFB_TIMEOUT**: *number* = 5 * 1000
 
-*Defined in [packages/lodestar/src/constants/network.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L29)*
+*Defined in [packages/lodestar/src/constants/network.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L31)*

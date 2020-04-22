@@ -23,6 +23,8 @@
 
 * [getAll](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#getall)
 * [getBlockAttestations](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#getblockattestations)
+* [getByAggregatorAndSlot](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#getbyaggregatorandslot)
+* [hasAttestation](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#hasattestation)
 * [receive](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#receive)
 * [remove](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#remove)
 * [removeIncluded](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md#removeincluded)
@@ -36,7 +38,7 @@
 
 *Overrides [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[constructor](_oppool_modules_abstract_.operationsmodule.md#constructor)*
 
-*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:10](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L10)*
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L10)*
 
 **Parameters:**
 
@@ -56,7 +58,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:10](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L10)*
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L10)*
 
 ___
 
@@ -66,7 +68,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[db](_oppool_modules_abstract_.operationsmodule.md#protected-db)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 ## Methods
 
@@ -76,7 +78,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[getAll](_oppool_modules_abstract_.operationsmodule.md#getall)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
 
 **Returns:** *Promise‹AggregateAndProof[]›*
 
@@ -86,7 +88,7 @@ ___
 
 ▸ **getBlockAttestations**(`state`: BeaconState): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L17)*
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:17](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L17)*
 
 **Parameters:**
 
@@ -98,13 +100,46 @@ Name | Type |
 
 ___
 
+###  getByAggregatorAndSlot
+
+▸ **getByAggregatorAndSlot**(`aggregatorIndex`: ValidatorIndex, `slot`: Slot): *Promise‹Attestation[]›*
+
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L28)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`aggregatorIndex` | ValidatorIndex |
+`slot` | Slot |
+
+**Returns:** *Promise‹Attestation[]›*
+
+___
+
+###  hasAttestation
+
+▸ **hasAttestation**(`attestation`: Attestation): *Promise‹boolean›*
+
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L35)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`attestation` | Attestation |
+
+**Returns:** *Promise‹boolean›*
+
+___
+
 ###  receive
 
 ▸ **receive**(`value`: AggregateAndProof): *Promise‹void›*
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[receive](_oppool_modules_abstract_.operationsmodule.md#receive)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
 
 **Parameters:**
 
@@ -122,7 +157,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[remove](_oppool_modules_abstract_.operationsmodule.md#remove)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
 
 **Parameters:**
 
@@ -138,7 +173,7 @@ ___
 
 ▸ **removeIncluded**(`attestations`: ArrayLike‹Attestation›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L28)*
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L42)*
 
 **Parameters:**
 
@@ -154,7 +189,7 @@ ___
 
 ▸ **removeOld**(`state`: BeaconState): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:37](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L37)*
+*Defined in [packages/lodestar/src/opPool/modules/aggregateAndProof.ts:51](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/aggregateAndProof.ts#L51)*
 
 **Parameters:**
 

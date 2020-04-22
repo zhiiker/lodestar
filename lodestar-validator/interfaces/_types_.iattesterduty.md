@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-* ValidatorDuty
+* AttesterDuty
 
   ↳ **IAttesterDuty**
 
@@ -12,6 +12,7 @@
 
 ### Properties
 
+* [aggregatorModulo](_types_.iattesterduty.md#aggregatormodulo)
 * [attestationSlot](_types_.iattesterduty.md#attestationslot)
 * [committeeIndex](_types_.iattesterduty.md#committeeindex)
 * [isAggregator](_types_.iattesterduty.md#isaggregator)
@@ -19,13 +20,23 @@
 
 ## Properties
 
+###  aggregatorModulo
+
+• **aggregatorModulo**: *Number64*
+
+*Inherited from [IAttesterDuty](_types_.iattesterduty.md).[aggregatorModulo](_types_.iattesterduty.md#aggregatormodulo)*
+
+Defined in packages/lodestar-types/lib/types/api.d.ts:16
+
+___
+
 ###  attestationSlot
 
 • **attestationSlot**: *Slot*
 
 *Inherited from [IAttesterDuty](_types_.iattesterduty.md).[attestationSlot](_types_.iattesterduty.md#attestationslot)*
 
-Defined in packages/lodestar-types/lib/types/validator.d.ts:9
+Defined in packages/lodestar-types/lib/types/api.d.ts:17
 
 ___
 
@@ -35,7 +46,7 @@ ___
 
 *Inherited from [IAttesterDuty](_types_.iattesterduty.md).[committeeIndex](_types_.iattesterduty.md#committeeindex)*
 
-Defined in packages/lodestar-types/lib/types/validator.d.ts:10
+Defined in packages/lodestar-types/lib/types/api.d.ts:18
 
 ___
 
@@ -43,7 +54,7 @@ ___
 
 • **isAggregator**: *boolean*
 
-*Defined in [packages/lodestar-validator/src/types.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/types.ts#L12)*
+*Defined in [packages/lodestar-validator/src/types.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/types.ts#L12)*
 
 ___
 
@@ -53,4 +64,4 @@ ___
 
 *Inherited from [IAttesterDuty](_types_.iattesterduty.md).[validatorPubkey](_types_.iattesterduty.md#validatorpubkey)*
 
-Defined in packages/lodestar-types/lib/types/validator.d.ts:8
+Defined in packages/lodestar-types/lib/types/api.d.ts:15

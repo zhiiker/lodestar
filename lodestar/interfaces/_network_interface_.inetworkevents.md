@@ -19,17 +19,18 @@
 
 • **peer:connect**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L50)*
+*Defined in [packages/lodestar/src/network/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/interface.ts#L55)*
 
 #### Type declaration:
 
-▸ (`peerInfo`: PeerInfo): *void*
+▸ (`peerInfo`: PeerInfo, `direction`: "inbound" | "outbound"): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `peerInfo` | PeerInfo |
+`direction` | "inbound" &#124; "outbound" |
 
 ___
 
@@ -37,7 +38,7 @@ ___
 
 • **peer:disconnect**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/interface.ts#L51)*
+*Defined in [packages/lodestar/src/network/interface.ts:56](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/interface.ts#L56)*
 
 #### Type declaration:
 

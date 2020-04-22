@@ -16,6 +16,7 @@
 * [logLevel](_commands_deposit_.idepositcommandoptions.md#loglevel)
 * [mnemonic](_commands_deposit_.idepositcommandoptions.md#mnemonic)
 * [node](_commands_deposit_.idepositcommandoptions.md#node)
+* [preset](_commands_deposit_.idepositcommandoptions.md#optional-preset)
 * [privateKey](_commands_deposit_.idepositcommandoptions.md#privatekey)
 * [unencryptedBlsKeys](_commands_deposit_.idepositcommandoptions.md#unencryptedblskeys)
 * [unencryptedKeys](_commands_deposit_.idepositcommandoptions.md#unencryptedkeys)
@@ -27,7 +28,7 @@
 
 • **abi**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L27)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L28)*
 
 ___
 
@@ -35,7 +36,7 @@ ___
 
 • **accounts**: *number*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L31)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L32)*
 
 ___
 
@@ -43,7 +44,7 @@ ___
 
 • **contract**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L30)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L31)*
 
 ___
 
@@ -51,7 +52,7 @@ ___
 
 • **logLevel**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L23)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:24](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L24)*
 
 ___
 
@@ -59,7 +60,7 @@ ___
 
 • **mnemonic**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L24)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:25](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L25)*
 
 ___
 
@@ -67,7 +68,15 @@ ___
 
 • **node**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L28)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L29)*
+
+___
+
+### `Optional` preset
+
+• **preset**? : *string*
+
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L33)*
 
 ___
 
@@ -75,7 +84,7 @@ ___
 
 • **privateKey**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L22)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:23](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L23)*
 
 ___
 
@@ -83,7 +92,7 @@ ___
 
 • **unencryptedBlsKeys**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L26)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L27)*
 
 ___
 
@@ -91,7 +100,7 @@ ___
 
 • **unencryptedKeys**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L25)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:26](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L26)*
 
 ___
 
@@ -99,4 +108,4 @@ ___
 
 • **value**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L29)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L30)*

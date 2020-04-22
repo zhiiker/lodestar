@@ -25,7 +25,7 @@
 
 Ƭ **GossipEventEmitter**: *StrictEventEmitter‹EventEmitter, [IGossipEvents](../interfaces/_network_gossip_interface_.igossipevents.md)›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L32)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/interface.ts#L34)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **GossipMessageValidatorFn**: *function*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:86](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L86)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:93](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/interface.ts#L93)*
 
 #### Type declaration:
 
@@ -50,6 +50,6 @@ ___
 
 ###  GossipObject
 
-Ƭ **GossipObject**: *SignedBeaconBlock | Attestation | AggregateAndProof | SignedVoluntaryExit | ProposerSlashing | AttesterSlashing*
+Ƭ **GossipObject**: *SignedBeaconBlock | Attestation | SignedAggregateAndProof | SignedVoluntaryExit | ProposerSlashing | AttesterSlashing*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:83](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/interface.ts#L83)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:90](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/interface.ts#L90)*

@@ -14,7 +14,7 @@
 
 ▸ **isEligibleBlock**(`signedBlock`: SignedBeaconBlock, `step`: number, `safeLowerLimit`: number | Buffer): *boolean*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/util.ts:3](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/util.ts#L3)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/util.ts:3](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/util.ts#L3)*
 
 **Parameters:**
 

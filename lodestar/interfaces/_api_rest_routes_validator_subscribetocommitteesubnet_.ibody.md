@@ -13,7 +13,7 @@
 ### Properties
 
 * [aggregator_pubkey](_api_rest_routes_validator_subscribetocommitteesubnet_.ibody.md#aggregator_pubkey)
-* [committee_index](_api_rest_routes_validator_subscribetocommitteesubnet_.ibody.md#committee_index)
+* [attestation_committee_index](_api_rest_routes_validator_subscribetocommitteesubnet_.ibody.md#attestation_committee_index)
 * [slot](_api_rest_routes_validator_subscribetocommitteesubnet_.ibody.md#slot)
 * [slot_signature](_api_rest_routes_validator_subscribetocommitteesubnet_.ibody.md#slot_signature)
 
@@ -23,15 +23,15 @@
 
 • **aggregator_pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L31)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L31)*
 
 ___
 
-###  committee_index
+###  attestation_committee_index
 
-• **committee_index**: *string*
+• **attestation_committee_index**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L28)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L28)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **slot**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L29)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L29)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **slot_signature**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L30)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L30)*

@@ -6,16 +6,16 @@
 
 ### Functions
 
-* [assembleValidatorDuty](_chain_factory_duties_index_.md#assemblevalidatorduty)
-* [generateEmptyValidatorDuty](_chain_factory_duties_index_.md#generateemptyvalidatorduty)
+* [assembleAttesterDuty](_chain_factory_duties_index_.md#assembleattesterduty)
+* [generateEmptyAttesterDuty](_chain_factory_duties_index_.md#generateemptyattesterduty)
 
 ## Functions
 
-###  assembleValidatorDuty
+###  assembleAttesterDuty
 
-▸ **assembleValidatorDuty**(`config`: IBeaconConfig, `validator`: object, `state`: BeaconState, `epoch`: Epoch): *ValidatorDuty*
+▸ **assembleAttesterDuty**(`config`: IBeaconConfig, `validator`: object, `state`: BeaconState, `epoch`: Epoch): *AttesterDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/factory/duties/index.ts#L6)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/factory/duties/index.ts#L7)*
 
 **Parameters:**
 
@@ -32,21 +32,21 @@ Name | Type |
 
 ▪ **epoch**: *Epoch*
 
-**Returns:** *ValidatorDuty*
+**Returns:** *AttesterDuty*
 
 ___
 
-###  generateEmptyValidatorDuty
+###  generateEmptyAttesterDuty
 
-▸ **generateEmptyValidatorDuty**(`publicKey`: BLSPubkey, `duty?`: Partial‹ValidatorDuty›): *ValidatorDuty*
+▸ **generateEmptyAttesterDuty**(`publicKey`: BLSPubkey, `duty?`: Partial‹AttesterDuty›): *AttesterDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/factory/duties/index.ts#L30)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/factory/duties/index.ts#L35)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `publicKey` | BLSPubkey |
-`duty?` | Partial‹ValidatorDuty› |
+`duty?` | Partial‹AttesterDuty› |
 
-**Returns:** *ValidatorDuty*
+**Returns:** *AttesterDuty*

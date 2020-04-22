@@ -11,3 +11,4 @@
 ### Interfaces
 
 * [IReputation](../interfaces/_sync_ireputation_.ireputation.md)
+* [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)

@@ -22,7 +22,7 @@
 
 ▸ **registerBlockProductionEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L30)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:36](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L36)*
 
 **Parameters:**
 
@@ -43,19 +43,23 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L15)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L16)*
 
 * **querystring**: *object*
 
-  * **required**: *string[]* = ["slot", "randao_reveal"]
+  * **required**: *string[]* = ["slot", "proposer_pubkey", "randao_reveal"]
 
   * **type**: *string* = "object"
 
   * **properties**: *object*
+
+    * **proposer_pubkey**: *object*
+
+      * **type**: *string* = "string"
 
     * **randao_reveal**: *object*
 

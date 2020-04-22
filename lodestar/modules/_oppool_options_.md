@@ -18,4 +18,4 @@
 
 • **config**: *[IOpPoolOptions](../interfaces/_oppool_options_.ioppooloptions.md)*
 
-*Defined in [packages/lodestar/src/opPool/options.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/options.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/options.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/options.ts#L6)*

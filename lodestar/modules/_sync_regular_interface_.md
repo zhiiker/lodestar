@@ -4,18 +4,23 @@
 
 ## Index
 
-### Interfaces
-
-* [IRegularSync](../interfaces/_sync_regular_interface_.iregularsync.md)
-
 ### Type aliases
 
+* [IRegularSync](_sync_regular_interface_.md#iregularsync)
 * [IRegularSyncModules](_sync_regular_interface_.md#iregularsyncmodules)
 
 ## Type aliases
 
+###  IRegularSync
+
+Ƭ **IRegularSync**: *[IService](../interfaces/_node_nodejs_.iservice.md)*
+
+*Defined in [packages/lodestar/src/sync/regular/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/regular/interface.ts#L4)*
+
+___
+
 ###  IRegularSyncModules
 
-Ƭ **IRegularSyncModules**: *Pick‹[ISyncModules](../interfaces/_sync_index_.isyncmodules.md), "config" | "db" | "chain" | "opPool" | "network" | "logger" | "reps"› & object*
+Ƭ **IRegularSyncModules**: *Pick‹[ISyncModules](../interfaces/_sync_interface_.isyncmodules.md), "config" | "chain" | "network" | "logger" | "reputationStore"›*
 
-*Defined in [packages/lodestar/src/sync/regular/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/regular/interface.ts#L9)*
+*Defined in [packages/lodestar/src/sync/regular/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/regular/interface.ts#L6)*

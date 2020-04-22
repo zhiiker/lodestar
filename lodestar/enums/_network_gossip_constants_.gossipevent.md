@@ -18,54 +18,54 @@
 
 ###  AGGREGATE_AND_PROOF
 
-• **AGGREGATE_AND_PROOF**: = "/eth2/beacon_aggregate_and_proof"
+• **AGGREGATE_AND_PROOF**: = "beacon_aggregate_and_proof"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L10)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L10)*
 
 ___
 
 ###  ATTESTATION
 
-• **ATTESTATION**: = "/eth2/beacon_attestation"
+• **ATTESTATION**: = "beacon_attestation"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L11)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L11)*
 
 ___
 
 ###  ATTESTATION_SUBNET
 
-• **ATTESTATION_SUBNET**: = "/eth2/committee_index{subnet}_beacon_attestation"
+• **ATTESTATION_SUBNET**: = "committee_index{subnet}_beacon_attestation"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L12)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L12)*
 
 ___
 
 ###  ATTESTER_SLASHING
 
-• **ATTESTER_SLASHING**: = "/eth2/attester_slashing"
+• **ATTESTER_SLASHING**: = "attester_slashing"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L15)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L15)*
 
 ___
 
 ###  BLOCK
 
-• **BLOCK**: = "/eth2/beacon_block"
+• **BLOCK**: = "beacon_block"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L9)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L9)*
 
 ___
 
 ###  PROPOSER_SLASHING
 
-• **PROPOSER_SLASHING**: = "/eth2/proposer_slashing"
+• **PROPOSER_SLASHING**: = "proposer_slashing"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L14)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L14)*
 
 ___
 
 ###  VOLUNTARY_EXIT
 
-• **VOLUNTARY_EXIT**: = "/eth2/voluntary_exit"
+• **VOLUNTARY_EXIT**: = "voluntary_exit"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L13)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L13)*

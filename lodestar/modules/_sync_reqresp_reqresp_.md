@@ -10,8 +10,8 @@
 
 ### Classes
 
-* [SyncReqResp](../classes/_sync_reqresp_reqresp_.syncreqresp.md)
+* [BeaconReqRespHandler](../classes/_sync_reqresp_reqresp_.beaconreqresphandler.md)
 
 ### Interfaces
 
-* [ISyncReqRespModules](../interfaces/_sync_reqresp_reqresp_.isyncreqrespmodules.md)
+* [IReqRespHandlerModules](../interfaces/_sync_reqresp_reqresp_.ireqresphandlermodules.md)

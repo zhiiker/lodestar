@@ -33,7 +33,6 @@ Pool of operations not yet included on chain
 ### Methods
 
 * [addListener](_oppool_oppool_.oppool.md#addlistener)
-* [checkDuplicateProposer](_oppool_oppool_.oppool.md#checkduplicateproposer)
 * [emit](_oppool_oppool_.oppool.md#emit)
 * [eventNames](_oppool_oppool_.oppool.md#eventnames)
 * [getMaxListeners](_oppool_oppool_.oppool.md#getmaxlisteners)
@@ -59,7 +58,7 @@ Pool of operations not yet included on chain
 
 \+ **new OpPool**(`opts`: [IOpPoolOptions](../interfaces/_oppool_options_.ioppooloptions.md), `__namedParameters`: object): *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:46](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L46)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L42)*
 
 **Parameters:**
 
@@ -81,7 +80,7 @@ Name | Type |
 
 • **aggregateAndProofs**: *[AggregateAndProofOperations](_oppool_modules_aggregateandproof_.aggregateandproofoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:37](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L37)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L33)*
 
 ___
 
@@ -89,7 +88,7 @@ ___
 
 • **attestations**: *[AttestationOperations](_oppool_modules_attestation_.attestationoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:36](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L36)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L32)*
 
 ___
 
@@ -97,7 +96,7 @@ ___
 
 • **attesterSlashings**: *[AttesterSlashingOperations](_oppool_modules_attesterslashing_.attesterslashingoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L41)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L37)*
 
 ___
 
@@ -105,7 +104,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:43](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L43)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:39](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L39)*
 
 ___
 
@@ -113,7 +112,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:45](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L45)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:41](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L41)*
 
 ___
 
@@ -121,7 +120,7 @@ ___
 
 • **depositData**: *[DepositDataOperations](_oppool_modules_depositdata_.depositdataoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:39](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L39)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L35)*
 
 ___
 
@@ -129,7 +128,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:44](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L44)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:40](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L40)*
 
 ___
 
@@ -137,7 +136,7 @@ ___
 
 • **proposerSlashings**: *[ProposerSlashingOperations](_oppool_modules_proposerslashing_.proposerslashingoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L40)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:36](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L36)*
 
 ___
 
@@ -145,7 +144,7 @@ ___
 
 • **proposers**: *Map‹Epoch, Map‹ValidatorIndex, Slot››*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:46](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L46)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L42)*
 
 ___
 
@@ -153,7 +152,7 @@ ___
 
 • **voluntaryExits**: *[VoluntaryExitOperations](_oppool_modules_voluntaryexit_.voluntaryexitoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L38)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L34)*
 
 ___
 
@@ -192,22 +191,6 @@ Name | Type |
 `...args` | any[] |
 
 **Returns:** *this*
-
-___
-
-###  checkDuplicateProposer
-
-▸ **checkDuplicateProposer**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/opPool/opPool.ts:90](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L90)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`signedBlock` | SignedBeaconBlock |
-
-**Returns:** *Promise‹void›*
 
 ___
 
@@ -444,7 +427,7 @@ ___
 
 ▸ **processBlockOperations**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:79](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L79)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:75](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L75)*
 
 Remove stored operations based on a newly processed block
 
@@ -550,7 +533,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:65](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L65)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:61](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L61)*
 
 Start operation processing
 
@@ -562,7 +545,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/opPool.ts:72](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/opPool.ts#L72)*
+*Defined in [packages/lodestar/src/opPool/opPool.ts:68](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/opPool.ts#L68)*
 
 Stop operation processing
 

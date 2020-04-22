@@ -23,7 +23,7 @@
 
 ▸ **action**(`options`: [IEth1CommandOptions](../interfaces/_commands_eth1_private_network_.ieth1commandoptions.md), `logger`: ILogger): *Promise‹PrivateEth1Network›*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:47](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/eth1-private-network.ts#L47)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:47](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/eth1-private-network.ts#L47)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/eth1-private-network.ts#L21)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:21](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/eth1-private-network.ts#L21)*
 
 **Parameters:**
 

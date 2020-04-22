@@ -22,6 +22,7 @@
 * ["services/attestation"](modules/_services_attestation_.md)
 * ["services/block"](modules/_services_block_.md)
 * ["types"](modules/_types_.md)
+* ["util/aggregator"](modules/_util_aggregator_.md)
 * ["util/httpClient"](modules/_util_httpclient_.md)
 * ["util/index"](modules/_util_index_.md)
 * ["util/misc"](modules/_util_misc_.md)

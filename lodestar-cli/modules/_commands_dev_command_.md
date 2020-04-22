@@ -22,4 +22,4 @@
 
 • **BASE_DIRECTORY**: *string* = path.join(".", ".tmp")
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:39](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L39)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:41](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L41)*

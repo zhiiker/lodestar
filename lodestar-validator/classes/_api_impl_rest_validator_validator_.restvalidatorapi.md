@@ -26,10 +26,10 @@
 * [getAttesterDuties](_api_impl_rest_validator_validator_.restvalidatorapi.md#getattesterduties)
 * [getProposerDuties](_api_impl_rest_validator_validator_.restvalidatorapi.md#getproposerduties)
 * [getWireAttestations](_api_impl_rest_validator_validator_.restvalidatorapi.md#getwireattestations)
-* [isAggregator](_api_impl_rest_validator_validator_.restvalidatorapi.md#isaggregator)
+* [produceAggregateAndProof](_api_impl_rest_validator_validator_.restvalidatorapi.md#produceaggregateandproof)
 * [produceAttestation](_api_impl_rest_validator_validator_.restvalidatorapi.md#produceattestation)
 * [produceBlock](_api_impl_rest_validator_validator_.restvalidatorapi.md#produceblock)
-* [publishAggregatedAttestation](_api_impl_rest_validator_validator_.restvalidatorapi.md#publishaggregatedattestation)
+* [publishAggregateAndProof](_api_impl_rest_validator_validator_.restvalidatorapi.md#publishaggregateandproof)
 * [publishAttestation](_api_impl_rest_validator_validator_.restvalidatorapi.md#publishattestation)
 * [publishBlock](_api_impl_rest_validator_validator_.restvalidatorapi.md#publishblock)
 * [subscribeCommitteeSubnet](_api_impl_rest_validator_validator_.restvalidatorapi.md#subscribecommitteesubnet)
@@ -40,7 +40,7 @@
 
 \+ **new RestValidatorApi**(`config`: IBeaconConfig, `restUrl`: string, `logger`: ILogger): *[RestValidatorApi](_api_impl_rest_validator_validator_.restvalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L22)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L27)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Name | Type |
 
 • **client**: *[HttpClient](_util_httpclient_.httpclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L20)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:25](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L25)*
 
 ___
 
@@ -66,94 +66,96 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L22)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L27)*
 
 ## Methods
 
 ###  getAttesterDuties
 
-▸ **getAttesterDuties**(`epoch`: number, `validatorPubKeys`: Buffer[]): *Promise‹ValidatorDuty[]›*
+▸ **getAttesterDuties**(`epoch`: Epoch, `validatorPubKeys`: BLSPubkey[]): *Promise‹AttesterDuty[]›*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L40)*
+*Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
+
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:40](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L40)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`epoch` | number |
-`validatorPubKeys` | Buffer[] |
+`epoch` | Epoch |
+`validatorPubKeys` | BLSPubkey[] |
 
-**Returns:** *Promise‹ValidatorDuty[]›*
+**Returns:** *Promise‹AttesterDuty[]›*
 
 ___
 
 ###  getProposerDuties
 
-▸ **getProposerDuties**(`epoch`: number): *Promise‹Map‹Slot, BLSPubkey››*
+▸ **getProposerDuties**(`epoch`: Epoch): *Promise‹ProposerDuty[]›*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L29)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L34)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`epoch` | number |
+`epoch` | Epoch |
 
-**Returns:** *Promise‹Map‹Slot, BLSPubkey››*
+**Returns:** *Promise‹ProposerDuty[]›*
 
 ___
 
 ###  getWireAttestations
 
-▸ **getWireAttestations**(`epoch`: number, `committeeIndex`: number): *Promise‹Attestation[]›*
+▸ **getWireAttestations**(`epoch`: Epoch, `committeeIndex`: CommitteeIndex): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:58](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L58)*
+*Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
+
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:54](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L54)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`epoch` | number |
-`committeeIndex` | number |
+`epoch` | Epoch |
+`committeeIndex` | CommitteeIndex |
 
 **Returns:** *Promise‹Attestation[]›*
 
 ___
 
-###  isAggregator
+###  produceAggregateAndProof
 
-▸ **isAggregator**(`slot`: Slot, `committeeIndex`: CommitteeIndex, `slotSignature`: BLSSignature): *Promise‹boolean›*
+▸ **produceAggregateAndProof**(`attestationData`: AttestationData, `aggregator`: BLSPubkey): *Promise‹AggregateAndProof›*
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:88](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L88)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:76](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L76)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`slot` | Slot |
-`committeeIndex` | CommitteeIndex |
-`slotSignature` | BLSSignature |
+`attestationData` | AttestationData |
+`aggregator` | BLSPubkey |
 
-**Returns:** *Promise‹boolean›*
+**Returns:** *Promise‹AggregateAndProof›*
 
 ___
 
 ###  produceAttestation
 
-▸ **produceAttestation**(`validatorPubKey`: BLSPubkey, `pocBit`: boolean, `slot`: Slot, `committeeIndex`: CommitteeIndex): *Promise‹Attestation›*
+▸ **produceAttestation**(`validatorPubKey`: BLSPubkey, `slot`: Slot, `committeeIndex`: CommitteeIndex): *Promise‹Attestation›*
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:69](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L69)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:66](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L66)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `validatorPubKey` | BLSPubkey |
-`pocBit` | boolean |
 `slot` | Slot |
 `committeeIndex` | CommitteeIndex |
 
@@ -163,38 +165,37 @@ ___
 
 ###  produceBlock
 
-▸ **produceBlock**(`slot`: Slot, `randaoReveal`: Bytes96): *Promise‹BeaconBlock›*
+▸ **produceBlock**(`slot`: Slot, `proposerPubkey`: BLSPubkey, `randaoReveal`: Bytes96): *Promise‹BeaconBlock›*
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:64](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L64)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:60](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L60)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `slot` | Slot |
+`proposerPubkey` | BLSPubkey |
 `randaoReveal` | Bytes96 |
 
 **Returns:** *Promise‹BeaconBlock›*
 
 ___
 
-###  publishAggregatedAttestation
+###  publishAggregateAndProof
 
-▸ **publishAggregatedAttestation**(`aggregatedAttestation`: Attestation, `validatorPubkey`: BLSPubkey, `slotSignature`: BLSSignature): *Promise‹void›*
+▸ **publishAggregateAndProof**(`signedAggregateAndProof`: SignedAggregateAndProof): *Promise‹void›*
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L47)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L47)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`aggregatedAttestation` | Attestation |
-`validatorPubkey` | BLSPubkey |
-`slotSignature` | BLSSignature |
+`signedAggregateAndProof` | SignedAggregateAndProof |
 
 **Returns:** *Promise‹void›*
 
@@ -206,7 +207,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:84](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L84)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:88](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L88)*
 
 **Parameters:**
 
@@ -224,7 +225,7 @@ ___
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:80](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L80)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:84](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L84)*
 
 **Parameters:**
 
@@ -238,11 +239,11 @@ ___
 
 ###  subscribeCommitteeSubnet
 
-▸ **subscribeCommitteeSubnet**(`slot`: Slot, `slotSignature`: BLSSignature, `committeeIndex`: CommitteeIndex, `aggregatorPubkey`: BLSPubkey): *Promise‹void›*
+▸ **subscribeCommitteeSubnet**(`slot`: Slot, `slotSignature`: BLSSignature, `attestationCommitteeIndex`: CommitteeIndex, `aggregatorPubkey`: BLSPubkey): *Promise‹void›*
 
 *Implementation of [IValidatorApi](../interfaces/_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:94](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L94)*
+*Defined in [packages/lodestar-validator/src/api/impl/rest/validator/validator.ts:92](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/rest/validator/validator.ts#L92)*
 
 **Parameters:**
 
@@ -250,7 +251,7 @@ Name | Type |
 ------ | ------ |
 `slot` | Slot |
 `slotSignature` | BLSSignature |
-`committeeIndex` | CommitteeIndex |
+`attestationCommitteeIndex` | CommitteeIndex |
 `aggregatorPubkey` | BLSPubkey |
 
 **Returns:** *Promise‹void›*

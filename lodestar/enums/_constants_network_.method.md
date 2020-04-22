@@ -9,6 +9,8 @@
 * [BeaconBlocksByRange](_constants_network_.method.md#beaconblocksbyrange)
 * [BeaconBlocksByRoot](_constants_network_.method.md#beaconblocksbyroot)
 * [Goodbye](_constants_network_.method.md#goodbye)
+* [Metadata](_constants_network_.method.md#metadata)
+* [Ping](_constants_network_.method.md#ping)
 * [Status](_constants_network_.method.md#status)
 
 ## Enumeration members
@@ -17,7 +19,7 @@
 
 • **BeaconBlocksByRange**: = "beacon_blocks_by_range"
 
-*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L13)*
+*Defined in [packages/lodestar/src/constants/network.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L15)*
 
 ___
 
@@ -25,7 +27,7 @@ ___
 
 • **BeaconBlocksByRoot**: = "beacon_blocks_by_root"
 
-*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L14)*
+*Defined in [packages/lodestar/src/constants/network.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L16)*
 
 ___
 
@@ -33,7 +35,23 @@ ___
 
 • **Goodbye**: = "goodbye"
 
-*Defined in [packages/lodestar/src/constants/network.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L12)*
+*Defined in [packages/lodestar/src/constants/network.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L12)*
+
+___
+
+###  Metadata
+
+• **Metadata**: = "metadata"
+
+*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L14)*
+
+___
+
+###  Ping
+
+• **Ping**: = "ping"
+
+*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L13)*
 
 ___
 
@@ -41,4 +59,4 @@ ___
 
 • **Status**: = "status"
 
-*Defined in [packages/lodestar/src/constants/network.ts:11](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/constants/network.ts#L11)*
+*Defined in [packages/lodestar/src/constants/network.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/constants/network.ts#L11)*

@@ -29,7 +29,7 @@
 
 \+ **new DepositDataOperations**(`db`: [DepositDataRepository](_db_api_beacon_repositories_depositdata_.depositdatarepository.md)): *[DepositDataOperations](_oppool_modules_depositdata_.depositdataoperations.md)*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L7)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L7)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Name | Type |
 
 • **db**: *[DepositDataRepository](_db_api_beacon_repositories_depositdata_.depositdatarepository.md)*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L7)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L7)*
 
 ## Methods
 
@@ -53,7 +53,7 @@ Name | Type |
 
 ▸ **getAll**(): *Promise‹DepositData[]›*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:17](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L17)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:17](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L17)*
 
 **Returns:** *Promise‹DepositData[]›*
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **getAllBetween**(`lowerLimit`: number | null, `upperLimit`: number | null): *Promise‹DepositData[]›*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L27)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L27)*
 
 Limits are not inclusive
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **receive**(`index`: number, `value`: DepositData): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L13)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L13)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **removeOld**(`depositCount`: Number64): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/opPool/modules/depositData.ts#L35)*
+*Defined in [packages/lodestar/src/opPool/modules/depositData.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/depositData.ts#L35)*
 
 Removes deposits with index <= depositCount - 1
 

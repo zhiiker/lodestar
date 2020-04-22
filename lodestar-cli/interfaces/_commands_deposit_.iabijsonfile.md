@@ -18,4 +18,4 @@
 
 • **abi**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/deposit.ts#L40)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/deposit.ts#L42)*

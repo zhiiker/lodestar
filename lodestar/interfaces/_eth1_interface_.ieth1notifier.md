@@ -41,6 +41,7 @@ The IEth1Notifier service watches the Eth1.0 chain for relevant events
 * [getEth1Vote](_eth1_interface_.ieth1notifier.md#geteth1vote)
 * [getHead](_eth1_interface_.ieth1notifier.md#gethead)
 * [initBlockCache](_eth1_interface_.ieth1notifier.md#initblockcache)
+* [initContract](_eth1_interface_.ieth1notifier.md#initcontract)
 * [processBlockHeadUpdate](_eth1_interface_.ieth1notifier.md#processblockheadupdate)
 * [processDepositLog](_eth1_interface_.ieth1notifier.md#processdepositlog)
 * [processPastDeposits](_eth1_interface_.ieth1notifier.md#processpastdeposits)
@@ -84,7 +85,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **depositCount**(`block?`: string | number): *Promise‹Number64›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:98](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L98)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:98](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L98)*
 
 Retruns deposit count
 
@@ -102,7 +103,7 @@ ___
 
 ▸ **depositRoot**(`block?`: string | number): *Promise‹Uint8Array›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:92](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L92)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:92](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L92)*
 
 Return the merkle root of the deposits
 
@@ -120,7 +121,7 @@ ___
 
 ▸ **findBlocks**(`config`: IBeaconConfig, `periodStart`: Number64): *Block[]*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L51)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L51)*
 
 Find candidate blocks;
 
@@ -139,7 +140,7 @@ ___
 
 ▸ **getBlock**(`blockHashOrBlockNumber`: string | number): *Promise‹Block›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:87](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L87)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:87](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L87)*
 
 Returns block by block hash or number
 
@@ -157,7 +158,7 @@ ___
 
 ▸ **getEth1Data**(`block`: Block): *Promise‹Eth1Data›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:102](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L102)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:102](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L102)*
 
 **Parameters:**
 
@@ -173,7 +174,7 @@ ___
 
 ▸ **getEth1Vote**(`config`: IBeaconConfig, `state`: BeaconState): *Promise‹Eth1Data›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:100](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L100)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:100](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L100)*
 
 **Parameters:**
 
@@ -190,7 +191,7 @@ ___
 
 ▸ **getHead**(): *Promise‹Block›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:81](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L81)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:81](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L81)*
 
 Return the latest block
 
@@ -202,7 +203,7 @@ ___
 
 ▸ **initBlockCache**(`config`: IBeaconConfig, `state`: BeaconState): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L39)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L39)*
 
 Initialize the ETH1 block cache.
 
@@ -217,11 +218,21 @@ Name | Type |
 
 ___
 
+###  initContract
+
+▸ **initContract**(): *Promise‹void›*
+
+*Defined in [packages/lodestar/src/eth1/interface.ts:104](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L104)*
+
+**Returns:** *Promise‹void›*
+
+___
+
 ###  processBlockHeadUpdate
 
 ▸ **processBlockHeadUpdate**(`blockNumber`: number | string): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:56](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L56)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:56](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L56)*
 
 Process new block events sent from the Eth 1.0 chain
 
@@ -239,7 +250,7 @@ ___
 
 ▸ **processDepositLog**(`pubkey`: string, `withdrawalCredentials`: string, `amount`: string, `signature`: string, `merkleTreeIndex`: string): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:61](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L61)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:61](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L61)*
 
 Process a Desposit log which has been received from the Eth 1.0 chain
 
@@ -259,9 +270,9 @@ ___
 
 ###  processPastDeposits
 
-▸ **processPastDeposits**(`fromBlock`: string | Number64, `toBlock?`: string | Number64): *Promise‹void›*
+▸ **processPastDeposits**(`fromBlock`: string | Number64, `toBlock?`: string | Number64): *Promise‹DepositData[]›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L74)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L74)*
 
 Obtains Deposit logs between given range of blocks
 
@@ -272,7 +283,7 @@ Name | Type | Description |
 `fromBlock` | string &#124; Number64 | either block hash or block number |
 `toBlock?` | string &#124; Number64 | optional, if not submitted it will assume latest  |
 
-**Returns:** *Promise‹void›*
+**Returns:** *Promise‹DepositData[]›*
 
 ___
 
@@ -280,7 +291,7 @@ ___
 
 ▸ **pruneBlockCache**(`config`: IBeaconConfig, `state`: BeaconState): *void*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L45)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L45)*
 
 A checkpoint is finalized in ETH2.
 
@@ -299,7 +310,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L30)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L30)*
 
 If there isn't Eth2Genesis events in past logs, it should fetch
 all the deposit logs from block at which contract is deployed.
@@ -313,6 +324,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/eth1/interface.ts#L31)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L31)*
 
 **Returns:** *Promise‹void›*

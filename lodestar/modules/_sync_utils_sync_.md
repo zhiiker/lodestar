@@ -4,60 +4,68 @@
 
 ## Index
 
-### Interfaces
-
-* [ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md)
-
 ### Functions
 
-* [chunkify](_sync_utils_sync_.md#chunkify)
-* [getBlockRangeFromPeer](_sync_utils_sync_.md#getblockrangefrompeer)
+* [fetchBlockChunks](_sync_utils_sync_.md#fetchblockchunks)
+* [getCommonFinalizedCheckpoint](_sync_utils_sync_.md#getcommonfinalizedcheckpoint)
 * [getHighestCommonSlot](_sync_utils_sync_.md#gethighestcommonslot)
-* [getInitalSyncTargetEpoch](_sync_utils_sync_.md#getinitalsynctargetepoch)
-* [isSynced](_sync_utils_sync_.md#issynced)
-* [isValidChainOfBlocks](_sync_utils_sync_.md#isvalidchainofblocks)
-* [isValidFinalizedCheckPoint](_sync_utils_sync_.md#isvalidfinalizedcheckpoint)
-* [isValidPeerForInitSync](_sync_utils_sync_.md#isvalidpeerforinitsync)
+* [getStatusFinalizedCheckpoint](_sync_utils_sync_.md#getstatusfinalizedcheckpoint)
+* [processSyncBlocks](_sync_utils_sync_.md#processsyncblocks)
+* [targetSlotToBlockChunks](_sync_utils_sync_.md#targetslottoblockchunks)
+* [validateBlocks](_sync_utils_sync_.md#validateblocks)
 
 ## Functions
 
-###  chunkify
+###  fetchBlockChunks
 
-▸ **chunkify**(`blocksPerChunk`: number, `currentSlot`: Slot, `targetSlot`: Slot): *[ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md)[]*
+▸ **fetchBlockChunks**(`chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `reqResp`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `getPeers`: function, `blocksPerChunk`: number): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:90](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L90)*
-
-Creates slot chunks returned chunks represents (inclusive) start and (inclusive) end slot
-which should be fetched along all slotS(blocks) in between
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:76](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L76)*
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`blocksPerChunk` | number | - |
-`currentSlot` | Slot | - |
-`targetSlot` | Slot |   |
+▪ **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-**Returns:** *[ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md)[]*
+▪ **reqResp**: *[IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-___
+▪ **getPeers**: *function*
 
-###  getBlockRangeFromPeer
-
-▸ **getBlockRangeFromPeer**(`rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `reps`: [ReputationStore](../classes/_sync_ireputation_.reputationstore.md), `peer`: PeerInfo, `chunk`: [ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md)): *Promise‹SignedBeaconBlock[]›*
-
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:110](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L110)*
+▸ (`minSlot`: Slot): *Promise‹PeerInfo[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`rpc` | [IReqResp](../interfaces/_network_interface_.ireqresp.md) |
-`reps` | [ReputationStore](../classes/_sync_ireputation_.reputationstore.md) |
-`peer` | PeerInfo |
-`chunk` | [ISlotRange](../interfaces/_sync_utils_sync_.islotrange.md) |
+`minSlot` | Slot |
 
-**Returns:** *Promise‹SignedBeaconBlock[]›*
+▪`Default value`  **blocksPerChunk**: *number*= 10
+
+**Returns:** *function*
+
+▸ (`source`: AsyncIterable‹[ISlotRange](../interfaces/_sync_interface_.islotrange.md)›): *AsyncGenerator‹SignedBeaconBlock[]›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`source` | AsyncIterable‹[ISlotRange](../interfaces/_sync_interface_.islotrange.md)› |
+
+___
+
+###  getCommonFinalizedCheckpoint
+
+▸ **getCommonFinalizedCheckpoint**(`config`: IBeaconConfig, `peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[]): *Checkpoint | null*
+
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L34)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`config` | IBeaconConfig |
+`peers` | [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[] |
+
+**Returns:** *Checkpoint | null*
 
 ___
 
@@ -65,7 +73,7 @@ ___
 
 ▸ **getHighestCommonSlot**(`peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[]): *Slot*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L38)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L12)*
 
 **Parameters:**
 
@@ -77,87 +85,94 @@ Name | Type |
 
 ___
 
-###  getInitalSyncTargetEpoch
+###  getStatusFinalizedCheckpoint
 
-▸ **getInitalSyncTargetEpoch**(`peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[], `currentCheckPoint`: Checkpoint): *Epoch*
+▸ **getStatusFinalizedCheckpoint**(`status`: Status): *Checkpoint*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L22)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`peers` | [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[] |
-`currentCheckPoint` | Checkpoint |
-
-**Returns:** *Epoch*
-
-___
-
-###  isSynced
-
-▸ **isSynced**(`slot`: Slot, `peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[]): *boolean*
-
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:56](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L56)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L30)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`slot` | Slot |
-`peers` | [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[] |
+`status` | Status |
 
-**Returns:** *boolean*
+**Returns:** *Checkpoint*
 
 ___
 
-###  isValidChainOfBlocks
+###  processSyncBlocks
 
-▸ **isValidChainOfBlocks**(`config`: IBeaconConfig, `start`: BeaconBlockHeader, `signedBlocks`: SignedBeaconBlock[]): *boolean*
+▸ **processSyncBlocks**(`chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `logger`: ILogger, `trusted`: boolean): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L7)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:133](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L133)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`chain` | [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md) | - |
+`logger` | ILogger | - |
+`trusted` | boolean | false |
+
+**Returns:** *function*
+
+▸ (`source`: AsyncIterable‹SignedBeaconBlock[]›): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`source` | AsyncIterable‹SignedBeaconBlock[]› |
+
+___
+
+###  targetSlotToBlockChunks
+
+▸ **targetSlotToBlockChunks**(`config`: IBeaconConfig, `chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)): *function*
+
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:62](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L62)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`start` | BeaconBlockHeader |
-`signedBlocks` | SignedBeaconBlock[] |
+`chain` | [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md) |
 
-**Returns:** *boolean*
+**Returns:** *function*
 
-___
-
-###  isValidFinalizedCheckPoint
-
-▸ **isValidFinalizedCheckPoint**(`peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[], `finalizedCheckpoint`: Checkpoint): *boolean*
-
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:60](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L60)*
+▸ (`source`: AsyncIterable‹Slot›): *AsyncGenerator‹[ISlotRange](../interfaces/_sync_interface_.islotrange.md)›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`peers` | [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[] |
-`finalizedCheckpoint` | Checkpoint |
-
-**Returns:** *boolean*
+`source` | AsyncIterable‹Slot› |
 
 ___
 
-###  isValidPeerForInitSync
+###  validateBlocks
 
-▸ **isValidPeerForInitSync**(`config`: IBeaconConfig, `myState`: BeaconState | null, `peerStatus`: Status): *boolean*
+▸ **validateBlocks**(`config`: IBeaconConfig, `chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `logger`: ILogger, `onBlockVerificationFail`: Function): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:69](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/utils/sync.ts#L69)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:101](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/utils/sync.ts#L101)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`myState` | BeaconState &#124; null |
-`peerStatus` | Status |
+`chain` | [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md) |
+`logger` | ILogger |
+`onBlockVerificationFail` | Function |
 
-**Returns:** *boolean*
+**Returns:** *function*
+
+▸ (`source`: AsyncIterable‹SignedBeaconBlock[]›): *AsyncGenerator‹SignedBeaconBlock[]›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`source` | AsyncIterable‹SignedBeaconBlock[]› |

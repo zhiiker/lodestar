@@ -50,7 +50,7 @@
 
 \+ **new ApiClientOverInstance**(`opts`: [IApiClientOverInstanceOpts](../interfaces/_api_impl_instance_.iapiclientoverinstanceopts.md)): *[ApiClientOverInstance](_api_impl_instance_.apiclientoverinstance.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L18)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L18)*
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 *Overrides [AbstractApiClient](_api_abstract_.abstractapiclient.md).[beacon](_api_abstract_.abstractapiclient.md#abstract-beacon)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L16)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L16)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 *Inherited from [AbstractApiClient](_api_abstract_.abstractapiclient.md).[config](_api_abstract_.abstractapiclient.md#protected-config)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/abstract.ts#L15)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/abstract.ts#L15)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 *Overrides [AbstractApiClient](_api_abstract_.abstractapiclient.md).[url](_api_abstract_.abstractapiclient.md#abstract-url)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L14)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L14)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 *Overrides [AbstractApiClient](_api_abstract_.abstractapiclient.md).[validator](_api_abstract_.abstractapiclient.md#abstract-validator)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L18)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L18)*
 
 ## Methods
 
@@ -152,7 +152,7 @@ ___
 
 *Overrides [AbstractApiClient](_api_abstract_.abstractapiclient.md).[connect](_api_abstract_.abstractapiclient.md#connect)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L27)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L27)*
 
 **Returns:** *Promise‹void›*
 
@@ -166,7 +166,7 @@ ___
 
 *Overrides [AbstractApiClient](_api_abstract_.abstractapiclient.md).[disconnect](_api_abstract_.abstractapiclient.md#disconnect)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/impl/instance.ts#L31)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/impl/instance.ts#L31)*
 
 **Returns:** *Promise‹void›*
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from [AbstractApiClient](_api_abstract_.abstractapiclient.md).[getCurrentSlot](_api_abstract_.abstractapiclient.md#getcurrentslot)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:52](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/abstract.ts#L52)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:52](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/abstract.ts#L52)*
 
 **Returns:** *Slot*
 
@@ -194,7 +194,7 @@ ___
 
 *Inherited from [AbstractApiClient](_api_abstract_.abstractapiclient.md).[onNewEpoch](_api_abstract_.abstractapiclient.md#onnewepoch)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:28](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/abstract.ts#L28)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/abstract.ts#L28)*
 
 **Parameters:**
 
@@ -214,7 +214,7 @@ ___
 
 *Inherited from [AbstractApiClient](_api_abstract_.abstractapiclient.md).[onNewSlot](_api_abstract_.abstractapiclient.md#onnewslot)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-validator/src/api/abstract.ts#L34)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-validator/src/api/abstract.ts#L34)*
 
 **Parameters:**
 

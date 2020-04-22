@@ -11,6 +11,7 @@
 ### Variables
 
 * [AttestationSubnetRegExp](_network_gossip_constants_.md#const-attestationsubnetregexp)
+* [GossipTopicRegExp](_network_gossip_constants_.md#const-gossiptopicregexp)
 
 ### Functions
 
@@ -20,9 +21,17 @@
 
 ### `Const` AttestationSubnetRegExp
 
-• **AttestationSubnetRegExp**: *RegExp‹›* = new RegExp("^(/eth2/committee_index)([0-9]+)(_beacon_attestation/)([a-z]+)$")
+• **AttestationSubnetRegExp**: *RegExp‹›* = new RegExp("^(/eth2/)([a-f0-9]{8})(/committee_index)([0-9]+)(_beacon_attestation/)([a-z]+)$")
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L18)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L18)*
+
+___
+
+### `Const` GossipTopicRegExp
+
+• **GossipTopicRegExp**: *RegExp‹›* = new RegExp("^(/eth2/)([a-f0-9]{8})/(\\w+)(/[a-z]+)")
+
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:21](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L21)*
 
 ## Functions
 
@@ -30,7 +39,7 @@
 
 ▸ **getCommitteeSubnetEvent**(`index`: CommitteeIndex): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:20](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/gossip/constants.ts#L20)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:23](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/constants.ts#L23)*
 
 **Parameters:**
 

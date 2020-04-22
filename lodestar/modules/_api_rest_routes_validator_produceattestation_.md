@@ -22,7 +22,7 @@
 
 ▸ **registerAttestationProductionEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:41](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L41)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L37)*
 
 **Parameters:**
 
@@ -43,27 +43,21 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:15](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L15)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L15)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L16)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L16)*
 
 * **querystring**: *object*
 
-  * **required**: *string[]* = ["validator_pubkey", "poc_bit", "slot", "committee_index"]
+  * **required**: *string[]* = ["validator_pubkey", "slot", "attestation_committee_index"]
 
   * **type**: *string* = "object"
 
   * **properties**: *object*
 
-    * **committee_index**: *object*
-
-      * **minimum**: *number* = 0
-
-      * **type**: *string* = "integer"
-
-    * **poc_bit**: *object*
+    * **attestation_committee_index**: *object*
 
       * **minimum**: *number* = 0
 

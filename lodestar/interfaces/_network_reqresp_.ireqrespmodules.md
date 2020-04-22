@@ -20,7 +20,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:38](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/reqResp.ts#L38)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:40](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/reqResp.ts#L40)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:39](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/reqResp.ts#L39)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:41](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/reqResp.ts#L41)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/network/reqResp.ts#L40)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/reqResp.ts#L42)*

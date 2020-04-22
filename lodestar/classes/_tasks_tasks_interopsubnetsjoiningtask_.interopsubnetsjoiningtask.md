@@ -18,14 +18,17 @@
 
 ### Properties
 
+* [chain](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-chain)
 * [config](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-config)
 * [network](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-network)
+* [timers](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-timers)
 
 ### Methods
 
 * [handleChangeSubnets](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-handlechangesubnets)
 * [handleWireAttestation](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-handlewireattestation)
 * [run](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#run)
+* [stop](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#stop)
 * [subscribeToRandomSubnet](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md#private-subscribetorandomsubnet)
 
 ## Constructors
@@ -34,7 +37,7 @@
 
 \+ **new InteropSubnetsJoiningTask**(`config`: IBeaconConfig, `modules`: [IInteropSubnetsJoiningModules](../interfaces/_tasks_tasks_interopsubnetsjoiningtask_.iinteropsubnetsjoiningmodules.md)): *[InteropSubnetsJoiningTask](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L14)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L20)*
 
 **Parameters:**
 
@@ -47,11 +50,19 @@ Name | Type |
 
 ## Properties
 
+### `Private` chain
+
+• **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
+
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L18)*
+
+___
+
 ### `Private` config
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L13)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L16)*
 
 ___
 
@@ -59,23 +70,32 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L14)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:17](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L17)*
+
+___
+
+### `Private` timers
+
+• **timers**: *Timeout[]* = []
+
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L20)*
 
 ## Methods
 
 ### `Private` handleChangeSubnets
 
-▸ **handleChangeSubnets**(`subnet`: number): *void*
+▸ **handleChangeSubnets**(`forkDigest`: ForkDigest, `subnet`: number): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:49](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L49)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:67](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L67)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`forkDigest` | ForkDigest |
 `subnet` | number |
 
-**Returns:** *void*
+**Returns:** *Promise‹void›*
 
 ___
 
@@ -83,7 +103,7 @@ ___
 
 ▸ **handleWireAttestation**(): *void*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:54](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L54)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:72](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L72)*
 
 **Returns:** *void*
 
@@ -95,7 +115,17 @@ ___
 
 *Implementation of [ITask](../interfaces/_tasks_interface_.itask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L21)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L28)*
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  stop
+
+▸ **stop**(): *Promise‹void›*
+
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L35)*
 
 **Returns:** *Promise‹void›*
 
@@ -103,9 +133,15 @@ ___
 
 ### `Private` subscribeToRandomSubnet
 
-▸ **subscribeToRandomSubnet**(): *number*
+▸ **subscribeToRandomSubnet**(`forkDigest`: ForkDigest): *number*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L32)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:44](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L44)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`forkDigest` | ForkDigest |
 
 **Returns:** *number*
 

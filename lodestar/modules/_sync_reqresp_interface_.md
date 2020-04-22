@@ -6,5 +6,4 @@
 
 ### Interfaces
 
-* [ISyncOptions](../interfaces/_sync_reqresp_interface_.isyncoptions.md)
-* [ISyncReqResp](../interfaces/_sync_reqresp_interface_.isyncreqresp.md)
+* [IReqRespHandler](../interfaces/_sync_reqresp_interface_.ireqresphandler.md)

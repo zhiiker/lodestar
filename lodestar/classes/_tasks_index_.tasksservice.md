@@ -24,6 +24,7 @@ periodically.
 * [chain](_tasks_index_.tasksservice.md#private-chain)
 * [config](_tasks_index_.tasksservice.md#private-config)
 * [db](_tasks_index_.tasksservice.md#private-db)
+* [interopSubnetsTask](_tasks_index_.tasksservice.md#private-interopsubnetstask)
 * [logger](_tasks_index_.tasksservice.md#private-logger)
 * [network](_tasks_index_.tasksservice.md#private-network)
 * [sync](_tasks_index_.tasksservice.md#private-sync)
@@ -31,7 +32,6 @@ periodically.
 ### Methods
 
 * [handleFinalizedCheckpointChores](_tasks_index_.tasksservice.md#private-handlefinalizedcheckpointchores)
-* [handleRegularSyncStartedTasks](_tasks_index_.tasksservice.md#private-handleregularsyncstartedtasks)
 * [start](_tasks_index_.tasksservice.md#start)
 * [stop](_tasks_index_.tasksservice.md#stop)
 
@@ -41,7 +41,7 @@ periodically.
 
 \+ **new TasksService**(`config`: IBeaconConfig, `modules`: [ITasksModules](../interfaces/_tasks_index_.itasksmodules.md)): *[TasksService](_tasks_index_.tasksservice.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L35)*
+*Defined in [packages/lodestar/src/tasks/index.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L37)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L32)*
+*Defined in [packages/lodestar/src/tasks/index.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L32)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L30)*
+*Defined in [packages/lodestar/src/tasks/index.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L30)*
 
 ___
 
@@ -74,7 +74,15 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L31)*
+*Defined in [packages/lodestar/src/tasks/index.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L31)*
+
+___
+
+### `Private` interopSubnetsTask
+
+• **interopSubnetsTask**: *[InteropSubnetsJoiningTask](_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md)*
+
+*Defined in [packages/lodestar/src/tasks/index.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L37)*
 
 ___
 
@@ -82,7 +90,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L35)*
+*Defined in [packages/lodestar/src/tasks/index.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L35)*
 
 ___
 
@@ -90,15 +98,15 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L34)*
+*Defined in [packages/lodestar/src/tasks/index.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L34)*
 
 ___
 
 ### `Private` sync
 
-• **sync**: *[Sync](_sync_index_.sync.md)*
+• **sync**: *[IBeaconSync](../interfaces/_sync_interface_.ibeaconsync.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:33](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L33)*
+*Defined in [packages/lodestar/src/tasks/index.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L33)*
 
 ## Methods
 
@@ -106,7 +114,7 @@ ___
 
 ▸ **handleFinalizedCheckpointChores**(`finalizedCheckpoint`: Checkpoint): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:56](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L56)*
+*Defined in [packages/lodestar/src/tasks/index.ts:59](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L59)*
 
 **Parameters:**
 
@@ -118,23 +126,13 @@ Name | Type |
 
 ___
 
-### `Private` handleRegularSyncStartedTasks
-
-▸ **handleRegularSyncStartedTasks**(): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/tasks/index.ts:60](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L60)*
-
-**Returns:** *Promise‹void›*
-
-___
-
 ###  start
 
 ▸ **start**(): *Promise‹void›*
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:46](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L46)*
+*Defined in [packages/lodestar/src/tasks/index.ts:49](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L49)*
 
 **Returns:** *Promise‹void›*
 
@@ -146,6 +144,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:51](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/tasks/index.ts#L51)*
+*Defined in [packages/lodestar/src/tasks/index.ts:54](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/tasks/index.ts#L54)*
 
 **Returns:** *Promise‹void›*

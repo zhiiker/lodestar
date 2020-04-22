@@ -4,6 +4,10 @@
 
 ## Index
 
+### Type aliases
+
+* [IBody](_api_rest_routes_validator_publishattestation_.md#ibody)
+
 ### Functions
 
 * [registerAttestationPublishEndpoint](_api_rest_routes_validator_publishattestation_.md#const-registerattestationpublishendpoint)
@@ -12,13 +16,21 @@
 
 * [opts](_api_rest_routes_validator_publishattestation_.md#const-opts)
 
+## Type aliases
+
+###  IBody
+
+Ƭ **IBody**: *Json[]*
+
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:5](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L5)*
+
 ## Functions
 
 ### `Const` registerAttestationPublishEndpoint
 
 ▸ **registerAttestationPublishEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:13](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L15)*
 
 **Parameters:**
 
@@ -39,12 +51,12 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:5](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L5)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L7)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L8)*
 
 * **body**: *object*
 
-  * **type**: *string* = "object"
+  * **type**: *string* = "array"

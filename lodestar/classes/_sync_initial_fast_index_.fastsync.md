@@ -36,11 +36,15 @@
 * [logger](_sync_initial_fast_index_.fastsync.md#private-logger)
 * [network](_sync_initial_fast_index_.fastsync.md#private-network)
 * [opts](_sync_initial_fast_index_.fastsync.md#private-opts)
-* [peers](_sync_initial_fast_index_.fastsync.md#private-peers)
 * [reps](_sync_initial_fast_index_.fastsync.md#private-reps)
+* [syncTriggerSource](_sync_initial_fast_index_.fastsync.md#private-synctriggersource)
+* [targetCheckpoint](_sync_initial_fast_index_.fastsync.md#private-targetcheckpoint)
 
 ### Methods
 
+* [checkProgress](_sync_initial_fast_index_.fastsync.md#private-checkprogress)
+* [getInitialSyncPeers](_sync_initial_fast_index_.fastsync.md#private-getinitialsyncpeers)
+* [setTarget](_sync_initial_fast_index_.fastsync.md#private-settarget)
 * [start](_sync_initial_fast_index_.fastsync.md#start)
 * [stop](_sync_initial_fast_index_.fastsync.md#stop)
 * [sync](_sync_initial_fast_index_.fastsync.md#private-sync)
@@ -51,7 +55,7 @@
 
 \+ **new FastSync**(`opts`: [ISyncOptions](../interfaces/_sync_options_.isyncoptions.md), `__namedParameters`: object): *[FastSync](_sync_initial_fast_index_.fastsync.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L27)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L37)*
 
 **Parameters:**
 
@@ -65,8 +69,7 @@ Name | Type |
 `config` | IBeaconConfig |
 `logger` | ILogger |
 `network` | [INetwork](../interfaces/_network_interface_.inetwork.md)‹› |
-`peers` | PeerInfo‹›[] |
-`reps` | [ReputationStore](_sync_ireputation_.reputationstore.md)‹› |
+`reputationStore` | [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md) |
 
 **Returns:** *[FastSync](_sync_initial_fast_index_.fastsync.md)*
 
@@ -106,7 +109,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:23](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L23)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L31)*
 
 ___
 
@@ -114,7 +117,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:21](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L21)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L30)*
 
 ___
 
@@ -122,7 +125,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:26](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L26)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L34)*
 
 ___
 
@@ -130,7 +133,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:25](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L25)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L33)*
 
 ___
 
@@ -138,31 +141,83 @@ ___
 
 • **opts**: *[ISyncOptions](../interfaces/_sync_options_.isyncoptions.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:22](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L22)*
-
-___
-
-### `Private` peers
-
-• **peers**: *PeerInfo[]*
-
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:27](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L27)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L29)*
 
 ___
 
 ### `Private` reps
 
-• **reps**: *[ReputationStore](_sync_ireputation_.reputationstore.md)*
+• **reps**: *[IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:24](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L24)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L32)*
+
+___
+
+### `Private` syncTriggerSource
+
+• **syncTriggerSource**: *Pushable‹Slot›*
+
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L37)*
+
+___
+
+### `Private` targetCheckpoint
+
+• **targetCheckpoint**: *Checkpoint*
+
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:36](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L36)*
 
 ## Methods
+
+### `Private` checkProgress
+
+▸ **checkProgress**(`processedCheckpoint`: Checkpoint): *Promise‹void›*
+
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:89](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L89)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`processedCheckpoint` | Checkpoint |
+
+**Returns:** *Promise‹void›*
+
+___
+
+### `Private` getInitialSyncPeers
+
+▸ **getInitialSyncPeers**(): *Promise‹PeerInfo[]›*
+
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:112](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L112)*
+
+Returns peers which has same finalized Checkpoint
+
+**Returns:** *Promise‹PeerInfo[]›*
+
+___
+
+### `Private` setTarget
+
+▸ **setTarget**(`target`: Checkpoint): *void*
+
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:72](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L72)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`target` | Checkpoint |
+
+**Returns:** *void*
+
+___
 
 ###  start
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:40](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L40)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:50](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L50)*
 
 **Returns:** *Promise‹void›*
 
@@ -172,7 +227,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:59](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L59)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:66](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L66)*
 
 **Returns:** *Promise‹void›*
 
@@ -180,14 +235,8 @@ ___
 
 ### `Private` sync
 
-▸ **sync**(`chainCheckPoint`: Checkpoint): *Promise‹void›*
+▸ **sync**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:64](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/initial/fast/index.ts#L64)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`chainCheckPoint` | Checkpoint |
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:77](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/initial/fast/index.ts#L77)*
 
 **Returns:** *Promise‹void›*

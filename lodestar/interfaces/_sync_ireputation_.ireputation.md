@@ -10,16 +10,25 @@
 
 ### Properties
 
+* [latestMetadata](_sync_ireputation_.ireputation.md#latestmetadata)
 * [latestStatus](_sync_ireputation_.ireputation.md#lateststatus)
 * [score](_sync_ireputation_.ireputation.md#score)
 
 ## Properties
 
+###  latestMetadata
+
+• **latestMetadata**: *Metadata | null*
+
+*Defined in [packages/lodestar/src/sync/IReputation.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/IReputation.ts#L8)*
+
+___
+
 ###  latestStatus
 
 • **latestStatus**: *Status | null*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:7](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/IReputation.ts#L7)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/IReputation.ts#L7)*
 
 ___
 
@@ -27,4 +36,4 @@ ___
 
 • **score**: *number*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/sync/IReputation.ts#L8)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/IReputation.ts#L9)*

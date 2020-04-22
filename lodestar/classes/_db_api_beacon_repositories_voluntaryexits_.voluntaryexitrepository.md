@@ -44,7 +44,7 @@
 
 *Overrides [Repository](_db_api_beacon_repository_.repository.md).[constructor](_db_api_beacon_repository_.repository.md#protected-constructor)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts#L8)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts#L8)*
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Name | Type |
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[bucket](_db_api_beacon_repository_.repository.md#protected-bucket)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:14](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L14)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L14)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[config](_db_api_beacon_repository_.repository.md#protected-config)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:10](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L10)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L10)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[db](_db_api_beacon_repository_.repository.md#protected-db)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:12](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L12)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L12)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[type](_db_api_beacon_repository_.repository.md#protected-type)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:16](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L16)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L16)*
 
 ## Methods
 
@@ -103,7 +103,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[add](_db_api_beacon_repository_.repository.md#add)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:61](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L61)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:61](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L61)*
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[addMany](_db_api_beacon_repository_.bulkrepository.md#addmany)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:97](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L97)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:97](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L97)*
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[delete](_db_api_beacon_repository_.repository.md#delete)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:53](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L53)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:53](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L53)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 *Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[deleteMany](_db_api_beacon_repository_.bulkrepository.md#deletemany)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:85](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L85)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:85](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L85)*
 
 **Parameters:**
 
@@ -175,7 +175,7 @@ ___
 
 *Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[deleteManyByValue](_db_api_beacon_repository_.bulkrepository.md#deletemanybyvalue)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:93](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L93)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:93](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L93)*
 
 **Parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[get](_db_api_beacon_repository_.repository.md#get)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:29](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L29)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L29)*
 
 **Parameters:**
 
@@ -211,7 +211,7 @@ ___
 
 *Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[getAll](_db_api_beacon_repository_.bulkrepository.md#getall)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:69](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L69)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:69](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L69)*
 
 **Returns:** *Promise‹SignedVoluntaryExit[]›*
 
@@ -223,7 +223,7 @@ ___
 
 *Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[getAllBetween](_db_api_beacon_repository_.bulkrepository.md#getallbetween)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:77](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L77)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:77](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L77)*
 
 **Parameters:**
 
@@ -238,11 +238,11 @@ ___
 
 ###  getId
 
-▸ **getId**(`value`: SignedVoluntaryExit): *[Id](../modules/_db_api_beacon_repository_.md#id)*
+▸ **getId**(`value`: SignedVoluntaryExit): *ValidatorIndex*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[getId](_db_api_beacon_repository_.repository.md#getid)*
+*Overrides [Repository](_db_api_beacon_repository_.repository.md).[getId](_db_api_beacon_repository_.repository.md#getid)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:57](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L57)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repositories/voluntaryExits.ts#L16)*
 
 **Parameters:**
 
@@ -250,7 +250,7 @@ Name | Type |
 ------ | ------ |
 `value` | SignedVoluntaryExit |
 
-**Returns:** *[Id](../modules/_db_api_beacon_repository_.md#id)*
+**Returns:** *ValidatorIndex*
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[getSerialized](_db_api_beacon_repository_.repository.md#getserialized)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L34)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L34)*
 
 **Parameters:**
 
@@ -278,7 +278,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[has](_db_api_beacon_repository_.repository.md#has)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:45](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L45)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:45](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L45)*
 
 **Parameters:**
 
@@ -296,7 +296,7 @@ ___
 
 *Inherited from [Repository](_db_api_beacon_repository_.repository.md).[set](_db_api_beacon_repository_.repository.md#set)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:49](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/db/api/beacon/repository.ts#L49)*
+*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:49](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/api/beacon/repository.ts#L49)*
 
 **Parameters:**
 

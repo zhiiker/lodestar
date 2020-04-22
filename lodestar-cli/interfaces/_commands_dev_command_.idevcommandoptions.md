@@ -28,7 +28,7 @@
 
 • **db**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:36](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L36)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:38](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L38)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **genesisState**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:33](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L33)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L35)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **genesisTime**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:31](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L31)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L33)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **loggingLevel**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:30](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L30)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L32)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **preset**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:34](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L34)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:36](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L36)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **validatorCount**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:32](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L32)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L34)*
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 • **validators**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:35](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar-cli/src/commands/dev/command.ts#L35)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar-cli/src/commands/dev/command.ts#L37)*

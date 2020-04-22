@@ -14,7 +14,7 @@
 
 ▸ **generateDeposits**(`config`: IBeaconConfig, `opPool`: [OpPool](../classes/_oppool_oppool_.oppool.md), `state`: BeaconState, `eth1Data`: Eth1Data, `depositDataRootList`: TreeBacked‹List‹Root››): *Promise‹Deposit[]›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
+*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
 
 **Parameters:**
 

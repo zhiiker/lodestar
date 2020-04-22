@@ -16,16 +16,25 @@
 
 ### Properties
 
+* [proposer_pubkey](_api_rest_routes_validator_produceblock_.iquery.md#proposer_pubkey)
 * [randao_reveal](_api_rest_routes_validator_produceblock_.iquery.md#randao_reveal)
 * [slot](_api_rest_routes_validator_produceblock_.iquery.md#slot)
 
 ## Properties
 
+###  proposer_pubkey
+
+• **proposer_pubkey**: *string*
+
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L9)*
+
+___
+
 ###  randao_reveal
 
 • **randao_reveal**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:8](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L11)*
 
 ___
 
@@ -33,4 +42,4 @@ ___
 
 • **slot**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:6](https://github.com/ChainSafe/lodestar/blob/4796680/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L7)*
