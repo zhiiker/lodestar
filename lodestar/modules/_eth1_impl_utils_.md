@@ -17,7 +17,7 @@
 
 ▸ **getEth1BlockCandidateRange**(`config`: IBeaconConfig, `state`: BeaconState, `eth1Head`: Block): *[Eth1BlockRange](../interfaces/_eth1_interface_.eth1blockrange.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/utils.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/impl/utils.ts#L32)*
+*Defined in [packages/lodestar/src/eth1/impl/utils.ts:32](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/impl/utils.ts#L32)*
 
 Get initial eth1 blocks to cache.
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **getLatestEth1BlockTimestamp**(`config`: IBeaconConfig, `state`: BeaconState): *Number64*
 
-*Defined in [packages/lodestar/src/eth1/impl/utils.ts:21](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/impl/utils.ts#L21)*
+*Defined in [packages/lodestar/src/eth1/impl/utils.ts:21](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/impl/utils.ts#L21)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **isCandidateBlock**(`config`: IBeaconConfig, `block`: Block, `periodStart`: Number64): *boolean*
 
-*Defined in [packages/lodestar/src/eth1/impl/utils.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/impl/utils.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/impl/utils.ts:13](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/impl/utils.ts#L13)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **votingPeriodStartTime**(`config`: IBeaconConfig, `state`: BeaconState): *Number64*
 
-*Defined in [packages/lodestar/src/eth1/impl/utils.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/impl/utils.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/impl/utils.ts:7](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/impl/utils.ts#L7)*
 
 **Parameters:**
 

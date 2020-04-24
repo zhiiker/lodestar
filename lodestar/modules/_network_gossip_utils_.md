@@ -22,7 +22,7 @@
 
 ▸ **getAttestationSubnet**(`attestation`: Attestation): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:40](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L40)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:40](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L40)*
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ ___
 
 ▸ **getAttestationSubnetTopic**(`attestation`: Attestation, `forkDigestValue`: ForkDigest, `encoding`: string): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L28)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:28](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L28)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getCommitteeIndexSubnet**(`committeeIndex`: CommitteeIndex): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:50](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L50)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:50](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L50)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **getGossipEvent**(`topic`: string): *[GossipEvent](../enums/_network_gossip_constants_.gossipevent.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:44](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L44)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:44](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L44)*
 
 **Parameters:**
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **getGossipTopic**(`event`: [GossipEvent](../enums/_network_gossip_constants_.gossipevent.md), `forkDigestValue`: ForkDigest, `encoding`: string, `params`: Map‹string, string›): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L15)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:15](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L15)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **getMessageId**(`rawMessage`: IGossipMessage): *string*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:73](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L73)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:73](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L73)*
 
 **Parameters:**
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **getSubnetFromAttestationSubnetTopic**(`topic`: string): *number*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:58](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L58)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:58](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L58)*
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **isAttestationSubnetTopic**(`topic`: string): *boolean*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:54](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L54)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:54](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L54)*
 
 **Parameters:**
 
@@ -155,7 +155,7 @@ ___
 
 ▸ **normalizeInRpcMessage**(`rawMessage`: IGossipMessage): *[ILodestarGossipMessage](../interfaces/_network_gossip_interface_.ilodestargossipmessage.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/utils.ts:65](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/gossip/utils.ts#L65)*
+*Defined in [packages/lodestar/src/network/gossip/utils.ts:65](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/utils.ts#L65)*
 
 **Parameters:**
 

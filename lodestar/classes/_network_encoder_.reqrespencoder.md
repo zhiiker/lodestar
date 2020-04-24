@@ -35,7 +35,7 @@
 
 \+ **new ReqRespEncoder**(`config`: IBeaconConfig, `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *[ReqRespEncoder](_network_encoder_.reqrespencoder.md)*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L16)*
+*Defined in [packages/lodestar/src/network/encoder.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L16)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L16)*
+*Defined in [packages/lodestar/src/network/encoder.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L16)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **encoding**: *[ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L14)*
+*Defined in [packages/lodestar/src/network/encoder.ts:14](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L14)*
 
 ## Methods
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **decodeRequest**(`method`: [Method](../enums/_constants_network_.method.md), `data`: Buffer): *RequestBody*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L32)*
+*Defined in [packages/lodestar/src/network/encoder.ts:32](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L32)*
 
 **Parameters:**
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **decodeResponse**(`method`: [Method](../enums/_constants_network_.method.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:69](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L69)*
+*Defined in [packages/lodestar/src/network/encoder.ts:69](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L69)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **encodeRequest**(`method`: [Method](../enums/_constants_network_.method.md), `data`: RequestBody): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:23](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L23)*
+*Defined in [packages/lodestar/src/network/encoder.ts:23](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L23)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **encodeResponse**(`method`: [Method](../enums/_constants_network_.method.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:42](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L42)*
+*Defined in [packages/lodestar/src/network/encoder.ts:42](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L42)*
 
 **Parameters:**
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **getEncoders**(`encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *[IReqRespEncoder](../interfaces/_network_encoders_interface_.ireqrespencoder.md)‹unknown›[]*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:87](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L87)*
+*Defined in [packages/lodestar/src/network/encoder.ts:87](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L87)*
 
 **Parameters:**
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **readLengthPrefixed**(`encodedPayload`: Buffer): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:104](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L104)*
+*Defined in [packages/lodestar/src/network/encoder.ts:104](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L104)*
 
 **Parameters:**
 
@@ -182,7 +182,7 @@ ___
 
 ▸ **readStatus**(`payload`: Buffer): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:116](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L116)*
+*Defined in [packages/lodestar/src/network/encoder.ts:116](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L116)*
 
 **Parameters:**
 
@@ -198,7 +198,7 @@ ___
 
 ▸ **writeLengthPrefixed**(`encodedPayload`: Buffer): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:97](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L97)*
+*Defined in [packages/lodestar/src/network/encoder.ts:97](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L97)*
 
 **Parameters:**
 
@@ -214,7 +214,7 @@ ___
 
 ▸ **writeStatus**(`payload`: Buffer, `status`: number): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoder.ts:124](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/encoder.ts#L124)*
+*Defined in [packages/lodestar/src/network/encoder.ts:124](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoder.ts#L124)*
 
 **Parameters:**
 

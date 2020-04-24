@@ -19,7 +19,7 @@
 
 • **enr**? : *ENR*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:7](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L7)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:7](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L7)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **metadata**? : *Metadata*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L8)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:8](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L8)*

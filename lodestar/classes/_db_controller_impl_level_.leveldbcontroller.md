@@ -61,7 +61,7 @@ The LevelDB implementation of DB
 
 \+ **new LevelDbController**(`opts`: [ILevelDBOptions](../interfaces/_db_controller_impl_level_.ileveldboptions.md), `__namedParameters`: object): *[LevelDbController](_db_controller_impl_level_.leveldbcontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L28)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:28](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L28)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ Name | Type |
 
 • **db**: *LevelUp*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:24](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L24)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:24](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L24)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L28)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:28](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L28)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **opts**: *[ILevelDBOptions](../interfaces/_db_controller_impl_level_.ileveldboptions.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:26](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L26)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:26](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L26)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:73](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L73)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:73](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L73)*
 
 **Parameters:**
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **batchPut**(`items`: object[]): *Promise‹any›*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:67](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L67)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:67](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L67)*
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:79](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L79)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:79](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L79)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:52](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L52)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L52)*
 
 **Parameters:**
 
@@ -456,7 +456,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:63](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L63)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:63](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L63)*
 
 **Parameters:**
 
@@ -547,7 +547,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:83](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L83)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:83](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L83)*
 
 **Parameters:**
 
@@ -565,7 +565,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:91](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L91)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:91](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L91)*
 
 **Parameters:**
 
@@ -605,7 +605,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:43](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L43)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:43](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L43)*
 
 **Returns:** *Promise‹void›*
 
@@ -617,7 +617,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:48](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/impl/level.ts#L48)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:48](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/impl/level.ts#L48)*
 
 **Returns:** *Promise‹void›*
 

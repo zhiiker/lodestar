@@ -29,7 +29,7 @@
 
 • **attestationCollector**? : *[AttestationCollector](../classes/_sync_utils_attestation_collector_.attestationcollector.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L39)*
+*Defined in [packages/lodestar/src/sync/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L39)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L33)*
+*Defined in [packages/lodestar/src/sync/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L33)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L28)*
+*Defined in [packages/lodestar/src/sync/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L28)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L30)*
+*Defined in [packages/lodestar/src/sync/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L30)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **gossipHandler**? : *[IGossipHandler](../modules/_sync_gossip_interface_.md#igossiphandler)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L38)*
+*Defined in [packages/lodestar/src/sync/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L38)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **initialSync**? : *[InitialSync](../modules/_sync_initial_interface_.md#initialsync)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L35)*
+*Defined in [packages/lodestar/src/sync/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L35)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L32)*
+*Defined in [packages/lodestar/src/sync/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L32)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L29)*
+*Defined in [packages/lodestar/src/sync/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L29)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **opPool**: *[OpPool](../classes/_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L34)*
+*Defined in [packages/lodestar/src/sync/interface.ts:34](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L34)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **regularSync**? : *[IRegularSync](../modules/_sync_regular_interface_.md#iregularsync)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L36)*
+*Defined in [packages/lodestar/src/sync/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L36)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **reputationStore**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L31)*
+*Defined in [packages/lodestar/src/sync/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L31)*
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 • **reqRespHandler**? : *[IReqRespHandler](_sync_reqresp_interface_.ireqresphandler.md)*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/sync/interface.ts#L37)*
+*Defined in [packages/lodestar/src/sync/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/interface.ts#L37)*

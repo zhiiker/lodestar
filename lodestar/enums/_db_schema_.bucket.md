@@ -31,7 +31,7 @@
 
 • **aggregateAndProof**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L11)*
+*Defined in [packages/lodestar/src/db/schema.ts:11](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L11)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **attestation**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L10)*
+*Defined in [packages/lodestar/src/db/schema.ts:10](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L10)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **attesterSlashing**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:23](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L23)*
+*Defined in [packages/lodestar/src/db/schema.ts:23](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L23)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **block**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L12)*
+*Defined in [packages/lodestar/src/db/schema.ts:12](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L12)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **blockArchive**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:13](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L13)*
+*Defined in [packages/lodestar/src/db/schema.ts:13](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L13)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **blockRootRefs**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:15](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L15)*
+*Defined in [packages/lodestar/src/db/schema.ts:15](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L15)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **blockSlotRefs**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:14](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L14)*
+*Defined in [packages/lodestar/src/db/schema.ts:14](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L14)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **chainInfo**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L18)*
+*Defined in [packages/lodestar/src/db/schema.ts:18](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L18)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **depositData**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L20)*
+*Defined in [packages/lodestar/src/db/schema.ts:20](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L20)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **depositDataRootList**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:24](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L24)*
+*Defined in [packages/lodestar/src/db/schema.ts:24](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L24)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **exit**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:21](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L21)*
+*Defined in [packages/lodestar/src/db/schema.ts:21](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L21)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 • **invalidBlock**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L16)*
+*Defined in [packages/lodestar/src/db/schema.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L16)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 • **lastProposedBlock**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:26](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L26)*
+*Defined in [packages/lodestar/src/db/schema.ts:26](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L26)*
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 • **mainChain**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:17](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L17)*
+*Defined in [packages/lodestar/src/db/schema.ts:17](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L17)*
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 • **proposedAttestations**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L27)*
+*Defined in [packages/lodestar/src/db/schema.ts:27](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L27)*
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 • **proposerSlashing**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:22](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L22)*
+*Defined in [packages/lodestar/src/db/schema.ts:22](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L22)*
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 • **state**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L9)*
+*Defined in [packages/lodestar/src/db/schema.ts:9](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L9)*
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 • **validator**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:19](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/schema.ts#L19)*
+*Defined in [packages/lodestar/src/db/schema.ts:19](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L19)*

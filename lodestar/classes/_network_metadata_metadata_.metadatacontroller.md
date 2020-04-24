@@ -30,7 +30,7 @@
 
 \+ **new MetadataController**(`opts`: [IMetadataOpts](../interfaces/_network_metadata_metadata_.imetadataopts.md), `modules`: [IMetadataModules](../interfaces/_network_metadata_metadata_.imetadatamodules.md)): *[MetadataController](_network_metadata_metadata_.metadatacontroller.md)*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:19](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L19)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:19](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L19)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **_metadata**: *Metadata*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:19](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L19)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:19](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L19)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:18](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L18)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:18](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L18)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **enr**? : *ENR*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L16)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L16)*
 
 ## Accessors
 
@@ -71,13 +71,13 @@ ___
 
 • **get attnets**(): *BitVector*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:34](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L34)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:34](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L34)*
 
 **Returns:** *BitVector*
 
 • **set attnets**(`attnets`: BitVector): *void*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:38](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L38)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:38](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L38)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@ ___
 
 • **get metadata**(): *Metadata*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:46](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L46)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:46](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L46)*
 
 **Returns:** *Metadata*
 
@@ -103,6 +103,6 @@ ___
 
 • **get seqNumber**(): *bigint*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:30](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/network/metadata/metadata.ts#L30)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:30](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L30)*
 
 **Returns:** *bigint*

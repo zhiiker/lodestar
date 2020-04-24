@@ -19,7 +19,7 @@
 
 • **gt**: *any*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/interface.ts#L9)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/interface.ts#L9)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **lt**: *any*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/db/controller/interface.ts#L10)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/controller/interface.ts#L10)*

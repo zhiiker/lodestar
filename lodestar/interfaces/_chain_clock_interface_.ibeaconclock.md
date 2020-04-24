@@ -30,7 +30,7 @@
 
 ▸ **getCurrentSlot**(): *Slot*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/clock/interface.ts#L8)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/chain/clock/interface.ts#L8)*
 
 **Returns:** *Slot*
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **onNewEpoch**(`cb`: [NewEpochCallback](../modules/_chain_clock_interface_.md#newepochcallback)): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/clock/interface.ts#L10)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/chain/clock/interface.ts#L10)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **onNewSlot**(`cb`: [NewSlotCallback](../modules/_chain_clock_interface_.md#newslotcallback)): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/clock/interface.ts#L9)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/chain/clock/interface.ts#L9)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[start](_network_gossip_interface_.igossip.md#start)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -86,7 +86,7 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[stop](_network_gossip_interface_.igossip.md#stop)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **unsubscribeFromNewEpoch**(`cb`: [NewEpochCallback](../modules/_chain_clock_interface_.md#newepochcallback)): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/clock/interface.ts#L11)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/chain/clock/interface.ts#L11)*
 
 **Parameters:**
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **unsubscribeFromNewSlot**(`cb`: [NewSlotCallback](../modules/_chain_clock_interface_.md#newslotcallback)): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/chain/clock/interface.ts#L12)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/chain/clock/interface.ts#L12)*
 
 **Parameters:**
 

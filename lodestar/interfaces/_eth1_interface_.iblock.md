@@ -21,7 +21,7 @@ Eth1 block interface.
 
 • **number**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:124](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L124)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:124](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/interface.ts#L124)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **timestamp**: *Number64*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:123](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/eth1/interface.ts#L123)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:123](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/eth1/interface.ts#L123)*

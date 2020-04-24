@@ -32,7 +32,7 @@
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[constructor](_oppool_modules_abstract_.operationsmodule.md#constructor)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[db](_oppool_modules_abstract_.operationsmodule.md#protected-db)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/opPool/modules/abstract.ts#L6)*
 
 ## Methods
 
@@ -60,7 +60,7 @@ Name | Type |
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[getAll](_oppool_modules_abstract_.operationsmodule.md#getall)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/opPool/modules/abstract.ts#L16)*
 
 **Returns:** *Promise‹ProposerSlashing[]›*
 
@@ -72,7 +72,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[receive](_oppool_modules_abstract_.operationsmodule.md#receive)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/opPool/modules/abstract.ts#L12)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 *Inherited from [OperationsModule](_oppool_modules_abstract_.operationsmodule.md).[remove](_oppool_modules_abstract_.operationsmodule.md#remove)*
 
-*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/f536e8f/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/opPool/modules/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/opPool/modules/abstract.ts#L20)*
 
 **Parameters:**
 
