@@ -20,6 +20,7 @@
 * [IReqRespHandler](_sync_index_.md#ireqresphandler)
 * [IReqRespHandlerModules](_sync_index_.md#ireqresphandlermodules)
 * [ISlotRange](_sync_index_.md#islotrange)
+* [ISyncModule](_sync_index_.md#isyncmodule)
 * [ISyncModules](_sync_index_.md#isyncmodules)
 * [InitialSync](_sync_index_.md#initialsync)
 * [InitialSyncEventEmitter](_sync_index_.md#initialsynceventemitter)
@@ -110,6 +111,12 @@ ___
 ###  ISlotRange
 
 • **ISlotRange**:
+
+___
+
+###  ISyncModule
+
+• **ISyncModule**:
 
 ___
 

@@ -14,16 +14,16 @@
 
 ### ▪ **OpPoolOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:3](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/opPool/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:3](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/opPool/options.ts#L3)*
 
 ###  fields
 
 • **fields**: *undefined[]* = []
 
-*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:5](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/opPool/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:5](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/opPool/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "opPool"
 
-*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:4](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/opPool/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/opPool/options.ts:4](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/opPool/options.ts#L4)*

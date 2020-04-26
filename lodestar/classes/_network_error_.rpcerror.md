@@ -30,7 +30,7 @@ Error of network req/resp
 
 \+ **new RpcError**(`status`: [RpcErrorCode](../enums/_constants_network_.rpcerrorcode.md), `message?`: string): *[RpcError](_network_error_.rpcerror.md)*
 
-*Defined in [packages/lodestar/src/network/error.ts:8](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/error.ts#L8)*
+*Defined in [packages/lodestar/src/network/error.ts:8](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/error.ts#L8)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ ___
 
 • **status**: *[RpcErrorCode](../enums/_constants_network_.rpcerrorcode.md)*
 
-*Defined in [packages/lodestar/src/network/error.ts:8](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/error.ts#L8)*
+*Defined in [packages/lodestar/src/network/error.ts:8](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/error.ts#L8)*
 
 ___
 

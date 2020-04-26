@@ -41,7 +41,7 @@
 
 \+ **new GossipMessageValidator**(`__namedParameters`: object): *[GossipMessageValidator](_network_gossip_validator_.gossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L52)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L52)*
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:48](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L48)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:48](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L48)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L51)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L51)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:49](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L49)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:49](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L49)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L52)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L52)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:50](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L50)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:50](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L50)*
 
 ## Methods
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **isUnaggregatedAttestation**(`attestation`: Attestation): *boolean*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:105](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L105)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:105](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L105)*
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:149](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L149)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:149](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L149)*
 
 **Parameters:**
 
@@ -139,7 +139,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:261](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L261)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:261](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L261)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:62](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L62)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:62](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L62)*
 
 **Parameters:**
 
@@ -175,7 +175,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:116](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L116)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:116](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L116)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:252](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L252)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:252](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L252)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:225](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L225)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:225](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L225)*
 
 **Parameters:**
 
@@ -230,7 +230,7 @@ ___
 
 *Implementation of [IGossipMessageValidator](../interfaces/_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:239](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/validator.ts#L239)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:239](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/validator.ts#L239)*
 
 **Parameters:**
 

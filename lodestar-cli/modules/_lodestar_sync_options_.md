@@ -14,16 +14,16 @@
 
 ### ▪ **SyncOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
 
 ###  fields
 
 • **fields**: *undefined[]* = []
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "sync"
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*

@@ -23,7 +23,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:31](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L31)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:31](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L31)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:29](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L29)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:29](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L29)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:30](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L30)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:30](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L30)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:34](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L34)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L34)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:32](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L32)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:32](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L32)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **reputationStore**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:33](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/reqResp/reqResp.ts#L33)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:33](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/reqResp/reqResp.ts#L33)*

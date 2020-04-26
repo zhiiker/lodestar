@@ -20,7 +20,7 @@
 
 • **chainHeight**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:36](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L36)*
+*Defined in [packages/lodestar/src/db/schema.ts:36](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L36)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **finalizedBlock**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:42](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L42)*
+*Defined in [packages/lodestar/src/db/schema.ts:42](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L42)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **finalizedState**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:39](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L39)*
+*Defined in [packages/lodestar/src/db/schema.ts:39](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L39)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **justifiedBlock**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:43](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L43)*
+*Defined in [packages/lodestar/src/db/schema.ts:43](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L43)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **justifiedState**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:40](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L40)*
+*Defined in [packages/lodestar/src/db/schema.ts:40](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L40)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **latestState**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:38](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L38)*
+*Defined in [packages/lodestar/src/db/schema.ts:38](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L38)*
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 • **progressiveMerkleTree**:
 
-*Defined in [packages/lodestar/src/db/schema.ts:44](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/db/schema.ts#L44)*
+*Defined in [packages/lodestar/src/db/schema.ts:44](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/schema.ts#L44)*

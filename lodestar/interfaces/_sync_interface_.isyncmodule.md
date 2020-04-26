@@ -1,0 +1,23 @@
+[@chainsafe/lodestar](../README.md) › [Globals](../globals.md) › ["sync/interface"](../modules/_sync_interface_.md) › [ISyncModule](_sync_interface_.isyncmodule.md)
+
+# Interface: ISyncModule
+
+## Hierarchy
+
+* **ISyncModule**
+
+## Index
+
+### Methods
+
+* [getHighestBlock](_sync_interface_.isyncmodule.md#gethighestblock)
+
+## Methods
+
+###  getHighestBlock
+
+▸ **getHighestBlock**(): *Slot*
+
+*Defined in [packages/lodestar/src/sync/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/interface.ts#L23)*
+
+**Returns:** *Slot*

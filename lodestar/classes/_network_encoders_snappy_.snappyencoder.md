@@ -23,7 +23,7 @@
 
 ▸ **decode**(`type`: Type‹unknown›, `data`: Buffer): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy.ts:7](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoders/snappy.ts#L7)*
+*Defined in [packages/lodestar/src/network/encoders/snappy.ts:7](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/encoders/snappy.ts#L7)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **encode**(`type`: Type‹unknown›, `data`: Buffer): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy.ts:11](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/encoders/snappy.ts#L11)*
+*Defined in [packages/lodestar/src/network/encoders/snappy.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/encoders/snappy.ts#L11)*
 
 **Parameters:**
 

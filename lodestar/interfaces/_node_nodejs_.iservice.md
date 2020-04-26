@@ -20,7 +20,6 @@
 * [BeaconGossipHandler](../classes/_sync_gossip_handler_.beacongossiphandler.md)
 * [BlockProcessor](../classes/_chain_blocks_processor_.blockprocessor.md)
 * [DatabaseService](../classes/_db_api_abstract_.databaseservice.md)
-* [NaiveRegularSync](../classes/_sync_regular_naive_naive_.naiveregularsync.md)
 * [RestApi](../classes/_api_rest_index_.restapi.md)
 * [TasksService](../classes/_tasks_index_.tasksservice.md)
 * [ValidatorClient](../classes/_validator_nodejs_.validatorclient.md)
@@ -39,7 +38,7 @@
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -49,6 +48,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

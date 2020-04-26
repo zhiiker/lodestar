@@ -19,7 +19,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:11](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L11)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L11)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:10](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L10)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L10)*

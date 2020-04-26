@@ -33,7 +33,7 @@
 
 \+ **new ReputationStore**(): *[ReputationStore](_sync_ireputation_.reputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:20](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L20)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L20)*
 
 **Returns:** *[ReputationStore](_sync_ireputation_.reputationstore.md)*
 
@@ -43,7 +43,7 @@
 
 • **reputations**: *Map‹string, [IReputation](../interfaces/_sync_ireputation_.ireputation.md)›*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:20](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L20)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L20)*
 
 ## Methods
 
@@ -53,7 +53,7 @@
 
 *Implementation of [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:24](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L24)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L24)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 *Implementation of [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:36](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L36)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:36](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L36)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 *Implementation of [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:40](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L40)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:40](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L40)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 *Implementation of [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:33](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/IReputation.ts#L33)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:33](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L33)*
 
 **Parameters:**
 

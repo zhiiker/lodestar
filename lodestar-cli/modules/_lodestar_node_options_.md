@@ -14,7 +14,7 @@
 
 ### ▪ **BeaconNodeOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:12](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/node/options.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/node/options.ts#L12)*
 
 ###  fields
 
@@ -31,10 +31,10 @@
     MetricsOptions,
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:14](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/node/options.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:14](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/node/options.ts#L14)*
 
 ###  name
 
 • **name**: *string* = "config"
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:13](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar-cli/src/lodestar/node/options.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/options.ts:13](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/lodestar/node/options.ts#L13)*

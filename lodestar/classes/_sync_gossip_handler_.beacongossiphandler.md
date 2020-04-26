@@ -38,7 +38,7 @@
 
 \+ **new BeaconGossipHandler**(`chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `network`: [INetwork](../interfaces/_network_interface_.inetwork.md), `opPool`: [OpPool](_oppool_oppool_.oppool.md)): *[BeaconGossipHandler](_sync_gossip_handler_.beacongossiphandler.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:18](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L18)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L18)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:16](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L16)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:16](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L16)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:17](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L17)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:17](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L17)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:18](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L18)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L18)*
 
 ## Methods
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **onAggregatedAttestation**(`aggregate`: SignedAggregateAndProof): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L52)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L52)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **onAttesterSlashing**(`attesterSlashing`: AttesterSlashing): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:56](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L56)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:56](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L56)*
 
 **Parameters:**
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **onBlock**(`block`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:48](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L48)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:48](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L48)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **onProposerSlashing**(`proposerSlashing`: ProposerSlashing): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:60](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L60)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:60](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L60)*
 
 **Parameters:**
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **onVoluntaryExit**(`exit`: SignedVoluntaryExit): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:64](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L64)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:64](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L64)*
 
 **Parameters:**
 
@@ -162,7 +162,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:26](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L26)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:26](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L26)*
 
 **Returns:** *Promise‹void›*
 
@@ -174,6 +174,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/handler.ts:34](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/sync/gossip/handler.ts#L34)*
+*Defined in [packages/lodestar/src/sync/gossip/handler.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/gossip/handler.ts#L34)*
 
 **Returns:** *Promise‹void›*

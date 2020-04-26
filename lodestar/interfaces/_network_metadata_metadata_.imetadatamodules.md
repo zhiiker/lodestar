@@ -18,4 +18,4 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:12](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/metadata/metadata.ts#L12)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/metadata/metadata.ts#L12)*

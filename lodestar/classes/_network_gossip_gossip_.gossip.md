@@ -70,7 +70,7 @@
 
 \+ **new Gossip**(`opts`: [INetworkOptions](../interfaces/_network_options_.inetworkoptions.md), `__namedParameters`: object): *[Gossip](_network_gossip_gossip_.gossip.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L52)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L52)*
 
 **Parameters:**
 
@@ -130,7 +130,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:49](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L49)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:49](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L49)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:46](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L46)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:46](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L46)*
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 • **handlers**: *Map‹string, [GossipHandlerFn](../modules/_network_gossip_gossip_.md#gossiphandlerfn)›*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:52](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L52)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L52)*
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:47](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L47)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:47](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L47)*
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:50](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L50)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:50](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L50)*
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 • **opts**: *[INetworkOptions](../interfaces/_network_options_.inetworkoptions.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:45](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L45)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L45)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishAggregatedAttestation](../interfaces/_network_gossip_interface_.igossip.md#publishaggregatedattestation)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:84](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L84)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:84](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L84)*
 
 #### Type declaration:
 
@@ -200,7 +200,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishAttesterSlashing](../interfaces/_network_gossip_interface_.igossip.md#publishattesterslashing)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:90](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L90)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:90](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L90)*
 
 #### Type declaration:
 
@@ -220,7 +220,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishBlock](../interfaces/_network_gossip_interface_.igossip.md#publishblock)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:80](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L80)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:80](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L80)*
 
 #### Type declaration:
 
@@ -240,7 +240,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishCommiteeAttestation](../interfaces/_network_gossip_interface_.igossip.md#publishcommiteeattestation)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:82](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L82)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:82](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L82)*
 
 #### Type declaration:
 
@@ -260,7 +260,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishProposerSlashing](../interfaces/_network_gossip_interface_.igossip.md#publishproposerslashing)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:88](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L88)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:88](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L88)*
 
 #### Type declaration:
 
@@ -280,7 +280,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[publishVoluntaryExit](../interfaces/_network_gossip_interface_.igossip.md#publishvoluntaryexit)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:86](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L86)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:86](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L86)*
 
 #### Type declaration:
 
@@ -298,7 +298,7 @@ ___
 
 • **pubsub**: *[IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:48](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L48)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:48](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L48)*
 
 ## Methods
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **emitGossipHeartbeat**(): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:209](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L209)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:209](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L209)*
 
 **Returns:** *void*
 
@@ -316,7 +316,7 @@ ___
 
 ▸ **getForkDigest**(`slot`: Slot): *Promise‹ForkDigest›*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:150](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L150)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:150](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L150)*
 
 **Parameters:**
 
@@ -332,7 +332,7 @@ ___
 
 ▸ **getForkDigestByEpoch**(`epoch`: Epoch): *Promise‹ForkDigest›*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:155](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L155)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:155](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L155)*
 
 **Parameters:**
 
@@ -348,7 +348,7 @@ ___
 
 ▸ **registerHandlers**(): *Map‹string, [GossipHandlerFn](../modules/_network_gossip_gossip_.md#gossiphandlerfn)›*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:176](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L176)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:176](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L176)*
 
 **Returns:** *Map‹string, [GossipHandlerFn](../modules/_network_gossip_gossip_.md#gossiphandlerfn)›*
 
@@ -360,7 +360,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:65](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L65)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:65](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L65)*
 
 **Returns:** *Promise‹void›*
 
@@ -372,7 +372,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:73](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L73)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:73](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L73)*
 
 **Returns:** *Promise‹void›*
 
@@ -382,7 +382,7 @@ ___
 
 ▸ **subscribe**(`forkDigest`: ForkDigest, `event`: keyof IGossipEvents, `listener?`: unknown, `params`: Map‹string, string›): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:163](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L163)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:163](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L163)*
 
 **Parameters:**
 
@@ -401,7 +401,7 @@ ___
 
 ▸ **subscribeToAggregateAndProof**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:96](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L96)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:96](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L96)*
 
 **Parameters:**
 
@@ -425,7 +425,7 @@ ___
 
 ▸ **subscribeToAttestation**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:101](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L101)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:101](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L101)*
 
 **Parameters:**
 
@@ -449,7 +449,7 @@ ___
 
 ▸ **subscribeToAttestationSubnet**(`forkDigest`: ForkDigest, `subnet`: number | string, `callback?`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:121](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L121)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:121](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L121)*
 
 **Parameters:**
 
@@ -478,7 +478,7 @@ ___
 
 ▸ **subscribeToAttesterSlashing**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:116](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L116)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:116](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L116)*
 
 **Parameters:**
 
@@ -502,7 +502,7 @@ ___
 
 ▸ **subscribeToBlock**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:92](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L92)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:92](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L92)*
 
 **Parameters:**
 
@@ -526,7 +526,7 @@ ___
 
 ▸ **subscribeToProposerSlashing**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:111](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L111)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:111](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L111)*
 
 **Parameters:**
 
@@ -550,7 +550,7 @@ ___
 
 ▸ **subscribeToVoluntaryExit**(`forkDigest`: ForkDigest, `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:106](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L106)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:106](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L106)*
 
 **Parameters:**
 
@@ -576,7 +576,7 @@ ___
 
 *Implementation of [IGossip](../interfaces/_network_gossip_interface_.igossip.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:137](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L137)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:137](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L137)*
 
 **Parameters:**
 
@@ -595,7 +595,7 @@ ___
 
 ▸ **unsubscribeFromAttestationSubnet**(`forkDigest`: ForkDigest, `subnet`: number | string, `callback?`: function): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:129](https://github.com/ChainSafe/lodestar/blob/0e426d2/packages/lodestar/src/network/gossip/gossip.ts#L129)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:129](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/gossip.ts#L129)*
 
 **Parameters:**
 
