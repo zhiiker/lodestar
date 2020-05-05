@@ -7,8 +7,9 @@
 ### Enumerations
 
 * [Method](../enums/_constants_network_.method.md)
+* [MethodResponseType](../enums/_constants_network_.methodresponsetype.md)
 * [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)
-* [RpcErrorCode](../enums/_constants_network_.rpcerrorcode.md)
+* [RpcResponseStatus](../enums/_constants_network_.rpcresponsestatus.md)
 
 ### Type aliases
 
@@ -24,13 +25,17 @@
 * [RESP_TIMEOUT](_constants_network_.md#const-resp_timeout)
 * [TTFB_TIMEOUT](_constants_network_.md#const-ttfb_timeout)
 
+### Object literals
+
+* [Methods](_constants_network_.md#const-methods)
+
 ## Type aliases
 
 ###  RequestId
 
 Ƭ **RequestId**: *string*
 
-*Defined in [packages/lodestar/src/constants/network.ts:8](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L8)*
+*Defined in [packages/lodestar/src/constants/network.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L10)*
 
 ## Variables
 
@@ -38,7 +43,7 @@
 
 • **ATTESTATION_PROPAGATION_SLOT_RANGE**: *23* = 23
 
-*Defined in [packages/lodestar/src/constants/network.ts:4](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L4)*
+*Defined in [packages/lodestar/src/constants/network.ts:6](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L6)*
 
 ___
 
@@ -46,7 +51,7 @@ ___
 
 • **ATTESTATION_SUBNET_COUNT**: *64* = 64
 
-*Defined in [packages/lodestar/src/constants/network.ts:3](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L3)*
+*Defined in [packages/lodestar/src/constants/network.ts:5](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L5)*
 
 ___
 
@@ -54,7 +59,7 @@ ___
 
 • **GOSSIP_MAX_SIZE**: *number* = 2**20
 
-*Defined in [packages/lodestar/src/constants/network.ts:29](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L29)*
+*Defined in [packages/lodestar/src/constants/network.ts:71](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L71)*
 
 ___
 
@@ -62,7 +67,7 @@ ___
 
 • **MAXIMUM_GOSSIP_CLOCK_DISPARITY**: *500* = 500
 
-*Defined in [packages/lodestar/src/constants/network.ts:5](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L5)*
+*Defined in [packages/lodestar/src/constants/network.ts:7](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L7)*
 
 ___
 
@@ -70,7 +75,7 @@ ___
 
 • **MAX_CHUNK_SIZE**: *number* = 2**20
 
-*Defined in [packages/lodestar/src/constants/network.ts:30](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L30)*
+*Defined in [packages/lodestar/src/constants/network.ts:72](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L72)*
 
 ___
 
@@ -78,7 +83,7 @@ ___
 
 • **RESP_TIMEOUT**: *number* = 10 * 1000
 
-*Defined in [packages/lodestar/src/constants/network.ts:32](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L32)*
+*Defined in [packages/lodestar/src/constants/network.ts:74](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L74)*
 
 ___
 
@@ -86,4 +91,52 @@ ___
 
 • **TTFB_TIMEOUT**: *number* = 5 * 1000
 
-*Defined in [packages/lodestar/src/constants/network.ts:31](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/network.ts#L31)*
+*Defined in [packages/lodestar/src/constants/network.ts:73](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L73)*
+
+## Object literals
+
+### `Const` Methods
+
+### ▪ **Methods**: *object*
+
+*Defined in [packages/lodestar/src/constants/network.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L27)*
+
+▪ **__computed**: *object*
+
+*Defined in [packages/lodestar/src/constants/network.ts:28](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L28)*
+
+*Defined in [packages/lodestar/src/constants/network.ts:33](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L33)*
+
+*Defined in [packages/lodestar/src/constants/network.ts:38](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L38)*
+
+*Defined in [packages/lodestar/src/constants/network.ts:43](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L43)*
+
+*Defined in [packages/lodestar/src/constants/network.ts:48](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L48)*
+
+*Defined in [packages/lodestar/src/constants/network.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/network.ts#L53)*
+
+* **responseType**: *[MethodResponseType](../enums/_constants_network_.methodresponsetype.md)* = MethodResponseType.Stream
+
+* **requestSSZType**(`config`: IBeaconConfig): *ContainerType‹Status›*
+
+* **requestSSZType**(`config`: IBeaconConfig): *BigIntUintType‹›*
+
+* **requestSSZType**(`config`: IBeaconConfig): *BigIntUintType‹›*
+
+* **requestSSZType**(): *null*
+
+* **requestSSZType**(`config`: IBeaconConfig): *ContainerType‹BeaconBlocksByRangeRequest›*
+
+* **requestSSZType**(`config`: IBeaconConfig): *ContainerType‹List‹ArrayLike‹number›››*
+
+* **responseSSZType**(`config`: IBeaconConfig): *ContainerType‹Status›*
+
+* **responseSSZType**(`config`: IBeaconConfig): *BigIntUintType‹›*
+
+* **responseSSZType**(`config`: IBeaconConfig): *BigIntUintType‹›*
+
+* **responseSSZType**(`config`: IBeaconConfig): *ContainerType‹Metadata›*
+
+* **responseSSZType**(`config`: IBeaconConfig): *ContainerType‹SignedBeaconBlock›*
+
+* **responseSSZType**(`config`: IBeaconConfig): *ContainerType‹SignedBeaconBlock›*

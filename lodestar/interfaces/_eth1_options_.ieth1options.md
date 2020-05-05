@@ -22,7 +22,7 @@
 
 • **depositContract**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/options.ts#L11)*
+*Defined in [packages/lodestar/src/eth1/options.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L11)*
 
 #### Type declaration:
 
@@ -40,7 +40,7 @@ ___
 
 • **provider**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:6](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/options.ts#L6)*
+*Defined in [packages/lodestar/src/eth1/options.ts:6](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L6)*
 
 #### Type declaration:
 
@@ -54,4 +54,4 @@ ___
 
 • **providerInstance**? : *BaseProvider*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/options.ts#L10)*
+*Defined in [packages/lodestar/src/eth1/options.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L10)*

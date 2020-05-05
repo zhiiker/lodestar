@@ -19,7 +19,7 @@
 
 • **signedBlock**: *SignedBeaconBlock*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:38](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L38)*
+*Defined in [packages/lodestar/src/chain/chain.ts:39](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L39)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **trusted**: *boolean*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:39](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L39)*
+*Defined in [packages/lodestar/src/chain/chain.ts:40](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L40)*

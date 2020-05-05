@@ -13,9 +13,9 @@
 * [config](_chain_chain_.ibeaconchainmodules.md#config)
 * [db](_chain_chain_.ibeaconchainmodules.md#db)
 * [eth1](_chain_chain_.ibeaconchainmodules.md#eth1)
+* [forkChoice](_chain_chain_.ibeaconchainmodules.md#optional-forkchoice)
 * [logger](_chain_chain_.ibeaconchainmodules.md#logger)
 * [metrics](_chain_chain_.ibeaconchainmodules.md#metrics)
-* [opPool](_chain_chain_.ibeaconchainmodules.md#oppool)
 
 ## Properties
 
@@ -23,7 +23,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:29](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L29)*
+*Defined in [packages/lodestar/src/chain/chain.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L30)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:31](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L31)*
+*Defined in [packages/lodestar/src/chain/chain.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L31)*
 
 ___
 
@@ -39,7 +39,15 @@ ___
 
 • **eth1**: *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:32](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L32)*
+*Defined in [packages/lodestar/src/chain/chain.ts:32](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L32)*
+
+___
+
+### `Optional` forkChoice
+
+• **forkChoice**? : *[ILMDGHOST](_chain_forkchoice_interface_.ilmdghost.md)*
+
+*Defined in [packages/lodestar/src/chain/chain.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L35)*
 
 ___
 
@@ -47,7 +55,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:33](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L33)*
+*Defined in [packages/lodestar/src/chain/chain.ts:33](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L33)*
 
 ___
 
@@ -55,12 +63,4 @@ ___
 
 • **metrics**: *[IBeaconMetrics](_metrics_interface_.ibeaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L34)*
-
-___
-
-###  opPool
-
-• **opPool**: *[OpPool](../classes/_oppool_oppool_.oppool.md)*
-
-*Defined in [packages/lodestar/src/chain/chain.ts:30](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/chain.ts#L30)*
+*Defined in [packages/lodestar/src/chain/chain.ts:34](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L34)*

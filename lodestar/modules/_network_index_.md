@@ -15,7 +15,6 @@
 * [ReqEventEmitter](_network_index_.md#reqeventemitter)
 * [RespEventEmitter](_network_index_.md#respeventemitter)
 * [ResponseCallbackFn](_network_index_.md#responsecallbackfn)
-* [ResponseChunk](_network_index_.md#responsechunk)
 * [createPeerId](_network_index_.md#createpeerid)
 * [createPeerInfo](_network_index_.md#createpeerinfo)
 * [createResponseEvent](_network_index_.md#createresponseevent)
@@ -23,6 +22,8 @@
 * [getRequestMethodSSZType](_network_index_.md#getrequestmethodssztype)
 * [getResponseMethodSSZType](_network_index_.md#getresponsemethodssztype)
 * [initializePeerInfo](_network_index_.md#initializepeerinfo)
+* [isRequestOnly](_network_index_.md#isrequestonly)
+* [isRequestSingleChunk](_network_index_.md#isrequestsinglechunk)
 * [randomRequestId](_network_index_.md#randomrequestid)
 
 ## References
@@ -81,12 +82,6 @@ ___
 
 ___
 
-###  ResponseChunk
-
-• **ResponseChunk**:
-
-___
-
 ###  createPeerId
 
 • **createPeerId**:
@@ -126,6 +121,18 @@ ___
 ###  initializePeerInfo
 
 • **initializePeerInfo**:
+
+___
+
+###  isRequestOnly
+
+• **isRequestOnly**:
+
+___
+
+###  isRequestSingleChunk
+
+• **isRequestSingleChunk**:
 
 ___
 

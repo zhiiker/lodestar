@@ -62,7 +62,7 @@
 
 \+ **new InteropEth1Notifier**(): *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:13](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:13](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L13)*
 
 **Returns:** *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
@@ -72,7 +72,7 @@
 
 ▪ **defaultMaxListeners**: *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[defaultMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#static-defaultmaxlisteners)*
 
 Defined in node_modules/@types/node/events.d.ts:18
 
@@ -82,7 +82,7 @@ Defined in node_modules/@types/node/events.d.ts:18
 
 ▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[addListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[addListener](../interfaces/_network_gossip_interface_.igossipsub.md#addlistener)*
 
 *Overrides void*
 
@@ -112,7 +112,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:42](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L42)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:42](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L42)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **depositRoot**(): *Promise‹Uint8Array›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:30](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L30)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L30)*
 
 **Returns:** *Promise‹Uint8Array›*
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[emit](../interfaces/_db_controller_interface_.idatabasecontroller.md#emit)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[emit](../interfaces/_network_gossip_interface_.igossipsub.md#emit)*
 
 *Overrides void*
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[eventNames](../interfaces/_db_controller_interface_.idatabasecontroller.md#eventnames)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[eventNames](../interfaces/_network_gossip_interface_.igossipsub.md#eventnames)*
 
 *Overrides void*
 
@@ -175,7 +175,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:78](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L78)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:78](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L78)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L34)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:34](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L34)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:61](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L61)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:61](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L61)*
 
 **Parameters:**
 
@@ -230,7 +230,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:50](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L50)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L50)*
 
 **Parameters:**
 
@@ -249,7 +249,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:38](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L38)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:38](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L38)*
 
 **Returns:** *Promise‹Block›*
 
@@ -259,7 +259,7 @@ ___
 
 ▸ **getMaxListeners**(): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[getMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#getmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[getMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#getmaxlisteners)*
 
 *Overrides void*
 
@@ -275,7 +275,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:70](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L70)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:70](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L70)*
 
 **Parameters:**
 
@@ -294,7 +294,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:65](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L65)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:65](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L65)*
 
 **Returns:** *Promise‹void›*
 
@@ -304,7 +304,7 @@ ___
 
 ▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listenerCount](../interfaces/_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 *Overrides void*
 
@@ -324,7 +324,7 @@ ___
 
 ▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#listeners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listeners](../interfaces/_network_gossip_interface_.igossipsub.md#listeners)*
 
 *Overrides void*
 
@@ -344,7 +344,7 @@ ___
 
 ▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[off](../interfaces/_db_controller_interface_.idatabasecontroller.md#off)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[off](../interfaces/_network_gossip_interface_.igossipsub.md#off)*
 
 *Overrides void*
 
@@ -372,7 +372,7 @@ ___
 
 ▸ **on**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[on](../interfaces/_db_controller_interface_.idatabasecontroller.md#on)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[on](../interfaces/_network_gossip_interface_.igossipsub.md#on)*
 
 *Overrides void*
 
@@ -400,7 +400,7 @@ ___
 
 ▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[once](../interfaces/_db_controller_interface_.idatabasecontroller.md#once)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[once](../interfaces/_network_gossip_interface_.igossipsub.md#once)*
 
 *Overrides void*
 
@@ -428,7 +428,7 @@ ___
 
 ▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[prependListener](../interfaces/_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 *Overrides void*
 
@@ -456,7 +456,7 @@ ___
 
 ▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[prependOnceListener](../interfaces/_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 *Overrides void*
 
@@ -486,7 +486,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L24)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L24)*
 
 **Parameters:**
 
@@ -502,7 +502,7 @@ ___
 
 ▸ **processDepositLog**(`dataHex`: string, `indexHex`: string): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:27](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L27)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L27)*
 
 **Parameters:**
 
@@ -519,7 +519,7 @@ ___
 
 ▸ **processPastDeposits**(`fromBlock`: string | number, `toBlock?`: string | number): *Promise‹DepositData[]›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:46](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L46)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L46)*
 
 **Parameters:**
 
@@ -538,7 +538,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:74](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L74)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:74](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L74)*
 
 **Parameters:**
 
@@ -555,7 +555,7 @@ ___
 
 ▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[rawListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#rawlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[rawListeners](../interfaces/_network_gossip_interface_.igossipsub.md#rawlisteners)*
 
 *Overrides void*
 
@@ -575,7 +575,7 @@ ___
 
 ▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeAllListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#removealllisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[removeAllListeners](../interfaces/_network_gossip_interface_.igossipsub.md#removealllisteners)*
 
 *Overrides void*
 
@@ -595,7 +595,7 @@ ___
 
 ▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#removelistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[removeListener](../interfaces/_network_gossip_interface_.igossipsub.md#removelistener)*
 
 *Overrides void*
 
@@ -623,7 +623,7 @@ ___
 
 ▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[setMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#setmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[setMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#setmaxlisteners)*
 
 *Overrides void*
 
@@ -645,7 +645,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L18)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L18)*
 
 **Returns:** *Promise‹void›*
 
@@ -657,7 +657,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:21](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/impl/interop.ts#L21)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L21)*
 
 **Returns:** *Promise‹void›*
 
@@ -667,7 +667,7 @@ ___
 
 ▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listenerCount](../interfaces/_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 Defined in node_modules/@types/node/events.d.ts:17
 

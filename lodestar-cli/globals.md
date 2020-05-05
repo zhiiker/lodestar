@@ -34,7 +34,6 @@
 * ["lodestar/network/options"](modules/_lodestar_network_options_.md)
 * ["lodestar/node/loggerOptions"](modules/_lodestar_node_loggeroptions_.md)
 * ["lodestar/node/options"](modules/_lodestar_node_options_.md)
-* ["lodestar/opPool/options"](modules/_lodestar_oppool_options_.md)
 * ["lodestar/sync/options"](modules/_lodestar_sync_options_.md)
 * ["lodestar/util/config"](modules/_lodestar_util_config_.md)
 * ["lodestar/util/file"](modules/_lodestar_util_file_.md)

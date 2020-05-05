@@ -33,7 +33,7 @@ Eth1 block cache interface for eth1 data vote.
 
 ▸ **addBlock**(`block`: T): *void*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:113](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L113)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:113](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L113)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **findBlocksByTimestamp**(`fromTime?`: number, `toTime?`: number): *T[]*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:115](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L115)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:115](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L115)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **hasBlock**(`block`: T): *boolean*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:112](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L112)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:112](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L112)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **init**(`blocks`: T[], `head`: T): *void*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:111](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L111)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:111](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L111)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **prune**(`timestamp`: number): *void*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:114](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L114)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:114](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L114)*
 
 **Parameters:**
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **requestNewBlock**(`head`: T): *number | undefined*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:116](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/eth1/interface.ts#L116)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:116](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L116)*
 
 **Parameters:**
 

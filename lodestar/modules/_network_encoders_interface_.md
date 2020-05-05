@@ -6,4 +6,5 @@
 
 ### Interfaces
 
-* [IReqRespEncoder](../interfaces/_network_encoders_interface_.ireqrespencoder.md)
+* [IDecompressor](../interfaces/_network_encoders_interface_.idecompressor.md)
+* [IResponseChunk](../interfaces/_network_encoders_interface_.iresponsechunk.md)

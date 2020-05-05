@@ -11,8 +11,8 @@
 ### Properties
 
 * [chain](_sync_utils_attestation_collector_.iattestationcollectormodules.md#chain)
+* [db](_sync_utils_attestation_collector_.iattestationcollectormodules.md#db)
 * [network](_sync_utils_attestation_collector_.iattestationcollectormodules.md#network)
-* [opPool](_sync_utils_attestation_collector_.iattestationcollectormodules.md#oppool)
 
 ## Properties
 
@@ -20,7 +20,15 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L10)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L10)*
+
+___
+
+###  db
+
+• **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
+
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:12](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L12)*
 
 ___
 
@@ -28,12 +36,4 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L11)*
-
-___
-
-###  opPool
-
-• **opPool**: *[OpPool](../classes/_oppool_oppool_.oppool.md)*
-
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L12)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L11)*

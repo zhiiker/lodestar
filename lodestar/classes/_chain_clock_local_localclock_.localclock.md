@@ -61,7 +61,7 @@
 
 \+ **new LocalClock**(`config`: IBeaconConfig, `genesisTime`: number): *[LocalClock](_chain_clock_local_localclock_.localclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:8](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L8)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:8](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L8)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **currentSlot**: *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L10)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L10)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **genesisTime**: *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:9](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L9)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:9](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L9)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **isRunning**: *boolean*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L11)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L11)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **timeoutId**: *Timeout*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 ▪ **defaultMaxListeners**: *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[defaultMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#static-defaultmaxlisteners)*
 
 Defined in node_modules/@types/node/events.d.ts:18
 
@@ -128,7 +128,7 @@ Defined in node_modules/@types/node/events.d.ts:18
 
 ▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[addListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[addListener](../interfaces/_network_gossip_interface_.igossipsub.md#addlistener)*
 
 *Overrides void*
 
@@ -156,7 +156,7 @@ ___
 
 ▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[emit](../interfaces/_db_controller_interface_.idatabasecontroller.md#emit)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[emit](../interfaces/_network_gossip_interface_.igossipsub.md#emit)*
 
 *Overrides void*
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[eventNames](../interfaces/_db_controller_interface_.idatabasecontroller.md#eventnames)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[eventNames](../interfaces/_network_gossip_interface_.igossipsub.md#eventnames)*
 
 *Overrides void*
 
@@ -193,7 +193,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:35](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L35)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L35)*
 
 **Returns:** *number*
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **getDiffTillNextSlot**(): *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:73](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L73)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:73](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L73)*
 
 **Returns:** *number*
 
@@ -213,7 +213,7 @@ ___
 
 ▸ **getMaxListeners**(): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[getMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#getmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[getMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#getmaxlisteners)*
 
 *Overrides void*
 
@@ -227,7 +227,7 @@ ___
 
 ▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listenerCount](../interfaces/_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 *Overrides void*
 
@@ -247,7 +247,7 @@ ___
 
 ▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#listeners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listeners](../interfaces/_network_gossip_interface_.igossipsub.md#listeners)*
 
 *Overrides void*
 
@@ -267,7 +267,7 @@ ___
 
 ▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[off](../interfaces/_db_controller_interface_.idatabasecontroller.md#off)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[off](../interfaces/_network_gossip_interface_.igossipsub.md#off)*
 
 *Overrides void*
 
@@ -295,7 +295,7 @@ ___
 
 ▸ **on**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[on](../interfaces/_db_controller_interface_.idatabasecontroller.md#on)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[on](../interfaces/_network_gossip_interface_.igossipsub.md#on)*
 
 *Overrides void*
 
@@ -325,7 +325,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:39](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L39)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:39](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L39)*
 
 **Parameters:**
 
@@ -343,7 +343,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:43](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L43)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:43](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L43)*
 
 **Parameters:**
 
@@ -359,7 +359,7 @@ ___
 
 ▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[once](../interfaces/_db_controller_interface_.idatabasecontroller.md#once)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[once](../interfaces/_network_gossip_interface_.igossipsub.md#once)*
 
 *Overrides void*
 
@@ -387,7 +387,7 @@ ___
 
 ▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[prependListener](../interfaces/_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 *Overrides void*
 
@@ -415,7 +415,7 @@ ___
 
 ▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[prependOnceListener](../interfaces/_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 *Overrides void*
 
@@ -443,7 +443,7 @@ ___
 
 ▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[rawListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#rawlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[rawListeners](../interfaces/_network_gossip_interface_.igossipsub.md#rawlisteners)*
 
 *Overrides void*
 
@@ -463,7 +463,7 @@ ___
 
 ▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeAllListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#removealllisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[removeAllListeners](../interfaces/_network_gossip_interface_.igossipsub.md#removealllisteners)*
 
 *Overrides void*
 
@@ -483,7 +483,7 @@ ___
 
 ▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#removelistener)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[removeListener](../interfaces/_network_gossip_interface_.igossipsub.md#removelistener)*
 
 *Overrides void*
 
@@ -511,7 +511,7 @@ ___
 
 ▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[setMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#setmaxlisteners)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[setMaxListeners](../interfaces/_network_gossip_interface_.igossipsub.md#setmaxlisteners)*
 
 *Overrides void*
 
@@ -533,7 +533,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L22)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L22)*
 
 **Returns:** *Promise‹void›*
 
@@ -545,7 +545,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:30](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L30)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L30)*
 
 **Returns:** *Promise‹void›*
 
@@ -557,7 +557,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:47](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L47)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:47](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L47)*
 
 **Parameters:**
 
@@ -575,7 +575,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:51](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L51)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:51](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L51)*
 
 **Parameters:**
 
@@ -591,7 +591,7 @@ ___
 
 ▸ **updateSlot**(): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:55](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/clock/local/LocalClock.ts#L55)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:55](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/clock/local/LocalClock.ts#L55)*
 
 **Returns:** *void*
 
@@ -601,7 +601,7 @@ ___
 
 ▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](../interfaces/_network_gossip_interface_.igossipsub.md).[listenerCount](../interfaces/_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 Defined in node_modules/@types/node/events.d.ts:17
 

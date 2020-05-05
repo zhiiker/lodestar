@@ -14,9 +14,9 @@
 
 ###  postProcess
 
-▸ **postProcess**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `opPool`: [OpPool](../classes/_oppool_oppool_.oppool.md), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *function*
+▸ **postProcess**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/blocks/post.ts#L11)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/post.ts#L10)*
 
 **Parameters:**
 
@@ -27,7 +27,6 @@ Name | Type |
 `logger` | ILogger |
 `metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
 `eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
-`opPool` | [OpPool](../classes/_oppool_oppool_.oppool.md) |
 `attestationProcessor` | [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md) |
 
 **Returns:** *function*
@@ -46,7 +45,7 @@ ___
 
 ▸ **setFinalized**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preFinalizedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:62](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/blocks/post.ts#L62)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:65](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/post.ts#L65)*
 
 **Parameters:**
 
@@ -68,7 +67,7 @@ ___
 
 ▸ **setJustified**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preJustifiedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:43](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/blocks/post.ts#L43)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/post.ts#L46)*
 
 **Parameters:**
 

@@ -12,16 +12,16 @@
 
 ###  assembleBody
 
-▸ **assembleBody**(`config`: IBeaconConfig, `opPool`: [OpPool](../classes/_oppool_oppool_.oppool.md), `eth1`: [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md), `depositDataRootList`: TreeBacked‹List‹Root››, `currentState`: BeaconState, `randao`: Bytes96): *Promise‹BeaconBlockBody›*
+▸ **assembleBody**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eth1`: [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md), `depositDataRootList`: TreeBacked‹List‹Root››, `currentState`: BeaconState, `randao`: Bytes96): *Promise‹BeaconBlockBody›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/body.ts:13](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/factory/block/body.ts#L13)*
+*Defined in [packages/lodestar/src/chain/factory/block/body.ts:13](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/factory/block/body.ts#L13)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`opPool` | [OpPool](../classes/_oppool_oppool_.oppool.md) |
+`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
 `eth1` | [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md) |
 `depositDataRootList` | TreeBacked‹List‹Root›› |
 `currentState` | BeaconState |

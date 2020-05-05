@@ -18,7 +18,6 @@
 * [ReqEventEmitter](_network_interface_.md#reqeventemitter)
 * [RespEventEmitter](_network_interface_.md#respeventemitter)
 * [ResponseCallbackFn](_network_interface_.md#responsecallbackfn)
-* [ResponseChunk](_network_interface_.md#responsechunk)
 
 ## Type aliases
 
@@ -26,7 +25,7 @@
 
 Ƭ **NetworkEventEmitter**: *StrictEventEmitter‹EventEmitter, [INetworkEvents](../interfaces/_network_interface_.inetworkevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/interface.ts#L58)*
+*Defined in [packages/lodestar/src/network/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/interface.ts#L55)*
 
 ___
 
@@ -34,7 +33,7 @@ ___
 
 Ƭ **ReqEventEmitter**: *StrictEventEmitter‹EventEmitter, [IReqEvents](../interfaces/_network_interface_.ireqevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/interface.ts#L36)*
+*Defined in [packages/lodestar/src/network/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/interface.ts#L35)*
 
 ___
 
@@ -42,7 +41,7 @@ ___
 
 Ƭ **RespEventEmitter**: *StrictEventEmitter‹EventEmitter, [IRespEvents](../interfaces/_network_interface_.irespevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/interface.ts#L37)*
+*Defined in [packages/lodestar/src/network/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/interface.ts#L36)*
 
 ___
 
@@ -50,28 +49,14 @@ ___
 
 Ƭ **ResponseCallbackFn**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/interface.ts#L24)*
+*Defined in [packages/lodestar/src/network/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/interface.ts#L25)*
 
 #### Type declaration:
 
-▸ (`responseIter`: AsyncIterable‹[ResponseChunk](_network_interface_.md#responsechunk)›): *void*
+▸ (`responseIter`: AsyncIterable‹[IResponseChunk](../interfaces/_network_encoders_interface_.iresponsechunk.md)›): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`responseIter` | AsyncIterable‹[ResponseChunk](_network_interface_.md#responsechunk)› |
-
-___
-
-###  ResponseChunk
-
-Ƭ **ResponseChunk**: *object*
-
-*Defined in [packages/lodestar/src/network/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/interface.ts#L26)*
-
-#### Type declaration:
-
-* **err**? : *[RpcError](../classes/_network_error_.rpcerror.md)*
-
-* **output**? : *ResponseBody*
+`responseIter` | AsyncIterable‹[IResponseChunk](../interfaces/_network_encoders_interface_.iresponsechunk.md)› |

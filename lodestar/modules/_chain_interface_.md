@@ -20,4 +20,4 @@
 
 Ƭ **ChainEventEmitter**: *StrictEventEmitter‹EventEmitter, [IChainEvents](../interfaces/_chain_interface_.ichainevents.md)›*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L28)*
+*Defined in [packages/lodestar/src/chain/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L31)*

@@ -24,7 +24,7 @@
 
 • **DEPOSIT_CONTRACT_TREE_DEPTH**: *number* = 2 ** 5
 
-*Defined in [packages/lodestar/src/constants/constants.ts:5](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L5)*
+*Defined in [packages/lodestar/src/constants/constants.ts:5](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L5)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **EMPTY_SIGNATURE**: *Buffer‹›* = Buffer.alloc(96, 0)
 
-*Defined in [packages/lodestar/src/constants/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L11)*
+*Defined in [packages/lodestar/src/constants/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L11)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **FAR_FUTURE_EPOCH**: *number* = Infinity
 
-*Defined in [packages/lodestar/src/constants/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L9)*
+*Defined in [packages/lodestar/src/constants/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L9)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **GENESIS_EPOCH**: *0* = 0
 
-*Defined in [packages/lodestar/src/constants/constants.ts:7](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L7)*
+*Defined in [packages/lodestar/src/constants/constants.ts:7](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L7)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **GENESIS_SLOT**: *0* = 0
 
-*Defined in [packages/lodestar/src/constants/constants.ts:6](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L6)*
+*Defined in [packages/lodestar/src/constants/constants.ts:6](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L6)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **GENESIS_START_SHARD**: *0* = 0
 
-*Defined in [packages/lodestar/src/constants/constants.ts:8](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L8)*
+*Defined in [packages/lodestar/src/constants/constants.ts:8](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L8)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **ZERO_HASH**: *Buffer‹›* = Buffer.alloc(32, 0)
 
-*Defined in [packages/lodestar/src/constants/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/constants/constants.ts#L10)*
+*Defined in [packages/lodestar/src/constants/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/constants/constants.ts#L10)*

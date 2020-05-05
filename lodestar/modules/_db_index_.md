@@ -9,7 +9,7 @@
 * [BeaconDb](_db_index_.md#beacondb)
 * [IBeaconDb](_db_index_.md#ibeacondb)
 * [IDatabaseController](_db_index_.md#idatabasecontroller)
-* [ISearchOptions](_db_index_.md#isearchoptions)
+* [IFilterOptions](_db_index_.md#ifilteroptions)
 * [IValidatorDB](_db_index_.md#ivalidatordb)
 * [LevelDbController](_db_index_.md#leveldbcontroller)
 * [PouchDbController](_db_index_.md#pouchdbcontroller)
@@ -35,9 +35,9 @@ ___
 
 ___
 
-###  ISearchOptions
+###  IFilterOptions
 
-• **ISearchOptions**:
+• **IFilterOptions**:
 
 ___
 

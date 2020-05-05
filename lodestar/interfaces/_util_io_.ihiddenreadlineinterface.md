@@ -129,7 +129,7 @@ ___
 
 • **output**? : *any*
 
-*Defined in [packages/lodestar/src/util/io.ts:9](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/util/io.ts#L9)*
+*Defined in [packages/lodestar/src/util/io.ts:9](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/util/io.ts#L9)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 ▪ **defaultMaxListeners**: *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[defaultMaxListeners](_network_gossip_interface_.igossipsub.md#static-defaultmaxlisteners)*
 
 Defined in node_modules/@types/node/events.d.ts:18
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **_writeToOutput**(`stringToWrite`: string): *void*
 
-*Defined in [packages/lodestar/src/util/io.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/util/io.ts#L10)*
+*Defined in [packages/lodestar/src/util/io.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/util/io.ts#L10)*
 
 **Parameters:**
 
@@ -187,7 +187,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:61
 
@@ -220,7 +220,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:62
 
@@ -238,7 +238,7 @@ Defined in node_modules/@types/node/readline.d.ts:62
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:63
 
@@ -262,7 +262,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:64
 
@@ -280,7 +280,7 @@ Defined in node_modules/@types/node/readline.d.ts:64
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:65
 
@@ -298,7 +298,7 @@ Defined in node_modules/@types/node/readline.d.ts:65
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:66
 
@@ -316,7 +316,7 @@ Defined in node_modules/@types/node/readline.d.ts:66
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:67
 
@@ -334,7 +334,7 @@ Defined in node_modules/@types/node/readline.d.ts:67
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[addListener](_util_io_.ihiddenreadlineinterface.md#addlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:68
 
@@ -368,7 +368,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:70
 
@@ -385,7 +385,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:71
 
@@ -401,7 +401,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:72
 
@@ -418,7 +418,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:73
 
@@ -434,7 +434,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:74
 
@@ -450,7 +450,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:75
 
@@ -466,7 +466,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:76
 
@@ -482,7 +482,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[emit](_util_io_.ihiddenreadlineinterface.md#emit)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 Defined in node_modules/@types/node/readline.d.ts:77
 
@@ -500,7 +500,7 @@ ___
 
 ▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[eventNames](_db_controller_interface_.idatabasecontroller.md#eventnames)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[eventNames](_network_gossip_interface_.igossipsub.md#eventnames)*
 
 *Overrides void*
 
@@ -514,7 +514,7 @@ ___
 
 ▸ **getMaxListeners**(): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[getMaxListeners](_db_controller_interface_.idatabasecontroller.md#getmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[getMaxListeners](_network_gossip_interface_.igossipsub.md#getmaxlisteners)*
 
 *Overrides void*
 
@@ -528,7 +528,7 @@ ___
 
 ▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listenerCount](_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listenerCount](_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 *Overrides void*
 
@@ -548,7 +548,7 @@ ___
 
 ▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listeners](_db_controller_interface_.idatabasecontroller.md#listeners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listeners](_network_gossip_interface_.igossipsub.md#listeners)*
 
 *Overrides void*
 
@@ -568,7 +568,7 @@ ___
 
 ▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[off](_db_controller_interface_.idatabasecontroller.md#off)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[off](_network_gossip_interface_.igossipsub.md#off)*
 
 *Overrides void*
 
@@ -598,7 +598,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:79
 
@@ -622,7 +622,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:80
 
@@ -640,7 +640,7 @@ Defined in node_modules/@types/node/readline.d.ts:80
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:81
 
@@ -664,7 +664,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:82
 
@@ -682,7 +682,7 @@ Defined in node_modules/@types/node/readline.d.ts:82
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:83
 
@@ -700,7 +700,7 @@ Defined in node_modules/@types/node/readline.d.ts:83
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:84
 
@@ -718,7 +718,7 @@ Defined in node_modules/@types/node/readline.d.ts:84
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:85
 
@@ -736,7 +736,7 @@ Defined in node_modules/@types/node/readline.d.ts:85
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[on](_util_io_.ihiddenreadlineinterface.md#on)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 Defined in node_modules/@types/node/readline.d.ts:86
 
@@ -758,7 +758,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:88
 
@@ -782,7 +782,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:89
 
@@ -800,7 +800,7 @@ Defined in node_modules/@types/node/readline.d.ts:89
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:90
 
@@ -824,7 +824,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:91
 
@@ -842,7 +842,7 @@ Defined in node_modules/@types/node/readline.d.ts:91
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:92
 
@@ -860,7 +860,7 @@ Defined in node_modules/@types/node/readline.d.ts:92
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:93
 
@@ -878,7 +878,7 @@ Defined in node_modules/@types/node/readline.d.ts:93
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:94
 
@@ -896,7 +896,7 @@ Defined in node_modules/@types/node/readline.d.ts:94
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[once](_util_io_.ihiddenreadlineinterface.md#once)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 Defined in node_modules/@types/node/readline.d.ts:95
 
@@ -930,7 +930,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:97
 
@@ -954,7 +954,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:98
 
@@ -972,7 +972,7 @@ Defined in node_modules/@types/node/readline.d.ts:98
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:99
 
@@ -996,7 +996,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:100
 
@@ -1014,7 +1014,7 @@ Defined in node_modules/@types/node/readline.d.ts:100
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:101
 
@@ -1032,7 +1032,7 @@ Defined in node_modules/@types/node/readline.d.ts:101
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:102
 
@@ -1050,7 +1050,7 @@ Defined in node_modules/@types/node/readline.d.ts:102
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:103
 
@@ -1068,7 +1068,7 @@ Defined in node_modules/@types/node/readline.d.ts:103
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependListener](_util_io_.ihiddenreadlineinterface.md#prependlistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:104
 
@@ -1090,7 +1090,7 @@ ___
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:106
 
@@ -1114,7 +1114,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:107
 
@@ -1132,7 +1132,7 @@ Defined in node_modules/@types/node/readline.d.ts:107
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:108
 
@@ -1156,7 +1156,7 @@ Name | Type |
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:109
 
@@ -1174,7 +1174,7 @@ Defined in node_modules/@types/node/readline.d.ts:109
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:110
 
@@ -1192,7 +1192,7 @@ Defined in node_modules/@types/node/readline.d.ts:110
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:111
 
@@ -1210,7 +1210,7 @@ Defined in node_modules/@types/node/readline.d.ts:111
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:112
 
@@ -1228,7 +1228,7 @@ Defined in node_modules/@types/node/readline.d.ts:112
 
 *Inherited from [IHiddenReadlineInterface](_util_io_.ihiddenreadlineinterface.md).[prependOnceListener](_util_io_.ihiddenreadlineinterface.md#prependoncelistener)*
 
-*Overrides [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Overrides [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 Defined in node_modules/@types/node/readline.d.ts:113
 
@@ -1292,7 +1292,7 @@ ___
 
 ▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[rawListeners](_db_controller_interface_.idatabasecontroller.md#rawlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[rawListeners](_network_gossip_interface_.igossipsub.md#rawlisteners)*
 
 *Overrides void*
 
@@ -1312,7 +1312,7 @@ ___
 
 ▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[removeAllListeners](_db_controller_interface_.idatabasecontroller.md#removealllisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[removeAllListeners](_network_gossip_interface_.igossipsub.md#removealllisteners)*
 
 *Overrides void*
 
@@ -1332,7 +1332,7 @@ ___
 
 ▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[removeListener](_db_controller_interface_.idatabasecontroller.md#removelistener)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[removeListener](_network_gossip_interface_.igossipsub.md#removelistener)*
 
 *Overrides void*
 
@@ -1372,7 +1372,7 @@ ___
 
 ▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[setMaxListeners](_db_controller_interface_.idatabasecontroller.md#setmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[setMaxListeners](_network_gossip_interface_.igossipsub.md#setmaxlisteners)*
 
 *Overrides void*
 
@@ -1429,7 +1429,7 @@ ___
 
 ▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listenerCount](_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listenerCount](_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 Defined in node_modules/@types/node/events.d.ts:17
 

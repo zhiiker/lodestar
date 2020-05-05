@@ -44,7 +44,7 @@
 
 ▪ **defaultMaxListeners**: *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[defaultMaxListeners](_network_gossip_interface_.igossipsub.md#static-defaultmaxlisteners)*
 
 Defined in node_modules/@types/node/events.d.ts:18
 
@@ -54,7 +54,7 @@ Defined in node_modules/@types/node/events.d.ts:18
 
 ▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[addListener](_db_controller_interface_.idatabasecontroller.md#addlistener)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[addListener](_network_gossip_interface_.igossipsub.md#addlistener)*
 
 *Overrides void*
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[emit](_db_controller_interface_.idatabasecontroller.md#emit)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[emit](_network_gossip_interface_.igossipsub.md#emit)*
 
 *Overrides void*
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **eventNames**(): *Array‹string | symbol›*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[eventNames](_db_controller_interface_.idatabasecontroller.md#eventnames)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[eventNames](_network_gossip_interface_.igossipsub.md#eventnames)*
 
 *Overrides void*
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **getMaxListeners**(): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[getMaxListeners](_db_controller_interface_.idatabasecontroller.md#getmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[getMaxListeners](_network_gossip_interface_.igossipsub.md#getmaxlisteners)*
 
 *Overrides void*
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **listenerCount**(`type`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listenerCount](_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listenerCount](_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 *Overrides void*
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **listeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listeners](_db_controller_interface_.idatabasecontroller.md#listeners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listeners](_network_gossip_interface_.igossipsub.md#listeners)*
 
 *Overrides void*
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **off**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[off](_db_controller_interface_.idatabasecontroller.md#off)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[off](_network_gossip_interface_.igossipsub.md#off)*
 
 *Overrides void*
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **on**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[on](_db_controller_interface_.idatabasecontroller.md#on)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[on](_network_gossip_interface_.igossipsub.md#on)*
 
 *Overrides void*
 
@@ -227,7 +227,7 @@ ___
 
 ▸ **once**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[once](_db_controller_interface_.idatabasecontroller.md#once)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[once](_network_gossip_interface_.igossipsub.md#once)*
 
 *Overrides void*
 
@@ -255,7 +255,7 @@ ___
 
 ▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependListener](_db_controller_interface_.idatabasecontroller.md#prependlistener)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependListener](_network_gossip_interface_.igossipsub.md#prependlistener)*
 
 *Overrides void*
 
@@ -283,7 +283,7 @@ ___
 
 ▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[prependOnceListener](_network_gossip_interface_.igossipsub.md#prependoncelistener)*
 
 *Overrides void*
 
@@ -311,7 +311,7 @@ ___
 
 ▸ **publish**(`topic`: string, `data`: Buffer): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/interface.ts#L45)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/interface.ts#L48)*
 
 **Parameters:**
 
@@ -328,7 +328,7 @@ ___
 
 ▸ **rawListeners**(`event`: string | symbol): *Function[]*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[rawListeners](_db_controller_interface_.idatabasecontroller.md#rawlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[rawListeners](_network_gossip_interface_.igossipsub.md#rawlisteners)*
 
 *Overrides void*
 
@@ -348,7 +348,7 @@ ___
 
 ▸ **removeAllListeners**(`event?`: string | symbol): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[removeAllListeners](_db_controller_interface_.idatabasecontroller.md#removealllisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[removeAllListeners](_network_gossip_interface_.igossipsub.md#removealllisteners)*
 
 *Overrides void*
 
@@ -368,7 +368,7 @@ ___
 
 ▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[removeListener](_db_controller_interface_.idatabasecontroller.md#removelistener)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[removeListener](_network_gossip_interface_.igossipsub.md#removelistener)*
 
 *Overrides void*
 
@@ -396,7 +396,7 @@ ___
 
 ▸ **setMaxListeners**(`n`: number): *this*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[setMaxListeners](_db_controller_interface_.idatabasecontroller.md#setmaxlisteners)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[setMaxListeners](_network_gossip_interface_.igossipsub.md#setmaxlisteners)*
 
 *Overrides void*
 
@@ -416,7 +416,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/interface.ts#L46)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/interface.ts#L49)*
 
 **Returns:** *Promise‹void›*
 
@@ -426,7 +426,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/interface.ts#L47)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/interface.ts#L50)*
 
 **Returns:** *Promise‹void›*
 
@@ -436,7 +436,7 @@ ___
 
 ▸ **subscribe**(`topic`: string): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/interface.ts#L48)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/interface.ts#L51)*
 
 **Parameters:**
 
@@ -452,7 +452,7 @@ ___
 
 ▸ **unsubscribe**(`topic`: string): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/gossip/interface.ts#L49)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/interface.ts#L52)*
 
 **Parameters:**
 
@@ -468,7 +468,7 @@ ___
 
 ▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
 
-*Inherited from [IDatabaseController](_db_controller_interface_.idatabasecontroller.md).[listenerCount](_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
+*Inherited from [IGossipSub](_network_gossip_interface_.igossipsub.md).[listenerCount](_network_gossip_interface_.igossipsub.md#static-listenercount)*
 
 Defined in node_modules/@types/node/events.d.ts:17
 

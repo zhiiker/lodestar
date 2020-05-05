@@ -9,12 +9,16 @@
 * [AggregateAndProofRepository](_db_api_beacon_repositories_index_.md#aggregateandproofrepository)
 * [AttestationRepository](_db_api_beacon_repositories_index_.md#attestationrepository)
 * [AttesterSlashingRepository](_db_api_beacon_repositories_index_.md#attesterslashingrepository)
+* [BadBlockRepository](_db_api_beacon_repositories_index_.md#badblockrepository)
 * [BlockArchiveRepository](_db_api_beacon_repositories_index_.md#blockarchiverepository)
 * [BlockRepository](_db_api_beacon_repositories_index_.md#blockrepository)
 * [ChainRepository](_db_api_beacon_repositories_index_.md#chainrepository)
 * [DepositDataRepository](_db_api_beacon_repositories_index_.md#depositdatarepository)
 * [DepositDataRootListRepository](_db_api_beacon_repositories_index_.md#depositdatarootlistrepository)
+* [IBlockFilterOptions](_db_api_beacon_repositories_index_.md#iblockfilteroptions)
+* [Id](_db_api_beacon_repositories_index_.md#id)
 * [ProposerSlashingRepository](_db_api_beacon_repositories_index_.md#proposerslashingrepository)
+* [Repository](_db_api_beacon_repositories_index_.md#repository)
 * [StateRepository](_db_api_beacon_repositories_index_.md#staterepository)
 * [VoluntaryExitRepository](_db_api_beacon_repositories_index_.md#voluntaryexitrepository)
 
@@ -35,6 +39,12 @@ ___
 ###  AttesterSlashingRepository
 
 • **AttesterSlashingRepository**:
+
+___
+
+###  BadBlockRepository
+
+• **BadBlockRepository**:
 
 ___
 
@@ -68,9 +78,27 @@ ___
 
 ___
 
+###  IBlockFilterOptions
+
+• **IBlockFilterOptions**:
+
+___
+
+###  Id
+
+• **Id**:
+
+___
+
 ###  ProposerSlashingRepository
 
 • **ProposerSlashingRepository**:
+
+___
+
+###  Repository
+
+• **Repository**:
 
 ___
 

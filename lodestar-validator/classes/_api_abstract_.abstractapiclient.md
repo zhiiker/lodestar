@@ -39,6 +39,7 @@
 * [newEpochCallbacks](_api_abstract_.abstractapiclient.md#private-newepochcallbacks)
 * [newSlotCallbacks](_api_abstract_.abstractapiclient.md#private-newslotcallbacks)
 * [running](_api_abstract_.abstractapiclient.md#private-running)
+* [slotCountingTimeout](_api_abstract_.abstractapiclient.md#private-slotcountingtimeout)
 * [url](_api_abstract_.abstractapiclient.md#abstract-url)
 * [validator](_api_abstract_.abstractapiclient.md#abstract-validator)
 
@@ -98,7 +99,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md).[beacon](../interfaces/_api_interface_.iapiclient.md#beacon)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:25](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L25)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:26](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L26)*
 
 ___
 
@@ -106,7 +107,7 @@ ___
 
 • **beaconNodeInterval**: *Timeout*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L22)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L22)*
 
 ___
 
@@ -114,7 +115,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:15](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L15)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:15](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L15)*
 
 ___
 
@@ -122,7 +123,7 @@ ___
 
 • **currentEpoch**: *Epoch* = 0
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L18)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L18)*
 
 ___
 
@@ -130,7 +131,7 @@ ___
 
 • **currentSlot**: *Slot* = 0
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:17](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L17)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:17](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L17)*
 
 ___
 
@@ -138,7 +139,7 @@ ___
 
 • **newEpochCallbacks**: *[INewEpochCallback](../interfaces/_api_interface_.inewepochcallback.md)[]* = []
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L20)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L20)*
 
 ___
 
@@ -146,7 +147,7 @@ ___
 
 • **newSlotCallbacks**: *[INewSlotCallback](../interfaces/_api_interface_.inewslotcallback.md)[]* = []
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:19](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L19)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:19](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L19)*
 
 ___
 
@@ -154,7 +155,15 @@ ___
 
 • **running**: *boolean* = false
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:21](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L21)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L21)*
+
+___
+
+### `Private` slotCountingTimeout
+
+• **slotCountingTimeout**: *Timeout*
+
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:23](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L23)*
 
 ___
 
@@ -164,7 +173,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md).[url](../interfaces/_api_interface_.iapiclient.md#url)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L24)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:25](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L25)*
 
 ___
 
@@ -174,7 +183,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md).[validator](../interfaces/_api_interface_.iapiclient.md#validator)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:26](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L26)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L27)*
 
 ## Methods
 
@@ -184,7 +193,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:40](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L40)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:41](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L41)*
 
 **Returns:** *Promise‹void›*
 
@@ -196,7 +205,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L45)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L46)*
 
 **Returns:** *Promise‹void›*
 
@@ -208,7 +217,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:52](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L52)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:56](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L56)*
 
 **Returns:** *Slot*
 
@@ -220,7 +229,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:28](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L28)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:29](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L29)*
 
 **Parameters:**
 
@@ -238,7 +247,7 @@ ___
 
 *Implementation of [IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L34)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L35)*
 
 **Parameters:**
 
@@ -254,7 +263,7 @@ ___
 
 ▸ **pollBeaconNode**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:56](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L56)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:60](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L60)*
 
 **Returns:** *Promise‹void›*
 
@@ -264,7 +273,7 @@ ___
 
 ▸ **startSlotCounting**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:67](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L67)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:71](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L71)*
 
 **Returns:** *Promise‹void›*
 
@@ -274,7 +283,7 @@ ___
 
 ▸ **updateEpoch**(`slot`: Slot): *void*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:98](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L98)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:102](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L102)*
 
 **Parameters:**
 
@@ -290,6 +299,6 @@ ___
 
 ▸ **updateSlot**(): *void*
 
-*Defined in [packages/lodestar-validator/src/api/abstract.ts:83](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-validator/src/api/abstract.ts#L83)*
+*Defined in [packages/lodestar-validator/src/api/abstract.ts:87](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-validator/src/api/abstract.ts#L87)*
 
 **Returns:** *void*

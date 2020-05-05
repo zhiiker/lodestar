@@ -7,4 +7,5 @@
 ### Interfaces
 
 * [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)
-* [ISearchOptions](../interfaces/_db_controller_interface_.isearchoptions.md)
+* [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)
+* [IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)

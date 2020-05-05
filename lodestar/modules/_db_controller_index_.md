@@ -7,7 +7,8 @@
 ### References
 
 * [IDatabaseController](_db_controller_index_.md#idatabasecontroller)
-* [ISearchOptions](_db_controller_index_.md#isearchoptions)
+* [IFilterOptions](_db_controller_index_.md#ifilteroptions)
+* [IKeyValue](_db_controller_index_.md#ikeyvalue)
 * [LevelDbController](_db_controller_index_.md#leveldbcontroller)
 * [PouchDbController](_db_controller_index_.md#pouchdbcontroller)
 
@@ -19,9 +20,15 @@
 
 ___
 
-###  ISearchOptions
+###  IFilterOptions
 
-• **ISearchOptions**:
+• **IFilterOptions**:
+
+___
+
+###  IKeyValue
+
+• **IKeyValue**:
 
 ___
 

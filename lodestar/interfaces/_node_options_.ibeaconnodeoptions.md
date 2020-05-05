@@ -17,7 +17,6 @@
 * [logger](_node_options_.ibeaconnodeoptions.md#logger)
 * [metrics](_node_options_.ibeaconnodeoptions.md#metrics)
 * [network](_node_options_.ibeaconnodeoptions.md#network)
-* [opPool](_node_options_.ibeaconnodeoptions.md#oppool)
 * [sync](_node_options_.ibeaconnodeoptions.md#sync)
 
 ## Properties
@@ -26,7 +25,7 @@
 
 • **api**: *[IApiOptions](_api_options_.iapioptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L18)*
+*Defined in [packages/lodestar/src/node/options.ts:17](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L17)*
 
 ___
 
@@ -34,7 +33,7 @@ ___
 
 • **chain**: *[IChainOptions](_chain_options_.ichainoptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:16](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L16)*
+*Defined in [packages/lodestar/src/node/options.ts:15](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L15)*
 
 ___
 
@@ -42,7 +41,7 @@ ___
 
 • **db**: *[IDatabaseOptions](_db_options_.idatabaseoptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:17](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L17)*
+*Defined in [packages/lodestar/src/node/options.ts:16](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L16)*
 
 ___
 
@@ -50,7 +49,7 @@ ___
 
 • **eth1**: *[IEth1Options](_eth1_options_.ieth1options.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:19](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L19)*
+*Defined in [packages/lodestar/src/node/options.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L18)*
 
 ___
 
@@ -58,7 +57,7 @@ ___
 
 • **logger**: *[IBeaconLoggerOptions](_node_loggeroptions_.ibeaconloggeroptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:23](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L23)*
+*Defined in [packages/lodestar/src/node/options.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L21)*
 
 ___
 
@@ -66,7 +65,7 @@ ___
 
 • **metrics**: *[IMetricsOptions](_metrics_options_.imetricsoptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L24)*
+*Defined in [packages/lodestar/src/node/options.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L22)*
 
 ___
 
@@ -74,15 +73,7 @@ ___
 
 • **network**: *[INetworkOptions](_network_options_.inetworkoptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L20)*
-
-___
-
-###  opPool
-
-• **opPool**: *[IOpPoolOptions](_oppool_options_.ioppooloptions.md)*
-
-*Defined in [packages/lodestar/src/node/options.ts:21](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L21)*
+*Defined in [packages/lodestar/src/node/options.ts:19](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L19)*
 
 ___
 
@@ -90,4 +81,4 @@ ___
 
 • **sync**: *[ISyncOptions](_sync_options_.isyncoptions.md)*
 
-*Defined in [packages/lodestar/src/node/options.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/node/options.ts#L22)*
+*Defined in [packages/lodestar/src/node/options.ts:20](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/options.ts#L20)*

@@ -17,6 +17,7 @@
 * [add](_sync_ireputation_.ireputationstore.md#add)
 * [get](_sync_ireputation_.ireputationstore.md#get)
 * [getFromPeerInfo](_sync_ireputation_.ireputationstore.md#getfrompeerinfo)
+* [getPeerIdsBySubnet](_sync_ireputation_.ireputationstore.md#getpeeridsbysubnet)
 * [remove](_sync_ireputation_.ireputationstore.md#remove)
 
 ## Methods
@@ -25,7 +26,7 @@
 
 ▸ **add**(`peerId`: string): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:13](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L13)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:14](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/IReputation.ts#L14)*
 
 **Parameters:**
 
@@ -41,7 +42,7 @@ ___
 
 ▸ **get**(`peerId`: string): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:15](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L15)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:16](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/IReputation.ts#L16)*
 
 **Parameters:**
 
@@ -57,7 +58,7 @@ ___
 
 ▸ **getFromPeerInfo**(`peer`: PeerInfo): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:16](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L16)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:17](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/IReputation.ts#L17)*
 
 **Parameters:**
 
@@ -69,11 +70,27 @@ Name | Type |
 
 ___
 
+###  getPeerIdsBySubnet
+
+▸ **getPeerIdsBySubnet**(`subnetStr`: string): *string[]*
+
+*Defined in [packages/lodestar/src/sync/IReputation.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/IReputation.ts#L18)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`subnetStr` | string |
+
+**Returns:** *string[]*
+
+___
+
 ###  remove
 
 ▸ **remove**(`peerId`: string): *void*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:14](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/IReputation.ts#L14)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:15](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/IReputation.ts#L15)*
 
 **Parameters:**
 

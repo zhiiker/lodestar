@@ -6,7 +6,7 @@ Stores finalized blocks. Block slot is identifier.
 
 ## Hierarchy
 
-  ↳ [BulkRepository](_db_api_beacon_repository_.bulkrepository.md)‹SignedBeaconBlock›
+* [Repository](_db_api_beacon_repositories_abstract_.repository.md)‹Slot, SignedBeaconBlock›
 
   ↳ **BlockArchiveRepository**
 
@@ -26,35 +26,44 @@ Stores finalized blocks. Block slot is identifier.
 ### Methods
 
 * [add](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#add)
-* [addMany](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#addmany)
+* [batchAdd](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#batchadd)
+* [batchDelete](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#batchdelete)
+* [batchPut](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#batchput)
+* [batchRemove](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#batchremove)
+* [dbFilterOptions](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#protected-dbfilteroptions)
+* [decodeKey](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#decodekey)
+* [decodeValue](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#decodevalue)
 * [delete](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#delete)
-* [deleteMany](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#deletemany)
-* [deleteManyByValue](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#deletemanybyvalue)
+* [encodeKey](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#encodekey)
+* [encodeValue](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#encodevalue)
+* [entries](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#entries)
+* [entriesStream](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#entriesstream)
 * [get](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#get)
-* [getAll](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#getall)
-* [getAllBetween](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#getallbetween)
-* [getAllBetweenStream](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#getallbetweenstream)
 * [getId](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#getid)
-* [getSerialized](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#getserialized)
 * [has](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#has)
-* [set](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#set)
+* [keys](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#keys)
+* [keysStream](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#keysstream)
+* [put](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#put)
+* [remove](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#remove)
+* [values](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#values)
+* [valuesStream](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md#valuesstream)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new BlockArchiveRepository**(`config`: IBeaconConfig, `db`: [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)): *[BlockArchiveRepository](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)*
+\+ **new BlockArchiveRepository**(`config`: IBeaconConfig, `db`: [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›): *[BlockArchiveRepository](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)*
 
-*Overrides [Repository](_db_api_beacon_repository_.repository.md).[constructor](_db_api_beacon_repository_.repository.md#protected-constructor)*
+*Overrides [Repository](_db_api_beacon_repositories_abstract_.repository.md).[constructor](_db_api_beacon_repositories_abstract_.repository.md#protected-constructor)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:11](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L11)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:15](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L15)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`db` | [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md) |
+`db` | [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer› |
 
 **Returns:** *[BlockArchiveRepository](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)*
 
@@ -62,11 +71,11 @@ Name | Type |
 
 ### `Protected` bucket
 
-• **bucket**: *[Bucket](../enums/_db_schema_.bucket.md)*
+• **bucket**: *[Bucket](../enums/_db_api_schema_.bucket.md)*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[bucket](_db_api_beacon_repository_.repository.md#protected-bucket)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[bucket](_db_api_beacon_repositories_abstract_.repository.md#protected-bucket)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:14](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L14)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L22)*
 
 ___
 
@@ -74,19 +83,19 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[config](_db_api_beacon_repository_.repository.md#protected-config)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[config](_db_api_beacon_repositories_abstract_.repository.md#protected-config)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L10)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L18)*
 
 ___
 
 ### `Protected` db
 
-• **db**: *[IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
+• **db**: *[IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[db](_db_api_beacon_repository_.repository.md#protected-db)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[db](_db_api_beacon_repositories_abstract_.repository.md#protected-db)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:12](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L12)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L20)*
 
 ___
 
@@ -94,9 +103,9 @@ ___
 
 • **type**: *Type‹SignedBeaconBlock›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[type](_db_api_beacon_repository_.repository.md#protected-type)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[type](_db_api_beacon_repositories_abstract_.repository.md#protected-type)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:16](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L16)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L24)*
 
 ## Methods
 
@@ -104,9 +113,9 @@ ___
 
 ▸ **add**(`value`: SignedBeaconBlock): *Promise‹void›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[add](_db_api_beacon_repository_.repository.md#add)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[add](_db_api_beacon_repositories_abstract_.repository.md#add)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:61](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L61)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:80](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L80)*
 
 **Parameters:**
 
@@ -118,67 +127,13 @@ Name | Type |
 
 ___
 
-###  addMany
+###  batchAdd
 
-▸ **addMany**(`blocks`: SignedBeaconBlock[]): *Promise‹void›*
+▸ **batchAdd**(`values`: ArrayLike‹SignedBeaconBlock›): *Promise‹void›*
 
-*Overrides [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[addMany](_db_api_beacon_repository_.bulkrepository.md#addmany)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[batchAdd](_db_api_beacon_repositories_abstract_.repository.md#batchadd)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L20)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`blocks` | SignedBeaconBlock[] |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  delete
-
-▸ **delete**(`id`: [Id](../modules/_db_api_beacon_repository_.md#id)): *Promise‹void›*
-
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[delete](_db_api_beacon_repository_.repository.md#delete)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:53](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L53)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`id` | [Id](../modules/_db_api_beacon_repository_.md#id) |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  deleteMany
-
-▸ **deleteMany**(`ids`: [Id](../modules/_db_api_beacon_repository_.md#id)[]): *Promise‹void›*
-
-*Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[deleteMany](_db_api_beacon_repository_.bulkrepository.md#deletemany)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:85](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L85)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`ids` | [Id](../modules/_db_api_beacon_repository_.md#id)[] |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  deleteManyByValue
-
-▸ **deleteManyByValue**(`values`: ArrayLike‹SignedBeaconBlock›): *Promise‹void›*
-
-*Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[deleteManyByValue](_db_api_beacon_repository_.bulkrepository.md#deletemanybyvalue)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:93](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L93)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:99](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L99)*
 
 **Parameters:**
 
@@ -190,71 +145,221 @@ Name | Type |
 
 ___
 
-###  get
+###  batchDelete
 
-▸ **get**(`id`: [Id](../modules/_db_api_beacon_repository_.md#id)): *Promise‹SignedBeaconBlock | null›*
+▸ **batchDelete**(`ids`: ArrayLike‹Slot›): *Promise‹void›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[get](_db_api_beacon_repository_.repository.md#get)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[batchDelete](_db_api_beacon_repositories_abstract_.repository.md#batchdelete)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:29](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L29)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:95](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L95)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`id` | [Id](../modules/_db_api_beacon_repository_.md#id) |
+`ids` | ArrayLike‹Slot› |
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  batchPut
+
+▸ **batchPut**(`items`: ArrayLike‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock››): *Promise‹void›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[batchPut](_db_api_beacon_repositories_abstract_.repository.md#batchput)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:88](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L88)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`items` | ArrayLike‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock›› |
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  batchRemove
+
+▸ **batchRemove**(`values`: ArrayLike‹SignedBeaconBlock›): *Promise‹void›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[batchRemove](_db_api_beacon_repositories_abstract_.repository.md#batchremove)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:106](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L106)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`values` | ArrayLike‹SignedBeaconBlock› |
+
+**Returns:** *Promise‹void›*
+
+___
+
+### `Protected` dbFilterOptions
+
+▸ **dbFilterOptions**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot›): *[IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[dbFilterOptions](_db_api_beacon_repositories_abstract_.repository.md#protected-dbfilteroptions)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:160](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L160)*
+
+Transforms opts from I to Buffer
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot› |
+
+**Returns:** *[IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›*
+
+___
+
+###  decodeKey
+
+▸ **decodeKey**(`key`: Buffer): *Slot*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[decodeKey](_db_api_beacon_repositories_abstract_.repository.md#decodekey)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L49)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`key` | Buffer |
+
+**Returns:** *Slot*
+
+___
+
+###  decodeValue
+
+▸ **decodeValue**(`data`: Buffer): *SignedBeaconBlock*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[decodeValue](_db_api_beacon_repositories_abstract_.repository.md#decodevalue)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:41](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L41)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`data` | Buffer |
+
+**Returns:** *SignedBeaconBlock*
+
+___
+
+###  delete
+
+▸ **delete**(`id`: Slot): *Promise‹void›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[delete](_db_api_beacon_repositories_abstract_.repository.md#delete)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:71](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L71)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`id` | Slot |
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  encodeKey
+
+▸ **encodeKey**(`id`: Slot): *Buffer*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[encodeKey](_db_api_beacon_repositories_abstract_.repository.md#encodekey)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:45](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L45)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`id` | Slot |
+
+**Returns:** *Buffer*
+
+___
+
+###  encodeValue
+
+▸ **encodeValue**(`value`: SignedBeaconBlock): *Buffer*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[encodeValue](_db_api_beacon_repositories_abstract_.repository.md#encodevalue)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:37](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L37)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`value` | SignedBeaconBlock |
+
+**Returns:** *Buffer*
+
+___
+
+###  entries
+
+▸ **entries**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot›): *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock›[]›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[entries](_db_api_beacon_repositories_abstract_.repository.md#entries)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:136](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L136)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot› |
+
+**Returns:** *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock›[]›*
+
+___
+
+###  entriesStream
+
+▸ **entriesStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot›): *AsyncIterable‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock››*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[entriesStream](_db_api_beacon_repositories_abstract_.repository.md#entriesstream)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:143](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L143)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot› |
+
+**Returns:** *AsyncIterable‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Slot, SignedBeaconBlock››*
+
+___
+
+###  get
+
+▸ **get**(`id`: Slot): *Promise‹SignedBeaconBlock | null›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[get](_db_api_beacon_repositories_abstract_.repository.md#get)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L53)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`id` | Slot |
 
 **Returns:** *Promise‹SignedBeaconBlock | null›*
-
-___
-
-###  getAll
-
-▸ **getAll**(): *Promise‹SignedBeaconBlock[]›*
-
-*Inherited from [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[getAll](_db_api_beacon_repository_.bulkrepository.md#getall)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:69](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L69)*
-
-**Returns:** *Promise‹SignedBeaconBlock[]›*
-
-___
-
-###  getAllBetween
-
-▸ **getAllBetween**(`lowerLimit`: number | null, `upperLimit`: number | null, `step`: number | null): *Promise‹SignedBeaconBlock[]›*
-
-*Overrides [BulkRepository](_db_api_beacon_repository_.bulkrepository.md).[getAllBetween](_db_api_beacon_repository_.bulkrepository.md#getallbetween)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:33](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L33)*
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`lowerLimit` | number &#124; null | - |
-`upperLimit` | number &#124; null | - |
-`step` | number &#124; null | 1 |
-
-**Returns:** *Promise‹SignedBeaconBlock[]›*
-
-___
-
-###  getAllBetweenStream
-
-▸ **getAllBetweenStream**(`lowerLimit`: number | null, `upperLimit`: number | null, `step`: number | null): *AsyncGenerator‹SignedBeaconBlock›*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L45)*
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`lowerLimit` | number &#124; null | - |
-`upperLimit` | number &#124; null | - |
-`step` | number &#124; null | 1 |
-
-**Returns:** *AsyncGenerator‹SignedBeaconBlock›*
 
 ___
 
@@ -262,9 +367,9 @@ ___
 
 ▸ **getId**(`value`: SignedBeaconBlock): *Slot*
 
-*Overrides [Repository](_db_api_beacon_repository_.repository.md).[getId](_db_api_beacon_repository_.repository.md#getid)*
+*Overrides [Repository](_db_api_beacon_repositories_abstract_.repository.md).[getId](_db_api_beacon_repositories_abstract_.repository.md#getid)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:29](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L29)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L24)*
 
 **Parameters:**
 
@@ -276,55 +381,127 @@ Name | Type |
 
 ___
 
-###  getSerialized
-
-▸ **getSerialized**(`id`: [Id](../modules/_db_api_beacon_repository_.md#id)): *Promise‹Uint8Array | null›*
-
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[getSerialized](_db_api_beacon_repository_.repository.md#getserialized)*
-
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:34](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L34)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`id` | [Id](../modules/_db_api_beacon_repository_.md#id) |
-
-**Returns:** *Promise‹Uint8Array | null›*
-
-___
-
 ###  has
 
-▸ **has**(`id`: [Id](../modules/_db_api_beacon_repository_.md#id)): *Promise‹boolean›*
+▸ **has**(`id`: Slot): *Promise‹boolean›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[has](_db_api_beacon_repository_.repository.md#has)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[has](_db_api_beacon_repositories_abstract_.repository.md#has)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L45)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:63](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L63)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`id` | [Id](../modules/_db_api_beacon_repository_.md#id) |
+`id` | Slot |
 
 **Returns:** *Promise‹boolean›*
 
 ___
 
-###  set
+###  keys
 
-▸ **set**(`id`: [Id](../modules/_db_api_beacon_repository_.md#id), `value`: SignedBeaconBlock): *Promise‹void›*
+▸ **keys**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot›): *Promise‹Slot[]›*
 
-*Inherited from [Repository](_db_api_beacon_repository_.repository.md).[set](_db_api_beacon_repository_.repository.md#set)*
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[keys](_db_api_beacon_repositories_abstract_.repository.md#keys)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repository.ts:49](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/api/beacon/repository.ts#L49)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:110](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L110)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`id` | [Id](../modules/_db_api_beacon_repository_.md#id) |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot› |
+
+**Returns:** *Promise‹Slot[]›*
+
+___
+
+###  keysStream
+
+▸ **keysStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot›): *AsyncIterable‹Slot›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[keysStream](_db_api_beacon_repositories_abstract_.repository.md#keysstream)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:114](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L114)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Slot› |
+
+**Returns:** *AsyncIterable‹Slot›*
+
+___
+
+###  put
+
+▸ **put**(`id`: Slot, `value`: SignedBeaconBlock): *Promise‹void›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[put](_db_api_beacon_repositories_abstract_.repository.md#put)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:67](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L67)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`id` | Slot |
 `value` | SignedBeaconBlock |
 
 **Returns:** *Promise‹void›*
+
+___
+
+###  remove
+
+▸ **remove**(`value`: SignedBeaconBlock): *Promise‹void›*
+
+*Inherited from [Repository](_db_api_beacon_repositories_abstract_.repository.md).[remove](_db_api_beacon_repositories_abstract_.repository.md#remove)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:84](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L84)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`value` | SignedBeaconBlock |
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  values
+
+▸ **values**(`opts?`: [IBlockFilterOptions](../interfaces/_db_api_beacon_repositories_blockarchive_.iblockfilteroptions.md)): *Promise‹SignedBeaconBlock[]›*
+
+*Overrides [Repository](_db_api_beacon_repositories_abstract_.repository.md).[values](_db_api_beacon_repositories_abstract_.repository.md#values)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:28](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L28)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IBlockFilterOptions](../interfaces/_db_api_beacon_repositories_blockarchive_.iblockfilteroptions.md) |
+
+**Returns:** *Promise‹SignedBeaconBlock[]›*
+
+___
+
+###  valuesStream
+
+▸ **valuesStream**(`opts?`: [IBlockFilterOptions](../interfaces/_db_api_beacon_repositories_blockarchive_.iblockfilteroptions.md)): *AsyncIterable‹SignedBeaconBlock›*
+
+*Overrides [Repository](_db_api_beacon_repositories_abstract_.repository.md).[valuesStream](_db_api_beacon_repositories_abstract_.repository.md#valuesstream)*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:36](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L36)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IBlockFilterOptions](../interfaces/_db_api_beacon_repositories_blockarchive_.iblockfilteroptions.md) |
+
+**Returns:** *AsyncIterable‹SignedBeaconBlock›*

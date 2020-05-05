@@ -11,6 +11,8 @@
 ### Properties
 
 * [finalizedCheckpoint](_chain_interface_.ichainevents.md#finalizedcheckpoint)
+* [forkDigest](_chain_interface_.ichainevents.md#forkdigest)
+* [forkDigestChanged](_chain_interface_.ichainevents.md#forkdigestchanged)
 * [justifiedCheckpoint](_chain_interface_.ichainevents.md#justifiedcheckpoint)
 * [processedAttestation](_chain_interface_.ichainevents.md#processedattestation)
 * [processedBlock](_chain_interface_.ichainevents.md#processedblock)
@@ -23,7 +25,7 @@
 
 • **finalizedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L25)*
+*Defined in [packages/lodestar/src/chain/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L26)*
 
 #### Type declaration:
 
@@ -37,11 +39,41 @@ Name | Type |
 
 ___
 
+###  forkDigest
+
+• **forkDigest**: *function*
+
+*Defined in [packages/lodestar/src/chain/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L28)*
+
+#### Type declaration:
+
+▸ (`forkDigest`: ForkDigest): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`forkDigest` | ForkDigest |
+
+___
+
+###  forkDigestChanged
+
+• **forkDigestChanged**: *function*
+
+*Defined in [packages/lodestar/src/chain/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L27)*
+
+#### Type declaration:
+
+▸ (): *void*
+
+___
+
 ###  justifiedCheckpoint
 
 • **justifiedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L24)*
+*Defined in [packages/lodestar/src/chain/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L25)*
 
 #### Type declaration:
 
@@ -59,7 +91,7 @@ ___
 
 • **processedAttestation**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L23)*
+*Defined in [packages/lodestar/src/chain/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L24)*
 
 #### Type declaration:
 
@@ -77,7 +109,7 @@ ___
 
 • **processedBlock**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L21)*
+*Defined in [packages/lodestar/src/chain/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L22)*
 
 #### Type declaration:
 
@@ -95,7 +127,7 @@ ___
 
 • **processedCheckpoint**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L22)*
+*Defined in [packages/lodestar/src/chain/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L23)*
 
 #### Type declaration:
 
@@ -113,7 +145,7 @@ ___
 
 • **unknownBlockRoot**: *function*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/interface.ts#L20)*
+*Defined in [packages/lodestar/src/chain/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/interface.ts#L21)*
 
 #### Type declaration:
 

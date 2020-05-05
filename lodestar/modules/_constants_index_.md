@@ -19,10 +19,12 @@
 * [MAXIMUM_GOSSIP_CLOCK_DISPARITY](_constants_index_.md#maximum_gossip_clock_disparity)
 * [MAX_CHUNK_SIZE](_constants_index_.md#max_chunk_size)
 * [Method](_constants_index_.md#method)
+* [MethodResponseType](_constants_index_.md#methodresponsetype)
+* [Methods](_constants_index_.md#methods)
 * [RESP_TIMEOUT](_constants_index_.md#resp_timeout)
 * [ReqRespEncoding](_constants_index_.md#reqrespencoding)
 * [RequestId](_constants_index_.md#requestid)
-* [RpcErrorCode](_constants_index_.md#rpcerrorcode)
+* [RpcResponseStatus](_constants_index_.md#rpcresponsestatus)
 * [TTFB_TIMEOUT](_constants_index_.md#ttfb_timeout)
 * [ZERO_HASH](_constants_index_.md#zero_hash)
 
@@ -106,6 +108,18 @@ ___
 
 ___
 
+###  MethodResponseType
+
+• **MethodResponseType**:
+
+___
+
+###  Methods
+
+• **Methods**:
+
+___
+
 ###  RESP_TIMEOUT
 
 • **RESP_TIMEOUT**:
@@ -124,9 +138,9 @@ ___
 
 ___
 
-###  RpcErrorCode
+###  RpcResponseStatus
 
-• **RpcErrorCode**:
+• **RpcResponseStatus**:
 
 ___
 

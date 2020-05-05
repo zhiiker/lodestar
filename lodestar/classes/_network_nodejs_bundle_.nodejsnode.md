@@ -29,6 +29,7 @@
 ### Properties
 
 * [_dht](_network_nodejs_bundle_.nodejsnode.md#_dht)
+* [_discovery](_network_nodejs_bundle_.nodejsnode.md#_discovery)
 * [peerInfo](_network_nodejs_bundle_.nodejsnode.md#peerinfo)
 * [peerStore](_network_nodejs_bundle_.nodejsnode.md#peerstore)
 * [registrar](_network_nodejs_bundle_.nodejsnode.md#registrar)
@@ -163,7 +164,7 @@ Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:63
 
 * **dht**? : *typeof LibP2pKadDht*
 
-* **peerDiscovery**: *Array‹typeof LibP2pBootstrap | typeof LibP2pMdns›*
+* **peerDiscovery**: *Array‹typeof LibP2pBootstrap | typeof LibP2pMdns | Discv5Discovery›*
 
 * **streamMuxer**: *Array‹LibP2pMplex | LibP2pSpdy›*
 
@@ -177,7 +178,7 @@ Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:63
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:27](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/network/nodejs/bundle.ts#L27)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:28](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/nodejs/bundle.ts#L28)*
 
 **Parameters:**
 
@@ -196,6 +197,16 @@ Name | Type |
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[_dht](_network_nodejs_bundle_.nodejsnode.md#_dht)*
 
 Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:103
+
+___
+
+###  _discovery
+
+• **_discovery**: *Map‹"bootstrap" | "mdns" | "discv5", LibP2pBootstrap | LibP2pMdns | Discv5Discovery›*
+
+*Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[_discovery](_network_nodejs_bundle_.nodejsnode.md#_discovery)*
+
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:112
 
 ___
 
@@ -235,7 +246,7 @@ Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:111
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[dial](_network_nodejs_bundle_.nodejsnode.md#dial)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:113
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:114
 
 **Parameters:**
 
@@ -254,7 +265,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[dialProtocol](_network_nodejs_bundle_.nodejsnode.md#dialprotocol)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:114
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:115
 
 **Parameters:**
 
@@ -274,7 +285,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[handle](_network_nodejs_bundle_.nodejsnode.md#handle)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:116
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:117
 
 **Parameters:**
 
@@ -304,7 +315,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[hangUp](_network_nodejs_bundle_.nodejsnode.md#hangup)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:115
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:116
 
 **Parameters:**
 
@@ -322,7 +333,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[isStarted](_network_nodejs_bundle_.nodejsnode.md#isstarted)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:118
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:119
 
 **Returns:** *boolean*
 
@@ -334,7 +345,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[on](_network_nodejs_bundle_.nodejsnode.md#on)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:119
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:120
 
 **Parameters:**
 
@@ -360,7 +371,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[once](_network_nodejs_bundle_.nodejsnode.md#once)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:120
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:121
 
 **Parameters:**
 
@@ -386,7 +397,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[ping](_network_nodejs_bundle_.nodejsnode.md#ping)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:122
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:123
 
 **Parameters:**
 
@@ -404,7 +415,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[removeListener](_network_nodejs_bundle_.nodejsnode.md#removelistener)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:121
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:122
 
 **Parameters:**
 
@@ -430,7 +441,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[start](_network_nodejs_bundle_.nodejsnode.md#start)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:123
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:124
 
 **Returns:** *Promise‹void›*
 
@@ -442,7 +453,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[stop](_network_nodejs_bundle_.nodejsnode.md#stop)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:124
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:125
 
 **Returns:** *Promise‹void›*
 
@@ -454,7 +465,7 @@ ___
 
 *Inherited from [NodejsNode](_network_nodejs_bundle_.nodejsnode.md).[unhandle](_network_nodejs_bundle_.nodejsnode.md#unhandle)*
 
-Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:117
+Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:118
 
 **Parameters:**
 

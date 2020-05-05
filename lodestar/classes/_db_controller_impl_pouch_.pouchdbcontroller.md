@@ -4,13 +4,11 @@
 
 ## Hierarchy
 
-* EventEmitter
-
-  ↳ **PouchDbController**
+* **PouchDbController**
 
 ## Implements
 
-* [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)
+* [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›
 
 ## Index
 
@@ -21,36 +19,24 @@
 ### Properties
 
 * [db](_db_controller_impl_pouch_.pouchdbcontroller.md#private-db)
-* [defaultMaxListeners](_db_controller_impl_pouch_.pouchdbcontroller.md#static-defaultmaxlisteners)
 
 ### Methods
 
-* [addListener](_db_controller_impl_pouch_.pouchdbcontroller.md#addlistener)
+* [_get](_db_controller_impl_pouch_.pouchdbcontroller.md#_get)
 * [batchDelete](_db_controller_impl_pouch_.pouchdbcontroller.md#batchdelete)
 * [batchPut](_db_controller_impl_pouch_.pouchdbcontroller.md#batchput)
-* [clean](_db_controller_impl_pouch_.pouchdbcontroller.md#clean)
 * [delete](_db_controller_impl_pouch_.pouchdbcontroller.md#delete)
-* [emit](_db_controller_impl_pouch_.pouchdbcontroller.md#emit)
-* [eventNames](_db_controller_impl_pouch_.pouchdbcontroller.md#eventnames)
+* [entries](_db_controller_impl_pouch_.pouchdbcontroller.md#entries)
+* [entriesStream](_db_controller_impl_pouch_.pouchdbcontroller.md#entriesstream)
 * [get](_db_controller_impl_pouch_.pouchdbcontroller.md#get)
-* [getMaxListeners](_db_controller_impl_pouch_.pouchdbcontroller.md#getmaxlisteners)
-* [listenerCount](_db_controller_impl_pouch_.pouchdbcontroller.md#listenercount)
-* [listeners](_db_controller_impl_pouch_.pouchdbcontroller.md#listeners)
-* [off](_db_controller_impl_pouch_.pouchdbcontroller.md#off)
-* [on](_db_controller_impl_pouch_.pouchdbcontroller.md#on)
-* [once](_db_controller_impl_pouch_.pouchdbcontroller.md#once)
-* [prependListener](_db_controller_impl_pouch_.pouchdbcontroller.md#prependlistener)
-* [prependOnceListener](_db_controller_impl_pouch_.pouchdbcontroller.md#prependoncelistener)
+* [keys](_db_controller_impl_pouch_.pouchdbcontroller.md#keys)
+* [keysStream](_db_controller_impl_pouch_.pouchdbcontroller.md#keysstream)
 * [put](_db_controller_impl_pouch_.pouchdbcontroller.md#put)
-* [rawListeners](_db_controller_impl_pouch_.pouchdbcontroller.md#rawlisteners)
-* [removeAllListeners](_db_controller_impl_pouch_.pouchdbcontroller.md#removealllisteners)
-* [removeListener](_db_controller_impl_pouch_.pouchdbcontroller.md#removelistener)
-* [search](_db_controller_impl_pouch_.pouchdbcontroller.md#search)
-* [searchStream](_db_controller_impl_pouch_.pouchdbcontroller.md#searchstream)
-* [setMaxListeners](_db_controller_impl_pouch_.pouchdbcontroller.md#setmaxlisteners)
 * [start](_db_controller_impl_pouch_.pouchdbcontroller.md#start)
 * [stop](_db_controller_impl_pouch_.pouchdbcontroller.md#stop)
-* [listenerCount](_db_controller_impl_pouch_.pouchdbcontroller.md#static-listenercount)
+* [toPouchOptions](_db_controller_impl_pouch_.pouchdbcontroller.md#private-topouchoptions)
+* [values](_db_controller_impl_pouch_.pouchdbcontroller.md#values)
+* [valuesStream](_db_controller_impl_pouch_.pouchdbcontroller.md#valuesstream)
 
 ## Constructors
 
@@ -58,7 +44,7 @@
 
 \+ **new PouchDbController**(`opts`: [IDatabaseOptions](../interfaces/_db_options_.idatabaseoptions.md)): *[PouchDbController](_db_controller_impl_pouch_.pouchdbcontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L31)*
 
 **Parameters:**
 
@@ -74,89 +60,55 @@ Name | Type |
 
 • **db**: *PouchDB.Database*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L22)*
-
-___
-
-### `Static` defaultMaxListeners
-
-▪ **defaultMaxListeners**: *number*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[defaultMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-defaultmaxlisteners)*
-
-Defined in node_modules/@types/node/events.d.ts:18
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L31)*
 
 ## Methods
 
-###  addListener
+###  _get
 
-▸ **addListener**(`event`: string | symbol, `listener`: function): *this*
+▸ **_get**(`key`: Buffer): *Promise‹[IPouchDocument](../interfaces/_db_controller_impl_pouch_.ipouchdocument.md) | null›*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[addListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#addlistener)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:20
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:54](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L54)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`...args` | any[] |
+`key` | Buffer |
 
-**Returns:** *this*
+**Returns:** *Promise‹[IPouchDocument](../interfaces/_db_controller_impl_pouch_.ipouchdocument.md) | null›*
 
 ___
 
 ###  batchDelete
 
-▸ **batchDelete**(`items`: any[]): *Promise‹any›*
+▸ **batchDelete**(`keys`: Buffer[]): *Promise‹void›*
 
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:45](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L45)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:97](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L97)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`items` | any[] |
+`keys` | Buffer[] |
 
-**Returns:** *Promise‹any›*
+**Returns:** *Promise‹void›*
 
 ___
 
 ###  batchPut
 
-▸ **batchPut**(`items`: object[]): *Promise‹any›*
+▸ **batchPut**(`items`: [IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer›[]): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:59](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L59)*
+*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
+
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:86](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L86)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`items` | object[] |
-
-**Returns:** *Promise‹any›*
-
-___
-
-###  clean
-
-▸ **clean**(): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:41](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L41)*
+`items` | [IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer›[] |
 
 **Returns:** *Promise‹void›*
 
@@ -164,425 +116,122 @@ ___
 
 ###  delete
 
-▸ **delete**(`key`: any): *Promise‹void›*
+▸ **delete**(`key`: Buffer): *Promise‹void›*
 
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:113](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L113)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:78](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L78)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`key` | any |
+`key` | Buffer |
 
 **Returns:** *Promise‹void›*
 
 ___
 
-###  emit
+###  entries
 
-▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
+▸ **entries**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer›[]›*
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[emit](../interfaces/_db_controller_interface_.idatabasecontroller.md#emit)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:32
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:128](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L128)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`event` | string &#124; symbol |
-`...args` | any[] |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
 
-**Returns:** *boolean*
+**Returns:** *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer›[]›*
 
 ___
 
-###  eventNames
+###  entriesStream
 
-▸ **eventNames**(): *Array‹string | symbol›*
+▸ **entriesStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *AsyncIterable‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer››*
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[eventNames](../interfaces/_db_controller_interface_.idatabasecontroller.md#eventnames)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:136](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L136)*
 
-*Overrides void*
+**Parameters:**
 
-Defined in node_modules/@types/node/events.d.ts:33
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
 
-**Returns:** *Array‹string | symbol›*
+**Returns:** *AsyncIterable‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹Buffer, Buffer››*
 
 ___
 
 ###  get
 
-▸ **get**(`key`: any): *Promise‹Buffer | null›*
+▸ **get**(`key`: Buffer): *Promise‹Buffer | null›*
 
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:70](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L70)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L49)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`key` | any |
+`key` | Buffer |
 
 **Returns:** *Promise‹Buffer | null›*
 
 ___
 
-###  getMaxListeners
+###  keys
 
-▸ **getMaxListeners**(): *number*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[getMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#getmaxlisteners)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:29
-
-**Returns:** *number*
-
-___
-
-###  listenerCount
-
-▸ **listenerCount**(`type`: string | symbol): *number*
+▸ **keys**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *Promise‹Buffer[]›*
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:34
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:104](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L104)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`type` | string &#124; symbol |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
 
-**Returns:** *number*
+**Returns:** *Promise‹Buffer[]›*
 
 ___
 
-###  listeners
+###  keysStream
 
-▸ **listeners**(`event`: string | symbol): *Function[]*
+▸ **keysStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *AsyncIterable‹Buffer›*
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#listeners)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:30
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:109](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L109)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`event` | string &#124; symbol |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
 
-**Returns:** *Function[]*
-
-___
-
-###  off
-
-▸ **off**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[off](../interfaces/_db_controller_interface_.idatabasecontroller.md#off)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:26
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
-
-___
-
-###  on
-
-▸ **on**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[on](../interfaces/_db_controller_interface_.idatabasecontroller.md#on)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:21
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
-
-___
-
-###  once
-
-▸ **once**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[once](../interfaces/_db_controller_interface_.idatabasecontroller.md#once)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:22
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
-
-___
-
-###  prependListener
-
-▸ **prependListener**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependlistener)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:23
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
-
-___
-
-###  prependOnceListener
-
-▸ **prependOnceListener**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[prependOnceListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#prependoncelistener)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:24
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
+**Returns:** *AsyncIterable‹Buffer›*
 
 ___
 
 ###  put
 
-▸ **put**(`key`: any, `value`: any): *Promise‹any›*
+▸ **put**(`key`: Buffer, `value`: Buffer): *Promise‹void›*
 
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:79](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L79)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:66](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L66)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`key` | any |
-`value` | any |
+`key` | Buffer |
+`value` | Buffer |
 
-**Returns:** *Promise‹any›*
-
-___
-
-###  rawListeners
-
-▸ **rawListeners**(`event`: string | symbol): *Function[]*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[rawListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#rawlisteners)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:31
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`event` | string &#124; symbol |
-
-**Returns:** *Function[]*
-
-___
-
-###  removeAllListeners
-
-▸ **removeAllListeners**(`event?`: string | symbol): *this*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeAllListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#removealllisteners)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:27
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`event?` | string &#124; symbol |
-
-**Returns:** *this*
-
-___
-
-###  removeListener
-
-▸ **removeListener**(`event`: string | symbol, `listener`: function): *this*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[removeListener](../interfaces/_db_controller_interface_.idatabasecontroller.md#removelistener)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:25
-
-**Parameters:**
-
-▪ **event**: *string | symbol*
-
-▪ **listener**: *function*
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
-
-**Returns:** *this*
-
-___
-
-###  search
-
-▸ **search**(`opts`: [ISearchOptions](../interfaces/_db_controller_interface_.isearchoptions.md)): *Promise‹any[]›*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:93](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L93)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`opts` | [ISearchOptions](../interfaces/_db_controller_interface_.isearchoptions.md) |
-
-**Returns:** *Promise‹any[]›*
-
-___
-
-###  searchStream
-
-▸ **searchStream**(`opts`: [ISearchOptions](../interfaces/_db_controller_interface_.isearchoptions.md)): *AsyncIterable‹any›*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:105](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L105)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`opts` | [ISearchOptions](../interfaces/_db_controller_interface_.isearchoptions.md) |
-
-**Returns:** *AsyncIterable‹any›*
-
-___
-
-###  setMaxListeners
-
-▸ **setMaxListeners**(`n`: number): *this*
-
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[setMaxListeners](../interfaces/_db_controller_interface_.idatabasecontroller.md#setmaxlisteners)*
-
-*Overrides void*
-
-Defined in node_modules/@types/node/events.d.ts:28
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`n` | number |
-
-**Returns:** *this*
+**Returns:** *Promise‹void›*
 
 ___
 
@@ -592,7 +241,7 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:35](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L35)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:43](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L43)*
 
 **Returns:** *Promise‹void›*
 
@@ -604,29 +253,58 @@ ___
 
 *Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:37](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L37)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:45](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L45)*
 
 **Returns:** *Promise‹void›*
 
 ___
 
-### `Static` listenerCount
+### `Private` toPouchOptions
 
-▸ **listenerCount**(`emitter`: EventEmitter, `event`: string | symbol): *number*
+▸ **toPouchOptions**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *object*
 
-*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
-
-*Inherited from [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md).[listenerCount](../interfaces/_db_controller_interface_.idatabasecontroller.md#static-listenercount)*
-
-Defined in node_modules/@types/node/events.d.ts:17
-
-**`deprecated`** since v4.0.0
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:143](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L143)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`emitter` | EventEmitter |
-`event` | string &#124; symbol |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
 
-**Returns:** *number*
+**Returns:** *object*
+
+___
+
+###  values
+
+▸ **values**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *Promise‹Buffer[]›*
+
+*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
+
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:116](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L116)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
+
+**Returns:** *Promise‹Buffer[]›*
+
+___
+
+###  valuesStream
+
+▸ **valuesStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›): *AsyncIterable‹Buffer›*
+
+*Implementation of [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)*
+
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:121](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L121)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`opts?` | [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer› |
+
+**Returns:** *AsyncIterable‹Buffer›*

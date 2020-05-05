@@ -7,3 +7,7 @@
 ### Classes
 
 * [BlockArchiveRepository](../classes/_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)
+
+### Interfaces
+
+* [IBlockFilterOptions](../interfaces/_db_api_beacon_repositories_blockarchive_.iblockfilteroptions.md)

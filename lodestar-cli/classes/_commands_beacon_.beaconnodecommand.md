@@ -27,15 +27,15 @@
 
 • **node**: *BeaconNode*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:31](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/commands/beacon.ts#L31)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:34](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L34)*
 
 ## Methods
 
 ###  action
 
-▸ **action**(`cmdOptions`: [IBeaconCommandOptions](../interfaces/_commands_beacon_.ibeaconcommandoptions.md), `logger`: ILogger): *Promise‹void›*
+▸ **action**(`cmdOptions`: [IBeaconCommandOptions](../interfaces/_commands_beacon_.ibeaconcommandoptions.md), `logger`: ILogger): *Promise‹BeaconNode›*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:55](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/commands/beacon.ts#L55)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:58](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L58)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Name | Type |
 `cmdOptions` | [IBeaconCommandOptions](../interfaces/_commands_beacon_.ibeaconcommandoptions.md) |
 `logger` | ILogger |
 
-**Returns:** *Promise‹void›*
+**Returns:** *Promise‹BeaconNode›*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:33](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar-cli/src/commands/beacon.ts#L33)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:36](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L36)*
 
 **Parameters:**
 

@@ -21,8 +21,9 @@
 * [aggregationDuties](_sync_utils_attestation_collector_.attestationcollector.md#private-aggregationduties)
 * [chain](_sync_utils_attestation_collector_.attestationcollector.md#private-chain)
 * [config](_sync_utils_attestation_collector_.attestationcollector.md#private-config)
+* [db](_sync_utils_attestation_collector_.attestationcollector.md#private-db)
 * [network](_sync_utils_attestation_collector_.attestationcollector.md#private-network)
-* [opPool](_sync_utils_attestation_collector_.attestationcollector.md#private-oppool)
+* [timers](_sync_utils_attestation_collector_.attestationcollector.md#private-timers)
 
 ### Methods
 
@@ -39,7 +40,7 @@
 
 \+ **new AttestationCollector**(`config`: IBeaconConfig, `modules`: [IAttestationCollectorModules](../interfaces/_sync_utils_attestation_collector_.iattestationcollectormodules.md)): *[AttestationCollector](_sync_utils_attestation_collector_.attestationcollector.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L22)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L22)*
 
 **Parameters:**
 
@@ -56,7 +57,7 @@ Name | Type |
 
 • **aggregationDuties**: *Map‹Slot, Set‹CommitteeIndex››* = new Map()
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:22](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L22)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L22)*
 
 ___
 
@@ -64,7 +65,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L18)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L18)*
 
 ___
 
@@ -72,7 +73,15 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:17](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L17)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:17](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L17)*
+
+___
+
+### `Private` db
+
+• **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
+
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:20](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L20)*
 
 ___
 
@@ -80,15 +89,15 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:19](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L19)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:19](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L19)*
 
 ___
 
-### `Private` opPool
+### `Private` timers
 
-• **opPool**: *[OpPool](_oppool_oppool_.oppool.md)*
+• **timers**: *Timeout[]*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:20](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L20)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L21)*
 
 ## Methods
 
@@ -96,7 +105,7 @@ ___
 
 ▸ **checkDuties**(`slot`: Slot): *void*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:49](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L49)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L50)*
 
 **Parameters:**
 
@@ -112,7 +121,7 @@ ___
 
 ▸ **handleCommitteeAttestation**(`__namedParameters`: object): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:72](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L72)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:74](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L74)*
 
 **Parameters:**
 
@@ -132,7 +141,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:31](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L31)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L31)*
 
 **Returns:** *Promise‹void›*
 
@@ -144,7 +153,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:35](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L35)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L35)*
 
 **Returns:** *Promise‹void›*
 
@@ -154,7 +163,7 @@ ___
 
 ▸ **subscribeToCommitteeAttestations**(`slot`: Slot, `committeeIndex`: CommitteeIndex): *void*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:39](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L39)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:40](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L40)*
 
 **Parameters:**
 
@@ -171,7 +180,7 @@ ___
 
 ▸ **unsubscribeSubnet**(`subnet`: number): *void*
 
-*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:67](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/sync/utils/attestation-collector.ts#L67)*
+*Defined in [packages/lodestar/src/sync/utils/attestation-collector.ts:69](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/utils/attestation-collector.ts#L69)*
 
 **Parameters:**
 

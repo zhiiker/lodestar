@@ -12,16 +12,16 @@
 
 ###  generateDeposits
 
-▸ **generateDeposits**(`config`: IBeaconConfig, `opPool`: [OpPool](../classes/_oppool_oppool_.oppool.md), `state`: BeaconState, `eth1Data`: Eth1Data, `depositDataRootList`: TreeBacked‹List‹Root››): *Promise‹Deposit[]›*
+▸ **generateDeposits**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `state`: BeaconState, `eth1Data`: Eth1Data, `depositDataRootList`: TreeBacked‹List‹Root››): *Promise‹Deposit[]›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
+*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`opPool` | [OpPool](../classes/_oppool_oppool_.oppool.md) |
+`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
 `state` | BeaconState |
 `eth1Data` | Eth1Data |
 `depositDataRootList` | TreeBacked‹List‹Root›› |

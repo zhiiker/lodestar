@@ -8,6 +8,11 @@
 
 * [PouchDbController](../classes/_db_controller_impl_pouch_.pouchdbcontroller.md)
 
+### Interfaces
+
+* [IPouchDocument](../interfaces/_db_controller_impl_pouch_.ipouchdocument.md)
+* [IPouchResult](../interfaces/_db_controller_impl_pouch_.ipouchresult.md)
+
 ### Variables
 
 * [BASE_REVISION](_db_controller_impl_pouch_.md#const-base_revision)
@@ -18,4 +23,4 @@
 
 • **BASE_REVISION**: *"1"* = "1"
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:18](https://github.com/ChainSafe/lodestar/blob/393d800/packages/lodestar/src/db/controller/impl/pouch.ts#L18)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:16](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/controller/impl/pouch.ts#L16)*
