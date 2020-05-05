@@ -19,27 +19,29 @@ indexed by root
 
 * **Repository**
 
-  ↳ [AttestationRepository](_db_api_beacon_repositories_attestation_.attestationrepository.md)
-
-  ↳ [AggregateAndProofRepository](_db_api_beacon_repositories_aggregateandproof_.aggregateandproofrepository.md)
-
-  ↳ [AttesterSlashingRepository](_db_api_beacon_repositories_attesterslashing_.attesterslashingrepository.md)
-
   ↳ [BadBlockRepository](_db_api_beacon_repositories_badblock_.badblockrepository.md)
 
   ↳ [BlockRepository](_db_api_beacon_repositories_block_.blockrepository.md)
 
   ↳ [BlockArchiveRepository](_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)
 
-  ↳ [DepositDataRepository](_db_api_beacon_repositories_depositdata_.depositdatarepository.md)
+  ↳ [StateRepository](_db_api_beacon_repositories_state_.staterepository.md)
 
-  ↳ [DepositDataRootListRepository](_db_api_beacon_repositories_depositdatarootlist_.depositdatarootlistrepository.md)
+  ↳ [AttestationRepository](_db_api_beacon_repositories_attestation_.attestationrepository.md)
+
+  ↳ [AggregateAndProofRepository](_db_api_beacon_repositories_aggregateandproof_.aggregateandproofrepository.md)
+
+  ↳ [AttesterSlashingRepository](_db_api_beacon_repositories_attesterslashing_.attesterslashingrepository.md)
+
+  ↳ [DepositDataRepository](_db_api_beacon_repositories_depositdata_.depositdatarepository.md)
 
   ↳ [ProposerSlashingRepository](_db_api_beacon_repositories_proposerslashing_.proposerslashingrepository.md)
 
-  ↳ [StateRepository](_db_api_beacon_repositories_state_.staterepository.md)
-
   ↳ [VoluntaryExitRepository](_db_api_beacon_repositories_voluntaryexit_.voluntaryexitrepository.md)
+
+  ↳ [DepositDataRootRepository](_db_api_beacon_repositories_depositdataroot_.depositdatarootrepository.md)
+
+  ↳ [Eth1DataRepository](_db_api_beacon_repositories_eth1data_.eth1datarepository.md)
 
 ## Index
 
@@ -69,11 +71,17 @@ indexed by root
 * [encodeValue](_db_api_beacon_repositories_abstract_.repository.md#encodevalue)
 * [entries](_db_api_beacon_repositories_abstract_.repository.md#entries)
 * [entriesStream](_db_api_beacon_repositories_abstract_.repository.md#entriesstream)
+* [firstEntry](_db_api_beacon_repositories_abstract_.repository.md#firstentry)
+* [firstKey](_db_api_beacon_repositories_abstract_.repository.md#firstkey)
+* [firstValue](_db_api_beacon_repositories_abstract_.repository.md#firstvalue)
 * [get](_db_api_beacon_repositories_abstract_.repository.md#get)
 * [getId](_db_api_beacon_repositories_abstract_.repository.md#getid)
 * [has](_db_api_beacon_repositories_abstract_.repository.md#has)
 * [keys](_db_api_beacon_repositories_abstract_.repository.md#keys)
 * [keysStream](_db_api_beacon_repositories_abstract_.repository.md#keysstream)
+* [lastEntry](_db_api_beacon_repositories_abstract_.repository.md#lastentry)
+* [lastKey](_db_api_beacon_repositories_abstract_.repository.md#lastkey)
+* [lastValue](_db_api_beacon_repositories_abstract_.repository.md#lastvalue)
 * [put](_db_api_beacon_repositories_abstract_.repository.md#put)
 * [remove](_db_api_beacon_repositories_abstract_.repository.md#remove)
 * [values](_db_api_beacon_repositories_abstract_.repository.md#values)
@@ -85,7 +93,7 @@ indexed by root
 
 \+ **new Repository**(`config`: IBeaconConfig, `db`: [IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›, `bucket`: [Bucket](../enums/_db_api_schema_.bucket.md), `type`: Type‹T›): *[Repository](_db_api_beacon_repositories_abstract_.repository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L24)*
 
 **Parameters:**
 
@@ -104,7 +112,7 @@ Name | Type |
 
 • **bucket**: *[Bucket](../enums/_db_api_schema_.bucket.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L22)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:22](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L22)*
 
 ___
 
@@ -112,7 +120,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L18)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:18](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L18)*
 
 ___
 
@@ -120,7 +128,7 @@ ___
 
 • **db**: *[IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L20)*
 
 ___
 
@@ -128,7 +136,7 @@ ___
 
 • **type**: *Type‹T›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L24)*
 
 ## Methods
 
@@ -136,7 +144,7 @@ ___
 
 ▸ **add**(`value`: T): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:80](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L80)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:80](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L80)*
 
 **Parameters:**
 
@@ -152,7 +160,7 @@ ___
 
 ▸ **batchAdd**(`values`: ArrayLike‹T›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:99](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L99)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:99](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L99)*
 
 **Parameters:**
 
@@ -168,7 +176,7 @@ ___
 
 ▸ **batchDelete**(`ids`: ArrayLike‹I›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:95](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L95)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:95](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L95)*
 
 **Parameters:**
 
@@ -184,7 +192,7 @@ ___
 
 ▸ **batchPut**(`items`: ArrayLike‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T››): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:88](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L88)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:88](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L88)*
 
 **Parameters:**
 
@@ -200,7 +208,7 @@ ___
 
 ▸ **batchRemove**(`values`: ArrayLike‹T›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:106](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L106)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:106](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L106)*
 
 **Parameters:**
 
@@ -216,7 +224,7 @@ ___
 
 ▸ **dbFilterOptions**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *[IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹Buffer›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:160](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L160)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:208](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L208)*
 
 Transforms opts from I to Buffer
 
@@ -234,7 +242,7 @@ ___
 
 ▸ **decodeKey**(`key`: Buffer): *I*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L49)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:49](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L49)*
 
 **Parameters:**
 
@@ -250,7 +258,7 @@ ___
 
 ▸ **decodeValue**(`data`: Buffer): *T*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:41](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L41)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:41](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L41)*
 
 **Parameters:**
 
@@ -266,7 +274,7 @@ ___
 
 ▸ **delete**(`id`: I): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:71](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L71)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:71](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L71)*
 
 **Parameters:**
 
@@ -282,7 +290,7 @@ ___
 
 ▸ **encodeKey**(`id`: I): *Buffer*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:45](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L45)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:45](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L45)*
 
 **Parameters:**
 
@@ -298,7 +306,7 @@ ___
 
 ▸ **encodeValue**(`value`: T): *Buffer*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:37](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L37)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:37](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L37)*
 
 **Parameters:**
 
@@ -314,7 +322,7 @@ ___
 
 ▸ **entries**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T›[]›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:136](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L136)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:136](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L136)*
 
 **Parameters:**
 
@@ -330,7 +338,7 @@ ___
 
 ▸ **entriesStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *AsyncIterable‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T››*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:143](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L143)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:143](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L143)*
 
 **Parameters:**
 
@@ -342,11 +350,41 @@ Name | Type |
 
 ___
 
+###  firstEntry
+
+▸ **firstEntry**(): *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T› | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:189](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L189)*
+
+**Returns:** *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T› | null›*
+
+___
+
+###  firstKey
+
+▸ **firstKey**(): *Promise‹I | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:157](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L157)*
+
+**Returns:** *Promise‹I | null›*
+
+___
+
+###  firstValue
+
+▸ **firstValue**(): *Promise‹T | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:173](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L173)*
+
+**Returns:** *Promise‹T | null›*
+
+___
+
 ###  get
 
 ▸ **get**(`id`: I): *Promise‹T | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L53)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:53](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L53)*
 
 **Parameters:**
 
@@ -362,7 +400,7 @@ ___
 
 ▸ **getId**(`value`: T): *I*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:76](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L76)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:76](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L76)*
 
 **Parameters:**
 
@@ -378,7 +416,7 @@ ___
 
 ▸ **has**(`id`: I): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:63](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L63)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:63](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L63)*
 
 **Parameters:**
 
@@ -394,7 +432,7 @@ ___
 
 ▸ **keys**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *Promise‹I[]›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:110](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L110)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:110](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L110)*
 
 **Parameters:**
 
@@ -410,7 +448,7 @@ ___
 
 ▸ **keysStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *AsyncIterable‹I›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:114](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L114)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:114](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L114)*
 
 **Parameters:**
 
@@ -422,11 +460,41 @@ Name | Type |
 
 ___
 
+###  lastEntry
+
+▸ **lastEntry**(): *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T› | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:197](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L197)*
+
+**Returns:** *Promise‹[IKeyValue](../interfaces/_db_controller_interface_.ikeyvalue.md)‹I, T› | null›*
+
+___
+
+###  lastKey
+
+▸ **lastKey**(): *Promise‹I | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:165](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L165)*
+
+**Returns:** *Promise‹I | null›*
+
+___
+
+###  lastValue
+
+▸ **lastValue**(): *Promise‹T | null›*
+
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:181](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L181)*
+
+**Returns:** *Promise‹T | null›*
+
+___
+
 ###  put
 
 ▸ **put**(`id`: I, `value`: T): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:67](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L67)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:67](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L67)*
 
 **Parameters:**
 
@@ -443,7 +511,7 @@ ___
 
 ▸ **remove**(`value`: T): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:84](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L84)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:84](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L84)*
 
 **Parameters:**
 
@@ -459,7 +527,7 @@ ___
 
 ▸ **values**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *Promise‹T[]›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:123](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L123)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:123](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L123)*
 
 **Parameters:**
 
@@ -475,7 +543,7 @@ ___
 
 ▸ **valuesStream**(`opts?`: [IFilterOptions](../interfaces/_db_controller_interface_.ifilteroptions.md)‹I›): *AsyncIterable‹T›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:127](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L127)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:127](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L127)*
 
 **Parameters:**
 

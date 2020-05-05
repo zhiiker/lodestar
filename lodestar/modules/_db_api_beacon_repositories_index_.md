@@ -14,7 +14,8 @@
 * [BlockRepository](_db_api_beacon_repositories_index_.md#blockrepository)
 * [ChainRepository](_db_api_beacon_repositories_index_.md#chainrepository)
 * [DepositDataRepository](_db_api_beacon_repositories_index_.md#depositdatarepository)
-* [DepositDataRootListRepository](_db_api_beacon_repositories_index_.md#depositdatarootlistrepository)
+* [DepositDataRootRepository](_db_api_beacon_repositories_index_.md#depositdatarootrepository)
+* [Eth1DataRepository](_db_api_beacon_repositories_index_.md#eth1datarepository)
 * [IBlockFilterOptions](_db_api_beacon_repositories_index_.md#iblockfilteroptions)
 * [Id](_db_api_beacon_repositories_index_.md#id)
 * [ProposerSlashingRepository](_db_api_beacon_repositories_index_.md#proposerslashingrepository)
@@ -72,9 +73,15 @@ ___
 
 ___
 
-###  DepositDataRootListRepository
+###  DepositDataRootRepository
 
-• **DepositDataRootListRepository**:
+• **DepositDataRootRepository**:
+
+___
+
+###  Eth1DataRepository
+
+• **Eth1DataRepository**:
 
 ___
 

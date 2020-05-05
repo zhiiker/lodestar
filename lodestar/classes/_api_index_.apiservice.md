@@ -33,7 +33,7 @@
 
 \+ **new ApiService**(`opts`: Partial‹[IApiOptions](../interfaces/_api_options_.iapioptions.md)›, `modules`: [IApiModules](../interfaces/_api_interface_.iapimodules.md)): *[ApiService](_api_index_.apiservice.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L21)*
+*Defined in [packages/lodestar/src/api/index.ts:21](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L21)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **opts**: *[IApiOptions](../interfaces/_api_options_.iapioptions.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:19](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L19)*
+*Defined in [packages/lodestar/src/api/index.ts:19](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L19)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **rest**: *[IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L21)*
+*Defined in [packages/lodestar/src/api/index.ts:21](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L21)*
 
 ## Methods
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **setupRestApi**(`modules`: [IApiModules](../interfaces/_api_interface_.iapimodules.md)): *[RestApi](_api_rest_index_.restapi.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:42](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L42)*
+*Defined in [packages/lodestar/src/api/index.ts:42](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L42)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L30)*
+*Defined in [packages/lodestar/src/api/index.ts:30](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L30)*
 
 **Returns:** *Promise‹void›*
 
@@ -96,6 +96,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/api/index.ts:36](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/index.ts#L36)*
+*Defined in [packages/lodestar/src/api/index.ts:36](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/index.ts#L36)*
 
 **Returns:** *Promise‹void›*

@@ -12,6 +12,7 @@
 * [DepositCommand](_commands_index_.md#depositcommand)
 * [DevCommand](_commands_index_.md#devcommand)
 * [Eth1PrivateNetworkCommand](_commands_index_.md#eth1privatenetworkcommand)
+* [IBeaconCommandOptions](_commands_index_.md#ibeaconcommandoptions)
 * [IDevCommandOptions](_commands_index_.md#idevcommandoptions)
 * [ValidatorCommand](_commands_index_.md#validatorcommand)
 
@@ -50,6 +51,12 @@ ___
 ###  Eth1PrivateNetworkCommand
 
 • **Eth1PrivateNetworkCommand**:
+
+___
+
+###  IBeaconCommandOptions
+
+• **IBeaconCommandOptions**:
 
 ___
 

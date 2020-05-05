@@ -12,9 +12,9 @@
 
 ###  assembleBody
 
-▸ **assembleBody**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eth1`: [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md), `depositDataRootList`: TreeBacked‹List‹Root››, `currentState`: BeaconState, `randao`: Bytes96): *Promise‹BeaconBlockBody›*
+▸ **assembleBody**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `currentState`: BeaconState, `randaoReveal`: Bytes96, `graffiti`: Bytes32): *Promise‹BeaconBlockBody›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/body.ts:13](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/factory/block/body.ts#L13)*
+*Defined in [packages/lodestar/src/chain/factory/block/body.ts:12](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/factory/block/body.ts#L12)*
 
 **Parameters:**
 
@@ -22,9 +22,8 @@ Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
 `db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
-`eth1` | [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md) |
-`depositDataRootList` | TreeBacked‹List‹Root›› |
 `currentState` | BeaconState |
-`randao` | Bytes96 |
+`randaoReveal` | Bytes96 |
+`graffiti` | Bytes32 |
 
 **Returns:** *Promise‹BeaconBlockBody›*

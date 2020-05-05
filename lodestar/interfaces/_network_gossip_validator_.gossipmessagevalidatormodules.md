@@ -21,7 +21,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:40](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/validator.ts#L40)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:40](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/gossip/validator.ts#L40)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:42](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/validator.ts#L42)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:42](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/gossip/validator.ts#L42)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:41](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/validator.ts#L41)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:41](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/gossip/validator.ts#L41)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/gossip/validator.ts:43](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/gossip/validator.ts#L43)*
+*Defined in [packages/lodestar/src/network/gossip/validator.ts:43](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/gossip/validator.ts#L43)*

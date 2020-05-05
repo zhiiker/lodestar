@@ -19,7 +19,7 @@
 
 • **gt**? : *Epoch*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/validator/interface.ts#L8)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/validator/interface.ts#L8)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **lt**? : *Epoch*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/db/api/validator/interface.ts#L9)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/api/validator/interface.ts#L9)*

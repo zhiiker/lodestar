@@ -9,7 +9,6 @@
 * [getPreState](_chain_blocks_process_.md#getprestate)
 * [processBlock](_chain_blocks_process_.md#processblock)
 * [runStateTransition](_chain_blocks_process_.md#runstatetransition)
-* [updateDepositMerkleTree](_chain_blocks_process_.md#updatedepositmerkletree)
 * [updateForkChoice](_chain_blocks_process_.md#updateforkchoice)
 
 ## Functions
@@ -18,7 +17,7 @@
 
 ▸ **getPreState**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `pool`: [BlockPool](../classes/_chain_blocks_pool_.blockpool.md), `logger`: ILogger, `job`: [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)): *Promise‹BeaconState | null›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:57](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/process.ts#L57)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:56](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/blocks/process.ts#L56)*
 
 **Parameters:**
 
@@ -38,7 +37,7 @@ ___
 
 ▸ **processBlock**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `pool`: [BlockPool](../classes/_chain_blocks_pool_.blockpool.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:12](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/process.ts#L12)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:12](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/blocks/process.ts#L12)*
 
 **Parameters:**
 
@@ -67,7 +66,7 @@ ___
 
 ▸ **runStateTransition**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `preState`: BeaconState, `job`: [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)): *Promise‹BeaconState | null›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:119](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/process.ts#L119)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:101](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/blocks/process.ts#L101)*
 
 **Parameters:**
 
@@ -83,29 +82,11 @@ Name | Type |
 
 ___
 
-###  updateDepositMerkleTree
-
-▸ **updateDepositMerkleTree**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `newState`: BeaconState): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:102](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/process.ts#L102)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
-`newState` | BeaconState |
-
-**Returns:** *Promise‹void›*
-
-___
-
 ###  updateForkChoice
 
 ▸ **updateForkChoice**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `block`: SignedBeaconBlock, `newState`: BeaconState): *Promise‹Root | null›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:80](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/blocks/process.ts#L80)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:79](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/blocks/process.ts#L79)*
 
 Returns new chainhead or null
 

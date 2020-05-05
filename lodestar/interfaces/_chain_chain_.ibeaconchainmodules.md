@@ -23,7 +23,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L30)*
+*Defined in [packages/lodestar/src/chain/chain.ts:38](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L38)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:31](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L31)*
+*Defined in [packages/lodestar/src/chain/chain.ts:39](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L39)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:32](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L32)*
+*Defined in [packages/lodestar/src/chain/chain.ts:40](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L40)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **forkChoice**? : *[ILMDGHOST](_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:35](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L35)*
+*Defined in [packages/lodestar/src/chain/chain.ts:43](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L43)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:33](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L33)*
+*Defined in [packages/lodestar/src/chain/chain.ts:41](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L41)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **metrics**: *[IBeaconMetrics](_metrics_interface_.ibeaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:34](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/chain.ts#L34)*
+*Defined in [packages/lodestar/src/chain/chain.ts:42](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/chain.ts#L42)*

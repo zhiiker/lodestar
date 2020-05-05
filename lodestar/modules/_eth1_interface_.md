@@ -7,8 +7,7 @@
 ### Interfaces
 
 * [Eth1BlockRange](../interfaces/_eth1_interface_.eth1blockrange.md)
-* [IBlock](../interfaces/_eth1_interface_.iblock.md)
-* [IBlockCache](../interfaces/_eth1_interface_.iblockcache.md)
+* [IDepositEvent](../interfaces/_eth1_interface_.idepositevent.md)
 * [IEth1Events](../interfaces/_eth1_interface_.ieth1events.md)
 * [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)
 
@@ -22,4 +21,4 @@
 
 Ƭ **Eth1EventEmitter**: *StrictEventEmitter‹EventEmitter, [IEth1Events](../interfaces/_eth1_interface_.ieth1events.md)›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L19)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/interface.ts#L22)*

@@ -34,7 +34,7 @@
 
 • ** _emitType**? : *V*
 
-*Inherited from [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md).[ _emitType](../interfaces/_eth1_interface_.ieth1notifier.md#optional--_emittype)*
+*Inherited from [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[ _emitType](../interfaces/_network_gossip_interface_.igossip.md#optional--_emittype)*
 
 Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:7
 
@@ -44,7 +44,7 @@ ___
 
 • ** _emitterType**? : *T*
 
-*Inherited from [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md).[ _emitterType](../interfaces/_eth1_interface_.ieth1notifier.md#optional--_emittertype)*
+*Inherited from [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[ _emitterType](../interfaces/_network_gossip_interface_.igossip.md#optional--_emittertype)*
 
 Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:5
 
@@ -54,7 +54,7 @@ ___
 
 • ** _eventsType**? : *U*
 
-*Inherited from [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md).[ _eventsType](../interfaces/_eth1_interface_.ieth1notifier.md#optional--_eventstype)*
+*Inherited from [IGossip](../interfaces/_network_gossip_interface_.igossip.md).[ _eventsType](../interfaces/_network_gossip_interface_.igossip.md#optional--_eventstype)*
 
 Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
@@ -64,7 +64,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **waitForResponse**(`requestId`: string, `responseListener`: [ResponseCallbackFn](../modules/_network_interface_.md#responsecallbackfn)): *Timeout*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/network/reqResp.ts#L46)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:46](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/reqResp.ts#L46)*
 
 **Parameters:**
 

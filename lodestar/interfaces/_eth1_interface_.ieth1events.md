@@ -10,34 +10,16 @@
 
 ### Properties
 
-* [block](_eth1_interface_.ieth1events.md#block)
 * [deposit](_eth1_interface_.ieth1events.md#deposit)
+* [eth1Data](_eth1_interface_.ieth1events.md#eth1data)
 
 ## Properties
-
-###  block
-
-• **block**: *function*
-
-*Defined in [packages/lodestar/src/eth1/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L15)*
-
-#### Type declaration:
-
-▸ (`block`: Block): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`block` | Block |
-
-___
 
 ###  deposit
 
 • **deposit**: *function*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/interface.ts#L16)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/interface.ts#L18)*
 
 #### Type declaration:
 
@@ -49,3 +31,22 @@ Name | Type |
 ------ | ------ |
 `index` | Number64 |
 `depositData` | DepositData |
+
+___
+
+###  eth1Data
+
+• **eth1Data**: *function*
+
+*Defined in [packages/lodestar/src/eth1/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/interface.ts#L19)*
+
+#### Type declaration:
+
+▸ (`timestamp`: number, `eth1Data`: Eth1Data): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`timestamp` | number |
+`eth1Data` | Eth1Data |

@@ -27,7 +27,7 @@
 
 • **attestation_committee_index**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:11](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L11)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **poc_bit**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:9](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L9)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:9](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L9)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **slot**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L10)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:10](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L10)*
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 • **validator_pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L8)*

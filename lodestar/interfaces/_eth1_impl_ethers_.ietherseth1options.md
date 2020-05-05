@@ -23,7 +23,7 @@
 
 • **contract**? : *Contract*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/ethers.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:20](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/ethers.ts#L20)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[depositContract](_eth1_options_.ieth1options.md#depositcontract)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:11](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L11)*
+*Defined in [packages/lodestar/src/eth1/options.ts:12](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/options.ts#L12)*
 
 #### Type declaration:
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[provider](_eth1_options_.ieth1options.md#provider)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:6](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L6)*
+*Defined in [packages/lodestar/src/eth1/options.ts:7](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/options.ts#L7)*
 
 #### Type declaration:
 
@@ -69,4 +69,4 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[providerInstance](_eth1_options_.ieth1options.md#optional-providerinstance)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:10](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/options.ts#L10)*
+*Defined in [packages/lodestar/src/eth1/options.ts:11](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/options.ts#L11)*

@@ -10,8 +10,7 @@
 * [Eth1EventEmitter](_eth1_index_.md#eth1eventemitter)
 * [Eth1Wallet](_eth1_index_.md#eth1wallet)
 * [EthersEth1Notifier](_eth1_index_.md#etherseth1notifier)
-* [IBlock](_eth1_index_.md#iblock)
-* [IBlockCache](_eth1_index_.md#iblockcache)
+* [IDepositEvent](_eth1_index_.md#idepositevent)
 * [IEth1Events](_eth1_index_.md#ieth1events)
 * [IEth1Notifier](_eth1_index_.md#ieth1notifier)
 * [IEthersEth1Options](_eth1_index_.md#ietherseth1options)
@@ -42,15 +41,9 @@ ___
 
 ___
 
-###  IBlock
+###  IDepositEvent
 
-• **IBlock**:
-
-___
-
-###  IBlockCache
-
-• **IBlockCache**:
+• **IDepositEvent**:
 
 ___
 

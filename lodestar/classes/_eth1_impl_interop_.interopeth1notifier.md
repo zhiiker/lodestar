@@ -25,18 +25,14 @@
 ### Methods
 
 * [addListener](_eth1_impl_interop_.interopeth1notifier.md#addlistener)
-* [depositCount](_eth1_impl_interop_.interopeth1notifier.md#depositcount)
-* [depositRoot](_eth1_impl_interop_.interopeth1notifier.md#depositroot)
 * [emit](_eth1_impl_interop_.interopeth1notifier.md#emit)
 * [eventNames](_eth1_impl_interop_.interopeth1notifier.md#eventnames)
-* [findBlocks](_eth1_impl_interop_.interopeth1notifier.md#findblocks)
 * [getBlock](_eth1_impl_interop_.interopeth1notifier.md#getblock)
+* [getDepositCount](_eth1_impl_interop_.interopeth1notifier.md#getdepositcount)
+* [getDepositEvents](_eth1_impl_interop_.interopeth1notifier.md#getdepositevents)
+* [getDepositRoot](_eth1_impl_interop_.interopeth1notifier.md#getdepositroot)
 * [getEth1Data](_eth1_impl_interop_.interopeth1notifier.md#geteth1data)
-* [getEth1Vote](_eth1_impl_interop_.interopeth1notifier.md#geteth1vote)
-* [getHead](_eth1_impl_interop_.interopeth1notifier.md#gethead)
 * [getMaxListeners](_eth1_impl_interop_.interopeth1notifier.md#getmaxlisteners)
-* [initBlockCache](_eth1_impl_interop_.interopeth1notifier.md#initblockcache)
-* [initContract](_eth1_impl_interop_.interopeth1notifier.md#initcontract)
 * [listenerCount](_eth1_impl_interop_.interopeth1notifier.md#listenercount)
 * [listeners](_eth1_impl_interop_.interopeth1notifier.md#listeners)
 * [off](_eth1_impl_interop_.interopeth1notifier.md#off)
@@ -44,10 +40,6 @@
 * [once](_eth1_impl_interop_.interopeth1notifier.md#once)
 * [prependListener](_eth1_impl_interop_.interopeth1notifier.md#prependlistener)
 * [prependOnceListener](_eth1_impl_interop_.interopeth1notifier.md#prependoncelistener)
-* [processBlockHeadUpdate](_eth1_impl_interop_.interopeth1notifier.md#processblockheadupdate)
-* [processDepositLog](_eth1_impl_interop_.interopeth1notifier.md#processdepositlog)
-* [processPastDeposits](_eth1_impl_interop_.interopeth1notifier.md#processpastdeposits)
-* [pruneBlockCache](_eth1_impl_interop_.interopeth1notifier.md#pruneblockcache)
 * [rawListeners](_eth1_impl_interop_.interopeth1notifier.md#rawlisteners)
 * [removeAllListeners](_eth1_impl_interop_.interopeth1notifier.md#removealllisteners)
 * [removeListener](_eth1_impl_interop_.interopeth1notifier.md#removelistener)
@@ -62,7 +54,7 @@
 
 \+ **new InteropEth1Notifier**(): *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:13](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:11](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L11)*
 
 **Returns:** *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
@@ -106,34 +98,6 @@ Name | Type |
 
 ___
 
-###  depositCount
-
-▸ **depositCount**(`block?`: string | number): *Promise‹Number64›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:42](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L42)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`block?` | string &#124; number |
-
-**Returns:** *Promise‹Number64›*
-
-___
-
-###  depositRoot
-
-▸ **depositRoot**(): *Promise‹Uint8Array›*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:30](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L30)*
-
-**Returns:** *Promise‹Uint8Array›*
-
-___
-
 ###  emit
 
 ▸ **emit**(`event`: string | symbol, ...`args`: any[]): *boolean*
@@ -169,89 +133,81 @@ Defined in node_modules/@types/node/events.d.ts:33
 
 ___
 
-###  findBlocks
+###  getBlock
 
-▸ **findBlocks**(`config`: IBeaconConfig, `periodStart`: Number64): *Block[]*
+▸ **getBlock**(`blockTag`: string | number): *Promise‹Block›*
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:78](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L78)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:31](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L31)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`config` | IBeaconConfig |
-`periodStart` | Number64 |
+`blockTag` | string &#124; number |
 
-**Returns:** *Block[]*
+**Returns:** *Promise‹Block›*
 
 ___
 
-###  getBlock
+###  getDepositCount
 
-▸ **getBlock**(`blockHashOrBlockNumber`: string | number): *Promise‹Block›*
+▸ **getDepositCount**(`blockTag`: string | number): *Promise‹number›*
 
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:34](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L34)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:22](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L22)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`blockHashOrBlockNumber` | string &#124; number |
+`blockTag` | string &#124; number |
 
-**Returns:** *Promise‹Block›*
+**Returns:** *Promise‹number›*
+
+___
+
+###  getDepositEvents
+
+▸ **getDepositEvents**(`blockTag`: string | number): *Promise‹[IDepositEvent](../interfaces/_eth1_interface_.idepositevent.md)[]›*
+
+*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
+
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:28](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L28)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`blockTag` | string &#124; number |
+
+**Returns:** *Promise‹[IDepositEvent](../interfaces/_eth1_interface_.idepositevent.md)[]›*
+
+___
+
+###  getDepositRoot
+
+▸ **getDepositRoot**(): *Promise‹Uint8Array›*
+
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:19](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L19)*
+
+**Returns:** *Promise‹Uint8Array›*
 
 ___
 
 ###  getEth1Data
 
-▸ **getEth1Data**(`eth1Head`: Block): *Promise‹Eth1Data›*
+▸ **getEth1Data**(`blockHash`: string): *Promise‹Eth1Data›*
 
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:61](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L61)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:25](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L25)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`eth1Head` | Block |
+`blockHash` | string |
 
 **Returns:** *Promise‹Eth1Data›*
-
-___
-
-###  getEth1Vote
-
-▸ **getEth1Vote**(`config`: IBeaconConfig, `state`: BeaconState): *Promise‹Eth1Data›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L50)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`state` | BeaconState |
-
-**Returns:** *Promise‹Eth1Data›*
-
-___
-
-###  getHead
-
-▸ **getHead**(): *Promise‹Block›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:38](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L38)*
-
-**Returns:** *Promise‹Block›*
 
 ___
 
@@ -266,37 +222,6 @@ ___
 Defined in node_modules/@types/node/events.d.ts:29
 
 **Returns:** *number*
-
-___
-
-###  initBlockCache
-
-▸ **initBlockCache**(`config`: IBeaconConfig, `state`: BeaconState): *Promise‹void›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:70](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L70)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`state` | BeaconState |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  initContract
-
-▸ **initContract**(): *Promise‹void›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:65](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L65)*
-
-**Returns:** *Promise‹void›*
 
 ___
 
@@ -480,77 +405,6 @@ Name | Type |
 
 ___
 
-###  processBlockHeadUpdate
-
-▸ **processBlockHeadUpdate**(`blockNumber`: string | number): *Promise‹void›*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L24)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`blockNumber` | string &#124; number |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  processDepositLog
-
-▸ **processDepositLog**(`dataHex`: string, `indexHex`: string): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L27)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`dataHex` | string |
-`indexHex` | string |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  processPastDeposits
-
-▸ **processPastDeposits**(`fromBlock`: string | number, `toBlock?`: string | number): *Promise‹DepositData[]›*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L46)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`fromBlock` | string &#124; number |
-`toBlock?` | string &#124; number |
-
-**Returns:** *Promise‹DepositData[]›*
-
-___
-
-###  pruneBlockCache
-
-▸ **pruneBlockCache**(`config`: IBeaconConfig, `finalizedState`: BeaconState): *void*
-
-*Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
-
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:74](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L74)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`finalizedState` | BeaconState |
-
-**Returns:** *void*
-
-___
-
 ###  rawListeners
 
 ▸ **rawListeners**(`event`: string | symbol): *Function[]*
@@ -645,7 +499,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:18](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L18)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:16](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L16)*
 
 **Returns:** *Promise‹void›*
 
@@ -657,7 +511,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:21](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/eth1/impl/interop.ts#L21)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:17](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/eth1/impl/interop.ts#L17)*
 
 **Returns:** *Promise‹void›*
 

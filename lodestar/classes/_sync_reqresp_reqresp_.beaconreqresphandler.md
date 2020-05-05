@@ -50,7 +50,7 @@ fetching state from the chain and database as needed.
 
 \+ **new BeaconReqRespHandler**(`__namedParameters`: object): *[BeaconReqRespHandler](_sync_reqresp_reqresp_.beaconreqresphandler.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L53)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:51](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L51)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ Name | Type |
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L50)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:48](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L48)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:48](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L48)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:46](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L46)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L49)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:47](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L47)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L53)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:51](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L51)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:51](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L51)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:49](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L49)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 • **reps**: *[IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:52](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L52)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:50](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L50)*
 
 ## Methods
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **createStatus**(): *Promise‹Status›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:205](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L205)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:202](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L202)*
 
 **Returns:** *Promise‹Status›*
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **handshake**(`peerInfo`: PeerInfo, `direction`: "inbound" | "outbound"): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:231](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L231)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:214](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L214)*
 
 **Parameters:**
 
@@ -148,7 +148,7 @@ ___
 
 ▸ **injectRecentBlocks**(`archiveStream`: AsyncIterable‹SignedBeaconBlock›, `blockDb`: [BlockRepository](_db_api_beacon_repositories_block_.blockrepository.md), `request`: BeaconBlocksByRangeRequest): *AsyncGenerator‹SignedBeaconBlock›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:242](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L242)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:225](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L225)*
 
 **Parameters:**
 
@@ -166,7 +166,7 @@ ___
 
 ▸ **onBeaconBlocksByRange**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `request`: BeaconBlocksByRangeRequest): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:167](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L167)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:164](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L164)*
 
 **Parameters:**
 
@@ -183,7 +183,7 @@ ___
 
 ▸ **onBeaconBlocksByRoot**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `request`: BeaconBlocksByRootRequest): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:184](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L184)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:181](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L181)*
 
 **Parameters:**
 
@@ -200,7 +200,7 @@ ___
 
 ▸ **onGoodbye**(`peerInfo`: PeerInfo, `id`: [RequestId](../modules/_constants_network_.md#requestid), `request`: [Goodbye](../enums/_constants_network_.method.md#goodbye)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:144](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L144)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:141](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L141)*
 
 **Parameters:**
 
@@ -218,7 +218,7 @@ ___
 
 ▸ **onMetadata**(`peerInfo`: PeerInfo, `id`: [RequestId](../modules/_constants_network_.md#requestid)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:163](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L163)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:160](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L160)*
 
 **Parameters:**
 
@@ -235,7 +235,7 @@ ___
 
 ▸ **onPing**(`peerInfo`: PeerInfo, `id`: [RequestId](../modules/_constants_network_.md#requestid), `request`: [Ping](../enums/_constants_network_.method.md#ping)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:158](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L158)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:155](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L155)*
 
 **Parameters:**
 
@@ -253,7 +253,7 @@ ___
 
 ▸ **onRequest**(`peerInfo`: PeerInfo, `method`: [Method](../enums/_constants_network_.method.md), `id`: [RequestId](../modules/_constants_network_.md#requestid), `body?`: RequestBody): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:82](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L82)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:80](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L80)*
 
 **Parameters:**
 
@@ -272,7 +272,7 @@ ___
 
 ▸ **onStatus**(`peerInfo`: PeerInfo, `id`: [RequestId](../modules/_constants_network_.md#requestid), `request`: Status): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:106](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L106)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:104](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L104)*
 
 **Parameters:**
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **shouldDisconnectOnStatus**(`request`: Status): *Promise‹boolean›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:122](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L122)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:120](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L120)*
 
 **Parameters:**
 
@@ -306,7 +306,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:64](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L64)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:62](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L62)*
 
 **Returns:** *Promise‹void›*
 
@@ -316,6 +316,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:73](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/sync/reqResp/reqResp.ts#L73)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:71](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/sync/reqResp/reqResp.ts#L71)*
 
 **Returns:** *Promise‹void›*

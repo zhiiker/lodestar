@@ -32,7 +32,6 @@ Beacon Node configured for desktop (non-browser) use
 
 ### Methods
 
-* [putDepositData](_node_nodejs_.beaconnode.md#private-putdepositdata)
 * [start](_node_nodejs_.beaconnode.md#start)
 * [stop](_node_nodejs_.beaconnode.md#stop)
 
@@ -42,7 +41,7 @@ Beacon Node configured for desktop (non-browser) use
 
 \+ **new BeaconNode**(`opts`: Partial‹[IBeaconNodeOptions](../interfaces/_node_options_.ibeaconnodeoptions.md)›, `__namedParameters`: object): *[BeaconNode](_node_nodejs_.beaconnode.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:56](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L56)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:55](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L55)*
 
 **Parameters:**
 
@@ -65,7 +64,7 @@ Name | Type |
 
 • **api**: *[IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:51](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L51)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:50](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L50)*
 
 ___
 
@@ -73,7 +72,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:50](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L50)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:49](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L49)*
 
 ___
 
@@ -81,7 +80,7 @@ ___
 
 • **chores**: *[TasksService](_tasks_index_.tasksservice.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:54](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L54)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:53](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L53)*
 
 ___
 
@@ -89,7 +88,7 @@ ___
 
 • **conf**: *[IBeaconNodeOptions](../interfaces/_node_options_.ibeaconnodeoptions.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:43](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L43)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:42](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L42)*
 
 ___
 
@@ -97,7 +96,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:44](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L44)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:43](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L43)*
 
 ___
 
@@ -105,7 +104,7 @@ ___
 
 • **db**: *[BeaconDb](_db_api_beacon_beacon_.beacondb.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:45](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L45)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:44](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L44)*
 
 ___
 
@@ -113,7 +112,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:48](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L48)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:47](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L47)*
 
 ___
 
@@ -121,7 +120,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:56](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L56)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:55](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L55)*
 
 ___
 
@@ -129,7 +128,7 @@ ___
 
 • **metrics**: *[BeaconMetrics](_metrics_beacon_.beaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:46](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L46)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:45](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L45)*
 
 ___
 
@@ -137,7 +136,7 @@ ___
 
 • **metricsServer**: *[HttpMetricsServer](_metrics_server_http_.httpmetricsserver.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:47](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L47)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:46](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L46)*
 
 ___
 
@@ -145,7 +144,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:49](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L49)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:48](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L48)*
 
 ___
 
@@ -153,7 +152,7 @@ ___
 
 • **reps**: *[ReputationStore](_sync_ireputation_.reputationstore.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:53](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L53)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:52](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L52)*
 
 ___
 
@@ -161,32 +160,15 @@ ___
 
 • **sync**: *[IBeaconSync](../interfaces/_sync_interface_.ibeaconsync.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:52](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L52)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:51](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L51)*
 
 ## Methods
-
-### `Private` putDepositData
-
-▸ **putDepositData**(`index`: number, `depositData`: DepositData): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/node/nodejs.ts:171](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L171)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`index` | number |
-`depositData` | DepositData |
-
-**Returns:** *Promise‹void›*
-
-___
 
 ###  start
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:141](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L141)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:140](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L140)*
 
 **Returns:** *Promise‹void›*
 
@@ -196,6 +178,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:158](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/node/nodejs.ts#L158)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:156](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/node/nodejs.ts#L156)*
 
 **Returns:** *Promise‹void›*

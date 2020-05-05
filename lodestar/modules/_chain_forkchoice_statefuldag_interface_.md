@@ -21,7 +21,7 @@
 
 Ƭ **RootHex**: *string*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L22)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L22)*
 
 Root is a block root as a hex string
 

@@ -14,6 +14,7 @@
 
 ### Properties
 
+* [config](_commands_beacon_.ibeaconcommandoptions.md#optional-config)
 * [configFile](_commands_beacon_.ibeaconcommandoptions.md#optional-configfile)
 * [eth1BlockNum](_commands_beacon_.ibeaconcommandoptions.md#optional-eth1blocknum)
 * [forkFile](_commands_beacon_.ibeaconcommandoptions.md#optional-forkfile)
@@ -23,11 +24,19 @@
 
 ## Properties
 
+### `Optional` config
+
+• **config**? : *IBeaconConfig*
+
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:32](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L32)*
+
+___
+
 ### `Optional` configFile
 
 • **configFile**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L26)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L27)*
 
 ___
 
@@ -35,7 +44,7 @@ ___
 
 • **eth1BlockNum**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:29](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L29)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:30](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L30)*
 
 ___
 
@@ -43,7 +52,7 @@ ___
 
 • **forkFile**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:25](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L25)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:26](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L26)*
 
 ___
 
@@ -51,7 +60,7 @@ ___
 
 • **loggingLevel**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:28](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L28)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:29](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L29)*
 
 ___
 
@@ -59,7 +68,7 @@ ___
 
 • **peerId**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L24)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:25](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L25)*
 
 ___
 
@@ -67,4 +76,4 @@ ___
 
 • **preset**? : *string*
 
-*Defined in [packages/lodestar-cli/src/commands/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/b5860cf/packages/lodestar-cli/src/commands/beacon.ts#L27)*
+*Defined in [packages/lodestar-cli/src/commands/beacon.ts:28](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/commands/beacon.ts#L28)*
