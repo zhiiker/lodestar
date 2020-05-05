@@ -29,7 +29,7 @@
 
 • **gt**? : *K*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L6)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L6)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **gte**? : *K*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L7)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L7)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **limit**? : *number*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L11)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L11)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **lt**? : *K*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L8)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L8)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **lte**? : *K*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L9)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L9)*
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 • **reverse**? : *boolean*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/interface.ts#L10)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/db/controller/interface.ts#L10)*

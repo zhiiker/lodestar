@@ -23,7 +23,7 @@
 
 ▸ **action**(`options`: [IValidatorCommandOptions](../interfaces/_commands_validator_.ivalidatorcommandoptions.md), `logger`: ILogger): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-cli/src/commands/validator.ts#L36)*
+*Defined in [packages/lodestar-cli/src/commands/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-cli/src/commands/validator.ts#L36)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/validator.ts:19](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-cli/src/commands/validator.ts#L19)*
+*Defined in [packages/lodestar-cli/src/commands/validator.ts:19](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-cli/src/commands/validator.ts#L19)*
 
 **Parameters:**
 

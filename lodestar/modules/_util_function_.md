@@ -18,7 +18,7 @@
 
 Ƭ **GetInstanceFunc**: *function*
 
-*Defined in [packages/lodestar/src/util/function.ts:2](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/util/function.ts#L2)*
+*Defined in [packages/lodestar/src/util/function.ts:2](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/util/function.ts#L2)*
 
 #### Type declaration:
 
@@ -36,7 +36,7 @@ Name | Type |
 
 ▸ **retryable**<**T**>(`funcGen`: Generator‹[GetInstanceFunc](_util_function_.md#getinstancefunc)‹T›› | [GetInstanceFunc](_util_function_.md#getinstancefunc)‹T›, `retry`: number): *Promise‹T | null›*
 
-*Defined in [packages/lodestar/src/util/function.ts:4](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/util/function.ts#L4)*
+*Defined in [packages/lodestar/src/util/function.ts:4](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/util/function.ts#L4)*
 
 **Type parameters:**
 
