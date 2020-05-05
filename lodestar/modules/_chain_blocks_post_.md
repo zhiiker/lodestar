@@ -16,7 +16,7 @@
 
 ▸ **postProcess**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/chain/blocks/post.ts#L10)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/chain/blocks/post.ts#L10)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **setFinalized**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preFinalizedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:65](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/chain/blocks/post.ts#L65)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:65](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/chain/blocks/post.ts#L65)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **setJustified**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preJustifiedEpoch`: Epoch): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:46](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/chain/blocks/post.ts#L46)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:46](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/chain/blocks/post.ts#L46)*
 
 **Parameters:**
 

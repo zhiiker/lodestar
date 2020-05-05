@@ -16,7 +16,7 @@
 
 • **CLIENT_SHUTDOWN**: = 1
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:36](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/sync/reqResp/reqResp.ts#L36)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:36](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/sync/reqResp/reqResp.ts#L36)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **ERROR**: = 3
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:38](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/sync/reqResp/reqResp.ts#L38)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:38](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/sync/reqResp/reqResp.ts#L38)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **IRRELEVANT_NETWORK**: = 2
 
-*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:37](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/sync/reqResp/reqResp.ts#L37)*
+*Defined in [packages/lodestar/src/sync/reqResp/reqResp.ts:37](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/sync/reqResp/reqResp.ts#L37)*

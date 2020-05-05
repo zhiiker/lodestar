@@ -4,6 +4,10 @@
 
 ## Index
 
+### Type aliases
+
+* [Endianness](_bytes_.md#endianness)
+
 ### Functions
 
 * [bigIntToBytes](_bytes_.md#biginttobytes)
@@ -13,36 +17,46 @@
 * [intToBytes](_bytes_.md#inttobytes)
 * [toHex](_bytes_.md#tohex)
 
+## Type aliases
+
+###  Endianness
+
+Ƭ **Endianness**: *"le" | "be"*
+
+*Defined in [bytes.ts:6](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L6)*
+
 ## Functions
 
 ###  bigIntToBytes
 
-▸ **bigIntToBytes**(`value`: bigint, `length`: number): *Uint8Array*
+▸ **bigIntToBytes**(`value`: bigint, `length`: number, `endianness`: [Endianness](_bytes_.md#endianness)): *Buffer*
 
-*Defined in [bytes.ts:32](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L32)*
+*Defined in [bytes.ts:22](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L22)*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`value` | bigint |
-`length` | number |
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | bigint | - |
+`length` | number | - |
+`endianness` | [Endianness](_bytes_.md#endianness) | "le" |
 
-**Returns:** *Uint8Array*
+**Returns:** *Buffer*
 
 ___
 
 ###  bytesToBigInt
 
-▸ **bytesToBigInt**(`value`: Uint8Array): *bigint*
+▸ **bytesToBigInt**(`value`: Uint8Array, `endianness`: [Endianness](_bytes_.md#endianness)): *bigint*
 
-*Defined in [bytes.ts:28](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L28)*
+*Defined in [bytes.ts:31](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L31)*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`value` | Uint8Array |
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | Uint8Array | - |
+`endianness` | [Endianness](_bytes_.md#endianness) | "le" |
 
 **Returns:** *bigint*
 
@@ -50,17 +64,18 @@ ___
 
 ###  bytesToInt
 
-▸ **bytesToInt**(`value`: Uint8Array): *number*
+▸ **bytesToInt**(`value`: Uint8Array, `endianness`: [Endianness](_bytes_.md#endianness)): *number*
 
-*Defined in [bytes.ts:19](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L19)*
+*Defined in [bytes.ts:18](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L18)*
 
 Convert byte array in LE to integer.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`value` | Uint8Array |
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | Uint8Array | - |
+`endianness` | [Endianness](_bytes_.md#endianness) | "le" |
 
 **Returns:** *number*
 
@@ -70,7 +85,7 @@ ___
 
 ▸ **fromHex**(`hex`: string): *Uint8Array*
 
-*Defined in [bytes.ts:42](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L42)*
+*Defined in [bytes.ts:45](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L45)*
 
 **Parameters:**
 
@@ -84,18 +99,19 @@ ___
 
 ###  intToBytes
 
-▸ **intToBytes**(`value`: bigint | number, `length`: number): *Buffer*
+▸ **intToBytes**(`value`: bigint | number, `length`: number, `endianness`: [Endianness](_bytes_.md#endianness)): *Buffer*
 
-*Defined in [bytes.ts:5](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L5)*
+*Defined in [bytes.ts:11](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L11)*
 
 Return a byte array from a number or BigInt
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`value` | bigint &#124; number |
-`length` | number |
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | bigint &#124; number | - |
+`length` | number | - |
+`endianness` | [Endianness](_bytes_.md#endianness) | "le" |
 
 **Returns:** *Buffer*
 
@@ -105,7 +121,7 @@ ___
 
 ▸ **toHex**(`buffer`: Uint8Array): *string*
 
-*Defined in [bytes.ts:38](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar-utils/src/bytes.ts#L38)*
+*Defined in [bytes.ts:41](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar-utils/src/bytes.ts#L41)*
 
 **Parameters:**
 

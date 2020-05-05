@@ -18,13 +18,13 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/node/options.ts:25](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L25)*
+*Defined in [packages/lodestar/src/node/options.ts:25](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L25)*
 
 ###  api
 
 • **api**: *object* = defaultApiOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:28](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L28)*
+*Defined in [packages/lodestar/src/node/options.ts:28](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L28)*
 
 #### Type declaration:
 
@@ -44,40 +44,40 @@
 
 • **chain**: *[IChainOptions](../interfaces/_chain_options_.ichainoptions.md)* = defaultChainOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:26](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L26)*
+*Defined in [packages/lodestar/src/node/options.ts:26](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L26)*
 
 ###  db
 
 • **db**: *[IDatabaseOptions](../interfaces/_db_options_.idatabaseoptions.md)* = defaultDatabaseOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:27](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L27)*
+*Defined in [packages/lodestar/src/node/options.ts:27](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L27)*
 
 ###  eth1
 
 • **eth1**: *[IEth1Options](../interfaces/_eth1_options_.ieth1options.md)* = defaultEth1Options
 
-*Defined in [packages/lodestar/src/node/options.ts:29](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L29)*
+*Defined in [packages/lodestar/src/node/options.ts:29](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L29)*
 
 ###  logger
 
 • **logger**: *[IBeaconLoggerOptions](../interfaces/_node_loggeroptions_.ibeaconloggeroptions.md)* = defaultLoggerOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:32](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L32)*
+*Defined in [packages/lodestar/src/node/options.ts:32](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L32)*
 
 ###  metrics
 
 • **metrics**: *[IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md)* = defaultMetricsOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:33](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L33)*
+*Defined in [packages/lodestar/src/node/options.ts:33](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L33)*
 
 ###  network
 
 • **network**: *[INetworkOptions](../interfaces/_network_options_.inetworkoptions.md)* = defaultNetworkOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:30](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L30)*
+*Defined in [packages/lodestar/src/node/options.ts:30](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L30)*
 
 ###  sync
 
 • **sync**: *[ISyncOptions](../interfaces/_sync_options_.isyncoptions.md)* = defaultSyncOptions
 
-*Defined in [packages/lodestar/src/node/options.ts:31](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/node/options.ts#L31)*
+*Defined in [packages/lodestar/src/node/options.ts:31](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/node/options.ts#L31)*

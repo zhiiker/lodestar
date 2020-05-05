@@ -20,7 +20,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:24](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/eth1/impl/ethers.ts#L24)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:24](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/eth1/impl/ethers.ts#L24)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:25](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/eth1/impl/ethers.ts#L25)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:25](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/eth1/impl/ethers.ts#L25)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:26](https://github.com/ChainSafe/lodestar/blob/9dda0faba/packages/lodestar/src/eth1/impl/ethers.ts#L26)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:26](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/eth1/impl/ethers.ts#L26)*
