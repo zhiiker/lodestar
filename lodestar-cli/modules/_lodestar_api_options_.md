@@ -14,13 +14,13 @@
 
 ### ▪ **ApiOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:4](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/lodestar/api/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:4](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-cli/src/lodestar/api/options.ts#L4)*
 
 ###  description
 
 • **description**: *string* = "Options related to api interfaces"
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:6](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/lodestar/api/options.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:6](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-cli/src/lodestar/api/options.ts#L6)*
 
 ###  fields
 
@@ -28,10 +28,10 @@
     RestOptions,
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:7](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/lodestar/api/options.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:7](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-cli/src/lodestar/api/options.ts#L7)*
 
 ###  name
 
 • **name**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:5](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar-cli/src/lodestar/api/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/options.ts:5](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-cli/src/lodestar/api/options.ts#L5)*

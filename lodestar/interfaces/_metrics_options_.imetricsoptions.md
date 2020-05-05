@@ -22,7 +22,7 @@
 
 • **enabled**: *boolean*
 
-*Defined in [packages/lodestar/src/metrics/options.ts:6](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/metrics/options.ts#L6)*
+*Defined in [packages/lodestar/src/metrics/options.ts:6](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/metrics/options.ts#L6)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **gatewayUrl**? : *string*
 
-*Defined in [packages/lodestar/src/metrics/options.ts:10](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/metrics/options.ts#L10)*
+*Defined in [packages/lodestar/src/metrics/options.ts:10](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/metrics/options.ts#L10)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **pushGateway**: *boolean*
 
-*Defined in [packages/lodestar/src/metrics/options.ts:8](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/metrics/options.ts#L8)*
+*Defined in [packages/lodestar/src/metrics/options.ts:8](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/metrics/options.ts#L8)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **serverPort**? : *number*
 
-*Defined in [packages/lodestar/src/metrics/options.ts:9](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/metrics/options.ts#L9)*
+*Defined in [packages/lodestar/src/metrics/options.ts:9](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/metrics/options.ts#L9)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **timeout**: *number*
 
-*Defined in [packages/lodestar/src/metrics/options.ts:7](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/metrics/options.ts#L7)*
+*Defined in [packages/lodestar/src/metrics/options.ts:7](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/metrics/options.ts#L7)*

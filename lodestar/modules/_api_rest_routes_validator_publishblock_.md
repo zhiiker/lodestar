@@ -22,7 +22,7 @@
 
 ▸ **registerBlockPublishEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:28](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L28)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:28](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L28)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:13](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:13](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L13)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:17](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:17](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L17)*
 
 * **body**: *object*
 

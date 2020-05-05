@@ -23,7 +23,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/network/network.ts:29](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L29)*
+*Defined in [packages/lodestar/src/network/network.ts:29](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L29)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/network.ts:24](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L24)*
+*Defined in [packages/lodestar/src/network/network.ts:24](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L24)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/network.ts:25](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L25)*
+*Defined in [packages/lodestar/src/network/network.ts:25](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L25)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/network.ts:26](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L26)*
+*Defined in [packages/lodestar/src/network/network.ts:26](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L26)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **metrics**: *[IBeaconMetrics](_metrics_interface_.ibeaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/network/network.ts:27](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L27)*
+*Defined in [packages/lodestar/src/network/network.ts:27](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L27)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **validator**: *[IGossipMessageValidator](_network_gossip_interface_.igossipmessagevalidator.md)*
 
-*Defined in [packages/lodestar/src/network/network.ts:28](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/network/network.ts#L28)*
+*Defined in [packages/lodestar/src/network/network.ts:28](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/network.ts#L28)*

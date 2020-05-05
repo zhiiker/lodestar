@@ -61,7 +61,7 @@ See https://github.com/protolambda/lmd-ghost#state-ful-dag
 
 \+ **new StatefulDagLMDGHOST**(`config`: IBeaconConfig): *[StatefulDagLMDGHOST](_chain_forkchoice_statefuldag_lmdghost_.statefuldaglmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:241](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L241)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:241](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L241)*
 
 **Parameters:**
 
@@ -77,7 +77,7 @@ Name | Type |
 
 • **aggregator**: *[AttestationAggregator](_chain_forkchoice_statefuldag_attestationaggregator_.attestationaggregator.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:220](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L220)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:220](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L220)*
 
 Aggregated attestations
 
@@ -87,7 +87,7 @@ ___
 
 • **bestJustifiedCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:239](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L239)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:239](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L239)*
 
 Best justified checkpoint.
 
@@ -97,7 +97,7 @@ ___
 
 • **clock**: *[IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:241](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L241)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:241](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L241)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:214](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L214)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:214](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L214)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 • **finalized**: *object | null*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:230](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L230)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:230](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L230)*
 
 Last finalized block
 
@@ -123,7 +123,7 @@ ___
 
 • **genesisTime**: *Number64*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:215](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L215)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:215](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L215)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 • **justified**: *object | null*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:235](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L235)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:235](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L235)*
 
 Last justified block
 
@@ -141,7 +141,7 @@ ___
 
 • **nodes**: *Record‹[RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex), [Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:225](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L225)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:225](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L225)*
 
 Recently seen blocks, pruned up to last finalized block
 
@@ -151,7 +151,7 @@ ___
 
 • **synced**: *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:240](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L240)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:240](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L240)*
 
 ## Methods
 
@@ -161,7 +161,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:353](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L353)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:353](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L353)*
 
 **Parameters:**
 
@@ -179,7 +179,7 @@ ___
 
 ▸ **addBlock**(`__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:276](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L276)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:276](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L276)*
 
 **Parameters:**
 
@@ -202,7 +202,7 @@ ___
 
 ▸ **ensureCorrectBestTargets**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:344](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L344)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:344](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L344)*
 
 **Returns:** *void*
 
@@ -212,7 +212,7 @@ ___
 
 ▸ **getAncestor**(`root`: [RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex), `slot`: Slot): *[RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex) | null*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:467](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L467)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:467](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L467)*
 
 **Parameters:**
 
@@ -231,7 +231,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:420](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L420)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:420](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L420)*
 
 **Returns:** *Checkpoint*
 
@@ -241,7 +241,7 @@ ___
 
 ▸ **getFinalizedCheckpoint**(): *[HexCheckpoint](../interfaces/_chain_forkchoice_statefuldag_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:446](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L446)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:446](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L446)*
 
 Don't want to check the initial justified/finalized checkpoint for the 1st epoch
 because initial state does not have checkpoints in database.
@@ -258,7 +258,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:413](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L413)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:413](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L413)*
 
 **Returns:** *Checkpoint*
 
@@ -268,7 +268,7 @@ ___
 
 ▸ **getJustifiedCheckpoint**(): *[HexCheckpoint](../interfaces/_chain_forkchoice_statefuldag_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:433](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L433)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:433](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L433)*
 
 Don't want to check the initial justified/finalized checkpoint for the 1st epoch
 because initial state does not have checkpoints in database.
@@ -283,7 +283,7 @@ ___
 
 ▸ **getNode**(`blockRootBuf`: Uint8Array): *[Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:338](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L338)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:338](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L338)*
 
 **Parameters:**
 
@@ -301,7 +301,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:378](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L378)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:378](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L378)*
 
 **Returns:** *Uint8Array*
 
@@ -313,7 +313,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:386](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L386)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:386](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L386)*
 
 **Returns:** *Uint8Array*
 
@@ -323,7 +323,7 @@ ___
 
 ▸ **onTick**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:268](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L268)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:268](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L268)*
 
 **Returns:** *void*
 
@@ -333,7 +333,7 @@ ___
 
 ▸ **prune**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:482](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L482)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:482](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L482)*
 
 **Returns:** *void*
 
@@ -343,7 +343,7 @@ ___
 
 ▸ **setFinalized**(`checkpoint`: Checkpoint): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:453](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L453)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:453](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L453)*
 
 **Parameters:**
 
@@ -359,7 +359,7 @@ ___
 
 ▸ **setJustified**(`checkpoint`: Checkpoint): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:461](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L461)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:461](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L461)*
 
 **Parameters:**
 
@@ -375,7 +375,7 @@ ___
 
 ▸ **shouldUpdateJustifiedCheckpoint**(`blockRoot`: Uint8Array): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:396](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L396)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:396](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L396)*
 
 **Parameters:**
 
@@ -393,7 +393,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:257](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L257)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:257](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L257)*
 
 Start method, should not wait for it.
 
@@ -414,7 +414,7 @@ ___
 
 *Implementation of [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:264](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L264)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:264](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L264)*
 
 **Returns:** *Promise‹void›*
 
@@ -424,6 +424,6 @@ ___
 
 ▸ **syncChanges**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:362](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L362)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:362](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L362)*
 
 **Returns:** *void*

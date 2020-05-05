@@ -21,7 +21,7 @@
 
 • **db**? : *LevelUp*
 
-*Defined in [packages/lodestar/src/db/controller/impl/level.ts:14](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/controller/impl/level.ts#L14)*
+*Defined in [packages/lodestar/src/db/controller/impl/level.ts:14](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/db/controller/impl/level.ts#L14)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 *Inherited from [IDatabaseOptions](_db_options_.idatabaseoptions.md).[name](_db_options_.idatabaseoptions.md#name)*
 
-*Defined in [packages/lodestar/src/db/options.ts:2](https://github.com/ChainSafe/lodestar/blob/ffd9c8178/packages/lodestar/src/db/options.ts#L2)*
+*Defined in [packages/lodestar/src/db/options.ts:2](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/db/options.ts#L2)*
