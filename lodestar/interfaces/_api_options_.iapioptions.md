@@ -18,4 +18,4 @@
 
 • **rest**: *[IRestApiOptions](_api_rest_options_.irestapioptions.md)*
 
-*Defined in [packages/lodestar/src/api/options.ts:5](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/api/options.ts#L5)*
+*Defined in [packages/lodestar/src/api/options.ts:5](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/api/options.ts#L5)*

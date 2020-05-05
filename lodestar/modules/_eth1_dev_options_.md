@@ -14,13 +14,13 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/eth1/dev/options.ts:7](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/eth1/dev/options.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/dev/options.ts:7](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/eth1/dev/options.ts#L7)*
 
 ###  depositContract
 
 • **depositContract**: *object* = defaultEth1.depositContract
 
-*Defined in [packages/lodestar/src/eth1/dev/options.ts:10](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/eth1/dev/options.ts#L10)*
+*Defined in [packages/lodestar/src/eth1/dev/options.ts:10](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/eth1/dev/options.ts#L10)*
 
 #### Type declaration:
 
@@ -36,7 +36,7 @@
 
 • **provider**: *object* = defaultEth1.provider
 
-*Defined in [packages/lodestar/src/eth1/dev/options.ts:8](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/eth1/dev/options.ts#L8)*
+*Defined in [packages/lodestar/src/eth1/dev/options.ts:8](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/eth1/dev/options.ts#L8)*
 
 #### Type declaration:
 
@@ -48,4 +48,4 @@
 
 • **providerInstance**: *JsonRpcProvider‹›* = new ethers.providers.JsonRpcProvider("http://localhost:8545", 200)
 
-*Defined in [packages/lodestar/src/eth1/dev/options.ts:9](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/eth1/dev/options.ts#L9)*
+*Defined in [packages/lodestar/src/eth1/dev/options.ts:9](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/eth1/dev/options.ts#L9)*

@@ -15,7 +15,7 @@
 
 ▸ **isObjectObject**(`val`: unknown): *boolean*
 
-*Defined in [objects.ts:5](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-utils/src/objects.ts#L5)*
+*Defined in [objects.ts:5](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-utils/src/objects.ts#L5)*
 
 **`module`** objects
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **isPlainObject**(`o`: any): *boolean*
 
-*Defined in [objects.ts:10](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-utils/src/objects.ts#L10)*
+*Defined in [objects.ts:10](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-utils/src/objects.ts#L10)*
 
 **Parameters:**
 

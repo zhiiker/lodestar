@@ -18,7 +18,7 @@
 
 Ƭ **GossipHandlerFn**: *function*
 
-*Defined in [packages/lodestar/src/network/gossip/gossip.ts:43](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/network/gossip/gossip.ts#L43)*
+*Defined in [packages/lodestar/src/network/gossip/gossip.ts:43](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/network/gossip/gossip.ts#L43)*
 
 #### Type declaration:
 

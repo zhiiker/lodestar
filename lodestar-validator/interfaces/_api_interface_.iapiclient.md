@@ -77,7 +77,7 @@ ___
 
 • **beacon**: *[IBeaconApi](_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L23)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L23)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **url**: *string*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L27)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L27)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **validator**: *[IValidatorApi](_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L25)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L25)*
 
 ## Methods
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **connect**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L32)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L32)*
 
 Initiates connection to rpc server.
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **disconnect**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L37)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L37)*
 
 Destroys connection to rpc server.
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **getCurrentSlot**(): *Slot*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L39)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L39)*
 
 **Returns:** *Slot*
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **onNewEpoch**(`cb`: [INewEpochCallback](_api_interface_.inewepochcallback.md)): *void*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L54)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L54)*
 
 Invokes callback on new epoch.
 Depending on implementation it will poll for new epoch or getting notified(Websockets)
@@ -154,7 +154,7 @@ ___
 
 ▸ **onNewSlot**(`cb`: [INewSlotCallback](_api_interface_.inewslotcallback.md)): *void*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar-validator/src/api/interface.ts#L46)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar-validator/src/api/interface.ts#L46)*
 
 Invokes callback on new slot.
 Depending on implementation it will poll for new slot or getting notified(Websockets)

@@ -23,4 +23,4 @@
 
 • **BASE_REVISION**: *"1"* = "1"
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:16](https://github.com/ChainSafe/lodestar/blob/af95f0522/packages/lodestar/src/db/controller/impl/pouch.ts#L16)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:16](https://github.com/ChainSafe/lodestar/blob/e142df2b7/packages/lodestar/src/db/controller/impl/pouch.ts#L16)*
