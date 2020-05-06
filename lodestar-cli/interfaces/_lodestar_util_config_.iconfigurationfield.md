@@ -28,7 +28,7 @@
 
 • **cli**? : *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:8](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:8](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L8)*
 
 #### Type declaration:
 
@@ -42,7 +42,7 @@ ___
 
 • **configurable**: *boolean*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:5](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:5](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L5)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **description**? : *string*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:4](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:4](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L4)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:2](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L2)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:2](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L2)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **process**? : *function*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:7](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:7](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L7)*
 
 #### Type declaration:
 
@@ -84,7 +84,7 @@ ___
 
 • **type**: *T*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:3](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:3](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L3)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **validation**? : *function*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:6](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-cli/src/lodestar/util/config.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:6](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-cli/src/lodestar/util/config.ts#L6)*
 
 #### Type declaration:
 

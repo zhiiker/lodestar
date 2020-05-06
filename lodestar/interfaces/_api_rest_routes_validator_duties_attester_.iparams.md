@@ -24,4 +24,4 @@
 
 • **epoch**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:7](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:7](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L7)*

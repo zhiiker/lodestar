@@ -23,4 +23,4 @@
 
 • **MAX_VERSION**: *Buffer‹›* = Buffer.from([255, 255, 255, 255])
 
-*Defined in [packages/lodestar/src/chain/chain.ts:51](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/chain/chain.ts#L51)*
+*Defined in [packages/lodestar/src/chain/chain.ts:51](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar/src/chain/chain.ts#L51)*

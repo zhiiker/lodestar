@@ -23,7 +23,7 @@
 
 • **env**: *ProcessEnv* = process.env
 
-*Defined in [multi.ts:28](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-spec-test-util/src/multi.ts#L28)*
+*Defined in [multi.ts:28](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-spec-test-util/src/multi.ts#L28)*
 
 ## Functions
 
@@ -31,7 +31,7 @@
 
 ▸ **describeMultiSpec**<**TestCase**, **Result**>(`testYamlPath`: string, `testFunc`: function, `getInput`: function, `getExpected`: function, `getActual`: function, `shouldError`: (Anonymous function), `shouldSkip`: (Anonymous function), `expectFunc`: (Anonymous function), `timeout`: number): *void*
 
-*Defined in [multi.ts:48](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar-spec-test-util/src/multi.ts#L48)*
+*Defined in [multi.ts:48](https://github.com/ChainSafe/lodestar/blob/0cfbab631/packages/lodestar-spec-test-util/src/multi.ts#L48)*
 
 Run yaml Eth2.0 bulk spec tests (m) for a certain function
 Compares actual vs expected for all test cases
