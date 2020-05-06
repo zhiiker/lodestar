@@ -34,7 +34,7 @@
 
 \+ **new RestApi**(`opts`: [IRestApiOptions](../interfaces/_api_rest_options_.irestapioptions.md), `modules`: [IRestApiModules](../interfaces/_api_rest_interface_.irestapimodules.md)): *[RestApi](_api_rest_index_.restapi.md)*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:18](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L18)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:18](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L18)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Name | Type |
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:18](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L18)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:18](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L18)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **opts**: *[IRestApiOptions](../interfaces/_api_rest_options_.irestapioptions.md)*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:17](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:17](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L17)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **server**: *FastifyInstance*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:15](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L15)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:15](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L15)*
 
 ## Methods
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **setupServer**(`modules`: [IRestApiModules](../interfaces/_api_rest_interface_.irestapimodules.md)): *FastifyInstance*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:43](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L43)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:43](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L43)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:29](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L29)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:29](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L29)*
 
 **Returns:** *Promise‹void›*
 
@@ -105,6 +105,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/api/rest/index.ts:39](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/api/rest/index.ts#L39)*
+*Defined in [packages/lodestar/src/api/rest/index.ts:39](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/api/rest/index.ts#L39)*
 
 **Returns:** *Promise‹void›*

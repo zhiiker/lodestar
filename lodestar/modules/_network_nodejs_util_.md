@@ -16,7 +16,7 @@
 
 ▸ **createNodeJsLibp2p**(`peerIdOrPromise`: PeerId | Promise‹PeerId›, `network`: Partial‹[INetworkOptions](../interfaces/_network_options_.inetworkoptions.md)›, `autoDial`: boolean): *Promise‹LibP2p›*
 
-*Defined in [packages/lodestar/src/network/nodejs/util.ts:34](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/network/nodejs/util.ts#L34)*
+*Defined in [packages/lodestar/src/network/nodejs/util.ts:34](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/network/nodejs/util.ts#L34)*
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **loadPeerIdFromJsonFile**(`path`: string): *Promise‹PeerId›*
 
-*Defined in [packages/lodestar/src/network/nodejs/util.ts:24](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/network/nodejs/util.ts#L24)*
+*Defined in [packages/lodestar/src/network/nodejs/util.ts:24](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/network/nodejs/util.ts#L24)*
 
 Load a peer id from disk
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **savePeerId**(`path`: string, `peerId`: PeerId): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/nodejs/util.ts:17](https://github.com/ChainSafe/lodestar/blob/aa20a3bfb/packages/lodestar/src/network/nodejs/util.ts#L17)*
+*Defined in [packages/lodestar/src/network/nodejs/util.ts:17](https://github.com/ChainSafe/lodestar/blob/aa20a3b/packages/lodestar/src/network/nodejs/util.ts#L17)*
 
 Save a peer id to disk
 
