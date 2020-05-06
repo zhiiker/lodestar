@@ -19,7 +19,7 @@
 
 • **sync:checkpoint**: *function*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L21)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L21)*
 
 #### Type declaration:
 
@@ -37,7 +37,7 @@ ___
 
 • **sync:completed**: *function*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L22)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L22)*
 
 #### Type declaration:
 

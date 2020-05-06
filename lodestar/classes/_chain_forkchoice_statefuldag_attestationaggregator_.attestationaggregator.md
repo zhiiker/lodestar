@@ -33,7 +33,7 @@ as well as aggregated attestations per block root
 
 \+ **new AttestationAggregator**(`slotLookup`: function): *[AttestationAggregator](_chain_forkchoice_statefuldag_attestationaggregator_.attestationaggregator.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:28](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L28)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:28](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L28)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 • **latestAggregates**: *Record‹[RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex), [AggregatedAttestation](../interfaces/_chain_forkchoice_statefuldag_interface_.aggregatedattestation.md)›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:18](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L18)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:18](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L18)*
 
 aggregation: target -> sum of all attestations
 
@@ -65,7 +65,7 @@ ___
 
 • **latestAttestations**: *Record‹ValidatorIndex, [ForkChoiceAttestation](../interfaces/_chain_forkchoice_statefuldag_interface_.forkchoiceattestation.md)›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:23](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L23)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:23](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L23)*
 
 lookup: validator -> target + weight contributed by validator
 
@@ -75,7 +75,7 @@ ___
 
 • **slotLookup**: *function*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:28](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L28)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:28](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L28)*
 
 Rather than storing the slot on every attestation, a lookup function is required
 
@@ -95,7 +95,7 @@ Name | Type |
 
 ▸ **addAttestation**(`a`: [ForkChoiceAttestation](../interfaces/_chain_forkchoice_statefuldag_interface_.forkchoiceattestation.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:39](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L39)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:39](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L39)*
 
 Add an attestion into the aggregator
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **ensureAggregate**(`target`: [RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex)): *[AggregatedAttestation](../interfaces/_chain_forkchoice_statefuldag_interface_.aggregatedattestation.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:83](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L83)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:83](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L83)*
 
 **Parameters:**
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **prune**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:73](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L73)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts:73](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/chain/forkChoice/statefulDag/attestationAggregator.ts#L73)*
 
 Remove all unused aggregations
 

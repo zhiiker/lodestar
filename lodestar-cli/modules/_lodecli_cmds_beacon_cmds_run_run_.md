@@ -14,7 +14,7 @@
 
 ▸ **run**(`options`: Arguments‹[IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md) & Partial‹IBeaconNodeOptions››): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/run.ts:20](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/run.ts#L20)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/run.ts:20](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/run.ts#L20)*
 
 Run a beacon node
 

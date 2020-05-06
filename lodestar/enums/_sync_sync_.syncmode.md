@@ -18,7 +18,7 @@
 
 • **INITIAL_SYNCING**:
 
-*Defined in [packages/lodestar/src/sync/sync.ts:18](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/sync.ts#L18)*
+*Defined in [packages/lodestar/src/sync/sync.ts:18](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/sync.ts#L18)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **REGULAR_SYNCING**:
 
-*Defined in [packages/lodestar/src/sync/sync.ts:19](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/sync.ts#L19)*
+*Defined in [packages/lodestar/src/sync/sync.ts:19](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/sync.ts#L19)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **STOPPED**:
 
-*Defined in [packages/lodestar/src/sync/sync.ts:21](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/sync.ts#L21)*
+*Defined in [packages/lodestar/src/sync/sync.ts:21](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/sync.ts#L21)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **SYNCED**:
 
-*Defined in [packages/lodestar/src/sync/sync.ts:20](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/sync.ts#L20)*
+*Defined in [packages/lodestar/src/sync/sync.ts:20](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/sync.ts#L20)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **WAITING_PEERS**:
 
-*Defined in [packages/lodestar/src/sync/sync.ts:17](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/sync.ts#L17)*
+*Defined in [packages/lodestar/src/sync/sync.ts:17](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/sync.ts#L17)*

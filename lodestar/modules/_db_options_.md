@@ -18,10 +18,10 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/db/options.ts:5](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/db/options.ts#L5)*
+*Defined in [packages/lodestar/src/db/options.ts:5](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "./.tmp/lodestar-db"
 
-*Defined in [packages/lodestar/src/db/options.ts:6](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/db/options.ts#L6)*
+*Defined in [packages/lodestar/src/db/options.ts:6](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/options.ts#L6)*

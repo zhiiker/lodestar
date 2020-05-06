@@ -15,7 +15,7 @@
 
 • **args**: *string[]* = yargs.parse()._
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/createPeerId.ts:5](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/interop/createPeerId.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/createPeerId.ts:5](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/interop/createPeerId.ts#L5)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **filename**: *string* = args[0]
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/createPeerId.ts:6](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/interop/createPeerId.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/createPeerId.ts:6](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/interop/createPeerId.ts#L6)*

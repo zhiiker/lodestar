@@ -22,7 +22,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L14)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L14)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L13)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L13)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L17)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L17)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L15)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L15)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **reputationStore**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/sync/initial/interface.ts#L16)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/sync/initial/interface.ts#L16)*

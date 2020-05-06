@@ -23,7 +23,7 @@
 
 ▸ **booleanOption**(`name`: string, `flag`: string, `description`: string): *[IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md)*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:20](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/util/config.ts#L20)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:20](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/util/config.ts#L20)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **getCliFields**(`configuration`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *[IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md)‹unknown›[]*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:32](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/util/config.ts#L32)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:32](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/util/config.ts#L32)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **getField**(`description`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md), `name`: string): *[IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md) | [IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md)‹unknown› | undefined*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:67](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/util/config.ts#L67)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:67](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/util/config.ts#L67)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **isConfigurationModule**(`field`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md) | [IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md)‹unknown›): *boolean*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:76](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/util/config.ts#L76)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:76](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/util/config.ts#L76)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **validateConfig**<**T**>(`config`: object, `description`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *Partial‹T›*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:44](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar-cli/src/lodestar/util/config.ts#L44)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:44](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/lodestar/util/config.ts#L44)*
 
 **Type parameters:**
 

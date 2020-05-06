@@ -19,7 +19,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/db/api/abstract.ts#L6)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:6](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/abstract.ts#L6)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **controller**: *[IDatabaseController](_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:7](https://github.com/ChainSafe/lodestar/blob/6b0ca980c/packages/lodestar/src/db/api/abstract.ts#L7)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:7](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/abstract.ts#L7)*
