@@ -45,7 +45,7 @@ but instead expose relevent beacon chain objects
 
 • **aggregateAndProof**: *[AggregateAndProofRepository](../classes/_db_api_beacon_repositories_aggregateandproof_.aggregateandproofrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L51)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L51)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **attestation**: *[AttestationRepository](../classes/_db_api_beacon_repositories_attestation_.attestationrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L50)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L50)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **attesterSlashing**: *[AttesterSlashingRepository](../classes/_db_api_beacon_repositories_attesterslashing_.attesterslashingrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L54)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L54)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **badBlock**: *[BadBlockRepository](../classes/_db_api_beacon_repositories_badblock_.badblockrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L41)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L41)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **block**: *[BlockRepository](../classes/_db_api_beacon_repositories_block_.blockrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L44)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L44)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **blockArchive**: *[BlockArchiveRepository](../classes/_db_api_beacon_repositories_blockarchive_.blockarchiverepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L47)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L47)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **chain**: *[ChainRepository](../classes/_db_api_beacon_repositories_chain_.chainrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L35)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L35)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **depositData**: *[DepositDataRepository](../classes/_db_api_beacon_repositories_depositdata_.depositdatarepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L55)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L55)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **depositDataRoot**: *[DepositDataRootRepository](../classes/_db_api_beacon_repositories_depositdataroot_.depositdatarootrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L60)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L60)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 • **eth1Data**: *[Eth1DataRepository](../classes/_db_api_beacon_repositories_eth1data_.eth1datarepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:61](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L61)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:61](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L61)*
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 • **proposerSlashing**: *[ProposerSlashingRepository](../classes/_db_api_beacon_repositories_proposerslashing_.proposerslashingrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:53](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L53)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:53](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L53)*
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 • **state**: *[StateRepository](../classes/_db_api_beacon_repositories_state_.staterepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L38)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L38)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 • **voluntaryExit**: *[VoluntaryExitRepository](../classes/_db_api_beacon_repositories_voluntaryexit_.voluntaryexitrepository.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L52)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L52)*
 
 ## Methods
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **getValidatorIndex**(`publicKey`: BLSPubkey): *Promise‹ValidatorIndex | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:67](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L67)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:67](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L67)*
 
 Returns validator index coresponding to validator
 public key in registry,
@@ -168,7 +168,7 @@ ___
 
 ▸ **processBlockOperations**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:69](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L69)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:69](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L69)*
 
 **Parameters:**
 
@@ -184,7 +184,7 @@ ___
 
 ▸ **storeChainHead**(`block`: SignedBeaconBlock, `state`: BeaconState): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L74)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:74](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L74)*
 
 Stores block and state and set them as chain head
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **updateChainHead**(`blockRoot`: Uint8Array, `stateRoot`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:84](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/db/api/beacon/interface.ts#L84)*
+*Defined in [packages/lodestar/src/db/api/beacon/interface.ts:84](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/db/api/beacon/interface.ts#L84)*
 
 Fetches block and state by root and sets them as chain head
 

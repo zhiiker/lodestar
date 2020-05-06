@@ -14,7 +14,7 @@
 
 ▸ **validator**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `opts`: [ILodestarApiOpts](../interfaces/_api_rest_interface_.ilodestarapiopts.md), `callback`: function): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/index.ts:13](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/api/rest/routes/validator/index.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/index.ts:13](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/api/rest/routes/validator/index.ts#L13)*
 
 **Parameters:**
 

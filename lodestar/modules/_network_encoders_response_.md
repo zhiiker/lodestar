@@ -15,7 +15,7 @@
 
 ▸ **eth2ResponseDecode**(`config`: IBeaconConfig, `logger`: ILogger, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoders/response.ts:46](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/network/encoders/response.ts#L46)*
+*Defined in [packages/lodestar/src/network/encoders/response.ts:46](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/network/encoders/response.ts#L46)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **eth2ResponseEncode**(`config`: IBeaconConfig, `logger`: ILogger, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoders/response.ts:10](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar/src/network/encoders/response.ts#L10)*
+*Defined in [packages/lodestar/src/network/encoders/response.ts:10](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar/src/network/encoders/response.ts#L10)*
 
 **Parameters:**
 

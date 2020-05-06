@@ -23,7 +23,7 @@
 
 ▸ **action**(`options`: [IWalletCommandOptions](../interfaces/_commands_wallet_.iwalletcommandoptions.md), `logger`: ILogger): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/wallet.ts:44](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/commands/wallet.ts#L44)*
+*Defined in [packages/lodestar-cli/src/commands/wallet.ts:44](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/commands/wallet.ts#L44)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/wallet.ts:19](https://github.com/ChainSafe/lodestar/blob/6d8273318/packages/lodestar-cli/src/commands/wallet.ts#L19)*
+*Defined in [packages/lodestar-cli/src/commands/wallet.ts:19](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/commands/wallet.ts#L19)*
 
 **Parameters:**
 
