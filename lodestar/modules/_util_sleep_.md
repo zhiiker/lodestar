@@ -14,7 +14,7 @@
 
 ▸ **sleep**(`ms`: number): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/util/sleep.ts:1](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/util/sleep.ts#L1)*
+*Defined in [packages/lodestar/src/util/sleep.ts:1](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/util/sleep.ts#L1)*
 
 **Parameters:**
 

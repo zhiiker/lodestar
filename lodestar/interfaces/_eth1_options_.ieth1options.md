@@ -13,6 +13,7 @@
 ### Properties
 
 * [depositContract](_eth1_options_.ieth1options.md#depositcontract)
+* [enabled](_eth1_options_.ieth1options.md#enabled)
 * [provider](_eth1_options_.ieth1options.md#provider)
 * [providerInstance](_eth1_options_.ieth1options.md#optional-providerinstance)
 
@@ -22,7 +23,7 @@
 
 • **depositContract**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:12](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/eth1/options.ts#L12)*
+*Defined in [packages/lodestar/src/eth1/options.ts:13](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/options.ts#L13)*
 
 #### Type declaration:
 
@@ -36,11 +37,19 @@
 
 ___
 
+###  enabled
+
+• **enabled**: *boolean*
+
+*Defined in [packages/lodestar/src/eth1/options.ts:7](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/options.ts#L7)*
+
+___
+
 ###  provider
 
 • **provider**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:7](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/eth1/options.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/options.ts:8](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/options.ts#L8)*
 
 #### Type declaration:
 
@@ -54,4 +63,4 @@ ___
 
 • **providerInstance**? : *BaseProvider*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:11](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/eth1/options.ts#L11)*
+*Defined in [packages/lodestar/src/eth1/options.ts:12](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/options.ts#L12)*

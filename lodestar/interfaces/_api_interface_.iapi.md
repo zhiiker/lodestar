@@ -22,6 +22,6 @@
 
 • **namespace**: *[ApiNamespace](../enums/_api_index_.apinamespace.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/api/interface.ts#L33)*
+*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/api/interface.ts#L33)*
 
 Name space for API commands

@@ -14,7 +14,7 @@
 
 ▸ **assembleBody**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `currentState`: BeaconState, `randaoReveal`: Bytes96, `graffiti`: Bytes32): *Promise‹BeaconBlockBody›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/body.ts:12](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/chain/factory/block/body.ts#L12)*
+*Defined in [packages/lodestar/src/chain/factory/block/body.ts:12](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/chain/factory/block/body.ts#L12)*
 
 **Parameters:**
 

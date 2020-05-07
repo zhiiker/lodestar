@@ -19,7 +19,7 @@
 
 • **blockPerChunk**: *number*
 
-*Defined in [packages/lodestar/src/sync/options.ts:2](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/sync/options.ts#L2)*
+*Defined in [packages/lodestar/src/sync/options.ts:2](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/sync/options.ts#L2)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **minPeers**: *number*
 
-*Defined in [packages/lodestar/src/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar/src/sync/options.ts#L3)*
+*Defined in [packages/lodestar/src/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/sync/options.ts#L3)*
