@@ -14,13 +14,13 @@
 
 ### ▪ **RestOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:4](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:4](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L4)*
 
 ###  description
 
 • **description**: *string* = "Options to configure rest api server"
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:6](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:6](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L6)*
 
 ###  fields
 
@@ -61,10 +61,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:7](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:7](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L7)*
 
 ###  name
 
 • **name**: *string* = "rest"
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:5](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/rest/options.ts:5](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/api/rest/options.ts#L5)*

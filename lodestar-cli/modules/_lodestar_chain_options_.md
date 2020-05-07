@@ -14,13 +14,13 @@
 
 ### ▪ **ChainOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:3](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/chain/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:3](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/chain/options.ts#L3)*
 
 ###  description
 
 • **description**: *string* = "Chain specific configurations"
 
-*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:5](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/chain/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:5](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/chain/options.ts#L5)*
 
 ###  fields
 
@@ -49,10 +49,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:6](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/chain/options.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:6](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/chain/options.ts#L6)*
 
 ###  name
 
 • **name**: *string* = "chain"
 
-*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:4](https://github.com/ChainSafe/lodestar/blob/9ad0d0ff3/packages/lodestar-cli/src/lodestar/chain/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/chain/options.ts:4](https://github.com/ChainSafe/lodestar/blob/618cb3037/packages/lodestar-cli/src/lodestar/chain/options.ts#L4)*
