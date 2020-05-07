@@ -15,7 +15,7 @@
 
 • **SSZ**: = "ssz"
 
-*Defined in [single.ts:14](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar-spec-test-util/src/single.ts#L14)*
+*Defined in [single.ts:14](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-spec-test-util/src/single.ts#L14)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **YAML**: = "yaml"
 
-*Defined in [single.ts:15](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar-spec-test-util/src/single.ts#L15)*
+*Defined in [single.ts:15](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-spec-test-util/src/single.ts#L15)*

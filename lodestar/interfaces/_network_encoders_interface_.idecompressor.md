@@ -23,7 +23,7 @@
 
 ▸ **reset**(): *void*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/encoders/interface.ts#L7)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/encoders/interface.ts#L7)*
 
 **Returns:** *void*
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **uncompress**(`chunk`: Buffer): *Buffer | null*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/encoders/interface.ts#L5)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/encoders/interface.ts#L5)*
 
 **Parameters:**
 

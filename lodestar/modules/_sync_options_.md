@@ -18,16 +18,16 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/sync/options.ts:7](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/sync/options.ts#L7)*
+*Defined in [packages/lodestar/src/sync/options.ts:7](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/sync/options.ts#L7)*
 
 ###  blockPerChunk
 
 • **blockPerChunk**: *number* = 20
 
-*Defined in [packages/lodestar/src/sync/options.ts:9](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/sync/options.ts#L9)*
+*Defined in [packages/lodestar/src/sync/options.ts:9](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/sync/options.ts#L9)*
 
 ###  minPeers
 
 • **minPeers**: *number* = 1
 
-*Defined in [packages/lodestar/src/sync/options.ts:8](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/sync/options.ts#L8)*
+*Defined in [packages/lodestar/src/sync/options.ts:8](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/sync/options.ts#L8)*

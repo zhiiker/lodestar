@@ -22,7 +22,7 @@
 
 • **autoDial**: *boolean*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:18](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/nodejs/bundle.ts#L18)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:18](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/nodejs/bundle.ts#L18)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **bootnodes**? : *string[]*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:25](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/nodejs/bundle.ts#L25)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:25](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/nodejs/bundle.ts#L25)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **discv5**: *object*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:19](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/nodejs/bundle.ts#L19)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:19](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/nodejs/bundle.ts#L19)*
 
 #### Type declaration:
 
@@ -54,7 +54,7 @@ ___
 
 • **peerDiscovery**? : *LibP2pBootstrap | LibP2pMdns | Discv5Discovery[]*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:24](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/nodejs/bundle.ts#L24)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:24](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/nodejs/bundle.ts#L24)*
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 • **peerInfo**: *PeerInfo*
 
-*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:17](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/network/nodejs/bundle.ts#L17)*
+*Defined in [packages/lodestar/src/network/nodejs/bundle.ts:17](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/nodejs/bundle.ts#L17)*

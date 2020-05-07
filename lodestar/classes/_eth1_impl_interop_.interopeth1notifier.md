@@ -54,7 +54,7 @@
 
 \+ **new InteropEth1Notifier**(): *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:11](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L11)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:11](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L11)*
 
 **Returns:** *[InteropEth1Notifier](_eth1_impl_interop_.interopeth1notifier.md)*
 
@@ -139,7 +139,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:31](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L31)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:31](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L31)*
 
 **Parameters:**
 
@@ -155,7 +155,7 @@ ___
 
 ▸ **getDepositCount**(`blockTag`: string | number): *Promise‹number›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:22](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:22](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L22)*
 
 **Parameters:**
 
@@ -173,7 +173,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:28](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L28)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:28](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L28)*
 
 **Parameters:**
 
@@ -189,7 +189,7 @@ ___
 
 ▸ **getDepositRoot**(): *Promise‹Uint8Array›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:19](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L19)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:19](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L19)*
 
 **Returns:** *Promise‹Uint8Array›*
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **getEth1Data**(`blockHash`: string): *Promise‹Eth1Data›*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:25](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L25)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:25](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L25)*
 
 **Parameters:**
 
@@ -499,7 +499,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:16](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L16)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:16](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L16)*
 
 **Returns:** *Promise‹void›*
 
@@ -511,7 +511,7 @@ ___
 
 *Implementation of [IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/eth1/impl/interop.ts:17](https://github.com/ChainSafe/lodestar/blob/be953aad3/packages/lodestar/src/eth1/impl/interop.ts#L17)*
+*Defined in [packages/lodestar/src/eth1/impl/interop.ts:17](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/eth1/impl/interop.ts#L17)*
 
 **Returns:** *Promise‹void›*
 
