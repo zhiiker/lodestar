@@ -14,7 +14,7 @@
 
 ▸ **generateDeposits**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `state`: BeaconState, `eth1Data`: Eth1Data, `depositDataRootList`: TreeBacked‹List‹Root››): *Promise‹Deposit[]›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
+*Defined in [packages/lodestar/src/chain/factory/block/deposits.ts:10](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/chain/factory/block/deposits.ts#L10)*
 
 **Parameters:**
 

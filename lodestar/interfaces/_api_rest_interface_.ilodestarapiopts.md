@@ -20,7 +20,7 @@
 
 • **api**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/api/rest/interface.ts#L10)*
+*Defined in [packages/lodestar/src/api/rest/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/api/rest/interface.ts#L10)*
 
 #### Type declaration:
 
@@ -34,7 +34,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/api/rest/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/api/rest/interface.ts#L14)*
+*Defined in [packages/lodestar/src/api/rest/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/api/rest/interface.ts#L14)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **prefix**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/api/rest/interface.ts#L9)*
+*Defined in [packages/lodestar/src/api/rest/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/api/rest/interface.ts#L9)*

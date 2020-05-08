@@ -14,7 +14,7 @@
 
 ▸ **registerSyncingEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/syncing.ts:6](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/api/rest/routes/beacon/syncing.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/syncing.ts:6](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/api/rest/routes/beacon/syncing.ts#L6)*
 
 **Parameters:**
 
