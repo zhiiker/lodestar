@@ -15,7 +15,7 @@
 
 ▸ **handleIncomingVoluntaryExit**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `obj`: [GossipObject](_network_gossip_interface_.md#gossipobject)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts:12](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts#L12)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts:12](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts#L12)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **publishVoluntaryExit**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `voluntaryExit`: SignedVoluntaryExit): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts:24](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts#L24)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts:24](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar/src/network/gossip/handlers/voluntaryExit.ts#L24)*
 
 **Parameters:**
 

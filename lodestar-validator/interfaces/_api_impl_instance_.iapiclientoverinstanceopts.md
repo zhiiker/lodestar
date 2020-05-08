@@ -20,7 +20,7 @@
 
 • **beacon**: *[IBeaconApi](_api_interface_beacon_.ibeaconapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:8](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar-validator/src/api/impl/instance.ts#L8)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:8](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar-validator/src/api/impl/instance.ts#L8)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:7](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar-validator/src/api/impl/instance.ts#L7)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:7](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar-validator/src/api/impl/instance.ts#L7)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **validator**: *[IValidatorApi](_api_interface_validators_.ivalidatorapi.md)*
 
-*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:9](https://github.com/ChainSafe/lodestar/blob/905cc824b/packages/lodestar-validator/src/api/impl/instance.ts#L9)*
+*Defined in [packages/lodestar-validator/src/api/impl/instance.ts:9](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar-validator/src/api/impl/instance.ts#L9)*
