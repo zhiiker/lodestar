@@ -14,7 +14,7 @@
 
 ### ▪ **validatorClientCliConfiguration**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:6](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/lodestar/validator/options.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:6](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodestar/validator/options.ts#L6)*
 
 ###  fields
 
@@ -76,10 +76,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:8](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/lodestar/validator/options.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:8](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodestar/validator/options.ts#L8)*
 
 ###  name
 
 • **name**: *string* = "validator"
 
-*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:7](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/lodestar/validator/options.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodestar/validator/options.ts:7](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodestar/validator/options.ts#L7)*

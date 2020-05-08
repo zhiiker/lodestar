@@ -23,7 +23,7 @@
 
 • **beaconDir**: *string*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts:5](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts:5](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts#L5)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 *Inherited from [IGlobalArgs](_lodecli_options_.iglobalargs.md).[rootDir](_lodecli_options_.iglobalargs.md#rootdir)*
 
-*Defined in [packages/lodestar-cli/src/lodecli/options.ts:4](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/lodecli/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/options.ts:4](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/options.ts#L4)*

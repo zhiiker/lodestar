@@ -23,7 +23,7 @@
 
 ▸ **action**(`options`: [ICreateConfigOptions](../interfaces/_commands_create_config_.icreateconfigoptions.md), `logger`: ILogger): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/create-config.ts:42](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/commands/create-config.ts#L42)*
+*Defined in [packages/lodestar-cli/src/commands/create-config.ts:42](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/commands/create-config.ts#L42)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/create-config.ts:18](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-cli/src/commands/create-config.ts#L18)*
+*Defined in [packages/lodestar-cli/src/commands/create-config.ts:18](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/commands/create-config.ts#L18)*
 
 **Parameters:**
 

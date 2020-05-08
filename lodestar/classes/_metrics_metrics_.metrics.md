@@ -35,7 +35,7 @@
 
 \+ **new Metrics**(`opts`: [IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md)): *[Metrics](_metrics_metrics_.metrics.md)*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:14](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L14)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:14](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L14)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Name | Type |
 
 • **defaultInterval**: *Timeout | null* = null
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:13](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L13)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:13](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L13)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **opts**: *[IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md)*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:14](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L14)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:14](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L14)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 *Implementation of [IMetrics](../interfaces/_metrics_interface_.imetrics.md).[registry](../interfaces/_metrics_interface_.imetrics.md#registry)*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:11](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L11)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:11](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L11)*
 
 ## Methods
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:21](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L21)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:21](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L21)*
 
 **Returns:** *Promise‹void›*
 
@@ -87,6 +87,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:28](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/metrics/metrics.ts#L28)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:28](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/metrics/metrics.ts#L28)*
 
 **Returns:** *Promise‹void›*

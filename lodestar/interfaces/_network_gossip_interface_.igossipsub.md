@@ -311,7 +311,7 @@ ___
 
 ▸ **publish**(`topic`: string, `data`: Buffer): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/gossip/interface.ts#L48)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/network/gossip/interface.ts#L48)*
 
 **Parameters:**
 
@@ -416,7 +416,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/gossip/interface.ts#L49)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/network/gossip/interface.ts#L49)*
 
 **Returns:** *Promise‹void›*
 
@@ -426,7 +426,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/gossip/interface.ts#L50)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/network/gossip/interface.ts#L50)*
 
 **Returns:** *Promise‹void›*
 
@@ -436,7 +436,7 @@ ___
 
 ▸ **subscribe**(`topic`: string): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/gossip/interface.ts#L51)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/network/gossip/interface.ts#L51)*
 
 **Parameters:**
 
@@ -452,7 +452,7 @@ ___
 
 ▸ **unsubscribe**(`topic`: string): *void*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/network/gossip/interface.ts#L52)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/network/gossip/interface.ts#L52)*
 
 **Parameters:**
 

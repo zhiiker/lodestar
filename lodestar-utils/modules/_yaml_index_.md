@@ -15,7 +15,7 @@
 
 ▸ **dumpYaml**(`yaml`: any): *string*
 
-*Defined in [yaml/index.ts:15](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-utils/src/yaml/index.ts#L15)*
+*Defined in [yaml/index.ts:15](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-utils/src/yaml/index.ts#L15)*
 
 **Parameters:**
 
@@ -31,7 +31,7 @@ ___
 
 ▸ **loadYaml**(`yaml`: string): *object*
 
-*Defined in [yaml/index.ts:5](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar-utils/src/yaml/index.ts#L5)*
+*Defined in [yaml/index.ts:5](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-utils/src/yaml/index.ts#L5)*
 
 **Parameters:**
 

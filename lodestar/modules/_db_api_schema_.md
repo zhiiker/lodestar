@@ -19,7 +19,7 @@
 
 ▸ **encodeKey**(`bucket`: [Bucket](../enums/_db_api_schema_.bucket.md), `key`: Uint8Array | string | number | bigint): *Buffer*
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:52](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/db/api/schema.ts#L52)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:52](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/db/api/schema.ts#L52)*
 
 Prepend a bucket to a key
 

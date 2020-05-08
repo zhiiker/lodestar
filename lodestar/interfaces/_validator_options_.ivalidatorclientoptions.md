@@ -22,7 +22,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/validator/options.ts:12](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/validator/options.ts#L12)*
+*Defined in [packages/lodestar/src/validator/options.ts:12](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/validator/options.ts#L12)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **db**: *string*
 
-*Defined in [packages/lodestar/src/validator/options.ts:10](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/validator/options.ts#L10)*
+*Defined in [packages/lodestar/src/validator/options.ts:10](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/validator/options.ts#L10)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **logLevel**: *LogLevel*
 
-*Defined in [packages/lodestar/src/validator/options.ts:11](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/validator/options.ts#L11)*
+*Defined in [packages/lodestar/src/validator/options.ts:11](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/validator/options.ts#L11)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **restApi**: *string | IApiClient*
 
-*Defined in [packages/lodestar/src/validator/options.ts:9](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/validator/options.ts#L9)*
+*Defined in [packages/lodestar/src/validator/options.ts:9](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/validator/options.ts#L9)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **validatorKey**: *string*
 
-*Defined in [packages/lodestar/src/validator/options.ts:8](https://github.com/ChainSafe/lodestar/blob/b8a1302c0/packages/lodestar/src/validator/options.ts#L8)*
+*Defined in [packages/lodestar/src/validator/options.ts:8](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/validator/options.ts#L8)*
