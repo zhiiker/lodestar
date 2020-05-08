@@ -17,7 +17,7 @@
 
 ▸ **createPeerId**(): *Promise‹PeerId›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:5](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/network/peerId.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:5](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar-cli/src/lodecli/network/peerId.ts#L5)*
 
 **Returns:** *Promise‹PeerId›*
 
@@ -27,7 +27,7 @@ ___
 
 ▸ **initPeerId**(`filename`: string): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:17](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/network/peerId.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:17](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar-cli/src/lodecli/network/peerId.ts#L17)*
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ ___
 
 ▸ **readPeerId**(`filename`: string): *Promise‹PeerId›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:13](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/network/peerId.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:13](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar-cli/src/lodecli/network/peerId.ts#L13)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **writePeerId**(`filename`: string, `peerId`: PeerId): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:9](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar-cli/src/lodecli/network/peerId.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/network/peerId.ts:9](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar-cli/src/lodecli/network/peerId.ts#L9)*
 
 **Parameters:**
 

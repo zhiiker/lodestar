@@ -21,4 +21,4 @@
 
 Ƭ **Eth1EventEmitter**: *StrictEventEmitter‹EventEmitter, [IEth1Events](../interfaces/_eth1_interface_.ieth1events.md)›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/b6353573c/packages/lodestar/src/eth1/interface.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/89d8b8b11/packages/lodestar/src/eth1/interface.ts#L22)*
