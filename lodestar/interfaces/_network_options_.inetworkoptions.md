@@ -24,7 +24,7 @@
 
 • **bootnodes**: *string[]*
 
-*Defined in [packages/lodestar/src/network/options.ts:7](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L7)*
+*Defined in [packages/lodestar/src/network/options.ts:7](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L7)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **connectTimeout**: *number*
 
-*Defined in [packages/lodestar/src/network/options.ts:10](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L10)*
+*Defined in [packages/lodestar/src/network/options.ts:10](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L10)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **disconnectTimeout**: *number*
 
-*Defined in [packages/lodestar/src/network/options.ts:11](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L11)*
+*Defined in [packages/lodestar/src/network/options.ts:11](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L11)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **discv5**? : *IDiscv5DiscoveryInputOptions*
 
-*Defined in [packages/lodestar/src/network/options.ts:8](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L8)*
+*Defined in [packages/lodestar/src/network/options.ts:8](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L8)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **maxPeers**: *Number64*
 
-*Defined in [packages/lodestar/src/network/options.ts:5](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L5)*
+*Defined in [packages/lodestar/src/network/options.ts:5](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L5)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **multiaddrs**: *string[]*
 
-*Defined in [packages/lodestar/src/network/options.ts:6](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L6)*
+*Defined in [packages/lodestar/src/network/options.ts:6](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L6)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **rpcTimeout**: *Number64*
 
-*Defined in [packages/lodestar/src/network/options.ts:9](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/options.ts#L9)*
+*Defined in [packages/lodestar/src/network/options.ts:9](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar/src/network/options.ts#L9)*

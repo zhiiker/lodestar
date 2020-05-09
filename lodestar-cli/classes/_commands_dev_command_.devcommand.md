@@ -30,7 +30,7 @@
 
 • **node**: *BeaconNode*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:45](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L45)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:45](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L45)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **validators**: *ValidatorClient[]* = []
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:46](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L46)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:46](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L46)*
 
 ## Methods
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **action**(`options`: [IDevCommandOptions](../interfaces/_commands_dev_command_.idevcommandoptions.md), `logger`: ILogger): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:80](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L80)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:80](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L80)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:49](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L49)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:49](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L49)*
 
 **Parameters:**
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **startValidator**(`privkey`: Buffer, `node`: BeaconNode, `options`: [IDevCommandOptions](../interfaces/_commands_dev_command_.idevcommandoptions.md)): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:150](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L150)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:150](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L150)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **startValidators**(`from`: number, `to`: number, `node`: BeaconNode, `options`: [IDevCommandOptions](../interfaces/_commands_dev_command_.idevcommandoptions.md)): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:142](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar-cli/src/commands/dev/command.ts#L142)*
+*Defined in [packages/lodestar-cli/src/commands/dev/command.ts:142](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/dev/command.ts#L142)*
 
 **Parameters:**
 
