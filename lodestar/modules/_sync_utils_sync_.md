@@ -20,7 +20,7 @@
 
 ▸ **fetchBlockChunks**(`chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `reqResp`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `getPeers`: function, `blocksPerChunk`: number): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:76](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L76)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:76](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L76)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getCommonFinalizedCheckpoint**(`config`: IBeaconConfig, `peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[]): *Checkpoint | null*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:34](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L34)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:34](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L34)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **getHighestCommonSlot**(`peers`: [IReputation](../interfaces/_sync_ireputation_.ireputation.md)[]): *Slot*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:12](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L12)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:12](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L12)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **getStatusFinalizedCheckpoint**(`status`: Status): *Checkpoint*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:30](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L30)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:30](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L30)*
 
 **Parameters:**
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **processSyncBlocks**(`chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `logger`: ILogger, `trusted`: boolean): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:133](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L133)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:133](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L133)*
 
 **Parameters:**
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **targetSlotToBlockChunks**(`config`: IBeaconConfig, `chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:62](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L62)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:62](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L62)*
 
 **Parameters:**
 
@@ -156,7 +156,7 @@ ___
 
 ▸ **validateBlocks**(`config`: IBeaconConfig, `chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `logger`: ILogger, `onBlockVerificationFail`: Function): *function*
 
-*Defined in [packages/lodestar/src/sync/utils/sync.ts:101](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/utils/sync.ts#L101)*
+*Defined in [packages/lodestar/src/sync/utils/sync.ts:101](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/sync/utils/sync.ts#L101)*
 
 **Parameters:**
 

@@ -34,7 +34,7 @@
 
 \+ **new PrivateEth1Network**(`opts`: [IPrivateNetworkOpts](../interfaces/_eth1_dev_network_.iprivatenetworkopts.md), `__namedParameters`: object): *[PrivateEth1Network](_eth1_dev_network_.privateeth1network.md)*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:41](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L41)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:41](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L41)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ Name | Type |
 
 • **blockchain**: *any*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:37](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L37)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:37](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L37)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:41](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L41)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:41](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L41)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **opts**: *[IPrivateNetworkOpts](../interfaces/_eth1_dev_network_.iprivatenetworkopts.md)*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:39](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L39)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:39](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L39)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **server**: *any*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:35](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L35)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:35](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L35)*
 
 ## Methods
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **accounts**(): *string[]*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:81](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L81)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:81](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L81)*
 
 Returns array of private keys
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **deployDepositContract**(): *Promise‹string›*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:95](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L95)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:95](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L95)*
 
 **Returns:** *Promise‹string›*
 
@@ -108,7 +108,7 @@ ___
 
 ▸ **mnemonic**(): *string*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:91](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L91)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:91](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L91)*
 
 **Returns:** *string*
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **rpcUrl**(): *string*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:87](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L87)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:87](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L87)*
 
 **Returns:** *string*
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **start**(): *Promise‹string›*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:58](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L58)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:58](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L58)*
 
 **Returns:** *Promise‹string›*
 
@@ -138,6 +138,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:74](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/dev/network.ts#L74)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:74](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/dev/network.ts#L74)*
 
 **Returns:** *Promise‹void›*

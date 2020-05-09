@@ -31,7 +31,7 @@
 
 • **buffer**: *BufferList‹›* = new BufferList()
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:11](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L11)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:11](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L11)*
 
 ## Methods
 
@@ -41,7 +41,7 @@
 
 *Implementation of [IDecompressor](../interfaces/_network_encoders_interface_.idecompressor.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:65](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L65)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:65](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L65)*
 
 **Returns:** *void*
 
@@ -53,7 +53,7 @@ ___
 
 *Implementation of [IDecompressor](../interfaces/_network_encoders_interface_.idecompressor.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:22](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L22)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:22](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L22)*
 
 Accepts chunk of data containing some part of snappy frames stream
 
@@ -73,10 +73,10 @@ Buffer if there is one or more whole frames, null if it's partial
 
 ### ▪ **state**: *object*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:13](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L13)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:13](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L13)*
 
 ###  foundIdentifier
 
 • **foundIdentifier**: *false* = false
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:14](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L14)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:14](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L14)*

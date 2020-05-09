@@ -19,7 +19,7 @@
 
 • **deposit**: *function*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/interface.ts#L18)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/interface.ts#L18)*
 
 #### Type declaration:
 
@@ -38,11 +38,11 @@ ___
 
 • **eth1Data**: *function*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/eth1/interface.ts#L19)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/5eceb6c26/packages/lodestar/src/eth1/interface.ts#L19)*
 
 #### Type declaration:
 
-▸ (`timestamp`: number, `eth1Data`: Eth1Data): *void*
+▸ (`timestamp`: number, `eth1Data`: Eth1Data, `blockNumber`: number): *void*
 
 **Parameters:**
 
@@ -50,3 +50,4 @@ Name | Type |
 ------ | ------ |
 `timestamp` | number |
 `eth1Data` | Eth1Data |
+`blockNumber` | number |
