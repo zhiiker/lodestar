@@ -18,4 +18,4 @@
 
 • **urlPrefix**: *string*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:6](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar-validator/src/util/httpClient.ts#L6)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:6](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar-validator/src/util/httpClient.ts#L6)*

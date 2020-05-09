@@ -15,7 +15,7 @@
 
 Ƭ **IRegularSync**: *[IService](../interfaces/_node_nodejs_.iservice.md) & [ISyncModule](../interfaces/_sync_interface_.isyncmodule.md)*
 
-*Defined in [packages/lodestar/src/sync/regular/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar/src/sync/regular/interface.ts#L4)*
+*Defined in [packages/lodestar/src/sync/regular/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/regular/interface.ts#L4)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 Ƭ **IRegularSyncModules**: *Pick‹[ISyncModules](../interfaces/_sync_interface_.isyncmodules.md), "config" | "chain" | "network" | "logger" | "reputationStore"›*
 
-*Defined in [packages/lodestar/src/sync/regular/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar/src/sync/regular/interface.ts#L6)*
+*Defined in [packages/lodestar/src/sync/regular/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/sync/regular/interface.ts#L6)*

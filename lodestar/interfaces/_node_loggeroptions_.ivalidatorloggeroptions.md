@@ -18,4 +18,4 @@
 
 • **validator**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:15](https://github.com/ChainSafe/lodestar/blob/176e51ae9/packages/lodestar/src/node/loggerOptions.ts#L15)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:15](https://github.com/ChainSafe/lodestar/blob/0af429ee6/packages/lodestar/src/node/loggerOptions.ts#L15)*
