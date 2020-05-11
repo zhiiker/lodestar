@@ -19,7 +19,7 @@
 
 • **logLevel**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/create-config.ts:13](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/create-config.ts#L13)*
+*Defined in [packages/lodestar-cli/src/commands/create-config.ts:13](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar-cli/src/commands/create-config.ts#L13)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **outputFile**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/create-config.ts:14](https://github.com/ChainSafe/lodestar/blob/16dbdb2e2/packages/lodestar-cli/src/commands/create-config.ts#L14)*
+*Defined in [packages/lodestar-cli/src/commands/create-config.ts:14](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar-cli/src/commands/create-config.ts#L14)*
