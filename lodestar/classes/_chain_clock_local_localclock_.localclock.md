@@ -61,7 +61,7 @@
 
 \+ **new LocalClock**(`config`: IBeaconConfig, `genesisTime`: number): *[LocalClock](_chain_clock_local_localclock_.localclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:8](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L8)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:8](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L8)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **currentSlot**: *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:10](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L10)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:10](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L10)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **genesisTime**: *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:9](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L9)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:9](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L9)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **isRunning**: *boolean*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:11](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L11)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:11](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L11)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **timeoutId**: *Timeout*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:12](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L12)*
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:35](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L35)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:35](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L35)*
 
 **Returns:** *number*
 
@@ -203,7 +203,7 @@ ___
 
 ▸ **getDiffTillNextSlot**(): *number*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:73](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L73)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:73](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L73)*
 
 **Returns:** *number*
 
@@ -325,7 +325,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:39](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L39)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:39](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L39)*
 
 **Parameters:**
 
@@ -343,7 +343,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:43](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L43)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:43](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L43)*
 
 **Parameters:**
 
@@ -533,7 +533,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:22](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L22)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:22](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L22)*
 
 **Returns:** *Promise‹void›*
 
@@ -545,7 +545,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:30](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L30)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:30](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L30)*
 
 **Returns:** *Promise‹void›*
 
@@ -557,7 +557,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:47](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L47)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:47](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L47)*
 
 **Parameters:**
 
@@ -575,7 +575,7 @@ ___
 
 *Implementation of [IBeaconClock](../interfaces/_chain_clock_interface_.ibeaconclock.md)*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:51](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L51)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:51](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L51)*
 
 **Parameters:**
 
@@ -591,7 +591,7 @@ ___
 
 ▸ **updateSlot**(): *void*
 
-*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:55](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/chain/clock/local/LocalClock.ts#L55)*
+*Defined in [packages/lodestar/src/chain/clock/local/LocalClock.ts:55](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/clock/local/LocalClock.ts#L55)*
 
 **Returns:** *void*
 

@@ -32,7 +32,7 @@
 
 \+ **new RoundRobinArray**(`array`: T[]): *[RoundRobinArray](_sync_utils_robin_.roundrobinarray.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/sync/utils/robin.ts#L5)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/sync/utils/robin.ts#L5)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **array**: *T[]*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:3](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/sync/utils/robin.ts#L3)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:3](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/sync/utils/robin.ts#L3)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **index**: *number* = 0
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/sync/utils/robin.ts#L5)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/sync/utils/robin.ts#L5)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **next**(): *T*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:11](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/sync/utils/robin.ts#L11)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:11](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/sync/utils/robin.ts#L11)*
 
 **Returns:** *T*
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **shuffle**(`array`: T[]): *T[]*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:15](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar/src/sync/utils/robin.ts#L15)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:15](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/sync/utils/robin.ts#L15)*
 
 **Parameters:**
 

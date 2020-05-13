@@ -7,7 +7,7 @@
 ### References
 
 * [AttestationAggregator](_chain_forkchoice_index_.md#attestationaggregator)
-* [BlockChainInfo](_chain_forkchoice_index_.md#blockchaininfo)
+* [BlockSummary](_chain_forkchoice_index_.md#blocksummary)
 * [ILMDGHOST](_chain_forkchoice_index_.md#ilmdghost)
 * [Node](_chain_forkchoice_index_.md#node)
 * [StatefulDagLMDGHOST](_chain_forkchoice_index_.md#statefuldaglmdghost)
@@ -20,9 +20,9 @@
 
 ___
 
-###  BlockChainInfo
+###  BlockSummary
 
-• **BlockChainInfo**:
+• **BlockSummary**:
 
 ___
 

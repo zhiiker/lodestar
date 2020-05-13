@@ -15,7 +15,7 @@
 
 • **options**: *Record‹string, Options›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:4](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:4](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L4)*
 
 ___
 
@@ -23,6 +23,6 @@ ___
 
 • **paramsOptions**: *object* = options
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:15](https://github.com/ChainSafe/lodestar/blob/40c050469/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:15](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L15)*
 
 #### Type declaration:

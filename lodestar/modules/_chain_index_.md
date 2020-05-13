@@ -8,7 +8,7 @@
 
 * [AttestationAggregator](_chain_index_.md#attestationaggregator)
 * [BeaconChain](_chain_index_.md#beaconchain)
-* [BlockChainInfo](_chain_index_.md#blockchaininfo)
+* [BlockSummary](_chain_index_.md#blocksummary)
 * [ChainEventEmitter](_chain_index_.md#chaineventemitter)
 * [IAttestationProcessor](_chain_index_.md#iattestationprocessor)
 * [IBeaconChain](_chain_index_.md#ibeaconchain)
@@ -33,9 +33,9 @@ ___
 
 ___
 
-###  BlockChainInfo
+###  BlockSummary
 
-• **BlockChainInfo**:
+• **BlockSummary**:
 
 ___
 

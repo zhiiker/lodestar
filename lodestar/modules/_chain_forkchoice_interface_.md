@@ -6,5 +6,5 @@
 
 ### Interfaces
 
-* [BlockChainInfo](../interfaces/_chain_forkchoice_interface_.blockchaininfo.md)
+* [BlockSummary](../interfaces/_chain_forkchoice_interface_.blocksummary.md)
 * [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)
