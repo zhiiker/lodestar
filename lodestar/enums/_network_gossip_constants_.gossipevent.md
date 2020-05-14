@@ -20,7 +20,7 @@
 
 • **AGGREGATE_AND_PROOF**: = "beacon_aggregate_and_proof"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L10)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:10](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L10)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **ATTESTATION**: = "beacon_attestation"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L11)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L11)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **ATTESTATION_SUBNET**: = "committee_index{subnet}_beacon_attestation"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L12)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L12)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **ATTESTER_SLASHING**: = "attester_slashing"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L15)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:15](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L15)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **BLOCK**: = "beacon_block"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L9)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:9](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L9)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **PROPOSER_SLASHING**: = "proposer_slashing"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:14](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L14)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L14)*
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 • **VOLUNTARY_EXIT**: = "voluntary_exit"
 
-*Defined in [packages/lodestar/src/network/gossip/constants.ts:13](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/network/gossip/constants.ts#L13)*
+*Defined in [packages/lodestar/src/network/gossip/constants.ts:13](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/network/gossip/constants.ts#L13)*

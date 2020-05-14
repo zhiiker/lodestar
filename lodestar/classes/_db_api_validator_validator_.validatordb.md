@@ -43,7 +43,7 @@
 
 *Overrides [DatabaseService](_db_api_abstract_.databaseservice.md).[constructor](_db_api_abstract_.databaseservice.md#protected-constructor)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:14](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L14)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L14)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ Name | Type |
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[config](_db_api_abstract_.databaseservice.md#protected-config)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/abstract.ts#L12)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[db](_db_api_abstract_.databaseservice.md#protected-db)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/abstract.ts#L13)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/abstract.ts#L13)*
 
 ## Methods
 
@@ -81,7 +81,7 @@ ___
 
 *Implementation of [IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:54](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L54)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:54](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L54)*
 
 **Parameters:**
 
@@ -100,7 +100,7 @@ ___
 
 *Implementation of [IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L36)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L36)*
 
 **Parameters:**
 
@@ -119,7 +119,7 @@ ___
 
 *Implementation of [IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:19](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L19)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:19](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L19)*
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **incrementPubKey**(`pubKey`: BLSPubkey): *BLSPubkey*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:62](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L62)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:62](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L62)*
 
 **Parameters:**
 
@@ -153,7 +153,7 @@ ___
 
 *Implementation of [IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L47)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:47](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L47)*
 
 **Parameters:**
 
@@ -172,7 +172,7 @@ ___
 
 *Implementation of [IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/db/api/validator/validator.ts:29](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/validator/validator.ts#L29)*
+*Defined in [packages/lodestar/src/db/api/validator/validator.ts:29](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/validator/validator.ts#L29)*
 
 **Parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[start](_db_api_abstract_.databaseservice.md#start)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/abstract.ts#L20)*
 
 **Returns:** *Promise‹void›*
 
@@ -207,6 +207,6 @@ ___
 
 *Inherited from [DatabaseService](_db_api_abstract_.databaseservice.md).[stop](_db_api_abstract_.databaseservice.md#stop)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/db/api/abstract.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/db/api/abstract.ts#L24)*
 
 **Returns:** *Promise‹void›*

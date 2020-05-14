@@ -19,7 +19,7 @@
 
 • **signing**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:46](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/commands/deposit.ts#L46)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:46](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/deposit.ts#L46)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **withdrawal**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:47](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/commands/deposit.ts#L47)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:47](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/deposit.ts#L47)*

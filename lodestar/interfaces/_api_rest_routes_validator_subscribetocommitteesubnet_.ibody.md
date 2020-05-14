@@ -23,7 +23,7 @@
 
 • **aggregator_pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:31](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L31)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:31](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L31)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **attestation_committee_index**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:28](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L28)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:28](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L28)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **slot**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:29](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L29)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:29](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L29)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **slot_signature**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:30](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L30)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:30](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L30)*

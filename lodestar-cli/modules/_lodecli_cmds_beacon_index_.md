@@ -20,7 +20,7 @@
 
 • **command**: *"beacon <command>"* = "beacon <command>"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:9](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:9](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L9)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **description**: *"Beacon node"* = "Beacon node"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:11](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L11)*
 
 ## Functions
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **builder**(`yargs`: Argv‹[IGlobalArgs](../interfaces/_lodecli_options_.iglobalargs.md)›): *Argv*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:13](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:13](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L13)*
 
 **Parameters:**
 
@@ -52,6 +52,6 @@ ___
 
 ▸ **handler**(): *void*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:21](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts:21](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodecli/cmds/beacon/index.ts#L21)*
 
 **Returns:** *void*

@@ -45,7 +45,7 @@
 
 \+ **new WinstonLogger**(`options?`: Partial‹[ILoggerOptions](../interfaces/_logger_interface_.iloggeroptions.md)›): *[WinstonLogger](_logger_winston_.winstonlogger.md)*
 
-*Defined in [logger/winston.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L12)*
+*Defined in [logger/winston.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L12)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ Name | Type |
 
 • **_level**: *[LogLevel](../enums/_logger_interface_.loglevel.md)*
 
-*Defined in [logger/winston.ts:11](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L11)*
+*Defined in [logger/winston.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L11)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **_silent**: *boolean*
 
-*Defined in [logger/winston.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L12)*
+*Defined in [logger/winston.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L12)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **winston**: *Logger*
 
-*Defined in [logger/winston.ts:10](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L10)*
+*Defined in [logger/winston.ts:10](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L10)*
 
 ## Accessors
 
@@ -85,13 +85,13 @@ ___
 
 • **get level**(): *[LogLevel](../enums/_logger_interface_.loglevel.md)*
 
-*Defined in [logger/winston.ts:89](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L89)*
+*Defined in [logger/winston.ts:89](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L89)*
 
 **Returns:** *[LogLevel](../enums/_logger_interface_.loglevel.md)*
 
 • **set level**(`level`: [LogLevel](../enums/_logger_interface_.loglevel.md)): *void*
 
-*Defined in [logger/winston.ts:84](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L84)*
+*Defined in [logger/winston.ts:84](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L84)*
 
 **Parameters:**
 
@@ -107,13 +107,13 @@ ___
 
 • **get silent**(): *boolean*
 
-*Defined in [logger/winston.ts:97](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L97)*
+*Defined in [logger/winston.ts:97](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L97)*
 
 **Returns:** *boolean*
 
 • **set silent**(`silent`: boolean): *void*
 
-*Defined in [logger/winston.ts:93](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L93)*
+*Defined in [logger/winston.ts:93](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L93)*
 
 **Parameters:**
 
@@ -131,7 +131,7 @@ Name | Type |
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:101](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L101)*
+*Defined in [logger/winston.ts:101](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L101)*
 
 **Parameters:**
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **createLogEntry**(`level`: [LogLevel](../enums/_logger_interface_.loglevel.md), `message`: string | object, `context`: object): *void*
 
-*Defined in [logger/winston.ts:112](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L112)*
+*Defined in [logger/winston.ts:112](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L112)*
 
 **Parameters:**
 
@@ -167,7 +167,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:56](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L56)*
+*Defined in [logger/winston.ts:56](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L56)*
 
 **Parameters:**
 
@@ -186,7 +186,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:68](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L68)*
+*Defined in [logger/winston.ts:68](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L68)*
 
 **Parameters:**
 
@@ -205,7 +205,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:64](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L64)*
+*Defined in [logger/winston.ts:64](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L64)*
 
 **Parameters:**
 
@@ -224,7 +224,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:60](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L60)*
+*Defined in [logger/winston.ts:60](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L60)*
 
 **Parameters:**
 
@@ -243,7 +243,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:80](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L80)*
+*Defined in [logger/winston.ts:80](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L80)*
 
 **Parameters:**
 
@@ -262,7 +262,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:76](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L76)*
+*Defined in [logger/winston.ts:76](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L76)*
 
 **Parameters:**
 
@@ -281,7 +281,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/_logger_interface_.ilogger.md)*
 
-*Defined in [logger/winston.ts:72](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-utils/src/logger/winston.ts#L72)*
+*Defined in [logger/winston.ts:72](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/logger/winston.ts#L72)*
 
 **Parameters:**
 
