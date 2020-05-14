@@ -9,6 +9,7 @@
 ## Implemented by
 
 * [ArchiveBlocksTask](../classes/_tasks_tasks_archiveblocks_.archiveblockstask.md)
+* [ArchiveStatesTask](../classes/_tasks_tasks_archivestates_.archivestatestask.md)
 * [InteropSubnetsJoiningTask](../classes/_tasks_tasks_interopsubnetsjoiningtask_.interopsubnetsjoiningtask.md)
 
 ## Index
@@ -23,6 +24,6 @@
 
 ▸ **run**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/tasks/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/tasks/interface.ts#L6)*
+*Defined in [packages/lodestar/src/tasks/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/tasks/interface.ts#L6)*
 
 **Returns:** *Promise‹void›*

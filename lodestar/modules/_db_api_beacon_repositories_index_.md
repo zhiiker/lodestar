@@ -12,7 +12,6 @@
 * [BadBlockRepository](_db_api_beacon_repositories_index_.md#badblockrepository)
 * [BlockArchiveRepository](_db_api_beacon_repositories_index_.md#blockarchiverepository)
 * [BlockRepository](_db_api_beacon_repositories_index_.md#blockrepository)
-* [ChainRepository](_db_api_beacon_repositories_index_.md#chainrepository)
 * [DepositDataRepository](_db_api_beacon_repositories_index_.md#depositdatarepository)
 * [DepositDataRootRepository](_db_api_beacon_repositories_index_.md#depositdatarootrepository)
 * [Eth1DataRepository](_db_api_beacon_repositories_index_.md#eth1datarepository)
@@ -20,7 +19,7 @@
 * [Id](_db_api_beacon_repositories_index_.md#id)
 * [ProposerSlashingRepository](_db_api_beacon_repositories_index_.md#proposerslashingrepository)
 * [Repository](_db_api_beacon_repositories_index_.md#repository)
-* [StateRepository](_db_api_beacon_repositories_index_.md#staterepository)
+* [StateArchiveRepository](_db_api_beacon_repositories_index_.md#statearchiverepository)
 * [VoluntaryExitRepository](_db_api_beacon_repositories_index_.md#voluntaryexitrepository)
 
 ## References
@@ -58,12 +57,6 @@ ___
 ###  BlockRepository
 
 • **BlockRepository**:
-
-___
-
-###  ChainRepository
-
-• **ChainRepository**:
 
 ___
 
@@ -109,9 +102,9 @@ ___
 
 ___
 
-###  StateRepository
+###  StateArchiveRepository
 
-• **StateRepository**:
+• **StateArchiveRepository**:
 
 ___
 

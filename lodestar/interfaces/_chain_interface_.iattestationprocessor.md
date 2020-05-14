@@ -23,7 +23,7 @@
 
 ▸ **receiveAttestation**(`attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:81](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/interface.ts#L81)*
+*Defined in [packages/lodestar/src/chain/interface.ts:84](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/interface.ts#L84)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **receiveBlock**(`signedBlock`: SignedBeaconBlock, `trusted?`: boolean): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/interface.ts:80](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/interface.ts#L80)*
+*Defined in [packages/lodestar/src/chain/interface.ts:83](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/interface.ts#L83)*
 
 **Parameters:**
 

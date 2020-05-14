@@ -24,4 +24,4 @@
 
 • **validator_pubkeys**: *string[]*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:12](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L12)*

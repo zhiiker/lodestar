@@ -6,25 +6,64 @@
 
 ### Functions
 
+* [newFinalizedEpoch](_chain_blocks_post_.md#newfinalizedepoch)
+* [newJustifiedEpoch](_chain_blocks_post_.md#newjustifiedepoch)
 * [postProcess](_chain_blocks_post_.md#postprocess)
-* [setFinalized](_chain_blocks_post_.md#setfinalized)
-* [setJustified](_chain_blocks_post_.md#setjustified)
 
 ## Functions
 
+###  newFinalizedEpoch
+
+▸ **newFinalizedEpoch**(`logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `state`: BeaconState): *void*
+
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:67](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/post.ts#L67)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`logger` | ILogger |
+`metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
+`eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
+`state` | BeaconState |
+
+**Returns:** *void*
+
+___
+
+###  newJustifiedEpoch
+
+▸ **newJustifiedEpoch**(`logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `state`: BeaconState): *void*
+
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:55](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/post.ts#L55)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`logger` | ILogger |
+`metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
+`eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
+`state` | BeaconState |
+
+**Returns:** *void*
+
+___
+
 ###  postProcess
 
-▸ **postProcess**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *function*
+▸ **postProcess**(`config`: IBeaconConfig, `logger`: ILogger, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/post.ts#L10)*
+*Defined in [packages/lodestar/src/chain/blocks/post.ts:10](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/post.ts#L10)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
 `logger` | ILogger |
+`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
+`forkChoice` | [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md) |
 `metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
 `eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
 `attestationProcessor` | [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md) |
@@ -38,47 +77,3 @@ Name | Type |
 Name | Type |
 ------ | ------ |
 `source` | AsyncIterable‹object› |
-
-___
-
-###  setFinalized
-
-▸ **setFinalized**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preFinalizedEpoch`: Epoch): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:65](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/post.ts#L65)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
-`eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
-`logger` | ILogger |
-`metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
-`postState` | BeaconState |
-`preFinalizedEpoch` | Epoch |
-
-**Returns:** *Promise‹void›*
-
-___
-
-###  setJustified
-
-▸ **setJustified**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter), `logger`: ILogger, `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `postState`: BeaconState, `preJustifiedEpoch`: Epoch): *Promise‹void›*
-
-*Defined in [packages/lodestar/src/chain/blocks/post.ts:46](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/post.ts#L46)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`config` | IBeaconConfig |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
-`eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
-`logger` | ILogger |
-`metrics` | [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md) |
-`postState` | BeaconState |
-`preJustifiedEpoch` | Epoch |
-
-**Returns:** *Promise‹void›*

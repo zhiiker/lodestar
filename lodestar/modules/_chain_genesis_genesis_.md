@@ -19,7 +19,7 @@
 
 ▸ **getEmptyBlock**(): *BeaconBlock*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:155](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L155)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:156](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L156)*
 
 Get an empty [[BeaconBlock]].
 
@@ -31,7 +31,7 @@ ___
 
 ▸ **getEmptyBlockBody**(): *BeaconBlockBody*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:124](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L124)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:125](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L125)*
 
 **Returns:** *BeaconBlockBody*
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **getEmptySignedBlock**(): *SignedBeaconBlock*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:144](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L144)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:145](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L145)*
 
 Get an empty [[BeaconBlock]].
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **getGenesisBeaconState**(`config`: IBeaconConfig, `genesisTime`: Number64, `genesisEth1Data`: Eth1Data, `latestBlockHeader`: BeaconBlockHeader): *BeaconState*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:93](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L93)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:94](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L94)*
 
 Generate the initial beacon chain state.
 
@@ -72,9 +72,9 @@ ___
 
 ###  initializeBeaconStateFromEth1
 
-▸ **initializeBeaconStateFromEth1**(`config`: IBeaconConfig, `eth1BlockHash`: Bytes32, `eth1Timestamp`: Number64, `deposits`: Deposit[]): *BeaconState*
+▸ **initializeBeaconStateFromEth1**(`config`: IBeaconConfig, `eth1BlockHash`: Bytes32, `eth1Timestamp`: Number64, `deposits`: Deposit[]): *TreeBacked‹BeaconState›*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:32](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L32)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:33](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L33)*
 
 **Parameters:**
 
@@ -85,7 +85,7 @@ Name | Type |
 `eth1Timestamp` | Number64 |
 `deposits` | Deposit[] |
 
-**Returns:** *BeaconState*
+**Returns:** *TreeBacked‹BeaconState›*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 ▸ **isValidGenesisState**(`config`: IBeaconConfig, `state`: BeaconState): *boolean*
 
-*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:80](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/genesis/genesis.ts#L80)*
+*Defined in [packages/lodestar/src/chain/genesis/genesis.ts:81](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/genesis/genesis.ts#L81)*
 
 **Parameters:**
 

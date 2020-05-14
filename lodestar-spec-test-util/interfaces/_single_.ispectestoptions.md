@@ -31,7 +31,7 @@
 
 • **expectFunc**? : *function*
 
-*Defined in [single.ts:43](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L43)*
+*Defined in [single.ts:43](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L43)*
 
 #### Type declaration:
 
@@ -51,7 +51,7 @@ ___
 
 • **getExpected**? : *function*
 
-*Defined in [single.ts:31](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L31)*
+*Defined in [single.ts:31](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L31)*
 
 Optionally
 
@@ -73,7 +73,7 @@ ___
 
 • **inputProcessing**? : *object*
 
-*Defined in [single.ts:37](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L37)*
+*Defined in [single.ts:37](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L37)*
 
 Optionally pass function to transform loaded values
 (values from input files)
@@ -96,7 +96,7 @@ ___
 
 • **inputTypes**? : *object*
 
-*Defined in [single.ts:23](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L23)*
+*Defined in [single.ts:23](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L23)*
 
 If directory contains both ssz or yaml file version,
 you can choose which one to use. Default is ssz.
@@ -109,7 +109,7 @@ ___
 
 • **shouldError**? : *function*
 
-*Defined in [single.ts:39](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L39)*
+*Defined in [single.ts:39](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L39)*
 
 #### Type declaration:
 
@@ -127,7 +127,7 @@ ___
 
 • **shouldSkip**? : *function*
 
-*Defined in [single.ts:41](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L41)*
+*Defined in [single.ts:41](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L41)*
 
 #### Type declaration:
 
@@ -147,7 +147,7 @@ ___
 
 • **sszTypes**? : *object*
 
-*Defined in [single.ts:25](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L25)*
+*Defined in [single.ts:25](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L25)*
 
 #### Type declaration:
 
@@ -157,4 +157,4 @@ ___
 
 • **timeout**? : *number*
 
-*Defined in [single.ts:45](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar-spec-test-util/src/single.ts#L45)*
+*Defined in [single.ts:45](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar-spec-test-util/src/single.ts#L45)*

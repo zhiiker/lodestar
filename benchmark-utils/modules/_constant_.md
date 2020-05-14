@@ -14,4 +14,4 @@
 
 • **BENCH_DIR**: *"./benchmark-reports/"* = "./benchmark-reports/"
 
-*Defined in [constant.ts:1](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/benchmark-utils/src/constant.ts#L1)*
+*Defined in [constant.ts:1](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/benchmark-utils/src/constant.ts#L1)*

@@ -17,7 +17,7 @@
 
 ▸ **getPreState**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `pool`: [BlockPool](../classes/_chain_blocks_pool_.blockpool.md), `logger`: ILogger, `job`: [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)): *Promise‹BeaconState | null›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:56](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/process.ts#L56)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:56](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/process.ts#L56)*
 
 **Parameters:**
 
@@ -35,17 +35,17 @@ ___
 
 ###  processBlock
 
-▸ **processBlock**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `pool`: [BlockPool](../classes/_chain_blocks_pool_.blockpool.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter)): *function*
+▸ **processBlock**(`config`: IBeaconConfig, `logger`: ILogger, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `pool`: [BlockPool](../classes/_chain_blocks_pool_.blockpool.md), `eventBus`: [ChainEventEmitter](_chain_interface_.md#chaineventemitter)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:12](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/process.ts#L12)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:12](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/process.ts#L12)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `config` | IBeaconConfig |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
 `logger` | ILogger |
+`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) |
 `forkChoice` | [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md) |
 `pool` | [BlockPool](../classes/_chain_blocks_pool_.blockpool.md) |
 `eventBus` | [ChainEventEmitter](_chain_interface_.md#chaineventemitter) |
@@ -66,7 +66,7 @@ ___
 
 ▸ **runStateTransition**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `logger`: ILogger, `preState`: BeaconState, `job`: [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)): *Promise‹BeaconState | null›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:101](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/process.ts#L101)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:93](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/process.ts#L93)*
 
 **Parameters:**
 
@@ -84,20 +84,19 @@ ___
 
 ###  updateForkChoice
 
-▸ **updateForkChoice**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `block`: SignedBeaconBlock, `newState`: BeaconState): *Promise‹Root | null›*
+▸ **updateForkChoice**(`config`: IBeaconConfig, `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `block`: SignedBeaconBlock, `newState`: BeaconState): *Promise‹Root›*
 
-*Defined in [packages/lodestar/src/chain/blocks/process.ts:79](https://github.com/ChainSafe/lodestar/blob/1c1c1df91/packages/lodestar/src/chain/blocks/process.ts#L79)*
+*Defined in [packages/lodestar/src/chain/blocks/process.ts:79](https://github.com/ChainSafe/lodestar/blob/77c37bfb8/packages/lodestar/src/chain/blocks/process.ts#L79)*
 
-Returns new chainhead or null
+Returns new chainhead
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
 `config` | IBeaconConfig | - |
-`db` | [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md) | - |
 `forkChoice` | [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md) | - |
 `block` | SignedBeaconBlock | - |
 `newState` | BeaconState |   |
 
-**Returns:** *Promise‹Root | null›*
+**Returns:** *Promise‹Root›*
