@@ -17,6 +17,7 @@
 * [blockProcessorSource](_chain_blocks_pool_.blockpool.md#private-blockprocessorsource)
 * [config](_chain_blocks_pool_.blockpool.md#private-config)
 * [eventBus](_chain_blocks_pool_.blockpool.md#private-eventbus)
+* [forkChoice](_chain_blocks_pool_.blockpool.md#private-forkchoice)
 * [pool](_chain_blocks_pool_.blockpool.md#private-pool)
 
 ### Methods
@@ -29,9 +30,9 @@
 
 ###  constructor
 
-\+ **new BlockPool**(`config`: IBeaconConfig, `blockProcessorSource`: Pushable‹[IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)›, `eventBus`: [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter)): *[BlockPool](_chain_blocks_pool_.blockpool.md)*
+\+ **new BlockPool**(`config`: IBeaconConfig, `blockProcessorSource`: Pushable‹[IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)›, `eventBus`: [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)): *[BlockPool](_chain_blocks_pool_.blockpool.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L14)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L16)*
 
 **Parameters:**
 
@@ -40,6 +41,7 @@ Name | Type |
 `config` | IBeaconConfig |
 `blockProcessorSource` | Pushable‹[IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)› |
 `eventBus` | [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter) |
+`forkChoice` | [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md) |
 
 **Returns:** *[BlockPool](_chain_blocks_pool_.blockpool.md)*
 
@@ -49,7 +51,7 @@ Name | Type |
 
 • **blockProcessorSource**: *Pushable‹[IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)›*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:13](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L13)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L14)*
 
 ___
 
@@ -57,7 +59,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L12)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:13](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L13)*
 
 ___
 
@@ -65,7 +67,15 @@ ___
 
 • **eventBus**: *[ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter)*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L14)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L15)*
+
+___
+
+### `Private` forkChoice
+
+• **forkChoice**: *[ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
+
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L16)*
 
 ___
 
@@ -73,7 +83,7 @@ ___
 
 • **pool**: *Map‹string, [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)[]›* = new Map<string, IBlockProcessJob[]>()
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:10](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L10)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:11](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L11)*
 
 ## Methods
 
@@ -81,7 +91,7 @@ ___
 
 ▸ **addPendingBlock**(`job`: [IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:22](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L22)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:28](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L28)*
 
 **Parameters:**
 
@@ -97,7 +107,7 @@ ___
 
 ▸ **getKey**(`block`: SignedBeaconBlock): *string*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:45](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L45)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:54](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L54)*
 
 **Parameters:**
 
@@ -113,7 +123,7 @@ ___
 
 ▸ **onProcessedBlock**(`block`: SignedBeaconBlock): *void*
 
-*Defined in [packages/lodestar/src/chain/blocks/pool.ts:32](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/blocks/pool.ts#L32)*
+*Defined in [packages/lodestar/src/chain/blocks/pool.ts:41](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/blocks/pool.ts#L41)*
 
 **Parameters:**
 

@@ -32,7 +32,7 @@
 
 \+ **new RoundRobinArray**(`array`: T[]): *[RoundRobinArray](_sync_utils_robin_.roundrobinarray.md)*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/robin.ts#L5)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/robin.ts#L5)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **array**: *T[]*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:3](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/robin.ts#L3)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:3](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/robin.ts#L3)*
 
 ___
 
@@ -56,17 +56,17 @@ ___
 
 • **index**: *number* = 0
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/robin.ts#L5)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:5](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/robin.ts#L5)*
 
 ## Methods
 
 ###  next
 
-▸ **next**(): *T*
+▸ **next**(): *T | null*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/robin.ts#L11)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:11](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/robin.ts#L11)*
 
-**Returns:** *T*
+**Returns:** *T | null*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **shuffle**(`array`: T[]): *T[]*
 
-*Defined in [packages/lodestar/src/sync/utils/robin.ts:15](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/robin.ts#L15)*
+*Defined in [packages/lodestar/src/sync/utils/robin.ts:21](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/robin.ts#L21)*
 
 **Parameters:**
 

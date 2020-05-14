@@ -17,7 +17,7 @@
 
 ▸ **getConfig**(`options`: [IDevCommandOptions](../interfaces/_commands_dev_command_.idevcommandoptions.md)): *Partial‹IBeaconNodeOptions›*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:25](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/dev/utils.ts#L25)*
+*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:25](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/commands/dev/utils.ts#L25)*
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **getDevGenesisState**(`options`: [IDevCommandOptions](../interfaces/_commands_dev_command_.idevcommandoptions.md), `config`: IBeaconConfig, `deposits`: TreeBacked‹List‹Root››): *BeaconState*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:56](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/dev/utils.ts#L56)*
+*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:56](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/commands/dev/utils.ts#L56)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **getPeerId**(`peerIdOption`: string): *Promise‹PeerId›*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:39](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/dev/utils.ts#L39)*
+*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:39](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/commands/dev/utils.ts#L39)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **resetPath**(`path`: string): *void*
 
-*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:19](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/commands/dev/utils.ts#L19)*
+*Defined in [packages/lodestar-cli/src/commands/dev/utils.ts:19](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/commands/dev/utils.ts#L19)*
 
 **Parameters:**
 

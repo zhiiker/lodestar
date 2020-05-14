@@ -18,16 +18,22 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/sync/options.ts:7](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/options.ts#L7)*
+*Defined in [packages/lodestar/src/sync/options.ts:12](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/options.ts#L12)*
 
 ###  blockPerChunk
 
 • **blockPerChunk**: *number* = 20
 
-*Defined in [packages/lodestar/src/sync/options.ts:9](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/options.ts#L9)*
+*Defined in [packages/lodestar/src/sync/options.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/options.ts#L16)*
+
+###  maxSlotImport
+
+• **maxSlotImport**: *number* = 64
+
+*Defined in [packages/lodestar/src/sync/options.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/options.ts#L15)*
 
 ###  minPeers
 
-• **minPeers**: *number* = 1
+• **minPeers**: *number* = 2
 
-*Defined in [packages/lodestar/src/sync/options.ts:8](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/options.ts#L8)*
+*Defined in [packages/lodestar/src/sync/options.ts:13](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/options.ts#L13)*

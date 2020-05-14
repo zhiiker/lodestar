@@ -37,7 +37,7 @@
 
 • **currentEpochLiveValidators**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L17)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L17)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **currentFinalizedEpoch**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L15)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L15)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **currentJustifiedEpoch**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L14)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L14)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **currentSlot**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L12)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L12)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **peers**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L11)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L11)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **pendingDeposits**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L19)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L19)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **pendingExits**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L20)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L20)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **previousEpochLiveValidators**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L16)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L16)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **previousEpochStaleBlocks**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L22)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L22)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **previousJustifiedEpoch**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L13)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L13)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 • **propagatedAttestations**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L23)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L23)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 *Inherited from [IMetrics](_metrics_interface_.imetrics.md).[registry](_metrics_interface_.imetrics.md#registry)*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L7)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L7)*
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 • **reorgEventsTotal**: *Counter*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L18)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L18)*
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 • **totalDeposits**: *Gauge*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/metrics/interface.ts#L21)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/metrics/interface.ts#L21)*

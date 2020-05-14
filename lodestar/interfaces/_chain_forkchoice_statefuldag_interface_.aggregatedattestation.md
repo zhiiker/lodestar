@@ -22,7 +22,7 @@ Attestation aggregated across participants
 
 • **prevWeight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L39)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L39)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **target**: *[RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L37)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L37)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L38)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L38)*

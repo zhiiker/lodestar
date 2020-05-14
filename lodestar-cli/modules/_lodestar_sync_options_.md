@@ -14,16 +14,25 @@
 
 ### ▪ **SyncOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
 
 ###  fields
 
-• **fields**: *undefined[]* = []
+• **fields**: *object[]* = [
+    {
+      name: "minPeers",
+      configurable: true,
+      cli: {
+        flag: "minPeers"
+      },
+      type: "number"
+    }
+  ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "sync"
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*

@@ -25,7 +25,7 @@
 
 • **aggregator_pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:9](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L9)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:9](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L9)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 • **attestation_data**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L8)*

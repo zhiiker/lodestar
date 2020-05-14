@@ -14,7 +14,7 @@
 
 ▸ **processApiNamespaces**(`input`: string): *ApiNamespace[]*
 
-*Defined in [packages/lodestar-cli/src/lodestar/api/utils.ts:3](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-cli/src/lodestar/api/utils.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/api/utils.ts:3](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/api/utils.ts#L3)*
 
 **Parameters:**
 

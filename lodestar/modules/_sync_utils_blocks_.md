@@ -18,7 +18,7 @@
 
 ▸ **chunkify**(`blocksPerChunk`: number, `currentSlot`: Slot, `targetSlot`: Slot): *[ISlotRange](../interfaces/_sync_interface_.islotrange.md)[]*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:14](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/blocks.ts#L14)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/blocks.ts#L16)*
 
 Creates slot chunks returned chunks represents (inclusive) start and (inclusive) end slot
 which should be fetched along all slotS(blocks) in between
@@ -37,19 +37,20 @@ ___
 
 ###  getBlockRange
 
-▸ **getBlockRange**(`rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `peers`: PeerInfo[], `range`: [ISlotRange](../interfaces/_sync_interface_.islotrange.md), `blocksPerChunk`: number, `maxRetry`: number): *Promise‹SignedBeaconBlock[]›*
+▸ **getBlockRange**(`logger`: ILogger, `rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `peers`: PeerInfo[], `range`: [ISlotRange](../interfaces/_sync_interface_.islotrange.md), `blocksPerChunk?`: number, `maxRetry`: number): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:48](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/blocks.ts#L48)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:53](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/blocks.ts#L53)*
 
 **Parameters:**
 
 Name | Type | Default |
 ------ | ------ | ------ |
+`logger` | ILogger | - |
 `rpc` | [IReqResp](../interfaces/_network_interface_.ireqresp.md) | - |
 `peers` | PeerInfo[] | - |
 `range` | [ISlotRange](../interfaces/_sync_interface_.islotrange.md) | - |
-`blocksPerChunk` | number | 10 |
-`maxRetry` | number | 3 |
+`blocksPerChunk?` | number | - |
+`maxRetry` | number | 6 |
 
 **Returns:** *Promise‹SignedBeaconBlock[]›*
 
@@ -59,7 +60,7 @@ ___
 
 ▸ **getBlockRangeFromPeer**(`rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `peer`: PeerInfo, `chunk`: [ISlotRange](../interfaces/_sync_interface_.islotrange.md)): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:33](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/blocks.ts#L33)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:38](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/blocks.ts#L38)*
 
 **Parameters:**
 
@@ -77,7 +78,7 @@ ___
 
 ▸ **isValidChainOfBlocks**(`config`: IBeaconConfig, `start`: BeaconBlockHeader, `signedBlocks`: SignedBeaconBlock[]): *boolean*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:87](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/blocks.ts#L87)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:105](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/blocks.ts#L105)*
 
 **Parameters:**
 
@@ -95,7 +96,7 @@ ___
 
 ▸ **sortBlocks**(`blocks`: SignedBeaconBlock[]): *SignedBeaconBlock[]*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:82](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar/src/sync/utils/blocks.ts#L82)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:100](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/sync/utils/blocks.ts#L100)*
 
 **Parameters:**
 

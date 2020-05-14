@@ -53,7 +53,7 @@
   }
 })
 
-*Defined in [yaml/int.ts:151](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L151)*
+*Defined in [yaml/int.ts:151](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L151)*
 
 ## Functions
 
@@ -61,7 +61,7 @@
 
 ▸ **constructYamlInteger**(`data`: string): *bigint*
 
-*Defined in [yaml/int.ts:105](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L105)*
+*Defined in [yaml/int.ts:105](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L105)*
 
 **Parameters:**
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **isDecCode**(`c`: number): *boolean*
 
-*Defined in [yaml/int.ts:15](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L15)*
+*Defined in [yaml/int.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L15)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@ ___
 
 ▸ **isHexCode**(`c`: number): *boolean*
 
-*Defined in [yaml/int.ts:5](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L5)*
+*Defined in [yaml/int.ts:5](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L5)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **isInteger**(`object`: object): *boolean*
 
-*Defined in [yaml/int.ts:147](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L147)*
+*Defined in [yaml/int.ts:147](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L147)*
 
 **Parameters:**
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **isOctCode**(`c`: number): *boolean*
 
-*Defined in [yaml/int.ts:11](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L11)*
+*Defined in [yaml/int.ts:11](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L11)*
 
 **Parameters:**
 
@@ -141,7 +141,7 @@ ___
 
 ▸ **resolveYamlInteger**(`data`: string): *boolean*
 
-*Defined in [yaml/int.ts:19](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/yaml/int.ts#L19)*
+*Defined in [yaml/int.ts:19](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/yaml/int.ts#L19)*
 
 **Parameters:**
 

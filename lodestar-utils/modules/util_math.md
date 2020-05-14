@@ -20,7 +20,7 @@
 
 ▸ **bigIntMax**(`a`: bigint, `b`: bigint): *bigint*
 
-*Defined in [math.ts:16](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L16)*
+*Defined in [math.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L16)*
 
 Return the max number between two big numbers.
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **bigIntMin**(`a`: bigint, `b`: bigint): *bigint*
 
-*Defined in [math.ts:9](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L9)*
+*Defined in [math.ts:9](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L9)*
 
 Return the min number between two big numbers.
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **bigIntSqrt**(`n`: bigint): *bigint*
 
-*Defined in [math.ts:37](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L37)*
+*Defined in [math.ts:37](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L37)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **intDiv**(`dividend`: number, `divisor`: number): *number*
 
-*Defined in [math.ts:20](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L20)*
+*Defined in [math.ts:20](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L20)*
 
 **Parameters:**
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **intSqrt**(`n`: number): *number*
 
-*Defined in [math.ts:27](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L27)*
+*Defined in [math.ts:27](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L27)*
 
 Calculate the largest integer k such that k**2 <= n.
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **randBetween**(`min`: number, `max`: number): *number*
 
-*Defined in [math.ts:50](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L50)*
+*Defined in [math.ts:50](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L50)*
 
 Regenerates a random integer between min (included) and max (excluded).
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **randBetweenBigInt**(`min`: number, `max`: number): *bigint*
 
-*Defined in [math.ts:58](https://github.com/ChainSafe/lodestar/blob/533caff9e/packages/lodestar-utils/src/math.ts#L58)*
+*Defined in [math.ts:58](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-utils/src/math.ts#L58)*
 
 Wraps randBetween and returns a bigNumber.
 
