@@ -19,7 +19,7 @@
 
 • **debug**:
 
-*Defined in [logger/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L10)*
+*Defined in [logger/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L10)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **error**:
 
-*Defined in [logger/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L6)*
+*Defined in [logger/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L6)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **info**:
 
-*Defined in [logger/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L8)*
+*Defined in [logger/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L8)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **silly**:
 
-*Defined in [logger/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L11)*
+*Defined in [logger/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L11)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **verbose**:
 
-*Defined in [logger/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L9)*
+*Defined in [logger/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L9)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **warn**:
 
-*Defined in [logger/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-utils/src/logger/interface.ts#L7)*
+*Defined in [logger/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-utils/src/logger/interface.ts#L7)*

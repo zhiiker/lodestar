@@ -22,7 +22,7 @@ Minimal representation of attsetation for the purposes of fork choice
 
 • **attester**: *ValidatorIndex*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L29)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L29)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **target**: *[RootHex](../modules/_chain_forkchoice_statefuldag_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L28)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L28)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L30)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/chain/forkChoice/statefulDag/interface.ts#L30)*

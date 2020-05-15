@@ -18,7 +18,7 @@
 
 ### ▪ **apiCorsOrigin**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:44](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L44)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:44](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L44)*
 
 ###  alias
 
@@ -27,25 +27,25 @@
     "api.rest.cors",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:45](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L45)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:45](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L45)*
 
 ###  default
 
 • **default**: *string* = "*"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:50](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L50)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:50](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L50)*
 
 ###  group
 
 • **group**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:51](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L51)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:51](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L51)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:49](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L49)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:49](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L49)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 ### ▪ **apiEnabled**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:3](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:3](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L3)*
 
 ###  alias
 
@@ -62,25 +62,25 @@ ___
     "api.rest.enabled",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:4](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:4](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L4)*
 
 ###  default
 
 • **default**: *boolean* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:9](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:9](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L9)*
 
 ###  group
 
 • **group**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:10](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:10](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L10)*
 
 ###  type
 
 • **type**: *"boolean"* = "boolean"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:8](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:8](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L8)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 ### ▪ **apiHost**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:24](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L24)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:24](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L24)*
 
 ###  alias
 
@@ -97,25 +97,25 @@ ___
     "api.rest.host",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:25](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L25)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:25](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L25)*
 
 ###  default
 
 • **default**: *string* = "127.0.0.1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:30](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L30)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:30](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L30)*
 
 ###  group
 
 • **group**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:31](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L31)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:31](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L31)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:29](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L29)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:29](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L29)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 ### ▪ **apiNamespaces**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:13](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:13](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L13)*
 
 ###  alias
 
@@ -132,31 +132,31 @@ ___
     "api.rest.api",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:14](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:14](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L14)*
 
 ###  choices
 
 • **choices**: *string[]* = ["beacon", "validator"]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:19](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L19)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:19](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L19)*
 
 ###  default
 
 • **default**: *string[]* = ["beacon", "validator"]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:20](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L20)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:20](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L20)*
 
 ###  group
 
 • **group**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:21](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:21](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L21)*
 
 ###  type
 
 • **type**: *"array"* = "array"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:18](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:18](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L18)*
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 ### ▪ **apiPort**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:34](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:34](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L34)*
 
 ###  alias
 
@@ -173,22 +173,22 @@ ___
     "api.rest.port",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:35](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L35)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:35](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L35)*
 
 ###  default
 
 • **default**: *number* = 9596
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:40](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L40)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:40](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L40)*
 
 ###  group
 
 • **group**: *string* = "api"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:41](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L41)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:41](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L41)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:39](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L39)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts:39](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/api.ts#L39)*

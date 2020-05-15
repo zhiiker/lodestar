@@ -16,7 +16,7 @@
 
 • **json**: = "json"
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:18](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/util/file.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:18](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/util/file.ts#L18)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **toml**: = "toml"
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:20](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/util/file.ts#L20)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:20](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/util/file.ts#L20)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **yaml**: = "yaml"
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:19](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodecli/util/file.ts#L19)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:19](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar-cli/src/lodecli/util/file.ts#L19)*

@@ -35,7 +35,7 @@ Archives finalized blocks from active bucket to archive bucket.
 
 \+ **new ArchiveBlocksTask**(`config`: IBeaconConfig, `modules`: [IArchiveBlockModules](../interfaces/_tasks_tasks_archiveblocks_.iarchiveblockmodules.md), `finalizedCheckpoint`: Checkpoint): *[ArchiveBlocksTask](_tasks_tasks_archiveblocks_.archiveblockstask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:26](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L26)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:26](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L26)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:24](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L24)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:24](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L24)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:22](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L22)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:22](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L22)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **finalizedCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:26](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L26)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:26](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L26)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:23](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L23)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:23](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L23)*
 
 ## Methods
 
@@ -87,6 +87,6 @@ ___
 
 *Implementation of [ITask](../interfaces/_tasks_interface_.itask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:35](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L35)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:35](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L35)*
 
 **Returns:** *Promise‹void›*
