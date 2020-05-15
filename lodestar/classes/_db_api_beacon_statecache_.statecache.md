@@ -35,7 +35,7 @@ Similar API to Repository, but synchronous
 
 \+ **new StateCache**(): *[StateCache](_db_api_beacon_statecache_.statecache.md)*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:10](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L10)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:10](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L10)*
 
 **Returns:** *[StateCache](_db_api_beacon_statecache_.statecache.md)*
 
@@ -45,7 +45,7 @@ Similar API to Repository, but synchronous
 
 • **cache**: *Record‹string, TreeBacked‹BeaconState››*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:10](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L10)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:10](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L10)*
 
 ## Methods
 
@@ -53,7 +53,7 @@ Similar API to Repository, but synchronous
 
 ▸ **add**(`state`: TreeBacked‹BeaconState›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:22](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L22)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:22](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L22)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **batchDelete**(`roots`: ByteVector[]): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:30](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L30)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:30](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L30)*
 
 **Parameters:**
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **clear**(): *void*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:34](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L34)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:34](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L34)*
 
 **Returns:** *void*
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **delete**(`root`: ByteVector): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:26](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L26)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:26](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L26)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **get**(`root`: ByteVector): *Promise‹TreeBacked‹BeaconState› | null›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L14)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:14](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L14)*
 
 **Parameters:**
 
@@ -127,6 +127,6 @@ ___
 
 ▸ **values**(): *Promise‹TreeBacked‹BeaconState›[]›*
 
-*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:38](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/db/api/beacon/stateCache.ts#L38)*
+*Defined in [packages/lodestar/src/db/api/beacon/stateCache.ts:38](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/db/api/beacon/stateCache.ts#L38)*
 
 **Returns:** *Promise‹TreeBacked‹BeaconState›[]›*

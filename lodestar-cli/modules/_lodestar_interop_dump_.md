@@ -18,7 +18,7 @@
 
 • **args**: *string[]* = yargs.parse()._
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/dump.ts:9](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/interop/dump.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/dump.ts:9](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodestar/interop/dump.ts#L9)*
 
 ## Functions
 
@@ -26,7 +26,7 @@
 
 ▸ **dumpQuickStartState**(`config`: IBeaconConfig, `genesisTime`: number, `validatorCount`: number, `output`: string): *void*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/dump.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar-cli/src/lodestar/interop/dump.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/dump.ts:14](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar-cli/src/lodestar/interop/dump.ts#L14)*
 
 **Parameters:**
 

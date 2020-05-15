@@ -32,7 +32,7 @@
 
 ▸ **addAttestation**(`blockRoot`: Uint8Array, `attester`: ValidatorIndex, `weight`: Gwei): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L14)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L14)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **addBlock**(`info`: [BlockSummary](_chain_forkchoice_interface_.blocksummary.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L13)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L13)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **getBlockSummaryAtSlot**(`slot`: Slot): *[BlockSummary](_chain_forkchoice_interface_.blocksummary.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L21)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L21)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **getFinalized**(): *Checkpoint*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L20)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L20)*
 
 **Returns:** *Checkpoint*
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **getJustified**(): *Checkpoint*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L19)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L19)*
 
 **Returns:** *Checkpoint*
 
@@ -102,7 +102,7 @@ ___
 
 ▸ **head**(): *[BlockSummary](_chain_forkchoice_interface_.blocksummary.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L15)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L15)*
 
 **Returns:** *[BlockSummary](_chain_forkchoice_interface_.blocksummary.md)*
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **headBlockRoot**(): *Uint8Array*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L17)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L17)*
 
 **Returns:** *Uint8Array*
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **headBlockSlot**(): *Slot*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L16)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L16)*
 
 **Returns:** *Slot*
 
@@ -132,7 +132,7 @@ ___
 
 ▸ **headStateRoot**(): *Uint8Array*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L18)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L18)*
 
 **Returns:** *Uint8Array*
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **start**(`genesisTime`: number, `clock`: [IBeaconClock](_chain_clock_interface_.ibeaconclock.md)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L11)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L11)*
 
 **Parameters:**
 
@@ -159,6 +159,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/lodestar/src/chain/forkChoice/interface.ts#L12)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/lodestar/src/chain/forkChoice/interface.ts#L12)*
 
 **Returns:** *Promise‹void›*

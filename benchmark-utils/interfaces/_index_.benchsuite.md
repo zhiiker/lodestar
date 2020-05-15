@@ -23,7 +23,7 @@
 
 • **file**: *string*
 
-*Defined in [index.ts:13](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L13)*
+*Defined in [index.ts:13](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L13)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [index.ts:14](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L14)*
+*Defined in [index.ts:14](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L14)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **profile**? : *boolean*
 
-*Defined in [index.ts:17](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L17)*
+*Defined in [index.ts:17](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L17)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **setup**? : *Function*
 
-*Defined in [index.ts:15](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L15)*
+*Defined in [index.ts:15](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L15)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **teardown**? : *Function*
 
-*Defined in [index.ts:16](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L16)*
+*Defined in [index.ts:16](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L16)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **testFunctions**: *Function[]*
 
-*Defined in [index.ts:12](https://github.com/ChainSafe/lodestar/blob/40e67a18f/packages/benchmark-utils/src/index.ts#L12)*
+*Defined in [index.ts:12](https://github.com/ChainSafe/lodestar/blob/eb468c79c/packages/benchmark-utils/src/index.ts#L12)*
