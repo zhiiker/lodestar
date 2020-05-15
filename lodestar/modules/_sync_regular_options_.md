@@ -18,10 +18,10 @@
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [packages/lodestar/src/sync/regular/options.ts:6](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/sync/regular/options.ts#L6)*
+*Defined in [packages/lodestar/src/sync/regular/options.ts:6](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/sync/regular/options.ts#L6)*
 
 ###  blockPerChunk
 
 • **blockPerChunk**: *number* = 5
 
-*Defined in [packages/lodestar/src/sync/regular/options.ts:7](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/sync/regular/options.ts#L7)*
+*Defined in [packages/lodestar/src/sync/regular/options.ts:7](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/sync/regular/options.ts#L7)*

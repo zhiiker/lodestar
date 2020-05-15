@@ -34,7 +34,7 @@ Keystore class which creates and saves bls generated keys
 
 \+ **new Keystore**(`keys`: [IKeystoreObject](../interfaces/_util_keystore_.ikeystoreobject.md)): *[Keystore](_util_keystore_.keystore.md)*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:21](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L21)*
+*Defined in [packages/lodestar/src/util/keystore.ts:21](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L21)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **encryptedPrivateKey**: *string*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:21](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L21)*
+*Defined in [packages/lodestar/src/util/keystore.ts:21](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L21)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **publicKey**: *string*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:20](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L20)*
+*Defined in [packages/lodestar/src/util/keystore.ts:20](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L20)*
 
 ## Methods
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **getKeypair**(`password`: string): *Keypair*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:60](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L60)*
+*Defined in [packages/lodestar/src/util/keystore.ts:60](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L60)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **privateKey**(`password`: string): *string*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:56](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L56)*
+*Defined in [packages/lodestar/src/util/keystore.ts:56](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L56)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **saveKeys**(`outputFilePath`: string): *void*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:64](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L64)*
+*Defined in [packages/lodestar/src/util/keystore.ts:64](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L64)*
 
 **Parameters:**
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **fromJson**(`filePath`: string): *[Keystore](_util_keystore_.keystore.md)*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:44](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L44)*
+*Defined in [packages/lodestar/src/util/keystore.ts:44](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L44)*
 
 **Parameters:**
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **generateKeys**(`password`: string): *[Keystore](_util_keystore_.keystore.md)*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:33](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L33)*
+*Defined in [packages/lodestar/src/util/keystore.ts:33](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L33)*
 
 **Parameters:**
 
@@ -146,7 +146,7 @@ ___
 
 ▸ **getKeyFromKeyStore**(`keyStorePath`: string, `password`: string): *Keypair*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:28](https://github.com/ChainSafe/lodestar/blob/cce68e126/packages/lodestar/src/util/keystore.ts#L28)*
+*Defined in [packages/lodestar/src/util/keystore.ts:28](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/util/keystore.ts#L28)*
 
 **Parameters:**
 
