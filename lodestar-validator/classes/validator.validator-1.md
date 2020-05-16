@@ -40,7 +40,7 @@ Main class for the Validator client.
 
 \+ **new Validator**(`opts`: [IValidatorOptions](../interfaces/_options_.ivalidatoroptions.md)): *[Validator](validator.validator-1.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:37](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L37)*
+*Defined in [packages/lodestar-validator/src/validator.ts:37](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L37)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 • **apiClient**: *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:32](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L32)*
+*Defined in [packages/lodestar-validator/src/validator.ts:32](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L32)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **attestationService**: *[AttestationService](_services_attestation_.attestationservice.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:34](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L34)*
+*Defined in [packages/lodestar-validator/src/validator.ts:34](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L34)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **blockService**: *[BlockProposingService](_services_block_.blockproposingservice.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:33](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L33)*
+*Defined in [packages/lodestar-validator/src/validator.ts:33](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L33)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:31](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L31)*
+*Defined in [packages/lodestar-validator/src/validator.ts:31](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L31)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **db**: *[IValidatorDB](../interfaces/_db_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:35](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L35)*
+*Defined in [packages/lodestar-validator/src/validator.ts:35](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L35)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **isRunning**: *boolean*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:37](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L37)*
+*Defined in [packages/lodestar-validator/src/validator.ts:37](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L37)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L36)*
+*Defined in [packages/lodestar-validator/src/validator.ts:36](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L36)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **opts**: *[IValidatorOptions](../interfaces/_options_.ivalidatoroptions.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:30](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L30)*
+*Defined in [packages/lodestar-validator/src/validator.ts:30](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L30)*
 
 ## Methods
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **initApiClient**(`api`: string | [IApiClient](../interfaces/_api_interface_.iapiclient.md)): *[IApiClient](../interfaces/_api_interface_.iapiclient.md)*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:77](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L77)*
+*Defined in [packages/lodestar-validator/src/validator.ts:77](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L77)*
 
 **Parameters:**
 
@@ -136,7 +136,7 @@ ___
 
 ▸ **run**(): *void*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:59](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L59)*
+*Defined in [packages/lodestar-validator/src/validator.ts:59](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L59)*
 
 **Returns:** *void*
 
@@ -146,7 +146,7 @@ ___
 
 ▸ **setup**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:84](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L84)*
+*Defined in [packages/lodestar-validator/src/validator.ts:84](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L84)*
 
 **Returns:** *Promise‹void›*
 
@@ -156,7 +156,7 @@ ___
 
 ▸ **setupAPI**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:108](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L108)*
+*Defined in [packages/lodestar-validator/src/validator.ts:108](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L108)*
 
 Establishes a connection to a specified beacon chain url.
 
@@ -168,7 +168,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L51)*
+*Defined in [packages/lodestar-validator/src/validator.ts:51](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L51)*
 
 Creates a new block processing service and starts it.
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/validator.ts:72](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-validator/src/validator.ts#L72)*
+*Defined in [packages/lodestar-validator/src/validator.ts:72](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-validator/src/validator.ts#L72)*
 
 Stops all validator functions
 

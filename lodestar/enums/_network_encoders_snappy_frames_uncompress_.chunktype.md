@@ -17,7 +17,7 @@
 
 • **COMPRESSED**: = 0
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:79](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L79)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:79](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L79)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **IDENTIFIER**: = 255
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:78](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L78)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:78](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L78)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **PADDING**: = 254
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:81](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L81)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:81](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L81)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **UNCOMPRESSED**: = 1
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:80](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L80)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:80](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L80)*

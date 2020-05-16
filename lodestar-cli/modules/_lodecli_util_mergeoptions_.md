@@ -14,7 +14,7 @@
 
 ▸ **mergeOptions**<**T**, **U**>(`yargs`: Argv‹T›, `optionsFns`: Record‹string, function | Options›): *Argv‹U›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/mergeOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar-cli/src/lodecli/util/mergeOptions.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/mergeOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodecli/util/mergeOptions.ts#L8)*
 
 Generate options based on the currently built yargs
 

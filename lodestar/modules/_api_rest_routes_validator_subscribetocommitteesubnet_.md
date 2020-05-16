@@ -22,7 +22,7 @@
 
 ▸ **registerSubscribeToCommitteeSubnet**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:34](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L34)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:34](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L34)*
 
 **Parameters:**
 
@@ -42,11 +42,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:6](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:6](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L6)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:7](https://github.com/ChainSafe/lodestar/blob/2c3cae978/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:7](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L7)*
 
 * **body**: *object*
 
