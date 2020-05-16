@@ -15,7 +15,7 @@
 
 ### ▪ **Discv5Options**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:3](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:3](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L3)*
 
 ###  fields
 
@@ -30,13 +30,13 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:5](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:5](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "discv5"
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:4](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:4](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L4)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 ### ▪ **NetworkOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:17](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:17](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L17)*
 
 ###  fields
 
@@ -85,10 +85,10 @@ ___
     Discv5Options
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:19](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L19)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:19](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L19)*
 
 ###  name
 
 • **name**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:18](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar-cli/src/lodestar/network/options.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodestar/network/options.ts:18](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar-cli/src/lodestar/network/options.ts#L18)*

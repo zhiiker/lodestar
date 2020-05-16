@@ -23,7 +23,7 @@
 
 • **blockRoot**: *Uint8Array*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L29)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L29)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **finalizedCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L33)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L33)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **justifiedCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L32)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L32)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **parentRoot**: *Uint8Array*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L30)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L30)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **slot**: *Slot*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L28)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L28)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **stateRoot**: *Uint8Array*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/chain/forkChoice/interface.ts#L31)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/chain/forkChoice/interface.ts#L31)*

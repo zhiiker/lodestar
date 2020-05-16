@@ -22,7 +22,7 @@
 
 ▸ **registerGetValidatorEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:24](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L24)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:24](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L24)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:10](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L10)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:10](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L10)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L11)*
 
 * **querystring**: *object*
 

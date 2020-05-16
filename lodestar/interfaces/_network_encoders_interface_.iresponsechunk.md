@@ -19,7 +19,7 @@
 
 • **body**? : *ResponseBody*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/interface.ts#L15)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/encoders/interface.ts#L15)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **status**: *[RpcResponseStatus](../enums/_constants_network_.rpcresponsestatus.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/encoders/interface.ts#L12)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/encoders/interface.ts#L12)*

@@ -10,17 +10,26 @@
 
 ### Properties
 
+* [encoding](_sync_ireputation_.ireputation.md#encoding)
 * [latestMetadata](_sync_ireputation_.ireputation.md#latestmetadata)
 * [latestStatus](_sync_ireputation_.ireputation.md#lateststatus)
 * [score](_sync_ireputation_.ireputation.md#score)
 
 ## Properties
 
+###  encoding
+
+• **encoding**: *[ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md) | null*
+
+*Defined in [packages/lodestar/src/sync/IReputation.ts:11](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/sync/IReputation.ts#L11)*
+
+___
+
 ###  latestMetadata
 
 • **latestMetadata**: *Metadata | null*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:9](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/sync/IReputation.ts#L9)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:9](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/sync/IReputation.ts#L9)*
 
 ___
 
@@ -28,7 +37,7 @@ ___
 
 • **latestStatus**: *Status | null*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:8](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/sync/IReputation.ts#L8)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:8](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/sync/IReputation.ts#L8)*
 
 ___
 
@@ -36,4 +45,4 @@ ___
 
 • **score**: *number*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:10](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/sync/IReputation.ts#L10)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:10](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/sync/IReputation.ts#L10)*

@@ -34,6 +34,7 @@
 * [config](_network_reqresp_.reqresp.md#private-config)
 * [libp2p](_network_reqresp_.reqresp.md#private-libp2p)
 * [logger](_network_reqresp_.reqresp.md#private-logger)
+* [peerReputations](_network_reqresp_.reqresp.md#private-peerreputations)
 * [responseListener](_network_reqresp_.reqresp.md#private-responselistener)
 
 ### Methods
@@ -52,6 +53,7 @@
 * [start](_network_reqresp_.reqresp.md#start)
 * [status](_network_reqresp_.reqresp.md#status)
 * [stop](_network_reqresp_.reqresp.md#stop)
+* [storePeerEncodingPreference](_network_reqresp_.reqresp.md#private-storepeerencodingpreference)
 
 ## Constructors
 
@@ -59,7 +61,7 @@
 
 \+ **new ReqResp**(`opts`: [INetworkOptions](../interfaces/_network_options_.inetworkoptions.md), `__namedParameters`: object): *[ReqResp](_network_reqresp_.reqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:64](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L64)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:67](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L67)*
 
 **Parameters:**
 
@@ -72,6 +74,7 @@ Name | Type |
 `config` | IBeaconConfig |
 `libp2p` | LibP2p‹› |
 `logger` | ILogger |
+`peerReputations` | [IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md) |
 
 **Returns:** *[ReqResp](_network_reqresp_.reqresp.md)*
 
@@ -117,7 +120,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:61](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L61)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:63](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L63)*
 
 ___
 
@@ -125,7 +128,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:62](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L62)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:64](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L64)*
 
 ___
 
@@ -133,7 +136,15 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:63](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L63)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:65](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L65)*
+
+___
+
+### `Private` peerReputations
+
+• **peerReputations**: *[IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
+
+*Defined in [packages/lodestar/src/network/reqResp.ts:67](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L67)*
 
 ___
 
@@ -141,7 +152,7 @@ ___
 
 • **responseListener**: *[ResponseEventListener](_network_reqresp_.responseeventlistener.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:64](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L64)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:66](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L66)*
 
 ## Methods
 
@@ -151,7 +162,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:145](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L145)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:150](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L150)*
 
 **Parameters:**
 
@@ -170,7 +181,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:152](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L152)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:157](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L157)*
 
 **Parameters:**
 
@@ -187,7 +198,7 @@ ___
 
 ▸ **getResponse**(`peerId`: PeerId, `method`: [Method](../enums/_constants_network_.method.md), `request?`: RequestBody): *AsyncIterable‹[IResponseChunk](../interfaces/_network_encoders_interface_.iresponsechunk.md)›*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:174](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L174)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:193](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L193)*
 
 **Parameters:**
 
@@ -207,7 +218,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:129](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L129)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:134](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L134)*
 
 **Parameters:**
 
@@ -224,7 +235,7 @@ ___
 
 ▸ **handleRpcRequest**(`peerId`: PeerId, `method`: [Method](../enums/_constants_network_.method.md)): *function*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:159](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L159)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:178](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L178)*
 
 **Parameters:**
 
@@ -251,7 +262,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:141](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L141)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:146](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L146)*
 
 **Parameters:**
 
@@ -269,7 +280,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:137](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L137)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:142](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L142)*
 
 **Parameters:**
 
@@ -286,7 +297,7 @@ ___
 
 ▸ **sendRequest**<**T**>(`peerInfo`: PeerInfo, `method`: [Method](../enums/_constants_network_.method.md), `body?`: RequestBody): *Promise‹T›*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:193](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L193)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:215](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L215)*
 
 **Type parameters:**
 
@@ -306,9 +317,9 @@ ___
 
 ### `Private` sendRequestStream
 
-▸ **sendRequestStream**<**T**>(`peerInfo`: PeerInfo, `method`: [Method](../enums/_constants_network_.method.md), `body?`: RequestBody, `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *AsyncIterable‹T›*
+▸ **sendRequestStream**<**T**>(`peerInfo`: PeerInfo, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md), `body?`: RequestBody): *AsyncIterable‹T›*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:235](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L235)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:259](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L259)*
 
 **Type parameters:**
 
@@ -316,12 +327,12 @@ ___
 
 **Parameters:**
 
-Name | Type | Default |
------- | ------ | ------ |
-`peerInfo` | PeerInfo | - |
-`method` | [Method](../enums/_constants_network_.method.md) | - |
-`body?` | RequestBody | - |
-`encoding` | [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md) | ReqRespEncoding.SSZ_SNAPPY |
+Name | Type |
+------ | ------ |
+`peerInfo` | PeerInfo |
+`method` | [Method](../enums/_constants_network_.method.md) |
+`encoding` | [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md) |
+`body?` | RequestBody |
 
 **Returns:** *AsyncIterable‹T›*
 
@@ -331,7 +342,7 @@ ___
 
 ▸ **sendResponse**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](_network_error_.rpcerror.md) | null, `response?`: ResponseBody): *void*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:101](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L101)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:106](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L106)*
 
 **Parameters:**
 
@@ -349,7 +360,7 @@ ___
 
 ▸ **sendResponseStream**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](_network_error_.rpcerror.md) | null, `chunkIter`: AsyncIterable‹ResponseBody›): *void*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:109](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L109)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:114](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L114)*
 
 **Parameters:**
 
@@ -367,7 +378,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:73](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L73)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:77](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L77)*
 
 **Returns:** *Promise‹void›*
 
@@ -379,7 +390,7 @@ ___
 
 *Implementation of [IReqResp](../interfaces/_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:125](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L125)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:130](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L130)*
 
 **Parameters:**
 
@@ -396,6 +407,32 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:93](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/network/reqResp.ts#L93)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:98](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L98)*
 
 **Returns:** *Promise‹void›*
+
+___
+
+### `Private` storePeerEncodingPreference
+
+▸ **storePeerEncodingPreference**(`peerId`: PeerId, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
+
+*Defined in [packages/lodestar/src/network/reqResp.ts:164](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L164)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`peerId` | PeerId |
+`method` | [Method](../enums/_constants_network_.method.md) |
+`encoding` | [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md) |
+
+**Returns:** *function*
+
+▸ (`source`: AsyncIterable‹RequestBody›): *AsyncGenerator‹RequestBody›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`source` | AsyncIterable‹RequestBody› |

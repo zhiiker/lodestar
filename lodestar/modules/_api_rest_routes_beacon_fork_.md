@@ -14,7 +14,7 @@
 
 ▸ **registerForkEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/fork.ts:4](https://github.com/ChainSafe/lodestar/blob/2c3cae9/packages/lodestar/src/api/rest/routes/beacon/fork.ts#L4)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/fork.ts:4](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/beacon/fork.ts#L4)*
 
 **Parameters:**
 
