@@ -23,7 +23,7 @@
 
 ▸ **registerAttesterDutiesEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:44](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L44)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:44](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L44)*
 
 **Parameters:**
 
@@ -44,11 +44,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:16](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L16)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:16](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L16)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:17](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/attester.ts:17](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/api/rest/routes/validator/duties/attester.ts#L17)*
 
 * **params**: *object*
 

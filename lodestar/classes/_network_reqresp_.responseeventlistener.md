@@ -64,7 +64,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **waitForResponse**(`requestId`: string, `responseListener`: [ResponseCallbackFn](../modules/_network_interface_.md#responsecallbackfn)): *Timeout*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:48](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L48)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:48](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/reqResp.ts#L48)*
 
 **Parameters:**
 

@@ -21,7 +21,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:41](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L41)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:41](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/reqResp.ts#L41)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **libp2p**: *LibP2p*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:42](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L42)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:42](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/reqResp.ts#L42)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:43](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L43)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:43](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/reqResp.ts#L43)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **peerReputations**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:44](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/reqResp.ts#L44)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:44](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/reqResp.ts#L44)*

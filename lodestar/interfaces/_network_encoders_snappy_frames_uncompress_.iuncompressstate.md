@@ -18,4 +18,4 @@
 
 • **foundIdentifier**: *boolean*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:74](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L74)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:74](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L74)*

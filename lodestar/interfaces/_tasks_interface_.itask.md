@@ -24,6 +24,6 @@
 
 ▸ **run**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/tasks/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/439c48cac/packages/lodestar/src/tasks/interface.ts#L6)*
+*Defined in [packages/lodestar/src/tasks/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/tasks/interface.ts#L6)*
 
 **Returns:** *Promise‹void›*

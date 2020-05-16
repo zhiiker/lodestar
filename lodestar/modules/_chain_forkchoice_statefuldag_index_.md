@@ -6,17 +6,10 @@
 
 ### References
 
-* [AttestationAggregator](_chain_forkchoice_statefuldag_index_.md#attestationaggregator)
 * [Node](_chain_forkchoice_statefuldag_index_.md#node)
 * [StatefulDagLMDGHOST](_chain_forkchoice_statefuldag_index_.md#statefuldaglmdghost)
 
 ## References
-
-###  AttestationAggregator
-
-• **AttestationAggregator**:
-
-___
 
 ###  Node
 
