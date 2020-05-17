@@ -14,16 +14,16 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [presets/minimal.ts:6](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-config/src/presets/minimal.ts#L6)*
+*Defined in [presets/minimal.ts:6](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-config/src/presets/minimal.ts#L6)*
 
 ###  params
 
 • **params**: *IBeaconParams*
 
-*Defined in [presets/minimal.ts:7](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-config/src/presets/minimal.ts#L7)*
+*Defined in [presets/minimal.ts:7](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-config/src/presets/minimal.ts#L7)*
 
 ###  types
 
 • **types**: *IBeaconSSZTypes*
 
-*Defined in [presets/minimal.ts:8](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-config/src/presets/minimal.ts#L8)*
+*Defined in [presets/minimal.ts:8](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-config/src/presets/minimal.ts#L8)*

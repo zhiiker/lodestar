@@ -19,7 +19,7 @@
 
 • **INTEROP_BLOCK_HASH**: *Buffer‹›* = Buffer.alloc(32, "B")
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:8](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-cli/src/lodestar/interop/state.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:8](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/interop/state.ts#L8)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **INTEROP_TIMESTAMP**: *number* = Math.pow(2, 40)
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:9](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-cli/src/lodestar/interop/state.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:9](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/interop/state.ts#L9)*
 
 ## Functions
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **quickStartState**(`config`: IBeaconConfig, `depositDataRootList`: TreeBacked‹List‹Root››, `genesisTime`: number, `validatorCount`: number): *BeaconState*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:11](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar-cli/src/lodestar/interop/state.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/state.ts:11](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/interop/state.ts#L11)*
 
 **Parameters:**
 

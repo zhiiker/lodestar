@@ -41,7 +41,7 @@
 
 \+ **new BlockProcessor**(`config`: IBeaconConfig, `logger`: ILogger, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `metrics`: [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md), `eventBus`: [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter), `attestationProcessor`: [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)): *[BlockProcessor](_chain_blocks_processor_.blockprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:36](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L36)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:36](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L36)*
 
 **Parameters:**
 
@@ -63,7 +63,7 @@ Name | Type |
 
 • **attestationProcessor**: *[IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:27](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L27)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:27](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L27)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **blockProcessingSource**: *Pushable‹[IBlockProcessJob](../interfaces/_chain_chain_.iblockprocessjob.md)›* = pushable<IBlockProcessJob>()
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:34](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L34)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:34](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L34)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:21](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L21)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:21](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L21)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **controller**: *AbortController* = new AbortController()
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:36](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L36)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:36](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L36)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:23](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L23)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:23](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L23)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **eventBus**: *[ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:26](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L26)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:26](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L26)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **forkChoice**: *[ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:24](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L24)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:24](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L24)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:22](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L22)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:22](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L22)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 • **metrics**: *[IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:25](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L25)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:25](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L25)*
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 • **pendingBlocks**: *[BlockPool](_chain_blocks_pool_.blockpool.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:32](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L32)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:32](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L32)*
 
 map where key is required parent block root and value are blocks that require that parent block
 
@@ -145,7 +145,7 @@ map where key is required parent block root and value are blocks that require th
 
 ▸ **receiveBlock**(`block`: SignedBeaconBlock, `trusted`: boolean): *void*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:92](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L92)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:92](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L92)*
 
 **Parameters:**
 
@@ -164,7 +164,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:57](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L57)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:57](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L57)*
 
 **Returns:** *Promise‹void›*
 
@@ -176,6 +176,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/chain/blocks/processor.ts:88](https://github.com/ChainSafe/lodestar/blob/9711bce31/packages/lodestar/src/chain/blocks/processor.ts#L88)*
+*Defined in [packages/lodestar/src/chain/blocks/processor.ts:88](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/chain/blocks/processor.ts#L88)*
 
 **Returns:** *Promise‹void›*
