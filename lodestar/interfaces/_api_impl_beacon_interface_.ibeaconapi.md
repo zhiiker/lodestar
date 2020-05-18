@@ -35,7 +35,7 @@
 
 *Inherited from [IValidatorApi](_api_impl_validator_interface_.ivalidatorapi.md).[namespace](_api_impl_validator_interface_.ivalidatorapi.md#namespace)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/interface.ts#L33)*
+*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/interface.ts#L33)*
 
 Name space for API commands
 
@@ -45,7 +45,7 @@ Name space for API commands
 
 ▸ **getBlockStream**(): *AsyncIterable‹SignedBeaconBlock›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L50)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L50)*
 
 **Returns:** *AsyncIterable‹SignedBeaconBlock›*
 
@@ -55,7 +55,7 @@ ___
 
 ▸ **getClientVersion**(): *Promise‹Bytes32›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L24)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L24)*
 
 Requests that the BeaconNode identify information about its
 implementation in a format similar to a HTTP User-Agent field.
@@ -71,7 +71,7 @@ ___
 
 ▸ **getFork**(): *Promise‹ForkResponse›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L29)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L29)*
 
 Requests the BeaconNode to provide which fork version it is currently on.
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **getGenesisTime**(): *Promise‹Number64›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L39)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L39)*
 
 Requests the genesis_time parameter from the BeaconNode,
 which should be consistent across all BeaconNodes that follow the same beacon chain.
@@ -99,7 +99,7 @@ ___
 
 ▸ **getSyncingStatus**(): *Promise‹boolean | SyncingStatus›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L48)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L48)*
 
 Requests the BeaconNode to describe if it's currently syncing or not,
 and if it is, what block it is up to.
@@ -116,7 +116,7 @@ ___
 
 ▸ **getValidator**(`pubkey`: BLSPubkey): *Promise‹ValidatorResponse | null›*
 
-*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/impl/beacon/interface.ts#L31)*
+*Defined in [packages/lodestar/src/api/impl/beacon/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/api/impl/beacon/interface.ts#L31)*
 
 **Parameters:**
 

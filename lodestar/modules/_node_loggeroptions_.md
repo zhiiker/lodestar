@@ -19,68 +19,68 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:18](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L18)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:18](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L18)*
 
 ▪ **chain**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:19](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L19)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:19](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L19)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "chain"
 
 ▪ **chores**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:47](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L47)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:47](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L47)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "chores"
 
 ▪ **db**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:23](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L23)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:23](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L23)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "db"
 
 ▪ **eth1**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:27](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L27)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:27](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L27)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "eth1"
 
 ▪ **metrics**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:43](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L43)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:43](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L43)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "metrics"
 
 ▪ **network**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:35](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L35)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:35](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L35)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "network"
 
 ▪ **node**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:31](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L31)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:31](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L31)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "node"
 
 ▪ **sync**: *object*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:39](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/node/loggerOptions.ts#L39)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:39](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/loggerOptions.ts#L39)*
 
-* **level**: *string* = LogLevel[defaultLogLevel]
+* **level**: *info* = LogLevel[defaultLogLevel]
 
 * **module**: *string* = "sync"

@@ -21,46 +21,46 @@
 
 ### ▪ **logChain**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:4](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:4](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L4)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.chain",
-    "logger.chain",
+    "log.chain.level",
+    "logger.chain.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:5](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:5](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L5)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:11](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:11](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L11)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:12](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:12](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L12)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:13](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:13](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L13)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:9](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:9](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L9)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:10](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:10](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L10)*
 
 ___
 
@@ -68,46 +68,46 @@ ___
 
 ### ▪ **logChores**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:88](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L88)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:88](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L88)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.chores",
-    "logger.chores",
+    "log.chores.level",
+    "logger.chores.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:89](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L89)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:89](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L89)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:95](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L95)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:95](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L95)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:96](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L96)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:96](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L96)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:97](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L97)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:97](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L97)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:93](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L93)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:93](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L93)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:94](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L94)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:94](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L94)*
 
 ___
 
@@ -115,46 +115,46 @@ ___
 
 ### ▪ **logDb**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:16](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L16)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:16](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L16)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.db",
-    "logger.db",
+    "log.db.level",
+    "logger.db.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:17](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:17](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L17)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:23](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L23)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:23](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L23)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:24](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L24)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:24](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L24)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:25](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L25)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:25](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L25)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:21](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:21](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L21)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:22](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:22](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L22)*
 
 ___
 
@@ -162,46 +162,46 @@ ___
 
 ### ▪ **logEth1**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:28](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L28)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:28](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L28)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.eth1",
-    "logger.eth1",
+    "log.eth1.level",
+    "logger.eth1.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:29](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L29)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:29](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L29)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:35](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L35)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:35](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L35)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:36](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L36)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:36](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L36)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:37](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L37)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:37](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L37)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:33](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L33)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:33](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L33)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:34](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:34](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L34)*
 
 ___
 
@@ -209,46 +209,46 @@ ___
 
 ### ▪ **logMetrics**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:76](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L76)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:76](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L76)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.metrics",
-    "logger.metrics",
+    "log.metrics.level",
+    "logger.metrics.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:77](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L77)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:77](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L77)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:83](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L83)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:83](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L83)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:84](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L84)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:84](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L84)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:85](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L85)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:85](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L85)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:81](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L81)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:81](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L81)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:82](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L82)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:82](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L82)*
 
 ___
 
@@ -256,46 +256,46 @@ ___
 
 ### ▪ **logNetwork**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:52](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L52)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:52](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L52)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.network",
-    "logger.network",
+    "log.network.level",
+    "logger.network.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:53](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L53)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:53](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L53)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:59](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L59)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:59](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L59)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:60](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L60)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:60](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L60)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:61](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L61)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:61](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L61)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:57](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L57)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:57](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L57)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:58](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L58)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:58](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L58)*
 
 ___
 
@@ -303,46 +303,46 @@ ___
 
 ### ▪ **logNode**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:40](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L40)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:40](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L40)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.node",
-    "logger.node",
+    "log.node.level",
+    "logger.node.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:41](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L41)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:41](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L41)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:47](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L47)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:47](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L47)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:48](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L48)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:48](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L48)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:49](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L49)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:49](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L49)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:45](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L45)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:45](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L45)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:46](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L46)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:46](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L46)*
 
 ___
 
@@ -350,43 +350,43 @@ ___
 
 ### ▪ **logSync**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:64](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L64)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:64](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L64)*
 
 ###  alias
 
 • **alias**: *string[]* = [
-    "log.sync",
-    "logger.sync",
+    "log.sync.level",
+    "logger.sync.level",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:65](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L65)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:65](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L65)*
 
 ###  choices
 
-• **choices**: *string[]* = LogLevels
+• **choices**: *any[]* = LogLevels
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:71](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L71)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:71](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L71)*
 
 ###  default
 
-• **default**: *string* = LogLevels[LogLevel.info]
+• **default**: *LogLevel* = LogLevel.info
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:72](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L72)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:72](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L72)*
 
 ###  group
 
 • **group**: *string* = "log"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:73](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L73)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:73](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L73)*
 
 ###  hidden
 
 • **hidden**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:69](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L69)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:69](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L69)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:70](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L70)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts:70](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/logger.ts#L70)*

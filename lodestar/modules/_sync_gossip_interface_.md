@@ -14,4 +14,4 @@
 
 Ƭ **IGossipHandler**: *[IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/sync/gossip/interface.ts:3](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/sync/gossip/interface.ts#L3)*
+*Defined in [packages/lodestar/src/sync/gossip/interface.ts:3](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/gossip/interface.ts#L3)*

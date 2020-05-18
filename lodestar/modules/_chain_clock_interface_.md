@@ -19,7 +19,7 @@
 
 Ƭ **NewEpochCallback**: *function*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/chain/clock/interface.ts#L5)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:5](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/chain/clock/interface.ts#L5)*
 
 #### Type declaration:
 
@@ -37,7 +37,7 @@ ___
 
 Ƭ **NewSlotCallback**: *function*
 
-*Defined in [packages/lodestar/src/chain/clock/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/chain/clock/interface.ts#L4)*
+*Defined in [packages/lodestar/src/chain/clock/interface.ts:4](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/chain/clock/interface.ts#L4)*
 
 #### Type declaration:
 

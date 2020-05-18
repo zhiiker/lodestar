@@ -18,6 +18,6 @@
 
 ▸ **getHighestBlock**(): *Slot*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/sync/interface.ts#L22)*
+*Defined in [packages/lodestar/src/sync/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/interface.ts#L22)*
 
 **Returns:** *Slot*

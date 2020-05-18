@@ -20,7 +20,7 @@
 
 ▸ **getKeyFromFileOrKeystore**(`key`: string): *Promise‹Keypair›*
 
-*Defined in [packages/lodestar/src/util/io.ts:34](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/util/io.ts#L34)*
+*Defined in [packages/lodestar/src/util/io.ts:34](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/util/io.ts#L34)*
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **getKeyFromFileOrKeystoreWithPassword**(`key`: string, `password`: string): *Keypair*
 
-*Defined in [packages/lodestar/src/util/io.ts:43](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/util/io.ts#L43)*
+*Defined in [packages/lodestar/src/util/io.ts:43](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/util/io.ts#L43)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **promptPassword**(`passwordPrompt`: string): *Promise‹string›*
 
-*Defined in [packages/lodestar/src/util/io.ts:14](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/util/io.ts#L14)*
+*Defined in [packages/lodestar/src/util/io.ts:14](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/util/io.ts#L14)*
 
 **Parameters:**
 

@@ -14,7 +14,7 @@
 
 ### ▪ **SyncOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:3](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodestar/sync/options.ts#L3)*
 
 ###  fields
 
@@ -29,10 +29,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:5](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodestar/sync/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "sync"
 
-*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/sync/options.ts:4](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/lodestar/sync/options.ts#L4)*
