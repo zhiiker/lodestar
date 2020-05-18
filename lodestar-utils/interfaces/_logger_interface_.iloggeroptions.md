@@ -19,7 +19,7 @@
 
 • **level**: *typeof LogLevel[number]*
 
-*Defined in [logger/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-utils/src/logger/interface.ts#L35)*
+*Defined in [logger/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-utils/src/logger/interface.ts#L35)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **module**: *string*
 
-*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-utils/src/logger/interface.ts#L36)*
+*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-utils/src/logger/interface.ts#L36)*

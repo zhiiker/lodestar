@@ -22,7 +22,7 @@
 
 ▸ **registerAggregateAndProofProductionEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:30](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L30)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:30](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L30)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:13](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:13](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L13)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:14](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L14)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:14](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L14)*
 
 * **querystring**: *object*
 

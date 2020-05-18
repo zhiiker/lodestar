@@ -20,4 +20,4 @@
 
 • **rootDir**: *string*
 
-*Defined in [packages/lodestar-cli/src/lodecli/options.ts:4](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodecli/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/options.ts:4](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/options.ts#L4)*

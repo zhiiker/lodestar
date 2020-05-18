@@ -18,4 +18,4 @@
 
 • **pubkey**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/api/rest/routes/beacon/validator.ts#L7)*

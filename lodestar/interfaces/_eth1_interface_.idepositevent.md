@@ -34,7 +34,7 @@ ___
 
 • **index**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/eth1/interface.ts#L14)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/eth1/interface.ts#L14)*
 
 ___
 

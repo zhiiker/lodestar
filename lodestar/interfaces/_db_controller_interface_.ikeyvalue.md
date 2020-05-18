@@ -25,7 +25,7 @@
 
 • **key**: *K*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/db/controller/interface.ts#L14)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/db/controller/interface.ts#L14)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 • **value**: *V*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/db/controller/interface.ts#L15)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/db/controller/interface.ts#L15)*

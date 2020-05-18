@@ -73,9 +73,9 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ###  beaconBlocksByRange
 
-▸ **beaconBlocksByRange**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRangeRequest): *Promise‹SignedBeaconBlock[]›*
+▸ **beaconBlocksByRange**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRangeRequest): *Promise‹SignedBeaconBlock[] | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L45)*
+*Defined in [packages/lodestar/src/network/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L45)*
 
 **Parameters:**
 
@@ -84,15 +84,15 @@ Name | Type |
 `peerInfo` | PeerInfo |
 `request` | BeaconBlocksByRangeRequest |
 
-**Returns:** *Promise‹SignedBeaconBlock[]›*
+**Returns:** *Promise‹SignedBeaconBlock[] | null›*
 
 ___
 
 ###  beaconBlocksByRoot
 
-▸ **beaconBlocksByRoot**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRootRequest): *Promise‹SignedBeaconBlock[]›*
+▸ **beaconBlocksByRoot**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRootRequest): *Promise‹SignedBeaconBlock[] | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L46)*
+*Defined in [packages/lodestar/src/network/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L46)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ Name | Type |
 `peerInfo` | PeerInfo |
 `request` | BeaconBlocksByRootRequest |
 
-**Returns:** *Promise‹SignedBeaconBlock[]›*
+**Returns:** *Promise‹SignedBeaconBlock[] | null›*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **goodbye**(`peerInfo`: PeerInfo, `request`: [Goodbye](../enums/_constants_network_.method.md#goodbye)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L42)*
+*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L42)*
 
 **Parameters:**
 
@@ -124,9 +124,9 @@ ___
 
 ###  metadata
 
-▸ **metadata**(`peerInfo`: PeerInfo): *Promise‹Metadata›*
+▸ **metadata**(`peerInfo`: PeerInfo): *Promise‹Metadata | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L44)*
+*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L44)*
 
 **Parameters:**
 
@@ -134,15 +134,15 @@ Name | Type |
 ------ | ------ |
 `peerInfo` | PeerInfo |
 
-**Returns:** *Promise‹Metadata›*
+**Returns:** *Promise‹Metadata | null›*
 
 ___
 
 ###  ping
 
-▸ **ping**(`peerInfo`: PeerInfo, `request`: [Ping](../enums/_constants_network_.method.md#ping)): *Promise‹[Ping](../enums/_constants_network_.method.md#ping)›*
+▸ **ping**(`peerInfo`: PeerInfo, `request`: [Ping](../enums/_constants_network_.method.md#ping)): *Promise‹[Ping](../enums/_constants_network_.method.md#ping) | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L43)*
+*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L43)*
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ Name | Type |
 `peerInfo` | PeerInfo |
 `request` | [Ping](../enums/_constants_network_.method.md#ping) |
 
-**Returns:** *Promise‹[Ping](../enums/_constants_network_.method.md#ping)›*
+**Returns:** *Promise‹[Ping](../enums/_constants_network_.method.md#ping) | null›*
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **sendResponse**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](../classes/_network_error_.rpcerror.md), `response?`: ResponseBody): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L40)*
+*Defined in [packages/lodestar/src/network/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L40)*
 
 **Parameters:**
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **sendResponseStream**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](../classes/_network_error_.rpcerror.md), `chunkIter`: AsyncIterable‹ResponseBody›): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L39)*
+*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L39)*
 
 **Parameters:**
 
@@ -193,9 +193,9 @@ ___
 
 ###  status
 
-▸ **status**(`peerInfo`: PeerInfo, `request`: Status): *Promise‹Status›*
+▸ **status**(`peerInfo`: PeerInfo, `request`: Status): *Promise‹Status | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/network/interface.ts#L41)*
+*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/network/interface.ts#L41)*
 
 **Parameters:**
 
@@ -204,4 +204,4 @@ Name | Type |
 `peerInfo` | PeerInfo |
 `request` | Status |
 
-**Returns:** *Promise‹Status›*
+**Returns:** *Promise‹Status | null›*

@@ -14,7 +14,7 @@
 
 ▸ **parseArgs**<**T**>(`yargs`: Argv‹T›): *T*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/parseArgs.ts:7](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodecli/util/parseArgs.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/parseArgs.ts:7](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/util/parseArgs.ts#L7)*
 
 yargs.parse() attempts to exit if called from a yargs build step in certain cases (help and version)
 This calls yargs.parse() in a way that doesn't exit

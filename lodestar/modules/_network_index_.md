@@ -19,6 +19,7 @@
 * [createPeerInfo](_network_index_.md#createpeerinfo)
 * [createResponseEvent](_network_index_.md#createresponseevent)
 * [createRpcProtocol](_network_index_.md#createrpcprotocol)
+* [eth2ResponseTimer](_network_index_.md#eth2responsetimer)
 * [getRequestMethodSSZType](_network_index_.md#getrequestmethodssztype)
 * [getResponseMethodSSZType](_network_index_.md#getresponsemethodssztype)
 * [initializePeerInfo](_network_index_.md#initializepeerinfo)
@@ -103,6 +104,12 @@ ___
 ###  createRpcProtocol
 
 • **createRpcProtocol**:
+
+___
+
+###  eth2ResponseTimer
+
+• **eth2ResponseTimer**:
 
 ___
 

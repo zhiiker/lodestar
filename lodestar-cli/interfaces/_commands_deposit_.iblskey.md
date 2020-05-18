@@ -19,7 +19,7 @@
 
 • **signing**: *PrivateKey*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:51](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/commands/deposit.ts#L51)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:51](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/commands/deposit.ts#L51)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **withdrawal**: *PrivateKey*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:52](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/commands/deposit.ts#L52)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:52](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/commands/deposit.ts#L52)*

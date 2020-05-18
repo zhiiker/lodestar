@@ -14,7 +14,7 @@
 
 ### ▪ **DatabaseOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:3](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/db/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:3](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/db/options.ts#L3)*
 
 ###  fields
 
@@ -31,10 +31,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:5](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/db/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:5](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/db/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "db"
 
-*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:4](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodestar/db/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/db/options.ts:4](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodestar/db/options.ts#L4)*

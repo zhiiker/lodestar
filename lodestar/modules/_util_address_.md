@@ -14,7 +14,7 @@
 
 ▸ **isValidAddress**(`address`: string): *boolean*
 
-*Defined in [packages/lodestar/src/util/address.ts:5](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar/src/util/address.ts#L5)*
+*Defined in [packages/lodestar/src/util/address.ts:5](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar/src/util/address.ts#L5)*
 
 **`module`** util/address
 

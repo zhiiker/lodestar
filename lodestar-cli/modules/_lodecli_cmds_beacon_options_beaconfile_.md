@@ -20,7 +20,7 @@
 
 ▸ **dbDir**(`args`: [IBeaconConfigArgs](../interfaces/_lodecli_cmds_beacon_options_beaconconfig_.ibeaconconfigargs.md)): *Options*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:14](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:14](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L14)*
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **enrFile**(`args`: [IBeaconConfigArgs](../interfaces/_lodecli_cmds_beacon_options_beaconconfig_.ibeaconconfigargs.md)): *Options*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:30](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L30)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:30](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L30)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **peerIdFile**(`args`: [IBeaconConfigArgs](../interfaces/_lodecli_cmds_beacon_options_beaconconfig_.ibeaconconfigargs.md)): *Options*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:22](https://github.com/ChainSafe/lodestar/blob/bd8798297/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts:22](https://github.com/ChainSafe/lodestar/blob/7e3e010f1/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconFile.ts#L22)*
 
 **Parameters:**
 
