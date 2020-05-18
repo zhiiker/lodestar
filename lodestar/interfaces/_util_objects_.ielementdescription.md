@@ -19,7 +19,7 @@
 
 • **count**: *number*
 
-*Defined in [packages/lodestar/src/util/objects.ts:9](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/util/objects.ts#L9)*
+*Defined in [packages/lodestar/src/util/objects.ts:9](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/util/objects.ts#L9)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **index**: *number*
 
-*Defined in [packages/lodestar/src/util/objects.ts:8](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/util/objects.ts#L8)*
+*Defined in [packages/lodestar/src/util/objects.ts:8](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/util/objects.ts#L8)*

@@ -44,7 +44,7 @@ ___
 
 • **messageId**: *string*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:99](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/network/gossip/interface.ts#L99)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:99](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/network/gossip/interface.ts#L99)*
 
 ___
 

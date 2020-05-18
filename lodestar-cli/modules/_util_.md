@@ -17,7 +17,7 @@
 
 ▸ **generateCommanderOptions**(`command`: Command, `optionDescription`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *void*
 
-*Defined in [packages/lodestar-cli/src/util.ts:12](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/util.ts#L12)*
+*Defined in [packages/lodestar-cli/src/util.ts:12](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-cli/src/util.ts#L12)*
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **optionsToConfig**<**T**>(`options`: object, `optionDescription`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *Partial‹T›*
 
-*Defined in [packages/lodestar-cli/src/util.ts:37](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/util.ts#L37)*
+*Defined in [packages/lodestar-cli/src/util.ts:37](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-cli/src/util.ts#L37)*
 
 This is awful,
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **processField**(`field`: [IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md), `options`: object, `config`: any): *[IConfigurationField](../interfaces/_lodestar_util_config_.iconfigurationfield.md)*
 
-*Defined in [packages/lodestar-cli/src/util.ts:60](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/util.ts#L60)*
+*Defined in [packages/lodestar-cli/src/util.ts:60](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-cli/src/util.ts#L60)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **processModule**(`options`: object, `field`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md), `config`: any): *void*
 
-*Defined in [packages/lodestar-cli/src/util.ts:53](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-cli/src/util.ts#L53)*
+*Defined in [packages/lodestar-cli/src/util.ts:53](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-cli/src/util.ts#L53)*
 
 **Parameters:**
 

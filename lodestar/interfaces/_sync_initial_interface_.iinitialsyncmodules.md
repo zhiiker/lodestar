@@ -15,6 +15,7 @@
 * [logger](_sync_initial_interface_.iinitialsyncmodules.md#logger)
 * [network](_sync_initial_interface_.iinitialsyncmodules.md#network)
 * [reputationStore](_sync_initial_interface_.iinitialsyncmodules.md#reputationstore)
+* [stats](_sync_initial_interface_.iinitialsyncmodules.md#optional-stats)
 
 ## Properties
 
@@ -22,7 +23,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/initial/interface.ts#L14)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L15)*
 
 ___
 
@@ -30,7 +31,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/initial/interface.ts#L13)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L14)*
 
 ___
 
@@ -38,7 +39,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/initial/interface.ts#L17)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L18)*
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/initial/interface.ts#L15)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L16)*
 
 ___
 
@@ -54,4 +55,12 @@ ___
 
 • **reputationStore**: *[IReputationStore](_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/sync/initial/interface.ts#L16)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L17)*
+
+___
+
+### `Optional` stats
+
+• **stats**? : *[ISyncStats](_sync_stats_interface_.isyncstats.md)*
+
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/sync/initial/interface.ts#L19)*

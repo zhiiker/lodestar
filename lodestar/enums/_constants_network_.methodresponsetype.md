@@ -16,7 +16,7 @@
 
 • **NoResponse**: = "NoResponse"
 
-*Defined in [packages/lodestar/src/constants/network.ts:23](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/constants/network.ts#L23)*
+*Defined in [packages/lodestar/src/constants/network.ts:23](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/constants/network.ts#L23)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **SingleResponse**: = "SingleResponse"
 
-*Defined in [packages/lodestar/src/constants/network.ts:22](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/constants/network.ts#L22)*
+*Defined in [packages/lodestar/src/constants/network.ts:22](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/constants/network.ts#L22)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **Stream**: = "Stream"
 
-*Defined in [packages/lodestar/src/constants/network.ts:24](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/constants/network.ts#L24)*
+*Defined in [packages/lodestar/src/constants/network.ts:24](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/constants/network.ts#L24)*

@@ -18,4 +18,4 @@
 
 Ƭ **Id**: *Uint8Array | string | number | bigint*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:7](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L7)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/abstract.ts:7](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/db/api/beacon/repositories/abstract.ts#L7)*

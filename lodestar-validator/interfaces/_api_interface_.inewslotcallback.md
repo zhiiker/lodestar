@@ -10,7 +10,7 @@
 
 ▸ (`slot`: Slot): *void*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar-validator/src/api/interface.ts#L7)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-validator/src/api/interface.ts#L7)*
 
 **Parameters:**
 

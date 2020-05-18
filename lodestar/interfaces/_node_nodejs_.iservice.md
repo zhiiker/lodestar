@@ -8,6 +8,8 @@
 
   ↳ [IGossip](_network_gossip_interface_.igossip.md)
 
+  ↳ [ISyncStats](_sync_stats_interface_.isyncstats.md)
+
   ↳ [IBeaconSync](_sync_interface_.ibeaconsync.md)
 
   ↳ [IBeaconClock](_chain_clock_interface_.ibeaconclock.md)
@@ -38,7 +40,7 @@
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -48,6 +50,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/e23248925/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*
