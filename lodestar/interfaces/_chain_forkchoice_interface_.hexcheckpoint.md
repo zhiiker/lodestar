@@ -22,7 +22,7 @@ this helps checkpoint's check inside node without a config
 
 • **epoch**: *Epoch*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:67](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/forkChoice/interface.ts#L67)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:69](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/forkChoice/interface.ts#L69)*
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 • **rootHex**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:66](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/forkChoice/interface.ts#L66)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:68](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/forkChoice/interface.ts#L68)*

@@ -34,7 +34,7 @@
 
 • **level**: *[LogLevel](../enums/_logger_interface_.loglevel.md)*
 
-*Defined in [logger/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L35)*
+*Defined in [logger/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L35)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **silent**: *boolean*
 
-*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L36)*
+*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L36)*
 
 ## Methods
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **child**(`options`: [ILoggerOptions](_logger_interface_.iloggeroptions.md)): *[ILogger](_logger_interface_.ilogger.md)*
 
-*Defined in [logger/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L46)*
+*Defined in [logger/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L46)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **debug**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L42)*
+*Defined in [logger/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L42)*
 
 **Parameters:**
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **error**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L38)*
+*Defined in [logger/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L38)*
 
 **Parameters:**
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **important**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L47)*
+*Defined in [logger/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L47)*
 
 **Parameters:**
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **info**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L40)*
+*Defined in [logger/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L40)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **silly**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L43)*
+*Defined in [logger/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L43)*
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **verbose**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L41)*
+*Defined in [logger/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L41)*
 
 **Parameters:**
 
@@ -168,7 +168,7 @@ ___
 
 ▸ **warn**(`message`: string | object, `context?`: object): *void*
 
-*Defined in [logger/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-utils/src/logger/interface.ts#L39)*
+*Defined in [logger/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-utils/src/logger/interface.ts#L39)*
 
 **Parameters:**
 

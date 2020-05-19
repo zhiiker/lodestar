@@ -26,7 +26,7 @@
 
 Ƭ **RootHex**: *string*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/forkChoice/interface.ts#L41)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/forkChoice/interface.ts#L43)*
 
 Root is a block root as a hex string
 
@@ -38,4 +38,4 @@ Used here for light weight and easy comparison
 
 • **NO_NODE**: *-1* = -1
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:71](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/forkChoice/interface.ts#L71)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:73](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/forkChoice/interface.ts#L73)*

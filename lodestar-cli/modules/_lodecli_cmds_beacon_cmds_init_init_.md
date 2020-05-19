@@ -14,7 +14,7 @@
 
 ▸ **init**(`args`: Arguments‹[IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)›): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/init.ts:11](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/init.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/init.ts:11](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/init.ts#L11)*
 
 Initialize lodestar-cli with an on-disk configuration
 

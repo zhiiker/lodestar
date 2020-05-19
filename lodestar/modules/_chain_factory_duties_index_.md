@@ -15,7 +15,7 @@
 
 ▸ **assembleAttesterDuty**(`config`: IBeaconConfig, `validator`: object, `state`: BeaconState, `epoch`: Epoch): *AttesterDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:7](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/factory/duties/index.ts#L7)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:7](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/factory/duties/index.ts#L7)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **generateEmptyAttesterDuty**(`publicKey`: BLSPubkey, `duty?`: Partial‹AttesterDuty›): *AttesterDuty*
 
-*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:35](https://github.com/ChainSafe/lodestar/blob/9eb50dc78/packages/lodestar/src/chain/factory/duties/index.ts#L35)*
+*Defined in [packages/lodestar/src/chain/factory/duties/index.ts:35](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/factory/duties/index.ts#L35)*
 
 **Parameters:**
 
