@@ -35,7 +35,7 @@
 
 \+ **new HttpMetricsServer**(`opts`: [IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md), `__namedParameters`: object): *[HttpMetricsServer](_metrics_server_http_.httpmetricsserver.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:15](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L15)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:15](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L15)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 • **http**: *Server*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:12](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L12)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:12](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L12)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:15](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L15)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:15](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L15)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **metrics**: *[IMetrics](../interfaces/_metrics_interface_.imetrics.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:14](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L14)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:14](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L14)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **opts**: *[IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:13](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L13)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:13](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L13)*
 
 ## Methods
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **onRequest**(`req`: IncomingMessage, `res`: ServerResponse): *void*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:41](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L41)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:41](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L41)*
 
 **Parameters:**
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:24](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L24)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:24](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L24)*
 
 **Returns:** *Promise‹void›*
 
@@ -115,6 +115,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/server/http.ts:31](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/metrics/server/http.ts#L31)*
+*Defined in [packages/lodestar/src/metrics/server/http.ts:31](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/metrics/server/http.ts#L31)*
 
 **Returns:** *Promise‹void›*

@@ -15,7 +15,7 @@
 
 ▸ **getEth1Vote**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `state`: BeaconState): *Promise‹Eth1Data›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/eth1Vote.ts:15](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L15)*
+*Defined in [packages/lodestar/src/chain/factory/block/eth1Vote.ts:15](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L15)*
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **votingPeriodStartTime**(`config`: IBeaconConfig, `state`: BeaconState): *number*
 
-*Defined in [packages/lodestar/src/chain/factory/block/eth1Vote.ts:9](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L9)*
+*Defined in [packages/lodestar/src/chain/factory/block/eth1Vote.ts:9](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L9)*
 
 **Parameters:**
 

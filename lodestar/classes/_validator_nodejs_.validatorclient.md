@@ -34,7 +34,7 @@
 
 \+ **new ValidatorClient**(`opts`: Partial‹[IValidatorClientOptions](../interfaces/_validator_options_.ivalidatorclientoptions.md)›, `modules`: object): *[ValidatorClient](_validator_nodejs_.validatorclient.md)*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:17](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L17)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:17](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L17)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ Name | Type |
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:15](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L15)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:15](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L15)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **opts**: *[IValidatorClientOptions](../interfaces/_validator_options_.ivalidatorclientoptions.md)*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:16](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L16)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:16](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L16)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **validator**: *Validator | null*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:17](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L17)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:17](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L17)*
 
 ## Methods
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **initDb**(`config`: IBeaconConfig, `db`: string): *[IValidatorDB](../interfaces/_db_api_validator_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:45](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L45)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:45](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L45)*
 
 **Parameters:**
 
@@ -97,7 +97,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*
 
@@ -109,6 +109,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/validator/nodejs.ts:39](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/validator/nodejs.ts#L39)*
+*Defined in [packages/lodestar/src/validator/nodejs.ts:39](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/validator/nodejs.ts#L39)*
 
 **Returns:** *Promise‹void›*

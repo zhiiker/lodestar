@@ -14,7 +14,7 @@
 
 ▸ **registerVersionEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/version.ts:5](https://github.com/ChainSafe/lodestar/blob/e079784d1/packages/lodestar/src/api/rest/routes/beacon/version.ts#L5)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/version.ts:5](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/api/rest/routes/beacon/version.ts#L5)*
 
 **Parameters:**
 
