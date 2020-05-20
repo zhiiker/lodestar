@@ -29,7 +29,7 @@
 
 • **REQ_PROTOCOL**: *"/eth2/beacon_chain/req/{method}/{version}/{encoding}"* = "/eth2/beacon_chain/req/{method}/{version}/{encoding}"
 
-*Defined in [packages/lodestar/src/network/util.ts:28](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L28)*
+*Defined in [packages/lodestar/src/network/util.ts:28](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L28)*
 
 ## Functions
 
@@ -37,7 +37,7 @@
 
 ▸ **createPeerId**(): *Promise‹PeerId›*
 
-*Defined in [packages/lodestar/src/network/util.ts:48](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L48)*
+*Defined in [packages/lodestar/src/network/util.ts:48](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L48)*
 
 Return a fresh PeerId instance
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **createPeerInfo**(`peerId`: PeerId): *Promise‹PeerInfo›*
 
-*Defined in [packages/lodestar/src/network/util.ts:41](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L41)*
+*Defined in [packages/lodestar/src/network/util.ts:41](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L41)*
 
 Return a fresh PeerInfo instance
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **createResponseEvent**(`id`: [RequestId](_constants_network_.md#requestid)): *string*
 
-*Defined in [packages/lodestar/src/network/util.ts:24](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L24)*
+*Defined in [packages/lodestar/src/network/util.ts:24](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L24)*
 
 **Parameters:**
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **createRpcProtocol**(`method`: string, `encoding`: string, `version`: number): *string*
 
-*Defined in [packages/lodestar/src/network/util.ts:29](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L29)*
+*Defined in [packages/lodestar/src/network/util.ts:29](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L29)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **eth2ResponseTimer**<**T**>(): *function*
 
-*Defined in [packages/lodestar/src/network/util.ts:78](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L78)*
+*Defined in [packages/lodestar/src/network/util.ts:78](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L78)*
 
 **Type parameters:**
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **getRequestMethodSSZType**(`config`: IBeaconConfig, `method`: [Method](../enums/_constants_network_.method.md)): *Type‹any›*
 
-*Defined in [packages/lodestar/src/network/util.ts:58](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L58)*
+*Defined in [packages/lodestar/src/network/util.ts:58](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L58)*
 
 **Parameters:**
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **getResponseMethodSSZType**(`config`: IBeaconConfig, `method`: [Method](../enums/_constants_network_.method.md)): *Type‹any›*
 
-*Defined in [packages/lodestar/src/network/util.ts:64](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L64)*
+*Defined in [packages/lodestar/src/network/util.ts:64](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L64)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **initializePeerInfo**(`peerId`: PeerId, `multiaddrs`: string[]): *Promise‹PeerInfo›*
 
-*Defined in [packages/lodestar/src/network/util.ts:52](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L52)*
+*Defined in [packages/lodestar/src/network/util.ts:52](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L52)*
 
 **Parameters:**
 
@@ -174,7 +174,7 @@ ___
 
 ▸ **isRequestOnly**(`method`: [Method](../enums/_constants_network_.method.md)): *boolean*
 
-*Defined in [packages/lodestar/src/network/util.ts:70](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L70)*
+*Defined in [packages/lodestar/src/network/util.ts:70](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L70)*
 
 **Parameters:**
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **isRequestSingleChunk**(`method`: [Method](../enums/_constants_network_.method.md)): *boolean*
 
-*Defined in [packages/lodestar/src/network/util.ts:74](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L74)*
+*Defined in [packages/lodestar/src/network/util.ts:74](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L74)*
 
 **Parameters:**
 
@@ -206,7 +206,7 @@ ___
 
 ▸ **randomNibble**(): *string*
 
-*Defined in [packages/lodestar/src/network/util.ts:16](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L16)*
+*Defined in [packages/lodestar/src/network/util.ts:16](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L16)*
 
 **Returns:** *string*
 
@@ -216,6 +216,6 @@ ___
 
 ▸ **randomRequestId**(): *[RequestId](_constants_network_.md#requestid)*
 
-*Defined in [packages/lodestar/src/network/util.ts:20](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar/src/network/util.ts#L20)*
+*Defined in [packages/lodestar/src/network/util.ts:20](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/util.ts#L20)*
 
 **Returns:** *[RequestId](_constants_network_.md#requestid)*

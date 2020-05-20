@@ -14,7 +14,7 @@
 
 ▸ **interopDeposits**(`config`: IBeaconConfig, `depositDataRootList`: TreeBacked‹List‹Root››, `validatorCount`: number): *Deposit[]*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/deposits.ts:9](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-cli/src/lodestar/interop/deposits.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/deposits.ts:9](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-cli/src/lodestar/interop/deposits.ts#L9)*
 
 **Parameters:**
 

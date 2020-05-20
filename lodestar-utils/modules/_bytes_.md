@@ -23,7 +23,7 @@
 
 Ƭ **Endianness**: *"le" | "be"*
 
-*Defined in [bytes.ts:6](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L6)*
+*Defined in [bytes.ts:7](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L7)*
 
 ## Functions
 
@@ -31,7 +31,7 @@
 
 ▸ **bigIntToBytes**(`value`: bigint, `length`: number, `endianness`: [Endianness](_bytes_.md#endianness)): *Buffer*
 
-*Defined in [bytes.ts:22](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L22)*
+*Defined in [bytes.ts:23](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L23)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **bytesToBigInt**(`value`: Uint8Array, `endianness`: [Endianness](_bytes_.md#endianness)): *bigint*
 
-*Defined in [bytes.ts:31](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L31)*
+*Defined in [bytes.ts:32](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L32)*
 
 **Parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **bytesToInt**(`value`: Uint8Array, `endianness`: [Endianness](_bytes_.md#endianness)): *number*
 
-*Defined in [bytes.ts:18](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L18)*
+*Defined in [bytes.ts:19](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L19)*
 
 Convert byte array in LE to integer.
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **fromHex**(`hex`: string): *Uint8Array*
 
-*Defined in [bytes.ts:45](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L45)*
+*Defined in [bytes.ts:51](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L51)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **intToBytes**(`value`: bigint | number, `length`: number, `endianness`: [Endianness](_bytes_.md#endianness)): *Buffer*
 
-*Defined in [bytes.ts:11](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L11)*
+*Defined in [bytes.ts:12](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L12)*
 
 Return a byte array from a number or BigInt
 
@@ -119,14 +119,14 @@ ___
 
 ###  toHex
 
-▸ **toHex**(`buffer`: Uint8Array): *string*
+▸ **toHex**(`buffer`: ArrayLike‹number›): *string*
 
-*Defined in [bytes.ts:41](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/bytes.ts#L41)*
+*Defined in [bytes.ts:42](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/bytes.ts#L42)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`buffer` | Uint8Array |
+`buffer` | ArrayLike‹number› |
 
 **Returns:** *string*

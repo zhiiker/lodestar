@@ -34,7 +34,7 @@
 
 • **level**: *[LogLevel](../enums/_logger_interface_.loglevel.md)*
 
-*Defined in [logger/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L35)*
+*Defined in [logger/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L39)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **silent**: *boolean*
 
-*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L36)*
+*Defined in [logger/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L40)*
 
 ## Methods
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **child**(`options`: [ILoggerOptions](_logger_interface_.iloggeroptions.md)): *[ILogger](_logger_interface_.ilogger.md)*
 
-*Defined in [logger/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L46)*
+*Defined in [logger/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L51)*
 
 **Parameters:**
 
@@ -64,16 +64,16 @@ ___
 
 ###  debug
 
-▸ **debug**(`message`: string | object, `context?`: object): *void*
+▸ **debug**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context)): *void*
 
-*Defined in [logger/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L42)*
+*Defined in [logger/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L47)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) |
 
 **Returns:** *void*
 
@@ -81,16 +81,16 @@ ___
 
 ###  error
 
-▸ **error**(`message`: string | object, `context?`: object): *void*
+▸ **error**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context) | Error): *void*
 
-*Defined in [logger/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L38)*
+*Defined in [logger/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L42)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) &#124; Error |
 
 **Returns:** *void*
 
@@ -98,16 +98,16 @@ ___
 
 ###  important
 
-▸ **important**(`message`: string | object, `context?`: object): *void*
+▸ **important**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context)): *void*
 
-*Defined in [logger/interface.ts:47](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L47)*
+*Defined in [logger/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L45)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) |
 
 **Returns:** *void*
 
@@ -115,16 +115,16 @@ ___
 
 ###  info
 
-▸ **info**(`message`: string | object, `context?`: object): *void*
+▸ **info**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context)): *void*
 
-*Defined in [logger/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L40)*
+*Defined in [logger/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L44)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) |
 
 **Returns:** *void*
 
@@ -132,16 +132,16 @@ ___
 
 ###  silly
 
-▸ **silly**(`message`: string | object, `context?`: object): *void*
+▸ **silly**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context)): *void*
 
-*Defined in [logger/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L43)*
+*Defined in [logger/interface.ts:48](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L48)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) |
 
 **Returns:** *void*
 
@@ -149,16 +149,16 @@ ___
 
 ###  verbose
 
-▸ **verbose**(`message`: string | object, `context?`: object): *void*
+▸ **verbose**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context)): *void*
 
-*Defined in [logger/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L41)*
+*Defined in [logger/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L46)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) |
 
 **Returns:** *void*
 
@@ -166,15 +166,15 @@ ___
 
 ###  warn
 
-▸ **warn**(`message`: string | object, `context?`: object): *void*
+▸ **warn**(`message`: string, `context?`: [Context](../modules/_logger_interface_.md#context) | Error): *void*
 
-*Defined in [logger/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L39)*
+*Defined in [logger/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L43)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`message` | string &#124; object |
-`context?` | object |
+`message` | string |
+`context?` | [Context](../modules/_logger_interface_.md#context) &#124; Error |
 
 **Returns:** *void*

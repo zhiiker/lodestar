@@ -7,6 +7,7 @@
 ### External modules
 
 * ["bytes"](modules/_bytes_.md)
+* ["logger/format"](modules/_logger_format_.md)
 * ["logger/index"](modules/_logger_index_.md)
 * ["logger/interface"](modules/_logger_interface_.md)
 * ["logger/winston"](modules/_logger_winston_.md)

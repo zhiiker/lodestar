@@ -6,15 +6,24 @@
 
 ### References
 
+* [Context](_logger_index_.md#context)
 * [ILogger](_logger_index_.md#ilogger)
 * [ILoggerOptions](_logger_index_.md#iloggeroptions)
 * [LogLevel](_logger_index_.md#loglevel)
 * [LogLevels](_logger_index_.md#loglevels)
 * [WinstonLogger](_logger_index_.md#winstonlogger)
 * [customColors](_logger_index_.md#customcolors)
+* [defaultLogFormat](_logger_index_.md#defaultlogformat)
 * [defaultLogLevel](_logger_index_.md#defaultloglevel)
+* [serializeContext](_logger_index_.md#serializecontext)
 
 ## References
+
+###  Context
+
+• **Context**:
+
+___
 
 ###  ILogger
 
@@ -52,6 +61,18 @@ ___
 
 ___
 
+###  defaultLogFormat
+
+• **defaultLogFormat**:
+
+___
+
 ###  defaultLogLevel
 
 • **defaultLogLevel**:
+
+___
+
+###  serializeContext
+
+• **serializeContext**:

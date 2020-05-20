@@ -13,6 +13,10 @@
 * [ILogger](../interfaces/_logger_interface_.ilogger.md)
 * [ILoggerOptions](../interfaces/_logger_interface_.iloggeroptions.md)
 
+### Type aliases
+
+* [Context](_logger_interface_.md#context)
+
 ### Variables
 
 * [LogLevels](_logger_interface_.md#const-loglevels)
@@ -22,13 +26,25 @@
 
 * [customColors](_logger_interface_.md#const-customcolors)
 
+## Type aliases
+
+###  Context
+
+Ƭ **Context**: *object*
+
+*Defined in [logger/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L36)*
+
+#### Type declaration:
+
+* \[ **k**: *string*\]: string | number | BigInt | ArrayLike‹number›
+
 ## Variables
 
 ### `Const` LogLevels
 
 • **LogLevels**: *any[]* = Object.keys(LogLevel).map(key => LogLevel[key])
 
-*Defined in [logger/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L15)*
+*Defined in [logger/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L17)*
 
 ___
 
@@ -36,7 +52,7 @@ ___
 
 • **defaultLogLevel**: *[info](../enums/_logger_interface_.loglevel.md#info)* = LogLevel.info
 
-*Defined in [logger/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L27)*
+*Defined in [logger/interface.ts:29](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L29)*
 
 ## Object literals
 
@@ -44,40 +60,40 @@ ___
 
 ### ▪ **customColors**: *object*
 
-*Defined in [logger/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L18)*
+*Defined in [logger/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L20)*
 
 ###  debug
 
 • **debug**: *string* = "pink"
 
-*Defined in [logger/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L23)*
+*Defined in [logger/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L25)*
 
 ###  error
 
 • **error**: *string* = "red"
 
-*Defined in [logger/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L19)*
+*Defined in [logger/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L21)*
 
 ###  info
 
 • **info**: *string* = "white"
 
-*Defined in [logger/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L21)*
+*Defined in [logger/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L23)*
 
 ###  silly
 
 • **silly**: *string* = "purple"
 
-*Defined in [logger/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L24)*
+*Defined in [logger/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L26)*
 
 ###  verbose
 
 • **verbose**: *string* = "green"
 
-*Defined in [logger/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L22)*
+*Defined in [logger/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L24)*
 
 ###  warn
 
 • **warn**: *string* = "yellow"
 
-*Defined in [logger/interface.ts:20](https://github.com/ChainSafe/lodestar/blob/2084b4ac7/packages/lodestar-utils/src/logger/interface.ts#L20)*
+*Defined in [logger/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/interface.ts#L22)*
