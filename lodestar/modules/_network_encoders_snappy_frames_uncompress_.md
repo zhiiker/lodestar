@@ -33,7 +33,7 @@
   0x73, 0x4e, 0x61, 0x50, 0x70, 0x59
 ])
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:5](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L5)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:5](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L5)*
 
 ## Functions
 
@@ -41,7 +41,7 @@
 
 ▸ **getChunkType**(`value`: number): *[ChunkType](../enums/_network_encoders_snappy_frames_uncompress_.chunktype.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:88](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L88)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:88](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L88)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **getFrameSize**(`buffer`: BufferList, `offset`: number): *number*
 
-*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:84](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L84)*
+*Defined in [packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts:84](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/encoders/snappy-frames/uncompress.ts#L84)*
 
 **Parameters:**
 

@@ -16,7 +16,7 @@
 
 ▸ **canonicalOptions**(`options`: Record‹string, Options›): *Record‹string, Options›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:21](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:21](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L21)*
 
 An option's first alias, if it exists is set as the 'canonical' one
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **firstAlias**(`option`: Options): *string*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:3](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:3](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L3)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **popAlias**(`option`: Options): *void*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:10](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts:10](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-cli/src/lodecli/util/canonicalOptions.ts#L10)*
 
 **Parameters:**
 

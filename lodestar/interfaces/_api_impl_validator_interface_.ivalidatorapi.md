@@ -41,7 +41,7 @@ The API interface defines the calls that can be made from a Validator
 
 *Inherited from [IValidatorApi](_api_impl_validator_interface_.ivalidatorapi.md).[namespace](_api_impl_validator_interface_.ivalidatorapi.md#namespace)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/interface.ts#L33)*
+*Defined in [packages/lodestar/src/api/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/interface.ts#L33)*
 
 Name space for API commands
 
@@ -51,7 +51,7 @@ Name space for API commands
 
 ▸ **getAttesterDuties**(`epoch`: Epoch, `validatorPubKey`: BLSPubkey[]): *Promise‹AttesterDuty[]›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L26)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L26)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **getProposerDuties**(`epoch`: Epoch): *Promise‹ProposerDuty[]›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L24)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:24](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L24)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **getWireAttestations**(`epoch`: Epoch, `committeeIndex`: CommitteeIndex): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L60)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L60)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **produceAggregateAndProof**(`attestationData`: AttestationData, `aggregator`: BLSPubkey): *Promise‹AggregateAndProof›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L58)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L58)*
 
 **Parameters:**
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **produceAttestation**(`validatorPubKey`: BLSPubkey, `index`: CommitteeIndex, `slot`: Slot): *Promise‹Attestation›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L39)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L39)*
 
 Requests that the BeaconNode produce an IndexedAttestation,
 with a blank signature field, which the ValidatorClient will then sign.
@@ -139,7 +139,7 @@ ___
 
 ▸ **produceBlock**(`slot`: Slot, `proposerPubkey`: BLSPubkey, `randaoReveal`: BLSSignature): *Promise‹BeaconBlock›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L33)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L33)*
 
 Requests a BeaconNode to produce a valid block,
 which can then be signed by a ValidatorClient.
@@ -162,7 +162,7 @@ ___
 
 ▸ **publishAggregateAndProof**(`signedAggregateAndProof`: SignedAggregateAndProof): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L54)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:54](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L54)*
 
 **Parameters:**
 
@@ -178,7 +178,7 @@ ___
 
 ▸ **publishAttestation**(`attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L52)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:52](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L52)*
 
 Instructs the BeaconNode to publish a newly signed IndexedAttestation object,
 to be incorporated into the beacon chain.
@@ -197,7 +197,7 @@ ___
 
 ▸ **publishBlock**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L46)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L46)*
 
 Instructs the BeaconNode to publish a newly signed beacon block
 to the beacon network, to be included in the beacon chain.
@@ -216,7 +216,7 @@ ___
 
 ▸ **subscribeCommitteeSubnet**(`slot`: Slot, `slotSignature`: BLSSignature, `committeeIndex`: CommitteeIndex, `aggregatorPubkey`: BLSPubkey): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:62](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/api/impl/validator/interface.ts#L62)*
+*Defined in [packages/lodestar/src/api/impl/validator/interface.ts:62](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/impl/validator/interface.ts#L62)*
 
 **Parameters:**
 

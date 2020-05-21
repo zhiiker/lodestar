@@ -19,7 +19,7 @@
 
 • **chainHeight**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:38](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L38)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:38](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L38)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **finalizedBlock**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:44](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L44)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:44](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L44)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **finalizedState**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:41](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L41)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:41](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L41)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **justifiedBlock**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:45](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L45)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:45](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L45)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **justifiedState**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:42](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L42)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:42](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L42)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **latestState**:
 
-*Defined in [packages/lodestar/src/db/api/schema.ts:40](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/db/api/schema.ts#L40)*
+*Defined in [packages/lodestar/src/db/api/schema.ts:40](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/db/api/schema.ts#L40)*

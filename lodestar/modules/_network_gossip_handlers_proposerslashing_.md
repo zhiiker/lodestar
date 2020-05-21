@@ -15,7 +15,7 @@
 
 ▸ **handleIncomingProposerSlashing**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `obj`: [GossipObject](_network_gossip_interface_.md#gossipobject)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts:11](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts#L11)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts:11](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts#L11)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **publishProposerSlashing**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `proposerSlashing`: ProposerSlashing): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts:23](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts#L23)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts:23](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/gossip/handlers/proposerSlashing.ts#L23)*
 
 **Parameters:**
 

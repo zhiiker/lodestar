@@ -18,4 +18,4 @@
 
 • **description**: *string*
 
-*Defined in [multi.ts:9](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-spec-test-util/src/multi.ts#L9)*
+*Defined in [multi.ts:9](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-spec-test-util/src/multi.ts#L9)*
