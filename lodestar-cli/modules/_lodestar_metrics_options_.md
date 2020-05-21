@@ -14,7 +14,7 @@
 
 ### ▪ **MetricsOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:3](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-cli/src/lodestar/metrics/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:3](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodestar/metrics/options.ts#L3)*
 
 ###  fields
 
@@ -38,10 +38,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:5](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-cli/src/lodestar/metrics/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:5](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodestar/metrics/options.ts#L5)*
 
 ###  name
 
 • **name**: *string* = "metrics"
 
-*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:4](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-cli/src/lodestar/metrics/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/metrics/options.ts:4](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-cli/src/lodestar/metrics/options.ts#L4)*

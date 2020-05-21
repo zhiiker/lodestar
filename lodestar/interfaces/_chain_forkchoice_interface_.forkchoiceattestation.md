@@ -22,7 +22,7 @@ Minimal representation of attsetation for the purposes of fork choice
 
 • **attester**: *ValidatorIndex*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/chain/forkChoice/interface.ts#L50)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/chain/forkChoice/interface.ts#L50)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **target**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/chain/forkChoice/interface.ts#L49)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:49](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/chain/forkChoice/interface.ts#L49)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/chain/forkChoice/interface.ts#L51)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/chain/forkChoice/interface.ts#L51)*

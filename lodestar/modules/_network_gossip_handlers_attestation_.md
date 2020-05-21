@@ -16,7 +16,7 @@
 
 ▸ **getCommitteeAttestationHandler**(`subnet`: number): *[GossipHandlerFn](_network_gossip_gossip_.md#gossiphandlerfn)*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:25](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/gossip/handlers/attestation.ts#L25)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:25](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/gossip/handlers/attestation.ts#L25)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **handleIncomingAttestation**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `obj`: [GossipObject](_network_gossip_interface_.md#gossipobject)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:12](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/gossip/handlers/attestation.ts#L12)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:12](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/gossip/handlers/attestation.ts#L12)*
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **publishCommiteeAttestation**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:41](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar/src/network/gossip/handlers/attestation.ts#L41)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/attestation.ts:41](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar/src/network/gossip/handlers/attestation.ts#L41)*
 
 **Parameters:**
 

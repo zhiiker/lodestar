@@ -14,7 +14,7 @@
 
 ▸ **sleep**(`ms`: number): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/util/misc.ts:1](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/misc.ts#L1)*
+*Defined in [packages/lodestar-validator/src/util/misc.ts:1](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/misc.ts#L1)*
 
 **Parameters:**
 

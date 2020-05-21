@@ -29,12 +29,13 @@
 
     return (
       `${info.timestamp}  [${infoString.toUpperCase()}] ${info.level.padStart(infoPad)}:`
-      +` ${info.message} ${serializeContext(info.context)}`
+      + ` ${info.message} ${serializeContext(info.context)}`
+      + `${info.durationMs? "- duration=" + info.durationMs + "ms": ""}`
     );
   })
 )
 
-*Defined in [logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/format.ts#L5)*
+*Defined in [logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-utils/src/logger/format.ts#L5)*
 
 ## Functions
 
@@ -42,7 +43,7 @@
 
 ▸ **serializeContext**(`context?`: [Context](_logger_interface_.md#context) | Error): *string*
 
-*Defined in [logger/format.ts:23](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-utils/src/logger/format.ts#L23)*
+*Defined in [logger/format.ts:24](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-utils/src/logger/format.ts#L24)*
 
 **Parameters:**
 

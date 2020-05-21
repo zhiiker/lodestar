@@ -28,7 +28,7 @@
 
 \+ **new HttpClient**(`opt`: Partial‹[IHttpClientOptions](../interfaces/_util_httpclient_.ihttpclientoptions.md)›, `__namedParameters`: object): *[HttpClient](_util_httpclient_.httpclient.md)*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/httpClient.ts#L11)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/httpClient.ts#L11)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **client**: *AxiosInstance*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:10](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/httpClient.ts#L10)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:10](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/httpClient.ts#L10)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/httpClient.ts#L11)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/httpClient.ts#L11)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **get**<**T**>(`url`: string): *Promise‹T›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:20](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/httpClient.ts#L20)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:20](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/httpClient.ts#L20)*
 
 **Type parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **post**<**T**, **T2**>(`url`: string, `data`: T): *Promise‹T2›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:31](https://github.com/ChainSafe/lodestar/blob/a47516d64/packages/lodestar-validator/src/util/httpClient.ts#L31)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:31](https://github.com/ChainSafe/lodestar/blob/9787fff37/packages/lodestar-validator/src/util/httpClient.ts#L31)*
 
 **Type parameters:**
 
