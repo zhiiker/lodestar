@@ -10,7 +10,7 @@
 
 ▸ (`slot`: Epoch): *void*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-validator/src/api/interface.ts#L11)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar-validator/src/api/interface.ts#L11)*
 
 **Parameters:**
 

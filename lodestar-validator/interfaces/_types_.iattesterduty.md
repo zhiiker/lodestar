@@ -54,7 +54,7 @@ ___
 
 • **isAggregator**: *boolean*
 
-*Defined in [packages/lodestar-validator/src/types.ts:12](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar-validator/src/types.ts#L12)*
+*Defined in [packages/lodestar-validator/src/types.ts:12](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar-validator/src/types.ts#L12)*
 
 ___
 

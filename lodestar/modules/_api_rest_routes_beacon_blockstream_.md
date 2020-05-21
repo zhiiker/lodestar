@@ -14,7 +14,7 @@
 
 ▸ **registerBlockStreamEndpoint**(`server`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/beacon/blockStream.ts:6](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/rest/routes/beacon/blockStream.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/beacon/blockStream.ts:6](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/rest/routes/beacon/blockStream.ts#L6)*
 
 **Parameters:**
 

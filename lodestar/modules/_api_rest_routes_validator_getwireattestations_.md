@@ -22,7 +22,7 @@
 
 ▸ **registerGetWireAttestationEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:31](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L31)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:31](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L31)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:12](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L12)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:12](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L12)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:13](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:13](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L13)*
 
 * **querystring**: *object*
 

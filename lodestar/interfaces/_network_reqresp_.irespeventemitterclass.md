@@ -18,6 +18,6 @@
 
 \+ **new IRespEventEmitterClass**(): *[RespEventEmitter](../modules/_network_interface_.md#respeventemitter)*
 
-*Defined in [packages/lodestar/src/network/reqResp.ts:43](https://github.com/ChainSafe/lodestar/blob/e5567ed22/packages/lodestar/src/network/reqResp.ts#L43)*
+*Defined in [packages/lodestar/src/network/reqResp.ts:43](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/network/reqResp.ts#L43)*
 
 **Returns:** *[RespEventEmitter](../modules/_network_interface_.md#respeventemitter)*
