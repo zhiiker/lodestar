@@ -15,7 +15,7 @@
 
 • **BEACON**: = "beacon"
 
-*Defined in [packages/lodestar/src/api/index.ts:12](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/index.ts#L12)*
+*Defined in [packages/lodestar/src/api/index.ts:12](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/api/index.ts#L12)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **VALIDATOR**: = "validator"
 
-*Defined in [packages/lodestar/src/api/index.ts:13](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/api/index.ts#L13)*
+*Defined in [packages/lodestar/src/api/index.ts:13](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/api/index.ts#L13)*

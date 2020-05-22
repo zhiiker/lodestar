@@ -26,7 +26,7 @@
 
 ▸ **add**(`peerId`: string): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:15](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/IReputation.ts#L15)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:15](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/IReputation.ts#L15)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **get**(`peerId`: string): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:17](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/IReputation.ts#L17)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:17](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/IReputation.ts#L17)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **getFromPeerInfo**(`peer`: PeerInfo): *[IReputation](_sync_ireputation_.ireputation.md)*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:18](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/IReputation.ts#L18)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:18](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/IReputation.ts#L18)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **getPeerIdsBySubnet**(`subnetStr`: string): *string[]*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:19](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/IReputation.ts#L19)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:19](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/IReputation.ts#L19)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **remove**(`peerId`: string): *void*
 
-*Defined in [packages/lodestar/src/sync/IReputation.ts:16](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/IReputation.ts#L16)*
+*Defined in [packages/lodestar/src/sync/IReputation.ts:16](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/IReputation.ts#L16)*
 
 **Parameters:**
 

@@ -18,7 +18,7 @@
 
 ▸ **mergeBeaconOptions**(`yargs`: Argv‹[IGlobalArgs](../interfaces/_lodecli_options_.iglobalargs.md)›): *Argv‹[IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/index.ts:19](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar-cli/src/lodecli/cmds/beacon/options/index.ts#L19)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/index.ts:19](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar-cli/src/lodecli/cmds/beacon/options/index.ts#L19)*
 
 **Parameters:**
 

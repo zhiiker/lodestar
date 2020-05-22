@@ -27,7 +27,7 @@
 
 ▸ **getEstimate**(`headSlot`: Slot, `targetSlot`: Slot): *number*
 
-*Defined in [packages/lodestar/src/sync/stats/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/stats/interface.ts#L15)*
+*Defined in [packages/lodestar/src/sync/stats/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/stats/interface.ts#L15)*
 
 Estimate how much time (in seconds) will take to sync to target.
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **getSyncSpeed**(): *number*
 
-*Defined in [packages/lodestar/src/sync/stats/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/sync/stats/interface.ts#L8)*
+*Defined in [packages/lodestar/src/sync/stats/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/sync/stats/interface.ts#L8)*
 
 Returns blocks per second processing
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[start](_network_gossip_interface_.igossip.md#start)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -72,6 +72,6 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[stop](_network_gossip_interface_.igossip.md#stop)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

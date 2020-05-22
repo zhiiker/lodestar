@@ -18,7 +18,7 @@
 
 • **beaconChainStarted**: *function*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/663f5df9e/packages/lodestar-validator/src/api/interface.ts#L16)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/2bf6badbe/packages/lodestar-validator/src/api/interface.ts#L16)*
 
 #### Type declaration:
 
