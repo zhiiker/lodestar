@@ -106,6 +106,7 @@
 * ["eth1/impl/ethers"](modules/_eth1_impl_ethers_.md)
 * ["eth1/impl/interop"](modules/_eth1_impl_interop_.md)
 * ["eth1/impl/retryProvider"](modules/_eth1_impl_retryprovider_.md)
+* ["eth1/impl/util"](modules/_eth1_impl_util_.md)
 * ["eth1/index"](modules/_eth1_index_.md)
 * ["eth1/interface"](modules/_eth1_interface_.md)
 * ["eth1/options"](modules/_eth1_options_.md)

@@ -13,6 +13,7 @@
 ### Properties
 
 * [amount](_eth1_interface_.idepositevent.md#amount)
+* [blockNumber](_eth1_interface_.idepositevent.md#blocknumber)
 * [index](_eth1_interface_.idepositevent.md#index)
 * [pubkey](_eth1_interface_.idepositevent.md#pubkey)
 * [signature](_eth1_interface_.idepositevent.md#signature)
@@ -30,11 +31,19 @@ Defined in packages/lodestar-types/lib/types/misc.d.ts:69
 
 ___
 
+###  blockNumber
+
+• **blockNumber**: *number*
+
+*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar/src/eth1/interface.ts#L14)*
+
+___
+
 ###  index
 
 • **index**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/34417abad/packages/lodestar/src/eth1/interface.ts#L14)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar/src/eth1/interface.ts#L15)*
 
 ___
 

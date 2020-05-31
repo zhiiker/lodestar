@@ -14,7 +14,7 @@
 
 ▸ **safeType**(`type`: Type‹any›): *Type‹any›*
 
-*Defined in [transform.ts:9](https://github.com/ChainSafe/lodestar/blob/34417abad/packages/lodestar-spec-test-util/src/transform.ts#L9)*
+*Defined in [transform.ts:9](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-spec-test-util/src/transform.ts#L9)*
 
 Transform the type to something that is safe to deserialize
 

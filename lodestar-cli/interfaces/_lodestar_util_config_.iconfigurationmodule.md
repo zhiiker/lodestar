@@ -20,7 +20,7 @@
 
 • **description**? : *string*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:16](https://github.com/ChainSafe/lodestar/blob/34417abad/packages/lodestar-cli/src/lodestar/util/config.ts#L16)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:16](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/util/config.ts#L16)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **fields**: *[IConfigurationModule](_lodestar_util_config_.iconfigurationmodule.md) | [IConfigurationField](_lodestar_util_config_.iconfigurationfield.md)‹unknown›[]*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:17](https://github.com/ChainSafe/lodestar/blob/34417abad/packages/lodestar-cli/src/lodestar/util/config.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:17](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/util/config.ts#L17)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:15](https://github.com/ChainSafe/lodestar/blob/34417abad/packages/lodestar-cli/src/lodestar/util/config.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/config.ts:15](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/util/config.ts#L15)*
