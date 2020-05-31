@@ -37,7 +37,7 @@ Only the new finalized state is stored to disk
 
 \+ **new ArchiveStatesTask**(`config`: IBeaconConfig, `modules`: [IArchiveStatesModules](../interfaces/_tasks_tasks_archivestates_.iarchivestatesmodules.md), `finalizedCheckpoint`: Checkpoint): *[ArchiveStatesTask](_tasks_tasks_archivestates_.archivestatestask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:28](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L28)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:28](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L28)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:26](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L26)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:26](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L26)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:24](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L24)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:24](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L24)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **finalizedCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:28](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L28)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:28](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L28)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:25](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L25)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:25](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L25)*
 
 ## Methods
 
@@ -89,6 +89,6 @@ ___
 
 *Implementation of [ITask](../interfaces/_tasks_interface_.itask.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:37](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/archiveStates.ts#L37)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveStates.ts:37](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/archiveStates.ts#L37)*
 
 **Returns:** *Promise‹void›*

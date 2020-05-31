@@ -14,7 +14,7 @@
 
 ▸ **isValidatorAggregator**(`slotSignature`: BLSSignature, `modulo`: Number64): *boolean*
 
-*Defined in [packages/lodestar-validator/src/util/aggregator.ts:5](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-validator/src/util/aggregator.ts#L5)*
+*Defined in [packages/lodestar-validator/src/util/aggregator.ts:5](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-validator/src/util/aggregator.ts#L5)*
 
 **Parameters:**
 

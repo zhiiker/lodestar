@@ -25,7 +25,7 @@ Interface to initialize a Node.
 
 • **blockRoot**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L10)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L10)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **finalizedCheckpoint**: *[HexCheckpoint](_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L13)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L13)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **justifiedCheckpoint**: *[HexCheckpoint](_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L12)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L12)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **parent**: *number*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L11)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L11)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **slot**: *Slot*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L9)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L9)*
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 • **stateRoot**: *Root*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L14)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/chain/forkChoice/arrayDag/interface.ts#L14)*

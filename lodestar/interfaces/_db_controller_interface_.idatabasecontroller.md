@@ -41,7 +41,7 @@
 
 ▸ **batchDelete**(`keys`: K[]): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L33)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:33](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L33)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **batchPut**(`items`: [IKeyValue](_db_controller_interface_.ikeyvalue.md)‹K, V›[]): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L32)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L32)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **delete**(`key`: K): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L28)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L28)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **entries**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *Promise‹[IKeyValue](_db_controller_interface_.ikeyvalue.md)‹K, V›[]›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L44)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L44)*
 
 **Parameters:**
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **entriesStream**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *AsyncIterable‹[IKeyValue](_db_controller_interface_.ikeyvalue.md)‹K, V››*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L43)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L43)*
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **get**(`key`: K): *Promise‹V | null›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L26)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L26)*
 
 **Parameters:**
 
@@ -137,7 +137,7 @@ ___
 
 ▸ **keys**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *Promise‹K[]›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L38)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L38)*
 
 **Parameters:**
 
@@ -153,7 +153,7 @@ ___
 
 ▸ **keysStream**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *AsyncIterable‹K›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L37)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:37](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L37)*
 
 **Parameters:**
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **put**(`key`: K, `value`: V): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L27)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:27](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L27)*
 
 **Parameters:**
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L21)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L21)*
 
 **Returns:** *Promise‹void›*
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L22)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L22)*
 
 **Returns:** *Promise‹void›*
 
@@ -206,7 +206,7 @@ ___
 
 ▸ **values**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *Promise‹V[]›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L41)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L41)*
 
 **Parameters:**
 
@@ -222,7 +222,7 @@ ___
 
 ▸ **valuesStream**(`opts?`: [IFilterOptions](_db_controller_interface_.ifilteroptions.md)‹K›): *AsyncIterable‹V›*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/db/controller/interface.ts#L40)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/db/controller/interface.ts#L40)*
 
 **Parameters:**
 

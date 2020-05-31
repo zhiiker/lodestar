@@ -20,7 +20,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:12](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L12)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:12](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L12)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:13](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L13)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:13](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L13)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:11](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L11)*
+*Defined in [packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts:11](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/tasks/tasks/interopSubnetsJoiningTask.ts#L11)*

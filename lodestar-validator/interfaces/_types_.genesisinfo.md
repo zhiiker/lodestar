@@ -18,4 +18,4 @@
 
 • **startTime**: *number*
 
-*Defined in [packages/lodestar-validator/src/types.ts:8](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-validator/src/types.ts#L8)*
+*Defined in [packages/lodestar-validator/src/types.ts:8](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-validator/src/types.ts#L8)*

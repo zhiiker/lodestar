@@ -15,7 +15,7 @@
 
 ▸ **eth2RequestDecode**(`config`: IBeaconConfig, `logger`: ILogger, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoders/request.ts:35](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/network/encoders/request.ts#L35)*
+*Defined in [packages/lodestar/src/network/encoders/request.ts:35](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/network/encoders/request.ts#L35)*
 
 **Parameters:**
 
@@ -28,7 +28,7 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`source`: AsyncIterable‹Buffer | BufferList›): *AsyncGenerator‹RequestBody›*
+▸ (`source`: AsyncIterable‹Buffer | BufferList›): *AsyncGenerator‹RequestBody | null›*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **eth2RequestEncode**(`config`: IBeaconConfig, `logger`: ILogger, `method`: [Method](../enums/_constants_network_.method.md), `encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoders/request.ts:9](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/network/encoders/request.ts#L9)*
+*Defined in [packages/lodestar/src/network/encoders/request.ts:9](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/network/encoders/request.ts#L9)*
 
 **Parameters:**
 
@@ -55,10 +55,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`source`: AsyncIterable‹RequestBody›): *AsyncGenerator‹Buffer›*
+▸ (`source`: AsyncIterable‹RequestBody | null›): *AsyncGenerator‹Buffer›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`source` | AsyncIterable‹RequestBody› |
+`source` | AsyncIterable‹RequestBody &#124; null› |

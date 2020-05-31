@@ -19,7 +19,7 @@
 
 ### ▪ **discv5BindAddr**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:12](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:12](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L12)*
 
 ###  alias
 
@@ -27,25 +27,25 @@
     "network.discv5.bindAddr",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:13](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:13](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L13)*
 
 ###  default
 
 • **default**: *string* = "/ip4/0.0.0.0/udp/9000"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:17](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:17](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L17)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:18](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:18](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L18)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:16](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L16)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:16](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L16)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 ### ▪ **discv5BootEnrs**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:21](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:21](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L21)*
 
 ###  alias
 
@@ -61,25 +61,25 @@ ___
     "network.discv5.bootEnrs",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:22](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:22](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L22)*
 
 ###  default
 
 • **default**: *undefined[]* = []
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:26](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L26)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:26](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L26)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:27](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L27)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:27](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L27)*
 
 ###  type
 
 • **type**: *"array"* = "array"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:25](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L25)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:25](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L25)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 ### ▪ **discv5Enabled**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:3](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:3](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L3)*
 
 ###  alias
 
@@ -95,25 +95,25 @@ ___
     "network.discv5.enabled",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:4](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:4](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L4)*
 
 ###  default
 
 • **default**: *boolean* = true
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:8](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:8](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L8)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:9](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:9](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L9)*
 
 ###  type
 
 • **type**: *"boolean"* = "boolean"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:7](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:7](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L7)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 ### ▪ **networkBootMultiaddrs**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:41](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L41)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:41](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L41)*
 
 ###  alias
 
@@ -130,25 +130,25 @@ ___
     "network.bootnodes",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:42](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L42)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:42](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L42)*
 
 ###  default
 
 • **default**: *undefined[]* = []
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:47](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L47)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:47](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L47)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:48](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L48)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:48](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L48)*
 
 ###  type
 
 • **type**: *"array"* = "array"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:46](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L46)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:46](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L46)*
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 ### ▪ **networkLocalMultiaddrs**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:51](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L51)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:51](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L51)*
 
 ###  alias
 
@@ -165,7 +165,7 @@ ___
     "network.multiaddrs",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:52](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L52)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:52](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L52)*
 
 ###  default
 
@@ -173,19 +173,19 @@ ___
     "/ip4/0.0.0.0/tcp/30606"
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:57](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L57)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:57](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L57)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:60](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L60)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:60](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L60)*
 
 ###  type
 
 • **type**: *"array"* = "array"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:56](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L56)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:56](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L56)*
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 ### ▪ **networkMaxPeers**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:32](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L32)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:32](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L32)*
 
 ###  alias
 
@@ -201,22 +201,22 @@ ___
     "network.maxPeers",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:33](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L33)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:33](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L33)*
 
 ###  default
 
 • **default**: *number* = 25
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:37](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L37)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:37](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L37)*
 
 ###  group
 
 • **group**: *string* = "network"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:38](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L38)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:38](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L38)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:36](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L36)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts:36](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/network.ts#L36)*

@@ -21,7 +21,7 @@
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:31](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/node/nodejs.ts#L31)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:31](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/node/nodejs.ts#L31)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **eth1**? : *[IEth1Notifier](_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:33](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/node/nodejs.ts#L33)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:33](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/node/nodejs.ts#L33)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **libp2p**? : *LibP2p*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:34](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/node/nodejs.ts#L34)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:34](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/node/nodejs.ts#L34)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:32](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/node/nodejs.ts#L32)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:32](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/node/nodejs.ts#L32)*
