@@ -22,4 +22,4 @@
 
 • **logLevel**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/validator.ts:14](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/commands/validator.ts#L14)*
+*Defined in [packages/lodestar-cli/src/commands/validator.ts:14](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/commands/validator.ts#L14)*

@@ -14,7 +14,7 @@
 
 ▸ **generateTomlConfig**(`config`: object, `description`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *JsonMap*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/toml.ts:4](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/util/toml.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/toml.ts:4](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodestar/util/toml.ts#L4)*
 
 **Parameters:**
 

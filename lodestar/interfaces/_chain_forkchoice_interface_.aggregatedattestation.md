@@ -22,7 +22,7 @@ Attestation aggregated across participants
 
 • **prevWeight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar/src/chain/forkChoice/interface.ts#L60)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/interface.ts#L60)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **target**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar/src/chain/forkChoice/interface.ts#L58)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/interface.ts#L58)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:59](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar/src/chain/forkChoice/interface.ts#L59)*
+*Defined in [packages/lodestar/src/chain/forkChoice/interface.ts:59](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar/src/chain/forkChoice/interface.ts#L59)*

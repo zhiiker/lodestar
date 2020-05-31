@@ -22,6 +22,6 @@
   ...paramsOptions,
 })
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/index.ts:11](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/index.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/index.ts:11](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/index.ts#L11)*
 
 #### Type declaration:

@@ -19,7 +19,7 @@
 
 • **privkey**: *Buffer*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/keypairs.ts:10](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/interop/keypairs.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/keypairs.ts:10](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodestar/interop/keypairs.ts#L10)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **pubkey**: *Buffer*
 
-*Defined in [packages/lodestar-cli/src/lodestar/interop/keypairs.ts:9](https://github.com/ChainSafe/lodestar/blob/8ae83570a/packages/lodestar-cli/src/lodestar/interop/keypairs.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodestar/interop/keypairs.ts:9](https://github.com/ChainSafe/lodestar/blob/ad14d42a9/packages/lodestar-cli/src/lodestar/interop/keypairs.ts#L9)*
