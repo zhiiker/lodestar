@@ -22,7 +22,7 @@
 
 Ƭ **IBody**: *Json[]*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:5](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L5)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:5](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L5)*
 
 ## Functions
 
@@ -30,7 +30,7 @@
 
 ▸ **registerAttestationPublishEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:15](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L15)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:15](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L15)*
 
 **Parameters:**
 
@@ -51,11 +51,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:7](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:7](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L7)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:8](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L8)*
 
 * **body**: *object*
 

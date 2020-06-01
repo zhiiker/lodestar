@@ -17,7 +17,7 @@
 
 ▸ **createBeaconConfig**(`args`: [IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)): *Partial‹IBeaconNodeOptions›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:9](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:9](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L9)*
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **initBeaconConfig**(`filename`: string, `args`: [IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:42](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L42)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:42](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L42)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **readBeaconConfig**(`filename`: string): *Partial‹IBeaconNodeOptions›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:34](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:34](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L34)*
 
 This needs to be a synchronous function because it will be run as part of the yargs 'build' step
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **writeBeaconConfig**(`filename`: string, `config`: Partial‹IBeaconNodeOptions›): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:27](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L27)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts:27](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar-cli/src/lodecli/cmds/beacon/config.ts#L27)*
 
 **Parameters:**
 

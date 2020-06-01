@@ -18,4 +18,4 @@
 
 • **directoryName**: *string*
 
-*Defined in [single.ts:50](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar-spec-test-util/src/single.ts#L50)*
+*Defined in [single.ts:50](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar-spec-test-util/src/single.ts#L50)*

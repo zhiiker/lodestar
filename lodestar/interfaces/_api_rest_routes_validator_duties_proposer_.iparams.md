@@ -24,4 +24,4 @@
 
 • **epoch**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:6](https://github.com/ChainSafe/lodestar/blob/2143d4cb6/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:6](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L6)*
