@@ -20,7 +20,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:15](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/network/metadata/metadata.ts#L15)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:15](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/network/metadata/metadata.ts#L15)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:14](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/network/metadata/metadata.ts#L14)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:14](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/network/metadata/metadata.ts#L14)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:16](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/network/metadata/metadata.ts#L16)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:16](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/network/metadata/metadata.ts#L16)*

@@ -23,4 +23,4 @@
 
 • **ETH1_BLOCK_RETRY**: *3* = 3
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:29](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/impl/ethers.ts#L29)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:29](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/impl/ethers.ts#L29)*

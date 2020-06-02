@@ -23,7 +23,7 @@
 
 ▸ **mkdir**(`filename`: string): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:9](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:9](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L9)*
 
 Maybe create a directory
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **parse**<**T**>(`contents`: string, `fileFormat`: [FileFormat](../enums/_lodecli_util_file_.fileformat.md)): *T*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:23](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L23)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:23](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L23)*
 
 **Type parameters:**
 
@@ -62,7 +62,7 @@ ___
 
 ▸ **readFile**<**T**>(`filename`: string): *Promise‹T›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:59](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L59)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:59](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L59)*
 
 Read a JSON serializable object from a file
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **readFileSync**<**T**>(`filename`: string): *T*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:65](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L65)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:65](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L65)*
 
 **Type parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **stringify**<**T**>(`obj`: T, `fileFormat`: [FileFormat](../enums/_lodecli_util_file_.fileformat.md)): *string*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:31](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L31)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:31](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L31)*
 
 **Type parameters:**
 
@@ -127,7 +127,7 @@ ___
 
 ▸ **writeFile**(`filename`: string, `obj`: Json): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:48](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodecli/util/file.ts#L48)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/file.ts:48](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodecli/util/file.ts#L48)*
 
 Write a JSON serializable object to a file
 

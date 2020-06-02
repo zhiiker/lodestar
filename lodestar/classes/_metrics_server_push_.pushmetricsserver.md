@@ -33,7 +33,7 @@
 
 \+ **new PushMetricsServer**(`opts`: [IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md), `__namedParameters`: object): *[PushMetricsServer](_metrics_server_push_.pushmetricsserver.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:12](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L12)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:12](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L12)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 • **gateway**: *Pushgateway | null* = null
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:12](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L12)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:12](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L12)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **metrics**: *[IMetrics](../interfaces/_metrics_interface_.imetrics.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:10](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L10)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:10](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L10)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **opts**: *[IMetricsOptions](../interfaces/_metrics_options_.imetricsoptions.md)*
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:11](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L11)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:11](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L11)*
 
 ## Methods
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:17](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L17)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:17](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L17)*
 
 **Returns:** *Promise‹void›*
 
@@ -87,6 +87,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/metrics/server/push.ts:20](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/metrics/server/push.ts#L20)*
+*Defined in [packages/lodestar/src/metrics/server/push.ts:20](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/server/push.ts#L20)*
 
 **Returns:** *Promise‹void›*

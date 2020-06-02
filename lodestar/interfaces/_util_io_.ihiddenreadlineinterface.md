@@ -129,7 +129,7 @@ ___
 
 • **output**? : *any*
 
-*Defined in [packages/lodestar/src/util/io.ts:9](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/util/io.ts#L9)*
+*Defined in [packages/lodestar/src/util/io.ts:9](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/util/io.ts#L9)*
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **_writeToOutput**(`stringToWrite`: string): *void*
 
-*Defined in [packages/lodestar/src/util/io.ts:10](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/util/io.ts#L10)*
+*Defined in [packages/lodestar/src/util/io.ts:10](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/util/io.ts#L10)*
 
 **Parameters:**
 

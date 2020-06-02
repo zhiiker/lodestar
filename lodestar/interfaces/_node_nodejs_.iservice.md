@@ -40,7 +40,7 @@
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -50,6 +50,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

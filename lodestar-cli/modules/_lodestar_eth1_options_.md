@@ -14,13 +14,13 @@
 
 ### ▪ **Eth1Options**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:3](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodestar/eth1/options.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:3](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodestar/eth1/options.ts#L3)*
 
 ###  description
 
 • **description**: *string* = "Eth 1.x options"
 
-*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:5](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodestar/eth1/options.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:5](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodestar/eth1/options.ts#L5)*
 
 ###  fields
 
@@ -79,10 +79,10 @@
     }
   ]
 
-*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:6](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodestar/eth1/options.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:6](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodestar/eth1/options.ts#L6)*
 
 ###  name
 
 • **name**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:4](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-cli/src/lodestar/eth1/options.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/eth1/options.ts:4](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar-cli/src/lodestar/eth1/options.ts#L4)*

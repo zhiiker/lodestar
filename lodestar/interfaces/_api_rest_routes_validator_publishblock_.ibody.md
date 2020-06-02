@@ -20,4 +20,4 @@
 
 • **beacon_block**: *Json*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:8](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:8](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L8)*

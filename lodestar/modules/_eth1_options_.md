@@ -18,17 +18,17 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:21](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/options.ts#L21)*
+*Defined in [packages/lodestar/src/eth1/options.ts:21](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/options.ts#L21)*
 
 ###  enabled
 
 • **enabled**: *true* = true
 
-*Defined in [packages/lodestar/src/eth1/options.ts:22](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/options.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/options.ts:22](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/options.ts#L22)*
 
 ▪ **depositContract**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:27](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/options.ts#L27)*
+*Defined in [packages/lodestar/src/eth1/options.ts:27](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/options.ts#L27)*
 
 * **abi**: *object | object | object | object[]* = [{"name": "DepositEvent", "inputs": [{"type": "bytes", "name": "pubkey", "indexed": false}, {"type": "bytes", "name": "withdrawal_credentials", "indexed": false}, {"type": "bytes", "name": "amount", "indexed": false}, {"type": "bytes", "name": "signature", "indexed": false}, {"type": "bytes", "name": "index", "indexed": false}], "anonymous": false, "type": "event"}, {"outputs": [], "inputs": [], "constant": false, "payable": false, "type": "constructor"}, {"name": "get_deposit_root", "outputs": [{"type": "bytes32", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 95628}, {"name": "get_deposit_count", "outputs": [{"type": "bytes", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 18231}, {"name": "deposit", "outputs": [], "inputs": [{"type": "bytes", "name": "pubkey"}, {"type": "bytes", "name": "withdrawal_credentials"}, {"type": "bytes", "name": "signature"}, {"type": "bytes32", "name": "deposit_data_root"}], "constant": false, "payable": true, "type": "function", "gas": 1342274}]
 
@@ -40,7 +40,7 @@
 
 ▪ **provider**: *object*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:23](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/options.ts#L23)*
+*Defined in [packages/lodestar/src/eth1/options.ts:23](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/options.ts#L23)*
 
 * **network**: *number* = 200
 
