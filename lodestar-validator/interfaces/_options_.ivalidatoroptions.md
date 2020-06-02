@@ -22,7 +22,7 @@
 
 • **api**: *[IApiClient](_api_interface_.iapiclient.md) | string*
 
-*Defined in [packages/lodestar-validator/src/options.ts:10](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar-validator/src/options.ts#L10)*
+*Defined in [packages/lodestar-validator/src/options.ts:10](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-validator/src/options.ts#L10)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar-validator/src/options.ts:9](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar-validator/src/options.ts#L9)*
+*Defined in [packages/lodestar-validator/src/options.ts:9](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-validator/src/options.ts#L9)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **db**: *[IValidatorDB](_db_interface_.ivalidatordb.md)*
 
-*Defined in [packages/lodestar-validator/src/options.ts:8](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar-validator/src/options.ts#L8)*
+*Defined in [packages/lodestar-validator/src/options.ts:8](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-validator/src/options.ts#L8)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **keypair**: *Keypair*
 
-*Defined in [packages/lodestar-validator/src/options.ts:11](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar-validator/src/options.ts#L11)*
+*Defined in [packages/lodestar-validator/src/options.ts:11](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-validator/src/options.ts#L11)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/options.ts:12](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar-validator/src/options.ts#L12)*
+*Defined in [packages/lodestar-validator/src/options.ts:12](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar-validator/src/options.ts#L12)*

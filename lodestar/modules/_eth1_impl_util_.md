@@ -14,7 +14,7 @@
 
 ▸ **groupDepositEventsByBlock**(`rangeDepositEvents`: [IDepositEvent](../interfaces/_eth1_interface_.idepositevent.md)[]): *Map‹number, [IDepositEvent](../interfaces/_eth1_interface_.idepositevent.md)[]›*
 
-*Defined in [packages/lodestar/src/eth1/impl/util.ts:7](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/impl/util.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/impl/util.ts:7](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/eth1/impl/util.ts#L7)*
 
 Return deposit events of blocks grouped/sorted by block number and deposit index
 

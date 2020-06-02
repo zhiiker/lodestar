@@ -18,7 +18,7 @@
 
 ▸ **chunkify**(`blocksPerChunk`: number, `currentSlot`: Slot, `targetSlot`: Slot): *[ISlotRange](../interfaces/_sync_interface_.islotrange.md)[]*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:16](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/sync/utils/blocks.ts#L16)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:16](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/sync/utils/blocks.ts#L16)*
 
 Creates slot chunks returned chunks represents (inclusive) start and (inclusive) end slot
 which should be fetched along all slotS(blocks) in between
@@ -39,7 +39,7 @@ ___
 
 ▸ **getBlockRange**(`logger`: ILogger, `rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `peers`: PeerInfo[], `range`: [ISlotRange](../interfaces/_sync_interface_.islotrange.md), `blocksPerChunk?`: number, `maxRetry`: number): *Promise‹SignedBeaconBlock[]›*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:53](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/sync/utils/blocks.ts#L53)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:53](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/sync/utils/blocks.ts#L53)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 ▸ **getBlockRangeFromPeer**(`rpc`: [IReqResp](../interfaces/_network_interface_.ireqresp.md), `peer`: PeerInfo, `chunk`: [ISlotRange](../interfaces/_sync_interface_.islotrange.md)): *Promise‹SignedBeaconBlock[] | null›*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:38](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/sync/utils/blocks.ts#L38)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:38](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/sync/utils/blocks.ts#L38)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **isValidChainOfBlocks**(`config`: IBeaconConfig, `start`: BeaconBlockHeader, `signedBlocks`: SignedBeaconBlock[]): *boolean*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:102](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/sync/utils/blocks.ts#L102)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:102](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/sync/utils/blocks.ts#L102)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **sortBlocks**(`blocks`: SignedBeaconBlock[]): *SignedBeaconBlock[]*
 
-*Defined in [packages/lodestar/src/sync/utils/blocks.ts:97](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/sync/utils/blocks.ts#L97)*
+*Defined in [packages/lodestar/src/sync/utils/blocks.ts:97](https://github.com/ChainSafe/lodestar/blob/14ce11e45/packages/lodestar/src/sync/utils/blocks.ts#L97)*
 
 **Parameters:**
 
