@@ -35,7 +35,7 @@ ___
 
 • **blockNumber**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/interface.ts#L14)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/interface.ts#L14)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **index**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/interface.ts#L15)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/interface.ts#L15)*
 
 ___
 

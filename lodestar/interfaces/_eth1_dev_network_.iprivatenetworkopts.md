@@ -25,7 +25,7 @@
 
 • **blockTime**? : *number*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:28](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L28)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:28](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L28)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **dbPath**? : *string*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:27](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L27)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:27](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L27)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **defaultBalance**? : *number*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:26](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L26)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:26](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L26)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **host**? : *string*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:24](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L24)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:24](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L24)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **mnemonic**? : *string*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:29](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L29)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:29](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L29)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **networkId**? : *number*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:25](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L25)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:25](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L25)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **port**? : *number*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:23](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L23)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:23](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L23)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **total_accounts**? : *number*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:30](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/eth1/dev/network.ts#L30)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:30](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/eth1/dev/network.ts#L30)*

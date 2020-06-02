@@ -19,7 +19,7 @@
 
 • **dumpState**: *boolean*
 
-*Defined in [packages/lodestar/src/chain/options.ts:3](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/chain/options.ts#L3)*
+*Defined in [packages/lodestar/src/chain/options.ts:3](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/chain/options.ts#L3)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/lodestar/src/chain/options.ts:2](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/chain/options.ts#L2)*
+*Defined in [packages/lodestar/src/chain/options.ts:2](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/chain/options.ts#L2)*

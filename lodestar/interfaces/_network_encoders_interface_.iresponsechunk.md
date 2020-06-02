@@ -11,6 +11,7 @@
 ### Properties
 
 * [body](_network_encoders_interface_.iresponsechunk.md#optional-body)
+* [requestId](_network_encoders_interface_.iresponsechunk.md#requestid)
 * [status](_network_encoders_interface_.iresponsechunk.md#status)
 
 ## Properties
@@ -19,7 +20,15 @@
 
 • **body**? : *ResponseBody*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:15](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/network/encoders/interface.ts#L15)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/network/encoders/interface.ts#L17)*
+
+___
+
+###  requestId
+
+• **requestId**: *[RequestId](../modules/_constants_network_.md#requestid)*
+
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:14](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/network/encoders/interface.ts#L14)*
 
 ___
 
@@ -27,4 +36,4 @@ ___
 
 • **status**: *[RpcResponseStatus](../enums/_constants_network_.rpcresponsestatus.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/network/encoders/interface.ts#L12)*
+*Defined in [packages/lodestar/src/network/encoders/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/network/encoders/interface.ts#L12)*

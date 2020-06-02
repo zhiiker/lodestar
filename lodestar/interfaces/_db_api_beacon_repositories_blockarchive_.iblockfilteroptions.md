@@ -28,7 +28,7 @@
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[gt](_db_controller_interface_.ifilteroptions.md#optional-gt)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L6)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:6](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L6)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[gte](_db_controller_interface_.ifilteroptions.md#optional-gte)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L7)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L7)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[limit](_db_controller_interface_.ifilteroptions.md#optional-limit)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L11)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L11)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[lt](_db_controller_interface_.ifilteroptions.md#optional-lt)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L8)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L8)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[lte](_db_controller_interface_.ifilteroptions.md#optional-lte)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L9)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L9)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [IFilterOptions](_db_controller_interface_.ifilteroptions.md).[reverse](_db_controller_interface_.ifilteroptions.md#optional-reverse)*
 
-*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/controller/interface.ts#L10)*
+*Defined in [packages/lodestar/src/db/controller/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/controller/interface.ts#L10)*
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 • **step**? : *number*
 
-*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:10](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L10)*
+*Defined in [packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts:10](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/beacon/repositories/blockArchive.ts#L10)*

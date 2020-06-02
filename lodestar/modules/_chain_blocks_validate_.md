@@ -14,7 +14,7 @@
 
 ▸ **validateBlock**(`config`: IBeaconConfig, `logger`: ILogger, `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)): *function*
 
-*Defined in [packages/lodestar/src/chain/blocks/validate.ts:8](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/chain/blocks/validate.ts#L8)*
+*Defined in [packages/lodestar/src/chain/blocks/validate.ts:8](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/chain/blocks/validate.ts#L8)*
 
 **Parameters:**
 

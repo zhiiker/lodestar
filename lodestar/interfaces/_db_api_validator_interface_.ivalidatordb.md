@@ -26,7 +26,7 @@
 
 ▸ **deleteAttestations**(`pubKey`: BLSPubkey, `attestation`: Attestation[]): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/validator/interface.ts#L38)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/validator/interface.ts#L38)*
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ ___
 
 ▸ **getAttestations**(`pubKey`: BLSPubkey, `options?`: [IAttestationSearchOptions](_db_api_validator_interface_.iattestationsearchoptions.md)): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/validator/interface.ts#L30)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:30](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/validator/interface.ts#L30)*
 
 Searches proposed attestations based on target epoch and validator index
 
@@ -62,7 +62,7 @@ ___
 
 ▸ **getBlock**(`pubKey`: BLSPubkey): *Promise‹SignedBeaconBlock | null›*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/validator/interface.ts#L18)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/validator/interface.ts#L18)*
 
 Obtains last proposed beacon block
 by validator with given index
@@ -81,7 +81,7 @@ ___
 
 ▸ **setAttestation**(`pubKey`: BLSPubkey, `attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/validator/interface.ts#L35)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/validator/interface.ts#L35)*
 
 Stores attestation proposed by validator with given index
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **setBlock**(`pubKey`: BLSPubkey, `signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/db/api/validator/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/26046d408/packages/lodestar/src/db/api/validator/interface.ts#L23)*
+*Defined in [packages/lodestar/src/db/api/validator/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/5f04d592a/packages/lodestar/src/db/api/validator/interface.ts#L23)*
 
 Stores beacon block proposed by validator with given index
 
