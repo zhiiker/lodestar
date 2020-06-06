@@ -15,7 +15,7 @@
 
 ▸ **assembleAttestation**(`__namedParameters`: object, `state`: BeaconState, `headBlock`: BeaconBlock, `validatorIndex`: ValidatorIndex, `index`: CommitteeIndex, `slot`: Slot): *Promise‹Attestation›*
 
-*Defined in [packages/lodestar/src/chain/factory/attestation/index.ts:8](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/chain/factory/attestation/index.ts#L8)*
+*Defined in [packages/lodestar/src/chain/factory/attestation/index.ts:8](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/factory/attestation/index.ts#L8)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **getAggregationBits**(`committee`: ValidatorIndex[], `validatorIndex`: ValidatorIndex): *boolean[]*
 
-*Defined in [packages/lodestar/src/chain/factory/attestation/index.ts:25](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/chain/factory/attestation/index.ts#L25)*
+*Defined in [packages/lodestar/src/chain/factory/attestation/index.ts:25](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/factory/attestation/index.ts#L25)*
 
 **Parameters:**
 

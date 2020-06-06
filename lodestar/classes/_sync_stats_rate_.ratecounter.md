@@ -35,7 +35,7 @@ Calculates increment rate in given time period
 
 \+ **new RateCounter**(`timePeriod`: number): *[RateCounter](_sync_stats_rate_.ratecounter.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:10](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L10)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:10](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L10)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Name | Type | Description |
 
 • **count**: *number* = 0
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:8](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L8)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:8](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L8)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **since**: *number*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:9](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L9)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:9](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L9)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **timePeriod**: *number*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:6](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L6)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:6](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L6)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **timer**: *Timeout*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:10](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L10)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:10](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L10)*
 
 ## Methods
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **increment**(`inc`: number): *void*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:34](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L34)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:34](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L34)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **rate**(): *number*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:38](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L38)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:38](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L38)*
 
 **Returns:** *number*
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **resetRate**(): *void*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:46](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L46)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:46](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L46)*
 
 **Returns:** *void*
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:23](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L23)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:23](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L23)*
 
 **Returns:** *Promise‹void›*
 
@@ -129,6 +129,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/stats/rate.ts:28](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/sync/stats/rate.ts#L28)*
+*Defined in [packages/lodestar/src/sync/stats/rate.ts:28](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/sync/stats/rate.ts#L28)*
 
 **Returns:** *Promise‹void›*

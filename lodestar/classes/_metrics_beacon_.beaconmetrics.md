@@ -50,7 +50,7 @@
 
 *Overrides [Metrics](_metrics_metrics_.metrics.md).[constructor](_metrics_metrics_.metrics.md#constructor)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L27)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L27)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ Name | Type |
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[currentEpochLiveValidators](../interfaces/_metrics_interface_.ibeaconmetrics.md#currentepochlivevalidators)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:19](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L19)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:19](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L19)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[currentFinalizedEpoch](../interfaces/_metrics_interface_.ibeaconmetrics.md#currentfinalizedepoch)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:17](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L17)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:17](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L17)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[currentJustifiedEpoch](../interfaces/_metrics_interface_.ibeaconmetrics.md#currentjustifiedepoch)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:16](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L16)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:16](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L16)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[currentSlot](../interfaces/_metrics_interface_.ibeaconmetrics.md#currentslot)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:14](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L14)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:14](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L14)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L27)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:27](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L27)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[peers](../interfaces/_metrics_interface_.ibeaconmetrics.md#peers)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:13](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L13)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:13](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L13)*
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[pendingDeposits](../interfaces/_metrics_interface_.ibeaconmetrics.md#pendingdeposits)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:21](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L21)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:21](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L21)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[pendingExits](../interfaces/_metrics_interface_.ibeaconmetrics.md#pendingexits)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:22](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L22)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:22](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L22)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[previousEpochLiveValidators](../interfaces/_metrics_interface_.ibeaconmetrics.md#previousepochlivevalidators)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:18](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L18)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:18](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L18)*
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[previousEpochStaleBlocks](../interfaces/_metrics_interface_.ibeaconmetrics.md#previousepochstaleblocks)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L24)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:24](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L24)*
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[previousJustifiedEpoch](../interfaces/_metrics_interface_.ibeaconmetrics.md#previousjustifiedepoch)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:15](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L15)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:15](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L15)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[propagatedAttestations](../interfaces/_metrics_interface_.ibeaconmetrics.md#propagatedattestations)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:25](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L25)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:25](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L25)*
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 *Inherited from [Metrics](_metrics_metrics_.metrics.md).[registry](_metrics_metrics_.metrics.md#registry)*
 
-*Defined in [packages/lodestar/src/metrics/metrics.ts:11](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/metrics.ts#L11)*
+*Defined in [packages/lodestar/src/metrics/metrics.ts:11](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/metrics.ts#L11)*
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[reorgEventsTotal](../interfaces/_metrics_interface_.ibeaconmetrics.md#reorgeventstotal)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:20](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L20)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:20](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L20)*
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 *Implementation of [IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md).[totalDeposits](../interfaces/_metrics_interface_.ibeaconmetrics.md#totaldeposits)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:23](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L23)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:23](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L23)*
 
 ## Methods
 
@@ -222,7 +222,7 @@ ___
 
 *Overrides [Metrics](_metrics_metrics_.metrics.md).[start](_metrics_metrics_.metrics.md#start)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:100](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L100)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:100](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L100)*
 
 **Returns:** *Promise‹void›*
 
@@ -234,6 +234,6 @@ ___
 
 *Overrides [Metrics](_metrics_metrics_.metrics.md).[stop](_metrics_metrics_.metrics.md#stop)*
 
-*Defined in [packages/lodestar/src/metrics/beacon.ts:104](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/metrics/beacon.ts#L104)*
+*Defined in [packages/lodestar/src/metrics/beacon.ts:104](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/metrics/beacon.ts#L104)*
 
 **Returns:** *Promise‹void›*

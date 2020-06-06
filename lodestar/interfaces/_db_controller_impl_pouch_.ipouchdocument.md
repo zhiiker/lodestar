@@ -20,7 +20,7 @@
 
 • **_id**: *string*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:19](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/db/controller/impl/pouch.ts#L19)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:19](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/db/controller/impl/pouch.ts#L19)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **_rev**: *string*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:20](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/db/controller/impl/pouch.ts#L20)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:20](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/db/controller/impl/pouch.ts#L20)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **value**: *object*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:21](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/db/controller/impl/pouch.ts#L21)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:21](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/db/controller/impl/pouch.ts#L21)*
 
 #### Type declaration:
 

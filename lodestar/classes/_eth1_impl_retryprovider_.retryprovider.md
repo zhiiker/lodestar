@@ -81,7 +81,7 @@
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:8](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/impl/retryProvider.ts#L8)*
+*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:8](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/eth1/impl/retryProvider.ts#L8)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 • **attempts**: *number*
 
-*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:8](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/impl/retryProvider.ts#L8)*
+*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:8](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/eth1/impl/retryProvider.ts#L8)*
 
 ___
 
@@ -728,7 +728,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:20](https://github.com/ChainSafe/lodestar/blob/a7b4c5ad0/packages/lodestar/src/eth1/impl/retryProvider.ts#L20)*
+*Defined in [packages/lodestar/src/eth1/impl/retryProvider.ts:20](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/eth1/impl/retryProvider.ts#L20)*
 
 **Parameters:**
 
