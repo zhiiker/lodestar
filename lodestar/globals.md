@@ -198,5 +198,3 @@
 * ["util/objects"](modules/_util_objects_.md)
 * ["util/sleep"](modules/_util_sleep_.md)
 * ["util/sort"](modules/_util_sort_.md)
-* ["validator/nodejs"](modules/_validator_nodejs_.md)
-* ["validator/options"](modules/_validator_options_.md)

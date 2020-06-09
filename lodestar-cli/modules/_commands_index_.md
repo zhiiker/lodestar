@@ -6,23 +6,12 @@
 
 ### References
 
-* [BeaconNodeCommand](_commands_index_.md#beaconnodecommand)
 * [CreateConfigCommand](_commands_index_.md#createconfigcommand)
 * [CreateWalletCommand](_commands_index_.md#createwalletcommand)
 * [DepositCommand](_commands_index_.md#depositcommand)
-* [DevCommand](_commands_index_.md#devcommand)
 * [Eth1PrivateNetworkCommand](_commands_index_.md#eth1privatenetworkcommand)
-* [IBeaconCommandOptions](_commands_index_.md#ibeaconcommandoptions)
-* [IDevCommandOptions](_commands_index_.md#idevcommandoptions)
-* [ValidatorCommand](_commands_index_.md#validatorcommand)
 
 ## References
-
-###  BeaconNodeCommand
-
-• **BeaconNodeCommand**:
-
-___
 
 ###  CreateConfigCommand
 
@@ -42,30 +31,6 @@ ___
 
 ___
 
-###  DevCommand
-
-• **DevCommand**:
-
-___
-
 ###  Eth1PrivateNetworkCommand
 
 • **Eth1PrivateNetworkCommand**:
-
-___
-
-###  IBeaconCommandOptions
-
-• **IBeaconCommandOptions**:
-
-___
-
-###  IDevCommandOptions
-
-• **IDevCommandOptions**:
-
-___
-
-###  ValidatorCommand
-
-• **ValidatorCommand**:

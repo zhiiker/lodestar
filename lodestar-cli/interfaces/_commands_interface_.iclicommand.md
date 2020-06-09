@@ -8,13 +8,10 @@
 
 ## Implemented by
 
-* [BeaconNodeCommand](../classes/_commands_beacon_.beaconnodecommand.md)
 * [CreateConfigCommand](../classes/_commands_create_config_.createconfigcommand.md)
 * [CreateWalletCommand](../classes/_commands_wallet_.createwalletcommand.md)
 * [DepositCommand](../classes/_commands_deposit_.depositcommand.md)
-* [DevCommand](../classes/_commands_dev_command_.devcommand.md)
 * [Eth1PrivateNetworkCommand](../classes/_commands_eth1_private_network_.eth1privatenetworkcommand.md)
-* [ValidatorCommand](../classes/_commands_validator_.validatorcommand.md)
 
 ## Index
 
@@ -28,7 +25,7 @@
 
 ▸ **register**(`commander`: CommanderStatic): *void*
 
-*Defined in [packages/lodestar-cli/src/commands/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar-cli/src/commands/interface.ts#L9)*
+*Defined in [packages/lodestar-cli/src/commands/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar-cli/src/commands/interface.ts#L9)*
 
 **Parameters:**
 

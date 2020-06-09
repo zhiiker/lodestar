@@ -15,7 +15,7 @@
 
 ▸ **handleIncomingBlock**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `obj`: [GossipObject](_network_gossip_interface_.md#gossipobject)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/block.ts:11](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/network/gossip/handlers/block.ts#L11)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/block.ts:11](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/network/gossip/handlers/block.ts#L11)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **publishBlock**(`this`: [Gossip](../classes/_network_gossip_gossip_.gossip.md), `signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/gossip/handlers/block.ts:21](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/network/gossip/handlers/block.ts#L21)*
+*Defined in [packages/lodestar/src/network/gossip/handlers/block.ts:21](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/network/gossip/handlers/block.ts#L21)*
 
 **Parameters:**
 

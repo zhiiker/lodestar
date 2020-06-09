@@ -45,7 +45,7 @@ with vote weights and best blocks stored as metadata
 
 \+ **new Node**(`__namedParameters`: object): *[Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:67](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L67)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:67](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L67)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ Name | Type |
 
 • **bestChild**: *[Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:47](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L47)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:47](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L47)*
 
 Child node with the most weight
 
@@ -78,7 +78,7 @@ ___
 
 • **bestTarget**: *[Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:52](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L52)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:52](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L52)*
 
 Decendent node with the most weight
 
@@ -88,7 +88,7 @@ ___
 
 • **blockRoot**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:31](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L31)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:31](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L31)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **children**: *Record‹[RootHex](../modules/_chain_forkchoice_interface_.md#roothex), [Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:67](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L67)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:67](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L67)*
 
 All direct children
 
@@ -106,7 +106,7 @@ ___
 
 • **finalizedCheckpoint**: *[HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:62](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L62)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:62](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L62)*
 
 State's finalized check point respective to this block/node
 
@@ -116,7 +116,7 @@ ___
 
 • **justifiedCheckpoint**: *[HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:57](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L57)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:57](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L57)*
 
 State's current justified check point respective to this block/node.
 
@@ -126,7 +126,7 @@ ___
 
 • **parent**: *[Node](_chain_forkchoice_statefuldag_lmdghost_.node.md) | null*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:42](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L42)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:42](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L42)*
 
 Parent node, the previous block
 
@@ -136,7 +136,7 @@ ___
 
 • **slot**: *Slot*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:30](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L30)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:30](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L30)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **stateRoot**: *Root*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:32](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L32)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:32](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L32)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:37](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L37)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:37](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L37)*
 
 Total weight for a block and its children
 
@@ -162,7 +162,7 @@ Total weight for a block and its children
 
 ▸ **addChild**(`child`: [Node](_chain_forkchoice_statefuldag_lmdghost_.node.md), `justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:147](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L147)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:147](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L147)*
 
 Add child node.
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **betterThan**(`other`: [Node](_chain_forkchoice_statefuldag_lmdghost_.node.md), `justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:121](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L121)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:121](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L121)*
 
 Determine which node is 'better'
 Weighing system: correct justified/finalized epoch first, then the  internal weight
@@ -208,7 +208,7 @@ ___
 
 ▸ **equals**(`other`: [Node](_chain_forkchoice_statefuldag_lmdghost_.node.md)): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:110](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L110)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:110](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L110)*
 
 Compare two nodes for equality
 
@@ -226,7 +226,7 @@ ___
 
 ▸ **isCandidateForBestTarget**(`justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:161](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L161)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:161](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L161)*
 
 Check if a leaf is eligible to be a head
 
@@ -245,7 +245,7 @@ ___
 
 ▸ **onAddWeight**(`justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:197](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L197)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:197](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L197)*
 
 Update parent best child / best target in the added weight case
 
@@ -264,7 +264,7 @@ ___
 
 ▸ **onRemoveWeight**(`justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:214](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L214)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:214](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L214)*
 
 Update parent best child / best target in the removed weight case
 
@@ -283,7 +283,7 @@ ___
 
 ▸ **propagateWeightChange**(`delta`: Gwei, `justifiedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md), `finalizedCheckpoint`: [HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:179](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L179)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:179](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L179)*
 
 Update node weight.
 delta = 0: node's best target's epochs are conflict to the store or become conform to the store.
@@ -306,6 +306,6 @@ ___
 
 ▸ **toBlockSummary**(): *[BlockSummary](../interfaces/_chain_forkchoice_interface_.blocksummary.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:83](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L83)*
+*Defined in [packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts:83](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/chain/forkChoice/statefulDag/lmdGhost.ts#L83)*
 
 **Returns:** *[BlockSummary](../interfaces/_chain_forkchoice_interface_.blocksummary.md)*

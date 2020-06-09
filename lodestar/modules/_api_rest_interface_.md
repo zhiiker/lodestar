@@ -20,7 +20,7 @@
 
 Ƭ **LodestarApiPlugin**: *Plugin‹Server, IncomingMessage, ServerResponse, [ILodestarApiOpts](../interfaces/_api_rest_interface_.ilodestarapiopts.md)›*
 
-*Defined in [packages/lodestar/src/api/rest/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/api/rest/interface.ts#L16)*
+*Defined in [packages/lodestar/src/api/rest/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/interface.ts#L16)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 Ƭ **LodestarRestApiEndpoint**: *function*
 
-*Defined in [packages/lodestar/src/api/rest/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/api/rest/interface.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/interface.ts#L17)*
 
 #### Type declaration:
 

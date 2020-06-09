@@ -24,7 +24,6 @@
 * [DatabaseService](../classes/_db_api_abstract_.databaseservice.md)
 * [RestApi](../classes/_api_rest_index_.restapi.md)
 * [TasksService](../classes/_tasks_index_.tasksservice.md)
-* [ValidatorClient](../classes/_validator_nodejs_.validatorclient.md)
 * [ValidatorDB](../classes/_db_api_validator_validator_.validatordb.md)
 
 ## Index
@@ -40,7 +39,7 @@
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -50,6 +49,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

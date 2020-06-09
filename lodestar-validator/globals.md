@@ -18,6 +18,8 @@
 * ["api/interface/validators"](modules/_api_interface_validators_.md)
 * ["db/interface"](modules/_db_interface_.md)
 * ["defaults"](modules/_defaults_.md)
+* ["interop/index"](modules/_interop_index_.md)
+* ["interop/keypairs"](modules/_interop_keypairs_.md)
 * ["options"](modules/_options_.md)
 * ["services/attestation"](modules/_services_attestation_.md)
 * ["services/block"](modules/_services_block_.md)

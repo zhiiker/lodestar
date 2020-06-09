@@ -18,7 +18,7 @@
 
 ▸ **getTopicEncoding**(`topic`: string): *[GossipEncoding](../enums/_network_gossip_encoding_.gossipencoding.md)*
 
-*Defined in [packages/lodestar/src/network/gossip/encoding.ts:6](https://github.com/ChainSafe/lodestar/blob/ee6564a3a/packages/lodestar/src/network/gossip/encoding.ts#L6)*
+*Defined in [packages/lodestar/src/network/gossip/encoding.ts:6](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/network/gossip/encoding.ts#L6)*
 
 **Parameters:**
 
