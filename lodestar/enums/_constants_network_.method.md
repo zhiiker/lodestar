@@ -19,7 +19,7 @@
 
 • **BeaconBlocksByRange**: = "beacon_blocks_by_range"
 
-*Defined in [packages/lodestar/src/constants/network.ts:17](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L17)*
+*Defined in [packages/lodestar/src/constants/network.ts:17](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L17)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **BeaconBlocksByRoot**: = "beacon_blocks_by_root"
 
-*Defined in [packages/lodestar/src/constants/network.ts:18](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L18)*
+*Defined in [packages/lodestar/src/constants/network.ts:18](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L18)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **Goodbye**: = "goodbye"
 
-*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L14)*
+*Defined in [packages/lodestar/src/constants/network.ts:14](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L14)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **Metadata**: = "metadata"
 
-*Defined in [packages/lodestar/src/constants/network.ts:16](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L16)*
+*Defined in [packages/lodestar/src/constants/network.ts:16](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L16)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **Ping**: = "ping"
 
-*Defined in [packages/lodestar/src/constants/network.ts:15](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L15)*
+*Defined in [packages/lodestar/src/constants/network.ts:15](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L15)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **Status**: = "status"
 
-*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/constants/network.ts#L13)*
+*Defined in [packages/lodestar/src/constants/network.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/constants/network.ts#L13)*

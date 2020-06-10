@@ -22,7 +22,7 @@
 
 • **api**: *[ApiNamespace](../enums/_api_index_.apinamespace.md)[]*
 
-*Defined in [packages/lodestar/src/api/rest/options.ts:5](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/options.ts#L5)*
+*Defined in [packages/lodestar/src/api/rest/options.ts:5](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/options.ts#L5)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **cors**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/options.ts:7](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/options.ts#L7)*
+*Defined in [packages/lodestar/src/api/rest/options.ts:7](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/options.ts#L7)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **enabled**: *boolean*
 
-*Defined in [packages/lodestar/src/api/rest/options.ts:4](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/options.ts#L4)*
+*Defined in [packages/lodestar/src/api/rest/options.ts:4](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/options.ts#L4)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **host**: *string*
 
-*Defined in [packages/lodestar/src/api/rest/options.ts:6](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/options.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/options.ts:6](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/options.ts#L6)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **port**: *number*
 
-*Defined in [packages/lodestar/src/api/rest/options.ts:8](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/api/rest/options.ts#L8)*
+*Defined in [packages/lodestar/src/api/rest/options.ts:8](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/options.ts#L8)*

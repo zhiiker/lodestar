@@ -20,7 +20,7 @@
 
 • **blockPerChunk**: *number*
 
-*Defined in [packages/lodestar/src/sync/options.ts:2](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/sync/options.ts#L2)*
+*Defined in [packages/lodestar/src/sync/options.ts:2](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/sync/options.ts#L2)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **maxSlotImport**: *number*
 
-*Defined in [packages/lodestar/src/sync/options.ts:7](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/sync/options.ts#L7)*
+*Defined in [packages/lodestar/src/sync/options.ts:7](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/sync/options.ts#L7)*
 
 max slots to import before waiting for
 chain to process them
@@ -39,4 +39,4 @@ ___
 
 • **minPeers**: *number*
 
-*Defined in [packages/lodestar/src/sync/options.ts:8](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar/src/sync/options.ts#L8)*
+*Defined in [packages/lodestar/src/sync/options.ts:8](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/sync/options.ts#L8)*

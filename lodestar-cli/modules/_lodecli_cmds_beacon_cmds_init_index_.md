@@ -20,7 +20,7 @@
 
 • **command**: *"init"* = "init"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:9](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:9](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L9)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **description**: *"Initialize lodestar beacon node"* = "Initialize lodestar beacon node"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:11](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:11](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L11)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **handler**: *[init](_lodecli_cmds_beacon_cmds_init_init_.md#init)* = init
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:22](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:22](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L22)*
 
 ## Functions
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **builder**(`yargs`: Argv‹[IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)›): *Argv‹[IBeaconArgs](../interfaces/_lodecli_cmds_beacon_options_index_.ibeaconargs.md)›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee40678/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/init/index.ts#L13)*
 
 **Parameters:**
 
