@@ -18,7 +18,7 @@
 
 ### ▪ **beaconApiUrl**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:3](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:3](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L3)*
 
 ###  alias
 
@@ -26,34 +26,34 @@
     "validator.beaconUrl",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:4](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:4](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L4)*
 
 ###  default
 
 • **default**: *string* = "http://localhost:9596"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:10](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:10](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L10)*
 
 ###  description
 
 • **description**: *string* = "To delete chain and validator directories. Pass 'memory' for in memory communication"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L7)*
 
 ###  group
 
 • **group**: *string* = "validator"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:9](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:9](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L9)*
 
 ###  requiresArg
 
 • **requiresArg**: *false* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L11)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:8](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:8](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L8)*

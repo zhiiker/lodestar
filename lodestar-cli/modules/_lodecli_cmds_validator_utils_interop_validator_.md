@@ -18,7 +18,7 @@
 
 ▸ **getInteropValidator**(`config`: IBeaconConfig, `rootDir`: string, `modules`: [IValidatorModules](../interfaces/_lodecli_cmds_validator_utils_interop_validator_.ivalidatormodules.md), `index`: number): *Validator*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:15](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:15](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L15)*
 
 **Parameters:**
 

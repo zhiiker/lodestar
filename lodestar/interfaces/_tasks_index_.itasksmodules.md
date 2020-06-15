@@ -22,7 +22,7 @@
 
 • **chain**: *[IBeaconChain](_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:20](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/tasks/index.ts#L20)*
+*Defined in [packages/lodestar/src/tasks/index.ts:20](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/tasks/index.ts#L20)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:18](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/tasks/index.ts#L18)*
+*Defined in [packages/lodestar/src/tasks/index.ts:18](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/tasks/index.ts#L18)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:19](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/tasks/index.ts#L19)*
+*Defined in [packages/lodestar/src/tasks/index.ts:19](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/tasks/index.ts#L19)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **network**: *[INetwork](_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:22](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/tasks/index.ts#L22)*
+*Defined in [packages/lodestar/src/tasks/index.ts:22](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/tasks/index.ts#L22)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **sync**: *[IBeaconSync](_sync_interface_.ibeaconsync.md)*
 
-*Defined in [packages/lodestar/src/tasks/index.ts:21](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/tasks/index.ts#L21)*
+*Defined in [packages/lodestar/src/tasks/index.ts:21](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/tasks/index.ts#L21)*

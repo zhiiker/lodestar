@@ -18,4 +18,4 @@
 
 • **doc**: *[IPouchDocument](_db_controller_impl_pouch_.ipouchdocument.md)*
 
-*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:26](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/db/controller/impl/pouch.ts#L26)*
+*Defined in [packages/lodestar/src/db/controller/impl/pouch.ts:26](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/db/controller/impl/pouch.ts#L26)*

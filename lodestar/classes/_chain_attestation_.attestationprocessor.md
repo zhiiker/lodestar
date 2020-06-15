@@ -38,7 +38,7 @@
 
 \+ **new AttestationProcessor**(`chain`: [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter), `forkChoice`: [ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md), `__namedParameters`: object): *[AttestationProcessor](_chain_attestation_.attestationprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L31)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L31)*
 
 **Parameters:**
 
@@ -62,7 +62,7 @@ Name | Type |
 
 • **chain**: *[ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter)*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:29](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L29)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:29](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L29)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:26](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L26)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:26](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L26)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:27](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L27)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:27](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L27)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **forkChoice**: *[ILMDGHOST](../interfaces/_chain_forkchoice_interface_.ilmdghost.md)*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:30](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L30)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:30](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L30)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:28](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L28)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:28](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L28)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **pendingAttestations**: *Map‹BlockRootHex, Map‹AttestationRootHex, Attestation››*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L31)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:31](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L31)*
 
 ## Methods
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **addPendingAttestation**(`blockRoot`: Root, `attestation`: Attestation, `attestationHash`: Root): *void*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:145](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L145)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:145](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L145)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **processAttestation**(`attestation`: Attestation, `attestationHash`: Root): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:96](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L96)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:96](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L96)*
 
 **Parameters:**
 
@@ -147,7 +147,7 @@ ___
 
 *Implementation of [IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:46](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L46)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:46](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L46)*
 
 **Parameters:**
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **receiveBlock**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/attestation.ts:78](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/attestation.ts#L78)*
+*Defined in [packages/lodestar/src/chain/attestation.ts:78](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/attestation.ts#L78)*
 
 **Parameters:**
 

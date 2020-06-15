@@ -18,16 +18,16 @@
 
 ### ▪ **config**: *object*
 
-*Defined in [packages/lodestar/src/chain/options.ts:6](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/options.ts#L6)*
+*Defined in [packages/lodestar/src/chain/options.ts:6](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/options.ts#L6)*
 
 ###  dumpState
 
 • **dumpState**: *false* = false
 
-*Defined in [packages/lodestar/src/chain/options.ts:8](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/options.ts#L8)*
+*Defined in [packages/lodestar/src/chain/options.ts:8](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/options.ts#L8)*
 
 ###  name
 
 • **name**: *string* = "mainnet"
 
-*Defined in [packages/lodestar/src/chain/options.ts:7](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/chain/options.ts#L7)*
+*Defined in [packages/lodestar/src/chain/options.ts:7](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/options.ts#L7)*

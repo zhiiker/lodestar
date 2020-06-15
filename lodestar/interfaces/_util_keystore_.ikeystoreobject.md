@@ -19,7 +19,7 @@
 
 • **encryptedPrivateKey**: *string*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:11](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/util/keystore.ts#L11)*
+*Defined in [packages/lodestar/src/util/keystore.ts:11](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/util/keystore.ts#L11)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **publicKey**: *string*
 
-*Defined in [packages/lodestar/src/util/keystore.ts:12](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/util/keystore.ts#L12)*
+*Defined in [packages/lodestar/src/util/keystore.ts:12](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/util/keystore.ts#L12)*

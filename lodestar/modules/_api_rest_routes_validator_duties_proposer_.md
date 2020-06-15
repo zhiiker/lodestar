@@ -22,7 +22,7 @@
 
 ▸ **registerProposerDutiesEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:25](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L25)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:25](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L25)*
 
 **Parameters:**
 
@@ -43,11 +43,11 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:10](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L10)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:10](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L10)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:11](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L11)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts:11](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/api/rest/routes/validator/duties/proposer.ts#L11)*
 
 * **params**: *object*
 
