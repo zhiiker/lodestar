@@ -20,7 +20,7 @@
 
 Ƭ **InitialSync**: *[IService](../interfaces/_node_nodejs_.iservice.md) & [InitialSyncEventEmitter](_sync_initial_interface_.md#initialsynceventemitter) & [ISyncModule](../interfaces/_sync_interface_.isyncmodule.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/sync/initial/interface.ts#L28)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:28](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/sync/initial/interface.ts#L28)*
 
 ___
 
@@ -28,4 +28,4 @@ ___
 
 Ƭ **InitialSyncEventEmitter**: *StrictEventEmitter‹EventEmitter, [IInitialSyncEvents](../interfaces/_sync_initial_interface_.iinitialsyncevents.md)›*
 
-*Defined in [packages/lodestar/src/sync/initial/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/sync/initial/interface.ts#L26)*
+*Defined in [packages/lodestar/src/sync/initial/interface.ts:26](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar/src/sync/initial/interface.ts#L26)*

@@ -20,7 +20,7 @@
 
 ### ▪ **genesisValidatorsCount**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:3](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:3](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L3)*
 
 ###  alias
 
@@ -29,31 +29,31 @@
     "c"
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:4](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:4](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L4)*
 
 ###  description
 
 • **description**: *string* = "If present it will create genesis with interop validators and start chain."
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:8](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:8](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L8)*
 
 ###  group
 
 • **group**: *string* = "dev"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:10](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:10](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L10)*
 
 ###  requiresArg
 
 • **requiresArg**: *false* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:11](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:11](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L11)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:9](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:9](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L9)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 ### ▪ **resetChainDir**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:26](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L26)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:26](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L26)*
 
 ###  alias
 
@@ -70,37 +70,37 @@ ___
     "r"
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:27](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L27)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:27](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L27)*
 
 ###  default
 
 • **default**: *boolean* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:34](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:34](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L34)*
 
 ###  description
 
 • **description**: *string* = "To delete chain and validator directories"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:31](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L31)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:31](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L31)*
 
 ###  group
 
 • **group**: *string* = "dev"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:33](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L33)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:33](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L33)*
 
 ###  requiresArg
 
 • **requiresArg**: *false* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:35](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L35)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:35](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L35)*
 
 ###  type
 
 • **type**: *"boolean"* = "boolean"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:32](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L32)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:32](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L32)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 ### ▪ **startValidators**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:14](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:14](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L14)*
 
 ###  alias
 
@@ -117,34 +117,34 @@ ___
     "v"
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:15](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:15](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L15)*
 
 ###  default
 
 • **default**: *string* = "0:8"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:20](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L20)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:20](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L20)*
 
 ###  description
 
 • **description**: *string* = "Start interop validators in given range"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:19](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L19)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:19](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L19)*
 
 ###  group
 
 • **group**: *string* = "dev"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:22](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:22](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L22)*
 
 ###  requiresArg
 
 • **requiresArg**: *false* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:23](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L23)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:23](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L23)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:21](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:21](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L21)*

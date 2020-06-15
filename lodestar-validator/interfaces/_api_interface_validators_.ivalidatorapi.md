@@ -31,7 +31,7 @@
 
 ▸ **getAttesterDuties**(`epoch`: Epoch, `validatorPubKeys`: BLSPubkey[]): *Promise‹AttesterDuty[]›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:20](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L20)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:20](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L20)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **getProposerDuties**(`epoch`: Epoch, `validatorPubKeys`: BLSPubkey[]): *Promise‹ProposerDuty[]›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:18](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L18)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:18](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L18)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **getWireAttestations**(`epoch`: Epoch, `committeeIndex`: CommitteeIndex): *Promise‹Attestation[]›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:50](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L50)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:50](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L50)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **produceAggregateAndProof**(`attestationData`: AttestationData, `aggregator`: BLSPubkey): *Promise‹AggregateAndProof›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:52](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L52)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:52](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L52)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **produceAttestation**(`validatorPubKey`: BLSPubkey, `index`: CommitteeIndex, `slot`: Slot): *Promise‹Attestation›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:33](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L33)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:33](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L33)*
 
 Requests that the BeaconNode produce an Attestation,
 with a blank signature field, which the ValidatorClient will then sign.
@@ -120,7 +120,7 @@ ___
 
 ▸ **produceBlock**(`slot`: Slot, `proposerPubkey`: BLSPubkey, `randaoReveal`: Uint8Array): *Promise‹BeaconBlock›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:27](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L27)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:27](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L27)*
 
 Requests a BeaconNode to produce a valid block,
 which can then be signed by a ValidatorClient.
@@ -143,7 +143,7 @@ ___
 
 ▸ **publishAggregateAndProof**(`signedAggregateAndProof`: SignedAggregateAndProof): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:48](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L48)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:48](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L48)*
 
 **Parameters:**
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **publishAttestation**(`attestation`: Attestation): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:46](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L46)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:46](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L46)*
 
 Instructs the BeaconNode to publish a newly signed Attestation object,
 to be incorporated into the beacon chain.
@@ -178,7 +178,7 @@ ___
 
 ▸ **publishBlock**(`signedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:40](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L40)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:40](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L40)*
 
 Instructs the BeaconNode to publish a newly signed beacon block
 to the beacon network, to be included in the beacon chain.
@@ -197,7 +197,7 @@ ___
 
 ▸ **subscribeCommitteeSubnet**(`slot`: Slot, `slotSignature`: BLSSignature, `committeeIndex`: CommitteeIndex, `aggregatorPubkey`: BLSPubkey): *Promise‹void›*
 
-*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:54](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/api/interface/validators.ts#L54)*
+*Defined in [packages/lodestar-validator/src/api/interface/validators.ts:54](https://github.com/ChainSafe/lodestar/blob/f41191172/packages/lodestar-validator/src/api/interface/validators.ts#L54)*
 
 **Parameters:**
 
