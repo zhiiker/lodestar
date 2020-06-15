@@ -4,9 +4,9 @@
 
 ## Index
 
-### Interfaces
+### Type aliases
 
-* [IBody](../interfaces/_api_rest_routes_validator_publishblock_.ibody.md)
+* [IBody](_api_rest_routes_validator_publishblock_.md#ibody)
 
 ### Functions
 
@@ -16,13 +16,21 @@
 
 * [opts](_api_rest_routes_validator_publishblock_.md#const-opts)
 
+## Type aliases
+
+###  IBody
+
+Ƭ **IBody**: *Json*
+
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:6](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L6)*
+
 ## Functions
 
 ### `Const` registerBlockPublishEndpoint
 
 ▸ **registerBlockPublishEndpoint**(`fastify`: FastifyInstance‹Server‹›, IncomingMessage‹›, ServerResponse‹››, `__namedParameters`: object): *void*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:28](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L28)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:21](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L21)*
 
 **Parameters:**
 
@@ -43,18 +51,12 @@ Name | Type |
 
 ### ▪ **opts**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L13)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:10](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L10)*
 
 ▪ **schema**: *object*
 
-*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:17](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L17)*
+*Defined in [packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:14](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L14)*
 
 * **body**: *object*
 
-  * **requiredKeys**: *string[]* = ["beacon_block"]
-
   * **type**: *string* = "object"
-
-  * **beacon_block**: *object*
-
-    * **type**: *string* = "object"

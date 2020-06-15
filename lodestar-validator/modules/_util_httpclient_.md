@@ -20,9 +20,9 @@
 
 ### `Const` handleError
 
-▸ **handleError**(`error`: AxiosError): *Error*
+▸ **handleError**(`error`: AxiosError): *AxiosError*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:43](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar-validator/src/util/httpClient.ts#L43)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:43](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar-validator/src/util/httpClient.ts#L43)*
 
 **Parameters:**
 
@@ -30,4 +30,4 @@ Name | Type |
 ------ | ------ |
 `error` | AxiosError |
 
-**Returns:** *Error*
+**Returns:** *AxiosError*

@@ -19,7 +19,7 @@
 
 • **db**: *[IBeaconDb](_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:13](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L13)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:13](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L13)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:14](https://github.com/ChainSafe/lodestar/blob/3dee406/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L14)*
+*Defined in [packages/lodestar/src/tasks/tasks/archiveBlocks.ts:14](https://github.com/ChainSafe/lodestar/blob/a092bb827/packages/lodestar/src/tasks/tasks/archiveBlocks.ts#L14)*
