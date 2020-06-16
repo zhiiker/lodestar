@@ -18,7 +18,7 @@
 
 • **dev**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:39](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L39)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts:39](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodecli/cmds/dev/options/dev.ts#L39)*
 
 #### Type declaration:
 

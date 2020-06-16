@@ -25,7 +25,7 @@
 
 Ƭ **NetworkEventEmitter**: *StrictEventEmitter‹EventEmitter, [INetworkEvents](../interfaces/_network_interface_.inetworkevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L55)*
+*Defined in [packages/lodestar/src/network/interface.ts:55](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L55)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **ReqEventEmitter**: *StrictEventEmitter‹EventEmitter, [IReqEvents](../interfaces/_network_interface_.ireqevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L35)*
+*Defined in [packages/lodestar/src/network/interface.ts:35](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L35)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **RespEventEmitter**: *StrictEventEmitter‹EventEmitter, [IRespEvents](../interfaces/_network_interface_.irespevents.md)›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L36)*
+*Defined in [packages/lodestar/src/network/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L36)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 Ƭ **ResponseCallbackFn**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L25)*
+*Defined in [packages/lodestar/src/network/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L25)*
 
 #### Type declaration:
 

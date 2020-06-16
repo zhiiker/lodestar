@@ -18,7 +18,7 @@
 
 \+ **new IApiConstructor**(`opts`: Partial‹[IApiOptions](_api_options_.iapioptions.md)›, `modules`: [IApiModules](_api_interface_.iapimodules.md)): *[IApi](_api_interface_.iapi.md)*
 
-*Defined in [packages/lodestar/src/api/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/api/interface.ts#L22)*
+*Defined in [packages/lodestar/src/api/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/api/interface.ts#L22)*
 
 **Parameters:**
 

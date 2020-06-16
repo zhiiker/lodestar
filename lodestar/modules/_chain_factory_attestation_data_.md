@@ -14,7 +14,7 @@
 
 ▸ **assembleAttestationData**(`config`: IBeaconConfig, `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `headState`: BeaconState, `headBlock`: BeaconBlock, `slot`: Slot, `index`: CommitteeIndex): *Promise‹AttestationData›*
 
-*Defined in [packages/lodestar/src/chain/factory/attestation/data.ts:9](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/factory/attestation/data.ts#L9)*
+*Defined in [packages/lodestar/src/chain/factory/attestation/data.ts:9](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/chain/factory/attestation/data.ts#L9)*
 
 **Parameters:**
 

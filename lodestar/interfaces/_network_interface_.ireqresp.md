@@ -75,7 +75,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **beaconBlocksByRange**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRangeRequest): *Promise‹SignedBeaconBlock[] | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L45)*
+*Defined in [packages/lodestar/src/network/interface.ts:45](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L45)*
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **beaconBlocksByRoot**(`peerInfo`: PeerInfo, `request`: BeaconBlocksByRootRequest): *Promise‹SignedBeaconBlock[] | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L46)*
+*Defined in [packages/lodestar/src/network/interface.ts:46](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L46)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **goodbye**(`peerInfo`: PeerInfo, `request`: [Goodbye](../enums/_constants_network_.method.md#goodbye)): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L42)*
+*Defined in [packages/lodestar/src/network/interface.ts:42](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L42)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **metadata**(`peerInfo`: PeerInfo): *Promise‹Metadata | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L44)*
+*Defined in [packages/lodestar/src/network/interface.ts:44](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L44)*
 
 **Parameters:**
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **ping**(`peerInfo`: PeerInfo, `request`: [Ping](../enums/_constants_network_.method.md#ping)): *Promise‹[Ping](../enums/_constants_network_.method.md#ping) | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L43)*
+*Defined in [packages/lodestar/src/network/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L43)*
 
 **Parameters:**
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **sendResponse**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](../classes/_network_error_.rpcerror.md), `response?`: ResponseBody): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L40)*
+*Defined in [packages/lodestar/src/network/interface.ts:40](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L40)*
 
 **Parameters:**
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **sendResponseStream**(`id`: [RequestId](../modules/_constants_network_.md#requestid), `err`: [RpcError](../classes/_network_error_.rpcerror.md), `chunkIter`: AsyncIterable‹ResponseBody›): *void*
 
-*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L39)*
+*Defined in [packages/lodestar/src/network/interface.ts:39](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L39)*
 
 **Parameters:**
 
@@ -195,7 +195,7 @@ ___
 
 ▸ **status**(`peerInfo`: PeerInfo, `request`: Status): *Promise‹Status | null›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/network/interface.ts#L41)*
+*Defined in [packages/lodestar/src/network/interface.ts:41](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L41)*
 
 **Parameters:**
 

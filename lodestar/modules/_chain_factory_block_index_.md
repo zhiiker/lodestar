@@ -14,7 +14,7 @@
 
 ▸ **assembleBlock**(`config`: IBeaconConfig, `chain`: [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md), `db`: [IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md), `slot`: Slot, `proposerIndex`: ValidatorIndex, `randaoReveal`: Bytes96, `graffiti`: Buffer‹›): *Promise‹BeaconBlock | null›*
 
-*Defined in [packages/lodestar/src/chain/factory/block/index.ts:15](https://github.com/ChainSafe/lodestar/blob/e2d6cf79d/packages/lodestar/src/chain/factory/block/index.ts#L15)*
+*Defined in [packages/lodestar/src/chain/factory/block/index.ts:15](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/chain/factory/block/index.ts#L15)*
 
 **Parameters:**
 
