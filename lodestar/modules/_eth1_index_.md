@@ -13,6 +13,7 @@
 * [IDepositEvent](_eth1_index_.md#idepositevent)
 * [IEth1Events](_eth1_index_.md#ieth1events)
 * [IEth1Notifier](_eth1_index_.md#ieth1notifier)
+* [IEthersAbi](_eth1_index_.md#iethersabi)
 * [IEthersEth1Options](_eth1_index_.md#ietherseth1options)
 
 ## References
@@ -56,6 +57,12 @@ ___
 ###  IEth1Notifier
 
 • **IEth1Notifier**:
+
+___
+
+###  IEthersAbi
+
+• **IEthersAbi**:
 
 ___
 

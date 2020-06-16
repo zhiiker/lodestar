@@ -27,16 +27,16 @@
 
 ###  constructor
 
-\+ **new Eth1Wallet**(`eth1PrivateKey`: string, `contractAbi`: string | ParamType[], `config`: IBeaconConfig, `logger`: ILogger, `provider?`: Provider): *[Eth1Wallet](_eth1_wallet_.eth1wallet.md)*
+\+ **new Eth1Wallet**(`eth1PrivateKey`: string, `contractAbi`: [IEthersAbi](../modules/_eth1_interface_.md#iethersabi), `config`: IBeaconConfig, `logger`: ILogger, `provider?`: Provider): *[Eth1Wallet](_eth1_wallet_.eth1wallet.md)*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:26](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L26)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:25](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L25)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `eth1PrivateKey` | string |
-`contractAbi` | string &#124; ParamType[] |
+`contractAbi` | [IEthersAbi](../modules/_eth1_interface_.md#iethersabi) |
 `config` | IBeaconConfig |
 `logger` | ILogger |
 `provider?` | Provider |
@@ -49,15 +49,15 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:24](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L24)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:23](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L23)*
 
 ___
 
 ### `Private` contractAbi
 
-• **contractAbi**: *string | ParamType[]*
+• **contractAbi**: *[IEthersAbi](../modules/_eth1_interface_.md#iethersabi)*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:22](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:21](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L21)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:26](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L26)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:25](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L25)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **wallet**: *Wallet*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:20](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L20)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:19](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L19)*
 
 ## Methods
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **submitValidatorDeposit**(`address`: string, `value`: BigNumber, `signingKey`: PrivateKey, `withdrawalKey`: PrivateKey): *Promise‹string›*
 
-*Defined in [packages/lodestar/src/eth1/wallet.ts:50](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/wallet.ts#L50)*
+*Defined in [packages/lodestar/src/eth1/wallet.ts:49](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/wallet.ts#L49)*
 
 Will deposit 32 ETH to eth2.0 deposit contract.
 

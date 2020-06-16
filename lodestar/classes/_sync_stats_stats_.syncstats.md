@@ -35,7 +35,7 @@
 
 \+ **new SyncStats**(`chainEvents`: [ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter), `rateCounter?`: [RateCounter](_sync_stats_rate_.ratecounter.md)): *[SyncStats](_sync_stats_stats_.syncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:9](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L9)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:9](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L9)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **chainEvents**: *[ChainEventEmitter](../modules/_chain_interface_.md#chaineventemitter)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L8)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:8](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L8)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **rateCounter**: *[RateCounter](_sync_stats_rate_.ratecounter.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:9](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L9)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:9](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L9)*
 
 ## Methods
 
@@ -70,7 +70,7 @@ ___
 
 *Implementation of [ISyncStats](../interfaces/_sync_stats_interface_.isyncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:26](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L26)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:26](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L26)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 *Implementation of [ISyncStats](../interfaces/_sync_stats_interface_.isyncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:38](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L38)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:38](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L38)*
 
 **Returns:** *number*
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **onBlockProcessed**(): *void*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:42](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L42)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:42](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L42)*
 
 **Returns:** *void*
 
@@ -111,7 +111,7 @@ ___
 
 *Implementation of [ISyncStats](../interfaces/_sync_stats_interface_.isyncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:16](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L16)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:16](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L16)*
 
 **Returns:** *Promise‹void›*
 
@@ -123,6 +123,6 @@ ___
 
 *Implementation of [ISyncStats](../interfaces/_sync_stats_interface_.isyncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/stats/stats.ts:21](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/sync/stats/stats.ts#L21)*
+*Defined in [packages/lodestar/src/sync/stats/stats.ts:21](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/sync/stats/stats.ts#L21)*
 
 **Returns:** *Promise‹void›*

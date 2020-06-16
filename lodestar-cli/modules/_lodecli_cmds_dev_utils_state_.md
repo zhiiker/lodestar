@@ -16,7 +16,7 @@
 
 ▸ **initDevChain**(`node`: BeaconNode, `validatorCount`: number): *Promise‹BeaconState›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:10](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:10](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L10)*
 
 **Parameters:**
 
@@ -33,7 +33,7 @@ ___
 
 ▸ **storeDeposits**(`config`: IBeaconConfig, `db`: IBeaconDb, `deposits`: Deposit[]): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:34](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:34](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L34)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **storeSSZState**(`config`: IBeaconConfig, `state`: BeaconState, `path`: string): *void*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:29](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L29)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:29](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L29)*
 
 **Parameters:**
 

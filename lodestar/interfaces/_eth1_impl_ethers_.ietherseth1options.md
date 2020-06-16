@@ -24,7 +24,7 @@
 
 • **contract**? : *Contract*
 
-*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:20](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/impl/ethers.ts#L20)*
+*Defined in [packages/lodestar/src/eth1/impl/ethers.ts:19](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/impl/ethers.ts#L19)*
 
 ___
 
@@ -34,11 +34,11 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[depositContract](_eth1_options_.ieth1options.md#depositcontract)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:13](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/options.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/options.ts:13](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/options.ts#L13)*
 
 #### Type declaration:
 
-* **abi**: *string | object | object | object[] | string | Interface*
+* **abi**: *[IEthersAbi](../modules/_eth1_interface_.md#iethersabi)*
 
 * **address**: *string*
 
@@ -54,7 +54,7 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[enabled](_eth1_options_.ieth1options.md#enabled)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:7](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/options.ts#L7)*
+*Defined in [packages/lodestar/src/eth1/options.ts:7](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/options.ts#L7)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[provider](_eth1_options_.ieth1options.md#provider)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/options.ts#L8)*
+*Defined in [packages/lodestar/src/eth1/options.ts:8](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/options.ts#L8)*
 
 #### Type declaration:
 
@@ -76,8 +76,8 @@ ___
 
 ### `Optional` providerInstance
 
-• **providerInstance**? : *BaseProvider*
+• **providerInstance**? : *Provider*
 
 *Inherited from [IEth1Options](_eth1_options_.ieth1options.md).[providerInstance](_eth1_options_.ieth1options.md#optional-providerinstance)*
 
-*Defined in [packages/lodestar/src/eth1/options.ts:12](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/options.ts#L12)*
+*Defined in [packages/lodestar/src/eth1/options.ts:12](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/options.ts#L12)*

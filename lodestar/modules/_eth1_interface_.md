@@ -14,6 +14,7 @@
 ### Type aliases
 
 * [Eth1EventEmitter](_eth1_interface_.md#eth1eventemitter)
+* [IEthersAbi](_eth1_interface_.md#iethersabi)
 
 ## Type aliases
 
@@ -21,4 +22,12 @@
 
 Ƭ **Eth1EventEmitter**: *StrictEventEmitter‹EventEmitter, [IEth1Events](../interfaces/_eth1_interface_.ieth1events.md)›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:23](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/eth1/interface.ts#L23)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L25)*
+
+___
+
+###  IEthersAbi
+
+Ƭ **IEthersAbi**: *Array‹string | EventFragment | ParamType›*
+
+*Defined in [packages/lodestar/src/eth1/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L13)*

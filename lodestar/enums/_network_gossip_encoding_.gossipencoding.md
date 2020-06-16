@@ -15,7 +15,7 @@
 
 • **SSZ**: = "ssz"
 
-*Defined in [packages/lodestar/src/network/gossip/encoding.ts:2](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/network/gossip/encoding.ts#L2)*
+*Defined in [packages/lodestar/src/network/gossip/encoding.ts:2](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/network/gossip/encoding.ts#L2)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **SSZ_SNAPPY**: = "ssz_snappy"
 
-*Defined in [packages/lodestar/src/network/gossip/encoding.ts:3](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/network/gossip/encoding.ts#L3)*
+*Defined in [packages/lodestar/src/network/gossip/encoding.ts:3](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/network/gossip/encoding.ts#L3)*

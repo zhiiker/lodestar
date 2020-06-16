@@ -18,7 +18,7 @@
 
 ### ▪ **eth1DepositContractAddress**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:47](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L47)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:47](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L47)*
 
 ###  alias
 
@@ -26,31 +26,31 @@
     "eth1.depositContract.address",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:48](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L48)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:48](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L48)*
 
 ###  default
 
 • **default**: *string* = "TBD"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:53](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L53)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:53](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L53)*
 
 ###  description
 
 • **description**: *string* = "Address of deposit contract"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:51](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L51)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:51](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L51)*
 
 ###  group
 
 • **group**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:54](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L54)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:54](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L54)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:52](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L52)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:52](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L52)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 ### ▪ **eth1DepositContractDeployedAt**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:37](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L37)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:37](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L37)*
 
 ###  alias
 
@@ -66,31 +66,31 @@ ___
     "eth1.depositContract.deployedAt",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:38](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L38)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:38](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L38)*
 
 ###  default
 
 • **default**: *number* = 0
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:43](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L43)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:43](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L43)*
 
 ###  description
 
 • **description**: *string* = "Block number at which the deposit contract contract was deployed"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:41](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L41)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:41](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L41)*
 
 ###  group
 
 • **group**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:44](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L44)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:44](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L44)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:42](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L42)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:42](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L42)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 ### ▪ **eth1Enabled**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:7](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:7](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L7)*
 
 ###  alias
 
@@ -106,31 +106,31 @@ ___
     "eth1.enabled",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:8](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L8)*
 
 ###  default
 
 • **default**: *boolean* = false
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:13](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:13](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L13)*
 
 ###  description
 
 • **description**: *string* = "Whether to follow the eth1 chain"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:11](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:11](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L11)*
 
 ###  group
 
 • **group**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:14](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L14)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:14](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L14)*
 
 ###  type
 
 • **type**: *"boolean"* = "boolean"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:12](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:12](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L12)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 ### ▪ **eth1ProviderNetwork**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:27](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L27)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:27](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L27)*
 
 ###  alias
 
@@ -146,31 +146,31 @@ ___
     "eth1.provider.network"
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:28](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L28)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:28](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L28)*
 
 ###  default
 
 • **default**: *number* = 200
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:33](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L33)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:33](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L33)*
 
 ###  description
 
 • **description**: *string* = "Eth1 network id"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:31](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L31)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:31](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L31)*
 
 ###  group
 
 • **group**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:34](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L34)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:34](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L34)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:32](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L32)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:32](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L32)*
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 ### ▪ **eth1ProviderUrl**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:17](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:17](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L17)*
 
 ###  alias
 
@@ -186,28 +186,28 @@ ___
     "eth1.provider.url",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:18](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:18](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L18)*
 
 ###  default
 
 • **default**: *string* = "http://localhost:8545"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:23](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L23)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:23](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L23)*
 
 ###  description
 
 • **description**: *string* = "Url to Eth1 node with enabled rpc"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:21](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L21)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:21](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L21)*
 
 ###  group
 
 • **group**: *string* = "eth1"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:24](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L24)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:24](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L24)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:22](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L22)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts:22](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/eth1.ts#L22)*

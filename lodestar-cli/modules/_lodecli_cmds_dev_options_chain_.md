@@ -28,7 +28,7 @@
 
 ### ▪ **chainPreset**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:5](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:5](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L5)*
 
 ###  alias
 
@@ -37,28 +37,28 @@
     "chain.name",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:6](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:6](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L6)*
 
 ###  choices
 
 • **choices**: *string[]* = ["mainnet", "minimal"]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:12](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:12](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L12)*
 
 ###  default
 
 • **default**: *string* = "minimal"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:13](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L13)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:13](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L13)*
 
 ###  description
 
 • **description**: *string* = "Chain configuration"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:10](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:10](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L10)*
 
 ###  type
 
 • **type**: *"string"* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:11](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L11)*
