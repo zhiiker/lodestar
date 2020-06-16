@@ -18,4 +18,4 @@
 
 • **blockPerChunk**: *number*
 
-*Defined in [packages/lodestar/src/sync/regular/options.ts:3](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar/src/sync/regular/options.ts#L3)*
+*Defined in [packages/lodestar/src/sync/regular/options.ts:3](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/regular/options.ts#L3)*

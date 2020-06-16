@@ -14,7 +14,7 @@
 
 ▸ **verifyMerkleBranch**(`leaf`: Uint8Array, `proof`: Uint8Array[], `depth`: number, `index`: number, `root`: Uint8Array): *boolean*
 
-*Defined in [packages/lodestar-utils/src/verifyMerkleBranch.ts:8](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-utils/src/verifyMerkleBranch.ts#L8)*
+*Defined in [packages/lodestar-utils/src/verifyMerkleBranch.ts:8](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar-utils/src/verifyMerkleBranch.ts#L8)*
 
 Verify that the given ``leaf`` is on the merkle branch ``proof``
 starting with the given ``root``.
