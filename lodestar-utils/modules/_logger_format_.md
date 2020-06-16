@@ -35,20 +35,20 @@
   })
 )
 
-*Defined in [logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-utils/src/logger/format.ts#L5)*
+*Defined in [packages/lodestar-utils/src/logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-utils/src/logger/format.ts#L5)*
 
 ## Functions
 
 ###  serializeContext
 
-▸ **serializeContext**(`context?`: [Context](_logger_interface_.md#context) | Error): *string*
+▸ **serializeContext**(`context?`: [Context](_logger_interface_.md#context) | [Error](../classes/_assert_.assertionerror.md#static-error)): *string*
 
-*Defined in [logger/format.ts:24](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-utils/src/logger/format.ts#L24)*
+*Defined in [packages/lodestar-utils/src/logger/format.ts:24](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-utils/src/logger/format.ts#L24)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`context?` | [Context](_logger_interface_.md#context) &#124; Error |
+`context?` | [Context](_logger_interface_.md#context) &#124; [Error](../classes/_assert_.assertionerror.md#static-error) |
 
 **Returns:** *string*

@@ -16,7 +16,7 @@
 
 ▸ **encodeResponseStatus**(`status`: number): *Buffer*
 
-*Defined in [packages/lodestar/src/network/encoders/utils.ts:46](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/encoders/utils.ts#L46)*
+*Defined in [packages/lodestar/src/network/encoders/utils.ts:46](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar/src/network/encoders/utils.ts#L46)*
 
 **Parameters:**
 
@@ -32,7 +32,7 @@ ___
 
 ▸ **getCompressor**(`encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *function*
 
-*Defined in [packages/lodestar/src/network/encoders/utils.ts:7](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/encoders/utils.ts#L7)*
+*Defined in [packages/lodestar/src/network/encoders/utils.ts:7](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar/src/network/encoders/utils.ts#L7)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getDecompressor**(`encoding`: [ReqRespEncoding](../enums/_constants_network_.reqrespencoding.md)): *[IDecompressor](../interfaces/_network_encoders_interface_.idecompressor.md)*
 
-*Defined in [packages/lodestar/src/network/encoders/utils.ts:28](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/encoders/utils.ts#L28)*
+*Defined in [packages/lodestar/src/network/encoders/utils.ts:28](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar/src/network/encoders/utils.ts#L28)*
 
 **Parameters:**
 

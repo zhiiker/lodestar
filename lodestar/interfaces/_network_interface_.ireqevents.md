@@ -18,7 +18,7 @@
 
 • **request**: *function*
 
-*Defined in [packages/lodestar/src/network/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar/src/network/interface.ts#L32)*
+*Defined in [packages/lodestar/src/network/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar/src/network/interface.ts#L32)*
 
 #### Type declaration:
 

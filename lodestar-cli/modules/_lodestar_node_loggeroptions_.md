@@ -14,37 +14,37 @@
 
 ### ▪ **BeaconLoggerOptions**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:4](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:4](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L4)*
 
 ###  configurable
 
 • **configurable**: *true* = true
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L8)*
 
 ###  description
 
 • **description**: *string* = "log level"
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:6](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:6](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L6)*
 
 ###  name
 
 • **name**: *string* = "logger"
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:5](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:5](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L5)*
 
 ###  type
 
 • **type**: *string* = "string"
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:7](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:7](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L7)*
 
 ###  process
 
 ▸ **process**(`input`: string): *IBeaconLoggerOptions*
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:9](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:9](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L9)*
 
 **Parameters:**
 
@@ -56,6 +56,6 @@ Name | Type |
 
 ▪ **cli**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:26](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L26)*
+*Defined in [packages/lodestar-cli/src/lodestar/node/loggerOptions.ts:26](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodestar/node/loggerOptions.ts#L26)*
 
 * **flag**: *string* = "logLevel"

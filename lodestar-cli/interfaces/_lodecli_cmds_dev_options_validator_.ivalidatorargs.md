@@ -18,7 +18,7 @@
 
 • **validator**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:15](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts:15](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-cli/src/lodecli/cmds/dev/options/validator.ts#L15)*
 
 #### Type declaration:
 

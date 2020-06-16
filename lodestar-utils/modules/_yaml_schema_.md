@@ -26,4 +26,4 @@
   ]
 })
 
-*Defined in [yaml/schema.ts:12](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-utils/src/yaml/schema.ts#L12)*
+*Defined in [packages/lodestar-utils/src/yaml/schema.ts:12](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-utils/src/yaml/schema.ts#L12)*

@@ -6,6 +6,7 @@
 
 ### External modules
 
+* ["assert"](modules/_assert_.md)
 * ["bytes"](modules/_bytes_.md)
 * ["logger/format"](modules/_logger_format_.md)
 * ["logger/index"](modules/_logger_index_.md)

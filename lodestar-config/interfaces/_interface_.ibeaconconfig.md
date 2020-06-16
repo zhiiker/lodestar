@@ -19,7 +19,7 @@
 
 • **params**: *IBeaconParams*
 
-*Defined in [interface.ts:5](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-config/src/interface.ts#L5)*
+*Defined in [interface.ts:5](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-config/src/interface.ts#L5)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **types**: *IBeaconSSZTypes*
 
-*Defined in [interface.ts:6](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-config/src/interface.ts#L6)*
+*Defined in [interface.ts:6](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-config/src/interface.ts#L6)*

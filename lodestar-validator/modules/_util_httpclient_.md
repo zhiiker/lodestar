@@ -22,7 +22,7 @@
 
 ▸ **handleError**(`error`: AxiosError): *AxiosError*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:43](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-validator/src/util/httpClient.ts#L43)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:43](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-validator/src/util/httpClient.ts#L43)*
 
 **Parameters:**
 

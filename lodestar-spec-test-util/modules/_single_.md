@@ -31,7 +31,7 @@
 
 ▸ **describeDirectorySpecTest**<**TestCase**, **Result**>(`name`: string, `testCaseDirectoryPath`: string, `testFunction`: function, `options`: Partial‹[ISpecTestOptions](../interfaces/_single_.ispectestoptions.md)‹TestCase, Result››): *void*
 
-*Defined in [single.ts:64](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L64)*
+*Defined in [single.ts:64](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L64)*
 
 **Type parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **deserializeTestCase**<**TestCase**, **Result**>(`file`: any, `inputName`: any, `options`: [ISpecTestOptions](../interfaces/_single_.ispectestoptions.md)‹TestCase, Result›): *object*
 
-*Defined in [single.ts:159](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L159)*
+*Defined in [single.ts:159](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L159)*
 
 **Type parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **generateProfileReport**(`profile`: any, `directory`: any, `profileId`: string): *void*
 
-*Defined in [single.ts:167](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L167)*
+*Defined in [single.ts:167](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L167)*
 
 **Parameters:**
 
@@ -108,7 +108,7 @@ ___
 
 ▸ **generateTestCase**<**TestCase**, **Result**>(`testCaseDirectoryPath`: string, `index`: number, `testFunction`: function, `options`: [ISpecTestOptions](../interfaces/_single_.ispectestoptions.md)‹TestCase, Result›): *void*
 
-*Defined in [single.ts:97](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L97)*
+*Defined in [single.ts:97](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L97)*
 
 **Type parameters:**
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **loadInputFiles**<**TestCase**, **Result**>(`directory`: string, `options`: [ISpecTestOptions](../interfaces/_single_.ispectestoptions.md)‹TestCase, Result›): *TestCase*
 
-*Defined in [single.ts:133](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L133)*
+*Defined in [single.ts:133](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L133)*
 
 **Type parameters:**
 
@@ -165,13 +165,13 @@ Name | Type |
 
 ### ▪ **defaultOptions**: *object*
 
-*Defined in [single.ts:53](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L53)*
+*Defined in [single.ts:53](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L53)*
 
 ###  inputProcessing
 
 • **inputProcessing**: *object*
 
-*Defined in [single.ts:55](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L55)*
+*Defined in [single.ts:55](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L55)*
 
 #### Type declaration:
 
@@ -179,7 +179,7 @@ Name | Type |
 
 • **inputTypes**: *object*
 
-*Defined in [single.ts:54](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L54)*
+*Defined in [single.ts:54](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L54)*
 
 #### Type declaration:
 
@@ -187,7 +187,7 @@ Name | Type |
 
 • **sszTypes**: *object*
 
-*Defined in [single.ts:56](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L56)*
+*Defined in [single.ts:56](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L56)*
 
 #### Type declaration:
 
@@ -195,13 +195,13 @@ Name | Type |
 
 • **timeout**: *number* = 4000
 
-*Defined in [single.ts:61](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L61)*
+*Defined in [single.ts:61](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L61)*
 
 ###  expectFunc
 
 ▸ **expectFunc**(`testCase`: any, `expected`: any, `actual`: any): *Assertion*
 
-*Defined in [single.ts:60](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L60)*
+*Defined in [single.ts:60](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L60)*
 
 **Parameters:**
 
@@ -217,7 +217,7 @@ Name | Type |
 
 ▸ **getExpected**(`testCase`: any): *any*
 
-*Defined in [single.ts:57](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L57)*
+*Defined in [single.ts:57](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L57)*
 
 **Parameters:**
 
@@ -231,7 +231,7 @@ Name | Type |
 
 ▸ **shouldError**(): *false*
 
-*Defined in [single.ts:58](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L58)*
+*Defined in [single.ts:58](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L58)*
 
 **Returns:** *false*
 
@@ -239,6 +239,6 @@ Name | Type |
 
 ▸ **shouldSkip**(): *false*
 
-*Defined in [single.ts:59](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-spec-test-util/src/single.ts#L59)*
+*Defined in [single.ts:59](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-spec-test-util/src/single.ts#L59)*
 
 **Returns:** *false*

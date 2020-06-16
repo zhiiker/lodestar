@@ -19,7 +19,7 @@
 
 • **privkey**: *Buffer*
 
-*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:10](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-validator/src/interop/keypairs.ts#L10)*
+*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:10](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-validator/src/interop/keypairs.ts#L10)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **pubkey**: *Buffer*
 
-*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:9](https://github.com/ChainSafe/lodestar/blob/e2d6cf7/packages/lodestar-validator/src/interop/keypairs.ts#L9)*
+*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:9](https://github.com/ChainSafe/lodestar/blob/1d5598773/packages/lodestar-validator/src/interop/keypairs.ts#L9)*
