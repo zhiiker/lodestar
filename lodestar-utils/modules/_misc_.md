@@ -14,7 +14,7 @@
 
 ▸ **objectToCamelCase**(`obj`: object): *object*
 
-*Defined in [packages/lodestar-utils/src/misc.ts:4](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-utils/src/misc.ts#L4)*
+*Defined in [packages/lodestar-utils/src/misc.ts:4](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-utils/src/misc.ts#L4)*
 
 **Parameters:**
 

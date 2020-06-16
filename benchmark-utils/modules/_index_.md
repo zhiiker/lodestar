@@ -20,7 +20,7 @@
 
 ▸ **createReportDir**(): *string*
 
-*Defined in [index.ts:20](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/benchmark-utils/src/index.ts#L20)*
+*Defined in [index.ts:20](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/benchmark-utils/src/index.ts#L20)*
 
 **Returns:** *string*
 
@@ -30,7 +30,7 @@ ___
 
 ▸ **runSuite**(`bench`: [BenchSuite](../interfaces/_index_.benchsuite.md), `name?`: string): *void*
 
-*Defined in [index.ts:44](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/benchmark-utils/src/index.ts#L44)*
+*Defined in [index.ts:44](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/benchmark-utils/src/index.ts#L44)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ ___
 
 ▸ **writeReport**(`file`: string, `data`: string): *void*
 
-*Defined in [index.ts:36](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/benchmark-utils/src/index.ts#L36)*
+*Defined in [index.ts:36](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/benchmark-utils/src/index.ts#L36)*
 
 **Parameters:**
 

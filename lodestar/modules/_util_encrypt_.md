@@ -21,7 +21,7 @@
 
 • **algorithm**: *"aes256"* = "aes256"
 
-*Defined in [packages/lodestar/src/util/encrypt.ts:7](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/util/encrypt.ts#L7)*
+*Defined in [packages/lodestar/src/util/encrypt.ts:7](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/util/encrypt.ts#L7)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **inputEncoding**: *"utf8"* = "utf8"
 
-*Defined in [packages/lodestar/src/util/encrypt.ts:8](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/util/encrypt.ts#L8)*
+*Defined in [packages/lodestar/src/util/encrypt.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/util/encrypt.ts#L8)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **outputEncoding**: *"hex"* = "hex"
 
-*Defined in [packages/lodestar/src/util/encrypt.ts:9](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/util/encrypt.ts#L9)*
+*Defined in [packages/lodestar/src/util/encrypt.ts:9](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/util/encrypt.ts#L9)*
 
 ## Functions
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **decryptKey**(`value`: string, `password`: string): *string*
 
-*Defined in [packages/lodestar/src/util/encrypt.ts:31](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/util/encrypt.ts#L31)*
+*Defined in [packages/lodestar/src/util/encrypt.ts:31](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/util/encrypt.ts#L31)*
 
 Decrypts key
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **encryptKey**(`value`: string, `password`: string): *string*
 
-*Defined in [packages/lodestar/src/util/encrypt.ts:17](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/util/encrypt.ts#L17)*
+*Defined in [packages/lodestar/src/util/encrypt.ts:17](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/util/encrypt.ts#L17)*
 
 Encrypts key
 

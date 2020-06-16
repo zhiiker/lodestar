@@ -14,7 +14,7 @@
 
 ▸ **applySyncingMiddleware**(`fastify`: FastifyInstance, `route`: string, `modules`: [IApiModules](../interfaces/_api_interface_.iapimodules.md)): *void*
 
-*Defined in [packages/lodestar/src/api/rest/middleware/syncing.ts:6](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/api/rest/middleware/syncing.ts#L6)*
+*Defined in [packages/lodestar/src/api/rest/middleware/syncing.ts:6](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar/src/api/rest/middleware/syncing.ts#L6)*
 
 **Parameters:**
 

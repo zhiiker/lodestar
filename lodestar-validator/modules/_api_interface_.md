@@ -21,4 +21,4 @@
 
 Ƭ **ApiClientEventEmitter**: *StrictEventEmitter‹EventEmitter, [IApiClientEvents](../interfaces/_api_interface_.iapiclientevents.md)›*
 
-*Defined in [packages/lodestar-validator/src/api/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-validator/src/api/interface.ts#L19)*
+*Defined in [packages/lodestar-validator/src/api/interface.ts:19](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-validator/src/api/interface.ts#L19)*

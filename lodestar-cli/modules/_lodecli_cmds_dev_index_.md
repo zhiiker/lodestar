@@ -14,13 +14,13 @@
 
 ### ▪ **devCommandModule**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:5](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L5)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:5](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L5)*
 
 ###  builder
 
 • **builder**: *object* = devRunOptions
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:8](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L8)*
 
 #### Type declaration:
 
@@ -28,16 +28,16 @@
 
 • **command**: *string* = "dev"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:6](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L6)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:6](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L6)*
 
 ###  describe
 
 • **describe**: *string* = "Command used to quickly bootstrap beacon node and validators"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:7](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:7](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L7)*
 
 ###  handler
 
 • **handler**: *[run](_lodecli_cmds_dev_run_.md#run)* = run
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:9](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/index.ts:9](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/index.ts#L9)*

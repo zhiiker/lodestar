@@ -19,7 +19,7 @@
 
 • **INTEROP_BLOCK_HASH**: *Buffer‹›* = Buffer.alloc(32, "B")
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:7](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:7](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L7)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **INTEROP_TIMESTAMP**: *number* = Math.pow(2, 40)
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:8](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:8](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L8)*
 
 ## Functions
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **getInteropState**(`config`: IBeaconConfig, `depositDataRootList`: TreeBacked‹List‹Root››, `genesisTime`: number, `deposits`: Deposit[]): *BeaconState*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:10](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts:10](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-cli/src/lodecli/cmds/dev/utils/interop/state.ts#L10)*
 
 **Parameters:**
 

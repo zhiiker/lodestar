@@ -14,7 +14,7 @@
 
 ▸ **loadYamlFile**(`path`: string): *object*
 
-*Defined in [packages/lodestar-utils/src/nodejs/yaml.ts:5](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-utils/src/nodejs/yaml.ts#L5)*
+*Defined in [packages/lodestar-utils/src/nodejs/yaml.ts:5](https://github.com/ChainSafe/lodestar/blob/d092a7def/packages/lodestar-utils/src/nodejs/yaml.ts#L5)*
 
 **Parameters:**
 
