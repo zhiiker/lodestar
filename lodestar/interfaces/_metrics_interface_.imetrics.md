@@ -25,4 +25,4 @@
 
 • **registry**: *Registry*
 
-*Defined in [packages/lodestar/src/metrics/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/metrics/interface.ts#L7)*
+*Defined in [packages/lodestar/src/metrics/interface.ts:7](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/metrics/interface.ts#L7)*

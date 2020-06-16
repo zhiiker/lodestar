@@ -35,7 +35,7 @@
   })
 )
 
-*Defined in [packages/lodestar-utils/src/logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar-utils/src/logger/format.ts#L5)*
+*Defined in [packages/lodestar-utils/src/logger/format.ts:5](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-utils/src/logger/format.ts#L5)*
 
 ## Functions
 
@@ -43,7 +43,7 @@
 
 ▸ **serializeContext**(`context?`: [Context](_logger_interface_.md#context) | [Error](../classes/_assert_.assertionerror.md#static-error)): *string*
 
-*Defined in [packages/lodestar-utils/src/logger/format.ts:24](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar-utils/src/logger/format.ts#L24)*
+*Defined in [packages/lodestar-utils/src/logger/format.ts:24](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-utils/src/logger/format.ts#L24)*
 
 **Parameters:**
 

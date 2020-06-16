@@ -42,7 +42,7 @@ with vote weights and best blocks stored as metadata
 
 \+ **new Node**(`__namedParameters`: object): *[Node](_chain_forkchoice_arraydag_lmdghost_.node.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:64](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L64)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:64](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L64)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ Name | Type |
 
 • **bestChild**: *number*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:44](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L44)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:44](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L44)*
 
 Child node index with the most weight
 
@@ -75,7 +75,7 @@ ___
 
 • **bestTarget**: *number*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:49](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L49)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:49](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L49)*
 
 Decendent node index with the most weight
 
@@ -85,7 +85,7 @@ ___
 
 • **blockRoot**: *[RootHex](../modules/_chain_forkchoice_interface_.md#roothex)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:28](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L28)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:28](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L28)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **children**: *Record‹[RootHex](../modules/_chain_forkchoice_interface_.md#roothex), number›*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:64](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L64)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:64](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L64)*
 
 All direct children with key as root hex and value as node index
 
@@ -103,7 +103,7 @@ ___
 
 • **finalizedCheckpoint**: *[HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:59](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L59)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:59](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L59)*
 
 State's finalized check point respective to this block/node
 
@@ -113,7 +113,7 @@ ___
 
 • **justifiedCheckpoint**: *[HexCheckpoint](../interfaces/_chain_forkchoice_interface_.hexcheckpoint.md)*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:54](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L54)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:54](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L54)*
 
 State's current justified check point respective to this block/node.
 
@@ -123,7 +123,7 @@ ___
 
 • **parent**: *number*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:39](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L39)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:39](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L39)*
 
 Parent node index, the previous block
 
@@ -133,7 +133,7 @@ ___
 
 • **slot**: *Slot*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:27](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L27)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:27](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L27)*
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 • **stateRoot**: *Root*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:29](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L29)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:29](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L29)*
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 • **weight**: *Gwei*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:34](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L34)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:34](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L34)*
 
 Total weight for a block and its children
 
@@ -159,7 +159,7 @@ Total weight for a block and its children
 
 ▸ **equals**(`other`: [Node](_chain_forkchoice_arraydag_lmdghost_.node.md)): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:83](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L83)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:83](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L83)*
 
 Compare two nodes for equality
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **hasBestChild**(): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:91](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L91)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:91](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L91)*
 
 **Returns:** *boolean*
 
@@ -187,7 +187,7 @@ ___
 
 ▸ **hasParent**(): *boolean*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:95](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L95)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:95](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L95)*
 
 **Returns:** *boolean*
 
@@ -197,7 +197,7 @@ ___
 
 ▸ **shiftIndex**(`n`: number): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:99](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L99)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:99](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L99)*
 
 **Parameters:**
 
@@ -213,6 +213,6 @@ ___
 
 ▸ **unassignBestChild**(): *void*
 
-*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:87](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L87)*
+*Defined in [packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:87](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L87)*
 
 **Returns:** *void*

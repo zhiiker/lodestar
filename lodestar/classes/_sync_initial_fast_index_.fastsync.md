@@ -61,7 +61,7 @@
 
 \+ **new FastSync**(`opts`: [ISyncOptions](../interfaces/_sync_options_.isyncoptions.md), `__namedParameters`: object): *[FastSync](_sync_initial_fast_index_.fastsync.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:46](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L46)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:46](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L46)*
 
 **Parameters:**
 
@@ -116,7 +116,7 @@ ___
 
 • **blockImportTarget**: *Slot* = 0
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:41](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L41)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:41](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L41)*
 
 Target slot for block import, we won't download blocks past that point.
 
@@ -126,7 +126,7 @@ ___
 
 • **chain**: *[IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:28](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L28)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:28](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L28)*
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:27](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L27)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:27](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L27)*
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:31](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L31)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:31](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L31)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 • **network**: *[INetwork](../interfaces/_network_interface_.inetwork.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:30](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L30)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:30](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L30)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 • **opts**: *[ISyncOptions](../interfaces/_sync_options_.isyncoptions.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:26](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L26)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:26](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L26)*
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 • **reps**: *[IReputationStore](../interfaces/_sync_ireputation_.ireputationstore.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:29](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L29)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:29](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L29)*
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 • **stats**: *[ISyncStats](../interfaces/_sync_stats_interface_.isyncstats.md)*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:32](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L32)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:32](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L32)*
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 • **syncTriggerSource**: *Pushable‹[ISlotRange](../interfaces/_sync_interface_.islotrange.md)›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:46](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L46)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:46](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L46)*
 
 Trigger for block import
 
@@ -192,7 +192,7 @@ ___
 
 • **targetCheckpoint**: *Checkpoint*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:37](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L37)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:37](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L37)*
 
 Targeted finalized checkpoint. Initial sync should only sync up to that point.
 
@@ -202,7 +202,7 @@ Targeted finalized checkpoint. Initial sync should only sync up to that point.
 
 ▸ **checkSyncCompleted**(`processedCheckpoint`: Checkpoint): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:169](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L169)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:169](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L169)*
 
 **Parameters:**
 
@@ -218,7 +218,7 @@ ___
 
 ▸ **checkSyncProgress**(`processedBlock`: SignedBeaconBlock): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:163](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L163)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:163](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L163)*
 
 **Parameters:**
 
@@ -234,7 +234,7 @@ ___
 
 ▸ **getHighestBlock**(): *Slot*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:95](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L95)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:95](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L95)*
 
 **Returns:** *Slot*
 
@@ -244,7 +244,7 @@ ___
 
 ▸ **getInitialSyncPeers**(): *Promise‹PeerInfo[]›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:201](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L201)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:201](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L201)*
 
 Returns peers which has same finalized Checkpoint
 
@@ -256,7 +256,7 @@ ___
 
 ▸ **getNewBlockImportTarget**(`fromSlot?`: Slot): *Slot*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:99](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L99)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:99](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L99)*
 
 **Parameters:**
 
@@ -272,7 +272,7 @@ ___
 
 ▸ **setBlockImportTarget**(`fromSlot?`: Slot): *void*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:115](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L115)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:115](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L115)*
 
 **Parameters:**
 
@@ -288,7 +288,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:63](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L63)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:63](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L63)*
 
 **Returns:** *Promise‹void›*
 
@@ -298,7 +298,7 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:87](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L87)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:87](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L87)*
 
 **Returns:** *Promise‹void›*
 
@@ -308,7 +308,7 @@ ___
 
 ▸ **sync**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:127](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L127)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:127](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L127)*
 
 **Returns:** *Promise‹void›*
 
@@ -318,7 +318,7 @@ ___
 
 ▸ **updateBlockImportTarget**(`target`: Slot): *void*
 
-*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:110](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/sync/initial/fast/index.ts#L110)*
+*Defined in [packages/lodestar/src/sync/initial/fast/index.ts:110](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/sync/initial/fast/index.ts#L110)*
 
 **Parameters:**
 

@@ -18,7 +18,7 @@
 
 Ƭ **IDevOptions**: *[IGlobalArgs](../interfaces/_lodecli_options_.iglobalargs.md) & [IValidatorArgs](../interfaces/_lodecli_cmds_dev_options_validator_.ivalidatorargs.md) & [IChainArgs](../interfaces/_lodecli_cmds_dev_options_chain_.ichainargs.md) & [IDevArgs](../interfaces/_lodecli_cmds_dev_options_dev_.idevargs.md) & Partial‹IBeaconNodeOptions›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts:30](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts#L30)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts:30](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts#L30)*
 
 ## Variables
 
@@ -36,6 +36,6 @@
   ...validator,
 })
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts:18](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts#L18)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts:18](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar-cli/src/lodecli/cmds/dev/options/index.ts#L18)*
 
 #### Type declaration:

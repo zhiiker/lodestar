@@ -36,7 +36,7 @@
 
 \+ **new DatabaseService**(`opts`: [IDatabaseApiOptions](../interfaces/_db_api_abstract_.idatabaseapioptions.md)): *[DatabaseService](_db_api_abstract_.databaseservice.md)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/db/api/abstract.ts#L13)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/db/api/abstract.ts#L13)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/db/api/abstract.ts#L12)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:12](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/db/api/abstract.ts#L12)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **db**: *[IDatabaseController](../interfaces/_db_controller_interface_.idatabasecontroller.md)‹Buffer, Buffer›*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/db/api/abstract.ts#L13)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:13](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/db/api/abstract.ts#L13)*
 
 ## Methods
 
@@ -70,7 +70,7 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/db/api/abstract.ts#L20)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:20](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/db/api/abstract.ts#L20)*
 
 **Returns:** *Promise‹void›*
 
@@ -82,6 +82,6 @@ ___
 
 *Implementation of [IService](../interfaces/_node_nodejs_.iservice.md)*
 
-*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/ee8ffa456/packages/lodestar/src/db/api/abstract.ts#L24)*
+*Defined in [packages/lodestar/src/db/api/abstract.ts:24](https://github.com/ChainSafe/lodestar/blob/08fb27fc7/packages/lodestar/src/db/api/abstract.ts#L24)*
 
 **Returns:** *Promise‹void›*
