@@ -19,7 +19,7 @@
 
 • **debug**: = "debug"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L12)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:12](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L12)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **error**: = "error"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L8)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:8](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L8)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **info**: = "info"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L10)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:10](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L10)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **silly**: = "silly"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L13)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L13)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **verbose**: = "verbose"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L11)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:11](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L11)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **warn**: = "warn"
 
-*Defined in [packages/lodestar-utils/src/logger/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-utils/src/logger/interface.ts#L9)*
+*Defined in [packages/lodestar-utils/src/logger/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/logger/interface.ts#L9)*

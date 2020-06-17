@@ -15,7 +15,7 @@
 
 ▸ **getSubObject**(`obj`: any, `path`: string[]): *any*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/subObject.ts:12](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/lodecli/util/subObject.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/subObject.ts:12](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/util/subObject.ts#L12)*
 
 Get sub-object obj[path[0]]...[path[N]]
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **setSubObject**(`obj`: any, `path`: string[], `value`: any): *void*
 
-*Defined in [packages/lodestar-cli/src/lodecli/util/subObject.ts:30](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/lodecli/util/subObject.ts#L30)*
+*Defined in [packages/lodestar-cli/src/lodecli/util/subObject.ts:30](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/util/subObject.ts#L30)*
 
 Update sub-object obj[path[0]]...[path[N]] with value
 

@@ -32,7 +32,7 @@ TestCase - single test case, usually under test_cases property in yaml file
 
 • **config**: *string*
 
-*Defined in [multi.ts:22](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L22)*
+*Defined in [multi.ts:22](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L22)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **forks**: *string*
 
-*Defined in [multi.ts:21](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L21)*
+*Defined in [multi.ts:21](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L21)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **forksTimeline**: *string*
 
-*Defined in [multi.ts:20](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L20)*
+*Defined in [multi.ts:20](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L20)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **handler**: *string*
 
-*Defined in [multi.ts:24](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L24)*
+*Defined in [multi.ts:24](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L24)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **runner**: *string*
 
-*Defined in [multi.ts:23](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L23)*
+*Defined in [multi.ts:23](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L23)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **summary**: *string*
 
-*Defined in [multi.ts:19](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L19)*
+*Defined in [multi.ts:19](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L19)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **testCases**: *TestCase[]*
 
-*Defined in [multi.ts:25](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L25)*
+*Defined in [multi.ts:25](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L25)*
 
 ___
 
@@ -88,4 +88,4 @@ ___
 
 • **title**: *string*
 
-*Defined in [multi.ts:18](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/multi.ts#L18)*
+*Defined in [multi.ts:18](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/multi.ts#L18)*

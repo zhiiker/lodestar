@@ -23,7 +23,7 @@
 
 • **database**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:16](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L16)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:16](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L16)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **host**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:11](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L11)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:11](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L11)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **logLevel**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:13](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L13)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:13](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L13)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **mnemonic**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:15](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L15)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:15](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L15)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **network**: *number*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:14](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L14)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:14](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L14)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **port**: *number*
 
-*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:12](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/eth1-private-network.ts#L12)*
+*Defined in [packages/lodestar-cli/src/commands/eth1-private-network.ts:12](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/eth1-private-network.ts#L12)*

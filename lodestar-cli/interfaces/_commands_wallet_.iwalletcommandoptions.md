@@ -18,4 +18,4 @@
 
 • **outputFile**: *string*
 
-*Defined in [packages/lodestar-cli/src/commands/wallet.ts:14](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/wallet.ts#L14)*
+*Defined in [packages/lodestar-cli/src/commands/wallet.ts:14](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/wallet.ts#L14)*

@@ -78,7 +78,7 @@ ___
 
 • **gossip**: *[IGossip](_network_gossip_interface_.igossip.md)*
 
-*Defined in [packages/lodestar/src/network/interface.ts:59](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L59)*
+*Defined in [packages/lodestar/src/network/interface.ts:59](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L59)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **metadata**: *[MetadataController](../classes/_network_metadata_metadata_.metadatacontroller.md)*
 
-*Defined in [packages/lodestar/src/network/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L60)*
+*Defined in [packages/lodestar/src/network/interface.ts:60](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L60)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **peerInfo**: *PeerInfo*
 
-*Defined in [packages/lodestar/src/network/interface.ts:64](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L64)*
+*Defined in [packages/lodestar/src/network/interface.ts:64](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L64)*
 
 Our network identity
 
@@ -104,7 +104,7 @@ ___
 
 • **reqResp**: *[IReqResp](_network_interface_.ireqresp.md)*
 
-*Defined in [packages/lodestar/src/network/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L58)*
+*Defined in [packages/lodestar/src/network/interface.ts:58](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L58)*
 
 ## Methods
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **connect**(`peerInfo`: PeerInfo): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:67](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L67)*
+*Defined in [packages/lodestar/src/network/interface.ts:67](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L67)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **disconnect**(`peerInfo`: PeerInfo): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:68](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L68)*
+*Defined in [packages/lodestar/src/network/interface.ts:68](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L68)*
 
 **Parameters:**
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **getPeers**(): *PeerInfo[]*
 
-*Defined in [packages/lodestar/src/network/interface.ts:65](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L65)*
+*Defined in [packages/lodestar/src/network/interface.ts:65](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L65)*
 
 **Returns:** *PeerInfo[]*
 
@@ -154,7 +154,7 @@ ___
 
 ▸ **hasPeer**(`peerInfo`: PeerInfo): *boolean*
 
-*Defined in [packages/lodestar/src/network/interface.ts:66](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L66)*
+*Defined in [packages/lodestar/src/network/interface.ts:66](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L66)*
 
 **Parameters:**
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **searchSubnetPeers**(`subnet`: string): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:69](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L69)*
+*Defined in [packages/lodestar/src/network/interface.ts:69](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L69)*
 
 **Parameters:**
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:71](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L71)*
+*Defined in [packages/lodestar/src/network/interface.ts:71](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L71)*
 
 **Returns:** *Promise‹void›*
 
@@ -196,6 +196,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/network/interface.ts:72](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/network/interface.ts#L72)*
+*Defined in [packages/lodestar/src/network/interface.ts:72](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/interface.ts#L72)*
 
 **Returns:** *Promise‹void›*

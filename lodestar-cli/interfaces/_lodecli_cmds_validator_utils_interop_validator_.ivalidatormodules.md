@@ -19,7 +19,7 @@
 
 • **api**: *IApiClient*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L11)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:11](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L11)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:12](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L12)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts:12](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/validator/utils/interop/validator.ts#L12)*

@@ -14,7 +14,7 @@
 
 ▸ **isDirectory**(`path`: string): *boolean*
 
-*Defined in [util.ts:3](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-spec-test-util/src/util.ts#L3)*
+*Defined in [util.ts:3](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-spec-test-util/src/util.ts#L3)*
 
 **Parameters:**
 

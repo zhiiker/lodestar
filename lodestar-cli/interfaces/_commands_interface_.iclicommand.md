@@ -25,7 +25,7 @@
 
 ▸ **register**(`commander`: CommanderStatic): *void*
 
-*Defined in [packages/lodestar-cli/src/commands/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/commands/interface.ts#L9)*
+*Defined in [packages/lodestar-cli/src/commands/interface.ts:9](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/interface.ts#L9)*
 
 **Parameters:**
 
