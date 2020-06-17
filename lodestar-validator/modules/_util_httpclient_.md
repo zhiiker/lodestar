@@ -11,6 +11,7 @@
 ### Interfaces
 
 * [IHttpClientOptions](../interfaces/_util_httpclient_.ihttpclientoptions.md)
+* [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md)
 
 ### Functions
 
@@ -22,7 +23,7 @@
 
 ▸ **handleError**(`error`: AxiosError): *AxiosError*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:43](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L43)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:50](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L50)*
 
 **Parameters:**
 

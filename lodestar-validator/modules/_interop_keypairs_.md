@@ -23,7 +23,7 @@
 
 • **CURVE_ORDER**: *bigint* = BigInt("52435875175126190479447740508185965837690552500527637822603658699938581184513")
 
-*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:6](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/interop/keypairs.ts#L6)*
+*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:6](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/interop/keypairs.ts#L6)*
 
 ## Functions
 
@@ -31,7 +31,7 @@
 
 ▸ **interopKeypair**(`index`: number): *[IKeypair](../interfaces/_interop_keypairs_.ikeypair.md)*
 
-*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:19](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/interop/keypairs.ts#L19)*
+*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:19](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/interop/keypairs.ts#L19)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ ___
 
 ▸ **interopKeypairs**(`validatorCount`: number): *[IKeypair](../interfaces/_interop_keypairs_.ikeypair.md)[]*
 
-*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:13](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/interop/keypairs.ts#L13)*
+*Defined in [packages/lodestar-validator/src/interop/keypairs.ts:13](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/interop/keypairs.ts#L13)*
 
 **Parameters:**
 

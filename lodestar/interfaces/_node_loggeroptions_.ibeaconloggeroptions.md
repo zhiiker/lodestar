@@ -25,7 +25,7 @@
 
 • **chain**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:4](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L4)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:4](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L4)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **chores**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:11](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L11)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:11](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L11)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **db**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:5](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L5)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:5](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L5)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **eth1**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:6](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L6)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:6](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L6)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **metrics**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:10](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L10)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:10](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L10)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **network**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L8)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:8](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L8)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **node**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:7](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L7)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:7](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L7)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **sync**: *ILoggerOptions*
 
-*Defined in [packages/lodestar/src/node/loggerOptions.ts:9](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/node/loggerOptions.ts#L9)*
+*Defined in [packages/lodestar/src/node/loggerOptions.ts:9](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/node/loggerOptions.ts#L9)*

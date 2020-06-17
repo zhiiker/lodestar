@@ -74,7 +74,7 @@ Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6
 
 ▸ **getBlock**(`blockTag`: string | number): *Promise‹Block›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L38)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:38](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/eth1/interface.ts#L38)*
 
 Returns block by block hash or number
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **getDepositEvents**(`blockTag`: string | number): *Promise‹[IDepositEvent](_eth1_interface_.idepositevent.md)[]›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L43)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:43](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/eth1/interface.ts#L43)*
 
 Return deposit events at a block
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **start**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L31)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:31](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/eth1/interface.ts#L31)*
 
 **Returns:** *Promise‹void›*
 
@@ -120,6 +120,6 @@ ___
 
 ▸ **stop**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar/src/eth1/interface.ts#L32)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:32](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar/src/eth1/interface.ts#L32)*
 
 **Returns:** *Promise‹void›*

@@ -18,7 +18,7 @@
 
 ▸ **beaconDir**(`args`: [IGlobalArgs](../interfaces/_lodecli_options_.iglobalargs.md)): *Options*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts:10](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts#L10)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts:10](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-cli/src/lodecli/cmds/beacon/options/beaconDir.ts#L10)*
 
 **Parameters:**
 

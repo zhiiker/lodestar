@@ -28,7 +28,7 @@
 
 \+ **new HttpClient**(`opt`: Partial‹[IHttpClientOptions](../interfaces/_util_httpclient_.ihttpclientoptions.md)›, `__namedParameters`: object): *[HttpClient](_util_httpclient_.httpclient.md)*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L11)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L16)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **client**: *AxiosInstance*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:10](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L10)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:15](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L15)*
 
 ___
 
@@ -56,15 +56,15 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:11](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L11)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L16)*
 
 ## Methods
 
 ###  get
 
-▸ **get**<**T**>(`url`: string): *Promise‹T›*
+▸ **get**<**T**>(`url`: string, `query?`: [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md)): *Promise‹T›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:20](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L20)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:25](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L25)*
 
 **Type parameters:**
 
@@ -75,6 +75,7 @@ ___
 Name | Type |
 ------ | ------ |
 `url` | string |
+`query?` | [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md) |
 
 **Returns:** *Promise‹T›*
 
@@ -82,9 +83,9 @@ ___
 
 ###  post
 
-▸ **post**<**T**, **T2**>(`url`: string, `data`: T): *Promise‹T2›*
+▸ **post**<**T**, **T2**>(`url`: string, `data`: T, `query?`: [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md)): *Promise‹T2›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:31](https://github.com/ChainSafe/lodestar/blob/1b619203f/packages/lodestar-validator/src/util/httpClient.ts#L31)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:37](https://github.com/ChainSafe/lodestar/blob/53533586a/packages/lodestar-validator/src/util/httpClient.ts#L37)*
 
 **Type parameters:**
 
@@ -98,5 +99,6 @@ Name | Type |
 ------ | ------ |
 `url` | string |
 `data` | T |
+`query?` | [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md) |
 
 **Returns:** *Promise‹T2›*

@@ -8,6 +8,7 @@
 
 * [HttpClient](_util_index_.md#httpclient)
 * [IHttpClientOptions](_util_index_.md#ihttpclientoptions)
+* [IHttpQuery](_util_index_.md#ihttpquery)
 * [sleep](_util_index_.md#sleep)
 
 ## References
@@ -21,6 +22,12 @@ ___
 ###  IHttpClientOptions
 
 • **IHttpClientOptions**:
+
+___
+
+###  IHttpQuery
+
+• **IHttpQuery**:
 
 ___
 
