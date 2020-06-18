@@ -15,7 +15,7 @@
 
 ▸ **getTomlConfig**<**T**>(`fileName`: string, `description`: [IConfigurationModule](../interfaces/_lodestar_util_config_.iconfigurationmodule.md)): *Partial‹T›*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/file.ts:15](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodestar/util/file.ts#L15)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/file.ts:15](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodestar/util/file.ts#L15)*
 
 Reads data from file and parses it from toml format to IConfigFile
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **writeTomlConfig**(`fileName`: string): *void*
 
-*Defined in [packages/lodestar-cli/src/lodestar/util/file.ts:29](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodestar/util/file.ts#L29)*
+*Defined in [packages/lodestar-cli/src/lodestar/util/file.ts:29](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodestar/util/file.ts#L29)*
 
 Writes data to file, assuming content is in
 

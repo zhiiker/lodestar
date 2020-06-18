@@ -28,7 +28,7 @@
 
 \+ **new HttpClient**(`opt`: Partial‹[IHttpClientOptions](../interfaces/_util_httpclient_.ihttpclientoptions.md)›, `__namedParameters`: object): *[HttpClient](_util_httpclient_.httpclient.md)*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-validator/src/util/httpClient.ts#L16)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-validator/src/util/httpClient.ts#L16)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **client**: *AxiosInstance*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:15](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-validator/src/util/httpClient.ts#L15)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:15](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-validator/src/util/httpClient.ts#L15)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-validator/src/util/httpClient.ts#L16)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:16](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-validator/src/util/httpClient.ts#L16)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **get**<**T**>(`url`: string, `query?`: [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md)): *Promise‹T›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:25](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-validator/src/util/httpClient.ts#L25)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:25](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-validator/src/util/httpClient.ts#L25)*
 
 **Type parameters:**
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **post**<**T**, **T2**>(`url`: string, `data`: T, `query?`: [IHttpQuery](../interfaces/_util_httpclient_.ihttpquery.md)): *Promise‹T2›*
 
-*Defined in [packages/lodestar-validator/src/util/httpClient.ts:37](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-validator/src/util/httpClient.ts#L37)*
+*Defined in [packages/lodestar-validator/src/util/httpClient.ts:37](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-validator/src/util/httpClient.ts#L37)*
 
 **Type parameters:**
 

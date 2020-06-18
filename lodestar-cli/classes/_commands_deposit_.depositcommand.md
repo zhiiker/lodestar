@@ -28,7 +28,7 @@
 
 ▸ **action**(`options`: [IDepositCommandOptions](../interfaces/_commands_deposit_.idepositcommandoptions.md), `logger`: ILogger): *Promise‹void›*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:94](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L94)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:94](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L94)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **blsFromJsonKeyFile**(`path`: string): *[IBLSKey](../interfaces/_commands_deposit_.iblskey.md)[]*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:197](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L197)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:197](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L197)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **blsFromMnemonic**(`mnemonic`: string, `n`: number): *[IBLSKey](../interfaces/_commands_deposit_.iblskey.md)[]*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:172](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L172)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:172](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L172)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **eth1FromJsonKeyFile**(`path`: string, `provider`: JsonRpcProvider): *Wallet[]*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:191](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L191)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:191](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L191)*
 
 **Parameters:**
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **eth1FromMnemonic**(`mnemonic`: string, `provider`: JsonRpcProvider, `n`: number): *Wallet[]*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:159](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L159)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:159](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L159)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **parseJSON**<**T**>(`path`: string, `encoding?`: string): *T*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:208](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L208)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:208](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L208)*
 
 **Type parameters:**
 
@@ -136,7 +136,7 @@ ___
 
 *Implementation of [ICliCommand](../interfaces/_commands_interface_.iclicommand.md)*
 
-*Defined in [packages/lodestar-cli/src/commands/deposit.ts:56](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/commands/deposit.ts#L56)*
+*Defined in [packages/lodestar-cli/src/commands/deposit.ts:56](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/commands/deposit.ts#L56)*
 
 **Parameters:**
 

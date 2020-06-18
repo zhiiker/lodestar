@@ -19,7 +19,7 @@
 
 • **options**: *Record‹string, Options›*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:4](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:4](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L4)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **paramsOptions**: *object* = options
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:25](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L25)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:25](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L25)*
 
 #### Type declaration:
 
@@ -37,7 +37,7 @@ ___
 
 ▸ **yargsOptionType**(`value`: unknown): *Options["type"]*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:17](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts:17](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/beacon/cmds/run/options/params.ts#L17)*
 
 **Parameters:**
 

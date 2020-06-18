@@ -19,7 +19,7 @@
 
 • **deposit**: *function*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L21)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:21](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L21)*
 
 #### Type declaration:
 
@@ -38,7 +38,7 @@ ___
 
 • **eth1Data**: *function*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L22)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:22](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L22)*
 
 #### Type declaration:
 

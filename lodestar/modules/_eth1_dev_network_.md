@@ -22,28 +22,28 @@
 
 ### ▪ **devNetworkOpts**: *object*
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:14](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/dev/network.ts#L14)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:14](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/dev/network.ts#L14)*
 
 ###  defaultBalance
 
 • **defaultBalance**: *number* = 1000
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:17](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/dev/network.ts#L17)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:17](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/dev/network.ts#L17)*
 
 ###  host
 
 • **host**: *string* = "127.0.0.1"
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:18](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/dev/network.ts#L18)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:18](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/dev/network.ts#L18)*
 
 ###  networkId
 
 • **networkId**: *number* = 200
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:16](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/dev/network.ts#L16)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:16](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/dev/network.ts#L16)*
 
 ###  port
 
 • **port**: *number* = 8545
 
-*Defined in [packages/lodestar/src/eth1/dev/network.ts:15](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/dev/network.ts#L15)*
+*Defined in [packages/lodestar/src/eth1/dev/network.ts:15](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/dev/network.ts#L15)*

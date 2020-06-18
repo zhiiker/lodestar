@@ -25,7 +25,7 @@
 
 Ƭ **GossipEventEmitter**: *StrictEventEmitter‹EventEmitter, [IGossipEvents](../interfaces/_network_gossip_interface_.igossipevents.md)›*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/gossip/interface.ts#L36)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:36](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/network/gossip/interface.ts#L36)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **GossipMessageValidatorFn**: *function*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:96](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/gossip/interface.ts#L96)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:96](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/network/gossip/interface.ts#L96)*
 
 #### Type declaration:
 
@@ -52,4 +52,4 @@ ___
 
 Ƭ **GossipObject**: *SignedBeaconBlock | Attestation | SignedAggregateAndProof | SignedVoluntaryExit | ProposerSlashing | AttesterSlashing*
 
-*Defined in [packages/lodestar/src/network/gossip/interface.ts:93](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/network/gossip/interface.ts#L93)*
+*Defined in [packages/lodestar/src/network/gossip/interface.ts:93](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/network/gossip/interface.ts#L93)*

@@ -64,4 +64,4 @@ ___
 
 ▪ **code**: *string* = "ERR_ASSERTION"
 
-*Defined in [packages/lodestar-utils/src/assert.ts:13](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-utils/src/assert.ts#L13)*
+*Defined in [packages/lodestar-utils/src/assert.ts:13](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-utils/src/assert.ts#L13)*

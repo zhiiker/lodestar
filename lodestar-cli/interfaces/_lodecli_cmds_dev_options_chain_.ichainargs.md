@@ -18,7 +18,7 @@
 
 • **chain**? : *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:17](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L17)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts:17](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/chain.ts#L17)*
 
 #### Type declaration:
 

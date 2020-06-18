@@ -77,7 +77,7 @@
 
 \+ **new BeaconChain**(`opts`: [IChainOptions](../interfaces/_chain_options_.ichainoptions.md), `__namedParameters`: object): *[BeaconChain](_chain_chain_.beaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:71](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L71)*
+*Defined in [packages/lodestar/src/chain/chain.ts:70](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L70)*
 
 **Parameters:**
 
@@ -138,7 +138,7 @@ ___
 
 • **_currentForkDigest**: *ForkDigest*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:70](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L70)*
+*Defined in [packages/lodestar/src/chain/chain.ts:69](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L69)*
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 • **attestationProcessor**: *[IAttestationProcessor](../interfaces/_chain_interface_.iattestationprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:71](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L71)*
+*Defined in [packages/lodestar/src/chain/chain.ts:70](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L70)*
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 • **blockProcessor**: *[BlockProcessor](_chain_blocks_processor_.blockprocessor.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:69](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L69)*
+*Defined in [packages/lodestar/src/chain/chain.ts:68](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L68)*
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 • **chain**: *string*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:57](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L57)*
+*Defined in [packages/lodestar/src/chain/chain.ts:56](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L56)*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md).[chainId](../interfaces/_chain_interface_.ibeaconchain.md#chainid)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:59](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L59)*
+*Defined in [packages/lodestar/src/chain/chain.ts:58](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L58)*
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md).[clock](../interfaces/_chain_interface_.ibeaconchain.md#clock)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:61](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L61)*
+*Defined in [packages/lodestar/src/chain/chain.ts:60](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L60)*
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 • **config**: *IBeaconConfig*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:63](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L63)*
+*Defined in [packages/lodestar/src/chain/chain.ts:62](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L62)*
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 • **db**: *[IBeaconDb](../interfaces/_db_api_beacon_interface_.ibeacondb.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:64](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L64)*
+*Defined in [packages/lodestar/src/chain/chain.ts:63](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L63)*
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 • **epochCtx**: *EpochContext*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:62](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L62)*
+*Defined in [packages/lodestar/src/chain/chain.ts:61](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L61)*
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 • **eth1**: *[IEth1Notifier](../interfaces/_eth1_interface_.ieth1notifier.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:65](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L65)*
+*Defined in [packages/lodestar/src/chain/chain.ts:64](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L64)*
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md).[forkChoice](../interfaces/_chain_interface_.ibeaconchain.md#forkchoice)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:58](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L58)*
+*Defined in [packages/lodestar/src/chain/chain.ts:57](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L57)*
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 • **logger**: *ILogger*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:66](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L66)*
+*Defined in [packages/lodestar/src/chain/chain.ts:65](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L65)*
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 • **metrics**: *[IBeaconMetrics](../interfaces/_metrics_interface_.ibeaconmetrics.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:67](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L67)*
+*Defined in [packages/lodestar/src/chain/chain.ts:66](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L66)*
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md).[networkId](../interfaces/_chain_interface_.ibeaconchain.md#networkid)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:60](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L60)*
+*Defined in [packages/lodestar/src/chain/chain.ts:59](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L59)*
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 • **opts**: *[IChainOptions](../interfaces/_chain_options_.ichainoptions.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:68](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L68)*
+*Defined in [packages/lodestar/src/chain/chain.ts:67](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L67)*
 
 ## Accessors
 
@@ -266,7 +266,7 @@ ___
 
 • **get currentForkDigest**(): *ForkDigest*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:147](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L147)*
+*Defined in [packages/lodestar/src/chain/chain.ts:146](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L146)*
 
 **Returns:** *ForkDigest*
 
@@ -276,7 +276,7 @@ ___
 
 ▸ **checkGenesis**(`timestamp`: number, `eth1Data`: Eth1Data): *Promise‹TreeBacked‹BeaconState› | null›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:337](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L337)*
+*Defined in [packages/lodestar/src/chain/chain.ts:336](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L336)*
 
 Create a candidate BeaconState from the deposits at a certain time and eth1 state
 
@@ -299,7 +299,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:105](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L105)*
+*Defined in [packages/lodestar/src/chain/chain.ts:104](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L104)*
 
 **Parameters:**
 
@@ -315,7 +315,7 @@ ___
 
 ▸ **getCurrentForkDigest**(): *Promise‹ForkDigest›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:303](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L303)*
+*Defined in [packages/lodestar/src/chain/chain.ts:302](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L302)*
 
 **Returns:** *Promise‹ForkDigest›*
 
@@ -327,7 +327,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:200](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L200)*
+*Defined in [packages/lodestar/src/chain/chain.ts:199](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L199)*
 
 **Returns:** *Promise‹ENRForkID›*
 
@@ -339,7 +339,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:101](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L101)*
+*Defined in [packages/lodestar/src/chain/chain.ts:100](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L100)*
 
 **Returns:** *EpochContext*
 
@@ -351,7 +351,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:117](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L117)*
+*Defined in [packages/lodestar/src/chain/chain.ts:116](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L116)*
 
 **Returns:** *Promise‹Checkpoint›*
 
@@ -363,7 +363,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:97](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L97)*
+*Defined in [packages/lodestar/src/chain/chain.ts:96](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L96)*
 
 **Returns:** *Promise‹SignedBeaconBlock | null›*
 
@@ -375,7 +375,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:93](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L93)*
+*Defined in [packages/lodestar/src/chain/chain.ts:92](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L92)*
 
 **Returns:** *Promise‹BeaconState | null›*
 
@@ -385,7 +385,7 @@ ___
 
 ▸ **handleForkDigestChanged**(): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:298](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L298)*
+*Defined in [packages/lodestar/src/chain/chain.ts:297](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L297)*
 
 **Returns:** *Promise‹void›*
 
@@ -397,7 +397,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:159](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L159)*
+*Defined in [packages/lodestar/src/chain/chain.ts:158](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L158)*
 
 **Parameters:**
 
@@ -415,7 +415,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:151](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L151)*
+*Defined in [packages/lodestar/src/chain/chain.ts:150](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L150)*
 
 **Parameters:**
 
@@ -431,7 +431,7 @@ ___
 
 ▸ **receiveBlock**(`signedBlock`: SignedBeaconBlock, `trusted`: boolean, `reprocess`: boolean): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:155](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L155)*
+*Defined in [packages/lodestar/src/chain/chain.ts:154](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L154)*
 
 **Parameters:**
 
@@ -449,7 +449,7 @@ ___
 
 ▸ **restoreHeadState**(`lastKnownState`: TreeBacked‹BeaconState›): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:226](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L226)*
+*Defined in [packages/lodestar/src/chain/chain.ts:225](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L225)*
 
 Restore state cache and forkchoice from last finalized state.
 
@@ -469,7 +469,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:121](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L121)*
+*Defined in [packages/lodestar/src/chain/chain.ts:120](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L120)*
 
 **Returns:** *Promise‹void›*
 
@@ -481,7 +481,7 @@ ___
 
 *Implementation of [IBeaconChain](../interfaces/_chain_interface_.ibeaconchain.md)*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:136](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L136)*
+*Defined in [packages/lodestar/src/chain/chain.ts:135](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L135)*
 
 **Returns:** *Promise‹void›*
 
@@ -491,7 +491,7 @@ ___
 
 ▸ **waitForBlockProcessed**(`blockRoot`: Uint8Array): *Promise‹void›*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:212](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L212)*
+*Defined in [packages/lodestar/src/chain/chain.ts:211](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L211)*
 
 **Parameters:**
 
@@ -507,6 +507,6 @@ ___
 
 ▸ **waitForState**(): *Promise‹TreeBacked‹BeaconState››*
 
-*Defined in [packages/lodestar/src/chain/chain.ts:309](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/chain/chain.ts#L309)*
+*Defined in [packages/lodestar/src/chain/chain.ts:308](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/chain/chain.ts#L308)*
 
 **Returns:** *Promise‹TreeBacked‹BeaconState››*

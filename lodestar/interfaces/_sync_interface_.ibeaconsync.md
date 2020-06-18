@@ -28,7 +28,7 @@
 
 ▸ **collectAttestations**(`slot`: Slot, `committeeIndex`: CommitteeIndex): *void*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/sync/interface.ts#L18)*
+*Defined in [packages/lodestar/src/sync/interface.ts:18](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/sync/interface.ts#L18)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **getSyncStatus**(): *Promise‹SyncingStatus | null›*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/sync/interface.ts#L16)*
+*Defined in [packages/lodestar/src/sync/interface.ts:16](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/sync/interface.ts#L16)*
 
 **Returns:** *Promise‹SyncingStatus | null›*
 
@@ -55,7 +55,7 @@ ___
 
 ▸ **isSynced**(): *boolean*
 
-*Defined in [packages/lodestar/src/sync/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/sync/interface.ts#L17)*
+*Defined in [packages/lodestar/src/sync/interface.ts:17](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/sync/interface.ts#L17)*
 
 **Returns:** *boolean*
 
@@ -67,7 +67,7 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[start](_network_gossip_interface_.igossip.md#start)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/node/nodejs.ts#L25)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:25](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/node/nodejs.ts#L25)*
 
 **Returns:** *Promise‹void›*
 
@@ -79,6 +79,6 @@ ___
 
 *Inherited from [IGossip](_network_gossip_interface_.igossip.md).[stop](_network_gossip_interface_.igossip.md#stop)*
 
-*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/node/nodejs.ts#L27)*
+*Defined in [packages/lodestar/src/node/nodejs.ts:27](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/node/nodejs.ts#L27)*
 
 **Returns:** *Promise‹void›*

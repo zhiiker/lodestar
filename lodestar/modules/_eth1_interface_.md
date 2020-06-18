@@ -22,7 +22,7 @@
 
 Ƭ **Eth1EventEmitter**: *StrictEventEmitter‹EventEmitter, [IEth1Events](../interfaces/_eth1_interface_.ieth1events.md)›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L25)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:25](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L25)*
 
 ___
 
@@ -30,4 +30,4 @@ ___
 
 Ƭ **IEthersAbi**: *Array‹string | EventFragment | ParamType›*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L13)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:13](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L13)*

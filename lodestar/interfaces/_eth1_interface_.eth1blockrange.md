@@ -21,7 +21,7 @@ Eth1 block range.
 
 • **fromNumber**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L50)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:50](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L50)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **toNumber**: *number*
 
-*Defined in [packages/lodestar/src/eth1/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/b76b72d03/packages/lodestar/src/eth1/interface.ts#L51)*
+*Defined in [packages/lodestar/src/eth1/interface.ts:51](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/eth1/interface.ts#L51)*
