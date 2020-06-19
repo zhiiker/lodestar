@@ -18,4 +18,4 @@
 
 • **metadata**? : *Metadata*
 
-*Defined in [packages/lodestar/src/network/metadata/metadata.ts:9](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar/src/network/metadata/metadata.ts#L9)*
+*Defined in [packages/lodestar/src/network/metadata/metadata.ts:9](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar/src/network/metadata/metadata.ts#L9)*

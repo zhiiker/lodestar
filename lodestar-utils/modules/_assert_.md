@@ -18,7 +18,7 @@
 
 ▸ **assert**(`condition`: boolean, `message?`: string): *void*
 
-*Defined in [packages/lodestar-utils/src/assert.ts:6](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-utils/src/assert.ts#L6)*
+*Defined in [packages/lodestar-utils/src/assert.ts:6](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-utils/src/assert.ts#L6)*
 
 Assert condition is truthy, otherwise throw AssertionError
 

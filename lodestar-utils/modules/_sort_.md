@@ -14,7 +14,7 @@
 
 ▸ **isSorted**(`indices`: number[]): *boolean*
 
-*Defined in [packages/lodestar-utils/src/sort.ts:1](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-utils/src/sort.ts#L1)*
+*Defined in [packages/lodestar-utils/src/sort.ts:1](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-utils/src/sort.ts#L1)*
 
 **Parameters:**
 

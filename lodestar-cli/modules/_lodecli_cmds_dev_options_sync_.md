@@ -14,7 +14,7 @@
 
 ### ▪ **networkMinPeers**: *object*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:3](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L3)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:3](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L3)*
 
 ###  alias
 
@@ -22,22 +22,22 @@
     "sync.minPeers",
   ]
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:4](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L4)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:4](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L4)*
 
 ###  default
 
 • **default**: *number* = 2
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:8](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L8)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:8](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L8)*
 
 ###  group
 
 • **group**: *string* = "sync"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:9](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L9)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:9](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L9)*
 
 ###  type
 
 • **type**: *"number"* = "number"
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:7](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts:7](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/options/sync.ts#L7)*

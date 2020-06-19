@@ -14,7 +14,7 @@
 
 ▸ **getValidatorApiClient**(`url`: string, `logger`: ILogger, `node`: BeaconNode): *IApiClient*
 
-*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/bbe465408/packages/lodestar-cli/src/lodecli/cmds/dev/utils/validator.ts#L7)*
+*Defined in [packages/lodestar-cli/src/lodecli/cmds/dev/utils/validator.ts:7](https://github.com/ChainSafe/lodestar/blob/da7050e4c/packages/lodestar-cli/src/lodecli/cmds/dev/utils/validator.ts#L7)*
 
 **Parameters:**
 
