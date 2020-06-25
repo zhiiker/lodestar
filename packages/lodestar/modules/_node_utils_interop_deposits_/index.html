@@ -11,7 +11,7 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/modules/_lodecli_cmds_dev_utils_state_/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/_node_utils_interop_deposits_/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>lodecli cmds dev utils state - Lodestar documentation</title>
+        <title>node utils interop deposits - Lodestar documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#external-module-lodeclicmdsdevutilsstate" class="md-skip">
+        <a href="#external-module-nodeutilsinteropdeposits" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-               lodecli cmds dev utils state 
+               node utils interop deposits 
             
           </span>
         </div>
@@ -342,22 +342,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initdevchain" class="md-nav__link">
-    initDevChain
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#storedeposits" class="md-nav__link">
-    storeDeposits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#storesszstate" class="md-nav__link">
-    storeSSZState
+  <a href="#interopdeposits" class="md-nav__link">
+    interopDeposits
   </a>
   
 </li>
@@ -379,7 +365,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar-cli/modules/_lodecli_cmds_dev_utils_state_.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/modules/_node_utils_interop_deposits_.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -387,19 +373,17 @@
                   
                 
                 
-                <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">"lodecli/cmds/dev/utils/state"</a></p>
-<h1 id="external-module-lodeclicmdsdevutilsstate">External module: "lodecli/cmds/dev/utils/state"<a class="headerlink" href="#external-module-lodeclicmdsdevutilsstate" title="Permanent link">&para;</a></h1>
+                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">"node/utils/interop/deposits"</a></p>
+<h1 id="external-module-nodeutilsinteropdeposits">External module: "node/utils/interop/deposits"<a class="headerlink" href="#external-module-nodeutilsinteropdeposits" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#initdevchain">initDevChain</a></li>
-<li><a href="./#storedeposits">storeDeposits</a></li>
-<li><a href="./#storesszstate">storeSSZState</a></li>
+<li><a href="./#interopdeposits">interopDeposits</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="initdevchain">initDevChain<a class="headerlink" href="#initdevchain" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>initDevChain</strong>(<code>node</code>: BeaconNode, <code>validatorCount</code>: number): <em>Promise‹BeaconState›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c96b3a1e/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L10">packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:10</a></em></p>
+<h3 id="interopdeposits">interopDeposits<a class="headerlink" href="#interopdeposits" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>interopDeposits</strong>(<code>config</code>: IBeaconConfig, <code>depositDataRootList</code>: TreeBacked‹List‹Root››, <code>validatorCount</code>: number): <em>Deposit[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e0624aec5/packages/lodestar/src/node/utils/interop/deposits.ts#L9">packages/lodestar/src/node/utils/interop/deposits.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -410,8 +394,12 @@
 </thead>
 <tbody>
 <tr>
-<td><code>node</code></td>
-<td>BeaconNode</td>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>depositDataRootList</code></td>
+<td>TreeBacked‹List‹Root››</td>
 </tr>
 <tr>
 <td><code>validatorCount</code></td>
@@ -419,63 +407,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹BeaconState›</em></p>
-<hr />
-<h3 id="storedeposits">storeDeposits<a class="headerlink" href="#storedeposits" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>storeDeposits</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: IBeaconDb, <code>deposits</code>: Deposit[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c96b3a1e/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L34">packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:34</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>db</code></td>
-<td>IBeaconDb</td>
-</tr>
-<tr>
-<td><code>deposits</code></td>
-<td>Deposit[]</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="storesszstate">storeSSZState<a class="headerlink" href="#storesszstate" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>storeSSZState</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: BeaconState, <code>path</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9c96b3a1e/packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts#L29">packages/lodestar-cli/src/lodecli/cmds/dev/utils/state.ts:29</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>state</code></td>
-<td>BeaconState</td>
-</tr>
-<tr>
-<td><code>path</code></td>
-<td>string</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
+<p><strong>Returns:</strong> <em>Deposit[]</em></p>
                 
               
               
