@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interface-ieth1notifier-t-u-v" class="md-skip">
+        <a href="#interface-ieth1notifier" class="md-skip">
           Skip to content
         </a>
       
@@ -314,13 +314,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#type-parameters" class="md-nav__link">
-    Type parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#hierarchy" class="md-nav__link">
     Hierarchy
   </a>
@@ -343,49 +336,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties_1" class="md-nav__link">
-    Properties
-  </a>
-  
-    <nav class="md-nav" aria-label="Properties">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#optional-_emittype" class="md-nav__link">
-    Optional  _emitType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-_emittertype" class="md-nav__link">
-    Optional  _emitterType
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-_eventstype" class="md-nav__link">
-    Optional  _eventsType
   </a>
   
 </li>
@@ -404,6 +356,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#endeth1blockanddepositeventssource" class="md-nav__link">
+    endEth1BlockAndDepositEventsSource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getblock" class="md-nav__link">
     getBlock
   </a>
@@ -413,6 +372,13 @@
           <li class="md-nav__item">
   <a href="#getdepositevents" class="md-nav__link">
     getDepositEvents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geteth1blockanddepositeventssource" class="md-nav__link">
+    getEth1BlockAndDepositEventsSource
   </a>
   
 </li>
@@ -457,55 +423,36 @@
                 
                 
                 <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/_eth1_interface_/">"eth1/interface"</a> › <a href="./">IEth1Notifier</a></p>
-<h1 id="interface-ieth1notifier-t-u-v">Interface: IEth1Notifier &lt;<strong>T, U, V</strong>&gt;<a class="headerlink" href="#interface-ieth1notifier-t-u-v" title="Permanent link">&para;</a></h1>
+<h1 id="interface-ieth1notifier">Interface: IEth1Notifier<a class="headerlink" href="#interface-ieth1notifier" title="Permanent link">&para;</a></h1>
 <p>The IEth1Notifier service watches the Eth1 chain for IEth1Events</p>
-<h2 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">&para;</a></h2>
-<p>▪ <strong>T</strong></p>
-<p>▪ <strong>U</strong></p>
-<p>▪ <strong>V</strong></p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li>TypeRecord‹EventEmitter‹›, <a href="../_eth1_interface_.ieth1events/">IEth1Events</a>, <a href="../_eth1_interface_.ieth1events/">IEth1Events</a>› &amp; object &amp; object</li>
+<li><strong>IEth1Notifier</strong></li>
 </ul>
-<p>↳ <strong>IEth1Notifier</strong></p>
 <h2 id="implemented-by">Implemented by<a class="headerlink" href="#implemented-by" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../classes/_eth1_impl_ethers_.etherseth1notifier/">EthersEth1Notifier</a></li>
 <li><a href="../../classes/_eth1_impl_interop_.interopeth1notifier/">InteropEth1Notifier</a></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#optional--_emittype"> _emitType</a></li>
-<li><a href="./#optional--_emittertype"> _emitterType</a></li>
-<li><a href="./#optional--_eventstype"> _eventsType</a></li>
-</ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#endeth1blockanddepositeventssource">endEth1BlockAndDepositEventsSource</a></li>
 <li><a href="./#getblock">getBlock</a></li>
 <li><a href="./#getdepositevents">getDepositEvents</a></li>
+<li><a href="./#geteth1blockanddepositeventssource">getEth1BlockAndDepositEventsSource</a></li>
 <li><a href="./#start">start</a></li>
 <li><a href="./#stop">stop</a></li>
 </ul>
-<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="optional-_emittype"><code>Optional</code>  _emitType<a class="headerlink" href="#optional-_emittype" title="Permanent link">&para;</a></h3>
-<p>• <strong> _emitType</strong>? : <em>V</em></p>
-<p><em>Inherited from <a href="../_network_gossip_interface_.igossip/">IGossip</a>.<a href="../_network_gossip_interface_.igossip/#optional--_emittype"> _emitType</a></em></p>
-<p>Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:7</p>
-<hr />
-<h3 id="optional-_emittertype"><code>Optional</code>  _emitterType<a class="headerlink" href="#optional-_emittertype" title="Permanent link">&para;</a></h3>
-<p>• <strong> _emitterType</strong>? : <em>T</em></p>
-<p><em>Inherited from <a href="../_network_gossip_interface_.igossip/">IGossip</a>.<a href="../_network_gossip_interface_.igossip/#optional--_emittertype"> _emitterType</a></em></p>
-<p>Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:5</p>
-<hr />
-<h3 id="optional-_eventstype"><code>Optional</code>  _eventsType<a class="headerlink" href="#optional-_eventstype" title="Permanent link">&para;</a></h3>
-<p>• <strong> _eventsType</strong>? : <em>U</em></p>
-<p><em>Inherited from <a href="../_network_gossip_interface_.igossip/">IGossip</a>.<a href="../_network_gossip_interface_.igossip/#optional--_eventstype"> _eventsType</a></em></p>
-<p>Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
+<h3 id="endeth1blockanddepositeventssource">endEth1BlockAndDepositEventsSource<a class="headerlink" href="#endeth1blockanddepositeventssource" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>endEth1BlockAndDepositEventsSource</strong>(): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L27">packages/lodestar/src/eth1/interface.ts:27</a></em></p>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBlock</strong>(<code>blockTag</code>: string | number): <em>Promise‹Block›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L38">packages/lodestar/src/eth1/interface.ts:38</a></em></p>
+<p>▸ <strong>getBlock</strong>(<code>blockTag</code>: string | number): <em>Promise‹<a href="../../modules/_eth1_interface_/#eth1block">Eth1Block</a>›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L33">packages/lodestar/src/eth1/interface.ts:33</a></em></p>
 <p>Returns block by block hash or number</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -524,11 +471,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹Block›</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../modules/_eth1_interface_/#eth1block">Eth1Block</a>›</em></p>
 <hr />
 <h3 id="getdepositevents">getDepositEvents<a class="headerlink" href="#getdepositevents" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositEvents</strong>(<code>blockTag</code>: string | number): <em>Promise‹<a href="../_eth1_interface_.idepositevent/">IDepositEvent</a>[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L43">packages/lodestar/src/eth1/interface.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L38">packages/lodestar/src/eth1/interface.ts:38</a></em></p>
 <p>Return deposit events at a block</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -547,14 +494,19 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹<a href="../_eth1_interface_.idepositevent/">IDepositEvent</a>[]›</em></p>
 <hr />
+<h3 id="geteth1blockanddepositeventssource">getEth1BlockAndDepositEventsSource<a class="headerlink" href="#geteth1blockanddepositeventssource" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getEth1BlockAndDepositEventsSource</strong>(): <em>Promise‹Pushable‹<a href="../_eth1_interface_.eth1eventsblock/">Eth1EventsBlock</a>››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L26">packages/lodestar/src/eth1/interface.ts:26</a></em></p>
+<p><strong>Returns:</strong> <em>Promise‹Pushable‹<a href="../_eth1_interface_.eth1eventsblock/">Eth1EventsBlock</a>››</em></p>
+<hr />
 <h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L31">packages/lodestar/src/eth1/interface.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L24">packages/lodestar/src/eth1/interface.ts:24</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L32">packages/lodestar/src/eth1/interface.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/eth1/interface.ts#L25">packages/lodestar/src/eth1/interface.ts:25</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
                 
               

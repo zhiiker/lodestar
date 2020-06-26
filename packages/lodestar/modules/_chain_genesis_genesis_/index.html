@@ -322,6 +322,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -342,43 +349,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getemptyblock" class="md-nav__link">
-    getEmptyBlock
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getemptyblockbody" class="md-nav__link">
-    getEmptyBlockBody
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getemptysignedblock" class="md-nav__link">
-    getEmptySignedBlock
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getgenesisbeaconstate" class="md-nav__link">
-    getGenesisBeaconState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#initializebeaconstatefrometh1" class="md-nav__link">
     initializeBeaconStateFromEth1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isvalidgenesisstate" class="md-nav__link">
-    isValidGenesisState
   </a>
   
 </li>
@@ -411,121 +383,52 @@
                 <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">"chain/genesis/genesis"</a></p>
 <h1 id="external-module-chaingenesisgenesis">External module: "chain/genesis/genesis"<a class="headerlink" href="#external-module-chaingenesisgenesis" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../classes/_chain_genesis_genesis_.genesisbuilder/">GenesisBuilder</a></li>
+</ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#getemptyblock">getEmptyBlock</a></li>
-<li><a href="./#getemptyblockbody">getEmptyBlockBody</a></li>
-<li><a href="./#getemptysignedblock">getEmptySignedBlock</a></li>
-<li><a href="./#getgenesisbeaconstate">getGenesisBeaconState</a></li>
 <li><a href="./#initializebeaconstatefrometh1">initializeBeaconStateFromEth1</a></li>
-<li><a href="./#isvalidgenesisstate">isValidGenesisState</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="getemptyblock">getEmptyBlock<a class="headerlink" href="#getemptyblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getEmptyBlock</strong>(): <em>BeaconBlock</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L156">packages/lodestar/src/chain/genesis/genesis.ts:156</a></em></p>
-<p>Get an empty [[BeaconBlock]].</p>
-<p><strong>Returns:</strong> <em>BeaconBlock</em></p>
-<hr />
-<h3 id="getemptyblockbody">getEmptyBlockBody<a class="headerlink" href="#getemptyblockbody" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getEmptyBlockBody</strong>(): <em>BeaconBlockBody</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L125">packages/lodestar/src/chain/genesis/genesis.ts:125</a></em></p>
-<p><strong>Returns:</strong> <em>BeaconBlockBody</em></p>
-<hr />
-<h3 id="getemptysignedblock">getEmptySignedBlock<a class="headerlink" href="#getemptysignedblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getEmptySignedBlock</strong>(): <em>SignedBeaconBlock</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L145">packages/lodestar/src/chain/genesis/genesis.ts:145</a></em></p>
-<p>Get an empty [[BeaconBlock]].</p>
-<p><strong>Returns:</strong> <em>SignedBeaconBlock</em></p>
-<hr />
-<h3 id="getgenesisbeaconstate">getGenesisBeaconState<a class="headerlink" href="#getgenesisbeaconstate" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getGenesisBeaconState</strong>(<code>config</code>: IBeaconConfig, <code>genesisTime</code>: Number64, <code>genesisEth1Data</code>: Eth1Data, <code>latestBlockHeader</code>: BeaconBlockHeader): <em>BeaconState</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L94">packages/lodestar/src/chain/genesis/genesis.ts:94</a></em></p>
-<p>Generate the initial beacon chain state.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>genesisTime</code></td>
-<td>Number64</td>
-</tr>
-<tr>
-<td><code>genesisEth1Data</code></td>
-<td>Eth1Data</td>
-</tr>
-<tr>
-<td><code>latestBlockHeader</code></td>
-<td>BeaconBlockHeader</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>BeaconState</em></p>
-<hr />
 <h3 id="initializebeaconstatefrometh1">initializeBeaconStateFromEth1<a class="headerlink" href="#initializebeaconstatefrometh1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>initializeBeaconStateFromEth1</strong>(<code>config</code>: IBeaconConfig, <code>eth1BlockHash</code>: Bytes32, <code>eth1Timestamp</code>: Number64, <code>deposits</code>: Deposit[]): <em>TreeBacked‹BeaconState›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L33">packages/lodestar/src/chain/genesis/genesis.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/chain/genesis/genesis.ts#L129">packages/lodestar/src/chain/genesis/genesis.ts:129</a></em></p>
+<p>Mainly used for spec test.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>config</code></td>
 <td>IBeaconConfig</td>
+<td>-</td>
 </tr>
 <tr>
 <td><code>eth1BlockHash</code></td>
 <td>Bytes32</td>
+<td>-</td>
 </tr>
 <tr>
 <td><code>eth1Timestamp</code></td>
 <td>Number64</td>
+<td>-</td>
 </tr>
 <tr>
 <td><code>deposits</code></td>
 <td>Deposit[]</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>TreeBacked‹BeaconState›</em></p>
-<hr />
-<h3 id="isvalidgenesisstate">isValidGenesisState<a class="headerlink" href="#isvalidgenesisstate" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>isValidGenesisState</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: BeaconState): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/chain/genesis/genesis.ts#L81">packages/lodestar/src/chain/genesis/genesis.ts:81</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>state</code></td>
-<td>BeaconState</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>boolean</em></p>
                 
               
               

@@ -11,7 +11,7 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/_eth1_interface_.ieth1events/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/_chain_genesis_interface_.igenesisbuildermodules/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>eth1 interface .ieth1events - Lodestar documentation</title>
+        <title>chain genesis interface .igenesisbuildermodules - Lodestar documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interface-ieth1events" class="md-skip">
+        <a href="#interface-igenesisbuildermodules" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-               eth1 interface .ieth1events
+               chain genesis interface .igenesisbuildermodules
             
           </span>
         </div>
@@ -349,42 +349,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deposit" class="md-nav__link">
-    deposit
-  </a>
-  
-    <nav class="md-nav" aria-label="deposit">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type declaration:
+  <a href="#db" class="md-nav__link">
+    db
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#eth1data" class="md-nav__link">
-    eth1Data
-  </a>
-  
-    <nav class="md-nav" aria-label="eth1Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration_1" class="md-nav__link">
-    Type declaration:
+  <a href="#eth1" class="md-nav__link">
+    eth1
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#logger" class="md-nav__link">
+    logger
+  </a>
   
 </li>
         
@@ -405,7 +386,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/interfaces/_eth1_interface_.ieth1events.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/interfaces/_chain_genesis_interface_.igenesisbuildermodules.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -413,72 +394,31 @@
                   
                 
                 
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/_eth1_interface_/">"eth1/interface"</a> › <a href="./">IEth1Events</a></p>
-<h1 id="interface-ieth1events">Interface: IEth1Events<a class="headerlink" href="#interface-ieth1events" title="Permanent link">&para;</a></h1>
+                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/_chain_genesis_interface_/">"chain/genesis/interface"</a> › <a href="./">IGenesisBuilderModules</a></p>
+<h1 id="interface-igenesisbuildermodules">Interface: IGenesisBuilderModules<a class="headerlink" href="#interface-igenesisbuildermodules" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>IEth1Events</strong></li>
+<li><strong>IGenesisBuilderModules</strong></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#deposit">deposit</a></li>
-<li><a href="./#eth1data">eth1Data</a></li>
+<li><a href="./#db">db</a></li>
+<li><a href="./#eth1">eth1</a></li>
+<li><a href="./#logger">logger</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="deposit">deposit<a class="headerlink" href="#deposit" title="Permanent link">&para;</a></h3>
-<p>• <strong>deposit</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L21">packages/lodestar/src/eth1/interface.ts:21</a></em></p>
-<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
-<p>▸ (<code>index</code>: Number64, <code>depositData</code>: DepositData): <em>void</em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>index</code></td>
-<td>Number64</td>
-</tr>
-<tr>
-<td><code>depositData</code></td>
-<td>DepositData</td>
-</tr>
-</tbody>
-</table>
+<h3 id="db">db<a class="headerlink" href="#db" title="Permanent link">&para;</a></h3>
+<p>• <strong>db</strong>: <em><a href="../_db_api_beacon_interface_.ibeacondb/">IBeaconDb</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/chain/genesis/interface.ts#L8">packages/lodestar/src/chain/genesis/interface.ts:8</a></em></p>
 <hr />
-<h3 id="eth1data">eth1Data<a class="headerlink" href="#eth1data" title="Permanent link">&para;</a></h3>
-<p>• <strong>eth1Data</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8312c1e01/packages/lodestar/src/eth1/interface.ts#L22">packages/lodestar/src/eth1/interface.ts:22</a></em></p>
-<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
-<p>▸ (<code>timestamp</code>: number, <code>eth1Data</code>: Eth1Data, <code>blockNumber</code>: number): <em>void</em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>timestamp</code></td>
-<td>number</td>
-</tr>
-<tr>
-<td><code>eth1Data</code></td>
-<td>Eth1Data</td>
-</tr>
-<tr>
-<td><code>blockNumber</code></td>
-<td>number</td>
-</tr>
-</tbody>
-</table>
+<h3 id="eth1">eth1<a class="headerlink" href="#eth1" title="Permanent link">&para;</a></h3>
+<p>• <strong>eth1</strong>: <em><a href="../_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/chain/genesis/interface.ts#L9">packages/lodestar/src/chain/genesis/interface.ts:9</a></em></p>
+<hr />
+<h3 id="logger">logger<a class="headerlink" href="#logger" title="Permanent link">&para;</a></h3>
+<p>• <strong>logger</strong>: <em>ILogger</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e247acf95/packages/lodestar/src/chain/genesis/interface.ts#L10">packages/lodestar/src/chain/genesis/interface.ts:10</a></em></p>
                 
               
               
