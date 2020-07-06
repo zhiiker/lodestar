@@ -349,15 +349,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#data" class="md-nav__link">
-    data
+  <a href="#optional-data" class="md-nav__link">
+    Optional data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#from" class="md-nav__link">
-    from
+  <a href="#optional-from" class="md-nav__link">
+    Optional from
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-key" class="md-nav__link">
+    Optional key
   </a>
   
 </li>
@@ -370,8 +377,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#seqno" class="md-nav__link">
-    seqno
+  <a href="#optional-seqno" class="md-nav__link">
+    Optional seqno
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-signature" class="md-nav__link">
+    Optional signature
   </a>
   
 </li>
@@ -412,42 +426,64 @@
 <h1 id="interface-ilodestargossipmessage">Interface: ILodestarGossipMessage<a class="headerlink" href="#interface-ilodestargossipmessage" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li>IGossipMessage</li>
+<li>Message</li>
 </ul>
 <p>↳ <strong>ILodestarGossipMessage</strong></p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#data">data</a></li>
-<li><a href="./#from">from</a></li>
+<li><a href="./#optional-data">data</a></li>
+<li><a href="./#optional-from">from</a></li>
+<li><a href="./#optional-key">key</a></li>
 <li><a href="./#messageid">messageId</a></li>
-<li><a href="./#seqno">seqno</a></li>
+<li><a href="./#optional-seqno">seqno</a></li>
+<li><a href="./#optional-signature">signature</a></li>
 <li><a href="./#topicids">topicIDs</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h3>
-<p>• <strong>data</strong>: <em>Buffer</em></p>
-<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#data">data</a></em></p>
-<p>Defined in node_modules/libp2p-gossipsub/src/index.d.ts:16</p>
+<h3 id="optional-data"><code>Optional</code> data<a class="headerlink" href="#optional-data" title="Permanent link">&para;</a></h3>
+<p>• <strong>data</strong>? : <em>Buffer</em></p>
+<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#optional-data">data</a></em></p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:29</p>
+<p>Opaque blob of data</p>
 <hr />
-<h3 id="from">from<a class="headerlink" href="#from" title="Permanent link">&para;</a></h3>
-<p>• <strong>from</strong>: <em>Buffer | string</em></p>
-<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#from">from</a></em></p>
-<p>Defined in node_modules/libp2p-gossipsub/src/index.d.ts:15</p>
+<h3 id="optional-from"><code>Optional</code> from<a class="headerlink" href="#optional-from" title="Permanent link">&para;</a></h3>
+<p>• <strong>from</strong>? : <em>Buffer</em></p>
+<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#optional-from">from</a></em></p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:25</p>
+<p>Peer id of the author of the message</p>
+<p>Note: This is not necessarily the peer who sent the RPC this message is contained in</p>
+<hr />
+<h3 id="optional-key"><code>Optional</code> key<a class="headerlink" href="#optional-key" title="Permanent link">&para;</a></h3>
+<p>• <strong>key</strong>? : <em>Buffer</em></p>
+<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#optional-key">key</a></em></p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:50</p>
+<p>Signing key</p>
 <hr />
 <h3 id="messageid">messageId<a class="headerlink" href="#messageid" title="Permanent link">&para;</a></h3>
 <p>• <strong>messageId</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/gossip/interface.ts#L99">packages/lodestar/src/network/gossip/interface.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/gossip/interface.ts#L96">packages/lodestar/src/network/gossip/interface.ts:96</a></em></p>
 <hr />
-<h3 id="seqno">seqno<a class="headerlink" href="#seqno" title="Permanent link">&para;</a></h3>
-<p>• <strong>seqno</strong>: <em>Buffer</em></p>
-<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#seqno">seqno</a></em></p>
-<p>Defined in node_modules/libp2p-gossipsub/src/index.d.ts:17</p>
+<h3 id="optional-seqno"><code>Optional</code> seqno<a class="headerlink" href="#optional-seqno" title="Permanent link">&para;</a></h3>
+<p>• <strong>seqno</strong>? : <em>Buffer</em></p>
+<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#optional-seqno">seqno</a></em></p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:35</p>
+<p>64-bit big-endian uint</p>
+<p>No two messages on a topic from the same peer should have the same seqno value</p>
+<hr />
+<h3 id="optional-signature"><code>Optional</code> signature<a class="headerlink" href="#optional-signature" title="Permanent link">&para;</a></h3>
+<p>• <strong>signature</strong>? : <em>Buffer</em></p>
+<p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#optional-signature">signature</a></em></p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:46</p>
+<p>Signature of the message</p>
+<p>The signature is computed over the marshalled message protobuf excluding the key field
+The protobuf bloc is prefixed by the string <code>libp2p-pubsub:</code> before signing</p>
 <hr />
 <h3 id="topicids">topicIDs<a class="headerlink" href="#topicids" title="Permanent link">&para;</a></h3>
 <p>• <strong>topicIDs</strong>: <em>string[]</em></p>
 <p><em>Inherited from <a href="./">ILodestarGossipMessage</a>.<a href="./#topicids">topicIDs</a></em></p>
-<p>Defined in node_modules/libp2p-gossipsub/src/index.d.ts:18</p>
+<p>Defined in node_modules/libp2p-gossipsub/src/message/index.d.ts:39</p>
+<p>Set of topics being published to</p>
                 
               
               

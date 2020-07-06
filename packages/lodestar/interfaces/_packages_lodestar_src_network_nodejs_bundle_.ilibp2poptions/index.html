@@ -349,6 +349,26 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#addresses" class="md-nav__link">
+    addresses
+  </a>
+  
+    <nav class="md-nav" aria-label="addresses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#autodial" class="md-nav__link">
     autoDial
   </a>
@@ -371,7 +391,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
+  <a href="#type-declaration_1" class="md-nav__link">
     Type declaration:
   </a>
   
@@ -390,8 +410,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#peerinfo" class="md-nav__link">
-    peerInfo
+  <a href="#peerid" class="md-nav__link">
+    peerId
   </a>
   
 </li>
@@ -430,25 +450,42 @@
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#addresses">addresses</a></li>
 <li><a href="./#autodial">autoDial</a></li>
 <li><a href="./#optional-bootnodes">bootnodes</a></li>
 <li><a href="./#discv5">discv5</a></li>
 <li><a href="./#optional-peerdiscovery">peerDiscovery</a></li>
-<li><a href="./#peerinfo">peerInfo</a></li>
+<li><a href="./#peerid">peerId</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
+<h3 id="addresses">addresses<a class="headerlink" href="#addresses" title="Permanent link">&para;</a></h3>
+<p>• <strong>addresses</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L17">packages/lodestar/src/network/nodejs/bundle.ts:17</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>announce</strong>? : <em>string[]</em></p>
+</li>
+<li>
+<p><strong>listen</strong>: <em>string[]</em></p>
+</li>
+<li>
+<p><strong>noAnnounce</strong>? : <em>string[]</em></p>
+</li>
+</ul>
+<hr />
 <h3 id="autodial">autoDial<a class="headerlink" href="#autodial" title="Permanent link">&para;</a></h3>
 <p>• <strong>autoDial</strong>: <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L18">packages/lodestar/src/network/nodejs/bundle.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L22">packages/lodestar/src/network/nodejs/bundle.ts:22</a></em></p>
 <hr />
 <h3 id="optional-bootnodes"><code>Optional</code> bootnodes<a class="headerlink" href="#optional-bootnodes" title="Permanent link">&para;</a></h3>
 <p>• <strong>bootnodes</strong>? : <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L25">packages/lodestar/src/network/nodejs/bundle.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L29">packages/lodestar/src/network/nodejs/bundle.ts:29</a></em></p>
 <hr />
 <h3 id="discv5">discv5<a class="headerlink" href="#discv5" title="Permanent link">&para;</a></h3>
 <p>• <strong>discv5</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L19">packages/lodestar/src/network/nodejs/bundle.ts:19</a></em></p>
-<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L23">packages/lodestar/src/network/nodejs/bundle.ts:23</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p><strong>bindAddr</strong>: <em>string</em></p>
@@ -463,11 +500,11 @@
 <hr />
 <h3 id="optional-peerdiscovery"><code>Optional</code> peerDiscovery<a class="headerlink" href="#optional-peerdiscovery" title="Permanent link">&para;</a></h3>
 <p>• <strong>peerDiscovery</strong>? : <em>LibP2pBootstrap | LibP2pMdns | Discv5Discovery[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L24">packages/lodestar/src/network/nodejs/bundle.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L28">packages/lodestar/src/network/nodejs/bundle.ts:28</a></em></p>
 <hr />
-<h3 id="peerinfo">peerInfo<a class="headerlink" href="#peerinfo" title="Permanent link">&para;</a></h3>
-<p>• <strong>peerInfo</strong>: <em>PeerInfo</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L17">packages/lodestar/src/network/nodejs/bundle.ts:17</a></em></p>
+<h3 id="peerid">peerId<a class="headerlink" href="#peerid" title="Permanent link">&para;</a></h3>
+<p>• <strong>peerId</strong>: <em>PeerId</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L16">packages/lodestar/src/network/nodejs/bundle.ts:16</a></em></p>
                 
               
               

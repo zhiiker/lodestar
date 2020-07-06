@@ -11,7 +11,7 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/classes/_packages_lodestar_src_db_api_beacon_statecache_.statecache/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/interfaces/_packages_lodestar_src_db_api_beacon_statecontextcache_.itreestatecontext/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>packages lodestar src db api beacon statecache .statecache - Lodestar documentation</title>
+        <title>packages lodestar src db api beacon statecontextcache .itreestatecontext - Lodestar documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-statecache" class="md-skip">
+        <a href="#interface-itreestatecontext" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-               packages lodestar src db api beacon statecache .statecache
+               packages lodestar src db api beacon statecontextcache .itreestatecontext
             
           </span>
         </div>
@@ -329,42 +329,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
     Properties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructors_1" class="md-nav__link">
-    Constructors
-  </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
-    constructor
   </a>
   
 </li>
@@ -383,63 +349,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#private-cache" class="md-nav__link">
-    Private cache
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods_1" class="md-nav__link">
-    Methods
-  </a>
-  
-    <nav class="md-nav" aria-label="Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add" class="md-nav__link">
-    add
+  <a href="#epochctx" class="md-nav__link">
+    epochCtx
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#batchdelete" class="md-nav__link">
-    batchDelete
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clear" class="md-nav__link">
-    clear
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete" class="md-nav__link">
-    delete
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
-    get
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#values" class="md-nav__link">
-    values
+  <a href="#state" class="md-nav__link">
+    state
   </a>
   
 </li>
@@ -461,7 +379,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/classes/_packages_lodestar_src_db_api_beacon_statecache_.statecache.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/interfaces/_packages_lodestar_src_db_api_beacon_statecontextcache_.itreestatecontext.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -469,131 +387,26 @@
                   
                 
                 
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/_packages_lodestar_src_db_api_beacon_statecache_/">"packages/lodestar/src/db/api/beacon/stateCache"</a> › <a href="./">StateCache</a></p>
-<h1 id="class-statecache">Class: StateCache<a class="headerlink" href="#class-statecache" title="Permanent link">&para;</a></h1>
-<p>Simple BeaconState in-memory cache</p>
-<p>Similar API to Repository, but synchronous</p>
+                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/_packages_lodestar_src_db_api_beacon_statecontextcache_/">"packages/lodestar/src/db/api/beacon/stateContextCache"</a> › <a href="./">ITreeStateContext</a></p>
+<h1 id="interface-itreestatecontext">Interface: ITreeStateContext<a class="headerlink" href="#interface-itreestatecontext" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>StateCache</strong></li>
+<li><strong>ITreeStateContext</strong></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#constructor">constructor</a></li>
-</ul>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#private-cache">cache</a></li>
+<li><a href="./#epochctx">epochCtx</a></li>
+<li><a href="./#state">state</a></li>
 </ul>
-<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#add">add</a></li>
-<li><a href="./#batchdelete">batchDelete</a></li>
-<li><a href="./#clear">clear</a></li>
-<li><a href="./#delete">delete</a></li>
-<li><a href="./#get">get</a></li>
-<li><a href="./#values">values</a></li>
-</ul>
-<h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
-<h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
-<p>+ <strong>new StateCache</strong>(): <em><a href="./">StateCache</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L10">packages/lodestar/src/db/api/beacon/stateCache.ts:10</a></em></p>
-<p><strong>Returns:</strong> <em><a href="./">StateCache</a></em></p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="private-cache"><code>Private</code> cache<a class="headerlink" href="#private-cache" title="Permanent link">&para;</a></h3>
-<p>• <strong>cache</strong>: <em>Record‹string, TreeBacked‹BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L10">packages/lodestar/src/db/api/beacon/stateCache.ts:10</a></em></p>
-<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
-<h3 id="add">add<a class="headerlink" href="#add" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>add</strong>(<code>state</code>: TreeBacked‹BeaconState›): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L22">packages/lodestar/src/db/api/beacon/stateCache.ts:22</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>state</code></td>
-<td>TreeBacked‹BeaconState›</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<h3 id="epochctx">epochCtx<a class="headerlink" href="#epochctx" title="Permanent link">&para;</a></h3>
+<p>• <strong>epochCtx</strong>: <em>EpochContext</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/db/api/beacon/stateContextCache.ts#L7">packages/lodestar/src/db/api/beacon/stateContextCache.ts:7</a></em></p>
 <hr />
-<h3 id="batchdelete">batchDelete<a class="headerlink" href="#batchdelete" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>batchDelete</strong>(<code>roots</code>: ByteVector[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L30">packages/lodestar/src/db/api/beacon/stateCache.ts:30</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>roots</code></td>
-<td>ByteVector[]</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="clear">clear<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>clear</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L34">packages/lodestar/src/db/api/beacon/stateCache.ts:34</a></em></p>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="delete">delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>delete</strong>(<code>root</code>: ByteVector): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L26">packages/lodestar/src/db/api/beacon/stateCache.ts:26</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>root</code></td>
-<td>ByteVector</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>get</strong>(<code>root</code>: ByteVector): <em>Promise‹TreeBacked‹BeaconState› | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L14">packages/lodestar/src/db/api/beacon/stateCache.ts:14</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>root</code></td>
-<td>ByteVector</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState› | null›</em></p>
-<hr />
-<h3 id="values">values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>values</strong>(): <em>Promise‹TreeBacked‹BeaconState›[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/db/api/beacon/stateCache.ts#L38">packages/lodestar/src/db/api/beacon/stateCache.ts:38</a></em></p>
-<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState›[]›</em></p>
+<h3 id="state">state<a class="headerlink" href="#state" title="Permanent link">&para;</a></h3>
+<p>• <strong>state</strong>: <em>TreeBacked‹BeaconState›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/db/api/beacon/stateContextCache.ts#L6">packages/lodestar/src/db/api/beacon/stateContextCache.ts:6</a></em></p>
                 
               
               

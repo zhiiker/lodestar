@@ -418,6 +418,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#private-lastdepositcount" class="md-nav__link">
+    Private lastDepositCount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#private-lastprocessedeth1blocknumber" class="md-nav__link">
     Private lastProcessedEth1BlockNumber
   </a>
@@ -434,6 +441,13 @@
           <li class="md-nav__item">
   <a href="#private-opts" class="md-nav__link">
     Private opts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-pregenesischeckpoint" class="md-nav__link">
+    Private preGenesisCheckpoint
   </a>
   
 </li>
@@ -536,6 +550,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#passcheckpoint" class="md-nav__link">
+    passCheckpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#processblocks" class="md-nav__link">
     processBlocks
   </a>
@@ -552,6 +573,13 @@
           <li class="md-nav__item">
   <a href="#processeth1data" class="md-nav__link">
     processEth1Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcheckpoint" class="md-nav__link">
+    setCheckpoint
   </a>
   
 </li>
@@ -626,9 +654,11 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <li><a href="./#private-contract">contract</a></li>
 <li><a href="./#private-db">db</a></li>
 <li><a href="./#private-eth1source">eth1Source</a></li>
+<li><a href="./#private-lastdepositcount">lastDepositCount</a></li>
 <li><a href="./#private-lastprocessedeth1blocknumber">lastProcessedEth1BlockNumber</a></li>
 <li><a href="./#private-logger">logger</a></li>
 <li><a href="./#private-opts">opts</a></li>
+<li><a href="./#private-pregenesischeckpoint">preGenesisCheckpoint</a></li>
 <li><a href="./#private-provider">provider</a></li>
 <li><a href="./#private-startedprocesseth1">startedProcessEth1</a></li>
 </ul>
@@ -644,9 +674,11 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <li><a href="./#private-initcontract">initContract</a></li>
 <li><a href="./#onneweth1block">onNewEth1Block</a></li>
 <li><a href="./#private-parsedepositevent">parseDepositEvent</a></li>
+<li><a href="./#passcheckpoint">passCheckpoint</a></li>
 <li><a href="./#processblocks">processBlocks</a></li>
 <li><a href="./#processdepositevents">processDepositEvents</a></li>
 <li><a href="./#processeth1data">processEth1Data</a></li>
+<li><a href="./#setcheckpoint">setCheckpoint</a></li>
 <li><a href="./#start">start</a></li>
 <li><a href="./#private-startprocesseth1blocks">startProcessEth1Blocks</a></li>
 <li><a href="./#stop">stop</a></li>
@@ -654,7 +686,7 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new EthersEth1Notifier</strong>(<code>opts</code>: <a href="../../interfaces/_packages_lodestar_src_eth1_impl_ethers_.ietherseth1options/">IEthersEth1Options</a>, <code>__namedParameters</code>: object): <em><a href="./">EthersEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L49">packages/lodestar/src/eth1/impl/ethers.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L57">packages/lodestar/src/eth1/impl/ethers.ts:57</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>opts</strong>: <em><a href="../../interfaces/_packages_lodestar_src_eth1_impl_ethers_.ietherseth1options/">IEthersEth1Options</a></em></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
@@ -684,43 +716,53 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-config"><code>Private</code> config<a class="headerlink" href="#private-config" title="Permanent link">&para;</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L43">packages/lodestar/src/eth1/impl/ethers.ts:43</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L45">packages/lodestar/src/eth1/impl/ethers.ts:45</a></em></p>
 <hr />
 <h3 id="private-contract"><code>Private</code> contract<a class="headerlink" href="#private-contract" title="Permanent link">&para;</a></h3>
 <p>• <strong>contract</strong>: <em>Contract</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L41">packages/lodestar/src/eth1/impl/ethers.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L43">packages/lodestar/src/eth1/impl/ethers.ts:43</a></em></p>
 <hr />
 <h3 id="private-db"><code>Private</code> db<a class="headerlink" href="#private-db" title="Permanent link">&para;</a></h3>
 <p>• <strong>db</strong>: <em><a href="../../interfaces/_packages_lodestar_src_db_api_beacon_interface_.ibeacondb/">IBeaconDb</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L44">packages/lodestar/src/eth1/impl/ethers.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L46">packages/lodestar/src/eth1/impl/ethers.ts:46</a></em></p>
 <hr />
 <h3 id="private-eth1source"><code>Private</code> eth1Source<a class="headerlink" href="#private-eth1source" title="Permanent link">&para;</a></h3>
 <p>• <strong>eth1Source</strong>: <em>Pushable‹<a href="../../interfaces/_packages_lodestar_src_eth1_interface_.eth1eventsblock/">Eth1EventsBlock</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L49">packages/lodestar/src/eth1/impl/ethers.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L57">packages/lodestar/src/eth1/impl/ethers.ts:57</a></em></p>
+<hr />
+<h3 id="private-lastdepositcount"><code>Private</code> lastDepositCount<a class="headerlink" href="#private-lastdepositcount" title="Permanent link">&para;</a></h3>
+<p>• <strong>lastDepositCount</strong>: <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L51">packages/lodestar/src/eth1/impl/ethers.ts:51</a></em></p>
 <hr />
 <h3 id="private-lastprocessedeth1blocknumber"><code>Private</code> lastProcessedEth1BlockNumber<a class="headerlink" href="#private-lastprocessedeth1blocknumber" title="Permanent link">&para;</a></h3>
 <p>• <strong>lastProcessedEth1BlockNumber</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L48">packages/lodestar/src/eth1/impl/ethers.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L50">packages/lodestar/src/eth1/impl/ethers.ts:50</a></em></p>
 <hr />
 <h3 id="private-logger"><code>Private</code> logger<a class="headerlink" href="#private-logger" title="Permanent link">&para;</a></h3>
 <p>• <strong>logger</strong>: <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L45">packages/lodestar/src/eth1/impl/ethers.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L47">packages/lodestar/src/eth1/impl/ethers.ts:47</a></em></p>
 <hr />
 <h3 id="private-opts"><code>Private</code> opts<a class="headerlink" href="#private-opts" title="Permanent link">&para;</a></h3>
 <p>• <strong>opts</strong>: <em><a href="../../interfaces/_packages_lodestar_src_eth1_impl_ethers_.ietherseth1options/">IEthersEth1Options</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L38">packages/lodestar/src/eth1/impl/ethers.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L40">packages/lodestar/src/eth1/impl/ethers.ts:40</a></em></p>
+<hr />
+<h3 id="private-pregenesischeckpoint"><code>Private</code> preGenesisCheckpoint<a class="headerlink" href="#private-pregenesischeckpoint" title="Permanent link">&para;</a></h3>
+<p>• <strong>preGenesisCheckpoint</strong>: <em>number</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L56">packages/lodestar/src/eth1/impl/ethers.ts:56</a></em></p>
+<p>Pregenesis block number to check remaining time/block to form genesis.
+This helps avoid calling too many unnecessary getBlock() calls before genesis.</p>
 <hr />
 <h3 id="private-provider"><code>Private</code> provider<a class="headerlink" href="#private-provider" title="Permanent link">&para;</a></h3>
 <p>• <strong>provider</strong>: <em>Provider</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L40">packages/lodestar/src/eth1/impl/ethers.ts:40</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L42">packages/lodestar/src/eth1/impl/ethers.ts:42</a></em></p>
 <hr />
 <h3 id="private-startedprocesseth1"><code>Private</code> startedProcessEth1<a class="headerlink" href="#private-startedprocesseth1" title="Permanent link">&para;</a></h3>
 <p>• <strong>startedProcessEth1</strong>: <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L47">packages/lodestar/src/eth1/impl/ethers.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L49">packages/lodestar/src/eth1/impl/ethers.ts:49</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-contractexists"><code>Private</code> contractExists<a class="headerlink" href="#private-contractexists" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>contractExists</strong>(<code>address</code>: string): <em>Promise‹boolean›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L286">packages/lodestar/src/eth1/impl/ethers.ts:286</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L349">packages/lodestar/src/eth1/impl/ethers.ts:349</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -741,14 +783,14 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <h3 id="endeth1blockanddepositeventssource">endEth1BlockAndDepositEventsSource<a class="headerlink" href="#endeth1blockanddepositeventssource" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>endEth1BlockAndDepositEventsSource</strong>(): <em>Promise‹void›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L102">packages/lodestar/src/eth1/impl/ethers.ts:102</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L111">packages/lodestar/src/eth1/impl/ethers.ts:111</a></em></p>
 <p>Unsubscribe to eth1 events + blocks</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlock</strong>(<code>blockTag</code>: string | number): <em>Promise‹<a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a>›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L233">packages/lodestar/src/eth1/impl/ethers.ts:233</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L295">packages/lodestar/src/eth1/impl/ethers.ts:295</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -768,7 +810,7 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <hr />
 <h3 id="getdepositevents">getDepositEvents<a class="headerlink" href="#getdepositevents" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositEvents</strong>(<code>fromBlockTag</code>: string | number, <code>toBLockTag?</code>: string | number): <em>Promise‹<a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a>[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L227">packages/lodestar/src/eth1/impl/ethers.ts:227</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L289">packages/lodestar/src/eth1/impl/ethers.ts:289</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -793,28 +835,43 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <h3 id="geteth1blockanddepositeventssource">getEth1BlockAndDepositEventsSource<a class="headerlink" href="#geteth1blockanddepositeventssource" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEth1BlockAndDepositEventsSource</strong>(): <em>Promise‹Pushable‹<a href="../../interfaces/_packages_lodestar_src_eth1_interface_.eth1eventsblock/">Eth1EventsBlock</a>››</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L89">packages/lodestar/src/eth1/impl/ethers.ts:89</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L98">packages/lodestar/src/eth1/impl/ethers.ts:98</a></em></p>
 <p>Genesis builder calls this at pregenesis time.</p>
 <p><strong>Returns:</strong> <em>Promise‹Pushable‹<a href="../../interfaces/_packages_lodestar_src_eth1_interface_.eth1eventsblock/">Eth1EventsBlock</a>››</em></p>
 <hr />
 <h3 id="getlastprocessedblocktag">getLastProcessedBlockTag<a class="headerlink" href="#getlastprocessedblocktag" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getLastProcessedBlockTag</strong>(): <em>Promise‹string | number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L114">packages/lodestar/src/eth1/impl/ethers.ts:114</a></em></p>
+<p>▸ <strong>getLastProcessedBlockTag</strong>(<code>lastEth1Data</code>: Eth1Data): <em>Promise‹string | number›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L123">packages/lodestar/src/eth1/impl/ethers.ts:123</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lastEth1Data</code></td>
+<td>Eth1Data</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong> <em>Promise‹string | number›</em></p>
 <hr />
 <h3 id="getlastprocesseddepositindex">getLastProcessedDepositIndex<a class="headerlink" href="#getlastprocesseddepositindex" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getLastProcessedDepositIndex</strong>(): <em>Promise‹number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L118">packages/lodestar/src/eth1/impl/ethers.ts:118</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L126">packages/lodestar/src/eth1/impl/ethers.ts:126</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹number›</em></p>
 <hr />
 <h3 id="private-initcontract"><code>Private</code> initContract<a class="headerlink" href="#private-initcontract" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>initContract</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L243">packages/lodestar/src/eth1/impl/ethers.ts:243</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L305">packages/lodestar/src/eth1/impl/ethers.ts:305</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="onneweth1block">onNewEth1Block<a class="headerlink" href="#onneweth1block" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onNewEth1Block</strong>(<code>blockNumber</code>: number): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L123">packages/lodestar/src/eth1/impl/ethers.ts:123</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L131">packages/lodestar/src/eth1/impl/ethers.ts:131</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -834,7 +891,7 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <hr />
 <h3 id="private-parsedepositevent"><code>Private</code> parseDepositEvent<a class="headerlink" href="#private-parsedepositevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>parseDepositEvent</strong>(<code>log</code>: Event): <em><a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L294">packages/lodestar/src/eth1/impl/ethers.ts:294</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L357">packages/lodestar/src/eth1/impl/ethers.ts:357</a></em></p>
 <p>Parse DepositEvent log</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -853,9 +910,31 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 </table>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a></em></p>
 <hr />
+<h3 id="passcheckpoint">passCheckpoint<a class="headerlink" href="#passcheckpoint" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>passCheckpoint</strong>(<code>blockNumber</code>: number): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L235">packages/lodestar/src/eth1/impl/ethers.ts:235</a></em></p>
+<p>Before genesis: return blockNumber &gt;= checkpoint
+After genesis: true</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blockNumber</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr />
 <h3 id="processblocks">processBlocks<a class="headerlink" href="#processblocks" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processBlocks</strong>(<code>toNumber</code>: number): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L134">packages/lodestar/src/eth1/impl/ethers.ts:134</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L142">packages/lodestar/src/eth1/impl/ethers.ts:142</a></em></p>
 <p>Process blocks from lastProcessedEth1BlockNumber + 1 until toNumber.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -878,7 +957,7 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <hr />
 <h3 id="processdepositevents">processDepositEvents<a class="headerlink" href="#processdepositevents" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processDepositEvents</strong>(<code>blockNumber</code>: number, <code>blockDepositEvents</code>: <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a>[]): <em>Promise‹boolean›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L168">packages/lodestar/src/eth1/impl/ethers.ts:168</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L184">packages/lodestar/src/eth1/impl/ethers.ts:184</a></em></p>
 <p>Process an eth1 block for DepositEvents and Eth1Data</p>
 <p>Must process blocks in order with no gaps</p>
 <p>Returns true if processing was successful</p>
@@ -904,8 +983,8 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <p><strong>Returns:</strong> <em>Promise‹boolean›</em></p>
 <hr />
 <h3 id="processeth1data">processEth1Data<a class="headerlink" href="#processeth1data" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>processEth1Data</strong>(<code>block</code>: <a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a>, <code>blockDepositEvents</code>: <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a>[]): <em>Promise‹boolean›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L208">packages/lodestar/src/eth1/impl/ethers.ts:208</a></em></p>
+<p>▸ <strong>processEth1Data</strong>(<code>block</code>: <a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a>): <em>Promise‹boolean›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L271">packages/lodestar/src/eth1/impl/ethers.ts:271</a></em></p>
 <p>Process proposing data of eth1 block</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -920,32 +999,51 @@ It stores deposit events and eth1 data in a IBeaconDb resumes processing from th
 <td><code>block</code></td>
 <td><a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a></td>
 </tr>
-<tr>
-<td><code>blockDepositEvents</code></td>
-<td><a href="../../interfaces/_packages_lodestar_src_eth1_interface_.idepositevent/">IDepositEvent</a>[]</td>
-</tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹boolean›</em></p>
 <p>true if success</p>
 <hr />
+<h3 id="setcheckpoint">setCheckpoint<a class="headerlink" href="#setcheckpoint" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>setCheckpoint</strong>(<code>block</code>: <a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a>): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L244">packages/lodestar/src/eth1/impl/ethers.ts:244</a></em></p>
+<p>Before genesis: set the next checkpoint from the current checkpoint.
+Ideally it's 1024 blocks to genesis, then 512 -&gt; 256 -&gt; ... 2 -&gt; 1 -&gt; 0</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>block</code></td>
+<td><a href="../../modules/_packages_lodestar_src_eth1_interface_/#eth1block">Eth1Block</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<p>true of before genesis, false otherwise</p>
+<hr />
 <h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L71">packages/lodestar/src/eth1/impl/ethers.ts:71</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L80">packages/lodestar/src/eth1/impl/ethers.ts:80</a></em></p>
 <p>Chain calls this after found genesis.</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="private-startprocesseth1blocks"><code>Private</code> startProcessEth1Blocks<a class="headerlink" href="#private-startprocesseth1blocks" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>startProcessEth1Blocks</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L259">packages/lodestar/src/eth1/impl/ethers.ts:259</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L321">packages/lodestar/src/eth1/impl/ethers.ts:321</a></em></p>
 <p>This is triggered when building genesis or after chain gets started.</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_eth1_interface_.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/eth1/impl/ethers.ts#L79">packages/lodestar/src/eth1/impl/ethers.ts:79</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/eth1/impl/ethers.ts#L88">packages/lodestar/src/eth1/impl/ethers.ts:88</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
                 
               

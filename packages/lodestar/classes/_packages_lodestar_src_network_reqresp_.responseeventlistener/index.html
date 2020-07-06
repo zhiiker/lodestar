@@ -467,8 +467,8 @@
 <p>Defined in node_modules/strict-event-emitter-types/types/src/index.d.ts:6</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="waitforresponse">waitForResponse<a class="headerlink" href="#waitforresponse" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>waitForResponse</strong>(<code>requestId</code>: string, <code>responseListener</code>: <a href="../../modules/_packages_lodestar_src_network_interface_/#responsecallbackfn">ResponseCallbackFn</a>): <em>Timeout</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/reqResp.ts#L55">packages/lodestar/src/network/reqResp.ts:55</a></em></p>
+<p>▸ <strong>waitForResponse</strong>(<code>config</code>: IBeaconConfig, <code>requestId</code>: string, <code>responseListener</code>: <a href="../../modules/_packages_lodestar_src_network_interface_/#responsecallbackfn">ResponseCallbackFn</a>): <em>Timeout</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/reqResp.ts#L54">packages/lodestar/src/network/reqResp.ts:54</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -478,6 +478,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
 <tr>
 <td><code>requestId</code></td>
 <td>string</td>

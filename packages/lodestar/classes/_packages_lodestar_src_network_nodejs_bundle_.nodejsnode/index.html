@@ -377,6 +377,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#static-connectionevents" class="md-nav__link">
+    Static ConnectionEvents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#static-events" class="md-nav__link">
     Static Events
   </a>
@@ -491,8 +498,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#peerinfo" class="md-nav__link">
-    peerInfo
+  <a href="#connectionmanager" class="md-nav__link">
+    connectionManager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiaddrs" class="md-nav__link">
+    multiaddrs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peerid" class="md-nav__link">
+    peerId
   </a>
   
 </li>
@@ -655,6 +676,7 @@
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#static-connectionevents">ConnectionEvents</a></li>
 <li><a href="./#static-events">Events</a></li>
 <li><a href="./#static-options">Options</a></li>
 <li><a href="./#static-optionsconfig">OptionsConfig</a></li>
@@ -668,7 +690,9 @@
 <ul>
 <li><a href="./#_dht">_dht</a></li>
 <li><a href="./#_discovery">_discovery</a></li>
-<li><a href="./#peerinfo">peerInfo</a></li>
+<li><a href="./#connectionmanager">connectionManager</a></li>
+<li><a href="./#multiaddrs">multiaddrs</a></li>
+<li><a href="./#peerid">peerId</a></li>
 <li><a href="./#peerstore">peerStore</a></li>
 <li><a href="./#registrar">registrar</a></li>
 </ul>
@@ -689,15 +713,31 @@
 <li><a href="./#static-create">create</a></li>
 </ul>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
-<h3 id="static-events"><code>Static</code> Events<a class="headerlink" href="#static-events" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>Events</strong>: <em>"peer:connect" | "peer:disconnect" | "peer:discovery" | "start" | "stop"</em></p>
+<h3 id="static-connectionevents"><code>Static</code> ConnectionEvents<a class="headerlink" href="#static-connectionevents" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ConnectionEvents</strong>: <em>"peer:connect" | "peer:disconnect"</em></p>
 <p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:88</p>
+<hr />
+<h3 id="static-events"><code>Static</code> Events<a class="headerlink" href="#static-events" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>Events</strong>: <em>"peer:discovery" | "start" | "stop"</em></p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:87</p>
 <hr />
 <h3 id="static-options"><code>Static</code> Options<a class="headerlink" href="#static-options" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>Options</strong>: <em>object</em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:71</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:69</p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <ul>
+<li>
+<p><strong>addresses</strong>(): <em>object</em></p>
+</li>
+<li>
+<p><strong>announce</strong>? : <em>string[]</em></p>
+</li>
+<li>
+<p><strong>listen</strong>? : <em>string[]</em></p>
+</li>
+<li>
+<p><strong>noAnnounce</strong>? : <em>string[]</em></p>
+</li>
 <li>
 <p><strong>config</strong>: <em><a href="./#static-optionsconfig">OptionsConfig</a></em></p>
 </li>
@@ -705,13 +745,13 @@
 <p><strong>modules</strong>: <em><a href="./#static-optionsmodules">OptionsModules</a></em></p>
 </li>
 <li>
-<p><strong>peerInfo</strong>: <em>PeerInfo</em></p>
+<p><strong>peerId</strong>? : <em>PeerId</em></p>
 </li>
 </ul>
 <hr />
 <h3 id="static-optionsconfig"><code>Static</code> OptionsConfig<a class="headerlink" href="#static-optionsconfig" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>OptionsConfig</strong>: <em>object</em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:18</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:16</p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
@@ -759,7 +799,7 @@
 <p><strong>interval</strong>? : <em>number</em></p>
 </li>
 <li>
-<p><strong>peerInfo</strong>: <em>PeerInfo</em></p>
+<p><strong>peerId</strong>: <em>PeerId</em></p>
 </li>
 <li>
 <p><strong>port</strong>? : <em>number</em></p>
@@ -825,7 +865,7 @@
 <hr />
 <h3 id="static-optionsmodules"><code>Static</code> OptionsModules<a class="headerlink" href="#static-optionsmodules" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>OptionsModules</strong>: <em>object</em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:63</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:61</p>
 <h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
@@ -848,7 +888,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new NodejsNode</strong>(<code>options</code>: <a href="../../interfaces/_packages_lodestar_src_network_nodejs_bundle_.ilibp2poptions/">ILibp2pOptions</a>): <em><a href="./">NodejsNode</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/network/nodejs/bundle.ts#L28">packages/lodestar/src/network/nodejs/bundle.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/network/nodejs/bundle.ts#L32">packages/lodestar/src/network/nodejs/bundle.ts:32</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -869,32 +909,42 @@
 <h3 id="_dht">_dht<a class="headerlink" href="#_dht" title="Permanent link">&para;</a></h3>
 <p>• <strong>_dht</strong>: <em>LibP2pKadDht</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_dht">_dht</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:104</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:117</p>
 <hr />
 <h3 id="_discovery">_discovery<a class="headerlink" href="#_discovery" title="Permanent link">&para;</a></h3>
 <p>• <strong>_discovery</strong>: <em>Map‹"bootstrap" | "mdns" | "discv5", LibP2pBootstrap | LibP2pMdns | Discv5Discovery›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#_discovery">_discovery</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:113</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:127</p>
 <hr />
-<h3 id="peerinfo">peerInfo<a class="headerlink" href="#peerinfo" title="Permanent link">&para;</a></h3>
-<p>• <strong>peerInfo</strong>: <em>PeerInfo</em></p>
-<p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#peerinfo">peerInfo</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:110</p>
+<h3 id="connectionmanager">connectionManager<a class="headerlink" href="#connectionmanager" title="Permanent link">&para;</a></h3>
+<p>• <strong>connectionManager</strong>: <em>ConnectionManager</em></p>
+<p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#connectionmanager">connectionManager</a></em></p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:126</p>
+<hr />
+<h3 id="multiaddrs">multiaddrs<a class="headerlink" href="#multiaddrs" title="Permanent link">&para;</a></h3>
+<p>• <strong>multiaddrs</strong>: <em>Multiaddr[]</em></p>
+<p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#multiaddrs">multiaddrs</a></em></p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:128</p>
+<hr />
+<h3 id="peerid">peerId<a class="headerlink" href="#peerid" title="Permanent link">&para;</a></h3>
+<p>• <strong>peerId</strong>: <em>PeerId</em></p>
+<p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#peerid">peerId</a></em></p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:123</p>
 <hr />
 <h3 id="peerstore">peerStore<a class="headerlink" href="#peerstore" title="Permanent link">&para;</a></h3>
 <p>• <strong>peerStore</strong>: <em>PeerStore</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#peerstore">peerStore</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:111</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:124</p>
 <hr />
 <h3 id="registrar">registrar<a class="headerlink" href="#registrar" title="Permanent link">&para;</a></h3>
 <p>• <strong>registrar</strong>: <em>Registrar</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#registrar">registrar</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:112</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:125</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="dial">dial<a class="headerlink" href="#dial" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>dial</strong>(<code>peerInfo</code>: PeerInfo | PeerId | Multiaddr | string, <code>options?</code>: Object): <em>Promise‹LibP2pConnection | object›</em></p>
+<p>▸ <strong>dial</strong>(<code>peerInfo</code>: PeerId | Multiaddr | string, <code>options?</code>: Object): <em>Promise‹LibP2pConnection | object›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#dial">dial</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:115</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:130</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -906,7 +956,7 @@
 <tbody>
 <tr>
 <td><code>peerInfo</code></td>
-<td>PeerInfo &#124; PeerId &#124; Multiaddr &#124; string</td>
+<td>PeerId &#124; Multiaddr &#124; string</td>
 </tr>
 <tr>
 <td><code>options?</code></td>
@@ -917,9 +967,9 @@
 <p><strong>Returns:</strong> <em>Promise‹LibP2pConnection | object›</em></p>
 <hr />
 <h3 id="dialprotocol">dialProtocol<a class="headerlink" href="#dialprotocol" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>dialProtocol</strong>(<code>peerInfo</code>: PeerInfo | PeerId | Multiaddr | string, <code>protocols</code>: string[] | string, <code>options?</code>: Object): <em>Promise‹LibP2pConnection | object›</em></p>
+<p>▸ <strong>dialProtocol</strong>(<code>peerInfo</code>: PeerId | Multiaddr | string, <code>protocols</code>: string[] | string, <code>options?</code>: Object): <em>Promise‹LibP2pConnection | object›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#dialprotocol">dialProtocol</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:116</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:131</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -931,7 +981,7 @@
 <tbody>
 <tr>
 <td><code>peerInfo</code></td>
-<td>PeerInfo &#124; PeerId &#124; Multiaddr &#124; string</td>
+<td>PeerId &#124; Multiaddr &#124; string</td>
 </tr>
 <tr>
 <td><code>protocols</code></td>
@@ -948,7 +998,7 @@
 <h3 id="handle">handle<a class="headerlink" href="#handle" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>handle</strong>(<code>protocols</code>: string[] | string, <code>handler</code>: function): <em>void</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#handle">handle</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:118</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:133</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>protocols</strong>: <em>string[] | string</em></p>
 <p>▪ <strong>handler</strong>: <em>function</em></p>
@@ -980,9 +1030,9 @@
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="hangup">hangUp<a class="headerlink" href="#hangup" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>hangUp</strong>(<code>peerInfo</code>: PeerInfo | PeerId | Multiaddr | string): <em>Promise‹void›</em></p>
+<p>▸ <strong>hangUp</strong>(<code>peerInfo</code>: PeerId | Multiaddr | string): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#hangup">hangUp</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:117</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:132</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -994,7 +1044,7 @@
 <tbody>
 <tr>
 <td><code>peerInfo</code></td>
-<td>PeerInfo &#124; PeerId &#124; Multiaddr &#124; string</td>
+<td>PeerId &#124; Multiaddr &#124; string</td>
 </tr>
 </tbody>
 </table>
@@ -1003,13 +1053,13 @@
 <h3 id="isstarted">isStarted<a class="headerlink" href="#isstarted" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isStarted</strong>(): <em>boolean</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#isstarted">isStarted</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:120</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:135</p>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
 <h3 id="on">on<a class="headerlink" href="#on" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>on</strong>(<code>event</code>: LibP2p.Events, <code>cb</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#on">on</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:121</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:136</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>LibP2p.Events</em></p>
 <p>▪ <strong>cb</strong>: <em>function</em></p>
@@ -1034,7 +1084,7 @@
 <h3 id="once">once<a class="headerlink" href="#once" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>once</strong>(<code>event</code>: LibP2p.Events, <code>cb</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#once">once</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:122</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:137</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>LibP2p.Events</em></p>
 <p>▪ <strong>cb</strong>: <em>function</em></p>
@@ -1057,9 +1107,9 @@
 <p><strong>Returns:</strong> <em>this</em></p>
 <hr />
 <h3 id="ping">ping<a class="headerlink" href="#ping" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>ping</strong>(<code>peerInfo</code>: PeerInfo | PeerId | Multiaddr | string): <em>Promise‹void›</em></p>
+<p>▸ <strong>ping</strong>(<code>peerInfo</code>: PeerId | Multiaddr | string): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#ping">ping</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:124</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:139</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1071,7 +1121,7 @@
 <tbody>
 <tr>
 <td><code>peerInfo</code></td>
-<td>PeerInfo &#124; PeerId &#124; Multiaddr &#124; string</td>
+<td>PeerId &#124; Multiaddr &#124; string</td>
 </tr>
 </tbody>
 </table>
@@ -1080,7 +1130,7 @@
 <h3 id="removelistener">removeListener<a class="headerlink" href="#removelistener" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>removeListener</strong>(<code>event</code>: LibP2p.Events, <code>cb</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#removelistener">removeListener</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:123</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:138</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>LibP2p.Events</em></p>
 <p>▪ <strong>cb</strong>: <em>function</em></p>
@@ -1105,19 +1155,19 @@
 <h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#start">start</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:125</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:140</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#stop">stop</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:126</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:141</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="unhandle">unhandle<a class="headerlink" href="#unhandle" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>unhandle</strong>(<code>protocols</code>: string[] | string): <em>void</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#unhandle">unhandle</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:119</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:134</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1138,7 +1188,7 @@
 <h3 id="static-create"><code>Static</code> create<a class="headerlink" href="#static-create" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>create</strong>(<code>options</code>: LibP2p.Options): <em>Promise‹LibP2p›</em></p>
 <p><em>Inherited from <a href="./">NodejsNode</a>.<a href="./#static-create">create</a></em></p>
-<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:108</p>
+<p>Defined in node_modules/libp2p-ts/types/libp2p/index.d.ts:121</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

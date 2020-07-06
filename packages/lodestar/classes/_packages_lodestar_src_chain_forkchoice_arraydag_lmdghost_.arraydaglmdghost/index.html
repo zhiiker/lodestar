@@ -508,8 +508,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#private-getancestor" class="md-nav__link">
-    Private getAncestor
+  <a href="#getancestor" class="md-nav__link">
+    getAncestor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-getancestorhex" class="md-nav__link">
+    Private getAncestorHex
   </a>
   
 </li>
@@ -787,7 +794,8 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <li><a href="./#addchild">addChild</a></li>
 <li><a href="./#private-betterthan">betterThan</a></li>
 <li><a href="./#ensurecorrectbesttargets">ensureCorrectBestTargets</a></li>
-<li><a href="./#private-getancestor">getAncestor</a></li>
+<li><a href="./#getancestor">getAncestor</a></li>
+<li><a href="./#private-getancestorhex">getAncestorHex</a></li>
 <li><a href="./#getblocksummariesatslot">getBlockSummariesAtSlot</a></li>
 <li><a href="./#getblocksummarybyblockroot">getBlockSummaryByBlockRoot</a></li>
 <li><a href="./#getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot</a></li>
@@ -822,7 +830,7 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new ArrayDagLMDGHOST</strong>(<code>config</code>: IBeaconConfig): <em><a href="./">ArrayDagLMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L156">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:156</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L156">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:156</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -842,54 +850,54 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-aggregator"><code>Private</code> aggregator<a class="headerlink" href="#private-aggregator" title="Permanent link">&para;</a></h3>
 <p>• <strong>aggregator</strong>: <em><a href="../_packages_lodestar_src_chain_forkchoice_attestationaggregator_.attestationaggregator/">AttestationAggregator</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L130">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:130</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L130">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:130</a></em></p>
 <p>Aggregated attestations</p>
 <hr />
 <h3 id="private-bestjustifiedcheckpoint"><code>Private</code> bestJustifiedCheckpoint<a class="headerlink" href="#private-bestjustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>• <strong>bestJustifiedCheckpoint</strong>: <em>Checkpoint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L154">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:154</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L154">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:154</a></em></p>
 <p>Best justified checkpoint.</p>
 <hr />
 <h3 id="private-clock"><code>Private</code> clock<a class="headerlink" href="#private-clock" title="Permanent link">&para;</a></h3>
 <p>• <strong>clock</strong>: <em><a href="../../interfaces/_packages_lodestar_src_chain_clock_interface_.ibeaconclock/">IBeaconClock</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L156">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:156</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L156">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:156</a></em></p>
 <hr />
 <h3 id="private-config"><code>Private</code> config<a class="headerlink" href="#private-config" title="Permanent link">&para;</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L123">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:123</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L123">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:123</a></em></p>
 <hr />
 <h3 id="private-finalized"><code>Private</code> finalized<a class="headerlink" href="#private-finalized" title="Permanent link">&para;</a></h3>
 <p>• <strong>finalized</strong>: <em>object | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L145">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:145</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L145">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:145</a></em></p>
 <p>Last finalized block</p>
 <hr />
 <h3 id="private-genesistime"><code>Private</code> genesisTime<a class="headerlink" href="#private-genesistime" title="Permanent link">&para;</a></h3>
 <p>• <strong>genesisTime</strong>: <em>Number64</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L124">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:124</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L124">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:124</a></em></p>
 <hr />
 <h3 id="private-justified"><code>Private</code> justified<a class="headerlink" href="#private-justified" title="Permanent link">&para;</a></h3>
 <p>• <strong>justified</strong>: <em>object | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L150">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:150</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L150">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:150</a></em></p>
 <p>Last justified block</p>
 <hr />
 <h3 id="private-nodeindices"><code>Private</code> nodeIndices<a class="headerlink" href="#private-nodeindices" title="Permanent link">&para;</a></h3>
 <p>• <strong>nodeIndices</strong>: <em>Map‹<a href="../../modules/_packages_lodestar_src_chain_forkchoice_interface_/#roothex">RootHex</a>, number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L140">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:140</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L140">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:140</a></em></p>
 <p>A map with key as root hex and value as index in <code>nodes</code> array</p>
 <hr />
 <h3 id="private-nodes"><code>Private</code> nodes<a class="headerlink" href="#private-nodes" title="Permanent link">&para;</a></h3>
 <p>• <strong>nodes</strong>: <em><a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L135">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:135</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L135">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:135</a></em></p>
 <p>Recently seen blocks, pruned up to last finalized block</p>
 <hr />
 <h3 id="private-synced"><code>Private</code> synced<a class="headerlink" href="#private-synced" title="Permanent link">&para;</a></h3>
 <p>• <strong>synced</strong>: <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L155">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:155</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L155">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:155</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="addattestation">addAttestation<a class="headerlink" href="#addattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>addAttestation</strong>(<code>blockRootBuf</code>: Uint8Array, <code>attester</code>: ValidatorIndex, <code>weight</code>: Gwei): <em>void</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L298">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:298</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L298">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:298</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -917,7 +925,7 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <hr />
 <h3 id="addblock">addBlock<a class="headerlink" href="#addblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>addBlock</strong>(<code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L193">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:193</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L193">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:193</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -958,7 +966,7 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <hr />
 <h3 id="addchild">addChild<a class="headerlink" href="#addchild" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>addChild</strong>(<code>parentIndex</code>: number, <code>childIndex</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L264">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:264</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L264">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:264</a></em></p>
 <p>Add child node.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -983,7 +991,7 @@ Latest Message-Driven Greedy Heaviest Observed SubTree</p>
 <hr />
 <h3 id="private-betterthan"><code>Private</code> betterThan<a class="headerlink" href="#private-betterthan" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>betterThan</strong>(<code>nodeIndex</code>: number, <code>otherIndex</code>: number): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L493">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:493</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L503">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:503</a></em></p>
 <p>Determine which node is 'better'
 Weighing system: correct justified/finalized epoch first, then the  internal weight
 then lexographically higher root</p>
@@ -1010,12 +1018,41 @@ then lexographically higher root</p>
 <hr />
 <h3 id="ensurecorrectbesttargets">ensureCorrectBestTargets<a class="headerlink" href="#ensurecorrectbesttargets" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>ensureCorrectBestTargets</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L290">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:290</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L290">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:290</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
-<h3 id="private-getancestor"><code>Private</code> getAncestor<a class="headerlink" href="#private-getancestor" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getAncestor</strong>(<code>root</code>: <a href="../../modules/_packages_lodestar_src_chain_forkchoice_interface_/#roothex">RootHex</a>, <code>slot</code>: Slot): <em><a href="../../modules/_packages_lodestar_src_chain_forkchoice_interface_/#roothex">RootHex</a> | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L566">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:566</a></em></p>
+<h3 id="getancestor">getAncestor<a class="headerlink" href="#getancestor" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAncestor</strong>(<code>root</code>: Uint8Array, <code>slot</code>: Slot): <em>Uint8Array | null</em></p>
+<p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L422">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:422</a></em></p>
+<p>Get ancestor of a root until a slot</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>root</code></td>
+<td>Uint8Array</td>
+<td>the starting root to look for ancestor</td>
+</tr>
+<tr>
+<td><code>slot</code></td>
+<td>Slot</td>
+<td>target slot - normally slot &lt; slotOf(root)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Uint8Array | null</em></p>
+<hr />
+<h3 id="private-getancestorhex"><code>Private</code> getAncestorHex<a class="headerlink" href="#private-getancestorhex" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAncestorHex</strong>(<code>root</code>: <a href="../../modules/_packages_lodestar_src_chain_forkchoice_interface_/#roothex">RootHex</a>, <code>slot</code>: Slot): <em><a href="../../modules/_packages_lodestar_src_chain_forkchoice_interface_/#roothex">RootHex</a> | null</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L576">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:576</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1040,7 +1077,7 @@ then lexographically higher root</p>
 <h3 id="getblocksummariesatslot">getBlockSummariesAtSlot<a class="headerlink" href="#getblocksummariesatslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L369">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:369</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L369">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:369</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1061,7 +1098,7 @@ then lexographically higher root</p>
 <h3 id="getblocksummarybyblockroot">getBlockSummaryByBlockRoot<a class="headerlink" href="#getblocksummarybyblockroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockSummaryByBlockRoot</strong>(<code>blockRoot</code>: Uint8Array): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a> | null</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L375">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:375</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L375">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:375</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1082,7 +1119,7 @@ then lexographically higher root</p>
 <h3 id="getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot<a class="headerlink" href="#getcanonicalblocksummaryatslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a> | null</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L354">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:354</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L354">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:354</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1103,12 +1140,12 @@ then lexographically higher root</p>
 <h3 id="getfinalized">getFinalized<a class="headerlink" href="#getfinalized" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalized</strong>(): <em>Checkpoint</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L410">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:410</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L410">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:410</a></em></p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="private-getfinalizedcheckpoint"><code>Private</code> getFinalizedCheckpoint<a class="headerlink" href="#private-getfinalizedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalizedCheckpoint</strong>(): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.hexcheckpoint/">HexCheckpoint</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L543">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:543</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L553">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:553</a></em></p>
 <p>Don't want to check the initial justified/finalized checkpoint for the 1st epoch
 because initial state does not have checkpoints in database.
 First addBlock (for genesis block) call has checkpoints but from the 2nd call in the
@@ -1118,12 +1155,12 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <h3 id="getjustified">getJustified<a class="headerlink" href="#getjustified" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getJustified</strong>(): <em>Checkpoint</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L403">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:403</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L403">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:403</a></em></p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="private-getjustifiedcheckpoint"><code>Private</code> getJustifiedCheckpoint<a class="headerlink" href="#private-getjustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getJustifiedCheckpoint</strong>(): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.hexcheckpoint/">HexCheckpoint</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L530">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:530</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L540">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:540</a></em></p>
 <p>Don't want to check the initial justified/finalized checkpoint for the 1st epoch
 because initial state does not have checkpoints in database.
 First addBlock (for genesis block) call has checkpoints but from the 2nd call in the
@@ -1132,7 +1169,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="getnode">getNode<a class="headerlink" href="#getnode" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getNode</strong>(<code>blockRootBuf</code>: Uint8Array): <em><a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L275">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:275</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L275">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:275</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1153,7 +1190,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: Uint8Array): <em>boolean</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L380">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:380</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L380">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:380</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1174,35 +1211,35 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <h3 id="head">head<a class="headerlink" href="#head" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>head</strong>(): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a></em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L320">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:320</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L320">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:320</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a></em></p>
 <hr />
 <h3 id="headblockroot">headBlockRoot<a class="headerlink" href="#headblockroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>headBlockRoot</strong>(): <em>Uint8Array</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L335">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:335</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L335">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:335</a></em></p>
 <p><strong>Returns:</strong> <em>Uint8Array</em></p>
 <hr />
 <h3 id="headblockslot">headBlockSlot<a class="headerlink" href="#headblockslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>headBlockSlot</strong>(): <em>Slot</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L340">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:340</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L340">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:340</a></em></p>
 <p><strong>Returns:</strong> <em>Slot</em></p>
 <hr />
 <h3 id="headnode">headNode<a class="headerlink" href="#headnode" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>headNode</strong>(): <em><a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L327">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:327</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L327">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:327</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a></em></p>
 <hr />
 <h3 id="headstateroot">headStateRoot<a class="headerlink" href="#headstateroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>headStateRoot</strong>(): <em>Uint8Array</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L345">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:345</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L345">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:345</a></em></p>
 <p><strong>Returns:</strong> <em>Uint8Array</em></p>
 <hr />
 <h3 id="isbestchild">isBestChild<a class="headerlink" href="#isbestchild" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isBestChild</strong>(<code>parent</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>, <code>child</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L285">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:285</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L285">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:285</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1226,7 +1263,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="private-isbestchildofparent"><code>Private</code> isBestChildOfParent<a class="headerlink" href="#private-isbestchildofparent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isBestChildOfParent</strong>(<code>node</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L515">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:515</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L525">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:525</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1246,7 +1283,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="isbesttarget">isBestTarget<a class="headerlink" href="#isbesttarget" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isBestTarget</strong>(<code>parent</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>, <code>child</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L281">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:281</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L281">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:281</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1270,7 +1307,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="private-iscandidateforbesttarget"><code>Private</code> isCandidateForBestTarget<a class="headerlink" href="#private-iscandidateforbesttarget" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isCandidateForBestTarget</strong>(<code>nodeIndex</code>: number): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L437">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:437</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L447">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:447</a></em></p>
 <p>Check if a leaf is eligible to be a head</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1291,7 +1328,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="private-onaddweight"><code>Private</code> onAddWeight<a class="headerlink" href="#private-onaddweight" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onAddWeight</strong>(<code>nodeIndex</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L451">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:451</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L461">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:461</a></em></p>
 <p>Update parent best child / best target in the added weight case</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1312,7 +1349,7 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="private-onremoveweight"><code>Private</code> onRemoveWeight<a class="headerlink" href="#private-onremoveweight" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onRemoveWeight</strong>(<code>nodeIndex</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L467">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:467</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L477">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:477</a></em></p>
 <p>Update parent best child / best target in the removed weight case</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1333,12 +1370,12 @@ first epoch it has ZERO finalized/justified checkpoints.</p>
 <hr />
 <h3 id="ontick">onTick<a class="headerlink" href="#ontick" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onTick</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L185">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:185</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L185">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:185</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="private-propagateweightchange"><code>Private</code> propagateWeightChange<a class="headerlink" href="#private-propagateweightchange" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>propagateWeightChange</strong>(<code>nodeIndex</code>: number, <code>delta</code>: Gwei): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L423">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:423</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L433">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:433</a></em></p>
 <p>Update node weight.
 delta = 0: node's best target's epochs are conflict to the store or become conform to the store.
 delta &gt; 0: propagate onAddWeight
@@ -1366,12 +1403,12 @@ delta &lt; 0: propagate onRemoveWeight</p>
 <hr />
 <h3 id="private-prune"><code>Private</code> prune<a class="headerlink" href="#private-prune" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>prune</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L588">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:588</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L598">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:598</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="private-setfinalized"><code>Private</code> setFinalized<a class="headerlink" href="#private-setfinalized" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setFinalized</strong>(<code>checkpoint</code>: Checkpoint): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L550">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:550</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L560">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:560</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1391,7 +1428,7 @@ delta &lt; 0: propagate onRemoveWeight</p>
 <hr />
 <h3 id="private-setjustified"><code>Private</code> setJustified<a class="headerlink" href="#private-setjustified" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setJustified</strong>(<code>checkpoint</code>: Checkpoint): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L559">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:559</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L569">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:569</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1411,7 +1448,7 @@ delta &lt; 0: propagate onRemoveWeight</p>
 <hr />
 <h3 id="shouldupdatejustifiedcheckpoint">shouldUpdateJustifiedCheckpoint<a class="headerlink" href="#shouldupdatejustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>shouldUpdateJustifiedCheckpoint</strong>(<code>blockRoot</code>: Uint8Array): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L386">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:386</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L386">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:386</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1432,7 +1469,7 @@ delta &lt; 0: propagate onRemoveWeight</p>
 <h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>start</strong>(<code>genesisTime</code>: number, <code>clock</code>: <a href="../../interfaces/_packages_lodestar_src_chain_clock_interface_.ibeaconclock/">IBeaconClock</a>): <em>Promise‹void›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L174">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:174</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L174">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:174</a></em></p>
 <p>Start method, should not wait for it.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1461,17 +1498,17 @@ delta &lt; 0: propagate onRemoveWeight</p>
 <h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
 <p><em>Implementation of <a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.ilmdghost/">ILMDGHOST</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L181">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:181</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L181">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:181</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="syncchanges">syncChanges<a class="headerlink" href="#syncchanges" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>syncChanges</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L307">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:307</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L307">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:307</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="private-toblocksummary"><code>Private</code> toBlockSummary<a class="headerlink" href="#private-toblocksummary" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>toBlockSummary</strong>(<code>node</code>: <a href="../_packages_lodestar_src_chain_forkchoice_arraydag_lmdghost_.node/">Node</a>): <em><a href="../../interfaces/_packages_lodestar_src_chain_forkchoice_interface_.blocksummary/">BlockSummary</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L605">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:605</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts#L615">packages/lodestar/src/chain/forkChoice/arrayDag/lmdGhost.ts:615</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

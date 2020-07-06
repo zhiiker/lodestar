@@ -348,6 +348,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#computenewstateroot" class="md-nav__link">
+    computeNewStateRoot
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -379,11 +386,12 @@
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#assembleblock">assembleBlock</a></li>
+<li><a href="./#computenewstateroot">computeNewStateRoot</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="assembleblock">assembleBlock<a class="headerlink" href="#assembleblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/_packages_lodestar_src_chain_interface_.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/_packages_lodestar_src_db_api_beacon_interface_.ibeacondb/">IBeaconDb</a>, <code>slot</code>: Slot, <code>proposerIndex</code>: ValidatorIndex, <code>randaoReveal</code>: Bytes96, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/1b2f93f20/packages/lodestar/src/chain/factory/block/index.ts#L15">packages/lodestar/src/chain/factory/block/index.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -432,6 +440,34 @@
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹BeaconBlock | null›</em></p>
+<hr />
+<h3 id="computenewstateroot">computeNewStateRoot<a class="headerlink" href="#computenewstateroot" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em>Root</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/fa268ec44/packages/lodestar/src/chain/factory/block/index.ts#L50">packages/lodestar/src/chain/factory/block/index.ts:50</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>stateContext</code></td>
+<td>IStateContext</td>
+</tr>
+<tr>
+<td><code>block</code></td>
+<td>BeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Root</em></p>
                 
               
               
