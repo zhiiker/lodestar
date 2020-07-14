@@ -329,8 +329,35 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#const-defaultvalidatorpaths" class="md-nav__link">
+    Const defaultValidatorPaths
   </a>
   
 </li>
@@ -349,8 +376,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#processvalidatorpaths" class="md-nav__link">
-    processValidatorPaths
+  <a href="#getvalidatorpaths" class="md-nav__link">
+    getValidatorPaths
   </a>
   
 </li>
@@ -387,15 +414,31 @@
 <ul>
 <li><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a></li>
 </ul>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#const-defaultvalidatorpaths">defaultValidatorPaths</a></li>
+</ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#processvalidatorpaths">processValidatorPaths</a></li>
+<li><a href="./#getvalidatorpaths">getValidatorPaths</a></li>
 </ul>
+<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
+<h3 id="const-defaultvalidatorpaths"><code>Const</code> defaultValidatorPaths<a class="headerlink" href="#const-defaultvalidatorpaths" title="Permanent link">&para;</a></h3>
+<p>• <strong>defaultValidatorPaths</strong>: <em><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a></em> = getValidatorPaths({rootDir: "$rootDir"})</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/cmds/validator/paths.ts#L31">packages/lodestar-cli/src/cmds/validator/paths.ts:31</a></em></p>
+<p>Constructs representations of the path structure to show in command's description</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="processvalidatorpaths">processValidatorPaths<a class="headerlink" href="#processvalidatorpaths" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>processValidatorPaths</strong>(<code>options</code>: <a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a>): <em>Required‹<a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/validator/paths.ts#L14">packages/lodestar-cli/src/cmds/validator/paths.ts:14</a></em></p>
-<p>Defines the dynamic path structure of the validator files</p>
+<h3 id="getvalidatorpaths">getValidatorPaths<a class="headerlink" href="#getvalidatorpaths" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getValidatorPaths</strong>(<code>options</code>: Partial‹<a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a>› &amp; Pick‹<a href="../../interfaces/_packages_lodestar_cli_src_options_.iglobalargs/">IGlobalArgs</a>, "rootDir"›): <em><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/cmds/validator/paths.ts#L19">packages/lodestar-cli/src/cmds/validator/paths.ts:19</a></em></p>
+<p>Defines the path structure of the validator files</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">$validatorRootDir</span>
+└── validator-db
+    └── 0x8e41b969493454318c27ec6fac90645769331c07ebc8db5037...
+        └── <span class="o">(</span>db files<span class="o">)</span>
+</code></pre></div>
+
+
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -407,11 +450,11 @@
 <tbody>
 <tr>
 <td><code>options</code></td>
-<td><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a></td>
+<td>Partial‹<a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a>› &amp; Pick‹<a href="../../interfaces/_packages_lodestar_cli_src_options_.iglobalargs/">IGlobalArgs</a>, "rootDir"›</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Required‹<a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a>›</em></p>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_paths_.ivalidatorpaths/">IValidatorPaths</a></em></p>
                 
               
               

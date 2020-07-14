@@ -349,29 +349,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#optional-dbdir" class="md-nav__link">
-    Optional dbDir
+  <a href="#validatordbdir" class="md-nav__link">
+    validatorDbDir
+  </a>
+  
+    <nav class="md-nav" aria-label="validatorDbDir">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#optional-keystoresdir" class="md-nav__link">
-    Optional keystoresDir
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-secretsdir" class="md-nav__link">
-    Optional secretsDir
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-validatordir" class="md-nav__link">
-    Optional validatorDir
+  <a href="#validatorsdbdir" class="md-nav__link">
+    validatorsDbDir
   </a>
   
 </li>
@@ -405,34 +404,39 @@
 <h1 id="interface-ivalidatorpaths">Interface: IValidatorPaths<a class="headerlink" href="#interface-ivalidatorpaths" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li>object</li>
+<li><strong>IValidatorPaths</strong></li>
 </ul>
-<p>↳ <strong>IValidatorPaths</strong></p>
-<p>↳ <a href="../_packages_lodestar_cli_src_cmds_validator_options_.ivalidatorclioptions/">IValidatorCliOptions</a></p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#optional-dbdir">dbDir</a></li>
-<li><a href="./#optional-keystoresdir">keystoresDir</a></li>
-<li><a href="./#optional-secretsdir">secretsDir</a></li>
-<li><a href="./#optional-validatordir">validatorDir</a></li>
+<li><a href="./#validatordbdir">validatorDbDir</a></li>
+<li><a href="./#validatorsdbdir">validatorsDbDir</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="optional-dbdir"><code>Optional</code> dbDir<a class="headerlink" href="#optional-dbdir" title="Permanent link">&para;</a></h3>
-<p>• <strong>dbDir</strong>? : <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/validator/paths.ts#L6">packages/lodestar-cli/src/cmds/validator/paths.ts:6</a></em></p>
+<h3 id="validatordbdir">validatorDbDir<a class="headerlink" href="#validatordbdir" title="Permanent link">&para;</a></h3>
+<p>• <strong>validatorDbDir</strong>: <em>function</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/cmds/validator/paths.ts#L6">packages/lodestar-cli/src/cmds/validator/paths.ts:6</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<p>▸ (<code>pubkey</code>: string): <em>string</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pubkey</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h3 id="optional-keystoresdir"><code>Optional</code> keystoresDir<a class="headerlink" href="#optional-keystoresdir" title="Permanent link">&para;</a></h3>
-<p>• <strong>keystoresDir</strong>? : <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/validator/paths.ts#L7">packages/lodestar-cli/src/cmds/validator/paths.ts:7</a></em></p>
-<hr />
-<h3 id="optional-secretsdir"><code>Optional</code> secretsDir<a class="headerlink" href="#optional-secretsdir" title="Permanent link">&para;</a></h3>
-<p>• <strong>secretsDir</strong>? : <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/validator/paths.ts#L8">packages/lodestar-cli/src/cmds/validator/paths.ts:8</a></em></p>
-<hr />
-<h3 id="optional-validatordir"><code>Optional</code> validatorDir<a class="headerlink" href="#optional-validatordir" title="Permanent link">&para;</a></h3>
-<p>• <strong>validatorDir</strong>? : <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/validator/paths.ts#L5">packages/lodestar-cli/src/cmds/validator/paths.ts:5</a></em></p>
+<h3 id="validatorsdbdir">validatorsDbDir<a class="headerlink" href="#validatorsdbdir" title="Permanent link">&para;</a></h3>
+<p>• <strong>validatorsDbDir</strong>: <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/cmds/validator/paths.ts#L5">packages/lodestar-cli/src/cmds/validator/paths.ts:5</a></em></p>
                 
               
               

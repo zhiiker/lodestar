@@ -11,7 +11,7 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/modules/_packages_lodestar_cli_src_cmds_account_utils_unlockkeypair_/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/modules/_packages_lodestar_cli_src_util_fs_/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>packages lodestar cli src cmds account utils unlockkeypair - Lodestar documentation</title>
+        <title>packages lodestar cli src util fs - Lodestar documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#external-module-packageslodestar-clisrccmdsaccountutilsunlockkeypair" class="md-skip">
+        <a href="#external-module-packageslodestar-clisrcutilfs" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-               packages lodestar cli src cmds account utils unlockkeypair 
+               packages lodestar cli src util fs 
             
           </span>
         </div>
@@ -342,22 +342,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#readpasswordfile" class="md-nav__link">
-    readPasswordFile
+  <a href="#ensuredirexists" class="md-nav__link">
+    ensureDirExists
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#unlockdirkeypairs" class="md-nav__link">
-    unlockDirKeypairs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unlockkeypair" class="md-nav__link">
-    unlockKeypair
+  <a href="#writefile600perm" class="md-nav__link">
+    writeFile600Perm
   </a>
   
 </li>
@@ -379,7 +372,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar-cli/modules/_packages_lodestar_cli_src_cmds_account_utils_unlockkeypair_.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar-cli/modules/_packages_lodestar_cli_src_util_fs_.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -387,51 +380,43 @@
                   
                 
                 
-                <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar-cli/src/cmds/account/utils/unlockKeypair"</a></p>
-<h1 id="external-module-packageslodestar-clisrccmdsaccountutilsunlockkeypair">External module: "packages/lodestar-cli/src/cmds/account/utils/unlockKeypair"<a class="headerlink" href="#external-module-packageslodestar-clisrccmdsaccountutilsunlockkeypair" title="Permanent link">&para;</a></h1>
+                <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar-cli/src/util/fs"</a></p>
+<h1 id="external-module-packageslodestar-clisrcutilfs">External module: "packages/lodestar-cli/src/util/fs"<a class="headerlink" href="#external-module-packageslodestar-clisrcutilfs" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#readpasswordfile">readPasswordFile</a></li>
-<li><a href="./#unlockdirkeypairs">unlockDirKeypairs</a></li>
-<li><a href="./#unlockkeypair">unlockKeypair</a></li>
+<li><a href="./#ensuredirexists">ensureDirExists</a></li>
+<li><a href="./#writefile600perm">writeFile600Perm</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="readpasswordfile">readPasswordFile<a class="headerlink" href="#readpasswordfile" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>readPasswordFile</strong>(<code>keystore</code>: Keystore, <code>secretsDir</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts#L12">packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts:12</a></em></p>
-<p>Name mapping of keystore to password file
-Note: to be defined in EIP-2334</p>
+<h3 id="ensuredirexists">ensureDirExists<a class="headerlink" href="#ensuredirexists" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>ensureDirExists</strong>(<code>dirPath</code>: string): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/util/fs.ts#L16">packages/lodestar-cli/src/util/fs.ts:16</a></em></p>
+<p>If <code>dirPath</code> does not exist, creates a directory recursively</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>keystore</code></td>
-<td>Keystore</td>
-<td>Encrypted keystore object</td>
-</tr>
-<tr>
-<td><code>secretsDir</code></td>
+<td><code>dirPath</code></td>
 <td>string</td>
-<td>Directory containing keystore passwords</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em></p>
+<p><strong>Returns:</strong> <em>void</em></p>
 <hr />
-<h3 id="unlockdirkeypairs">unlockDirKeypairs<a class="headerlink" href="#unlockdirkeypairs" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>unlockDirKeypairs</strong>(<code>__namedParameters</code>: object): <em>Keypair[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts#L54">packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts:54</a></em></p>
-<p>Opens all the validator directories and decrypts the validator keypairs</p>
+<h3 id="writefile600perm">writeFile600Perm<a class="headerlink" href="#writefile600perm" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>writeFile600Perm</strong>(<code>filepath</code>: string, <code>data</code>: string): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/693b3f1d1/packages/lodestar-cli/src/util/fs.ts#L8">packages/lodestar-cli/src/util/fs.ts:8</a></em></p>
+<p>Create a file with <code>600 (-rw-------)</code> permissions
+<em>Note</em>: 600: Owner has full read and write access to the file,
+while no other user can access the file</p>
 <p><strong>Parameters:</strong></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
 <thead>
 <tr>
@@ -441,42 +426,16 @@ Note: to be defined in EIP-2334</p>
 </thead>
 <tbody>
 <tr>
-<td><code>keystoresDir</code></td>
+<td><code>filepath</code></td>
 <td>string</td>
 </tr>
 <tr>
-<td><code>secretsDir</code></td>
-<td>string</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Keypair[]</em></p>
-<hr />
-<h3 id="unlockkeypair">unlockKeypair<a class="headerlink" href="#unlockkeypair" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>unlockKeypair</strong>(<code>__namedParameters</code>: object): <em>Keypair</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4e2e4bb60/packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts#L31">packages/lodestar-cli/src/cmds/account/utils/unlockKeypair.ts:31</a></em></p>
-<p>Opens a validator directory and decrypts its keypair</p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>keystorePath</code></td>
-<td>string</td>
-</tr>
-<tr>
-<td><code>secretsDir</code></td>
+<td><code>data</code></td>
 <td>string</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Keypair</em></p>
+<p><strong>Returns:</strong> <em>void</em></p>
                 
               
               
