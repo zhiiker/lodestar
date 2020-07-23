@@ -11,7 +11,7 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/_packages_lodestar_src_api_rest_routes_beacon_genesistime_/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/_packages_lodestar_src_api_rest_controllers_beacon_pool_getpoolattestations_/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>packages lodestar src api rest routes beacon genesistime - Lodestar documentation</title>
+        <title>packages lodestar src api rest controllers beacon pool getpoolattestations - Lodestar documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#external-module-packageslodestarsrcapirestroutesbeacongenesistime" class="md-skip">
+        <a href="#external-module-packageslodestarsrcapirestcontrollersbeaconpoolgetpoolattestations" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-               packages lodestar src api rest routes beacon genesistime 
+               packages lodestar src api rest controllers beacon pool getpoolattestations 
             
           </span>
         </div>
@@ -334,8 +334,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#object-literals" class="md-nav__link">
+    Object literals
   </a>
   
 </li>
@@ -346,16 +346,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#functions_1" class="md-nav__link">
-    Functions
+  <a href="#object-literals_1" class="md-nav__link">
+    Object literals
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Object literals">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#const-registergenesistimeendpoint" class="md-nav__link">
-    Const registerGenesisTimeEndpoint
+  <a href="#const-getpoolattestations" class="md-nav__link">
+    Const getPoolAttestations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpoolattestations-object" class="md-nav__link">
+    ▪ getPoolAttestations: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler" class="md-nav__link">
+    handler
   </a>
   
 </li>
@@ -377,7 +398,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/modules/_packages_lodestar_src_api_rest_routes_beacon_genesistime_.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar/modules/_packages_lodestar_src_api_rest_controllers_beacon_pool_getpoolattestations_.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -385,20 +406,24 @@
                   
                 
                 
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar/src/api/rest/routes/beacon/genesisTime"</a></p>
-<h1 id="external-module-packageslodestarsrcapirestroutesbeacongenesistime">External module: "packages/lodestar/src/api/rest/routes/beacon/genesisTime"<a class="headerlink" href="#external-module-packageslodestarsrcapirestroutesbeacongenesistime" title="Permanent link">&para;</a></h1>
+                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations"</a></p>
+<h1 id="external-module-packageslodestarsrcapirestcontrollersbeaconpoolgetpoolattestations">External module: "packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations"<a class="headerlink" href="#external-module-packageslodestarsrcapirestcontrollersbeaconpoolgetpoolattestations" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
+<h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#const-registergenesistimeendpoint">registerGenesisTimeEndpoint</a></li>
+<li><a href="./#const-getpoolattestations">getPoolAttestations</a></li>
 </ul>
-<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-registergenesistimeendpoint"><code>Const</code> registerGenesisTimeEndpoint<a class="headerlink" href="#const-registergenesistimeendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerGenesisTimeEndpoint</strong>(<code>server</code>: <a href="../../interfaces/_packages_lodestar_src_api_rest_index_._fastify_.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/39e717e90/packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts#L4">packages/lodestar/src/api/rest/routes/beacon/genesisTime.ts:4</a></em></p>
+<h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
+<h3 id="const-getpoolattestations"><code>Const</code> getPoolAttestations<a class="headerlink" href="#const-getpoolattestations" title="Permanent link">&para;</a></h3>
+<h3 id="getpoolattestations-object">▪ <strong>getPoolAttestations</strong>: <em>object</em><a class="headerlink" href="#getpoolattestations-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163c516f3/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:4</a></em></p>
+<h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/pool/attestations"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163c516f3/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:6</a></em></p>
+<h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163c516f3/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:8</a></em></p>
 <p><strong>Parameters:</strong></p>
-<p>▪ <strong>server</strong>: <em><a href="../../interfaces/_packages_lodestar_src_api_rest_index_._fastify_.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
 <thead>
 <tr>
@@ -408,16 +433,59 @@
 </thead>
 <tbody>
 <tr>
-<td><code>api</code></td>
-<td>object</td>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
 </tr>
 <tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>void</em></p>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/163c516f3/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L20">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:20</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>querystring</strong>: <em>object</em></p>
+<ul>
+<li>
+<p><strong>required</strong>: <em>undefined[]</em> = []</p>
+</li>
+<li>
+<p><strong>type</strong>: <em>string</em> = "object"</p>
+</li>
+<li>
+<p><strong>properties</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>committee_index</strong>: <em>object</em></p>
+<ul>
+<li>
+<p><strong>min</strong>: <em>number</em> = 0</p>
+</li>
+<li>
+<p><strong>types</strong>: <em>string</em> = "number"</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>slot</strong>: <em>object</em></p>
+<ul>
+<li>
+<p><strong>min</strong>: <em>number</em> = 0</p>
+</li>
+<li>
+<p><strong>types</strong>: <em>string</em> = "number"</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
                 
               
               
