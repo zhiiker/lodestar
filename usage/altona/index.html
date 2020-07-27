@@ -474,13 +474,7 @@
   <span class="p">},</span>
   <span class="nt">&quot;chain&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;preset&quot;</span><span class="p">:</span> <span class="s2">&quot;mainnet&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;genesisStateFile&quot;</span><span class="p">:</span> <span class="s2">&quot;.altona/beacon/genesis.ssz&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;MIN_GENESIS_TIME&quot;</span><span class="p">:</span> <span class="mi">1593433800</span><span class="p">,</span>
-        <span class="nt">&quot;MIN_GENESIS_ACTIVE_VALIDATOR_COUNT&quot;</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
-        <span class="nt">&quot;GENESIS_DELAY&quot;</span><span class="p">:</span> <span class="mi">172800</span><span class="p">,</span> 
-        <span class="nt">&quot;GENESIS_FORK_VERSION&quot;</span><span class="p">:</span> <span class="s2">&quot;0x00000121&quot;</span>
-    <span class="p">}</span>
+
   <span class="p">},</span>
   <span class="nt">&quot;eth1&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -493,6 +487,7 @@
       <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x16e82D77882A663454Ef92806b7DeCa1D394810f&quot;</span>
     <span class="p">}</span>
   <span class="p">},</span>
+  <span class="nt">&quot;genesisStateFile&quot;</span><span class="p">:</span> <span class="s2">&quot;.altona/beacon/genesis.ssz&quot;</span><span class="p">,</span>
   <span class="nt">&quot;logger&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;chain&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="s2">&quot;verbose&quot;</span>
@@ -540,6 +535,12 @@
     <span class="nt">&quot;localMultiaddrs&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="s2">&quot;/ip4/0.0.0.0/tcp/30607&quot;</span>
     <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;MIN_GENESIS_TIME&quot;</span><span class="p">:</span> <span class="mi">1593433800</span><span class="p">,</span>
+    <span class="nt">&quot;MIN_GENESIS_ACTIVE_VALIDATOR_COUNT&quot;</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+    <span class="nt">&quot;GENESIS_DELAY&quot;</span><span class="p">:</span> <span class="mi">172800</span><span class="p">,</span> 
+    <span class="nt">&quot;GENESIS_FORK_VERSION&quot;</span><span class="p">:</span> <span class="s2">&quot;0x00000121&quot;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -568,7 +569,7 @@
 <div class="codehilite"><pre><span></span><code>yarn run cli beacon init <span class="se">\</span>
     --template-config-file altona.json <span class="se">\</span>
     --eth1.enabled<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
-    --chain.genesisStateFile<span class="o">=</span>genesis.ssz <span class="se">\</span>
+    --genesisStateFile<span class="o">=</span>genesis.ssz <span class="se">\</span>
     --root-dir .altona
 </code></pre></div>
 

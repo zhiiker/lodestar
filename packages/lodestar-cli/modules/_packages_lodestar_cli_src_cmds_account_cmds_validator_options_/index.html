@@ -346,8 +346,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#interfaces" class="md-nav__link">
-    Interfaces
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
   </a>
   
 </li>
@@ -355,6 +355,26 @@
           <li class="md-nav__item">
   <a href="#object-literals" class="md-nav__link">
     Object literals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iaccountvalidatoroptions" class="md-nav__link">
+    IAccountValidatorOptions
   </a>
   
 </li>
@@ -382,13 +402,6 @@
           <li class="md-nav__item">
   <a href="#accountvalidatoroptions-object" class="md-nav__link">
     ▪ accountValidatorOptions: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chainpreset" class="md-nav__link">
-    chainPreset
   </a>
   
 </li>
@@ -435,35 +448,38 @@
                 <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar-cli/src/cmds/account/cmds/validator/options"</a></p>
 <h1 id="external-module-packageslodestar-clisrccmdsaccountcmdsvalidatoroptions">External module: "packages/lodestar-cli/src/cmds/account/cmds/validator/options"<a class="headerlink" href="#external-module-packageslodestar-clisrccmdsaccountcmdsvalidatoroptions" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../../interfaces/_packages_lodestar_cli_src_cmds_account_cmds_validator_options_.iaccountvalidatoroptions/">IAccountValidatorOptions</a></li>
+<li><a href="./#iaccountvalidatoroptions">IAccountValidatorOptions</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#const-accountvalidatoroptions">accountValidatorOptions</a></li>
 </ul>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h3 id="iaccountvalidatoroptions">IAccountValidatorOptions<a class="headerlink" href="#iaccountvalidatoroptions" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>IAccountValidatorOptions</strong>: <em><a href="../../interfaces/_packages_lodestar_cli_src_options_globaloptions_.iglobalargs/">IGlobalArgs</a> &amp; object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L5">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:5</a></em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-accountvalidatoroptions"><code>Const</code> accountValidatorOptions<a class="headerlink" href="#const-accountvalidatoroptions" title="Permanent link">&para;</a></h3>
 <h3 id="accountvalidatoroptions-object">▪ <strong>accountValidatorOptions</strong>: <em>object</em><a class="headerlink" href="#accountvalidatoroptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L12">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:12</a></em></p>
-<h3 id="chainpreset">chainPreset<a class="headerlink" href="#chainpreset" title="Permanent link">&para;</a></h3>
-<p>• <strong>chainPreset</strong>: <em>Options</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L13">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L12">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:12</a></em></p>
 <h3 id="keystoresdir">keystoresDir<a class="headerlink" href="#keystoresdir" title="Permanent link">&para;</a></h3>
 <p>• <strong>keystoresDir</strong>: <em>Options</em> = {
-    description: withDefaultValue("Directory for storing validator keystores.", defaultAccountPaths.keystoresDir),
+    description: "Directory for storing validator keystores.",
+    defaultDescription: defaultAccountPaths.keystoresDir,
     normalize: true,
     type: "string",
   } as Options</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L15">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L13">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:13</a></em></p>
 <h3 id="secretsdir">secretsDir<a class="headerlink" href="#secretsdir" title="Permanent link">&para;</a></h3>
 <p>• <strong>secretsDir</strong>: <em>Options</em> = {
-    description: withDefaultValue("Directory for storing validator keystore secrets.", defaultAccountPaths.secretsDir),
+    description: "Directory for storing validator keystore secrets.",
+    defaultDescription: defaultAccountPaths.secretsDir,
     normalize: true,
     type: "string",
   } as Options</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L21">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:21</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts#L20">packages/lodestar-cli/src/cmds/account/cmds/validator/options.ts:20</a></em></p>
                 
               
               

@@ -406,20 +406,27 @@
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="getbeaconconfig">getBeaconConfig<a class="headerlink" href="#getbeaconconfig" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBeaconConfig</strong>(<code>spec</code>: string): <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/util/config.ts#L5">packages/lodestar-cli/src/util/config.ts:5</a></em></p>
+<p>▸ <strong>getBeaconConfig</strong>(<code>preset</code>: string, <code>additionalParams</code>: Record‹string, unknown›): <em>IBeaconConfig</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/util/config.ts#L5">packages/lodestar-cli/src/util/config.ts:5</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>spec</code></td>
+<td><code>preset</code></td>
 <td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>additionalParams</code></td>
+<td>Record‹string, unknown›</td>
+<td>{}</td>
 </tr>
 </tbody>
 </table>

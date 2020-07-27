@@ -346,8 +346,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#interfaces" class="md-nav__link">
-    Interfaces
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
   </a>
   
 </li>
@@ -355,6 +355,26 @@
           <li class="md-nav__item">
   <a href="#object-literals" class="md-nav__link">
     Object literals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ivalidatorclioptions" class="md-nav__link">
+    IValidatorCliOptions
   </a>
   
 </li>
@@ -387,8 +407,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chainpreset" class="md-nav__link">
-    chainPreset
+  <a href="#force" class="md-nav__link">
+    force
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatorsdbdir" class="md-nav__link">
+    validatorsDbDir
   </a>
   
 </li>
@@ -421,63 +455,45 @@
                 <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">"packages/lodestar-cli/src/cmds/validator/options"</a></p>
 <h1 id="external-module-packageslodestar-clisrccmdsvalidatoroptions">External module: "packages/lodestar-cli/src/cmds/validator/options"<a class="headerlink" href="#external-module-packageslodestar-clisrccmdsvalidatoroptions" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../../interfaces/_packages_lodestar_cli_src_cmds_validator_options_.ivalidatorclioptions/">IValidatorCliOptions</a></li>
+<li><a href="./#ivalidatorclioptions">IValidatorCliOptions</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#const-validatoroptions">validatorOptions</a></li>
 </ul>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h3 id="ivalidatorclioptions">IValidatorCliOptions<a class="headerlink" href="#ivalidatorclioptions" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>IValidatorCliOptions</strong>: <em><a href="../../interfaces/_packages_lodestar_cli_src_options_globaloptions_.iglobalargs/">IGlobalArgs</a> &amp; <a href="../_packages_lodestar_cli_src_cmds_account_cmds_validator_options_/#iaccountvalidatoroptions">IAccountValidatorOptions</a> &amp; object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/validator/options.ts#L6">packages/lodestar-cli/src/cmds/validator/options.ts:6</a></em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-validatoroptions"><code>Const</code> validatorOptions<a class="headerlink" href="#const-validatoroptions" title="Permanent link">&para;</a></h3>
 <h3 id="validatoroptions-object">▪ <strong>validatorOptions</strong>: <em>object</em><a class="headerlink" href="#validatoroptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/validator/options.ts#L14">packages/lodestar-cli/src/cmds/validator/options.ts:14</a></em></p>
-<h3 id="chainpreset">chainPreset<a class="headerlink" href="#chainpreset" title="Permanent link">&para;</a></h3>
-<p>• <strong>chainPreset</strong>: <em>Options</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/validator/options.ts#L16">packages/lodestar-cli/src/cmds/validator/options.ts:16</a></em></p>
-<p>▪ <strong>force</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/validator/options.ts#L32">packages/lodestar-cli/src/cmds/validator/options.ts:32</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Open validators even if there's a lockfile. Use with caution"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"boolean"</em> = "boolean"</p>
-</li>
-</ul>
-<p>▪ <strong>server</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/validator/options.ts#L25">packages/lodestar-cli/src/cmds/validator/options.ts:25</a></em></p>
-<ul>
-<li>
-<p><strong>alias</strong>: <em>string[]</em> = ["server"]</p>
-</li>
-<li>
-<p><strong>default</strong>: <em>string</em> = "http://127.0.0.1:9596"</p>
-</li>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Address to connect to BeaconNode"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
-<p>▪ <strong>validatorsDbDir</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/9fceb0342/packages/lodestar-cli/src/cmds/validator/options.ts#L18">packages/lodestar-cli/src/cmds/validator/options.ts:18</a></em></p>
-<ul>
-<li>
-<p><strong>alias</strong>: <em>string[]</em> = ["dbDir", "db.dir", "db.name"]</p>
-</li>
-<li>
-<p><strong>description</strong>: <em>string</em> = withDefaultValue("Data directory for validator databases.", defaultValidatorPaths.validatorsDbDir)</p>
-</li>
-<li>
-<p><strong>normalize</strong>: <em>true</em> = true</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/validator/options.ts#L15">packages/lodestar-cli/src/cmds/validator/options.ts:15</a></em></p>
+<h3 id="force">force<a class="headerlink" href="#force" title="Permanent link">&para;</a></h3>
+<p>• <strong>force</strong>: <em>Options</em> = {
+    description: "Open validators even if there's a lockfile. Use with caution",
+    type: "boolean"
+  } as Options</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/validator/options.ts#L33">packages/lodestar-cli/src/cmds/validator/options.ts:33</a></em></p>
+<h3 id="server">server<a class="headerlink" href="#server" title="Permanent link">&para;</a></h3>
+<p>• <strong>server</strong>: <em>Options</em> = {
+    description: "Address to connect to BeaconNode",
+    default: "http://127.0.0.1:9596",
+    alias: ["server"],
+    type: "string"
+  } as Options</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/validator/options.ts#L26">packages/lodestar-cli/src/cmds/validator/options.ts:26</a></em></p>
+<h3 id="validatorsdbdir">validatorsDbDir<a class="headerlink" href="#validatorsdbdir" title="Permanent link">&para;</a></h3>
+<p>• <strong>validatorsDbDir</strong>: <em>Options</em> = {
+    description: "Data directory for validator databases.",
+    defaultDescription: defaultValidatorPaths.validatorsDbDir,
+    alias: ["dbDir", "db.dir", "db.name"],
+    normalize: true,
+    type: "string",
+  } as Options</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a830d3d03/packages/lodestar-cli/src/cmds/validator/options.ts#L18">packages/lodestar-cli/src/cmds/validator/options.ts:18</a></em></p>
                 
               
               
