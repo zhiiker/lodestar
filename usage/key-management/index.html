@@ -494,11 +494,15 @@
 <p>The 12-word string is randomly generated during wallet creation and printed out to the terminal. It's important to make one or more backups of the mnemonic to ensure your ETH is not lost in the case of data loss. It is very important to keep your mnemonic private as it represents the ultimate control of your ETH.</p>
 <h3 id="create-a-wallet">Create a wallet<a class="headerlink" href="#create-a-wallet" title="Permanent link">&para;</a></h3>
 <p>To create a wallet, use the following command:</p>
-<div class="codehilite"><pre><span></span><code>lodestar account wallet create --name primary --passphrase-file primary.pass
+<div class="codehilite"><pre><span></span><code>lodestar account wallet create --name primary --passphraseFile primary.pass --rootDir .lodestar
 </code></pre></div>
 
 
-<p>A random strong password will be generated and stored in <code>primary.pass</code>.</p>
+<p>This command will:</p>
+<ul>
+<li>Create a hierarchical deterministic wallet identified with the name <code>primary</code>. This name can be arbitrary and is only used to reference the wallet in subsequent commands.</li>
+<li>Generate a random strong password and stored in <code>primary.pass</code>.</li>
+</ul>
 <!-- prettier-ignore-start -->
 
 <div class="admonition info">
@@ -512,17 +516,17 @@
 <p>Validators are represented by a BLS keypair. It is recommended to generate validator keypairs from a wallet mnemonic to ease its backup.</p>
 <h3 id="create-validator-keypair">Create validator keypair<a class="headerlink" href="#create-validator-keypair" title="Permanent link">&para;</a></h3>
 <p>To create a new validator use the following command:</p>
-<div class="codehilite"><pre><span></span><code>lodestar account validator create --name primary --passphrase-file primary.pass
+<div class="codehilite"><pre><span></span><code>lodestar account validator create --name primary --passphraseFile primary.pass --rootDir .lodestar
 </code></pre></div>
 
 
 <p>This command will:</p>
 <ul>
 <li>Derive a new BLS keypair from the wallet <code>primary</code>.</li>
-<li>Create a new directory in <code>$rootDir/validators</code> containing:</li>
+<li>Create a new directory in <code>.lodestar/keystores</code> containing:</li>
 <li>An encrypted Keystore with the validator voting keypair.</li>
 <li>An eth1_deposit_data.rlp file with the precomputed Eth1 deposit transaction data ready to be submitted to the deposit contract.</li>
-<li>Store the validator voting Keystore password in <code>$rootDir/secrets</code>.</li>
+<li>Store the validator voting Keystore password in <code>.lodestar/secrets</code>.</li>
 <li>Print the validator public key to the terminal</li>
 </ul>
 <!-- prettier-ignore-start -->
@@ -542,11 +546,11 @@
 <li><code>--rpcUrl</code> and <code>--rpcPassword</code> to connect to the node's JSON RPC API and unlock its account.</li>
 <li><code>--rpcUrl</code> alone to connect to the node's JSON RPC API if it's already unlocked.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>lodestar account validator deposit --validator 0x88f920bb56d76c68e0d983e9772e67d2ba4afadd5eb162a51f7fc62212c138e5611d99f98f834fce43f310295ca35eca
+<div class="codehilite"><pre><span></span><code>lodestar account validator deposit --validator 0x88f920bb56d76c68e0d983e9772e67d2ba4afadd5eb162a51f7fc62212c138e5611d99f98f834fce43f310295ca35eca --rootDir .lodestar
 </code></pre></div>
 
 
-<p>The resulting transaction hash will be print to the terminal and also stored in the validator's dir. </p>
+<p>The resulting transaction hash will be print to the terminal and also stored in the validator's dir.</p>
 <!-- prettier-ignore-start -->
 
 <div class="admonition info">
