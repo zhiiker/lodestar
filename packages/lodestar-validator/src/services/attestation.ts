@@ -146,10 +146,14 @@ export class AttestationService {
         validator: toHexString(duty.validatorPubkey)
       }
     );
-    await this.waitForAttestationBlock(duty.attestationSlot);
     let attestation: Attestation|undefined;
     let fork: Fork, genesisValidatorsRoot: Root;
     try {
+      const syncStatus = await this.provider.node.getSyncingStatus();
+      if(syncStatus.syncDistance !== BigInt(0)) {
+        throw new Error("Beacon node syncing");
+      }
+      await this.waitForAttestationBlock(duty.attestationSlot);
       ({fork, genesisValidatorsRoot} = (await this.provider.beacon.getFork()));
       attestation = await this.createAttestation(
         duty.attesterIndex,

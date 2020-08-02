@@ -127,6 +127,10 @@ export default class BlockProposingService {
     const randaoSigningRoot = computeSigningRoot(this.config, this.config.types.Epoch, epoch, randaoDomain);
     let block;
     try {
+      const syncStatus = await this.provider.node.getSyncingStatus();
+      if(syncStatus.syncDistance !== BigInt(0)) {
+        throw new Error("Beacon node syncing");
+      }
       block = await this.provider.validator.produceBlock(
         slot,
         this.publicKeys[proposerIndex],
