@@ -14,6 +14,7 @@ import {AttestationCollector, RoundRobinArray, syncPeersStatus, createStatus} fr
 import {IBeaconChain} from "../chain";
 import {NaiveRegularSync} from "./regular/naive";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {getCurrentSlot} from "@chainsafe/lodestar-beacon-state-transition";
 
 export enum SyncMode {
   WAITING_PEERS,
@@ -97,6 +98,18 @@ export class BeaconSync implements IBeaconSync {
         syncDistance: BigInt(0)
       };
     }
+    if(this.mode === SyncMode.WAITING_PEERS) {
+      return {
+        headSlot: BigInt(headSlot),
+        //0 would mean we are synced
+        syncDistance: BigInt(
+          getCurrentSlot(
+            this.config,
+            (await this.chain.getHeadState()).genesisTime
+          )
+        )
+      };
+    }
     let target: Slot = 0;
     if(this.mode === SyncMode.INITIAL_SYNCING) {
       target = await this.initialSync.getHighestBlock();
@@ -104,7 +117,7 @@ export class BeaconSync implements IBeaconSync {
       target = await this.regularSync.getHighestBlock();
     }
     return {
-      headSlot: BigInt(target),
+      headSlot: BigInt(headSlot),
       syncDistance: target >= headSlot ? (BigInt(target) - headSlot) : BigInt(0)
     };
   }
