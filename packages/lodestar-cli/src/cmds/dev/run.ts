@@ -3,7 +3,7 @@ import process from "process";
 import {initBLS} from "@chainsafe/bls";
 import {BeaconNode} from "@chainsafe/lodestar/lib/node";
 import {createNodeJsLibp2p} from "@chainsafe/lodestar/lib/network/nodejs";
-import {WinstonLogger} from "@chainsafe/lodestar-utils";
+import {LogLevel, WinstonLogger} from "@chainsafe/lodestar-utils";
 import {createEnr, createPeerId} from "../../network";
 import rimraf from "rimraf";
 import {join} from "path";
@@ -24,8 +24,8 @@ export async function run(options: IDevOptions): Promise<void> {
   options = mergeConfigOptions(options) as IDevOptions;
   const peerId = await createPeerId();
   options.network.discv5.enr = await createEnr(peerId);
-
-  const config = getBeaconConfig(options.preset, options.params);
+  options.logger.network.level = LogLevel.verbose;
+  const config = getBeaconConfig("minimal", options.params);
   const libp2p = await createNodeJsLibp2p(peerId, options.network);
   const logger = new WinstonLogger();
 
@@ -41,7 +41,6 @@ export async function run(options: IDevOptions): Promise<void> {
     libp2p,
     logger,
   });
-
   if(options.dev.genesisValidators) {
     const state = await initDevChain(node, options.dev.genesisValidators);
     storeSSZState(node.config, state, join(options.rootDir, "dev", "genesis.ssz"));

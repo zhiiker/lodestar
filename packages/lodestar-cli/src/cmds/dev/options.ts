@@ -7,8 +7,26 @@ export const devRunOptions = {
 
   "sync.minPeers": {
     type: "number",
-    default: 2,
+    default: 0,
     group: "sync",
+  } as Options,
+
+  "network.multiaddrs": {
+    type: "array",
+    default: [],
+    group: "network",
+  } as Options,
+
+  "api.rest.enabled": {
+    type: "boolean",
+    default: true,
+    group: "api",
+  } as Options,
+
+  "eth1.enabled": {
+    type: "boolean",
+    default: false,
+    group: "eth1",
   } as Options,
 
   "validator.beaconUrl": {
@@ -20,6 +38,7 @@ export const devRunOptions = {
   } as Options,
 
   "dev.genesisValidators": {
+    alias: ["c"],
     description: "If present it will create genesis with interop validators and start chain.",
     type: "number",
     group: "dev",
@@ -35,6 +54,7 @@ export const devRunOptions = {
   } as Options,
 
   "dev.reset": {
+    alias: ["r"],
     description: "To delete chain and validator directories",
     type: "boolean",
     group: "dev",
@@ -43,7 +63,7 @@ export const devRunOptions = {
   } as Options
 };
 
-export type IDevOptions = 
+export type IDevOptions =
   IGlobalArgs &
   IBeaconOptions &
   {
