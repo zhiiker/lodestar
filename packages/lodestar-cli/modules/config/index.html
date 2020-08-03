@@ -385,6 +385,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#arraymerge" class="md-nav__link">
+    arrayMerge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#createbeaconconfig" class="md-nav__link">
     createBeaconConfig
   </a>
@@ -485,6 +492,7 @@
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#appendtestnetparamsconfig">appendTestnetParamsConfig</a></li>
+<li><a href="./#arraymerge">arrayMerge</a></li>
 <li><a href="./#createbeaconconfig">createBeaconConfig</a></li>
 <li><a href="./#getbeaconconfig">getBeaconConfig</a></li>
 <li><a href="./#getmergedibeaconconfig">getMergedIBeaconConfig</a></li>
@@ -499,7 +507,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="appendtestnetparamsconfig">appendTestnetParamsConfig<a class="headerlink" href="#appendtestnetparamsconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>appendTestnetParamsConfig</strong>(<code>filename</code>: string): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L45">packages/lodestar-cli/src/config/params.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L45">packages/lodestar-cli/src/config/params.ts:45</a></em></p>
 <p>Adds required params not found in the downloaded config</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -518,9 +526,40 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
+<h3 id="arraymerge">arrayMerge<a class="headerlink" href="#arraymerge" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>arrayMerge</strong>(<code>target</code>: unknown[], <code>source</code>: unknown[]): <em>unknown[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L78">packages/lodestar-cli/src/config/beacon.ts:78</a></em></p>
+<p>If override array option (source) is defined and has items
+replace target (original option).
+Example: network.multiaddrs has default ['/ip4/127.0.0.1/tcp/30606'] and we don't wanna append to that with cli flag
+as it could result in port taken</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>target</code></td>
+<td>unknown[]</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>unknown[]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>unknown[]</em></p>
+<hr />
 <h3 id="createbeaconconfig">createBeaconConfig<a class="headerlink" href="#createbeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>createBeaconConfig</strong>(<code>args</code>: Partial‹IBeaconNodeOptions›): <em>Partial‹IBeaconNodeOptions›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/beacon.ts#L10">packages/lodestar-cli/src/config/beacon.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L10">packages/lodestar-cli/src/config/beacon.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -540,7 +579,7 @@
 <hr />
 <h3 id="getbeaconconfig">getBeaconConfig<a class="headerlink" href="#getbeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBeaconConfig</strong>(<code>preset</code>: string, <code>additionalParams</code>: Record‹string, unknown›): <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L22">packages/lodestar-cli/src/config/params.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L22">packages/lodestar-cli/src/config/params.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -567,7 +606,7 @@
 <hr />
 <h3 id="getmergedibeaconconfig">getMergedIBeaconConfig<a class="headerlink" href="#getmergedibeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getMergedIBeaconConfig</strong>(<code>preset</code>: string, <code>paramsFile</code>: string, <code>options</code>: Record‹string, unknown›): <em>Promise‹IBeaconConfig›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L33">packages/lodestar-cli/src/config/params.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L33">packages/lodestar-cli/src/config/params.ts:33</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -595,7 +634,7 @@
 <hr />
 <h3 id="initbeaconconfig">initBeaconConfig<a class="headerlink" href="#initbeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>initBeaconConfig</strong>(<code>filename</code>: string, <code>args</code>: Partial‹IBeaconNodeOptions›): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/beacon.ts#L60">packages/lodestar-cli/src/config/beacon.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L66">packages/lodestar-cli/src/config/beacon.ts:66</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -619,7 +658,7 @@
 <hr />
 <h3 id="mergeconfigoptions">mergeConfigOptions<a class="headerlink" href="#mergeconfigoptions" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>mergeConfigOptions</strong>(<code>options</code>: <a href="../cmds_beacon/#ibeaconoptions">IBeaconOptions</a>): <em><a href="../cmds_beacon/#ibeaconoptions">IBeaconOptions</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/beacon.ts#L48">packages/lodestar-cli/src/config/beacon.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L48">packages/lodestar-cli/src/config/beacon.ts:48</a></em></p>
 <p>Reads config files and merges their options with default options and user options</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -642,7 +681,7 @@
 <hr />
 <h3 id="readbeaconconfig">readBeaconConfig<a class="headerlink" href="#readbeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>readBeaconConfig</strong>(<code>filename</code>: string): <em>Partial‹IBeaconNodeOptions›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/beacon.ts#L36">packages/lodestar-cli/src/config/beacon.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L36">packages/lodestar-cli/src/config/beacon.ts:36</a></em></p>
 <p>This needs to be a synchronous function because it will be run as part of the yargs 'build' step
 If the config file is not found, the default values will apply.</p>
 <p><strong>Parameters:</strong></p>
@@ -664,7 +703,7 @@ If the config file is not found, the default values will apply.</p>
 <hr />
 <h3 id="readparamsconfig">readParamsConfig<a class="headerlink" href="#readparamsconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>readParamsConfig</strong>(<code>filename</code>: string): <em>Promise‹IBeaconParams›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L18">packages/lodestar-cli/src/config/params.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L18">packages/lodestar-cli/src/config/params.ts:18</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -684,7 +723,7 @@ If the config file is not found, the default values will apply.</p>
 <hr />
 <h3 id="writebeaconconfig">writeBeaconConfig<a class="headerlink" href="#writebeaconconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>writeBeaconConfig</strong>(<code>filename</code>: string, <code>config</code>: Partial‹IBeaconNodeOptions›): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/beacon.ts#L28">packages/lodestar-cli/src/config/beacon.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/beacon.ts#L28">packages/lodestar-cli/src/config/beacon.ts:28</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -708,7 +747,7 @@ If the config file is not found, the default values will apply.</p>
 <hr />
 <h3 id="writeparams">writeParams<a class="headerlink" href="#writeparams" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>writeParams</strong>(<code>filename</code>: string, <code>params</code>: IBeaconParams): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L14">packages/lodestar-cli/src/config/params.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L14">packages/lodestar-cli/src/config/params.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -732,7 +771,7 @@ If the config file is not found, the default values will apply.</p>
 <hr />
 <h3 id="writeparamsconfig">writeParamsConfig<a class="headerlink" href="#writeparamsconfig" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>writeParamsConfig</strong>(<code>filename</code>: string, <code>config</code>: IBeaconConfig): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbe30db42/packages/lodestar-cli/src/config/params.ts#L10">packages/lodestar-cli/src/config/params.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ba03e681/packages/lodestar-cli/src/config/params.ts#L10">packages/lodestar-cli/src/config/params.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
