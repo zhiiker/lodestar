@@ -15,7 +15,7 @@
       
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.2">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.5d00201e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.25b81cc6.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.816e8abc.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.80a78273.min.css">
       
       
         
@@ -243,8 +243,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../local/" title="Local testnet" class="md-nav__link">
-      Local testnet
+    <a href="../medalla/" title="Medalla testnet" class="md-nav__link">
+      Medalla testnet
     </a>
   </li>
 
@@ -257,6 +257,18 @@
   <li class="md-nav__item">
     <a href="../altona/" title="Altona testnet" class="md-nav__link">
       Altona testnet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../local/" title="Local testnet" class="md-nav__link">
+      Local testnet
     </a>
   </li>
 
@@ -492,9 +504,17 @@
 <h2 id="wallet-management">Wallet management<a class="headerlink" href="#wallet-management" title="Permanent link">&para;</a></h2>
 <p>A wallet helps to manage many validators from an easy-to-remember 12-word string (a mnemonic). All validators and withdrawal keys can be re-generated from a backed-up mnemonic.</p>
 <p>The 12-word string is randomly generated during wallet creation and printed out to the terminal. It's important to make one or more backups of the mnemonic to ensure your ETH is not lost in the case of data loss. It is very important to keep your mnemonic private as it represents the ultimate control of your ETH.</p>
+<!-- prettier-ignore-start -->
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you want to create a wallet for a testnet, you need to add <code>--testnet $TESTNET_NAME</code> to the following command</p>
+</div>
+<!-- prettier-ignore-end -->
+
 <h3 id="create-a-wallet">Create a wallet<a class="headerlink" href="#create-a-wallet" title="Permanent link">&para;</a></h3>
 <p>To create a wallet, use the following command:</p>
-<div class="codehilite"><pre><span></span><code>lodestar account wallet create --name primary --passphraseFile primary.pass --rootDir .lodestar
+<div class="codehilite"><pre><span></span><code>lodestar account wallet create --name primary --passphraseFile primary.pass
 </code></pre></div>
 
 
@@ -514,9 +534,17 @@
 <p>Next, you can create validator keys from your wallet <code>primary</code></p>
 <h2 id="validator-management">Validator management<a class="headerlink" href="#validator-management" title="Permanent link">&para;</a></h2>
 <p>Validators are represented by a BLS keypair. It is recommended to generate validator keypairs from a wallet mnemonic to ease its backup.</p>
+<!-- prettier-ignore-start -->
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you want to create a validator for a testnet, you need to add <code>--testnet $TESTNET_NAME</code> to all of the following commands</p>
+</div>
+<!-- prettier-ignore-end -->
+
 <h3 id="create-validator-keypair">Create validator keypair<a class="headerlink" href="#create-validator-keypair" title="Permanent link">&para;</a></h3>
 <p>To create a new validator use the following command:</p>
-<div class="codehilite"><pre><span></span><code>lodestar account validator create --name primary --passphraseFile primary.pass --rootDir .lodestar
+<div class="codehilite"><pre><span></span><code>lodestar account validator create --name primary --passphraseFile primary.pass
 </code></pre></div>
 
 
@@ -546,7 +574,7 @@
 <li><code>--rpcUrl</code> and <code>--rpcPassword</code> to connect to the node's JSON RPC API and unlock its account.</li>
 <li><code>--rpcUrl</code> alone to connect to the node's JSON RPC API if it's already unlocked.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>lodestar account validator deposit --validator 0x88f920bb56d76c68e0d983e9772e67d2ba4afadd5eb162a51f7fc62212c138e5611d99f98f834fce43f310295ca35eca --rootDir .lodestar
+<div class="codehilite"><pre><span></span><code>lodestar account validator deposit --validator 0x88f920bb56d76c68e0d983e9772e67d2ba4afadd5eb162a51f7fc62212c138e5611d99f98f834fce43f310295ca35eca
 </code></pre></div>
 
 
@@ -576,7 +604,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../altona/" title="Altona testnet" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../local/" title="Local testnet" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -585,7 +613,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Altona testnet
+                Local testnet
               </div>
             </div>
           </a>
@@ -665,7 +693,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.592d4e23.min.js"></script>
-      <script src="../../assets/javascripts/bundle.073197b2.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.806ca5c4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
