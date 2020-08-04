@@ -15,7 +15,7 @@
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.25b81cc6.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.947af8d5.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.80a78273.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.7f672a1f.min.css">
       
       
         
@@ -782,11 +782,11 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="context_1">Context<a class="headerlink" href="#context_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>Context</strong>: <em>Json</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L37">packages/lodestar-utils/src/logger/interface.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L37">packages/lodestar-utils/src/logger/interface.ts:37</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-loglevels"><code>Const</code> LogLevels<a class="headerlink" href="#const-loglevels" title="Permanent link">&para;</a></h3>
 <p>• <strong>LogLevels</strong>: <em>any[]</em> = Object.keys(LogLevel).map(key =&gt; LogLevel[key])</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L18">packages/lodestar-utils/src/logger/interface.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L18">packages/lodestar-utils/src/logger/interface.ts:18</a></em></p>
 <hr />
 <h3 id="const-consoletransport"><code>Const</code> consoleTransport<a class="headerlink" href="#const-consoletransport" title="Permanent link">&para;</a></h3>
 <p>• <strong>consoleTransport</strong>: <em>TransportStream</em> = new winstonTransports.Console({
@@ -794,7 +794,7 @@
   level: "silly",
   handleExceptions: true
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/winston.ts#L12">packages/lodestar-utils/src/logger/winston.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/winston.ts#L12">packages/lodestar-utils/src/logger/winston.ts:12</a></em></p>
 <hr />
 <h3 id="const-defaultlogformat"><code>Const</code> defaultLogFormat<a class="headerlink" href="#const-defaultlogformat" title="Permanent link">&para;</a></h3>
 <p>• <strong>defaultLogFormat</strong>: <em>Format‹›</em> = format.combine(
@@ -817,15 +817,15 @@ return (
 
 <p>})
 )</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/format.ts#L4">packages/lodestar-utils/src/logger/format.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/format.ts#L4">packages/lodestar-utils/src/logger/format.ts:4</a></em></p>
 <hr />
 <h3 id="const-defaultloglevel"><code>Const</code> defaultLogLevel<a class="headerlink" href="#const-defaultloglevel" title="Permanent link">&para;</a></h3>
 <p>• <strong>defaultLogLevel</strong>: <em><a href="../../enums/logger.loglevel/#info">info</a></em> = LogLevel.info</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L30">packages/lodestar-utils/src/logger/interface.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L30">packages/lodestar-utils/src/logger/interface.ts:30</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-filetransport"><code>Const</code> fileTransport<a class="headerlink" href="#const-filetransport" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fileTransport</strong>(<code>filename</code>: string): <em>TransportStream</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/winston.ts#L18">packages/lodestar-utils/src/logger/winston.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/winston.ts#L18">packages/lodestar-utils/src/logger/winston.ts:18</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -845,7 +845,7 @@ return (
 <hr />
 <h3 id="serializecontext_1">serializeContext<a class="headerlink" href="#serializecontext_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>serializeContext</strong>(<code>context?</code>: <a href="./#context">Context</a> | <a href="../../classes/reflection-299.reflection-1.assertionerror/#static-error">Error</a>): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/format.ts#L23">packages/lodestar-utils/src/logger/format.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/format.ts#L23">packages/lodestar-utils/src/logger/format.ts:23</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -865,25 +865,25 @@ return (
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-customcolors"><code>Const</code> customColors<a class="headerlink" href="#const-customcolors" title="Permanent link">&para;</a></h3>
 <h3 id="customcolors-object">▪ <strong>customColors</strong>: <em>object</em><a class="headerlink" href="#customcolors-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L21">packages/lodestar-utils/src/logger/interface.ts:21</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L21">packages/lodestar-utils/src/logger/interface.ts:21</a></em></p>
 <h3 id="debug">debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
 <p>• <strong>debug</strong>: <em>string</em> = "pink"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L26">packages/lodestar-utils/src/logger/interface.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L26">packages/lodestar-utils/src/logger/interface.ts:26</a></em></p>
 <h3 id="error">error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h3>
 <p>• <strong>error</strong>: <em>string</em> = "red"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L22">packages/lodestar-utils/src/logger/interface.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L22">packages/lodestar-utils/src/logger/interface.ts:22</a></em></p>
 <h3 id="info">info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h3>
 <p>• <strong>info</strong>: <em>string</em> = "white"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L24">packages/lodestar-utils/src/logger/interface.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L24">packages/lodestar-utils/src/logger/interface.ts:24</a></em></p>
 <h3 id="silly">silly<a class="headerlink" href="#silly" title="Permanent link">&para;</a></h3>
 <p>• <strong>silly</strong>: <em>string</em> = "purple"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L27">packages/lodestar-utils/src/logger/interface.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L27">packages/lodestar-utils/src/logger/interface.ts:27</a></em></p>
 <h3 id="verbose">verbose<a class="headerlink" href="#verbose" title="Permanent link">&para;</a></h3>
 <p>• <strong>verbose</strong>: <em>string</em> = "green"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L25">packages/lodestar-utils/src/logger/interface.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L25">packages/lodestar-utils/src/logger/interface.ts:25</a></em></p>
 <h3 id="warn">warn<a class="headerlink" href="#warn" title="Permanent link">&para;</a></h3>
 <p>• <strong>warn</strong>: <em>string</em> = "yellow"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar-utils/src/logger/interface.ts#L23">packages/lodestar-utils/src/logger/interface.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar-utils/src/logger/interface.ts#L23">packages/lodestar-utils/src/logger/interface.ts:23</a></em></p>
                 
               
               
@@ -955,15 +955,15 @@ return (
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.592d4e23.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.806ca5c4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.01088dc6.min.js"
+            worker: "../../../../assets/javascripts/worker/search.8e2cddea.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

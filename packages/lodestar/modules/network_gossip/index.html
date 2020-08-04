@@ -15,7 +15,7 @@
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.25b81cc6.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.947af8d5.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.80a78273.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.7f672a1f.min.css">
       
       
         
@@ -662,11 +662,11 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="gossipeventemitter">GossipEventEmitter<a class="headerlink" href="#gossipeventemitter" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>GossipEventEmitter</strong>: <em>StrictEventEmitter‹EventEmitter, <a href="../../interfaces/network_gossip.igossipevents/">IGossipEvents</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/interface.ts#L36">packages/lodestar/src/network/gossip/interface.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/interface.ts#L36">packages/lodestar/src/network/gossip/interface.ts:36</a></em></p>
 <hr />
 <h3 id="gossiphandlerfn">GossipHandlerFn<a class="headerlink" href="#gossiphandlerfn" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>GossipHandlerFn</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/gossip.ts#L41">packages/lodestar/src/network/gossip/gossip.ts:41</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/gossip.ts#L41">packages/lodestar/src/network/gossip/gossip.ts:41</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <p>▸ (<code>this</code>: <a href="../../classes/network_gossip.gossip/">Gossip</a>, <code>obj</code>: <a href="./#gossipobject">GossipObject</a>): <em>void</em></p>
 <p><strong>Parameters:</strong></p>
@@ -691,7 +691,7 @@
 <hr />
 <h3 id="gossipmessagevalidatorfn">GossipMessageValidatorFn<a class="headerlink" href="#gossipmessagevalidatorfn" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>GossipMessageValidatorFn</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/interface.ts#L94">packages/lodestar/src/network/gossip/interface.ts:94</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/interface.ts#L94">packages/lodestar/src/network/gossip/interface.ts:94</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
 <p>▸ (<code>message</code>: <a href="./#gossipobject">GossipObject</a>, <code>subnet?</code>: number): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
 <p><strong>Parameters:</strong></p>
@@ -716,19 +716,19 @@
 <hr />
 <h3 id="gossipobject">GossipObject<a class="headerlink" href="#gossipobject" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>GossipObject</strong>: <em>SignedBeaconBlock | Attestation | SignedAggregateAndProof | SignedVoluntaryExit | ProposerSlashing | AttesterSlashing</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/interface.ts#L91">packages/lodestar/src/network/gossip/interface.ts:91</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/interface.ts#L91">packages/lodestar/src/network/gossip/interface.ts:91</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-attestationsubnetregexp"><code>Const</code> AttestationSubnetRegExp<a class="headerlink" href="#const-attestationsubnetregexp" title="Permanent link">&para;</a></h3>
 <p>• <strong>AttestationSubnetRegExp</strong>: <em>RegExp‹›</em> = new RegExp("^(/eth2/)([a-f0-9]{8})(/beacon_attestation_)([0-9]+/)([a-z_]+)$")</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/constants.ts#L17">packages/lodestar/src/network/gossip/constants.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/constants.ts#L17">packages/lodestar/src/network/gossip/constants.ts:17</a></em></p>
 <hr />
 <h3 id="const-gossiptopicregexp"><code>Const</code> GossipTopicRegExp<a class="headerlink" href="#const-gossiptopicregexp" title="Permanent link">&para;</a></h3>
 <p>• <strong>GossipTopicRegExp</strong>: <em>RegExp‹›</em> = new RegExp("^(/eth2/)([a-f0-9]{8})/(\w+)(/[a-z]+)")</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/constants.ts#L20">packages/lodestar/src/network/gossip/constants.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/constants.ts#L20">packages/lodestar/src/network/gossip/constants.ts:20</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="getattestationsubnetevent">getAttestationSubnetEvent<a class="headerlink" href="#getattestationsubnetevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getAttestationSubnetEvent</strong>(<code>subnet</code>: number): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L42">packages/lodestar/src/network/gossip/utils.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L42">packages/lodestar/src/network/gossip/utils.ts:42</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -748,7 +748,7 @@
 <hr />
 <h3 id="getcommitteesubnetevent">getCommitteeSubnetEvent<a class="headerlink" href="#getcommitteesubnetevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getCommitteeSubnetEvent</strong>(<code>index</code>: CommitteeIndex): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/constants.ts#L22">packages/lodestar/src/network/gossip/constants.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/constants.ts#L22">packages/lodestar/src/network/gossip/constants.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -768,7 +768,7 @@
 <hr />
 <h3 id="getgossiptopic">getGossipTopic<a class="headerlink" href="#getgossiptopic" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getGossipTopic</strong>(<code>event</code>: <a href="../../enums/network_gossip.gossipevent/">GossipEvent</a>, <code>forkDigestValue</code>: ForkDigest, <code>encoding</code>: <a href="../../enums/network_gossip.gossipencoding/">GossipEncoding</a>, <code>params</code>: Map‹string, string›): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L14">packages/lodestar/src/network/gossip/utils.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L14">packages/lodestar/src/network/gossip/utils.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -805,7 +805,7 @@
 <hr />
 <h3 id="getmessageid">getMessageId<a class="headerlink" href="#getmessageid" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getMessageId</strong>(<code>rawMessage</code>: Message): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L69">packages/lodestar/src/network/gossip/utils.ts:69</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L69">packages/lodestar/src/network/gossip/utils.ts:69</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -825,7 +825,7 @@
 <hr />
 <h3 id="getsubnetfromattestationsubnettopic">getSubnetFromAttestationSubnetTopic<a class="headerlink" href="#getsubnetfromattestationsubnettopic" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getSubnetFromAttestationSubnetTopic</strong>(<code>topic</code>: string): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L54">packages/lodestar/src/network/gossip/utils.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L54">packages/lodestar/src/network/gossip/utils.ts:54</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -845,7 +845,7 @@
 <hr />
 <h3 id="gettopicencoding">getTopicEncoding<a class="headerlink" href="#gettopicencoding" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getTopicEncoding</strong>(<code>topic</code>: string): <em><a href="../../enums/network_gossip.gossipencoding/">GossipEncoding</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/encoding.ts#L6">packages/lodestar/src/network/gossip/encoding.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/encoding.ts#L6">packages/lodestar/src/network/gossip/encoding.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -865,7 +865,7 @@
 <hr />
 <h3 id="isattestationsubnetevent">isAttestationSubnetEvent<a class="headerlink" href="#isattestationsubnetevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isAttestationSubnetEvent</strong>(<code>event</code>: keyof IGossipEvents | string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L46">packages/lodestar/src/network/gossip/utils.ts:46</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L46">packages/lodestar/src/network/gossip/utils.ts:46</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -885,7 +885,7 @@
 <hr />
 <h3 id="isattestationsubnettopic">isAttestationSubnetTopic<a class="headerlink" href="#isattestationsubnettopic" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isAttestationSubnetTopic</strong>(<code>topic</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L50">packages/lodestar/src/network/gossip/utils.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L50">packages/lodestar/src/network/gossip/utils.ts:50</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -905,7 +905,7 @@
 <hr />
 <h3 id="mapgossipevent">mapGossipEvent<a class="headerlink" href="#mapgossipevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>mapGossipEvent</strong>(<code>event</code>: keyof IGossipEvents | string): <em><a href="../../enums/network_gossip.gossipevent/">GossipEvent</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L28">packages/lodestar/src/network/gossip/utils.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L28">packages/lodestar/src/network/gossip/utils.ts:28</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -925,7 +925,7 @@
 <hr />
 <h3 id="normalizeinrpcmessage">normalizeInRpcMessage<a class="headerlink" href="#normalizeinrpcmessage" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>normalizeInRpcMessage</strong>(<code>rawMessage</code>: Message): <em><a href="../../interfaces/network_gossip.ilodestargossipmessage/">ILodestarGossipMessage</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L61">packages/lodestar/src/network/gossip/utils.ts:61</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L61">packages/lodestar/src/network/gossip/utils.ts:61</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -945,7 +945,7 @@
 <hr />
 <h3 id="topictogossipevent">topicToGossipEvent<a class="headerlink" href="#topictogossipevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>topicToGossipEvent</strong>(<code>topic</code>: string): <em><a href="../../enums/network_gossip.gossipevent/">GossipEvent</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/142bce2d5/packages/lodestar/src/network/gossip/utils.ts#L35">packages/lodestar/src/network/gossip/utils.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/801b23c0e/packages/lodestar/src/network/gossip/utils.ts#L35">packages/lodestar/src/network/gossip/utils.ts:35</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1033,15 +1033,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.592d4e23.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.806ca5c4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.01088dc6.min.js"
+            worker: "../../../../assets/javascripts/worker/search.8e2cddea.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
