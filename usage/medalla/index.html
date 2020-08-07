@@ -469,7 +469,7 @@
 </div>
 <!-- prettier-ignore-end -->
 
-<p>Immediatelly you should see confirmation that the different modules have started</p>
+<p>Immediately you should see confirmation that the different modules have started</p>
 <div class="codehilite"><pre><span></span><code><span class="m">2020</span>-06-21 <span class="m">17</span>:34:24  <span class="o">[</span>CHAIN<span class="o">]</span>            info: Initializing beacon chain with state root 0x773c694b47504d789dc768d2356f691866b47833d0d85e02511d7cd339925b17 and genesis block root 0x19aa2deaa02cac9774eb8948a8ead1ebe851ba9590878a10cd5767092e16ba12
 <span class="m">2020</span>-06-21 <span class="m">17</span>:34:25  <span class="o">[</span>CHAIN<span class="o">]</span>            info: Beacon chain initialized
 <span class="m">2020</span>-06-21 <span class="m">17</span>:34:25  <span class="o">[</span>NODE<span class="o">]</span>             info: Starting eth2 beacon node - LODESTAR!
@@ -502,7 +502,21 @@
 <li>Set the root directory to <code>.medalla</code>.</li>
 </ul>
 <h2 id="run-a-validator">Run a validator<a class="headerlink" href="#run-a-validator" title="Permanent link">&para;</a></h2>
-<p><em>TBD</em></p>
+<p>To start a Lodestar validator run the command:</p>
+<div class="codehilite"><pre><span></span><code>yarn run cli validator --testnet medalla
+</code></pre></div>
+
+
+<p>You should see confirmation that modules have started. </p>
+<div class="codehilite"><pre><span></span><code><span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[]</span>                 info: Decrypted <span class="m">2</span> validator keystores 
+<span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[</span>VALIDATOR 0X8BAC4815<span class="o">]</span> info: Setting up validator client... 
+<span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[</span>VALIDATOR 0X8BAC4815<span class="o">]</span> info: Setting up RPC connection... 
+<span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[]</span>                 info: Checking genesis <span class="nb">time</span> and beacon node connection 
+<span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[</span>VALIDATOR 0X8E44237B<span class="o">]</span> info: Setting up validator client... 
+<span class="m">2020</span>-08-07 <span class="m">14</span>:14:24  <span class="o">[</span>VALIDATOR 0X8E44237B<span class="o">]</span> info: Setting up RPC connection... 
+</code></pre></div>
+
+
 <h2 id="submit-your-deposit-to-goerli">Submit your deposit to Goerli<a class="headerlink" href="#submit-your-deposit-to-goerli" title="Permanent link">&para;</a></h2>
 <p><em>TBD</em></p>
                 
