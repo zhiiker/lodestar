@@ -358,13 +358,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#type-aliases" class="md-nav__link">
-    Type aliases
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -384,32 +377,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-aliases_1" class="md-nav__link">
-    Type aliases
-  </a>
-  
-    <nav class="md-nav" aria-label="Type aliases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iinitoptions" class="md-nav__link">
-    IInitOptions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#functions_1" class="md-nav__link">
     Functions
   </a>
   
     <nav class="md-nav" aria-label="Functions">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initcmd" class="md-nav__link">
+    initCmd
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inithandler" class="md-nav__link">
@@ -446,26 +426,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#builder" class="md-nav__link">
-    builder
-  </a>
-  
-    <nav class="md-nav" aria-label="builder">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type declaration:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#command" class="md-nav__link">
     command
   </a>
@@ -487,16 +447,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#const-initoptions" class="md-nav__link">
-    Const initOptions
+  <a href="#options" class="md-nav__link">
+    options
+  </a>
+  
+    <nav class="md-nav" aria-label="options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#initoptions-object" class="md-nav__link">
-    ▪ initOptions: object
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
@@ -528,27 +494,40 @@
                 <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">cmds/init</a></p>
 <h1 id="module-cmdsinit">Module: cmds/init<a class="headerlink" href="#module-cmdsinit" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#iinitoptions">IInitOptions</a></li>
-</ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#initcmd">initCmd</a></li>
 <li><a href="./#inithandler">initHandler</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#const-init">init</a></li>
-<li><a href="./#const-initoptions">initOptions</a></li>
 </ul>
-<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
-<h3 id="iinitoptions">IInitOptions<a class="headerlink" href="#iinitoptions" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IInitOptions</strong>: <em><a href="../cmds_beacon/#ibeaconoptions">IBeaconOptions</a> &amp; object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/options.ts#L4">packages/lodestar-cli/src/cmds/init/options.ts:4</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="initcmd">initCmd<a class="headerlink" href="#initcmd" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initCmd</strong>(<code>options</code>: <a href="../options/#iglobalargs">IGlobalArgs</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/handler.ts#L16">packages/lodestar-cli/src/cmds/init/handler.ts:16</a></em></p>
+<p>Handler runable from other commands</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>options</code></td>
+<td><a href="../options/#iglobalargs">IGlobalArgs</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
 <h3 id="inithandler">initHandler<a class="headerlink" href="#inithandler" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>initHandler</strong>(<code>options</code>: <a href="./#iinitoptions">IInitOptions</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/init.ts#L15">packages/lodestar-cli/src/cmds/init/init.ts:15</a></em></p>
+<p>▸ <strong>initHandler</strong>(<code>options</code>: <a href="../cmds_beacon/#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/handler.ts#L23">packages/lodestar-cli/src/cmds/init/handler.ts:23</a></em></p>
 <p>Initialize lodestar-cli with an on-disk configuration</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -561,7 +540,7 @@
 <tbody>
 <tr>
 <td><code>options</code></td>
-<td><a href="./#iinitoptions">IInitOptions</a></td>
+<td><a href="../cmds_beacon/#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a></td>
 </tr>
 </tbody>
 </table>
@@ -569,43 +548,20 @@
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-init"><code>Const</code> init<a class="headerlink" href="#const-init" title="Permanent link">&para;</a></h3>
 <h3 id="init-object">▪ <strong>init</strong>: <em>object</em><a class="headerlink" href="#init-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/index.ts#L6">packages/lodestar-cli/src/cmds/init/index.ts:6</a></em></p>
-<h3 id="builder">builder<a class="headerlink" href="#builder" title="Permanent link">&para;</a></h3>
-<p>• <strong>builder</strong>: <em>object</em> = beaconOptions</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/index.ts#L9">packages/lodestar-cli/src/cmds/init/index.ts:9</a></em></p>
-<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
-<ul>
-<li>[ <strong>k</strong>: <em>string</em>]: Options</li>
-</ul>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/index.ts#L6">packages/lodestar-cli/src/cmds/init/index.ts:6</a></em></p>
 <h3 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
 <p>• <strong>command</strong>: <em>string</em> = "init"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/index.ts#L7">packages/lodestar-cli/src/cmds/init/index.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/index.ts#L7">packages/lodestar-cli/src/cmds/init/index.ts:7</a></em></p>
 <h3 id="describe">describe<a class="headerlink" href="#describe" title="Permanent link">&para;</a></h3>
 <p>• <strong>describe</strong>: <em>string</em> = "Initialize lodestar"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/index.ts#L8">packages/lodestar-cli/src/cmds/init/index.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/index.ts#L8">packages/lodestar-cli/src/cmds/init/index.ts:8</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
 <p>• <strong>handler</strong>: <em><a href="./#inithandler">initHandler</a></em> = initHandler</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/index.ts#L10">packages/lodestar-cli/src/cmds/init/index.ts:10</a></em></p>
-<hr />
-<h3 id="const-initoptions"><code>Const</code> initOptions<a class="headerlink" href="#const-initoptions" title="Permanent link">&para;</a></h3>
-<h3 id="initoptions-object">▪ <strong>initOptions</strong>: <em>object</em><a class="headerlink" href="#initoptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/options.ts#L10">packages/lodestar-cli/src/cmds/init/options.ts:10</a></em></p>
-<p>▪ <strong>templateConfigFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2c492095c/packages/lodestar-cli/src/cmds/init/options.ts#L13">packages/lodestar-cli/src/cmds/init/options.ts:13</a></em></p>
-<ul>
-<li>
-<p><strong>alias</strong>: <em>string[]</em> = ["templateConfigFile", "templateConfig"]</p>
-</li>
-<li>
-<p><strong>default</strong>: <em>null</em> = null</p>
-</li>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Template configuration used to initialize beacon node"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/index.ts#L10">packages/lodestar-cli/src/cmds/init/index.ts:10</a></em></p>
+<h3 id="options">options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<p>• <strong>options</strong>: <em>object</em> = beaconOptions as ICliCommandOptions<IBeaconArgs></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b4eec8b1a/packages/lodestar-cli/src/cmds/init/index.ts#L9">packages/lodestar-cli/src/cmds/init/index.ts:9</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
                 
               
               
