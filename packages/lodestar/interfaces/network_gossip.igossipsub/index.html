@@ -630,18 +630,18 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="subscriptions">subscriptions<a class="headerlink" href="#subscriptions" title="Permanent link">&para;</a></h3>
 <p>• <strong>subscriptions</strong>: <em>Set‹string›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L48">packages/lodestar/src/network/gossip/interface.ts:48</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L48">packages/lodestar/src/network/gossip/interface.ts:48</a></em></p>
 <hr />
 <h3 id="static-defaultmaxlisteners"><code>Static</code> defaultMaxListeners<a class="headerlink" href="#static-defaultmaxlisteners" title="Permanent link">&para;</a></h3>
 <p>▪ <strong>defaultMaxListeners</strong>: <em>number</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#static-defaultmaxlisteners">defaultMaxListeners</a></em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:18</p>
+<p>Defined in node_modules/@types/node/events.d.ts:30</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="addlistener">addListener<a class="headerlink" href="#addlistener" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>addListener</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#addlistener">addListener</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:20</p>
+<p>Defined in node_modules/@types/node/events.d.ts:32</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -667,7 +667,7 @@
 <p>▸ <strong>emit</strong>(<code>event</code>: string | symbol, ...<code>args</code>: any[]): <em>boolean</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#emit">emit</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:32</p>
+<p>Defined in node_modules/@types/node/events.d.ts:44</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -693,21 +693,21 @@
 <p>▸ <strong>eventNames</strong>(): <em>Array‹string | symbol›</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#eventnames">eventNames</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:33</p>
+<p>Defined in node_modules/@types/node/events.d.ts:45</p>
 <p><strong>Returns:</strong> <em>Array‹string | symbol›</em></p>
 <hr />
 <h3 id="getmaxlisteners">getMaxListeners<a class="headerlink" href="#getmaxlisteners" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getMaxListeners</strong>(): <em>number</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#getmaxlisteners">getMaxListeners</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:29</p>
+<p>Defined in node_modules/@types/node/events.d.ts:41</p>
 <p><strong>Returns:</strong> <em>number</em></p>
 <hr />
 <h3 id="listenercount">listenerCount<a class="headerlink" href="#listenercount" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>listenerCount</strong>(<code>type</code>: string | symbol): <em>number</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#static-listenercount">listenerCount</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:34</p>
+<p>Defined in node_modules/@types/node/events.d.ts:46</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -729,7 +729,7 @@
 <p>▸ <strong>listeners</strong>(<code>event</code>: string | symbol): <em>Function[]</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#listeners">listeners</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:30</p>
+<p>Defined in node_modules/@types/node/events.d.ts:42</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -751,7 +751,7 @@
 <p>▸ <strong>off</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#off">off</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:26</p>
+<p>Defined in node_modules/@types/node/events.d.ts:38</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -777,7 +777,7 @@
 <p>▸ <strong>on</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#on">on</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:21</p>
+<p>Defined in node_modules/@types/node/events.d.ts:33</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -803,7 +803,7 @@
 <p>▸ <strong>once</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#once">once</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:22</p>
+<p>Defined in node_modules/@types/node/events.d.ts:34</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -829,7 +829,7 @@
 <p>▸ <strong>prependListener</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#prependlistener">prependListener</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:23</p>
+<p>Defined in node_modules/@types/node/events.d.ts:35</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -855,7 +855,7 @@
 <p>▸ <strong>prependOnceListener</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#prependoncelistener">prependOnceListener</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:24</p>
+<p>Defined in node_modules/@types/node/events.d.ts:36</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -879,7 +879,7 @@
 <hr />
 <h3 id="publish">publish<a class="headerlink" href="#publish" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>publish</strong>(<code>topic</code>: string, <code>data</code>: Buffer): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L49">packages/lodestar/src/network/gossip/interface.ts:49</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L49">packages/lodestar/src/network/gossip/interface.ts:49</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -905,7 +905,7 @@
 <p>▸ <strong>rawListeners</strong>(<code>event</code>: string | symbol): <em>Function[]</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#rawlisteners">rawListeners</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:31</p>
+<p>Defined in node_modules/@types/node/events.d.ts:43</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -927,7 +927,7 @@
 <p>▸ <strong>removeAllListeners</strong>(<code>event?</code>: string | symbol): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#removealllisteners">removeAllListeners</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:27</p>
+<p>Defined in node_modules/@types/node/events.d.ts:39</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -949,7 +949,7 @@
 <p>▸ <strong>removeListener</strong>(<code>event</code>: string | symbol, <code>listener</code>: function): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#removelistener">removeListener</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:25</p>
+<p>Defined in node_modules/@types/node/events.d.ts:37</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>event</strong>: <em>string | symbol</em></p>
 <p>▪ <strong>listener</strong>: <em>function</em></p>
@@ -975,7 +975,7 @@
 <p>▸ <strong>setMaxListeners</strong>(<code>n</code>: number): <em>this</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#setmaxlisteners">setMaxListeners</a></em></p>
 <p><em>Overrides void</em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:28</p>
+<p>Defined in node_modules/@types/node/events.d.ts:40</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -995,17 +995,17 @@
 <hr />
 <h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L50">packages/lodestar/src/network/gossip/interface.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L50">packages/lodestar/src/network/gossip/interface.ts:50</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L51">packages/lodestar/src/network/gossip/interface.ts:51</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L51">packages/lodestar/src/network/gossip/interface.ts:51</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="subscribe">subscribe<a class="headerlink" href="#subscribe" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>subscribe</strong>(<code>topics</code>: string[] | string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L52">packages/lodestar/src/network/gossip/interface.ts:52</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L52">packages/lodestar/src/network/gossip/interface.ts:52</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1025,7 +1025,7 @@
 <hr />
 <h3 id="unsubscribe">unsubscribe<a class="headerlink" href="#unsubscribe" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>unsubscribe</strong>(<code>topics</code>: string[] | string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4bd4888c5/packages/lodestar/src/network/gossip/interface.ts#L53">packages/lodestar/src/network/gossip/interface.ts:53</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/986e6d429/packages/lodestar/src/network/gossip/interface.ts#L53">packages/lodestar/src/network/gossip/interface.ts:53</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1046,7 +1046,7 @@
 <h3 id="static-listenercount"><code>Static</code> listenerCount<a class="headerlink" href="#static-listenercount" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>listenerCount</strong>(<code>emitter</code>: EventEmitter, <code>event</code>: string | symbol): <em>number</em></p>
 <p><em>Inherited from <a href="./">IGossipSub</a>.<a href="./#static-listenercount">listenerCount</a></em></p>
-<p>Defined in node_modules/@types/node/events.d.ts:17</p>
+<p>Defined in node_modules/@types/node/events.d.ts:29</p>
 <p><strong><code>deprecated</code></strong> since v4.0.0</p>
 <p><strong>Parameters:</strong></p>
 <table>
