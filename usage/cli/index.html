@@ -295,6 +295,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="CLI Options" class="md-nav__link">
+      CLI Options
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -645,187 +657,749 @@
 <h2 id="beacon"><code>beacon</code><a class="headerlink" href="#beacon" title="Permanent link">&para;</a></h2>
 <p>Run a beacon node</p>
 <h3 id="beacon-options"><code>beacon</code> options<a class="headerlink" href="#beacon-options" title="Permanent link">&para;</a></h3>
-<p>These are the beacon command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| configFile | string | Beacon node configuration file |
-| logFile | string | Log file |
-| genesisStateFile | string | Genesis state in ssz-encoded format |
-| api.rest.api | array | Pick namespaces to expose for HTTP API |
-| api.rest.cors | string | Configures the Access-Control-Allow-Origin CORS header for HTTP API |
-| api.rest.enabled | boolean | Enable/disable HTTP API |
-| api.rest.host | string | Set host for HTTP API |
-| api.rest.port | number | Set port for HTTP API |
-| eth1.enabled | boolean | Whether to follow the eth1 chain |
-| eth1.provider.url | string | Url to Eth1 node with enabled rpc |
-| eth1.depositContract.deployedAt | number | Block number at which the deposit contract contract was deployed |
-| metrics.enabled | boolean | Enable metrics |
-| metrics.gatewayUrl | string | Gateway URL for metrics |
-| metrics.pushGateway | boolean | Enable/disable Prometheus Pushgateway for metrics |
-| metrics.serverPort | number | Server port for metrics |
-| metrics.timeout | number | How often metrics should be probed |
-| network.discv5.enabled | boolean | Enable discv5 |
-| network.discv5.bindAddr | string | Local multiaddress to listen on for discv5 |
-| network.discv5.bootEnrs | array | Bootnodes for discv5 discovery |
-| network.maxPeers | number | Maximum # of peers who can connect |
-| network.bootnodes | array | Libp2p peers to connect to on boot |
-| network.multiaddrs | array | Local listening addresses for req/resp and gossip |
-| sync.minPeers | number | undefined |
-| enr.ip | string | Override ENR IP entry |
-| enr.tcp | number | Override ENR TCP entry |
-| enr.udp | number | Override ENR UDP entry |
-| enr.ip6 | string | Override ENR IPv6 entry |
-| enr.tcp6 | number | Override ENR (IPv6-specific) TCP entry |
-| enr.udp6 | number | Override ENR (IPv6-specific) UDP entry |</p>
+<p>These are the beacon command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configFile</td>
+<td>string</td>
+<td>Beacon node configuration file</td>
+</tr>
+<tr>
+<td>logFile</td>
+<td>string</td>
+<td>Log file</td>
+</tr>
+<tr>
+<td>genesisStateFile</td>
+<td>string</td>
+<td>Genesis state in ssz-encoded format</td>
+</tr>
+<tr>
+<td>api.rest.api</td>
+<td>array</td>
+<td>Pick namespaces to expose for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.cors</td>
+<td>string</td>
+<td>Configures the Access-Control-Allow-Origin CORS header for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.enabled</td>
+<td>boolean</td>
+<td>Enable/disable HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.host</td>
+<td>string</td>
+<td>Set host for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.port</td>
+<td>number</td>
+<td>Set port for HTTP API</td>
+</tr>
+<tr>
+<td>eth1.enabled</td>
+<td>boolean</td>
+<td>Whether to follow the eth1 chain</td>
+</tr>
+<tr>
+<td>eth1.provider.url</td>
+<td>string</td>
+<td>Url to Eth1 node with enabled rpc</td>
+</tr>
+<tr>
+<td>eth1.depositContract.deployedAt</td>
+<td>number</td>
+<td>Block number at which the deposit contract contract was deployed</td>
+</tr>
+<tr>
+<td>metrics.enabled</td>
+<td>boolean</td>
+<td>Enable metrics</td>
+</tr>
+<tr>
+<td>metrics.gatewayUrl</td>
+<td>string</td>
+<td>Gateway URL for metrics</td>
+</tr>
+<tr>
+<td>metrics.pushGateway</td>
+<td>boolean</td>
+<td>Enable/disable Prometheus Pushgateway for metrics</td>
+</tr>
+<tr>
+<td>metrics.serverPort</td>
+<td>number</td>
+<td>Server port for metrics</td>
+</tr>
+<tr>
+<td>metrics.timeout</td>
+<td>number</td>
+<td>How often metrics should be probed</td>
+</tr>
+<tr>
+<td>network.discv5.enabled</td>
+<td>boolean</td>
+<td>Enable discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bindAddr</td>
+<td>string</td>
+<td>Local multiaddress to listen on for discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bootEnrs</td>
+<td>array</td>
+<td>Bootnodes for discv5 discovery</td>
+</tr>
+<tr>
+<td>network.maxPeers</td>
+<td>number</td>
+<td>Maximum # of peers who can connect</td>
+</tr>
+<tr>
+<td>network.bootnodes</td>
+<td>array</td>
+<td>Libp2p peers to connect to on boot</td>
+</tr>
+<tr>
+<td>network.multiaddrs</td>
+<td>array</td>
+<td>Local listening addresses for req/resp and gossip</td>
+</tr>
+<tr>
+<td>sync.minPeers</td>
+<td>number</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>enr.ip</td>
+<td>string</td>
+<td>Override ENR IP entry</td>
+</tr>
+<tr>
+<td>enr.tcp</td>
+<td>number</td>
+<td>Override ENR TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp</td>
+<td>number</td>
+<td>Override ENR UDP entry</td>
+</tr>
+<tr>
+<td>enr.ip6</td>
+<td>string</td>
+<td>Override ENR IPv6 entry</td>
+</tr>
+<tr>
+<td>enr.tcp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) UDP entry</td>
+</tr>
+</tbody>
+</table>
 <h2 id="validator"><code>validator</code><a class="headerlink" href="#validator" title="Permanent link">&para;</a></h2>
 <p>Run one or multiple validator clients</p>
 <h3 id="validator-options"><code>validator</code> options<a class="headerlink" href="#validator-options" title="Permanent link">&para;</a></h3>
-<p>These are the validator command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| keystoresDir | string | Directory for storing validator keystores. |
-| secretsDir | string | Directory for storing validator keystore secrets. |
-| validatorsDbDir | string | Data directory for validator databases. |
-| server | string | Address to connect to BeaconNode |
-| force | boolean | Open validators even if there's a lockfile. Use with caution |
-| graffiti | string | Specify your custom graffiti to be included in blocks (plain UTF8 text, 32 characters max) |</p>
+<p>These are the validator command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keystoresDir</td>
+<td>string</td>
+<td>Directory for storing validator keystores.</td>
+</tr>
+<tr>
+<td>secretsDir</td>
+<td>string</td>
+<td>Directory for storing validator keystore secrets.</td>
+</tr>
+<tr>
+<td>validatorsDbDir</td>
+<td>string</td>
+<td>Data directory for validator databases.</td>
+</tr>
+<tr>
+<td>server</td>
+<td>string</td>
+<td>Address to connect to BeaconNode</td>
+</tr>
+<tr>
+<td>force</td>
+<td>boolean</td>
+<td>Open validators even if there's a lockfile. Use with caution</td>
+</tr>
+<tr>
+<td>graffiti</td>
+<td>string</td>
+<td>Specify your custom graffiti to be included in blocks (plain UTF8 text, 32 characters max)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="account"><code>account</code><a class="headerlink" href="#account" title="Permanent link">&para;</a></h2>
 <p>Utilities for generating and managing Ethereum 2.0 accounts</p>
 <h3 id="account-validator"><code>account  validator</code><a class="headerlink" href="#account-validator" title="Permanent link">&para;</a></h3>
 <p>Provides commands for managing Eth2 validators.</p>
 <h4 id="account-validator-options"><code>account  validator</code> options<a class="headerlink" href="#account-validator-options" title="Permanent link">&para;</a></h4>
-<p>These are the account  validator  command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| keystoresDir | string | Directory for storing validator keystores. |
-| secretsDir | string | Directory for storing validator keystore secrets. |</p>
+<p>These are the account  validator  command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keystoresDir</td>
+<td>string</td>
+<td>Directory for storing validator keystores.</td>
+</tr>
+<tr>
+<td>secretsDir</td>
+<td>string</td>
+<td>Directory for storing validator keystore secrets.</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-validator-create"><code>account  validator  create</code><a class="headerlink" href="#account-validator-create" title="Permanent link">&para;</a></h4>
 <p>Creates new validators from an existing EIP-2386 wallet using the EIP-2333 HD key derivation scheme. Creates a new directory per validator with a voting keystore, withdrawal keystore, and pre-computed deposit RPL data</p>
 <h5 id="account-validator-create-options"><code>account  validator  create</code> options<a class="headerlink" href="#account-validator-create-options" title="Permanent link">&para;</a></h5>
-<p>These are the account  validator  create command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| name | string | Use the wallet identified by this name |
-| passphraseFile | string | A path to a file containing the password which will unlock the wallet. |
-| depositGwei | string | The GWEI value of the deposit amount. Defaults to the minimum amount   required for an active validator (MAX_EFFECTIVE_BALANCE) |
-| storeWithdrawalKeystore | boolean | If present, the withdrawal keystore will be stored alongside the voting   keypair. It is generally recommended to <em>not</em> store the withdrawal key and   instead generate them from the wallet seed when required. |
-| count | number | The number of validators to create |</p>
+<p>These are the account  validator  create command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Use the wallet identified by this name</td>
+</tr>
+<tr>
+<td>passphraseFile</td>
+<td>string</td>
+<td>A path to a file containing the password which will unlock the wallet.</td>
+</tr>
+<tr>
+<td>depositGwei</td>
+<td>string</td>
+<td>The GWEI value of the deposit amount. Defaults to the minimum amount   required for an active validator (MAX_EFFECTIVE_BALANCE)</td>
+</tr>
+<tr>
+<td>storeWithdrawalKeystore</td>
+<td>boolean</td>
+<td>If present, the withdrawal keystore will be stored alongside the voting   keypair. It is generally recommended to <em>not</em> store the withdrawal key and   instead generate them from the wallet seed when required.</td>
+</tr>
+<tr>
+<td>count</td>
+<td>number</td>
+<td>The number of validators to create</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-validator-deposit"><code>account  validator  deposit</code><a class="headerlink" href="#account-validator-deposit" title="Permanent link">&para;</a></h4>
 <p>Submits a deposit to an Eth1 validator registration contract via an IPC endpoint of an Eth1 client (e.g., Geth, OpenEthereum, etc.). The validators must already have been created and exist on the file-system. The process will exit immediately with an error if any error occurs. After each deposit is submitted to the Eth1 node, a file will be saved in the validator directory with the transaction hash. The deposit contract address will be determined by the spec config flag.</p>
 <h5 id="account-validator-deposit-options"><code>account  validator  deposit</code> options<a class="headerlink" href="#account-validator-deposit-options" title="Permanent link">&para;</a></h5>
-<p>These are the account  validator  deposit command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| validator | string | The name of the validator directory in $keystoresDir for which to deposit.       Set to 'all' to deposit all validators in the $keystoresDir. |
-| keystorePath | string | Path to a keystore with an Eth1 account. Must provide its password with keystorePassword |
-| keystorePassword | string | Password to unlock the Eth1 keystore in keystorePath |
-| rpcUrl | string | URL to an Eth1 JSON-RPC endpoint. It can have an unlocked account to sign,       use rpcPassword to unlock it, or provide a local keystore and password. |
-| rpcPassword | string | Password to unlock an Eth1 node's account provided with rpcUrl. |
-| ipcPath | string | Path to an Eth1 node IPC. |</p>
+<p>These are the account  validator  deposit command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>validator</td>
+<td>string</td>
+<td>The name of the validator directory in $keystoresDir for which to deposit.       Set to 'all' to deposit all validators in the $keystoresDir.</td>
+</tr>
+<tr>
+<td>keystorePath</td>
+<td>string</td>
+<td>Path to a keystore with an Eth1 account. Must provide its password with keystorePassword</td>
+</tr>
+<tr>
+<td>keystorePassword</td>
+<td>string</td>
+<td>Password to unlock the Eth1 keystore in keystorePath</td>
+</tr>
+<tr>
+<td>rpcUrl</td>
+<td>string</td>
+<td>URL to an Eth1 JSON-RPC endpoint. It can have an unlocked account to sign,       use rpcPassword to unlock it, or provide a local keystore and password.</td>
+</tr>
+<tr>
+<td>rpcPassword</td>
+<td>string</td>
+<td>Password to unlock an Eth1 node's account provided with rpcUrl.</td>
+</tr>
+<tr>
+<td>ipcPath</td>
+<td>string</td>
+<td>Path to an Eth1 node IPC.</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-validator-import"><code>account  validator  import</code><a class="headerlink" href="#account-validator-import" title="Permanent link">&para;</a></h4>
 <p>Imports one or more EIP-2335 keystores into a Lodestar validator client directory, requesting passwords interactively. The directory flag provides a convenient method for importing a directory of keys generated by the eth2-deposit-cli Ethereum Foundation utility.</p>
 <h5 id="account-validator-import-options"><code>account  validator  import</code> options<a class="headerlink" href="#account-validator-import-options" title="Permanent link">&para;</a></h5>
-<p>These are the account  validator  import command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| keystore | string | Path to a single keystore to be imported. |
-| directory | string | Path to a directory which contains zero or more keystores for import. This directory and all sub-directories will be searched and any file name which contains 'keystore' and has the '.json' extension will be attempted to be imported. |</p>
+<p>These are the account  validator  import command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keystore</td>
+<td>string</td>
+<td>Path to a single keystore to be imported.</td>
+</tr>
+<tr>
+<td>directory</td>
+<td>string</td>
+<td>Path to a directory which contains zero or more keystores for import. This directory and all sub-directories will be searched and any file name which contains 'keystore' and has the '.json' extension will be attempted to be imported.</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-validator-list"><code>account  validator  list</code><a class="headerlink" href="#account-validator-list" title="Permanent link">&para;</a></h4>
 <p>Lists the public keys of all validators</p>
 <h3 id="account-wallet"><code>account  wallet</code><a class="headerlink" href="#account-wallet" title="Permanent link">&para;</a></h3>
 <p>Provides commands for managing Eth2 wallets.</p>
 <h4 id="account-wallet-options"><code>account  wallet</code> options<a class="headerlink" href="#account-wallet-options" title="Permanent link">&para;</a></h4>
-<p>These are the account  wallet  command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| walletsDir | string | Directory for storing wallets. |</p>
+<p>These are the account  wallet  command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>walletsDir</td>
+<td>string</td>
+<td>Directory for storing wallets.</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-wallet-create"><code>account  wallet  create</code><a class="headerlink" href="#account-wallet-create" title="Permanent link">&para;</a></h4>
 <p>Creates a new HD (hierarchical-deterministic) EIP-2386 wallet</p>
 <h5 id="account-wallet-create-options"><code>account  wallet  create</code> options<a class="headerlink" href="#account-wallet-create-options" title="Permanent link">&para;</a></h5>
-<p>These are the account  wallet  create command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| name | string | The wallet will be created with this name. It is not allowed to   create two wallets with the same name for the same --base-dir. |
-| passphraseFile | string | A path to a file containing the password which will unlock the wallet.   If the file does not exist, a random password will be generated and saved at that   path. To avoid confusion, if the file does not already exist it must include a   '.pass' suffix. |
-| type | string | The type of wallet to create. Only HD (hierarchical-deterministic) wallets are supported presently. |
-| mnemonicOutputPath | string | If present, the mnemonic will be saved to this file |</p>
+<p>These are the account  wallet  create command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>The wallet will be created with this name. It is not allowed to   create two wallets with the same name for the same --base-dir.</td>
+</tr>
+<tr>
+<td>passphraseFile</td>
+<td>string</td>
+<td>A path to a file containing the password which will unlock the wallet.   If the file does not exist, a random password will be generated and saved at that   path. To avoid confusion, if the file does not already exist it must include a   '.pass' suffix.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>The type of wallet to create. Only HD (hierarchical-deterministic) wallets are supported presently.</td>
+</tr>
+<tr>
+<td>mnemonicOutputPath</td>
+<td>string</td>
+<td>If present, the mnemonic will be saved to this file</td>
+</tr>
+</tbody>
+</table>
 <h4 id="account-wallet-list"><code>account  wallet  list</code><a class="headerlink" href="#account-wallet-list" title="Permanent link">&para;</a></h4>
 <p>Lists the names of all wallets</p>
 <h2 id="init"><code>init</code><a class="headerlink" href="#init" title="Permanent link">&para;</a></h2>
 <p>Initialize lodestar</p>
 <h3 id="init-options"><code>init</code> options<a class="headerlink" href="#init-options" title="Permanent link">&para;</a></h3>
-<p>These are the init command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| configFile | string | Beacon node configuration file |
-| logFile | string | Log file |
-| genesisStateFile | string | Genesis state in ssz-encoded format |
-| api.rest.api | array | Pick namespaces to expose for HTTP API |
-| api.rest.cors | string | Configures the Access-Control-Allow-Origin CORS header for HTTP API |
-| api.rest.enabled | boolean | Enable/disable HTTP API |
-| api.rest.host | string | Set host for HTTP API |
-| api.rest.port | number | Set port for HTTP API |
-| eth1.enabled | boolean | Whether to follow the eth1 chain |
-| eth1.provider.url | string | Url to Eth1 node with enabled rpc |
-| eth1.depositContract.deployedAt | number | Block number at which the deposit contract contract was deployed |
-| metrics.enabled | boolean | Enable metrics |
-| metrics.gatewayUrl | string | Gateway URL for metrics |
-| metrics.pushGateway | boolean | Enable/disable Prometheus Pushgateway for metrics |
-| metrics.serverPort | number | Server port for metrics |
-| metrics.timeout | number | How often metrics should be probed |
-| network.discv5.enabled | boolean | Enable discv5 |
-| network.discv5.bindAddr | string | Local multiaddress to listen on for discv5 |
-| network.discv5.bootEnrs | array | Bootnodes for discv5 discovery |
-| network.maxPeers | number | Maximum # of peers who can connect |
-| network.bootnodes | array | Libp2p peers to connect to on boot |
-| network.multiaddrs | array | Local listening addresses for req/resp and gossip |
-| sync.minPeers | number | undefined |
-| enr.ip | string | Override ENR IP entry |
-| enr.tcp | number | Override ENR TCP entry |
-| enr.udp | number | Override ENR UDP entry |
-| enr.ip6 | string | Override ENR IPv6 entry |
-| enr.tcp6 | number | Override ENR (IPv6-specific) TCP entry |
-| enr.udp6 | number | Override ENR (IPv6-specific) UDP entry |</p>
+<p>These are the init command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configFile</td>
+<td>string</td>
+<td>Beacon node configuration file</td>
+</tr>
+<tr>
+<td>logFile</td>
+<td>string</td>
+<td>Log file</td>
+</tr>
+<tr>
+<td>genesisStateFile</td>
+<td>string</td>
+<td>Genesis state in ssz-encoded format</td>
+</tr>
+<tr>
+<td>api.rest.api</td>
+<td>array</td>
+<td>Pick namespaces to expose for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.cors</td>
+<td>string</td>
+<td>Configures the Access-Control-Allow-Origin CORS header for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.enabled</td>
+<td>boolean</td>
+<td>Enable/disable HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.host</td>
+<td>string</td>
+<td>Set host for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.port</td>
+<td>number</td>
+<td>Set port for HTTP API</td>
+</tr>
+<tr>
+<td>eth1.enabled</td>
+<td>boolean</td>
+<td>Whether to follow the eth1 chain</td>
+</tr>
+<tr>
+<td>eth1.provider.url</td>
+<td>string</td>
+<td>Url to Eth1 node with enabled rpc</td>
+</tr>
+<tr>
+<td>eth1.depositContract.deployedAt</td>
+<td>number</td>
+<td>Block number at which the deposit contract contract was deployed</td>
+</tr>
+<tr>
+<td>metrics.enabled</td>
+<td>boolean</td>
+<td>Enable metrics</td>
+</tr>
+<tr>
+<td>metrics.gatewayUrl</td>
+<td>string</td>
+<td>Gateway URL for metrics</td>
+</tr>
+<tr>
+<td>metrics.pushGateway</td>
+<td>boolean</td>
+<td>Enable/disable Prometheus Pushgateway for metrics</td>
+</tr>
+<tr>
+<td>metrics.serverPort</td>
+<td>number</td>
+<td>Server port for metrics</td>
+</tr>
+<tr>
+<td>metrics.timeout</td>
+<td>number</td>
+<td>How often metrics should be probed</td>
+</tr>
+<tr>
+<td>network.discv5.enabled</td>
+<td>boolean</td>
+<td>Enable discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bindAddr</td>
+<td>string</td>
+<td>Local multiaddress to listen on for discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bootEnrs</td>
+<td>array</td>
+<td>Bootnodes for discv5 discovery</td>
+</tr>
+<tr>
+<td>network.maxPeers</td>
+<td>number</td>
+<td>Maximum # of peers who can connect</td>
+</tr>
+<tr>
+<td>network.bootnodes</td>
+<td>array</td>
+<td>Libp2p peers to connect to on boot</td>
+</tr>
+<tr>
+<td>network.multiaddrs</td>
+<td>array</td>
+<td>Local listening addresses for req/resp and gossip</td>
+</tr>
+<tr>
+<td>sync.minPeers</td>
+<td>number</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>enr.ip</td>
+<td>string</td>
+<td>Override ENR IP entry</td>
+</tr>
+<tr>
+<td>enr.tcp</td>
+<td>number</td>
+<td>Override ENR TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp</td>
+<td>number</td>
+<td>Override ENR UDP entry</td>
+</tr>
+<tr>
+<td>enr.ip6</td>
+<td>string</td>
+<td>Override ENR IPv6 entry</td>
+</tr>
+<tr>
+<td>enr.tcp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) UDP entry</td>
+</tr>
+</tbody>
+</table>
 <h2 id="dev"><code>dev</code><a class="headerlink" href="#dev" title="Permanent link">&para;</a></h2>
 <p>Command used to quickly bootstrap beacon node and validators</p>
 <h3 id="dev-options"><code>dev</code> options<a class="headerlink" href="#dev-options" title="Permanent link">&para;</a></h3>
-<p>These are the dev command options
-| Name | Type | Description |
-| ----------- | ----------- | ----------- |
-| configFile | string | Beacon node configuration file |
-| logFile | string | Log file |
-| genesisStateFile | string | Genesis state in ssz-encoded format |
-| api.rest.api | array | Pick namespaces to expose for HTTP API |
-| api.rest.cors | string | Configures the Access-Control-Allow-Origin CORS header for HTTP API |
-| api.rest.enabled | boolean | Enable/disable HTTP API |
-| api.rest.host | string | Set host for HTTP API |
-| api.rest.port | number | Set port for HTTP API |
-| eth1.enabled | boolean | Whether to follow the eth1 chain |
-| eth1.provider.url | string | Url to Eth1 node with enabled rpc |
-| eth1.depositContract.deployedAt | number | Block number at which the deposit contract contract was deployed |
-| metrics.enabled | boolean | Enable metrics |
-| metrics.gatewayUrl | string | Gateway URL for metrics |
-| metrics.pushGateway | boolean | Enable/disable Prometheus Pushgateway for metrics |
-| metrics.serverPort | number | Server port for metrics |
-| metrics.timeout | number | How often metrics should be probed |
-| network.discv5.enabled | boolean | Enable discv5 |
-| network.discv5.bindAddr | string | Local multiaddress to listen on for discv5 |
-| network.discv5.bootEnrs | array | Bootnodes for discv5 discovery |
-| network.maxPeers | number | Maximum # of peers who can connect |
-| network.bootnodes | array | Libp2p peers to connect to on boot |
-| network.multiaddrs | array | Local listening addresses for req/resp and gossip |
-| sync.minPeers | number | undefined |
-| enr.ip | string | Override ENR IP entry |
-| enr.tcp | number | Override ENR TCP entry |
-| enr.udp | number | Override ENR UDP entry |
-| enr.ip6 | string | Override ENR IPv6 entry |
-| enr.tcp6 | number | Override ENR (IPv6-specific) TCP entry |
-| enr.udp6 | number | Override ENR (IPv6-specific) UDP entry |
-| preset | string | Specifies the default eth2 spec type |
-| genesisValidators | number | If present it will create genesis with interop validators and start chain. |
-| startValidators | string | Start interop validators in given range |
-| reset | boolean | To delete chain and validator directories |
-| server | string | Address to connect to BeaconNode. Pass 'memory' for in memory communication |</p>
+<p>These are the dev command options</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configFile</td>
+<td>string</td>
+<td>Beacon node configuration file</td>
+</tr>
+<tr>
+<td>logFile</td>
+<td>string</td>
+<td>Log file</td>
+</tr>
+<tr>
+<td>genesisStateFile</td>
+<td>string</td>
+<td>Genesis state in ssz-encoded format</td>
+</tr>
+<tr>
+<td>api.rest.api</td>
+<td>array</td>
+<td>Pick namespaces to expose for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.cors</td>
+<td>string</td>
+<td>Configures the Access-Control-Allow-Origin CORS header for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.enabled</td>
+<td>boolean</td>
+<td>Enable/disable HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.host</td>
+<td>string</td>
+<td>Set host for HTTP API</td>
+</tr>
+<tr>
+<td>api.rest.port</td>
+<td>number</td>
+<td>Set port for HTTP API</td>
+</tr>
+<tr>
+<td>eth1.enabled</td>
+<td>boolean</td>
+<td>Whether to follow the eth1 chain</td>
+</tr>
+<tr>
+<td>eth1.provider.url</td>
+<td>string</td>
+<td>Url to Eth1 node with enabled rpc</td>
+</tr>
+<tr>
+<td>eth1.depositContract.deployedAt</td>
+<td>number</td>
+<td>Block number at which the deposit contract contract was deployed</td>
+</tr>
+<tr>
+<td>metrics.enabled</td>
+<td>boolean</td>
+<td>Enable metrics</td>
+</tr>
+<tr>
+<td>metrics.gatewayUrl</td>
+<td>string</td>
+<td>Gateway URL for metrics</td>
+</tr>
+<tr>
+<td>metrics.pushGateway</td>
+<td>boolean</td>
+<td>Enable/disable Prometheus Pushgateway for metrics</td>
+</tr>
+<tr>
+<td>metrics.serverPort</td>
+<td>number</td>
+<td>Server port for metrics</td>
+</tr>
+<tr>
+<td>metrics.timeout</td>
+<td>number</td>
+<td>How often metrics should be probed</td>
+</tr>
+<tr>
+<td>network.discv5.enabled</td>
+<td>boolean</td>
+<td>Enable discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bindAddr</td>
+<td>string</td>
+<td>Local multiaddress to listen on for discv5</td>
+</tr>
+<tr>
+<td>network.discv5.bootEnrs</td>
+<td>array</td>
+<td>Bootnodes for discv5 discovery</td>
+</tr>
+<tr>
+<td>network.maxPeers</td>
+<td>number</td>
+<td>Maximum # of peers who can connect</td>
+</tr>
+<tr>
+<td>network.bootnodes</td>
+<td>array</td>
+<td>Libp2p peers to connect to on boot</td>
+</tr>
+<tr>
+<td>network.multiaddrs</td>
+<td>array</td>
+<td>Local listening addresses for req/resp and gossip</td>
+</tr>
+<tr>
+<td>sync.minPeers</td>
+<td>number</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>enr.ip</td>
+<td>string</td>
+<td>Override ENR IP entry</td>
+</tr>
+<tr>
+<td>enr.tcp</td>
+<td>number</td>
+<td>Override ENR TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp</td>
+<td>number</td>
+<td>Override ENR UDP entry</td>
+</tr>
+<tr>
+<td>enr.ip6</td>
+<td>string</td>
+<td>Override ENR IPv6 entry</td>
+</tr>
+<tr>
+<td>enr.tcp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) TCP entry</td>
+</tr>
+<tr>
+<td>enr.udp6</td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) UDP entry</td>
+</tr>
+<tr>
+<td>preset</td>
+<td>string</td>
+<td>Specifies the default eth2 spec type</td>
+</tr>
+<tr>
+<td>genesisValidators</td>
+<td>number</td>
+<td>If present it will create genesis with interop validators and start chain.</td>
+</tr>
+<tr>
+<td>startValidators</td>
+<td>string</td>
+<td>Start interop validators in given range</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>boolean</td>
+<td>To delete chain and validator directories</td>
+</tr>
+<tr>
+<td>server</td>
+<td>string</td>
+<td>Address to connect to BeaconNode. Pass 'memory' for in memory communication</td>
+</tr>
+</tbody>
+</table>
                 
               
               
