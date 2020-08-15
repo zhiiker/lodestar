@@ -295,14 +295,44 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Reference
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Reference" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/cli/index.html" title="CLI Options" class="md-nav__link">
-      CLI Options
+    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+      Command line
     </a>
   </li>
 
@@ -471,7 +501,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="assembleblock">assembleBlock<a class="headerlink" href="#assembleblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>slot</code>: Slot, <code>proposerIndex</code>: ValidatorIndex, <code>randaoReveal</code>: Bytes96, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -523,7 +553,7 @@
 <hr />
 <h3 id="assemblebody">assembleBody<a class="headerlink" href="#assemblebody" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>assembleBody</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>currentState</code>: TreeBacked‹BeaconState›, <code>randaoReveal</code>: Bytes96, <code>graffiti</code>: Bytes32): <em>Promise‹BeaconBlockBody›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/body.ts#L13">packages/lodestar/src/chain/factory/block/body.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/body.ts#L13">packages/lodestar/src/chain/factory/block/body.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -559,7 +589,7 @@
 <hr />
 <h3 id="computenewstateroot">computeNewStateRoot<a class="headerlink" href="#computenewstateroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em>Root</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/index.ts#L52">packages/lodestar/src/chain/factory/block/index.ts:52</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/index.ts#L52">packages/lodestar/src/chain/factory/block/index.ts:52</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -587,7 +617,7 @@
 <hr />
 <h3 id="generatedeposits">generateDeposits<a class="headerlink" href="#generatedeposits" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>generateDeposits</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>state</code>: TreeBacked‹BeaconState›, <code>eth1Data</code>: Eth1Data, <code>depositDataRootList</code>: TreeBacked‹List‹Root››): <em>Promise‹Deposit[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/deposits.ts#L10">packages/lodestar/src/chain/factory/block/deposits.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/deposits.ts#L10">packages/lodestar/src/chain/factory/block/deposits.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -623,7 +653,7 @@
 <hr />
 <h3 id="geteth1vote">getEth1Vote<a class="headerlink" href="#geteth1vote" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEth1Vote</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>state</code>: TreeBacked‹BeaconState›): <em>Promise‹Eth1Data›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L15">packages/lodestar/src/chain/factory/block/eth1Vote.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L15">packages/lodestar/src/chain/factory/block/eth1Vote.ts:15</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -651,7 +681,7 @@
 <hr />
 <h3 id="votingperiodstarttime">votingPeriodStartTime<a class="headerlink" href="#votingperiodstarttime" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>votingPeriodStartTime</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: TreeBacked‹BeaconState›): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cbc58f541/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L9">packages/lodestar/src/chain/factory/block/eth1Vote.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/6f977edf3/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L9">packages/lodestar/src/chain/factory/block/eth1Vote.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
