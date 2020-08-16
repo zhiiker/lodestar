@@ -382,6 +382,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#validator" class="md-nav__link">
+    validator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#account" class="md-nav__link">
     account
   </a>
@@ -405,8 +412,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#account-validator-deposit" class="md-nav__link">
+    account  validator  deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#account-validator-import" class="md-nav__link">
     account  validator  import
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-validator-list" class="md-nav__link">
+    account  validator  list
   </a>
   
 </li>
@@ -431,6 +452,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#account-wallet-list" class="md-nav__link">
+    account  wallet  list
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -444,6 +472,13 @@
         <li class="md-nav__item">
   <a href="#init" class="md-nav__link">
     init
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    dev
   </a>
   
 </li>
@@ -524,6 +559,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#validator" class="md-nav__link">
+    validator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#account" class="md-nav__link">
     account
   </a>
@@ -547,8 +589,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#account-validator-deposit" class="md-nav__link">
+    account  validator  deposit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#account-validator-import" class="md-nav__link">
     account  validator  import
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-validator-list" class="md-nav__link">
+    account  validator  list
   </a>
   
 </li>
@@ -573,6 +629,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#account-wallet-list" class="md-nav__link">
+    account  wallet  list
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -586,6 +649,13 @@
         <li class="md-nav__item">
   <a href="#init" class="md-nav__link">
     init
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    dev
   </a>
   
 </li>
@@ -654,54 +724,204 @@
 <p><strong>Examples</strong></p>
 <p>Run a beacon chain node and connect to the Medalla testnet</p>
 <div class="codehilite"><pre><span></span><code>beacon --testnet medalla
- ```
-
-**Options**
-
-| Option | Type | Description | Default |
-| --- | --- | --- | --- |
-| `--configFile` | string | Beacon node configuration file path | $rootDir/beacon.config.json |
-| `--logFile` | string | Path to output all logs to a persistent log file |  |
-| `--genesisStateFile` | string | Genesis state file path in ssz-encoded format |  |
-| `--api.rest.api` | array | Pick namespaces to expose for HTTP API | [&quot;beacon&quot;,&quot;node&quot;,&quot;validator&quot;] |
-| `--api.rest.cors` | string | Configures the Access-Control-Allow-Origin CORS header for HTTP API | * |
-| `--api.rest.enabled` | boolean | Enable/disable HTTP API | false |
-| `--api.rest.host` | string | Set host for HTTP API | 127.0.0.1 |
-| `--api.rest.port` | number | Set port for HTTP API | 9596 |
-| `--eth1.enabled` | boolean | Whether to follow the eth1 chain | true |
-| `--eth1.provider.url` | string | Url to Eth1 node with enabled rpc | http://localhost:8545 |
-| `--eth1.depositContract.deployedAt` | number | Block number at which the deposit contract contract was deployed | 0 |
-| `--metrics.enabled` | boolean | Enable metrics | false |
-| `--metrics.gatewayUrl` | string | Gateway URL for metrics |  |
-| `--metrics.pushGateway` | boolean | Enable/disable Prometheus Pushgateway for metrics | false |
-| `--metrics.serverPort` | number | Server port for metrics | 8008 |
-| `--metrics.timeout` | number | How often metrics should be probed | 5000 |
-| `--network.discv5.enabled` | boolean | Enable discv5 | true |
-| `--network.discv5.bindAddr` | string | Local multiaddress to listen on for discv5 | /ip4/0.0.0.0/udp/9000 |
-| `--network.discv5.bootEnrs` | array | Bootnodes for discv5 discovery | [] |
-| `--network.maxPeers` | number | Maximum # of peers who can connect | 25 |
-| `--network.bootnodes` | array | Libp2p peers to connect to on boot | [] |
-| `--network.multiaddrs` | array | Local listening addresses for req/resp and gossip | [&quot;/ip4/0.0.0.0/tcp/9000&quot;] |
-| `--sync.minPeers` | number | Minimum number of peers before the beacon chain starts syncing | 2 |
-| `--enr.ip` | string | Override ENR IP entry |  |
-| `--enr.tcp` | number | Override ENR TCP entry |  |
-| `--enr.udp` | number | Override ENR UDP entry |  |
-| `--enr.ip6` | string | Override ENR IPv6 entry |  |
-| `--enr.tcp6` | number | Override ENR (IPv6-specific) TCP entry |  |
-| `--enr.udp6` | number | Override ENR (IPv6-specific) UDP entry |  |
-
-
-## `validator`
-Run one or multiple validator clients
-
-**Examples**
-
-Run one validator client with all the keystores available in the directory .medalla/keystores
 </code></pre></div>
 
 
-<p>validator --testnet medalla
- ```</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--configFile</code></td>
+<td>string</td>
+<td>Beacon node configuration file path</td>
+<td>$rootDir/beacon.config.json</td>
+</tr>
+<tr>
+<td><code>--logFile</code></td>
+<td>string</td>
+<td>Path to output all logs to a persistent log file</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--genesisStateFile</code></td>
+<td>string</td>
+<td>Genesis state file path in ssz-encoded format</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--api.rest.api</code></td>
+<td>array</td>
+<td>Pick namespaces to expose for HTTP API</td>
+<td>["beacon","node","validator"]</td>
+</tr>
+<tr>
+<td><code>--api.rest.cors</code></td>
+<td>string</td>
+<td>Configures the Access-Control-Allow-Origin CORS header for HTTP API</td>
+<td>*</td>
+</tr>
+<tr>
+<td><code>--api.rest.enabled</code></td>
+<td>boolean</td>
+<td>Enable/disable HTTP API</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>--api.rest.host</code></td>
+<td>string</td>
+<td>Set host for HTTP API</td>
+<td>127.0.0.1</td>
+</tr>
+<tr>
+<td><code>--api.rest.port</code></td>
+<td>number</td>
+<td>Set port for HTTP API</td>
+<td>9596</td>
+</tr>
+<tr>
+<td><code>--eth1.enabled</code></td>
+<td>boolean</td>
+<td>Whether to follow the eth1 chain</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>--eth1.provider.url</code></td>
+<td>string</td>
+<td>Url to Eth1 node with enabled rpc</td>
+<td>http://localhost:8545</td>
+</tr>
+<tr>
+<td><code>--eth1.depositContract.deployedAt</code></td>
+<td>number</td>
+<td>Block number at which the deposit contract contract was deployed</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>--metrics.enabled</code></td>
+<td>boolean</td>
+<td>Enable metrics</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>--metrics.gatewayUrl</code></td>
+<td>string</td>
+<td>Gateway URL for metrics</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--metrics.pushGateway</code></td>
+<td>boolean</td>
+<td>Enable/disable Prometheus Pushgateway for metrics</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>--metrics.serverPort</code></td>
+<td>number</td>
+<td>Server port for metrics</td>
+<td>8008</td>
+</tr>
+<tr>
+<td><code>--metrics.timeout</code></td>
+<td>number</td>
+<td>How often metrics should be probed</td>
+<td>5000</td>
+</tr>
+<tr>
+<td><code>--network.discv5.enabled</code></td>
+<td>boolean</td>
+<td>Enable discv5</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>--network.discv5.bindAddr</code></td>
+<td>string</td>
+<td>Local multiaddress to listen on for discv5</td>
+<td>/ip4/0.0.0.0/udp/9000</td>
+</tr>
+<tr>
+<td><code>--network.discv5.bootEnrs</code></td>
+<td>array</td>
+<td>Bootnodes for discv5 discovery</td>
+<td>[]</td>
+</tr>
+<tr>
+<td><code>--network.maxPeers</code></td>
+<td>number</td>
+<td>Maximum # of peers who can connect</td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>--network.bootnodes</code></td>
+<td>array</td>
+<td>Libp2p peers to connect to on boot</td>
+<td>[]</td>
+</tr>
+<tr>
+<td><code>--network.multiaddrs</code></td>
+<td>array</td>
+<td>Local listening addresses for req/resp and gossip</td>
+<td>["/ip4/0.0.0.0/tcp/9000"]</td>
+</tr>
+<tr>
+<td><code>--sync.minPeers</code></td>
+<td>number</td>
+<td>Minimum number of peers before the beacon chain starts syncing</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>--enr.ip</code></td>
+<td>string</td>
+<td>Override ENR IP entry</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--enr.tcp</code></td>
+<td>number</td>
+<td>Override ENR TCP entry</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--enr.udp</code></td>
+<td>number</td>
+<td>Override ENR UDP entry</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--enr.ip6</code></td>
+<td>string</td>
+<td>Override ENR IPv6 entry</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--enr.tcp6</code></td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) TCP entry</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--enr.udp6</code></td>
+<td>number</td>
+<td>Override ENR (IPv6-specific) UDP entry</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="validator"><code>validator</code><a class="headerlink" href="#validator" title="Permanent link">&para;</a></h2>
+<p>Run one or multiple validator clients</p>
+<p><strong>Examples</strong></p>
+<p>Run one validator client with all the keystores available in the directory .medalla/keystores</p>
+<div class="codehilite"><pre><span></span><code>validator --testnet medalla
+</code></pre></div>
+
+
 <p><strong>Options</strong></p>
 <table>
 <thead>
@@ -786,40 +1006,70 @@ Run one validator client with all the keystores available in the directory .meda
 <p><strong>Examples</strong></p>
 <p>Create a validator from HD wallet named 'primary'</p>
 <div class="codehilite"><pre><span></span><code>account validator create --name primary --passphraseFile primary.pass
- ```
-
-**Options**
-
-| Option | Type | Description | Default |
-| --- | --- | --- | --- |
-| `--name` | string | Use the wallet identified by this name |  |
-| `--passphraseFile` | string | A path to a file containing the password which will unlock the wallet. |  |
-| `--depositGwei` | string | The GWEI value of the deposit amount. Defaults to the minimum amount   required for an active validator (MAX_EFFECTIVE_BALANCE) |  |
-| `--storeWithdrawalKeystore` | boolean | If present, the withdrawal keystore will be stored alongside the voting   keypair. It is generally recommended to *not* store the withdrawal key and   instead generate them from the wallet seed when required. |  |
-| `--count` | number | The number of validators to create | 1 |
-
-
-#### `account  validator  deposit`
-Submits a deposit to an Eth1 validator registration contract via an IPC endpoint of an Eth1 client (e.g., Geth, OpenEthereum, etc.). The validators must already have been created and exist on the file-system. The process will exit immediately with an error if any error occurs. After each deposit is submitted to the Eth1 node, a file will be saved in the validator directory with the transaction hash. The deposit contract address will be determined by the spec config flag.
-
-**Examples**
-
-Fund a deposit using a local keystore file
 </code></pre></div>
 
 
-<p>account validator deposit --validator 0x88f92 --keystorePath keystore.json --keystorePassword my-secret-pass
- ```</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>string</td>
+<td>Use the wallet identified by this name</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--passphraseFile</code></td>
+<td>string</td>
+<td>A path to a file containing the password which will unlock the wallet.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--depositGwei</code></td>
+<td>string</td>
+<td>The GWEI value of the deposit amount. Defaults to the minimum amount   required for an active validator (MAX_EFFECTIVE_BALANCE)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--storeWithdrawalKeystore</code></td>
+<td>boolean</td>
+<td>If present, the withdrawal keystore will be stored alongside the voting   keypair. It is generally recommended to <em>not</em> store the withdrawal key and   instead generate them from the wallet seed when required.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--count</code></td>
+<td>number</td>
+<td>The number of validators to create</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="account-validator-deposit"><code>account  validator  deposit</code><a class="headerlink" href="#account-validator-deposit" title="Permanent link">&para;</a></h4>
+<p>Submits a deposit to an Eth1 validator registration contract via an IPC endpoint of an Eth1 client (e.g., Geth, OpenEthereum, etc.). The validators must already have been created and exist on the file-system. The process will exit immediately with an error if any error occurs. After each deposit is submitted to the Eth1 node, a file will be saved in the validator directory with the transaction hash. The deposit contract address will be determined by the spec config flag.</p>
+<p><strong>Examples</strong></p>
+<p>Fund a deposit using a local keystore file</p>
+<div class="codehilite"><pre><span></span><code>account validator deposit --validator 0x88f92 --keystorePath keystore.json --keystorePassword my-secret-pass
+</code></pre></div>
+
+
 <p>Fund a deposit using a local Eth1 node via IPC</p>
 <div class="codehilite"><pre><span></span><code>account validator deposit --validator 0x88f92 --ipcPath /home/your_folder/geth.ipc
- ```
-
-Fund a deposit using a local Eth1 node unlockable via JSON RPC
 </code></pre></div>
 
 
-<p>account validator deposit --validator 0x88f92 --rpcUrl http://localhost:8545 --rpcPassword my-secret-pass
- ```</p>
+<p>Fund a deposit using a local Eth1 node unlockable via JSON RPC</p>
+<div class="codehilite"><pre><span></span><code>account validator deposit --validator 0x88f92 --rpcUrl http://localhost:8545 --rpcPassword my-secret-pass
+</code></pre></div>
+
+
 <p><strong>Options</strong></p>
 <table>
 <thead>
@@ -874,27 +1124,42 @@ Fund a deposit using a local Eth1 node unlockable via JSON RPC
 <p><strong>Examples</strong></p>
 <p>Import validator keystores generated with the Ethereum Foundation Eth2 Launchpad</p>
 <div class="codehilite"><pre><span></span><code>account validator import --testnet medalla --directory $HOME/eth2.0-deposit-cli/validator_keys
- ```
-
-**Options**
-
-| Option | Type | Description | Default |
-| --- | --- | --- | --- |
-| `--keystore` | string | Path to a single keystore to be imported. |  |
-| `--directory` | string | Path to a directory which contains zero or more keystores for import. This directory and all sub-directories will be searched and any file name which contains &#39;keystore&#39; and has the &#39;.json&#39; extension will be attempted to be imported. |  |
-
-
-#### `account  validator  list`
-Lists the public keys of all validators
-
-**Examples**
-
-List all validator pubkeys in the directory .testing/keystores
 </code></pre></div>
 
 
-<p>account validator list --keystoresDir .testing/keystores
- ```</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--keystore</code></td>
+<td>string</td>
+<td>Path to a single keystore to be imported.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--directory</code></td>
+<td>string</td>
+<td>Path to a directory which contains zero or more keystores for import. This directory and all sub-directories will be searched and any file name which contains 'keystore' and has the '.json' extension will be attempted to be imported.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="account-validator-list"><code>account  validator  list</code><a class="headerlink" href="#account-validator-list" title="Permanent link">&para;</a></h4>
+<p>Lists the public keys of all validators</p>
+<p><strong>Examples</strong></p>
+<p>List all validator pubkeys in the directory .testing/keystores</p>
+<div class="codehilite"><pre><span></span><code>account validator list --keystoresDir .testing/keystores
+</code></pre></div>
+
+
 <h3 id="account-wallet"><code>account  wallet</code><a class="headerlink" href="#account-wallet" title="Permanent link">&para;</a></h3>
 <p>Provides commands for managing Eth2 wallets.</p>
 <p><strong>Options</strong></p>
@@ -922,54 +1187,72 @@ List all validator pubkeys in the directory .testing/keystores
 <p><strong>Examples</strong></p>
 <p>Create an HD wallet named 'primary'</p>
 <div class="codehilite"><pre><span></span><code>account wallet create --name primary --passphraseFile primary.pass
- ```
-
-**Options**
-
-| Option | Type | Description | Default |
-| --- | --- | --- | --- |
-| `--name` | string | The wallet will be created with this name. It is not allowed to   create two wallets with the same name for the same --base-dir. |  |
-| `--passphraseFile` | string | A path to a file containing the password which will unlock the wallet.   If the file does not exist, a random password will be generated and saved at that   path. To avoid confusion, if the file does not already exist it must include a   &#39;.pass&#39; suffix. |  |
-| `--type` | string | The type of wallet to create. Only HD (hierarchical-deterministic) wallets are supported presently. | hd |
-| `--mnemonicOutputPath` | string | If present, the mnemonic will be saved to this file |  |
-
-
-#### `account  wallet  list`
-Lists the names of all wallets
-
-**Examples**
-
-List all wallets in .testnet/wallets
 </code></pre></div>
 
 
-<p>account wallet list --walletsDir .testnet/wallets
- ```</p>
+<p><strong>Options</strong></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>string</td>
+<td>The wallet will be created with this name. It is not allowed to   create two wallets with the same name for the same --base-dir.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--passphraseFile</code></td>
+<td>string</td>
+<td>A path to a file containing the password which will unlock the wallet.   If the file does not exist, a random password will be generated and saved at that   path. To avoid confusion, if the file does not already exist it must include a   '.pass' suffix.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>--type</code></td>
+<td>string</td>
+<td>The type of wallet to create. Only HD (hierarchical-deterministic) wallets are supported presently.</td>
+<td>hd</td>
+</tr>
+<tr>
+<td><code>--mnemonicOutputPath</code></td>
+<td>string</td>
+<td>If present, the mnemonic will be saved to this file</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="account-wallet-list"><code>account  wallet  list</code><a class="headerlink" href="#account-wallet-list" title="Permanent link">&para;</a></h4>
+<p>Lists the names of all wallets</p>
+<p><strong>Examples</strong></p>
+<p>List all wallets in .testnet/wallets</p>
+<div class="codehilite"><pre><span></span><code>account wallet list --walletsDir .testnet/wallets
+</code></pre></div>
+
+
 <h2 id="init"><code>init</code><a class="headerlink" href="#init" title="Permanent link">&para;</a></h2>
 <p>Initialize Lodestar directories and files necessary to run a beacon chain node. This step is not required, and should only be used to prepare special configurations</p>
 <p><strong>Examples</strong></p>
 <p>Initialize a configuration for the Medalla testnet. Then, you can edit the config file [object Object] to customize your beacon node settings</p>
 <div class="codehilite"><pre><span></span><code>init --testnet medalla
- ```
-
-**Options**
-
-Cmd `init` has all the options from the [`beacon` cmd](#beacon).
-
-
-
-
-## `dev`
-Quickly bootstrap a beacon node and multiple validators. Use for development and testing
-
-**Examples**
-
-Start a single beacon node with 8 interop validators
 </code></pre></div>
 
 
-<p>dev --dev.genesisValidators 8 --dev.reset
- ```</p>
+<p><strong>Options</strong></p>
+<p>Cmd <code>init</code> has all the options from the <a href="#beacon"><code>beacon</code> cmd</a>.</p>
+<h2 id="dev"><code>dev</code><a class="headerlink" href="#dev" title="Permanent link">&para;</a></h2>
+<p>Quickly bootstrap a beacon node and multiple validators. Use for development and testing</p>
+<p><strong>Examples</strong></p>
+<p>Start a single beacon node with 8 interop validators</p>
+<div class="codehilite"><pre><span></span><code>dev --dev.genesisValidators 8 --dev.reset
+</code></pre></div>
+
+
 <p><strong>Options</strong></p>
 <p>Cmd <code>dev</code> has all the options from the <a href="#beacon"><code>beacon</code> cmd</a>.</p>
 <table>
