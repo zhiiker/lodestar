@@ -434,6 +434,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getpendingblockattestations" class="md-nav__link">
+    getPendingBlockAttestations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpendingslotattestations" class="md-nav__link">
+    getPendingSlotAttestations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#receiveattestation" class="md-nav__link">
     receiveAttestation
   </a>
@@ -443,6 +457,20 @@
           <li class="md-nav__item">
   <a href="#receiveblock" class="md-nav__link">
     receiveBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    start
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" class="md-nav__link">
+    stop
   </a>
   
 </li>
@@ -476,22 +504,67 @@
 <h1 id="interface-iattestationprocessor">Interface: IAttestationProcessor<a class="headerlink" href="#interface-iattestationprocessor" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>IAttestationProcessor</strong></li>
+<li><a href="../node.iservice/">IService</a></li>
 </ul>
+<p>↳ <strong>IAttestationProcessor</strong></p>
 <h2 id="implemented-by">Implemented by<a class="headerlink" href="#implemented-by" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../classes/chain.attestationprocessor/">AttestationProcessor</a></li>
+<li><a href="../../classes/chain_attestation.attestationprocessor/">AttestationProcessor</a></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#getpendingblockattestations">getPendingBlockAttestations</a></li>
+<li><a href="./#getpendingslotattestations">getPendingSlotAttestations</a></li>
 <li><a href="./#receiveattestation">receiveAttestation</a></li>
 <li><a href="./#receiveblock">receiveBlock</a></li>
+<li><a href="./#start">start</a></li>
+<li><a href="./#stop">stop</a></li>
 </ul>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
+<h3 id="getpendingblockattestations">getPendingBlockAttestations<a class="headerlink" href="#getpendingblockattestations" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getPendingBlockAttestations</strong>(<code>blockRootHex</code>: string): <em>Attestation[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/chain/interface.ts#L95">packages/lodestar/src/chain/interface.ts:95</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blockRootHex</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Attestation[]</em></p>
+<hr />
+<h3 id="getpendingslotattestations">getPendingSlotAttestations<a class="headerlink" href="#getpendingslotattestations" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getPendingSlotAttestations</strong>(<code>slot</code>: Slot): <em>Attestation[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/chain/interface.ts#L96">packages/lodestar/src/chain/interface.ts:96</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slot</code></td>
+<td>Slot</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Attestation[]</em></p>
+<hr />
 <h3 id="receiveattestation">receiveAttestation<a class="headerlink" href="#receiveattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>receiveAttestation</strong>(<code>attestation</code>: Attestation): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d6e4b8804/packages/lodestar/src/chain/interface.ts#L91">packages/lodestar/src/chain/interface.ts:91</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/chain/interface.ts#L94">packages/lodestar/src/chain/interface.ts:94</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -511,7 +584,7 @@
 <hr />
 <h3 id="receiveblock">receiveBlock<a class="headerlink" href="#receiveblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>receiveBlock</strong>(<code>signedBlock</code>: SignedBeaconBlock, <code>trusted?</code>: boolean): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d6e4b8804/packages/lodestar/src/chain/interface.ts#L90">packages/lodestar/src/chain/interface.ts:90</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/chain/interface.ts#L93">packages/lodestar/src/chain/interface.ts:93</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -531,6 +604,18 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
+<p><em>Inherited from <a href="../network_gossip.igossip/">IGossip</a>.<a href="../network_gossip.igossip/#start">start</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/node/nodejs.ts#L25">packages/lodestar/src/node/nodejs.ts:25</a></em></p>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
+<p><em>Inherited from <a href="../network_gossip.igossip/">IGossip</a>.<a href="../network_gossip.igossip/#stop">stop</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/de1ff3e30/packages/lodestar/src/node/nodejs.ts#L27">packages/lodestar/src/node/nodejs.ts:27</a></em></p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
                 
               
