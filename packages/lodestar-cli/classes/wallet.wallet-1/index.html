@@ -464,8 +464,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#readonly-crypto" class="md-nav__link">
-    Readonly crypto
+  <a href="#crypto" class="md-nav__link">
+    crypto
+  </a>
+  
+    <nav class="md-nav" aria-label="crypto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-description" class="md-nav__link">
+    Optional description
   </a>
   
 </li>
@@ -485,15 +505,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#readonly-path" class="md-nav__link">
-    Readonly path
+  <a href="#path" class="md-nav__link">
+    path
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#readonly-pubkey" class="md-nav__link">
-    Readonly pubkey
+  <a href="#pubkey" class="md-nav__link">
+    pubkey
   </a>
   
 </li>
@@ -506,8 +526,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#readonly-uuid" class="md-nav__link">
-    Readonly uuid
+  <a href="#uuid" class="md-nav__link">
+    uuid
   </a>
   
 </li>
@@ -554,8 +574,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tojson" class="md-nav__link">
-    toJSON
+  <a href="#stringify" class="md-nav__link">
+    stringify
   </a>
   
 </li>
@@ -589,15 +609,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#static-encrypt" class="md-nav__link">
-    Static encrypt
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#static-fromjson" class="md-nav__link">
-    Static fromJSON
+  <a href="#static-create" class="md-nav__link">
+    Static create
   </a>
   
 </li>
@@ -605,6 +618,20 @@
           <li class="md-nav__item">
   <a href="#static-frommnemonic" class="md-nav__link">
     Static fromMnemonic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-fromobject" class="md-nav__link">
+    Static fromObject
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-parse" class="md-nav__link">
+    Static parse
   </a>
   
 </li>
@@ -652,13 +679,14 @@
 </ul>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#readonly-crypto">crypto</a></li>
+<li><a href="./#crypto">crypto</a></li>
+<li><a href="./#optional-description">description</a></li>
 <li><a href="./#optional-name">name</a></li>
 <li><a href="./#nextaccount">nextaccount</a></li>
-<li><a href="./#readonly-path">path</a></li>
-<li><a href="./#readonly-pubkey">pubkey</a></li>
+<li><a href="./#path">path</a></li>
+<li><a href="./#pubkey">pubkey</a></li>
 <li><a href="./#type">type</a></li>
-<li><a href="./#readonly-uuid">uuid</a></li>
+<li><a href="./#uuid">uuid</a></li>
 <li><a href="./#version">version</a></li>
 </ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
@@ -666,20 +694,21 @@
 <li><a href="./#decrypt">decrypt</a></li>
 <li><a href="./#nextvalidator">nextValidator</a></li>
 <li><a href="./#randompasswords">randomPasswords</a></li>
-<li><a href="./#tojson">toJSON</a></li>
+<li><a href="./#stringify">stringify</a></li>
 <li><a href="./#toobject">toObject</a></li>
 <li><a href="./#towalletjson">toWalletJSON</a></li>
 <li><a href="./#towalletobject">toWalletObject</a></li>
 <li><a href="./#verifypassword">verifyPassword</a></li>
-<li><a href="./#static-encrypt">encrypt</a></li>
-<li><a href="./#static-fromjson">fromJSON</a></li>
+<li><a href="./#static-create">create</a></li>
 <li><a href="./#static-frommnemonic">fromMnemonic</a></li>
+<li><a href="./#static-fromobject">fromObject</a></li>
+<li><a href="./#static-parse">parse</a></li>
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new Wallet</strong>(<code>keystore</code>: Partial‹<a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a>›): <em><a href="./">Wallet</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -697,70 +726,85 @@
 </table>
 <p><strong>Returns:</strong> <em><a href="./">Wallet</a></em></p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="readonly-crypto"><code>Readonly</code> crypto<a class="headerlink" href="#readonly-crypto" title="Permanent link">&para;</a></h3>
-<p>• <strong>crypto</strong>: <em>IKeystoreCrypto</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#readonly-crypto">crypto</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:5</p>
+<h3 id="crypto">crypto<a class="headerlink" href="#crypto" title="Permanent link">&para;</a></h3>
+<p>• <strong>crypto</strong>: <em>object</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#crypto">crypto</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:12</p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>checksum</strong>: <em>IChecksumModule</em></p>
+</li>
+<li>
+<p><strong>cipher</strong>: <em>ICipherModule</em></p>
+</li>
+<li>
+<p><strong>kdf</strong>: <em>IKdfModule</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="optional-description"><code>Optional</code> description<a class="headerlink" href="#optional-description" title="Permanent link">&para;</a></h3>
+<p>• <strong>description</strong>? : <em>string</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#optional-description">description</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:9</p>
 <hr />
 <h3 id="optional-name"><code>Optional</code> name<a class="headerlink" href="#optional-name" title="Permanent link">&para;</a></h3>
 <p>• <strong>name</strong>? : <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L27">packages/lodestar-cli/src/wallet/Wallet.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L27">packages/lodestar-cli/src/wallet/Wallet.ts:27</a></em></p>
 <hr />
 <h3 id="nextaccount">nextaccount<a class="headerlink" href="#nextaccount" title="Permanent link">&para;</a></h3>
 <p>• <strong>nextaccount</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L28">packages/lodestar-cli/src/wallet/Wallet.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L28">packages/lodestar-cli/src/wallet/Wallet.ts:28</a></em></p>
 <hr />
-<h3 id="readonly-path"><code>Readonly</code> path<a class="headerlink" href="#readonly-path" title="Permanent link">&para;</a></h3>
+<h3 id="path">path<a class="headerlink" href="#path" title="Permanent link">&para;</a></h3>
 <p>• <strong>path</strong>: <em>string</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#readonly-path">path</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:7</p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#path">path</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:10</p>
 <hr />
-<h3 id="readonly-pubkey"><code>Readonly</code> pubkey<a class="headerlink" href="#readonly-pubkey" title="Permanent link">&para;</a></h3>
+<h3 id="pubkey">pubkey<a class="headerlink" href="#pubkey" title="Permanent link">&para;</a></h3>
 <p>• <strong>pubkey</strong>: <em>string</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#readonly-pubkey">pubkey</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:6</p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#pubkey">pubkey</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:11</p>
 <hr />
 <h3 id="type">type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
 <p>• <strong>type</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
 <hr />
-<h3 id="readonly-uuid"><code>Readonly</code> uuid<a class="headerlink" href="#readonly-uuid" title="Permanent link">&para;</a></h3>
+<h3 id="uuid">uuid<a class="headerlink" href="#uuid" title="Permanent link">&para;</a></h3>
 <p>• <strong>uuid</strong>: <em>string</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#readonly-uuid">uuid</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:8</p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#uuid">uuid</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:8</p>
 <hr />
 <h3 id="version">version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
 <p>• <strong>version</strong>: <em>number</em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L29">packages/lodestar-cli/src/wallet/Wallet.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L29">packages/lodestar-cli/src/wallet/Wallet.ts:29</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="decrypt">decrypt<a class="headerlink" href="#decrypt" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>decrypt</strong>(<code>password</code>: string): <em>Buffer</em></p>
+<p>▸ <strong>decrypt</strong>(<code>password</code>: string | Uint8Array): <em>Promise‹Buffer›</em></p>
 <p><em>Inherited from <a href="./">Wallet</a>.<a href="./#decrypt">decrypt</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:27</p>
-<p>Decrypts keystore secret</p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:33</p>
+<p>Decrypt a keystore, returns the secret key or throws on invalid password</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>password</code></td>
-<td>string</td>
-<td></td>
+<td>string &#124; Uint8Array</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Buffer</em></p>
+<p><strong>Returns:</strong> <em>Promise‹Buffer›</em></p>
 <hr />
 <h3 id="nextvalidator">nextValidator<a class="headerlink" href="#nextvalidator" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>nextValidator</strong>(<code>walletPassword</code>: string, <code>passwords</code>: object): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L84">packages/lodestar-cli/src/wallet/Wallet.ts:84</a></em></p>
+<p>▸ <strong>nextValidator</strong>(<code>walletPassword</code>: string, <code>passwords</code>: object): <em>Promise‹object›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L85">packages/lodestar-cli/src/wallet/Wallet.ts:85</a></em></p>
 <p>Produces a <code>Keystore</code> (encrypted with <code>keystore_password</code>) for the validator at
 <code>self.nextaccount</code>, incrementing <code>self.nextaccount</code> if the keystore was successfully
 generated.</p>
@@ -785,42 +829,45 @@ used to encrypt <code>this</code>.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>object</em></p>
+<p><strong>Returns:</strong> <em>Promise‹object›</em></p>
 <hr />
 <h3 id="randompasswords">randomPasswords<a class="headerlink" href="#randompasswords" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>randomPasswords</strong>(): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L117">packages/lodestar-cli/src/wallet/Wallet.ts:117</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L116">packages/lodestar-cli/src/wallet/Wallet.ts:116</a></em></p>
 <p>Utility function to generate passwords for the two eth2 pair keystores</p>
 <p><strong>Returns:</strong> <em>object</em></p>
 <hr />
-<h3 id="tojson">toJSON<a class="headerlink" href="#tojson" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>toJSON</strong>(): <em>string</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#tojson">toJSON</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:29</p>
+<h3 id="stringify">stringify<a class="headerlink" href="#stringify" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>stringify</strong>(): <em>string</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#stringify">stringify</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:45</p>
+<p>Return the keystore as stringified JSON</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="toobject">toObject<a class="headerlink" href="#toobject" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>toObject</strong>(): <em>object</em></p>
+<p>▸ <strong>toObject</strong>(): <em>IKeystore</em></p>
 <p><em>Inherited from <a href="./">Wallet</a>.<a href="./#toobject">toObject</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:28</p>
-<p><strong>Returns:</strong> <em>object</em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:41</p>
+<p>Return the keystore as a plain object</p>
+<p><strong>Returns:</strong> <em>IKeystore</em></p>
 <hr />
 <h3 id="towalletjson">toWalletJSON<a class="headerlink" href="#towalletjson" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>toWalletJSON</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L72">packages/lodestar-cli/src/wallet/Wallet.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L73">packages/lodestar-cli/src/wallet/Wallet.ts:73</a></em></p>
 <p>Returns wallet data to write to disk as stringified JSON</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="towalletobject">toWalletObject<a class="headerlink" href="#towalletobject" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>toWalletObject</strong>(): <em><a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L58">packages/lodestar-cli/src/wallet/Wallet.ts:58</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L59">packages/lodestar-cli/src/wallet/Wallet.ts:59</a></em></p>
 <p>Returns wallet data to write to disk as a parsed object</p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a></em></p>
 <hr />
 <h3 id="verifypassword">verifyPassword<a class="headerlink" href="#verifypassword" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>verifyPassword</strong>(<code>password</code>: string): <em>boolean</em></p>
+<p>▸ <strong>verifyPassword</strong>(<code>password</code>: string | Uint8Array): <em>Promise‹boolean›</em></p>
 <p><em>Inherited from <a href="./">Wallet</a>.<a href="./#verifypassword">verifyPassword</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:22</p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:37</p>
+<p>Verify the password as correct or not</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -832,90 +879,65 @@ used to encrypt <code>this</code>.</p>
 <tbody>
 <tr>
 <td><code>password</code></td>
-<td>string</td>
+<td>string &#124; Uint8Array</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>boolean</em></p>
+<p><strong>Returns:</strong> <em>Promise‹boolean›</em></p>
 <hr />
-<h3 id="static-encrypt"><code>Static</code> encrypt<a class="headerlink" href="#static-encrypt" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>encrypt</strong>(<code>secret</code>: bytes, <code>pubkey</code>: bytes, <code>password</code>: string, <code>path?</code>: string, <code>crypto?</code>: CryptoFunction, <code>kdfSalt?</code>: bytes, <code>aesIv?</code>: bytes): <em>IKeystore</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#static-encrypt">encrypt</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:21</p>
-<p>Encrypt given secret and kreate keystore object.</p>
+<h3 id="static-create"><code>Static</code> create<a class="headerlink" href="#static-create" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>create</strong>(<code>password</code>: string | Uint8Array, <code>secret</code>: Uint8Array, <code>pubkey</code>: Uint8Array, <code>path</code>: string, <code>description?</code>: string | null, <code>kdfMod?</code>: Pick‹IKdfModule, "function" | "params"›, <code>checksumMod?</code>: Pick‹IChecksumModule, "function"›, <code>cipherMod?</code>: Pick‹ICipherModule, "function" | "params"›): <em>Promise‹Keystore›</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#static-create">create</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:21</p>
+<p>Create a new Keystore object</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><code>password</code></td>
+<td>string &#124; Uint8Array</td>
+</tr>
+<tr>
 <td><code>secret</code></td>
-<td>bytes</td>
-<td>secret to be encrypted</td>
+<td>Uint8Array</td>
 </tr>
 <tr>
 <td><code>pubkey</code></td>
-<td>bytes</td>
-<td>-</td>
+<td>Uint8Array</td>
 </tr>
 <tr>
-<td><code>password</code></td>
+<td><code>path</code></td>
 <td>string</td>
-<td>to be used for encryption</td>
 </tr>
 <tr>
-<td><code>path?</code></td>
-<td>string</td>
-<td>key derivation path as per eip 2334</td>
+<td><code>description?</code></td>
+<td>string &#124; null</td>
 </tr>
 <tr>
-<td><code>crypto?</code></td>
-<td>CryptoFunction</td>
-<td>pbkdf2 or scrypt</td>
+<td><code>kdfMod?</code></td>
+<td>Pick‹IKdfModule, "function" &#124; "params"›</td>
 </tr>
 <tr>
-<td><code>kdfSalt?</code></td>
-<td>bytes</td>
-<td>-</td>
+<td><code>checksumMod?</code></td>
+<td>Pick‹IChecksumModule, "function"›</td>
 </tr>
 <tr>
-<td><code>aesIv?</code></td>
-<td>bytes</td>
-<td></td>
+<td><code>cipherMod?</code></td>
+<td>Pick‹ICipherModule, "function" &#124; "params"›</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>IKeystore</em></p>
-<hr />
-<h3 id="static-fromjson"><code>Static</code> fromJSON<a class="headerlink" href="#static-fromjson" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fromJSON</strong>(<code>json</code>: string): <em>Keystore</em></p>
-<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#static-fromjson">fromJSON</a></em></p>
-<p>Defined in node_modules/@chainsafe/bls-keystore/lib/keystore.d.ts:11</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>json</code></td>
-<td>string</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Keystore</em></p>
+<p><strong>Returns:</strong> <em>Promise‹Keystore›</em></p>
 <hr />
 <h3 id="static-frommnemonic"><code>Static</code> fromMnemonic<a class="headerlink" href="#static-frommnemonic" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fromMnemonic</strong>(<code>mnemonic</code>: string, <code>password</code>: string, <code>name</code>: string): <em><a href="./">Wallet</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/104c7852c/packages/lodestar-cli/src/wallet/Wallet.ts#L44">packages/lodestar-cli/src/wallet/Wallet.ts:44</a></em></p>
+<p>▸ <strong>fromMnemonic</strong>(<code>mnemonic</code>: string, <code>password</code>: string, <code>name</code>: string): <em>Promise‹<a href="./">Wallet</a>›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/c5126dc24/packages/lodestar-cli/src/wallet/Wallet.ts#L44">packages/lodestar-cli/src/wallet/Wallet.ts:44</a></em></p>
 <p>Creates a new builder for a seed specified as a BIP-39 <code>Mnemonic</code> (where the nmemonic itself does
 not have a passphrase).</p>
 <p><strong>Parameters:</strong></p>
@@ -941,7 +963,51 @@ not have a passphrase).</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em><a href="./">Wallet</a></em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="./">Wallet</a>›</em></p>
+<hr />
+<h3 id="static-fromobject"><code>Static</code> fromObject<a class="headerlink" href="#static-fromobject" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>fromObject</strong>(<code>obj</code>: unknown): <em>Keystore</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#static-fromobject">fromObject</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:25</p>
+<p>Create a keystore from an unknown object</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obj</code></td>
+<td>unknown</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Keystore</em></p>
+<hr />
+<h3 id="static-parse"><code>Static</code> parse<a class="headerlink" href="#static-parse" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>parse</strong>(<code>str</code>: string): <em>Keystore</em></p>
+<p><em>Inherited from <a href="./">Wallet</a>.<a href="./#static-parse">parse</a></em></p>
+<p>Defined in node_modules/@chainsafe/bls-keystore/lib/class.d.ts:29</p>
+<p>Parse a keystore from a JSON string</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Keystore</em></p>
                 
               
               
