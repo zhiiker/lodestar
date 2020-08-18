@@ -624,7 +624,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="hasproposeralreadyproposed_1">hasProposerAlreadyProposed<a class="headerlink" href="#hasproposeralreadyproposed_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>hasProposerAlreadyProposed</strong>(<code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>block</code>: BeaconBlock): <em>Promise‹boolean›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/block.ts#L96">packages/lodestar/src/network/gossip/validation/block.ts:96</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/block.ts#L96">packages/lodestar/src/network/gossip/validation/block.ts:96</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -648,7 +648,7 @@
 <hr />
 <h3 id="hasvalidattestationslot_1">hasValidAttestationSlot<a class="headerlink" href="#hasvalidattestationslot_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>hasValidAttestationSlot</strong>(<code>config</code>: IBeaconConfig, <code>genesisTime</code>: number, <code>attestation</code>: Attestation): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/attestation.ts#L120">packages/lodestar/src/network/gossip/validation/attestation.ts:120</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/attestation.ts#L120">packages/lodestar/src/network/gossip/validation/attestation.ts:120</a></em></p>
 <p>is ready to be included in block</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -677,7 +677,7 @@
 <hr />
 <h3 id="isattestingtoinvalidblock_1">isAttestingToInValidBlock<a class="headerlink" href="#isattestingtoinvalidblock_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isAttestingToInValidBlock</strong>(<code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>attestation</code>: Attestation): <em>Promise‹boolean›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/attestation.ts#L111">packages/lodestar/src/network/gossip/validation/attestation.ts:111</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/attestation.ts#L111">packages/lodestar/src/network/gossip/validation/attestation.ts:111</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -701,7 +701,7 @@
 <hr />
 <h3 id="isexpectedproposer_1">isExpectedProposer<a class="headerlink" href="#isexpectedproposer_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isExpectedProposer</strong>(<code>epochCtx</code>: EpochContext, <code>block</code>: BeaconBlock): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/block.ts#L101">packages/lodestar/src/network/gossip/validation/block.ts:101</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/block.ts#L101">packages/lodestar/src/network/gossip/validation/block.ts:101</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -725,7 +725,7 @@
 <hr />
 <h3 id="isunaggregatedattestation_1">isUnaggregatedAttestation<a class="headerlink" href="#isunaggregatedattestation_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isUnaggregatedAttestation</strong>(<code>attestation</code>: Attestation): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/attestation.ts#L126">packages/lodestar/src/network/gossip/validation/attestation.ts:126</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/attestation.ts#L126">packages/lodestar/src/network/gossip/validation/attestation.ts:126</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -745,7 +745,7 @@
 <hr />
 <h3 id="validategossipattestation_1">validateGossipAttestation<a class="headerlink" href="#validategossipattestation_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>validateGossipAttestation</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>logger</code>: ILogger, <code>attestation</code>: Attestation, <code>subnet</code>: number): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/attestation.ts#L16">packages/lodestar/src/network/gossip/validation/attestation.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/attestation.ts#L16">packages/lodestar/src/network/gossip/validation/attestation.ts:16</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -785,7 +785,7 @@
 <hr />
 <h3 id="validategossipblock_1">validateGossipBlock<a class="headerlink" href="#validategossipblock_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>validateGossipBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>logger</code>: ILogger, <code>block</code>: SignedBeaconBlock): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/block.ts#L14">packages/lodestar/src/network/gossip/validation/block.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/block.ts#L14">packages/lodestar/src/network/gossip/validation/block.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -821,7 +821,7 @@
 <hr />
 <h3 id="waitforblockslot_1">waitForBlockSlot<a class="headerlink" href="#waitforblockslot_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>waitForBlockSlot</strong>(<code>config</code>: IBeaconConfig, <code>genesisTime</code>: Number64, <code>blockSlot</code>: Slot): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/362135fc5/packages/lodestar/src/network/gossip/validation/block.ts#L86">packages/lodestar/src/network/gossip/validation/block.ts:86</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/a459c35af/packages/lodestar/src/network/gossip/validation/block.ts#L86">packages/lodestar/src/network/gossip/validation/block.ts:86</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
