@@ -15,7 +15,7 @@
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.8">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.b8ac9624.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.01afc2df.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.28f3ef9a.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.83bccb1f.min.css">
       
       
     
@@ -1219,7 +1219,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new RetryProvider</strong>(<code>attempts</code>: number, <code>url?</code>: ethers.utils.ConnectionInfo | string, <code>network?</code>: ethers.providers.Networkish): <em><a href="./">RetryProvider</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ef0156e6f/packages/lodestar/src/eth1/impl/retryProvider.ts#L6">packages/lodestar/src/eth1/impl/retryProvider.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7db0c711b/packages/lodestar/src/eth1/impl/retryProvider.ts#L6">packages/lodestar/src/eth1/impl/retryProvider.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1336,7 +1336,7 @@
 <hr />
 <h3 id="attempts">attempts<a class="headerlink" href="#attempts" title="Permanent link">&para;</a></h3>
 <p>• <strong>attempts</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ef0156e6f/packages/lodestar/src/eth1/impl/retryProvider.ts#L6">packages/lodestar/src/eth1/impl/retryProvider.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7db0c711b/packages/lodestar/src/eth1/impl/retryProvider.ts#L6">packages/lodestar/src/eth1/impl/retryProvider.ts:6</a></em></p>
 <hr />
 <h3 id="readonly-connection"><code>Readonly</code> connection<a class="headerlink" href="#readonly-connection" title="Permanent link">&para;</a></h3>
 <p>• <strong>connection</strong>: <em>ConnectionInfo</em></p>
@@ -1467,7 +1467,7 @@
 <p><strong>Returns:</strong> <em>Promise‹string›</em></p>
 <hr />
 <h3 id="_getblock">_getBlock<a class="headerlink" href="#_getblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>_getBlock</strong>(<code>blockHashOrBlockTag</code>: BlockTag | string | Promise‹BlockTag | string›, <code>includeTransactions?</code>: boolean): <em>Promise‹Block | BlockWithTransactions›</em></p>
+<p>▸ <strong>_getBlock</strong>(<code>blockHashOrBlockTag</code>: BlockTag | string | Promise‹BlockTag | string›, <code>includeTransactions?</code>: undefined | false | true): <em>Promise‹Block | BlockWithTransactions›</em></p>
 <p><em>Inherited from <a href="./">RetryProvider</a>.<a href="./#_getblock">_getBlock</a></em></p>
 <p>Defined in node_modules/@ethersproject/providers/lib/base-provider.d.ts:82</p>
 <p><strong>Parameters:</strong></p>
@@ -1485,7 +1485,7 @@
 </tr>
 <tr>
 <td><code>includeTransactions?</code></td>
-<td>boolean</td>
+<td>undefined &#124; false &#124; true</td>
 </tr>
 </tbody>
 </table>
@@ -1680,7 +1680,7 @@
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="_wraptransaction">_wrapTransaction<a class="headerlink" href="#_wraptransaction" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>_wrapTransaction</strong>(<code>tx</code>: Transaction, <code>hash?</code>: string): <em>TransactionResponse</em></p>
+<p>▸ <strong>_wrapTransaction</strong>(<code>tx</code>: Transaction, <code>hash?</code>: undefined | string): <em>TransactionResponse</em></p>
 <p><em>Inherited from <a href="./">RetryProvider</a>.<a href="./#_wraptransaction">_wrapTransaction</a></em></p>
 <p>Defined in node_modules/@ethersproject/providers/lib/base-provider.d.ts:75</p>
 <p><strong>Parameters:</strong></p>
@@ -1698,7 +1698,7 @@
 </tr>
 <tr>
 <td><code>hash?</code></td>
-<td>string</td>
+<td>undefined &#124; string</td>
 </tr>
 </tbody>
 </table>
@@ -2250,7 +2250,7 @@
 <h3 id="perform">perform<a class="headerlink" href="#perform" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>perform</strong>(<code>method</code>: string, <code>params</code>: any): <em>any</em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ef0156e6f/packages/lodestar/src/eth1/impl/retryProvider.ts#L14">packages/lodestar/src/eth1/impl/retryProvider.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7db0c711b/packages/lodestar/src/eth1/impl/retryProvider.ts#L14">packages/lodestar/src/eth1/impl/retryProvider.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -2441,7 +2441,7 @@
 <p><strong>Returns:</strong> <em>Promise‹TransactionResponse›</em></p>
 <hr />
 <h3 id="waitfortransaction">waitForTransaction<a class="headerlink" href="#waitfortransaction" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>waitForTransaction</strong>(<code>transactionHash</code>: string, <code>confirmations?</code>: number, <code>timeout?</code>: number): <em>Promise‹TransactionReceipt›</em></p>
+<p>▸ <strong>waitForTransaction</strong>(<code>transactionHash</code>: string, <code>confirmations?</code>: undefined | number, <code>timeout?</code>: undefined | number): <em>Promise‹TransactionReceipt›</em></p>
 <p><em>Inherited from <a href="./">RetryProvider</a>.<a href="./#waitfortransaction">waitForTransaction</a></em></p>
 <p><em>Overrides void</em></p>
 <p>Defined in node_modules/@ethersproject/providers/lib/base-provider.d.ts:68</p>
@@ -2460,11 +2460,11 @@
 </tr>
 <tr>
 <td><code>confirmations?</code></td>
-<td>number</td>
+<td>undefined &#124; number</td>
 </tr>
 <tr>
 <td><code>timeout?</code></td>
-<td>number</td>
+<td>undefined &#124; number</td>
 </tr>
 </tbody>
 </table>
@@ -2504,7 +2504,7 @@
 <p><strong>Returns:</strong> <em>Network</em></p>
 <hr />
 <h3 id="static-hexlifytransaction"><code>Static</code> hexlifyTransaction<a class="headerlink" href="#static-hexlifytransaction" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>hexlifyTransaction</strong>(<code>transaction</code>: TransactionRequest, <code>allowExtra?</code>: object): <em>object</em></p>
+<p>▸ <strong>hexlifyTransaction</strong>(<code>transaction</code>: TransactionRequest, <code>allowExtra?</code>: undefined | object): <em>object</em></p>
 <p><em>Inherited from <a href="./">RetryProvider</a>.<a href="./#static-hexlifytransaction">hexlifyTransaction</a></em></p>
 <p>Defined in node_modules/@ethersproject/providers/lib/json-rpc-provider.d.ts:41</p>
 <p><strong>Parameters:</strong></p>
@@ -2522,7 +2522,7 @@
 </tr>
 <tr>
 <td><code>allowExtra?</code></td>
-<td>object</td>
+<td>undefined &#124; object</td>
 </tr>
 </tbody>
 </table>
@@ -2622,8 +2622,8 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({

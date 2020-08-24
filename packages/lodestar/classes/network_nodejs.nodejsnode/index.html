@@ -15,7 +15,7 @@
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.8">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.b8ac9624.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.01afc2df.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.28f3ef9a.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.83bccb1f.min.css">
       
       
     
@@ -801,16 +801,7 @@
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><strong>addresses</strong>(): <em>object</em></p>
-</li>
-<li>
-<p><strong>announce</strong>? : <em>string[]</em></p>
-</li>
-<li>
-<p><strong>listen</strong>? : <em>string[]</em></p>
-</li>
-<li>
-<p><strong>noAnnounce</strong>? : <em>string[]</em></p>
+<p><strong>addresses</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
 <p><strong>config</strong>: <em><a href="./#static-optionsconfig">OptionsConfig</a></em></p>
@@ -819,7 +810,7 @@
 <p><strong>modules</strong>: <em><a href="./#static-optionsmodules">OptionsModules</a></em></p>
 </li>
 <li>
-<p><strong>peerId</strong>? : <em>PeerId</em></p>
+<p><strong>peerId</strong>? : <em>undefined | PeerId‹›</em></p>
 </li>
 </ul>
 <hr />
@@ -829,111 +820,22 @@
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
-<p><strong>contentRouting</strong>(): <em>object</em></p>
+<p><strong>contentRouting</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
-<p><strong>dht</strong>(): <em>object</em></p>
+<p><strong>dht</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
-<p><strong>kBucketSize</strong>? : <em>number</em></p>
+<p><strong>peerDiscovery</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
-<p><strong>peerDiscovery</strong>(): <em>object</em></p>
+<p><strong>peerRouting</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
-<p><strong>autoDial</strong>? : <em>boolean</em></p>
+<p><strong>pubsub</strong>? : <em>undefined | object</em></p>
 </li>
 <li>
-<p><strong>bootstrap</strong>(): <em>object</em></p>
-<ul>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>interval</strong>? : <em>number</em></p>
-</li>
-<li>
-<p><strong>list</strong>: <em>Array‹string | Multiaddr›</em></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>mdns</strong>(): <em>object</em></p>
-<ul>
-<li>
-<p><strong>broadcast</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>interval</strong>? : <em>number</em></p>
-</li>
-<li>
-<p><strong>peerId</strong>: <em>PeerId</em></p>
-</li>
-<li>
-<p><strong>port</strong>? : <em>number</em></p>
-</li>
-<li>
-<p><strong>serviceTag</strong>? : <em>string</em></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>webRTCStar</strong>(): <em>object</em></p>
-<ul>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>interval</strong>? : <em>number</em></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>websocketStar</strong>(): <em>object</em></p>
-<ul>
-<li><strong>enabled</strong>? : <em>boolean</em></li>
-</ul>
-</li>
-<li>
-<p><strong>peerRouting</strong>(): <em>object</em></p>
-</li>
-<li>
-<p><strong>pubsub</strong>(): <em>object</em></p>
-</li>
-<li>
-<p><strong>emitSelf</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>signMessages</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>strictSigning</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>relay</strong>(): <em>object</em></p>
-</li>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>hop</strong>(): <em>object</em></p>
-<ul>
-<li>
-<p><strong>active</strong>? : <em>boolean</em></p>
-</li>
-<li>
-<p><strong>enabled</strong>? : <em>boolean</em></p>
-</li>
-</ul>
+<p><strong>relay</strong>? : <em>undefined | object</em></p>
 </li>
 </ul>
 <hr />
@@ -962,7 +864,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new NodejsNode</strong>(<code>options</code>: <a href="../../interfaces/network_nodejs.ilibp2poptions/">ILibp2pOptions</a>): <em><a href="./">NodejsNode</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/ef0156e6f/packages/lodestar/src/network/nodejs/bundle.ts#L34">packages/lodestar/src/network/nodejs/bundle.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7db0c711b/packages/lodestar/src/network/nodejs/bundle.ts#L34">packages/lodestar/src/network/nodejs/bundle.ts:34</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1350,8 +1252,8 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
