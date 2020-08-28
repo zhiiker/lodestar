@@ -4,7 +4,7 @@
  * @module eth1
  */
 
-import {DepositData} from "@chainsafe/lodestar-types";
+import {DepositData, Eth1Data} from "@chainsafe/lodestar-types";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {ethers} from "ethers";
 
@@ -37,6 +37,7 @@ export interface IEth1Provider {
   getBlockNumber(): Promise<number>;
   getBlock(blockNumber: number): Promise<IEth1Block>;
   getDepositEvents(fromBlock: number, toBlock?: number): Promise<IDepositEvent[]>;
+  getEth1Data(blockTag: string | number): Promise<Eth1Data>;
   validateContract(): Promise<void>;
 }
 

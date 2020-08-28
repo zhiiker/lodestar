@@ -68,6 +68,28 @@ export async function* getDepositsAndBlockStreamForGenesis(
   }
 }
 
+/**
+ * Stream blocks following head - ETH1_FOLLOW_DISTANCE.
+ * @param signal Abort stream returning after a while loop cycle. Aborts internal sleep
+ */
+export async function* getBlocksStream(
+  provider: IEth1Provider,
+  params: IEth1StreamParams,
+  signal?: AbortSignal
+): AsyncGenerator<IEth1Block> {
+  let lastYieldedBlock = -1;
+  while (true) {
+    const remoteFollowBlock = await getRemoteFollowBlock(provider, params);
+    if (lastYieldedBlock !== remoteFollowBlock) {
+      lastYieldedBlock = remoteFollowBlock;
+      yield await provider.getBlock(remoteFollowBlock);
+    }
+
+    // Throws if signal is aborted
+    await sleep(params.SECONDS_PER_ETH1_BLOCK * 1000, signal);
+  }
+}
+
 async function getRemoteFollowBlock(provider: IEth1Provider, params: IEth1StreamParams): Promise<number> {
   const remoteHighestBlock = await provider.getBlockNumber();
   return Math.max(remoteHighestBlock - params.ETH1_FOLLOW_DISTANCE, 0);

@@ -7,9 +7,10 @@ import {fromHexString, toHexString} from "@chainsafe/ssz";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {isValidAddress} from "../util/address";
 import {RetryProvider} from "./utils/retryProvider";
-import {IDepositEvent} from "./interface";
+import {IDepositEvent, IEth1Provider} from "./interface";
 import {IEth1Options} from "./options";
 import {depositContract} from "./depositContract";
+import {Eth1Data} from "@chainsafe/lodestar-types";
 
 const ETH1_BLOCK_RETRY = 3;
 
@@ -19,7 +20,7 @@ interface IEth1Block {
   timestamp: number;
 }
 
-export class Eth1Provider {
+export class Eth1Provider implements IEth1Provider {
   public deployBlock: number;
 
   private config: IBeaconConfig;
@@ -60,10 +61,28 @@ export class Eth1Provider {
     };
   }
 
+  async getEth1Data(blockTag: string | number): Promise<Eth1Data> {
+    const [blockHash, depositRoot, depositCount] = await Promise.all([
+      this.resolveBlockTagToHash(blockTag),
+      this.contract.functions.get_deposit_root(),
+      this.contract.functions.get_deposit_count(),
+    ]);
+    return {blockHash, depositRoot, depositCount} as any;
+  }
+
   async getDepositEvents(fromBlock: number, toBlock?: number): Promise<IDepositEvent[]> {
     const filter = this.contract.filters.DepositEvent();
     const logs = await this.contract.queryFilter(filter, fromBlock, toBlock || fromBlock);
     return logs.map((log) => this.parseDepositEvent(log));
+  }
+
+  /**
+   * Returns a block hash given its block hash or block number
+   */
+  private async resolveBlockTagToHash(blockTag: string | number): Promise<string> {
+    if (typeof blockTag === "string") return blockTag;
+    const block = await this.getBlock(blockTag);
+    return block.hash;
   }
 
   /**
