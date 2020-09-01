@@ -400,8 +400,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readonly-currentepoch" class="md-nav__link">
+    Readonly currentEpoch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readonly-currentslot" class="md-nav__link">
+    Readonly currentSlot
   </a>
   
 </li>
@@ -420,50 +454,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getcurrentslot" class="md-nav__link">
-    getCurrentSlot
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#onnewepoch" class="md-nav__link">
-    onNewEpoch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#onnewslot" class="md-nav__link">
-    onNewSlot
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop" class="md-nav__link">
-    stop
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unsubscribefromnewepoch" class="md-nav__link">
-    unsubscribeFromNewEpoch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unsubscribefromnewslot" class="md-nav__link">
-    unsubscribeFromNewSlot
+  <a href="#abort" class="md-nav__link">
+    abort
   </a>
   
 </li>
@@ -497,120 +489,34 @@
 <h1 id="interface-ibeaconclock">Interface: IBeaconClock<a class="headerlink" href="#interface-ibeaconclock" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../node.iservice/">IService</a></li>
+<li><strong>IBeaconClock</strong></li>
 </ul>
-<p>↳ <strong>IBeaconClock</strong></p>
 <h2 id="implemented-by">Implemented by<a class="headerlink" href="#implemented-by" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../classes/chain_clock_local.localclock/">LocalClock</a></li>
+<li><a href="../../classes/chain_clock.localclock/">LocalClock</a></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#readonly-currentepoch">currentEpoch</a></li>
+<li><a href="./#readonly-currentslot">currentSlot</a></li>
+</ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#getcurrentslot">getCurrentSlot</a></li>
-<li><a href="./#onnewepoch">onNewEpoch</a></li>
-<li><a href="./#onnewslot">onNewSlot</a></li>
-<li><a href="./#start">start</a></li>
-<li><a href="./#stop">stop</a></li>
-<li><a href="./#unsubscribefromnewepoch">unsubscribeFromNewEpoch</a></li>
-<li><a href="./#unsubscribefromnewslot">unsubscribeFromNewSlot</a></li>
+<li><a href="./#abort">abort</a></li>
 </ul>
+<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
+<h3 id="readonly-currentepoch"><code>Readonly</code> currentEpoch<a class="headerlink" href="#readonly-currentepoch" title="Permanent link">&para;</a></h3>
+<p>• <strong>currentEpoch</strong>: <em>Epoch</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/10dfa4f9db/packages/lodestar/src/chain/clock/interface.ts#L5">packages/lodestar/src/chain/clock/interface.ts:5</a></em></p>
+<hr />
+<h3 id="readonly-currentslot"><code>Readonly</code> currentSlot<a class="headerlink" href="#readonly-currentslot" title="Permanent link">&para;</a></h3>
+<p>• <strong>currentSlot</strong>: <em>Slot</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/10dfa4f9db/packages/lodestar/src/chain/clock/interface.ts#L4">packages/lodestar/src/chain/clock/interface.ts:4</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
-<h3 id="getcurrentslot">getCurrentSlot<a class="headerlink" href="#getcurrentslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getCurrentSlot</strong>(): <em>Slot</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/chain/clock/interface.ts#L8">packages/lodestar/src/chain/clock/interface.ts:8</a></em></p>
-<p><strong>Returns:</strong> <em>Slot</em></p>
-<hr />
-<h3 id="onnewepoch">onNewEpoch<a class="headerlink" href="#onnewepoch" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onNewEpoch</strong>(<code>cb</code>: <a href="../../modules/chain_clock/#newepochcallback">NewEpochCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/chain/clock/interface.ts#L10">packages/lodestar/src/chain/clock/interface.ts:10</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../../modules/chain_clock/#newepochcallback">NewEpochCallback</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="onnewslot">onNewSlot<a class="headerlink" href="#onnewslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onNewSlot</strong>(<code>cb</code>: <a href="../../modules/chain_clock/#newslotcallback">NewSlotCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/chain/clock/interface.ts#L9">packages/lodestar/src/chain/clock/interface.ts:9</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../../modules/chain_clock/#newslotcallback">NewSlotCallback</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
-<p><em>Inherited from <a href="../network_gossip.igossip/">IGossip</a>.<a href="../network_gossip.igossip/#start">start</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/node/nodejs.ts#L25">packages/lodestar/src/node/nodejs.ts:25</a></em></p>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
-<p><em>Inherited from <a href="../network_gossip.igossip/">IGossip</a>.<a href="../network_gossip.igossip/#stop">stop</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/node/nodejs.ts#L27">packages/lodestar/src/node/nodejs.ts:27</a></em></p>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="unsubscribefromnewepoch">unsubscribeFromNewEpoch<a class="headerlink" href="#unsubscribefromnewepoch" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>unsubscribeFromNewEpoch</strong>(<code>cb</code>: <a href="../../modules/chain_clock/#newepochcallback">NewEpochCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/chain/clock/interface.ts#L11">packages/lodestar/src/chain/clock/interface.ts:11</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../../modules/chain_clock/#newepochcallback">NewEpochCallback</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="unsubscribefromnewslot">unsubscribeFromNewSlot<a class="headerlink" href="#unsubscribefromnewslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>unsubscribeFromNewSlot</strong>(<code>cb</code>: <a href="../../modules/chain_clock/#newslotcallback">NewSlotCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/118f503a40/packages/lodestar/src/chain/clock/interface.ts#L12">packages/lodestar/src/chain/clock/interface.ts:12</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../../modules/chain_clock/#newslotcallback">NewSlotCallback</a></td>
-</tr>
-</tbody>
-</table>
+<h3 id="abort">abort<a class="headerlink" href="#abort" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>abort</strong>(): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/10dfa4f9db/packages/lodestar/src/chain/clock/interface.ts#L6">packages/lodestar/src/chain/clock/interface.ts:6</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
                 
               
