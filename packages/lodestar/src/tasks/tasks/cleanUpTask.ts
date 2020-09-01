@@ -27,11 +27,11 @@ export class CleanUpTask {
   }
 
   public async start(): Promise<void> {
-    this.chain.clock.onNewEpoch(this.onNewEpoch);
+    this.chain.emitter.on("clock:epoch", this.onNewEpoch);
   }
 
   public async stop(): Promise<void> {
-    this.chain.clock.unsubscribeFromNewEpoch(this.onNewEpoch);
+    this.chain.emitter.off("clock:epoch", this.onNewEpoch);
   }
 
   public onNewEpoch = async (epoch: Epoch): Promise<void> => {
