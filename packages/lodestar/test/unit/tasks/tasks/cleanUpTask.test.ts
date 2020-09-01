@@ -36,7 +36,7 @@ describe("CleanUpTask", function () {
     await db.activeValidatorCache.add(0, 0);
     await db.activeValidatorCache.add(1, 1);
     await db.activeValidatorCache.add(2, 2);
-    await task.run(2);
+    await task.onNewEpoch(2);
     expect(await db.activeValidatorCache.values()).to.be.deep.equal([1, 2]);
   });
 });

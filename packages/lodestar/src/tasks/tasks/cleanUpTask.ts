@@ -27,14 +27,14 @@ export class CleanUpTask {
   }
 
   public async start(): Promise<void> {
-    this.chain.clock.onNewEpoch(this.run);
+    this.chain.clock.onNewEpoch(this.onNewEpoch);
   }
 
   public async stop(): Promise<void> {
-    this.chain.clock.unsubscribeFromNewEpoch(this.run);
+    this.chain.clock.unsubscribeFromNewEpoch(this.onNewEpoch);
   }
 
-  public run = async (epoch: Epoch): Promise<void> => {
+  public onNewEpoch = async (epoch: Epoch): Promise<void> => {
     this.logger.info("Run CleanUpTask at epoch", epoch);
     this.logger.profile("CleanUpTask");
     await this.cleanupActiveValidatorCache(epoch);
