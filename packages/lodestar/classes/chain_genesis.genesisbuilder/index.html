@@ -461,8 +461,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#private-readonly-db" class="md-nav__link">
-    Private Readonly db
+  <a href="#private-depositcache" class="md-nav__link">
+    Private depositCache
   </a>
   
 </li>
@@ -475,8 +475,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#private-readonly-eth1" class="md-nav__link">
-    Private Readonly eth1
+  <a href="#private-readonly-eth1params" class="md-nav__link">
+    Private Readonly eth1Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-readonly-eth1provider" class="md-nav__link">
+    Private Readonly eth1Provider
   </a>
   
 </li>
@@ -484,6 +491,13 @@
           <li class="md-nav__item">
   <a href="#private-readonly-logger" class="md-nav__link">
     Private Readonly logger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-optional-readonly-signal" class="md-nav__link">
+    Private Optional Readonly signal
   </a>
   
 </li>
@@ -509,22 +523,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#private-assemblegenesisstate" class="md-nav__link">
-    Private assembleGenesisState
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-initialize" class="md-nav__link">
-    Private initialize
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-processdepositevents" class="md-nav__link">
-    Private processDepositEvents
+  <a href="#private-applydeposits" class="md-nav__link">
+    Private applyDeposits
   </a>
   
 </li>
@@ -532,6 +532,13 @@
           <li class="md-nav__item">
   <a href="#waitforgenesis" class="md-nav__link">
     waitForGenesis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-waitforgenesisvalidators" class="md-nav__link">
+    Private waitForGenesisValidators
   </a>
   
 </li>
@@ -579,23 +586,24 @@
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#private-readonly-config">config</a></li>
-<li><a href="./#private-readonly-db">db</a></li>
+<li><a href="./#private-depositcache">depositCache</a></li>
 <li><a href="./#private-deposittree">depositTree</a></li>
-<li><a href="./#private-readonly-eth1">eth1</a></li>
+<li><a href="./#private-readonly-eth1params">eth1Params</a></li>
+<li><a href="./#private-readonly-eth1provider">eth1Provider</a></li>
 <li><a href="./#private-readonly-logger">logger</a></li>
+<li><a href="./#private-optional-readonly-signal">signal</a></li>
 <li><a href="./#private-state">state</a></li>
 </ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#private-assemblegenesisstate">assembleGenesisState</a></li>
-<li><a href="./#private-initialize">initialize</a></li>
-<li><a href="./#private-processdepositevents">processDepositEvents</a></li>
+<li><a href="./#private-applydeposits">applyDeposits</a></li>
 <li><a href="./#waitforgenesis">waitForGenesis</a></li>
+<li><a href="./#private-waitforgenesisvalidators">waitForGenesisValidators</a></li>
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new GenesisBuilder</strong>(<code>config</code>: IBeaconConfig, <code>__namedParameters</code>: object): <em><a href="./">GenesisBuilder</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L30">packages/lodestar/src/chain/genesis/genesis.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L37">packages/lodestar/src/chain/genesis/genesis.ts:37</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>config</strong>: <em>IBeaconConfig</em></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
@@ -608,16 +616,20 @@
 </thead>
 <tbody>
 <tr>
-<td><code>db</code></td>
-<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+<td><code>MAX_BLOCKS_PER_POLL</code></td>
+<td>undefined &#124; number</td>
 </tr>
 <tr>
-<td><code>eth1</code></td>
-<td><a href="../../interfaces/eth1.ieth1notifier/">IEth1Notifier</a></td>
+<td><code>eth1Provider</code></td>
+<td><a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a></td>
 </tr>
 <tr>
 <td><code>logger</code></td>
 <td>ILogger</td>
+</tr>
+<tr>
+<td><code>signal</code></td>
+<td>undefined &#124; AbortSignal‹›</td>
 </tr>
 </tbody>
 </table>
@@ -625,33 +637,39 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">&para;</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L25">packages/lodestar/src/chain/genesis/genesis.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L30">packages/lodestar/src/chain/genesis/genesis.ts:30</a></em></p>
 <hr />
-<h3 id="private-readonly-db"><code>Private</code> <code>Readonly</code> db<a class="headerlink" href="#private-readonly-db" title="Permanent link">&para;</a></h3>
-<p>• <strong>db</strong>: <em><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L26">packages/lodestar/src/chain/genesis/genesis.ts:26</a></em></p>
+<h3 id="private-depositcache"><code>Private</code> depositCache<a class="headerlink" href="#private-depositcache" title="Permanent link">&para;</a></h3>
+<p>• <strong>depositCache</strong>: <em>Set‹number›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L37">packages/lodestar/src/chain/genesis/genesis.ts:37</a></em></p>
 <hr />
 <h3 id="private-deposittree"><code>Private</code> depositTree<a class="headerlink" href="#private-deposittree" title="Permanent link">&para;</a></h3>
 <p>• <strong>depositTree</strong>: <em>TreeBacked‹List‹Root››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L30">packages/lodestar/src/chain/genesis/genesis.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L36">packages/lodestar/src/chain/genesis/genesis.ts:36</a></em></p>
 <hr />
-<h3 id="private-readonly-eth1"><code>Private</code> <code>Readonly</code> eth1<a class="headerlink" href="#private-readonly-eth1" title="Permanent link">&para;</a></h3>
-<p>• <strong>eth1</strong>: <em><a href="../../interfaces/eth1.ieth1notifier/">IEth1Notifier</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L27">packages/lodestar/src/chain/genesis/genesis.ts:27</a></em></p>
+<h3 id="private-readonly-eth1params"><code>Private</code> <code>Readonly</code> eth1Params<a class="headerlink" href="#private-readonly-eth1params" title="Permanent link">&para;</a></h3>
+<p>• <strong>eth1Params</strong>: <em><a href="../../modules/eth1/#ieth1streamparams">IEth1StreamParams</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L34">packages/lodestar/src/chain/genesis/genesis.ts:34</a></em></p>
+<hr />
+<h3 id="private-readonly-eth1provider"><code>Private</code> <code>Readonly</code> eth1Provider<a class="headerlink" href="#private-readonly-eth1provider" title="Permanent link">&para;</a></h3>
+<p>• <strong>eth1Provider</strong>: <em><a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L31">packages/lodestar/src/chain/genesis/genesis.ts:31</a></em></p>
 <hr />
 <h3 id="private-readonly-logger"><code>Private</code> <code>Readonly</code> logger<a class="headerlink" href="#private-readonly-logger" title="Permanent link">&para;</a></h3>
 <p>• <strong>logger</strong>: <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L28">packages/lodestar/src/chain/genesis/genesis.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L32">packages/lodestar/src/chain/genesis/genesis.ts:32</a></em></p>
+<hr />
+<h3 id="private-optional-readonly-signal"><code>Private</code> <code>Optional</code> <code>Readonly</code> signal<a class="headerlink" href="#private-optional-readonly-signal" title="Permanent link">&para;</a></h3>
+<p>• <strong>signal</strong>? : <em>AbortSignal</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L33">packages/lodestar/src/chain/genesis/genesis.ts:33</a></em></p>
 <hr />
 <h3 id="private-state"><code>Private</code> state<a class="headerlink" href="#private-state" title="Permanent link">&para;</a></h3>
 <p>• <strong>state</strong>: <em>TreeBacked‹BeaconState›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L29">packages/lodestar/src/chain/genesis/genesis.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L35">packages/lodestar/src/chain/genesis/genesis.ts:35</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
-<h3 id="private-assemblegenesisstate"><code>Private</code> assembleGenesisState<a class="headerlink" href="#private-assemblegenesisstate" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>assembleGenesisState</strong>(): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L56">packages/lodestar/src/chain/genesis/genesis.ts:56</a></em></p>
-<p><strong>Returns:</strong> <em>function</em></p>
-<p>▸ (<code>source</code>: AsyncIterable‹[Deposit[], <a href="../../modules/eth1/#eth1block">Eth1Block</a>]›): <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<h3 id="private-applydeposits"><code>Private</code> applyDeposits<a class="headerlink" href="#private-applydeposits" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>applyDeposits</strong>(<code>depositEvents</code>: <a href="../../interfaces/eth1.idepositevent/">IDepositEvent</a>[]): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L119">packages/lodestar/src/chain/genesis/genesis.ts:119</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -662,43 +680,41 @@
 </thead>
 <tbody>
 <tr>
-<td><code>source</code></td>
-<td>AsyncIterable‹[Deposit[], <a href="../../modules/eth1/#eth1block">Eth1Block</a>]›</td>
+<td><code>depositEvents</code></td>
+<td><a href="../../interfaces/eth1.idepositevent/">IDepositEvent</a>[]</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="private-initialize"><code>Private</code> initialize<a class="headerlink" href="#private-initialize" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>initialize</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L96">packages/lodestar/src/chain/genesis/genesis.ts:96</a></em></p>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="private-processdepositevents"><code>Private</code> processDepositEvents<a class="headerlink" href="#private-processdepositevents" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>processDepositEvents</strong>(): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L78">packages/lodestar/src/chain/genesis/genesis.ts:78</a></em></p>
-<p><strong>Returns:</strong> <em>function</em></p>
-<p>▸ (<code>source</code>: AsyncIterable‹<a href="../../interfaces/eth1.eth1eventsblock/">Eth1EventsBlock</a>›): <em>AsyncGenerator‹[Deposit[], <a href="../../modules/eth1/#eth1block">Eth1Block</a>]›</em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>source</code></td>
-<td>AsyncIterable‹<a href="../../interfaces/eth1.eth1eventsblock/">Eth1EventsBlock</a>›</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="waitforgenesis">waitForGenesis<a class="headerlink" href="#waitforgenesis" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>waitForGenesis</strong>(): <em>Promise‹TreeBacked‹BeaconState››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/932beed1f5/packages/lodestar/src/chain/genesis/genesis.ts#L48">packages/lodestar/src/chain/genesis/genesis.ts:48</a></em></p>
+<p>▸ <strong>waitForGenesis</strong>(): <em>Promise‹<a href="../../interfaces/chain_genesis.igenesisresult/">IGenesisResult</a>›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L61">packages/lodestar/src/chain/genesis/genesis.ts:61</a></em></p>
 <p>Get eth1 deposit events and blocks and apply to this.state until we found genesis.</p>
-<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="../../interfaces/chain_genesis.igenesisresult/">IGenesisResult</a>›</em></p>
+<hr />
+<h3 id="private-waitforgenesisvalidators"><code>Private</code> waitForGenesisValidators<a class="headerlink" href="#private-waitforgenesisvalidators" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>waitForGenesisValidators</strong>(<code>fromBlock</code>: number): <em>Promise‹number›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ca379f17/packages/lodestar/src/chain/genesis/genesis.ts#L101">packages/lodestar/src/chain/genesis/genesis.ts:101</a></em></p>
+<p>First phase of waiting for genesis.
+Stream deposits events in batches as big as possible without querying block data</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fromBlock</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹number›</em></p>
+<p>Block number at which there are enough active validators is state for genesis</p>
                 
               
               
