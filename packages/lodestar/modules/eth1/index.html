@@ -776,19 +776,19 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="ieth1streamparams_1">IEth1StreamParams<a class="headerlink" href="#ieth1streamparams_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>IEth1StreamParams</strong>: <em>Pick‹IBeaconConfig["params"], "ETH1_FOLLOW_DISTANCE" | "MIN_GENESIS_TIME" | "GENESIS_DELAY" | "SECONDS_PER_ETH1_BLOCK"› &amp; object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/interface.ts#L13">packages/lodestar/src/eth1/interface.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/interface.ts#L13">packages/lodestar/src/eth1/interface.ts:13</a></em></p>
 <hr />
 <h3 id="iethersabi_1">IEthersAbi<a class="headerlink" href="#iethersabi_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>IEthersAbi</strong>: <em>Array‹string | EventFragment | ParamType›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/interface.ts#L11">packages/lodestar/src/eth1/interface.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/interface.ts#L11">packages/lodestar/src/eth1/interface.ts:11</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-eth1_block_retry"><code>Const</code> ETH1_BLOCK_RETRY<a class="headerlink" href="#const-eth1_block_retry" title="Permanent link">&para;</a></h3>
 <p>• <strong>ETH1_BLOCK_RETRY</strong>: <em>3</em> = 3</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/ethers.ts#L14">packages/lodestar/src/eth1/ethers.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/ethers.ts#L14">packages/lodestar/src/eth1/ethers.ts:14</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="getdepositsandblockstreamforgenesis_1">getDepositsAndBlockStreamForGenesis<a class="headerlink" href="#getdepositsandblockstreamforgenesis_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositsAndBlockStreamForGenesis</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹[<a href="../../interfaces/eth1.idepositevent/">IDepositEvent</a>[], <a href="../../interfaces/eth1.ieth1block/">IEth1Block</a>]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/stream.ts#L44">packages/lodestar/src/eth1/stream.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/stream.ts#L44">packages/lodestar/src/eth1/stream.ts:44</a></em></p>
 <p>Phase 2 of genesis building.
 There are enough validators, stream deposits and blocks</p>
 <p><strong>Parameters:</strong></p>
@@ -827,7 +827,7 @@ There are enough validators, stream deposits and blocks</p>
 <hr />
 <h3 id="getdepositsstream_1">getDepositsStream<a class="headerlink" href="#getdepositsstream_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositsStream</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹<a href="../../interfaces/eth1.ibatchdepositevents/">IBatchDepositEvents</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/stream.ts#L16">packages/lodestar/src/eth1/stream.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/stream.ts#L16">packages/lodestar/src/eth1/stream.ts:16</a></em></p>
 <p>Phase 1 of genesis building.
 Not enough validators, only stream deposits</p>
 <p><strong>Parameters:</strong></p>
@@ -866,7 +866,7 @@ Not enough validators, only stream deposits</p>
 <hr />
 <h3 id="getremotefollowblock">getRemoteFollowBlock<a class="headerlink" href="#getremotefollowblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getRemoteFollowBlock</strong>(<code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>): <em>Promise‹number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/stream.ts#L71">packages/lodestar/src/eth1/stream.ts:71</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/stream.ts#L71">packages/lodestar/src/eth1/stream.ts:71</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -890,23 +890,23 @@ Not enough validators, only stream deposits</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-config"><code>Const</code> config<a class="headerlink" href="#const-config" title="Permanent link">&para;</a></h3>
 <h3 id="config-object">▪ <strong>config</strong>: <em>object</em><a class="headerlink" href="#config-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
 <h3 id="depositcontractdeployblock">depositContractDeployBlock<a class="headerlink" href="#depositcontractdeployblock" title="Permanent link">&para;</a></h3>
 <p>• <strong>depositContractDeployBlock</strong>: <em>number</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
 <h3 id="enabled">enabled<a class="headerlink" href="#enabled" title="Permanent link">&para;</a></h3>
 <p>• <strong>enabled</strong>: <em>true</em> = true</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
 <h3 id="providerurl">providerUrl<a class="headerlink" href="#providerurl" title="Permanent link">&para;</a></h3>
 <p>• <strong>providerUrl</strong>: <em>string</em> = "http://localhost:8545"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
 <hr />
 <h3 id="const-depositcontract"><code>Const</code> depositContract<a class="headerlink" href="#const-depositcontract" title="Permanent link">&para;</a></h3>
 <h3 id="depositcontract-object">▪ <strong>depositContract</strong>: <em>object</em><a class="headerlink" href="#depositcontract-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/depositContract.ts#L3">packages/lodestar/src/eth1/depositContract.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/depositContract.ts#L3">packages/lodestar/src/eth1/depositContract.ts:3</a></em></p>
 <h3 id="abi">abi<a class="headerlink" href="#abi" title="Permanent link">&para;</a></h3>
 <p>• <strong>abi</strong>: <em>(object | object | object | object)[]</em> = [{"name": "DepositEvent", "inputs": [{"type": "bytes", "name": "pubkey", "indexed": false}, {"type": "bytes", "name": "withdrawal_credentials", "indexed": false}, {"type": "bytes", "name": "amount", "indexed": false}, {"type": "bytes", "name": "signature", "indexed": false}, {"type": "bytes", "name": "index", "indexed": false}], "anonymous": false, "type": "event"}, {"outputs": [], "inputs": [], "constant": false, "payable": false, "type": "constructor"}, {"name": "get_deposit_root", "outputs": [{"type": "bytes32", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 95628}, {"name": "get_deposit_count", "outputs": [{"type": "bytes", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 18231}, {"name": "deposit", "outputs": [], "inputs": [{"type": "bytes", "name": "pubkey"}, {"type": "bytes", "name": "withdrawal_credentials"}, {"type": "bytes", "name": "signature"}, {"type": "bytes32", "name": "deposit_data_root"}], "constant": false, "payable": true, "type": "function", "gas": 1342274}]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/240c5d1612/packages/lodestar/src/eth1/depositContract.ts#L10">packages/lodestar/src/eth1/depositContract.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/4645b6ac0d/packages/lodestar/src/eth1/depositContract.ts#L10">packages/lodestar/src/eth1/depositContract.ts:10</a></em></p>
                 
               
               
