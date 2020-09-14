@@ -513,7 +513,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="findmissingsubnets">findMissingSubnets<a class="headerlink" href="#findmissingsubnets" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>findMissingSubnets</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>): <em>number[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7324a31c24/packages/lodestar/src/network/peers/utils.ts#L50">packages/lodestar/src/network/peers/utils.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/563409272f/packages/lodestar/src/network/peers/utils.ts#L50">packages/lodestar/src/network/peers/utils.ts:50</a></em></p>
 <p>Find subnets that we don't have at least 1 connected peer.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -534,7 +534,7 @@
 <hr />
 <h3 id="getimportantpeers">getImportantPeers<a class="headerlink" href="#getimportantpeers" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getImportantPeers</strong>(<code>peers</code>: PeerId[], <code>peerMetadata</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>): <em>Set‹PeerId›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7324a31c24/packages/lodestar/src/network/peers/utils.ts#L118">packages/lodestar/src/network/peers/utils.ts:118</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/563409272f/packages/lodestar/src/network/peers/utils.ts#L118">packages/lodestar/src/network/peers/utils.ts:118</a></em></p>
 <p>Peers that should not be disconnected because they are the only connected to a certain subnet.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -562,7 +562,7 @@
 <hr />
 <h3 id="getpeerswithsubnet">getPeersWithSubnet<a class="headerlink" href="#getpeerswithsubnet" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getPeersWithSubnet</strong>(<code>peers</code>: PeerId[], <code>peerMetadata</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>, <code>subnetStr</code>: string): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7324a31c24/packages/lodestar/src/network/peers/utils.ts#L9">packages/lodestar/src/network/peers/utils.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/563409272f/packages/lodestar/src/network/peers/utils.ts#L9">packages/lodestar/src/network/peers/utils.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -590,7 +590,7 @@
 <hr />
 <h3 id="handlepeermetadatasequence">handlePeerMetadataSequence<a class="headerlink" href="#handlepeermetadatasequence" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>handlePeerMetadataSequence</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>logger</code>: ILogger, <code>peer</code>: PeerId, <code>metadataSeq</code>: BigInt | null): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7324a31c24/packages/lodestar/src/network/peers/utils.ts#L24">packages/lodestar/src/network/peers/utils.ts:24</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/563409272f/packages/lodestar/src/network/peers/utils.ts#L24">packages/lodestar/src/network/peers/utils.ts:24</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -622,7 +622,7 @@
 <hr />
 <h3 id="selectpeerstodisconnect">selectPeersToDisconnect<a class="headerlink" href="#selectpeerstodisconnect" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>selectPeersToDisconnect</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>newPeer</code>: number, <code>maxPeer</code>: number, <code>retainRatio</code>: number): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/7324a31c24/packages/lodestar/src/network/peers/utils.ts#L76">packages/lodestar/src/network/peers/utils.ts:76</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/563409272f/packages/lodestar/src/network/peers/utils.ts#L76">packages/lodestar/src/network/peers/utils.ts:76</a></em></p>
 <p>If we're too close to maxPeer, we may want to disconnect some peers
 before connecting to new peers with missing subnets.</p>
 <p><strong>Parameters:</strong></p>
