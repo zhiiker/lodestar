@@ -525,7 +525,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="geteth1vote">getEth1Vote<a class="headerlink" href="#geteth1vote" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEth1Vote</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: TreeBacked‹BeaconState›, <code>eth1Blocks</code>: <a href="../../interfaces/eth1_utils.ieth1datawithtimestamp/">IEth1DataWithTimestamp</a>[]): <em>Eth1Data</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L11">packages/lodestar/src/eth1/utils/eth1Vote.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L11">packages/lodestar/src/eth1/utils/eth1Vote.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -553,7 +553,7 @@
 <hr />
 <h3 id="geteth1votestoconsider">getEth1VotesToConsider<a class="headerlink" href="#geteth1votestoconsider" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEth1VotesToConsider</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: TreeBacked‹BeaconState›, <code>eth1Blocks</code>: <a href="../../interfaces/eth1_utils.ieth1datawithtimestamp/">IEth1DataWithTimestamp</a>[]): <em>Eth1Data[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L20">packages/lodestar/src/eth1/utils/eth1Vote.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L20">packages/lodestar/src/eth1/utils/eth1Vote.ts:20</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -581,7 +581,7 @@
 <hr />
 <h3 id="groupdepositeventsbyblock">groupDepositEventsByBlock<a class="headerlink" href="#groupdepositeventsbyblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>groupDepositEventsByBlock</strong>(<code>depositEvents</code>: <a href="../../interfaces/eth1.idepositevent/">IDepositEvent</a>[]): <em>object[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/groupDepositEventsByBlock.ts#L8">packages/lodestar/src/eth1/utils/groupDepositEventsByBlock.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/groupDepositEventsByBlock.ts#L8">packages/lodestar/src/eth1/utils/groupDepositEventsByBlock.ts:8</a></em></p>
 <p>Return deposit events of blocks grouped/sorted by block number and deposit index
 Blocks without events are omitted</p>
 <p><strong>Parameters:</strong></p>
@@ -605,7 +605,7 @@ Blocks without events are omitted</p>
 <hr />
 <h3 id="iscandidateblock">isCandidateBlock<a class="headerlink" href="#iscandidateblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isCandidateBlock</strong>(<code>config</code>: IBeaconConfig, <code>block</code>: object, <code>periodStart</code>: number): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L79">packages/lodestar/src/eth1/utils/eth1Vote.ts:79</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L79">packages/lodestar/src/eth1/utils/eth1Vote.ts:79</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>config</strong>: <em>IBeaconConfig</em></p>
 <p>▪ <strong>block</strong>: <em>object</em></p>
@@ -628,7 +628,7 @@ Blocks without events are omitted</p>
 <hr />
 <h3 id="optimizenextblockdiffforgenesis">optimizeNextBlockDiffForGenesis<a class="headerlink" href="#optimizenextblockdiffforgenesis" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>optimizeNextBlockDiffForGenesis</strong>(<code>lastFetchedBlock</code>: <a href="../../interfaces/eth1.ieth1block/">IEth1Block</a>, <code>params</code>: object): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/optimizeNextBlockDiffForGenesis.ts#L8">packages/lodestar/src/eth1/utils/optimizeNextBlockDiffForGenesis.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/optimizeNextBlockDiffForGenesis.ts#L8">packages/lodestar/src/eth1/utils/optimizeNextBlockDiffForGenesis.ts:8</a></em></p>
 <p>Utility for fetching genesis min genesis time block
 Returns an approximation of the next block diff to fetch to progressively
 get closer to the block that satisfies min genesis time condition</p>
@@ -661,7 +661,7 @@ get closer to the block that satisfies min genesis time condition</p>
 <hr />
 <h3 id="picketh1vote">pickEth1Vote<a class="headerlink" href="#picketh1vote" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>pickEth1Vote</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: TreeBacked‹BeaconState›, <code>votesToConsider</code>: Eth1Data[]): <em>Eth1Data</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L35">packages/lodestar/src/eth1/utils/eth1Vote.ts:35</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L35">packages/lodestar/src/eth1/utils/eth1Vote.ts:35</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -689,7 +689,7 @@ get closer to the block that satisfies min genesis time condition</p>
 <hr />
 <h3 id="serializeeth1data">serializeEth1Data<a class="headerlink" href="#serializeeth1data" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>serializeEth1Data</strong>(<code>eth1Data</code>: Eth1Data): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L69">packages/lodestar/src/eth1/utils/eth1Vote.ts:69</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L69">packages/lodestar/src/eth1/utils/eth1Vote.ts:69</a></em></p>
 <p>Serialize eth1Data types to a unique string ID. It is only used for comparison.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -712,7 +712,7 @@ get closer to the block that satisfies min genesis time condition</p>
 <hr />
 <h3 id="votingperiodstarttime">votingPeriodStartTime<a class="headerlink" href="#votingperiodstarttime" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>votingPeriodStartTime</strong>(<code>config</code>: IBeaconConfig, <code>state</code>: TreeBacked‹BeaconState›): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/eea198f59e/packages/lodestar/src/eth1/utils/eth1Vote.ts#L73">packages/lodestar/src/eth1/utils/eth1Vote.ts:73</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/84b8d6c293/packages/lodestar/src/eth1/utils/eth1Vote.ts#L73">packages/lodestar/src/eth1/utils/eth1Vote.ts:73</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
