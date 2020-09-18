@@ -426,20 +426,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#generatedeposits" class="md-nav__link">
-    generateDeposits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#readeth1votesfromdb" class="md-nav__link">
-    readEth1VotesFromDb
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -473,13 +459,11 @@
 <li><a href="./#assembleblock">assembleBlock</a></li>
 <li><a href="./#assemblebody">assembleBody</a></li>
 <li><a href="./#computenewstateroot">computeNewStateRoot</a></li>
-<li><a href="./#generatedeposits">generateDeposits</a></li>
-<li><a href="./#readeth1votesfromdb">readEth1VotesFromDb</a></li>
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="assembleblock">assembleBlock<a class="headerlink" href="#assembleblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>slot</code>: Slot, <code>proposerIndex</code>: ValidatorIndex, <code>randaoReveal</code>: Bytes96, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ef4a1df2/packages/lodestar/src/chain/factory/block/index.ts#L15">packages/lodestar/src/chain/factory/block/index.ts:15</a></em></p>
+<p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>slot</code>: <a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#slot">Slot</a>, <code>proposerIndex</code>: <a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>randaoReveal</code>: <a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -506,18 +490,23 @@
 <td>-</td>
 </tr>
 <tr>
+<td><code>eth1</code></td>
+<td><a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><code>slot</code></td>
-<td>Slot</td>
+<td><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#slot">Slot</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><code>proposerIndex</code></td>
-<td>ValidatorIndex</td>
+<td><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><code>randaoReveal</code></td>
-<td>Bytes96</td>
+<td><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes96">Bytes96</a></td>
 <td>-</td>
 </tr>
 <tr>
@@ -530,8 +519,8 @@
 <p><strong>Returns:</strong> <em>Promise‹BeaconBlock›</em></p>
 <hr />
 <h3 id="assemblebody">assembleBody<a class="headerlink" href="#assemblebody" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>assembleBody</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>currentState</code>: TreeBacked‹BeaconState›, <code>randaoReveal</code>: Bytes96, <code>graffiti</code>: Bytes32): <em>Promise‹BeaconBlockBody›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ef4a1df2/packages/lodestar/src/chain/factory/block/body.ts#L24">packages/lodestar/src/chain/factory/block/body.ts:24</a></em></p>
+<p>▸ <strong>assembleBody</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>currentState</code>: TreeBacked‹BeaconState›, <code>randaoReveal</code>: <a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: <a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes32">Bytes32</a>): <em>Promise‹BeaconBlockBody›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/chain/factory/block/body.ts#L22">packages/lodestar/src/chain/factory/block/body.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -550,24 +539,28 @@
 <td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
 </tr>
 <tr>
+<td><code>eth1</code></td>
+<td><a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a></td>
+</tr>
+<tr>
 <td><code>currentState</code></td>
 <td>TreeBacked‹BeaconState›</td>
 </tr>
 <tr>
 <td><code>randaoReveal</code></td>
-<td>Bytes96</td>
+<td><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes96">Bytes96</a></td>
 </tr>
 <tr>
 <td><code>graffiti</code></td>
-<td>Bytes32</td>
+<td><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#bytes32">Bytes32</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹BeaconBlockBody›</em></p>
 <hr />
 <h3 id="computenewstateroot">computeNewStateRoot<a class="headerlink" href="#computenewstateroot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em>Root</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ef4a1df2/packages/lodestar/src/chain/factory/block/index.ts#L48">packages/lodestar/src/chain/factory/block/index.ts:48</a></em></p>
+<p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#root">Root</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/chain/factory/block/index.ts#L50">packages/lodestar/src/chain/factory/block/index.ts:50</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -591,63 +584,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Root</em></p>
-<hr />
-<h3 id="generatedeposits">generateDeposits<a class="headerlink" href="#generatedeposits" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>generateDeposits</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>state</code>: TreeBacked‹BeaconState›, <code>eth1Data</code>: Eth1Data, <code>depositDataRootList</code>: TreeBacked‹List‹Root››): <em>Promise‹Deposit[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ef4a1df2/packages/lodestar/src/chain/factory/block/deposits.ts#L10">packages/lodestar/src/chain/factory/block/deposits.ts:10</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>db</code></td>
-<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
-</tr>
-<tr>
-<td><code>state</code></td>
-<td>TreeBacked‹BeaconState›</td>
-</tr>
-<tr>
-<td><code>eth1Data</code></td>
-<td>Eth1Data</td>
-</tr>
-<tr>
-<td><code>depositDataRootList</code></td>
-<td>TreeBacked‹List‹Root››</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹Deposit[]›</em></p>
-<hr />
-<h3 id="readeth1votesfromdb">readEth1VotesFromDb<a class="headerlink" href="#readeth1votesfromdb" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>readEth1VotesFromDb</strong>(<code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>): <em>Promise‹object[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/42ef4a1df2/packages/lodestar/src/chain/factory/block/eth1Vote.ts#L5">packages/lodestar/src/chain/factory/block/eth1Vote.ts:5</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>db</code></td>
-<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹object[]›</em></p>
+<p><strong>Returns:</strong> <em><a href="../reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#root">Root</a></em></p>
                 
               
               
