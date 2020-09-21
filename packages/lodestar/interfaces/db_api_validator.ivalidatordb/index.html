@@ -1,6 +1,7 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -15,7 +16,7 @@
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
     
     
       
@@ -23,9 +24,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.077507d7.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.6a5ad368.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
       
       
     
@@ -501,7 +502,7 @@
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="deleteattestations">deleteAttestations<a class="headerlink" href="#deleteattestations" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>deleteAttestations</strong>(<code>pubKey</code>: <a href="../../modules/reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>attestation</code>: Attestation[]): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/db/api/validator/interface.ts#L36">packages/lodestar/src/db/api/validator/interface.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/755d22f532/packages/lodestar/src/db/api/validator/interface.ts#L36">packages/lodestar/src/db/api/validator/interface.ts:36</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -525,7 +526,7 @@
 <hr />
 <h3 id="getattestations">getAttestations<a class="headerlink" href="#getattestations" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getAttestations</strong>(<code>pubKey</code>: <a href="../../modules/reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>options?</code>: <a href="../db_api_validator.iattestationsearchoptions/">IAttestationSearchOptions</a>): <em>Promise‹Attestation[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/db/api/validator/interface.ts#L29">packages/lodestar/src/db/api/validator/interface.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/755d22f532/packages/lodestar/src/db/api/validator/interface.ts#L29">packages/lodestar/src/db/api/validator/interface.ts:29</a></em></p>
 <p>Searches proposed attestations based on target epoch and validator index</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -553,7 +554,7 @@
 <hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlock</strong>(<code>pubKey</code>: <a href="../../modules/reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#blspubkey">BLSPubkey</a>): <em>Promise‹SignedBeaconBlock | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/db/api/validator/interface.ts#L17">packages/lodestar/src/db/api/validator/interface.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/755d22f532/packages/lodestar/src/db/api/validator/interface.ts#L17">packages/lodestar/src/db/api/validator/interface.ts:17</a></em></p>
 <p>Obtains last proposed beacon block
 by validator with given index</p>
 <p><strong>Parameters:</strong></p>
@@ -575,7 +576,7 @@ by validator with given index</p>
 <hr />
 <h3 id="setattestation">setAttestation<a class="headerlink" href="#setattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setAttestation</strong>(<code>pubKey</code>: <a href="../../modules/reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>attestation</code>: Attestation): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/db/api/validator/interface.ts#L34">packages/lodestar/src/db/api/validator/interface.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/755d22f532/packages/lodestar/src/db/api/validator/interface.ts#L34">packages/lodestar/src/db/api/validator/interface.ts:34</a></em></p>
 <p>Stores attestation proposed by validator with given index</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -600,7 +601,7 @@ by validator with given index</p>
 <hr />
 <h3 id="setblock">setBlock<a class="headerlink" href="#setblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setBlock</strong>(<code>pubKey</code>: <a href="../../modules/reflection-8392.reflection-8393._.reflection-8395._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>signedBlock</code>: SignedBeaconBlock): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/16e8838433/packages/lodestar/src/db/api/validator/interface.ts#L22">packages/lodestar/src/db/api/validator/interface.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/755d22f532/packages/lodestar/src/db/api/validator/interface.ts#L22">packages/lodestar/src/db/api/validator/interface.ts:22</a></em></p>
 <p>Stores beacon block proposed by validator with given index</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -693,8 +694,8 @@ by validator with given index</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
