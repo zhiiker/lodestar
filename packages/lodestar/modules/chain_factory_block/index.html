@@ -463,8 +463,8 @@
 </ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="assembleblock">assembleBlock<a class="headerlink" href="#assembleblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>slot</code>: <a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#slot">Slot</a>, <code>proposerIndex</code>: <a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>randaoReveal</code>: <a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/db066672d6/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
+<p>▸ <strong>assembleBlock</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>slot</code>: <a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#slot">Slot</a>, <code>proposerIndex</code>: <a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>randaoReveal</code>: <a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: Buffer‹›): <em>Promise‹BeaconBlock›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f44565bfc5/packages/lodestar/src/chain/factory/block/index.ts#L16">packages/lodestar/src/chain/factory/block/index.ts:16</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -497,17 +497,17 @@
 </tr>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#slot">Slot</a></td>
+<td><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#slot">Slot</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><code>proposerIndex</code></td>
-<td><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
+<td><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
 <td>-</td>
 </tr>
 <tr>
 <td><code>randaoReveal</code></td>
-<td><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes96">Bytes96</a></td>
+<td><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes96">Bytes96</a></td>
 <td>-</td>
 </tr>
 <tr>
@@ -520,8 +520,8 @@
 <p><strong>Returns:</strong> <em>Promise‹BeaconBlock›</em></p>
 <hr />
 <h3 id="assemblebody">assembleBody<a class="headerlink" href="#assemblebody" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>assembleBody</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>currentState</code>: TreeBacked‹BeaconState›, <code>randaoReveal</code>: <a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: <a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes32">Bytes32</a>): <em>Promise‹BeaconBlockBody›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/db066672d6/packages/lodestar/src/chain/factory/block/body.ts#L22">packages/lodestar/src/chain/factory/block/body.ts:22</a></em></p>
+<p>▸ <strong>assembleBody</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>eth1</code>: <a href="../../interfaces/eth1.ieth1forblockproduction/">IEth1ForBlockProduction</a>, <code>currentState</code>: TreeBacked‹BeaconState›, <code>randaoReveal</code>: <a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes96">Bytes96</a>, <code>graffiti</code>: <a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes32">Bytes32</a>): <em>Promise‹BeaconBlockBody›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f44565bfc5/packages/lodestar/src/chain/factory/block/body.ts#L22">packages/lodestar/src/chain/factory/block/body.ts:22</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -549,19 +549,19 @@
 </tr>
 <tr>
 <td><code>randaoReveal</code></td>
-<td><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes96">Bytes96</a></td>
+<td><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes96">Bytes96</a></td>
 </tr>
 <tr>
 <td><code>graffiti</code></td>
-<td><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#bytes32">Bytes32</a></td>
+<td><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#bytes32">Bytes32</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹BeaconBlockBody›</em></p>
 <hr />
 <h3 id="computenewstateroot">computeNewStateRoot<a class="headerlink" href="#computenewstateroot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#root">Root</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/db066672d6/packages/lodestar/src/chain/factory/block/index.ts#L50">packages/lodestar/src/chain/factory/block/index.ts:50</a></em></p>
+<p>▸ <strong>computeNewStateRoot</strong>(<code>config</code>: IBeaconConfig, <code>stateContext</code>: IStateContext, <code>block</code>: BeaconBlock): <em><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#root">Root</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f44565bfc5/packages/lodestar/src/chain/factory/block/index.ts#L50">packages/lodestar/src/chain/factory/block/index.ts:50</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -585,7 +585,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em><a href="../reflection-8393.reflection-8394._.reflection-8396._lodestar_types_src_types/#root">Root</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../reflection-8380.reflection-8381._.reflection-8383._lodestar_types_src_types/#root">Root</a></em></p>
                 
               
               
