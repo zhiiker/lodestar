@@ -574,7 +574,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="clonestatectx">cloneStateCtx<a class="headerlink" href="#clonestatectx" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>cloneStateCtx</strong>(<code>stateCtx</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>): <em><a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/stateTransition.ts#L85">packages/lodestar/src/chain/blocks/stateTransition.ts:85</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/stateTransition.ts#L85">packages/lodestar/src/chain/blocks/stateTransition.ts:85</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -594,7 +594,7 @@
 <hr />
 <h3 id="convertblock">convertBlock<a class="headerlink" href="#convertblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>convertBlock</strong>(<code>config</code>: IBeaconConfig): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/convertBlock.ts#L9">packages/lodestar/src/chain/blocks/convertBlock.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/convertBlock.ts#L9">packages/lodestar/src/chain/blocks/convertBlock.ts:9</a></em></p>
 <p>Convert incoming blocks to TreeBacked backing
 The root is computed multiple times, the contents are hash-tree-rooted multiple times,
 and some of the contents end up in the state as tree-form.</p>
@@ -633,7 +633,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="emitcheckpointevent">emitCheckpointEvent<a class="headerlink" href="#emitcheckpointevent" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>emitCheckpointEvent</strong>(<code>emitter</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>checkpointStateContext</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/stateTransition.ts#L67">packages/lodestar/src/chain/blocks/stateTransition.ts:67</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/stateTransition.ts#L67">packages/lodestar/src/chain/blocks/stateTransition.ts:67</a></em></p>
 <p>Emits a properly formed "checkpoint" event, given a checkpoint state context</p>
 <p>This will throw an error if the checkpoint state is not a valid checkpoint state, eg: NOT the first slot in an epoch.</p>
 <p><strong>Parameters:</strong></p>
@@ -659,7 +659,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="getprestate">getPreState<a class="headerlink" href="#getprestate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getPreState</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>logger</code>: ILogger, <code>job</code>: <a href="../../interfaces/chain.iblockprocessjob/">IBlockProcessJob</a>): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/stateTransition.ts#L20">packages/lodestar/src/chain/blocks/stateTransition.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/stateTransition.ts#L20">packages/lodestar/src/chain/blocks/stateTransition.ts:20</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -695,7 +695,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="newfinalizedepoch">newFinalizedEpoch<a class="headerlink" href="#newfinalizedepoch" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>newFinalizedEpoch</strong>(<code>logger</code>: ILogger, <code>metrics</code>: <a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a>, <code>eventBus</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>state</code>: TreeBacked‹BeaconState›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/post.ts#L73">packages/lodestar/src/chain/blocks/post.ts:73</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/post.ts#L73">packages/lodestar/src/chain/blocks/post.ts:73</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -727,7 +727,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="newjustifiedepoch">newJustifiedEpoch<a class="headerlink" href="#newjustifiedepoch" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>newJustifiedEpoch</strong>(<code>logger</code>: ILogger, <code>metrics</code>: <a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a>, <code>eventBus</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>state</code>: TreeBacked‹BeaconState›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/post.ts#L60">packages/lodestar/src/chain/blocks/post.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/post.ts#L60">packages/lodestar/src/chain/blocks/post.ts:60</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -759,7 +759,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="postprocess">postProcess<a class="headerlink" href="#postprocess" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>postProcess</strong>(<code>config</code>: IBeaconConfig, <code>logger</code>: ILogger, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>metrics</code>: <a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a>, <code>eventBus</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>attestationProcessor</code>: <a href="../../interfaces/chain.iattestationprocessor/">IAttestationProcessor</a>): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/post.ts#L14">packages/lodestar/src/chain/blocks/post.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/post.ts#L14">packages/lodestar/src/chain/blocks/post.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -819,7 +819,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="processblock">processBlock<a class="headerlink" href="#processblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processBlock</strong>(<code>config</code>: IBeaconConfig, <code>logger</code>: ILogger, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>pool</code>: <a href="../../classes/chain_blocks.blockpool/">BlockPool</a>, <code>eventBus</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/process.ts#L14">packages/lodestar/src/chain/blocks/process.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/process.ts#L14">packages/lodestar/src/chain/blocks/process.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -875,7 +875,7 @@ and some of the contents end up in the state as tree-form.</p>
 <hr />
 <h3 id="processslotstonearestcheckpoint">processSlotsToNearestCheckpoint<a class="headerlink" href="#processslotstonearestcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processSlotsToNearestCheckpoint</strong>(<code>emitter</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>stateCtx</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>, <code>slot</code>: <a href="../reflection-8591.reflection-8592._.reflection-8594._lodestar_types_src_types/#slot">Slot</a>): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/stateTransition.ts#L99">packages/lodestar/src/chain/blocks/stateTransition.ts:99</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/stateTransition.ts#L99">packages/lodestar/src/chain/blocks/stateTransition.ts:99</a></em></p>
 <p>Starting at <code>stateCtx.state.slot</code>,
 process slots forward towards <code>slot</code>,
 emitting "checkpoint" events after every epoch processed.</p>
@@ -907,7 +907,7 @@ emitting "checkpoint" events after every epoch processed.</p>
 <hr />
 <h3 id="runstatetransition">runStateTransition<a class="headerlink" href="#runstatetransition" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>runStateTransition</strong>(<code>emitter</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>forkChoice</code>: IForkChoice, <code>stateContext</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>, <code>job</code>: <a href="../../interfaces/chain.iblockprocessjob/">IBlockProcessJob</a>): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/stateTransition.ts#L122">packages/lodestar/src/chain/blocks/stateTransition.ts:122</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/stateTransition.ts#L122">packages/lodestar/src/chain/blocks/stateTransition.ts:122</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -939,7 +939,7 @@ emitting "checkpoint" events after every epoch processed.</p>
 <hr />
 <h3 id="validateblock">validateBlock<a class="headerlink" href="#validateblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>validateBlock</strong>(<code>config</code>: IBeaconConfig, <code>logger</code>: ILogger, <code>forkChoice</code>: IForkChoice, <code>eventBus</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/bf6f1c3746/packages/lodestar/src/chain/blocks/validate.ts#L9">packages/lodestar/src/chain/blocks/validate.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/validate.ts#L9">packages/lodestar/src/chain/blocks/validate.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
