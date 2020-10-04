@@ -19,6 +19,7 @@ import {
   StateArchiveRepository,
   VoluntaryExitRepository,
 } from "./repositories";
+import {StatePreGenesisItem, PreGenesisBlockNumberItem} from "./singleItem";
 import {StateContextCache} from "./stateContextCache";
 import {CheckpointStateCache} from "./stateContextCheckpointsCache";
 import {SeenAttestationCache} from "./seenAttestationCache";
@@ -41,6 +42,8 @@ export class BeaconDb extends DatabaseService implements IBeaconDb {
 
   public depositDataRoot: DepositDataRootRepository;
   public eth1Data: Eth1DataRepository;
+  public statePreGenesis: StatePreGenesisItem;
+  public preGenesisBlockNumber: PreGenesisBlockNumberItem;
 
   public constructor(opts: IDatabaseApiOptions) {
     super(opts);
@@ -59,6 +62,8 @@ export class BeaconDb extends DatabaseService implements IBeaconDb {
     this.depositEvent = new DepositEventRepository(this.config, this.db);
     this.depositDataRoot = new DepositDataRootRepository(this.config, this.db);
     this.eth1Data = new Eth1DataRepository(this.config, this.db);
+    this.statePreGenesis = new StatePreGenesisItem(this.config, this.db);
+    this.preGenesisBlockNumber = new PreGenesisBlockNumberItem(this.config, this.db);
   }
 
   /**

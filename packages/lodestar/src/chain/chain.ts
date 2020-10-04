@@ -449,13 +449,32 @@ export class BeaconChain implements IBeaconChain {
     let state = await this.db.stateArchive.lastValue();
     if (!state) {
       this.logger.info("Chain not started, listening for genesis block");
+
       const builder = new GenesisBuilder(this.config, {
         eth1Provider: this.eth1Provider,
         logger: this.logger,
+        // Load intermediate genesis state from DB if any
+        // TODO: Make sure state & depositTree match each other
+        state: await this.db.statePreGenesis.get(),
+        depositTree: await this.db.depositDataRoot.getDepositRootTree(),
+        preGenesisBlockNumber: await this.db.preGenesisBlockNumber.get(),
         signal: this.abortController?.signal,
       });
-      const genesisResult = await builder.waitForGenesis();
-      state = genesisResult.state;
+
+      try {
+        const genesisResult = await builder.waitForGenesis();
+        state = genesisResult.state;
+
+        // Store progressed tree and delete intermediate state
+        await this.db.depositDataRoot.putTree(builder.depositTree);
+      } catch (e) {
+        // Store progress before potentially terminating the current process
+        await this.db.statePreGenesis.put(builder.state);
+        await this.db.depositDataRoot.putTree(builder.depositTree);
+        await this.db.preGenesisBlockNumber.put(builder.preGenesisBlockNumber);
+        throw e;
+      }
+
       await this.initializeBeaconChain(state);
     }
     // set metrics based on beacon state

@@ -1,4 +1,4 @@
-import {List, TreeBacked, Vector} from "@chainsafe/ssz";
+import {List, readOnlyMap, TreeBacked, Vector} from "@chainsafe/ssz";
 import {Root} from "@chainsafe/lodestar-types";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {bytesToInt} from "@chainsafe/lodestar-utils";
@@ -45,6 +45,10 @@ export class DepositDataRootRepository extends Repository<number, Root> {
         value: root,
       }))
     );
+  }
+
+  public async putTree(depositRootTree: TreeBacked<List<Root>>): Promise<void> {
+    await this.batchPutValues(readOnlyMap(depositRootTree, (root, index) => ({index, root})));
   }
 
   public async getTreeBacked(depositIndex: number): Promise<TreeBacked<List<Root>>> {

@@ -24,6 +24,8 @@ export enum Bucket {
   eth1Data = 8, // timestamp -> Eth1Data
   depositDataRoot = 9, // depositIndex -> Root<DepositData>
   depositEvent = 19, // depositIndex -> DepositEvent
+  statePreGenesis = 20,
+  preGenesisBlockNumber = 21,
   // op pool
   attestation = 10, // Root -> Attestation
   aggregateAndProof = 11, // Root -> AggregateAndProof

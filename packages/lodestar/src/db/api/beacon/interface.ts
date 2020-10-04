@@ -21,6 +21,7 @@ import {
 import {StateContextCache} from "./stateContextCache";
 import {CheckpointStateCache} from "./stateContextCheckpointsCache";
 import {SeenAttestationCache} from "./seenAttestationCache";
+import {PreGenesisBlockNumberItem, StatePreGenesisItem} from "./singleItem";
 
 /**
  * The DB service manages the data layer of the beacon chain
@@ -60,6 +61,8 @@ export interface IBeaconDb {
   // all deposit data roots and merkle tree
   depositDataRoot: DepositDataRootRepository;
   eth1Data: Eth1DataRepository;
+  statePreGenesis: StatePreGenesisItem;
+  preGenesisBlockNumber: PreGenesisBlockNumberItem;
 
   processBlockOperations(signedBlock: SignedBeaconBlock): Promise<void>;
 }
