@@ -4,7 +4,8 @@ import {AbortSignal} from "abort-controller";
 import {chunkifyInclusiveRange} from "../util/chunkify";
 import {linspace} from "../util/numpy";
 import {retry} from "../util/retry";
-import {ErrorParseJson, JsonRpcHttpClient} from "./jsonRpcHttpClient";
+import {ErrorParseJson} from "../util/json";
+import {JsonRpcHttpClient} from "./jsonRpcHttpClient";
 
 /**
  * Binds return types to Ethereum JSON RPC methods

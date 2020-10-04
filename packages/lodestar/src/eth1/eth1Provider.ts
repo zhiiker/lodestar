@@ -5,7 +5,7 @@ import {AbortSignal} from "abort-controller";
 import {isValidAddress} from "../util/address";
 import {retry} from "../util/retry";
 import {chunkifyInclusiveRange} from "../util/chunkify";
-import {ErrorParseJson} from "./jsonRpcHttpClient";
+import {ErrorParseJson} from "../util/json";
 import {Eth1JsonRpcClient} from "./eth1JsonRpcClient";
 import {IEth1Provider} from "./interface";
 import {IEth1Options} from "./options";

@@ -5,6 +5,7 @@ import {AbortSignal} from "abort-controller";
 import {IJsonRpcClient, IRpcPayload} from "./interface";
 import {serializeContext} from "@chainsafe/lodestar-utils";
 import {Json} from "@chainsafe/ssz";
+import {parseJson} from "../util/json";
 
 /**
  * Limits the amount of response text printed with RPC or parsing errors
@@ -77,25 +78,6 @@ async function fetchJson<R, T = unknown>(url: string, json: T, signal?: AbortSig
   }
 
   return parseJson(body);
-}
-
-/**
- * Util: Parse JSON but display the original source string in case of error
- * Helps debug instances where an API returns a plain text instead of JSON,
- * such as getting an HTML page due to a wrong API URL
- */
-function parseJson<T>(json: string): T {
-  try {
-    return JSON.parse(json);
-  } catch (e) {
-    throw new ErrorParseJson(json, e);
-  }
-}
-
-export class ErrorParseJson extends Error {
-  constructor(json: string, e: Error) {
-    super(`Error parsing JSON: ${e.message}\n${json.slice(0, maxStringLengthToPrint)}`);
-  }
 }
 
 export class ErrorJsonRpcResponse extends Error {
