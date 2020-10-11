@@ -45,7 +45,7 @@ export class LodestarGossipsub extends Gossipsub {
     libp2p: Libp2p,
     options = {}
   ) {
-    super(libp2p, Object.assign(options, {msgIdFn: getMessageId, signMessages: false, strictSigning: false}));
+    super(libp2p, Object.assign(options, {msgIdFn: getMessageId, globalSignaturePolicy: "StrictNoSign"}) as any);
     this.transformedObjects = new Map();
     this.config = config;
     this.validator = validator;
