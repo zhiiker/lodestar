@@ -109,7 +109,7 @@ export class LodestarGossipsub extends Gossipsub {
     }
     // Gossipsub checks this already
     assert.true(
-      this.transformedObjects.get(getMessageId(message)) === undefined,
+      this.transformedObjects.get(getMessageId(message).toString()) === undefined,
       "Duplicate message for topic " + topic
     );
     try {
@@ -124,7 +124,7 @@ export class LodestarGossipsub extends Gossipsub {
           throw new GossipValidationError(ERR_TOPIC_VALIDATOR_REJECT);
         default:
           // no error means accept
-          this.transformedObjects.set(getMessageId(message), {createdAt: new Date(), object: transformedObj!});
+          this.transformedObjects.set(getMessageId(message).toString(), {createdAt: new Date(), object: transformedObj!});
       }
     } catch (e) {
       if (e.code === ERR_TOPIC_VALIDATOR_REJECT) {
@@ -141,7 +141,7 @@ export class LodestarGossipsub extends Gossipsub {
    */
   public _emitMessage(message: InMessage): void {
     message.topicIDs.forEach((topic) => {
-      const transformedObj = this.transformedObjects.get(getMessageId(message));
+      const transformedObj = this.transformedObjects.get(getMessageId(message).toString());
       if (transformedObj && transformedObj.object) {
         super.emit(topic, transformedObj.object);
       }

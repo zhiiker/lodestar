@@ -59,6 +59,6 @@ export function getSubnetFromAttestationSubnetTopic(topic: string): number {
   return parseInt(subnetStr);
 }
 
-export function getMessageId(message: InMessage): string {
-  return Buffer.from(hash(message.data || ZERO_HASH)).toString("base64");
+export function getMessageId(message: InMessage): Uint8Array {
+  return hash(message.data || ZERO_HASH).slice(0, 8);
 }
