@@ -534,6 +534,14 @@ export class BeaconChain implements IBeaconChain {
         return this.blockProcessor.processBlockJob(job);
       })
     );
+    const pendingJobs = this.pendingBlocks.getPendingBlocks();
+    this.logger.debug("Block pools: ", {
+      pendingBlocks: pendingJobs
+        .map((job) => job.signedBlock.message.slot)
+        .sort((a, b) => a - b)
+        .join(","),
+      currentSlot: this.clock.currentSlot,
+    });
   };
 
   private onForkChoiceJustified = async (cp: Checkpoint): Promise<void> => {
@@ -659,6 +667,7 @@ export class BeaconChain implements IBeaconChain {
           blockRoot: toHexString(blockRoot),
         });
         this.pendingBlocks.addByParent(err.job);
+        this.emitter.emit("block:unknownRoot", this.pendingBlocks.getMissingAncestor(blockRoot));
         break;
       case BlockErrorCode.ERR_INCORRECT_PROPOSER:
       case BlockErrorCode.ERR_REPEAT_PROPOSAL:
