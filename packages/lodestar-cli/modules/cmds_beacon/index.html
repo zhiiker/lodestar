@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/modules/cmds_beacon/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -441,26 +443,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#ibeaconpaths" class="md-nav__link">
-    IBeaconPaths
-  </a>
-  
-    <nav class="md-nav" aria-label="IBeaconPaths">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type declaration:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -478,19 +460,6 @@
   <a href="#const-defaultbeaconpaths" class="md-nav__link">
     Const defaultBeaconPaths
   </a>
-  
-    <nav class="md-nav" aria-label="Const defaultBeaconPaths">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration_1" class="md-nav__link">
-    Type declaration:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -517,6 +486,13 @@
           <li class="md-nav__item">
   <a href="#getbeaconpaths" class="md-nav__link">
     getBeaconPaths
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initbeaconstate" class="md-nav__link">
+    initBeaconState
   </a>
   
 </li>
@@ -581,19 +557,6 @@
     options
   </a>
   
-    <nav class="md-nav" aria-label="options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration_2" class="md-nav__link">
-    Type declaration:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -638,20 +601,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#const-enroptions" class="md-nav__link">
-    Const enrOptions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enroptions-object" class="md-nav__link">
-    ▪ enrOptions: object
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -674,21 +623,17 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">cmds/beacon</a></p>
+                <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">cmds/beacon</a></p>
 <h1 id="module-cmdsbeacon">Module: cmds/beacon<a class="headerlink" href="#module-cmdsbeacon" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../../interfaces/cmds_beacon.ibeaconextraargs/">IBeaconExtraArgs</a></li>
-<li><a href="../../interfaces/cmds_beacon.ienrargs/">IENRArgs</a></li>
+<li><a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a></li>
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#ibeaconargs">IBeaconArgs</a></li>
-<li><a href="./#ibeaconpaths">IBeaconPaths</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -698,6 +643,7 @@
 <ul>
 <li><a href="./#beaconhandler">beaconHandler</a></li>
 <li><a href="./#getbeaconpaths">getBeaconPaths</a></li>
+<li><a href="./#initbeaconstate">initBeaconState</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
@@ -705,73 +651,20 @@
 <li><a href="./#const-beaconextraoptions">beaconExtraOptions</a></li>
 <li><a href="./#const-beaconoptions">beaconOptions</a></li>
 <li><a href="./#const-beaconpathsoptions">beaconPathsOptions</a></li>
-<li><a href="./#const-enroptions">enrOptions</a></li>
 </ul>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="ibeaconargs">IBeaconArgs<a class="headerlink" href="#ibeaconargs" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IBeaconArgs</strong>: <em>IBeaconNodeOptions &amp; <a href="./#ibeaconpaths">IBeaconPaths</a> &amp; <a href="../../interfaces/cmds_beacon.ienrargs/">IENRArgs</a> &amp; <a href="../../interfaces/cmds_beacon.ibeaconextraargs/">IBeaconExtraArgs</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L87">packages/lodestar-cli/src/cmds/beacon/options.ts:87</a></em></p>
-<hr />
-<h3 id="ibeaconpaths">IBeaconPaths<a class="headerlink" href="#ibeaconpaths" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IBeaconPaths</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/paths.ts#L5">packages/lodestar-cli/src/cmds/beacon/paths.ts:5</a></em></p>
-<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
-<p><strong>beaconDir</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>configFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>dbDir</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>enrFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>logFile</strong>? : <em>undefined | string</em></p>
-</li>
-<li>
-<p><strong>peerIdFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>peerStoreDir</strong>: <em>string</em></p>
-</li>
-</ul>
+<p>Ƭ <strong>IBeaconArgs</strong>: <em><a href="../options_beaconnodeoptions/#ibeaconnodeargs">IBeaconNodeArgs</a> &amp; <a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a> &amp; <a href="../../interfaces/options.ienrargs/">IENRArgs</a> &amp; <a href="../../interfaces/cmds_beacon.ibeaconextraargs/">IBeaconExtraArgs</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L86">packages/lodestar-cli/src/cmds/beacon/options.ts:86</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-defaultbeaconpaths"><code>Const</code> defaultBeaconPaths<a class="headerlink" href="#const-defaultbeaconpaths" title="Permanent link">&para;</a></h3>
-<p>• <strong>defaultBeaconPaths</strong>: <em>object</em> = getBeaconPaths({rootDir: "$rootDir"})</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/paths.ts#L57">packages/lodestar-cli/src/cmds/beacon/paths.ts:57</a></em></p>
+<p>• <strong>defaultBeaconPaths</strong>: <em><a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a> &amp; <a href="../../interfaces/paths.iglobalpaths/">IGlobalPaths</a></em> = getBeaconPaths({rootDir: "$rootDir"})</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/paths.ts#L58">packages/lodestar-cli/src/cmds/beacon/paths.ts:58</a></em></p>
 <p>Constructs representations of the path structure to show in command's description</p>
-<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
-<p><strong>beaconDir</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>configFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>dbDir</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>enrFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>logFile</strong>? : <em>undefined | string</em></p>
-</li>
-<li>
-<p><strong>peerIdFile</strong>: <em>string</em></p>
-</li>
-<li>
-<p><strong>peerStoreDir</strong>: <em>string</em></p>
-</li>
-</ul>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="beaconhandler">beaconHandler<a class="headerlink" href="#beaconhandler" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>beaconHandler</strong>(<code>options</code>: <a href="./#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/handler.ts#L21">packages/lodestar-cli/src/cmds/beacon/handler.ts:21</a></em></p>
+<p>▸ <strong>beaconHandler</strong>(<code>args</code>: <a href="./#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/handler.ts#L22">packages/lodestar-cli/src/cmds/beacon/handler.ts:22</a></em></p>
 <p>Run a beacon node</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -783,7 +676,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>options</code></td>
+<td><code>args</code></td>
 <td><a href="./#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a></td>
 </tr>
 </tbody>
@@ -791,17 +684,16 @@
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="getbeaconpaths">getBeaconPaths<a class="headerlink" href="#getbeaconpaths" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBeaconPaths</strong>(<code>options</code>: Partial‹<a href="./#ibeaconpaths">IBeaconPaths</a>› &amp; Pick‹<a href="../options/#iglobalargs">IGlobalArgs</a>, "rootDir"›): <em><a href="./#ibeaconpaths">IBeaconPaths</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/paths.ts#L28">packages/lodestar-cli/src/cmds/beacon/paths.ts:28</a></em></p>
-<p>Defines the path structure of the account files</p>
+<p>▸ <strong>getBeaconPaths</strong>(<code>args</code>: Partial‹<a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a>› &amp; Pick‹<a href="../options/#iglobalargs">IGlobalArgs</a>, "rootDir"›): <em><a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a> &amp; <a href="../../interfaces/paths.iglobalpaths/">IGlobalPaths</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/paths.ts#L28">packages/lodestar-cli/src/cmds/beacon/paths.ts:28</a></em></p>
+<p>Defines the path structure of the files relevant to the beacon node</p>
 <div class="codehilite"><pre><span></span><code><span class="nv">$rootDir</span>
 └── <span class="nv">$beaconDir</span>
     ├── beacon.config.json
     ├── peer-id.json
-    ├── enr.json
+    ├── enr
     └── chain-db
 </code></pre></div>
-
 
 <p><strong>Parameters:</strong></p>
 <table>
@@ -813,22 +705,67 @@
 </thead>
 <tbody>
 <tr>
-<td><code>options</code></td>
-<td>Partial‹<a href="./#ibeaconpaths">IBeaconPaths</a>› &amp; Pick‹<a href="../options/#iglobalargs">IGlobalArgs</a>, "rootDir"›</td>
+<td><code>args</code></td>
+<td>Partial‹<a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a>› &amp; Pick‹<a href="../options/#iglobalargs">IGlobalArgs</a>, "rootDir"›</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em><a href="./#ibeaconpaths">IBeaconPaths</a></em></p>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/cmds_beacon.ibeaconpaths/">IBeaconPaths</a> &amp; <a href="../../interfaces/paths.iglobalpaths/">IGlobalPaths</a></em></p>
+<hr />
+<h3 id="initbeaconstate">initBeaconState<a class="headerlink" href="#initbeaconstate" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initBeaconState</strong>(<code>options</code>: IBeaconNodeOptions, <code>args</code>: <a href="./#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a>, <code>config</code>: IBeaconConfig, <code>db</code>: IBeaconDb, <code>logger</code>: ILogger, <code>signal</code>: AbortSignal): <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/initBeaconState.ts#L25">packages/lodestar-cli/src/cmds/beacon/initBeaconState.ts:25</a></em></p>
+<p>Initialize a beacon state, picking the strategy based on the <code>IBeaconArgs</code></p>
+<p>State is initialized in one of three ways:
+1. restore from a file (possibly downloaded via URL)
+2. restore from db
+3. create from eth1</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>options</code></td>
+<td>IBeaconNodeOptions</td>
+</tr>
+<tr>
+<td><code>args</code></td>
+<td><a href="./#ibeaconargs">IBeaconArgs</a> &amp; <a href="../options/#iglobalargs">IGlobalArgs</a></td>
+</tr>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td>IBeaconDb</td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>ILogger</td>
+</tr>
+<tr>
+<td><code>signal</code></td>
+<td>AbortSignal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState››</em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-beacon"><code>Const</code> beacon<a class="headerlink" href="#const-beacon" title="Permanent link">&para;</a></h3>
 <h3 id="beacon-object">▪ <strong>beacon</strong>: <em>object</em><a class="headerlink" href="#beacon-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L6">packages/lodestar-cli/src/cmds/beacon/index.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L6">packages/lodestar-cli/src/cmds/beacon/index.ts:6</a></em></p>
 <h3 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
 <p>• <strong>command</strong>: <em>string</em> = "beacon"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L7">packages/lodestar-cli/src/cmds/beacon/index.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L7">packages/lodestar-cli/src/cmds/beacon/index.ts:7</a></em></p>
 <h3 id="describe">describe<a class="headerlink" href="#describe" title="Permanent link">&para;</a></h3>
 <p>• <strong>describe</strong>: <em>string</em> = "Run a beacon chain node"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L8">packages/lodestar-cli/src/cmds/beacon/index.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L8">packages/lodestar-cli/src/cmds/beacon/index.ts:8</a></em></p>
 <h3 id="examples">examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <p>• <strong>examples</strong>: <em>object[]</em> = [
     {
@@ -836,20 +773,19 @@
       description: "Run a beacon chain node and connect to the Medalla testnet",
     },
   ]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L9">packages/lodestar-cli/src/cmds/beacon/index.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L9">packages/lodestar-cli/src/cmds/beacon/index.ts:9</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
 <p>• <strong>handler</strong>: <em><a href="./#beaconhandler">beaconHandler</a></em> = beaconHandler</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L16">packages/lodestar-cli/src/cmds/beacon/index.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L16">packages/lodestar-cli/src/cmds/beacon/index.ts:16</a></em></p>
 <h3 id="options">options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
-<p>• <strong>options</strong>: <em>object</em> = beaconOptions as ICliCommandOptions<IBeaconArgs></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/index.ts#L15">packages/lodestar-cli/src/cmds/beacon/index.ts:15</a></em></p>
-<h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">&para;</a></h4>
+<p>• <strong>options</strong>: <em>Required‹object›</em> = beaconOptions as ICliCommandOptions<IBeaconArgs></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/index.ts#L15">packages/lodestar-cli/src/cmds/beacon/index.ts:15</a></em></p>
 <hr />
 <h3 id="const-beaconextraoptions"><code>Const</code> beaconExtraOptions<a class="headerlink" href="#const-beaconextraoptions" title="Permanent link">&para;</a></h3>
 <h3 id="beaconextraoptions-object">▪ <strong>beaconExtraOptions</strong>: <em>object</em><a class="headerlink" href="#beaconextraoptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L13">packages/lodestar-cli/src/cmds/beacon/options.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L12">packages/lodestar-cli/src/cmds/beacon/options.ts:12</a></em></p>
 <p>▪ <strong>forceGenesis</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L19">packages/lodestar-cli/src/cmds/beacon/options.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L13">packages/lodestar-cli/src/cmds/beacon/options.ts:13</a></em></p>
 <ul>
 <li>
 <p><strong>description</strong>: <em>string</em> = "Force beacon to create genesis without file"</p>
@@ -859,26 +795,20 @@
 </li>
 </ul>
 <p>▪ <strong>genesisStateFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L14">packages/lodestar-cli/src/cmds/beacon/options.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L18">packages/lodestar-cli/src/cmds/beacon/options.ts:18</a></em></p>
 <ul>
 <li>
-<p><strong>description</strong>: <em>string</em> = "Genesis state file path in ssz-encoded format"</p>
-</li>
-<li>
-<p><strong>normalize</strong>: <em>true</em> = true</p>
+<p><strong>description</strong>: <em>string</em> = "Path or URL to download a genesis state file in ssz-encoded format"</p>
 </li>
 <li>
 <p><strong>type</strong>: <em>"string"</em> = "string"</p>
 </li>
 </ul>
 <p>▪ <strong>weakSubjectivityStateFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L23">packages/lodestar-cli/src/cmds/beacon/options.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L23">packages/lodestar-cli/src/cmds/beacon/options.ts:23</a></em></p>
 <ul>
 <li>
-<p><strong>description</strong>: <em>string</em> = "Weak subjectivity state file path in ssz-encoded format"</p>
-</li>
-<li>
-<p><strong>normalize</strong>: <em>true</em> = true</p>
+<p><strong>description</strong>: <em>string</em> = "Path or URL to download a weak subjectivity state file in ssz-encoded format"</p>
 </li>
 <li>
 <p><strong>type</strong>: <em>"string"</em> = "string"</p>
@@ -887,13 +817,13 @@
 <hr />
 <h3 id="const-beaconoptions"><code>Const</code> beaconOptions<a class="headerlink" href="#const-beaconoptions" title="Permanent link">&para;</a></h3>
 <h3 id="beaconoptions-object">▪ <strong>beaconOptions</strong>: <em>object</em><a class="headerlink" href="#beaconoptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L89">packages/lodestar-cli/src/cmds/beacon/options.ts:89</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L88">packages/lodestar-cli/src/cmds/beacon/options.ts:88</a></em></p>
 <hr />
 <h3 id="const-beaconpathsoptions"><code>Const</code> beaconPathsOptions<a class="headerlink" href="#const-beaconpathsoptions" title="Permanent link">&para;</a></h3>
 <h3 id="beaconpathsoptions-object">▪ <strong>beaconPathsOptions</strong>: <em>object</em><a class="headerlink" href="#beaconpathsoptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L30">packages/lodestar-cli/src/cmds/beacon/options.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L29">packages/lodestar-cli/src/cmds/beacon/options.ts:29</a></em></p>
 <p>▪ <strong>beaconDir</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L31">packages/lodestar-cli/src/cmds/beacon/options.ts:31</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L30">packages/lodestar-cli/src/cmds/beacon/options.ts:30</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultBeaconPaths.beaconDir</p>
@@ -909,7 +839,7 @@
 </li>
 </ul>
 <p>▪ <strong>configFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L47">packages/lodestar-cli/src/cmds/beacon/options.ts:47</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L46">packages/lodestar-cli/src/cmds/beacon/options.ts:46</a></em></p>
 <ul>
 <li>
 <p><strong>alias</strong>: <em>string[]</em> = ["config"]</p>
@@ -928,7 +858,7 @@
 </li>
 </ul>
 <p>▪ <strong>dbDir</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L38">packages/lodestar-cli/src/cmds/beacon/options.ts:38</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L37">packages/lodestar-cli/src/cmds/beacon/options.ts:37</a></em></p>
 <ul>
 <li>
 <p><strong>alias</strong>: <em>string[]</em> = ["db.dir", "db.name"]</p>
@@ -950,7 +880,7 @@
 </li>
 </ul>
 <p>▪ <strong>enrFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L71">packages/lodestar-cli/src/cmds/beacon/options.ts:71</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L70">packages/lodestar-cli/src/cmds/beacon/options.ts:70</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultBeaconPaths.enrFile</p>
@@ -969,7 +899,7 @@
 </li>
 </ul>
 <p>▪ <strong>logFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L79">packages/lodestar-cli/src/cmds/beacon/options.ts:79</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L78">packages/lodestar-cli/src/cmds/beacon/options.ts:78</a></em></p>
 <ul>
 <li>
 <p><strong>alias</strong>: <em>string[]</em> = ["log.file"]</p>
@@ -985,7 +915,7 @@
 </li>
 </ul>
 <p>▪ <strong>peerIdFile</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L63">packages/lodestar-cli/src/cmds/beacon/options.ts:63</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L62">packages/lodestar-cli/src/cmds/beacon/options.ts:62</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultBeaconPaths.peerIdFile</p>
@@ -1004,7 +934,7 @@
 </li>
 </ul>
 <p>▪ <strong>peerStoreDir</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/options.ts#L55">packages/lodestar-cli/src/cmds/beacon/options.ts:55</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/cmds/beacon/options.ts#L54">packages/lodestar-cli/src/cmds/beacon/options.ts:54</a></em></p>
 <ul>
 <li>
 <p><strong>defaultDescription</strong>: <em>string</em> = defaultBeaconPaths.peerStoreDir</p>
@@ -1020,70 +950,6 @@
 </li>
 <li>
 <p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
-<hr />
-<h3 id="const-enroptions"><code>Const</code> enrOptions<a class="headerlink" href="#const-enroptions" title="Permanent link">&para;</a></h3>
-<h3 id="enroptions-object">▪ <strong>enrOptions</strong>: <em>object</em><a class="headerlink" href="#enroptions-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L14">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:14</a></em></p>
-<p>▪ <strong>enr.ip</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L15">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:15</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR IP entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
-<p>▪ <strong>enr.ip6</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L27">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:27</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR IPv6 entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"string"</em> = "string"</p>
-</li>
-</ul>
-<p>▪ <strong>enr.tcp</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L19">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:19</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR TCP entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"number"</em> = "number"</p>
-</li>
-</ul>
-<p>▪ <strong>enr.tcp6</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L31">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:31</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR (IPv6-specific) TCP entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"number"</em> = "number"</p>
-</li>
-</ul>
-<p>▪ <strong>enr.udp</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L23">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:23</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR UDP entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"number"</em> = "number"</p>
-</li>
-</ul>
-<p>▪ <strong>enr.udp6</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/cmds/beacon/enrOptions.ts#L35">packages/lodestar-cli/src/cmds/beacon/enrOptions.ts:35</a></em></p>
-<ul>
-<li>
-<p><strong>description</strong>: <em>string</em> = "Override ENR (IPv6-specific) UDP entry"</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>"number"</em> = "number"</p>
 </li>
 </ul>
                 
@@ -1157,15 +1023,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

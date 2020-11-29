@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_rest_controllers_beacon_blocks/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -444,6 +446,13 @@
           <li class="md-nav__item">
   <a href="#getblockroot" class="md-nav__link">
     getBlockRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishblock" class="md-nav__link">
+    publishBlock
   </a>
   
 </li>
@@ -601,6 +610,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#const-publishblock" class="md-nav__link">
+    Const publishBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishblock-object" class="md-nav__link">
+    ▪ publishBlock: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_5" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_5" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -623,10 +660,7 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon/blocks</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon/blocks</a></p>
 <h1 id="module-apirestcontrollersbeaconblocks">Module: api/rest/controllers/beacon/blocks<a class="headerlink" href="#module-apirestcontrollersbeaconblocks" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
@@ -636,6 +670,7 @@
 <li><a href="./#getblockheader">getBlockHeader</a></li>
 <li><a href="./#getblockheaders">getBlockHeaders</a></li>
 <li><a href="./#getblockroot">getBlockRoot</a></li>
+<li><a href="./#publishblock">publishBlock</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
@@ -644,6 +679,7 @@
 <li><a href="./#const-getblockheader">getBlockHeader</a></li>
 <li><a href="./#const-getblockheaders">getBlockHeaders</a></li>
 <li><a href="./#const-getblockroot">getBlockRoot</a></li>
+<li><a href="./#const-publishblock">publishBlock</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
@@ -660,16 +696,19 @@
 <hr />
 <h3 id="getblockroot">getBlockRoot<a class="headerlink" href="#getblockroot" title="Permanent link">&para;</a></h3>
 <p>• <strong>getBlockRoot</strong>:</p>
+<hr />
+<h3 id="publishblock">publishBlock<a class="headerlink" href="#publishblock" title="Permanent link">&para;</a></h3>
+<p>• <strong>publishBlock</strong>:</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-getblock"><code>Const</code> getBlock<a class="headerlink" href="#const-getblock" title="Permanent link">&para;</a></h3>
 <h3 id="getblock-object">▪ <strong>getBlock</strong>: <em>object</em><a class="headerlink" href="#getblock-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:5</a></em></p>
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/blocks/:blockId"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:6</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/blocks/:blockId"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:6</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:8</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:8</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -681,7 +720,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -691,7 +730,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L34">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts#L34">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlock.ts:34</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -720,13 +759,13 @@
 <hr />
 <h3 id="const-getblockattestations"><code>Const</code> getBlockAttestations<a class="headerlink" href="#const-getblockattestations" title="Permanent link">&para;</a></h3>
 <h3 id="getblockattestations-object">▪ <strong>getBlockAttestations</strong>: <em>object</em><a class="headerlink" href="#getblockattestations-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:5</a></em></p>
 <h3 id="url_1">url<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/blocks/:blockId/attestations"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:6</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/blocks/:blockId/attestations"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:6</a></em></p>
 <h3 id="handler_1">handler<a class="headerlink" href="#handler_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:8</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:8</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -738,7 +777,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -748,7 +787,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L36">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts#L36">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockAttestations.ts:36</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -777,13 +816,13 @@
 <hr />
 <h3 id="const-getblockheader"><code>Const</code> getBlockHeader<a class="headerlink" href="#const-getblockheader" title="Permanent link">&para;</a></h3>
 <h3 id="getblockheader-object">▪ <strong>getBlockHeader</strong>: <em>object</em><a class="headerlink" href="#getblockheader-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:5</a></em></p>
 <h3 id="url_2">url<a class="headerlink" href="#url_2" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/headers/:blockId"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:6</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/headers/:blockId"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:6</a></em></p>
 <h3 id="handler_2">handler<a class="headerlink" href="#handler_2" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:8</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:8</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -795,7 +834,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -805,7 +844,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L34">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts#L34">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeader.ts:34</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -834,13 +873,13 @@
 <hr />
 <h3 id="const-getblockheaders"><code>Const</code> getBlockHeaders<a class="headerlink" href="#const-getblockheaders" title="Permanent link">&para;</a></h3>
 <h3 id="getblockheaders-object">▪ <strong>getBlockHeaders</strong>: <em>object</em><a class="headerlink" href="#getblockheaders-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:4</a></em></p>
 <h3 id="url_3">url<a class="headerlink" href="#url_3" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/headers"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:5</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/headers"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:5</a></em></p>
 <h3 id="handler_3">handler<a class="headerlink" href="#handler_3" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L7">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:7</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L7">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:7</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -852,7 +891,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, object, DefaultParams, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -862,7 +901,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L22">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:22</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts#L22">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockHeaders.ts:22</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -902,13 +941,13 @@
 <hr />
 <h3 id="const-getblockroot"><code>Const</code> getBlockRoot<a class="headerlink" href="#const-getblockroot" title="Permanent link">&para;</a></h3>
 <h3 id="getblockroot-object">▪ <strong>getBlockRoot</strong>: <em>object</em><a class="headerlink" href="#getblockroot-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:5</a></em></p>
 <h3 id="url_4">url<a class="headerlink" href="#url_4" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/blocks/:blockId/root"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:6</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/blocks/:blockId/root"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:6</a></em></p>
 <h3 id="handler_4">handler<a class="headerlink" href="#handler_4" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:8</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:8</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -920,7 +959,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, object, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -930,7 +969,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L36">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:36</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts#L36">packages/lodestar/src/api/rest/controllers/beacon/blocks/getBlockRoot.ts:36</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -953,6 +992,49 @@
 <li><strong>types</strong>: <em>string</em> = "string"</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="const-publishblock"><code>Const</code> publishBlock<a class="headerlink" href="#const-publishblock" title="Permanent link">&para;</a></h3>
+<h3 id="publishblock-object">▪ <strong>publishBlock</strong>: <em>object</em><a class="headerlink" href="#publishblock-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts:5</a></em></p>
+<h3 id="url_5">url<a class="headerlink" href="#url_5" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/blocks"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts:6</a></em></p>
+<h3 id="handler_5">handler<a class="headerlink" href="#handler_5" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts:8</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/blocks/publishBlock.ts:19</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>body</strong>: <em>object</em></p>
+<ul>
+<li><strong>type</strong>: <em>string</em> = "object"</li>
 </ul>
 </li>
 </ul>
@@ -1027,15 +1109,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

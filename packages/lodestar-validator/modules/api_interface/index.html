@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-validator/modules/api_interface/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -387,9 +389,143 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#interfaces" class="md-nav__link">
     Interfaces
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beaconblockevent" class="md-nav__link">
+    BeaconBlockEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="BeaconBlockEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconchainreorgevent" class="md-nav__link">
+    BeaconChainReorgEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="BeaconChainReorgEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_1" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconevent" class="md-nav__link">
+    BeaconEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockepochevent" class="md-nav__link">
+    ClockEpochEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="ClockEpochEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_2" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockslotevent" class="md-nav__link">
+    ClockSlotEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="ClockSlotEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_3" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headevent" class="md-nav__link">
+    HeadEvent
+  </a>
+  
+    <nav class="md-nav" aria-label="HeadEvent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration_4" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -415,17 +551,107 @@
                   </a>
                 
                 
-                  
-                
-                
                 <p><a href="../../">@chainsafe/lodestar-validator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/interface</a></p>
 <h1 id="module-apiinterface">Module: api/interface<a class="headerlink" href="#module-apiinterface" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../enums/api_interface.beaconeventtype/">BeaconEventType</a></li>
+<li><a href="../../enums/api_interface.clockeventtype/">ClockEventType</a></li>
+</ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../../interfaces/api_interface.ibeaconapi/">IBeaconApi</a></li>
+<li><a href="../../interfaces/api_interface.ibeaconblocksapi/">IBeaconBlocksApi</a></li>
+<li><a href="../../interfaces/api_interface.ibeaconpoolapi/">IBeaconPoolApi</a></li>
+<li><a href="../../interfaces/api_interface.ibeaconstateapi/">IBeaconStateApi</a></li>
+<li><a href="../../interfaces/api_interface.ieventsapi/">IEventsApi</a></li>
 <li><a href="../../interfaces/api_interface.inodeapi/">INodeApi</a></li>
 <li><a href="../../interfaces/api_interface.ivalidatorapi/">IValidatorApi</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#beaconblockevent">BeaconBlockEvent</a></li>
+<li><a href="./#beaconchainreorgevent">BeaconChainReorgEvent</a></li>
+<li><a href="./#beaconevent">BeaconEvent</a></li>
+<li><a href="./#clockepochevent">ClockEpochEvent</a></li>
+<li><a href="./#clockslotevent">ClockSlotEvent</a></li>
+<li><a href="./#headevent">HeadEvent</a></li>
+</ul>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h3 id="beaconblockevent">BeaconBlockEvent<a class="headerlink" href="#beaconblockevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>BeaconBlockEvent</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/events.ts#L10">packages/lodestar-validator/src/api/interface/events.ts:10</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>message</strong>: <em>BlockEventPayload</em></p>
+</li>
+<li>
+<p><strong>type</strong>: <em>typeof BLOCK</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="beaconchainreorgevent">BeaconChainReorgEvent<a class="headerlink" href="#beaconchainreorgevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>BeaconChainReorgEvent</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/events.ts#L15">packages/lodestar-validator/src/api/interface/events.ts:15</a></em></p>
+<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>message</strong>: <em>ChainReorg</em></p>
+</li>
+<li>
+<p><strong>type</strong>: <em>typeof CHAIN_REORG</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="beaconevent">BeaconEvent<a class="headerlink" href="#beaconevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>BeaconEvent</strong>: <em><a href="./#beaconblockevent">BeaconBlockEvent</a> | <a href="./#beaconchainreorgevent">BeaconChainReorgEvent</a> | <a href="./#headevent">HeadEvent</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/events.ts#L25">packages/lodestar-validator/src/api/interface/events.ts:25</a></em></p>
+<hr />
+<h3 id="clockepochevent">ClockEpochEvent<a class="headerlink" href="#clockepochevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ClockEpochEvent</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/clock.ts#L13">packages/lodestar-validator/src/api/interface/clock.ts:13</a></em></p>
+<h4 id="type-declaration_2">Type declaration:<a class="headerlink" href="#type-declaration_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>message</strong>(): <em>object</em></p>
+</li>
+<li>
+<p><strong>epoch</strong>: <em>number</em></p>
+</li>
+<li>
+<p><strong>type</strong>: <em>typeof CLOCK_EPOCH</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="clockslotevent">ClockSlotEvent<a class="headerlink" href="#clockslotevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ClockSlotEvent</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/clock.ts#L6">packages/lodestar-validator/src/api/interface/clock.ts:6</a></em></p>
+<h4 id="type-declaration_3">Type declaration:<a class="headerlink" href="#type-declaration_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>message</strong>(): <em>object</em></p>
+</li>
+<li>
+<p><strong>slot</strong>: <em>number</em></p>
+</li>
+<li>
+<p><strong>type</strong>: <em>typeof CLOCK_SLOT</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="headevent">HeadEvent<a class="headerlink" href="#headevent" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>HeadEvent</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface/events.ts#L20">packages/lodestar-validator/src/api/interface/events.ts:20</a></em></p>
+<h4 id="type-declaration_4">Type declaration:<a class="headerlink" href="#type-declaration_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>message</strong>: <em>ChainHead</em></p>
+</li>
+<li>
+<p><strong>type</strong>: <em>typeof HEAD</em></p>
+</li>
 </ul>
                 
               
@@ -498,15 +724,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

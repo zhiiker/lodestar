@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_rest_routes_validator/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -387,63 +389,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#interfaces" class="md-nav__link">
-    Interfaces
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#type-aliases" class="md-nav__link">
-    Type aliases
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#object-literals" class="md-nav__link">
-    Object literals
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-aliases_1" class="md-nav__link">
-    Type aliases
-  </a>
-  
-    <nav class="md-nav" aria-label="Type aliases">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ibody" class="md-nav__link">
-    IBody
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ibody_1" class="md-nav__link">
-    IBody
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ibody_2" class="md-nav__link">
-    IBody
   </a>
   
 </li>
@@ -462,189 +409,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#const-registeraggregateandproofproductionendpoint" class="md-nav__link">
-    Const registerAggregateAndProofProductionEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registerattestationproductionendpoint" class="md-nav__link">
-    Const registerAttestationProductionEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registerattestationpublishendpoint" class="md-nav__link">
-    Const registerAttestationPublishEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registerblockproductionendpoint" class="md-nav__link">
-    Const registerBlockProductionEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registerblockpublishendpoint" class="md-nav__link">
-    Const registerBlockPublishEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registergetwireattestationendpoint" class="md-nav__link">
-    Const registerGetWireAttestationEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registerpublishaggregateandproofendpoint" class="md-nav__link">
-    Const registerPublishAggregateAndProofEndpoint
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-registersubscribetocommitteesubnet" class="md-nav__link">
-    Const registerSubscribeToCommitteeSubnet
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-validator" class="md-nav__link">
-    Const validator
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#object-literals_1" class="md-nav__link">
-    Object literals
-  </a>
-  
-    <nav class="md-nav" aria-label="Object literals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#const-opts" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_1" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_1" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_2" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_2" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_3" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_3" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_4" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_4" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_5" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_5" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_6" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_6" class="md-nav__link">
-    ▪ opts: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-opts_7" class="md-nav__link">
-    Const opts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opts-object_7" class="md-nav__link">
-    ▪ opts: object
+  <a href="#registervalidatorroutes" class="md-nav__link">
+    registerValidatorRoutes
   </a>
   
 </li>
@@ -671,274 +437,17 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/routes/validator</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/routes/validator</a></p>
 <h1 id="module-apirestroutesvalidator">Module: api/rest/routes/validator<a class="headerlink" href="#module-apirestroutesvalidator" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../interfaces/api_rest_routes_validator.ibody/">IBody</a></li>
-<li><a href="../../interfaces/api_rest_routes_validator.iquery/">IQuery</a></li>
-<li><a href="../../interfaces/api_rest_routes_validator.iquery-1/">IQuery</a></li>
-<li><a href="../../interfaces/api_rest_routes_validator.iquery-2/">IQuery</a></li>
-<li><a href="../../interfaces/api_rest_routes_validator.iquery-3/">IQuery</a></li>
-</ul>
-<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#ibody">IBody</a></li>
-<li><a href="./#ibody">IBody</a></li>
-<li><a href="./#ibody">IBody</a></li>
-</ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#const-registeraggregateandproofproductionendpoint">registerAggregateAndProofProductionEndpoint</a></li>
-<li><a href="./#const-registerattestationproductionendpoint">registerAttestationProductionEndpoint</a></li>
-<li><a href="./#const-registerattestationpublishendpoint">registerAttestationPublishEndpoint</a></li>
-<li><a href="./#const-registerblockproductionendpoint">registerBlockProductionEndpoint</a></li>
-<li><a href="./#const-registerblockpublishendpoint">registerBlockPublishEndpoint</a></li>
-<li><a href="./#const-registergetwireattestationendpoint">registerGetWireAttestationEndpoint</a></li>
-<li><a href="./#const-registerpublishaggregateandproofendpoint">registerPublishAggregateAndProofEndpoint</a></li>
-<li><a href="./#const-registersubscribetocommitteesubnet">registerSubscribeToCommitteeSubnet</a></li>
-<li><a href="./#const-validator">validator</a></li>
+<li><a href="./#registervalidatorroutes">registerValidatorRoutes</a></li>
 </ul>
-<h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-<li><a href="./#const-opts">opts</a></li>
-</ul>
-<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
-<h3 id="ibody">IBody<a class="headerlink" href="#ibody" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IBody</strong>: <em>Json</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L6">packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:6</a></em></p>
-<hr />
-<h3 id="ibody_1">IBody<a class="headerlink" href="#ibody_1" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IBody</strong>: <em>Json[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L6">packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:6</a></em></p>
-<hr />
-<h3 id="ibody_2">IBody<a class="headerlink" href="#ibody_2" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IBody</strong>: <em>Json[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L6">packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:6</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-registeraggregateandproofproductionendpoint"><code>Const</code> registerAggregateAndProofProductionEndpoint<a class="headerlink" href="#const-registeraggregateandproofproductionendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerAggregateAndProofProductionEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L30">packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:30</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registerattestationproductionendpoint"><code>Const</code> registerAttestationProductionEndpoint<a class="headerlink" href="#const-registerattestationproductionendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerAttestationProductionEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L37">packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:37</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registerattestationpublishendpoint"><code>Const</code> registerAttestationPublishEndpoint<a class="headerlink" href="#const-registerattestationpublishendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerAttestationPublishEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L16">packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:16</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registerblockproductionendpoint"><code>Const</code> registerBlockProductionEndpoint<a class="headerlink" href="#const-registerblockproductionendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerBlockProductionEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L39">packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:39</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registerblockpublishendpoint"><code>Const</code> registerBlockPublishEndpoint<a class="headerlink" href="#const-registerblockpublishendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerBlockPublishEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L25">packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:25</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registergetwireattestationendpoint"><code>Const</code> registerGetWireAttestationEndpoint<a class="headerlink" href="#const-registergetwireattestationendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerGetWireAttestationEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L31">packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:31</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registerpublishaggregateandproofendpoint"><code>Const</code> registerPublishAggregateAndProofEndpoint<a class="headerlink" href="#const-registerpublishaggregateandproofendpoint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerPublishAggregateAndProofEndpoint</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L24">packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:24</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-registersubscribetocommitteesubnet"><code>Const</code> registerSubscribeToCommitteeSubnet<a class="headerlink" href="#const-registersubscribetocommitteesubnet" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>registerSubscribeToCommitteeSubnet</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L35">packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:35</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>api</code></td>
-<td>object</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="const-validator"><code>Const</code> validator<a class="headerlink" href="#const-validator" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>validator</strong>(<code>fastify</code>: <a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›, <code>opts</code>: <a href="../../interfaces/api_rest.ilodestarapiopts/">ILodestarApiOpts</a>, <code>callback</code>: function): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/index.ts#L13">packages/lodestar/src/api/rest/routes/validator/index.ts:13</a></em></p>
-<p><strong>Parameters:</strong></p>
-<p>▪ <strong>fastify</strong>: <em><a href="../../interfaces/api_rest.fastifyinstance/">FastifyInstance</a>‹Server‹›, IncomingMessage‹›, ServerResponse‹›, object›</em></p>
-<p>▪ <strong>opts</strong>: <em><a href="../../interfaces/api_rest.ilodestarapiopts/">ILodestarApiOpts</a></em></p>
-<p>▪ <strong>callback</strong>: <em>function</em></p>
-<p>▸ (<code>err?</code>: FastifyError): <em>void</em></p>
+<h3 id="registervalidatorroutes">registerValidatorRoutes<a class="headerlink" href="#registervalidatorroutes" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>registerValidatorRoutes</strong>(<code>server</code>: FastifyInstance): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/routes/validator/index.ts#L13">packages/lodestar/src/api/rest/routes/validator/index.ts:13</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -949,264 +458,12 @@
 </thead>
 <tbody>
 <tr>
-<td><code>err?</code></td>
-<td>FastifyError</td>
+<td><code>server</code></td>
+<td>FastifyInstance</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>void</em></p>
-<h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-opts"><code>Const</code> opts<a class="headerlink" href="#const-opts" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L15">packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:15</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceBlock.ts#L16">packages/lodestar/src/api/rest/routes/validator/produceBlock.ts:16</a></em></p>
-<ul>
-<li>
-<p><strong>querystring</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>required</strong>: <em>string[]</em> = ["slot", "proposer_pubkey", "randao_reveal"]</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-<li>
-<p><strong>properties</strong>: <em>object</em></p>
-<ul>
-<li>
-<p><strong>graffiti</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-<li>
-<p><strong>proposer_pubkey</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-<li>
-<p><strong>randao_reveal</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-<li>
-<p><strong>slot</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>minimum</strong>: <em>number</em> = 0</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "integer"</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_1"><code>Const</code> opts<a class="headerlink" href="#const-opts_1" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_1">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_1" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L9">packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:9</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishBlock.ts#L18">packages/lodestar/src/api/rest/routes/validator/publishBlock.ts:18</a></em></p>
-<ul>
-<li>
-<p><strong>body</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_2"><code>Const</code> opts<a class="headerlink" href="#const-opts_2" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_2">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_2" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L15">packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:15</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts#L16">packages/lodestar/src/api/rest/routes/validator/produceAttestation.ts:16</a></em></p>
-<ul>
-<li>
-<p><strong>querystring</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>required</strong>: <em>string[]</em> = ["validator_pubkey", "slot", "attestation_committee_index"]</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-<li>
-<p><strong>properties</strong>: <em>object</em></p>
-<ul>
-<li>
-<p><strong>attestation_committee_index</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>minimum</strong>: <em>number</em> = 0</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "integer"</p>
-</li>
-<li>
-<p><strong>slot</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>minimum</strong>: <em>number</em> = 0</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "integer"</p>
-</li>
-<li>
-<p><strong>validator_pubkey</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_3"><code>Const</code> opts<a class="headerlink" href="#const-opts_3" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_3">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_3" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L8">packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:8</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts#L9">packages/lodestar/src/api/rest/routes/validator/publishAttestation.ts:9</a></em></p>
-<ul>
-<li>
-<p><strong>body</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "array"</p>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_4"><code>Const</code> opts<a class="headerlink" href="#const-opts_4" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_4">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_4" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L8">packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:8</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts#L17">packages/lodestar/src/api/rest/routes/validator/publishAggregateAndProof.ts:17</a></em></p>
-<ul>
-<li>
-<p><strong>body</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "array"</p>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_5"><code>Const</code> opts<a class="headerlink" href="#const-opts_5" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_5">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_5" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L12">packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:12</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts#L13">packages/lodestar/src/api/rest/routes/validator/getWireAttestations.ts:13</a></em></p>
-<ul>
-<li>
-<p><strong>querystring</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>required</strong>: <em>string[]</em> = ["epoch", "committee_index"]</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-<li>
-<p><strong>properties</strong>: <em>object</em></p>
-<ul>
-<li>
-<p><strong>committee_index</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>minimum</strong>: <em>number</em> = 0</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "integer"</p>
-</li>
-<li>
-<p><strong>epoch</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>minimum</strong>: <em>number</em> = 0</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "integer"</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_6"><code>Const</code> opts<a class="headerlink" href="#const-opts_6" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_6">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_6" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L7">packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:7</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts#L8">packages/lodestar/src/api/rest/routes/validator/subscribeToCommitteeSubnet.ts:8</a></em></p>
-<ul>
-<li>
-<p><strong>body</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>requiredKeys</strong>: <em>string[]</em> = ["committee_index", "slot", "slot_signature", "aggregator_pubkey"]</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-<li>
-<p><strong>aggregator_pubkey</strong>: <em>object</em></p>
-<ul>
-<li><strong>type</strong>: <em>string</em> = "string"</li>
-</ul>
-</li>
-<li>
-<p><strong>attestation_committee_index</strong>: <em>object</em></p>
-<ul>
-<li><strong>type</strong>: <em>string</em> = "string"</li>
-</ul>
-</li>
-<li>
-<p><strong>slot</strong>: <em>object</em></p>
-<ul>
-<li><strong>type</strong>: <em>string</em> = "string"</li>
-</ul>
-</li>
-<li>
-<p><strong>slot_signature</strong>: <em>object</em></p>
-<ul>
-<li><strong>type</strong>: <em>string</em> = "string"</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h3 id="const-opts_7"><code>Const</code> opts<a class="headerlink" href="#const-opts_7" title="Permanent link">&para;</a></h3>
-<h3 id="opts-object_7">▪ <strong>opts</strong>: <em>object</em><a class="headerlink" href="#opts-object_7" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L13">packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:13</a></em></p>
-<p>▪ <strong>schema</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts#L14">packages/lodestar/src/api/rest/routes/validator/produceAggregatedAttestation.ts:14</a></em></p>
-<ul>
-<li>
-<p><strong>querystring</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>required</strong>: <em>string[]</em> = ["attestation_data", "aggregator_pubkey"]</p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "object"</p>
-</li>
-<li>
-<p><strong>properties</strong>: <em>object</em></p>
-<ul>
-<li>
-<p><strong>aggregator_pubkey</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-<li>
-<p><strong>attestation_data</strong>: <em>object</em></p>
-</li>
-<li>
-<p><strong>type</strong>: <em>string</em> = "string"</p>
-</li>
-</ul>
-</li>
-</ul>
                 
               
               
@@ -1278,15 +535,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

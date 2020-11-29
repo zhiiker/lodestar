@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/chain/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -394,6 +396,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
     Classes
   </a>
@@ -421,6 +430,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -442,8 +458,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#blockerror" class="md-nav__link">
-    BlockError
+  <a href="#chainevent" class="md-nav__link">
+    ChainEvent
   </a>
   
 </li>
@@ -470,8 +486,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#iattestationprocessor" class="md-nav__link">
-    IAttestationProcessor
+  <a href="#iattestationjob" class="md-nav__link">
+    IAttestationJob
   </a>
   
 </li>
@@ -491,8 +507,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#iblockprocessjob" class="md-nav__link">
-    IBlockProcessJob
+  <a href="#iblockjob" class="md-nav__link">
+    IBlockJob
   </a>
   
 </li>
@@ -500,6 +516,76 @@
           <li class="md-nav__item">
   <a href="#ichainevents" class="md-nav__link">
     IChainEvents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lodestarforkchoice" class="md-nav__link">
+    LodestarForkChoice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computeanchorcheckpoint" class="md-nav__link">
+    computeAnchorCheckpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creategenesisblock" class="md-nav__link">
+    createGenesisBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initbeaconmetrics" class="md-nav__link">
+    initBeaconMetrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefromanchorstate" class="md-nav__link">
+    initStateFromAnchorState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefromdb" class="md-nav__link">
+    initStateFromDb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefrometh1" class="md-nav__link">
+    initStateFromEth1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistanchorstate" class="md-nav__link">
+    persistAnchorState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistgenesisresult" class="md-nav__link">
+    persistGenesisResult
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restorestatecaches" class="md-nav__link">
+    restoreStateCaches
   </a>
   
 </li>
@@ -518,11 +604,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#blockerror_1" class="md-nav__link">
-    BlockError
+  <a href="#ichainoptions" class="md-nav__link">
+    IChainOptions
   </a>
   
-    <nav class="md-nav" aria-label="BlockError">
+    <nav class="md-nav" aria-label="IChainOptions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -538,22 +624,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ichainoptions" class="md-nav__link">
-    IChainOptions
+  <a href="#listenertype" class="md-nav__link">
+    ListenerType
   </a>
-  
-    <nav class="md-nav" aria-label="IChainOptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type-declaration_1" class="md-nav__link">
-    Type declaration:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -571,8 +644,189 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#const-config" class="md-nav__link">
-    Const config
+  <a href="#const-defaultchainoptions" class="md-nav__link">
+    Const defaultChainOptions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#computeanchorcheckpoint_1" class="md-nav__link">
+    computeAnchorCheckpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creategenesisblock_1" class="md-nav__link">
+    createGenesisBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handlechainevents" class="md-nav__link">
+    handleChainEvents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initbeaconmetrics_1" class="md-nav__link">
+    initBeaconMetrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefromanchorstate_1" class="md-nav__link">
+    initStateFromAnchorState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefromdb_1" class="md-nav__link">
+    initStateFromDb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initstatefrometh1_1" class="md-nav__link">
+    initStateFromEth1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onattestation" class="md-nav__link">
+    onAttestation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onblock" class="md-nav__link">
+    onBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oncheckpoint" class="md-nav__link">
+    onCheckpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclockslot" class="md-nav__link">
+    onClockSlot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onerrorattestation" class="md-nav__link">
+    onErrorAttestation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onerrorblock" class="md-nav__link">
+    onErrorBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onfinalized" class="md-nav__link">
+    onFinalized
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onforkchoicefinalized" class="md-nav__link">
+    onForkChoiceFinalized
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onforkchoicehead" class="md-nav__link">
+    onForkChoiceHead
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onforkchoicejustified" class="md-nav__link">
+    onForkChoiceJustified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onforkchoicereorg" class="md-nav__link">
+    onForkChoiceReorg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onforkversion" class="md-nav__link">
+    onForkVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onjustified" class="md-nav__link">
+    onJustified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistanchorstate_1" class="md-nav__link">
+    persistAnchorState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistgenesisresult_1" class="md-nav__link">
+    persistGenesisResult
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restorestatecaches_1" class="md-nav__link">
+    restoreStateCaches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wraphandler" class="md-nav__link">
+    wrapHandler
   </a>
   
 </li>
@@ -599,24 +853,35 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">chain</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">chain</a></p>
 <h1 id="module-chain">Module: chain<a class="headerlink" href="#module-chain" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#beaconchain">BeaconChain</a></li>
-<li><a href="./#blockerror">BlockError</a></li>
+<li><a href="./#chainevent">ChainEvent</a></li>
 <li><a href="./#chaineventemitter">ChainEventEmitter</a></li>
 <li><a href="./#forkchoice">ForkChoice</a></li>
 <li><a href="./#forkchoicestore">ForkChoiceStore</a></li>
-<li><a href="./#iattestationprocessor">IAttestationProcessor</a></li>
+<li><a href="./#iattestationjob">IAttestationJob</a></li>
 <li><a href="./#ibeaconchain">IBeaconChain</a></li>
 <li><a href="./#ibeaconchainmodules">IBeaconChainModules</a></li>
-<li><a href="./#iblockprocessjob">IBlockProcessJob</a></li>
+<li><a href="./#iblockjob">IBlockJob</a></li>
 <li><a href="./#ichainevents">IChainEvents</a></li>
+<li><a href="./#lodestarforkchoice">LodestarForkChoice</a></li>
+<li><a href="./#computeanchorcheckpoint">computeAnchorCheckpoint</a></li>
+<li><a href="./#creategenesisblock">createGenesisBlock</a></li>
+<li><a href="./#initbeaconmetrics">initBeaconMetrics</a></li>
+<li><a href="./#initstatefromanchorstate">initStateFromAnchorState</a></li>
+<li><a href="./#initstatefromdb">initStateFromDb</a></li>
+<li><a href="./#initstatefrometh1">initStateFromEth1</a></li>
+<li><a href="./#persistanchorstate">persistAnchorState</a></li>
+<li><a href="./#persistgenesisresult">persistGenesisResult</a></li>
+<li><a href="./#restorestatecaches">restoreStateCaches</a></li>
+</ul>
+<h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../enums/chain.chainevent/">ChainEvent</a></li>
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h3>
 <ul>
@@ -625,27 +890,55 @@
 </ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../../interfaces/chain.iattestationprocessor/">IAttestationProcessor</a></li>
+<li><a href="../../interfaces/chain.iattestationjob/">IAttestationJob</a></li>
 <li><a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a></li>
 <li><a href="../../interfaces/chain.ibeaconchainmodules/">IBeaconChainModules</a></li>
-<li><a href="../../interfaces/chain.iblockprocessjob/">IBlockProcessJob</a></li>
+<li><a href="../../interfaces/chain.iblockjob/">IBlockJob</a></li>
 <li><a href="../../interfaces/chain.ichainevents/">IChainEvents</a></li>
+<li><a href="../../interfaces/chain.ieventmap/">IEventMap</a></li>
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#blockerror">BlockError</a></li>
 <li><a href="./#ichainoptions">IChainOptions</a></li>
+<li><a href="./#listenertype">ListenerType</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#const-config">config</a></li>
+<li><a href="./#const-defaultchainoptions">defaultChainOptions</a></li>
+</ul>
+<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#computeanchorcheckpoint">computeAnchorCheckpoint</a></li>
+<li><a href="./#creategenesisblock">createGenesisBlock</a></li>
+<li><a href="./#handlechainevents">handleChainEvents</a></li>
+<li><a href="./#initbeaconmetrics">initBeaconMetrics</a></li>
+<li><a href="./#initstatefromanchorstate">initStateFromAnchorState</a></li>
+<li><a href="./#initstatefromdb">initStateFromDb</a></li>
+<li><a href="./#initstatefrometh1">initStateFromEth1</a></li>
+<li><a href="./#onattestation">onAttestation</a></li>
+<li><a href="./#onblock">onBlock</a></li>
+<li><a href="./#oncheckpoint">onCheckpoint</a></li>
+<li><a href="./#onclockslot">onClockSlot</a></li>
+<li><a href="./#onerrorattestation">onErrorAttestation</a></li>
+<li><a href="./#onerrorblock">onErrorBlock</a></li>
+<li><a href="./#onfinalized">onFinalized</a></li>
+<li><a href="./#onforkchoicefinalized">onForkChoiceFinalized</a></li>
+<li><a href="./#onforkchoicehead">onForkChoiceHead</a></li>
+<li><a href="./#onforkchoicejustified">onForkChoiceJustified</a></li>
+<li><a href="./#onforkchoicereorg">onForkChoiceReorg</a></li>
+<li><a href="./#onforkversion">onForkVersion</a></li>
+<li><a href="./#onjustified">onJustified</a></li>
+<li><a href="./#persistanchorstate">persistAnchorState</a></li>
+<li><a href="./#persistgenesisresult">persistGenesisResult</a></li>
+<li><a href="./#restorestatecaches">restoreStateCaches</a></li>
+<li><a href="./#wraphandler">wrapHandler</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
 <h3 id="beaconchain">BeaconChain<a class="headerlink" href="#beaconchain" title="Permanent link">&para;</a></h3>
 <p>• <strong>BeaconChain</strong>:</p>
 <hr />
-<h3 id="blockerror">BlockError<a class="headerlink" href="#blockerror" title="Permanent link">&para;</a></h3>
-<p>• <strong>BlockError</strong>:</p>
+<h3 id="chainevent">ChainEvent<a class="headerlink" href="#chainevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>ChainEvent</strong>:</p>
 <hr />
 <h3 id="chaineventemitter">ChainEventEmitter<a class="headerlink" href="#chaineventemitter" title="Permanent link">&para;</a></h3>
 <p>• <strong>ChainEventEmitter</strong>:</p>
@@ -656,8 +949,8 @@
 <h3 id="forkchoicestore">ForkChoiceStore<a class="headerlink" href="#forkchoicestore" title="Permanent link">&para;</a></h3>
 <p>• <strong>ForkChoiceStore</strong>:</p>
 <hr />
-<h3 id="iattestationprocessor">IAttestationProcessor<a class="headerlink" href="#iattestationprocessor" title="Permanent link">&para;</a></h3>
-<p>• <strong>IAttestationProcessor</strong>:</p>
+<h3 id="iattestationjob">IAttestationJob<a class="headerlink" href="#iattestationjob" title="Permanent link">&para;</a></h3>
+<p>• <strong>IAttestationJob</strong>:</p>
 <hr />
 <h3 id="ibeaconchain">IBeaconChain<a class="headerlink" href="#ibeaconchain" title="Permanent link">&para;</a></h3>
 <p>• <strong>IBeaconChain</strong>:</p>
@@ -665,33 +958,718 @@
 <h3 id="ibeaconchainmodules">IBeaconChainModules<a class="headerlink" href="#ibeaconchainmodules" title="Permanent link">&para;</a></h3>
 <p>• <strong>IBeaconChainModules</strong>:</p>
 <hr />
-<h3 id="iblockprocessjob">IBlockProcessJob<a class="headerlink" href="#iblockprocessjob" title="Permanent link">&para;</a></h3>
-<p>• <strong>IBlockProcessJob</strong>:</p>
+<h3 id="iblockjob">IBlockJob<a class="headerlink" href="#iblockjob" title="Permanent link">&para;</a></h3>
+<p>• <strong>IBlockJob</strong>:</p>
 <hr />
 <h3 id="ichainevents">IChainEvents<a class="headerlink" href="#ichainevents" title="Permanent link">&para;</a></h3>
 <p>• <strong>IChainEvents</strong>:</p>
+<hr />
+<h3 id="lodestarforkchoice">LodestarForkChoice<a class="headerlink" href="#lodestarforkchoice" title="Permanent link">&para;</a></h3>
+<p>• <strong>LodestarForkChoice</strong>:</p>
+<hr />
+<h3 id="computeanchorcheckpoint">computeAnchorCheckpoint<a class="headerlink" href="#computeanchorcheckpoint" title="Permanent link">&para;</a></h3>
+<p>• <strong>computeAnchorCheckpoint</strong>:</p>
+<hr />
+<h3 id="creategenesisblock">createGenesisBlock<a class="headerlink" href="#creategenesisblock" title="Permanent link">&para;</a></h3>
+<p>• <strong>createGenesisBlock</strong>:</p>
+<hr />
+<h3 id="initbeaconmetrics">initBeaconMetrics<a class="headerlink" href="#initbeaconmetrics" title="Permanent link">&para;</a></h3>
+<p>• <strong>initBeaconMetrics</strong>:</p>
+<hr />
+<h3 id="initstatefromanchorstate">initStateFromAnchorState<a class="headerlink" href="#initstatefromanchorstate" title="Permanent link">&para;</a></h3>
+<p>• <strong>initStateFromAnchorState</strong>:</p>
+<hr />
+<h3 id="initstatefromdb">initStateFromDb<a class="headerlink" href="#initstatefromdb" title="Permanent link">&para;</a></h3>
+<p>• <strong>initStateFromDb</strong>:</p>
+<hr />
+<h3 id="initstatefrometh1">initStateFromEth1<a class="headerlink" href="#initstatefrometh1" title="Permanent link">&para;</a></h3>
+<p>• <strong>initStateFromEth1</strong>:</p>
+<hr />
+<h3 id="persistanchorstate">persistAnchorState<a class="headerlink" href="#persistanchorstate" title="Permanent link">&para;</a></h3>
+<p>• <strong>persistAnchorState</strong>:</p>
+<hr />
+<h3 id="persistgenesisresult">persistGenesisResult<a class="headerlink" href="#persistgenesisresult" title="Permanent link">&para;</a></h3>
+<p>• <strong>persistGenesisResult</strong>:</p>
+<hr />
+<h3 id="restorestatecaches">restoreStateCaches<a class="headerlink" href="#restorestatecaches" title="Permanent link">&para;</a></h3>
+<p>• <strong>restoreStateCaches</strong>:</p>
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
-<h3 id="blockerror_1">BlockError<a class="headerlink" href="#blockerror_1" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>BlockError</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/interface.ts#L29">packages/lodestar/src/chain/interface.ts:29</a></em></p>
+<h3 id="ichainoptions">IChainOptions<a class="headerlink" href="#ichainoptions" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>IChainOptions</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/options.ts#L1">packages/lodestar/src/chain/options.ts:1</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<hr />
+<h3 id="listenertype">ListenerType<a class="headerlink" href="#listenertype" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ListenerType</strong>: <em>[T] extends [function] ? U : [T] extends [void] ? [] : [T]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L18">packages/lodestar/src/chain/eventHandlers.ts:18</a></em></p>
+<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
+<h3 id="const-defaultchainoptions"><code>Const</code> defaultChainOptions<a class="headerlink" href="#const-defaultchainoptions" title="Permanent link">&para;</a></h3>
+<p>• <strong>defaultChainOptions</strong>: <em><a href="./#ichainoptions">IChainOptions</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/options.ts#L3">packages/lodestar/src/chain/options.ts:3</a></em></p>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="computeanchorcheckpoint_1">computeAnchorCheckpoint<a class="headerlink" href="#computeanchorcheckpoint_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>computeAnchorCheckpoint</strong>(<code>config</code>: IBeaconConfig, <code>anchorState</code>: BeaconState): <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L147">packages/lodestar/src/chain/initState.ts:147</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>anchorState</code></td>
+<td>BeaconState</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>object</em></p>
 <ul>
 <li>
-<p><strong>job</strong>: <em><a href="../../interfaces/chain.iblockprocessjob/">IBlockProcessJob</a></em></p>
+<p><strong>blockHeader</strong>: <em>BeaconBlockHeader</em></p>
 </li>
 <li>
-<p><strong>message</strong>? : <em>undefined | string</em></p>
+<p><strong>checkpoint</strong>: <em>Checkpoint</em></p>
 </li>
 </ul>
 <hr />
-<h3 id="ichainoptions">IChainOptions<a class="headerlink" href="#ichainoptions" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IChainOptions</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/options.ts#L1">packages/lodestar/src/chain/options.ts:1</a></em></p>
-<h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
-<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-config"><code>Const</code> config<a class="headerlink" href="#const-config" title="Permanent link">&para;</a></h3>
-<p>• <strong>config</strong>: <em><a href="./#ichainoptions">IChainOptions</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/options.ts#L3">packages/lodestar/src/chain/options.ts:3</a></em></p>
+<h3 id="creategenesisblock_1">createGenesisBlock<a class="headerlink" href="#creategenesisblock_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>createGenesisBlock</strong>(<code>config</code>: IBeaconConfig, <code>genesisState</code>: BeaconState): <em>SignedBeaconBlock</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L50">packages/lodestar/src/chain/initState.ts:50</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>genesisState</code></td>
+<td>BeaconState</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>SignedBeaconBlock</em></p>
+<hr />
+<h3 id="handlechainevents">handleChainEvents<a class="headerlink" href="#handlechainevents" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handleChainEvents</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>signal</code>: AbortSignal): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L56">packages/lodestar/src/chain/eventHandlers.ts:56</a></em></p>
+<p>Attach ChainEventEmitter event handlers
+Listen on <code>signal</code> to remove event handlers</p>
+<p>Events are handled in the following way:
+Because the chain relies on event handlers to perform side effects (eg: cache/db updates),
+We require the chain's event handlers to run and complete in full before external event handlers are allowed to run.</p>
+<p>This is accomplished by maintaining a separate <code>chain.internalEmitter</code> and <code>chain.emitter</code>.
+Chain submodules emit events on the <code>internalEmitter</code>, where chain event handlers are listening.
+Once a chain event emitter is completed, the same event, with the same args, is emitted on <code>chain.emitter</code>, for consumption by external parties.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>signal</code></td>
+<td>AbortSignal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr />
+<h3 id="initbeaconmetrics_1">initBeaconMetrics<a class="headerlink" href="#initbeaconmetrics_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initBeaconMetrics</strong>(<code>metrics</code>: <a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a>, <code>state</code>: TreeBacked‹BeaconState›): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L140">packages/lodestar/src/chain/initState.ts:140</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>metrics</code></td>
+<td><a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>TreeBacked‹BeaconState›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr />
+<h3 id="initstatefromanchorstate_1">initStateFromAnchorState<a class="headerlink" href="#initstatefromanchorstate_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initStateFromAnchorState</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>logger</code>: ILogger, <code>anchorState</code>: TreeBacked‹BeaconState›): <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L109">packages/lodestar/src/chain/initState.ts:109</a></em></p>
+<p>Initialize and persist an anchor state (either weak subjectivity or genesis)</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>ILogger</td>
+</tr>
+<tr>
+<td><code>anchorState</code></td>
+<td>TreeBacked‹BeaconState›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<hr />
+<h3 id="initstatefromdb_1">initStateFromDb<a class="headerlink" href="#initstatefromdb_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initStateFromDb</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>logger</code>: ILogger): <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L89">packages/lodestar/src/chain/initState.ts:89</a></em></p>
+<p>Restore the latest beacon state from db</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>ILogger</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<hr />
+<h3 id="initstatefrometh1_1">initStateFromEth1<a class="headerlink" href="#initstatefrometh1_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>initStateFromEth1</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>logger</code>: ILogger, <code>eth1Provider</code>: <a href="../../classes/eth1.eth1provider/">Eth1Provider</a>, <code>signal</code>: AbortSignal): <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L60">packages/lodestar/src/chain/initState.ts:60</a></em></p>
+<p>Initialize and persist a genesis state and related data</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>ILogger</td>
+</tr>
+<tr>
+<td><code>eth1Provider</code></td>
+<td><a href="../../classes/eth1.eth1provider/">Eth1Provider</a></td>
+</tr>
+<tr>
+<td><code>signal</code></td>
+<td>AbortSignal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹TreeBacked‹BeaconState››</em></p>
+<hr />
+<h3 id="onattestation">onAttestation<a class="headerlink" href="#onattestation" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onAttestation</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>attestation</code>: Attestation): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L194">packages/lodestar/src/chain/eventHandlers.ts:194</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>attestation</code></td>
+<td>Attestation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onBlock</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>block</code>: SignedBeaconBlock, <code>postStateContext</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>, <code>job</code>: <a href="../../interfaces/chain.iblockjob/">IBlockJob</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L203">packages/lodestar/src/chain/eventHandlers.ts:203</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>block</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+<tr>
+<td><code>postStateContext</code></td>
+<td><a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a></td>
+</tr>
+<tr>
+<td><code>job</code></td>
+<td><a href="../../interfaces/chain.iblockjob/">IBlockJob</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="oncheckpoint">onCheckpoint<a class="headerlink" href="#oncheckpoint" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onCheckpoint</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>cp</code>: Checkpoint, <code>stateContext</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L135">packages/lodestar/src/chain/eventHandlers.ts:135</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Checkpoint</td>
+</tr>
+<tr>
+<td><code>stateContext</code></td>
+<td><a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onclockslot">onClockSlot<a class="headerlink" href="#onclockslot" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onClockSlot</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>slot</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#slot">Slot</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L104">packages/lodestar/src/chain/eventHandlers.ts:104</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>slot</code></td>
+<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#slot">Slot</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onerrorattestation">onErrorAttestation<a class="headerlink" href="#onerrorattestation" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onErrorAttestation</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>err</code>: <a href="../../classes/chain_errors.attestationerror/">AttestationError</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L249">packages/lodestar/src/chain/eventHandlers.ts:249</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>err</code></td>
+<td><a href="../../classes/chain_errors.attestationerror/">AttestationError</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onerrorblock">onErrorBlock<a class="headerlink" href="#onerrorblock" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onErrorBlock</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>err</code>: <a href="../../classes/chain_errors.blockerror/">BlockError</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L279">packages/lodestar/src/chain/eventHandlers.ts:279</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>err</code></td>
+<td><a href="../../classes/chain_errors.blockerror/">BlockError</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onfinalized">onFinalized<a class="headerlink" href="#onfinalized" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onFinalized</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>cp</code>: Checkpoint): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L162">packages/lodestar/src/chain/eventHandlers.ts:162</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Checkpoint</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onforkchoicefinalized">onForkChoiceFinalized<a class="headerlink" href="#onforkchoicefinalized" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onForkChoiceFinalized</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>cp</code>: Checkpoint): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L171">packages/lodestar/src/chain/eventHandlers.ts:171</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Checkpoint</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onforkchoicehead">onForkChoiceHead<a class="headerlink" href="#onforkchoicehead" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onForkChoiceHead</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>head</code>: IBlockSummary): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L175">packages/lodestar/src/chain/eventHandlers.ts:175</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>head</code></td>
+<td>IBlockSummary</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onforkchoicejustified">onForkChoiceJustified<a class="headerlink" href="#onforkchoicejustified" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onForkChoiceJustified</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>cp</code>: Checkpoint): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L167">packages/lodestar/src/chain/eventHandlers.ts:167</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Checkpoint</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onforkchoicereorg">onForkChoiceReorg<a class="headerlink" href="#onforkchoicereorg" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onForkChoiceReorg</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>head</code>: IBlockSummary, <code>oldHead</code>: IBlockSummary, <code>depth</code>: number): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L183">packages/lodestar/src/chain/eventHandlers.ts:183</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>head</code></td>
+<td>IBlockSummary</td>
+</tr>
+<tr>
+<td><code>oldHead</code></td>
+<td>IBlockSummary</td>
+</tr>
+<tr>
+<td><code>depth</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onforkversion">onForkVersion<a class="headerlink" href="#onforkversion" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onForkVersion</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>version</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#version">Version</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L131">packages/lodestar/src/chain/eventHandlers.ts:131</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#version">Version</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="onjustified">onJustified<a class="headerlink" href="#onjustified" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onJustified</strong>(<code>this</code>: <a href="../../classes/chain.beaconchain/">BeaconChain</a>, <code>cp</code>: Checkpoint, <code>stateContext</code>: <a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L156">packages/lodestar/src/chain/eventHandlers.ts:156</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td><a href="../../classes/chain.beaconchain/">BeaconChain</a></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>Checkpoint</td>
+</tr>
+<tr>
+<td><code>stateContext</code></td>
+<td><a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="persistanchorstate_1">persistAnchorState<a class="headerlink" href="#persistanchorstate_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>persistAnchorState</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>anchorState</code>: TreeBacked‹BeaconState›): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L37">packages/lodestar/src/chain/initState.ts:37</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>anchorState</code></td>
+<td>TreeBacked‹BeaconState›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="persistgenesisresult_1">persistGenesisResult<a class="headerlink" href="#persistgenesisresult_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>persistGenesisResult</strong>(<code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>genesisResult</code>: <a href="../../interfaces/chain_genesis.igenesisresult/">IGenesisResult</a>, <code>genesisBlock</code>: SignedBeaconBlock): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L20">packages/lodestar/src/chain/initState.ts:20</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>genesisResult</code></td>
+<td><a href="../../interfaces/chain_genesis.igenesisresult/">IGenesisResult</a></td>
+</tr>
+<tr>
+<td><code>genesisBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="restorestatecaches_1">restoreStateCaches<a class="headerlink" href="#restorestatecaches_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>restoreStateCaches</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>state</code>: TreeBacked‹BeaconState›): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/initState.ts#L127">packages/lodestar/src/chain/initState.ts:127</a></em></p>
+<p>Restore a beacon state</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>db</code></td>
+<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>TreeBacked‹BeaconState›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="wraphandler">wrapHandler<a class="headerlink" href="#wraphandler" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>wrapHandler</strong>‹<strong>Event</strong>, <strong>Callback</strong>›(<code>event</code>: Event, <code>emitter</code>: <a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a>, <code>logger</code>: ILogger, <code>handler</code>: function): <em>(Anonymous function)</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/eventHandlers.ts#L25">packages/lodestar/src/chain/eventHandlers.ts:25</a></em></p>
+<p>Returns a function that runs an async handler function with input args,
+If the handler function successfully completes,
+then emits the event on the event emitter using the same args</p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>Event</strong>: <em>keyof IChainEvents</em></p>
+<p>▪ <strong>Callback</strong>: <em>IChainEvents[Event]</em></p>
+<p><strong>Parameters:</strong></p>
+<p>▪ <strong>event</strong>: <em>Event</em></p>
+<p>▪ <strong>emitter</strong>: <em><a href="../../classes/chain.chaineventemitter/">ChainEventEmitter</a></em></p>
+<p>▪ <strong>logger</strong>: <em>ILogger</em></p>
+<p>▪ <strong>handler</strong>: <em>function</em></p>
+<p>▸ (...<code>args</code>: Parameters‹Callback›): <em>Promise‹void›</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>...args</code></td>
+<td>Parameters‹Callback›</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>(Anonymous function)</em></p>
                 
               
               
@@ -763,15 +1741,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

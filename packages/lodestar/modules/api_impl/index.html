@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_impl/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -414,6 +416,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -449,6 +465,62 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#beaconattestationevent" class="md-nav__link">
+    BeaconAttestationEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconblockevent" class="md-nav__link">
+    BeaconBlockEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconchainreorgevent" class="md-nav__link">
+    BeaconChainReorgEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconevent" class="md-nav__link">
+    BeaconEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconeventtype" class="md-nav__link">
+    BeaconEventType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconheadevent" class="md-nav__link">
+    BeaconHeadEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventsapi" class="md-nav__link">
+    EventsApi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finalizedcheckpointevent" class="md-nav__link">
+    FinalizedCheckpointEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#iapi" class="md-nav__link">
     IApi
   </a>
@@ -465,6 +537,13 @@
           <li class="md-nav__item">
   <a href="#ibeaconapi" class="md-nav__link">
     IBeaconApi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ieventsapi" class="md-nav__link">
+    IEventsApi
   </a>
   
 </li>
@@ -497,6 +576,60 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#voluntaryexitevent" class="md-nav__link">
+    VoluntaryExitEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apinamespaces" class="md-nav__link">
+    apiNamespaces
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables_1" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#const-apinamespaces" class="md-nav__link">
+    Const apiNamespaces
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checksyncstatus" class="md-nav__link">
+    checkSyncStatus
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -519,10 +652,7 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/impl</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/impl</a></p>
 <h1 id="module-apiimpl">Module: api/impl<a class="headerlink" href="#module-apiimpl" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
@@ -530,13 +660,24 @@
 <li><a href="./#api">Api</a></li>
 <li><a href="./#apinamespace">ApiNamespace</a></li>
 <li><a href="./#beaconapi">BeaconApi</a></li>
+<li><a href="./#beaconattestationevent">BeaconAttestationEvent</a></li>
+<li><a href="./#beaconblockevent">BeaconBlockEvent</a></li>
+<li><a href="./#beaconchainreorgevent">BeaconChainReorgEvent</a></li>
+<li><a href="./#beaconevent">BeaconEvent</a></li>
+<li><a href="./#beaconeventtype">BeaconEventType</a></li>
+<li><a href="./#beaconheadevent">BeaconHeadEvent</a></li>
+<li><a href="./#eventsapi">EventsApi</a></li>
+<li><a href="./#finalizedcheckpointevent">FinalizedCheckpointEvent</a></li>
 <li><a href="./#iapi">IApi</a></li>
 <li><a href="./#iapimodules">IApiModules</a></li>
 <li><a href="./#ibeaconapi">IBeaconApi</a></li>
+<li><a href="./#ieventsapi">IEventsApi</a></li>
 <li><a href="./#inodeapi">INodeApi</a></li>
 <li><a href="./#ivalidatorapi">IValidatorApi</a></li>
 <li><a href="./#nodeapi">NodeApi</a></li>
 <li><a href="./#validatorapi">ValidatorApi</a></li>
+<li><a href="./#voluntaryexitevent">VoluntaryExitEvent</a></li>
+<li><a href="./#apinamespaces">apiNamespaces</a></li>
 </ul>
 <h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h3>
 <ul>
@@ -551,6 +692,14 @@
 <li><a href="../../interfaces/api_impl.iapi/">IApi</a></li>
 <li><a href="../../interfaces/api_impl.iapimodules/">IApiModules</a></li>
 </ul>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#const-apinamespaces">apiNamespaces</a></li>
+</ul>
+<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#checksyncstatus">checkSyncStatus</a></li>
+</ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
 <h3 id="api">Api<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
 <p>• <strong>Api</strong>:</p>
@@ -561,6 +710,30 @@
 <h3 id="beaconapi">BeaconApi<a class="headerlink" href="#beaconapi" title="Permanent link">&para;</a></h3>
 <p>• <strong>BeaconApi</strong>:</p>
 <hr />
+<h3 id="beaconattestationevent">BeaconAttestationEvent<a class="headerlink" href="#beaconattestationevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconAttestationEvent</strong>:</p>
+<hr />
+<h3 id="beaconblockevent">BeaconBlockEvent<a class="headerlink" href="#beaconblockevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconBlockEvent</strong>:</p>
+<hr />
+<h3 id="beaconchainreorgevent">BeaconChainReorgEvent<a class="headerlink" href="#beaconchainreorgevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconChainReorgEvent</strong>:</p>
+<hr />
+<h3 id="beaconevent">BeaconEvent<a class="headerlink" href="#beaconevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconEvent</strong>:</p>
+<hr />
+<h3 id="beaconeventtype">BeaconEventType<a class="headerlink" href="#beaconeventtype" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconEventType</strong>:</p>
+<hr />
+<h3 id="beaconheadevent">BeaconHeadEvent<a class="headerlink" href="#beaconheadevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconHeadEvent</strong>:</p>
+<hr />
+<h3 id="eventsapi">EventsApi<a class="headerlink" href="#eventsapi" title="Permanent link">&para;</a></h3>
+<p>• <strong>EventsApi</strong>:</p>
+<hr />
+<h3 id="finalizedcheckpointevent">FinalizedCheckpointEvent<a class="headerlink" href="#finalizedcheckpointevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>FinalizedCheckpointEvent</strong>:</p>
+<hr />
 <h3 id="iapi">IApi<a class="headerlink" href="#iapi" title="Permanent link">&para;</a></h3>
 <p>• <strong>IApi</strong>:</p>
 <hr />
@@ -569,6 +742,9 @@
 <hr />
 <h3 id="ibeaconapi">IBeaconApi<a class="headerlink" href="#ibeaconapi" title="Permanent link">&para;</a></h3>
 <p>• <strong>IBeaconApi</strong>:</p>
+<hr />
+<h3 id="ieventsapi">IEventsApi<a class="headerlink" href="#ieventsapi" title="Permanent link">&para;</a></h3>
+<p>• <strong>IEventsApi</strong>:</p>
 <hr />
 <h3 id="inodeapi">INodeApi<a class="headerlink" href="#inodeapi" title="Permanent link">&para;</a></h3>
 <p>• <strong>INodeApi</strong>:</p>
@@ -581,6 +757,45 @@
 <hr />
 <h3 id="validatorapi">ValidatorApi<a class="headerlink" href="#validatorapi" title="Permanent link">&para;</a></h3>
 <p>• <strong>ValidatorApi</strong>:</p>
+<hr />
+<h3 id="voluntaryexitevent">VoluntaryExitEvent<a class="headerlink" href="#voluntaryexitevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>VoluntaryExitEvent</strong>:</p>
+<hr />
+<h3 id="apinamespaces">apiNamespaces<a class="headerlink" href="#apinamespaces" title="Permanent link">&para;</a></h3>
+<p>• <strong>apiNamespaces</strong>:</p>
+<h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
+<h3 id="const-apinamespaces"><code>Const</code> apiNamespaces<a class="headerlink" href="#const-apinamespaces" title="Permanent link">&para;</a></h3>
+<p>• <strong>apiNamespaces</strong>: <em><a href="./#apinamespace">ApiNamespace</a>[]</em> = [
+  ApiNamespace.BEACON,
+  ApiNamespace.VALIDATOR,
+  ApiNamespace.NODE,
+  ApiNamespace.EVENTS,
+]</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/interface.ts#L22">packages/lodestar/src/api/impl/interface.ts:22</a></em></p>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="checksyncstatus">checkSyncStatus<a class="headerlink" href="#checksyncstatus" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>checkSyncStatus</strong>(<code>config</code>: IBeaconConfig, <code>sync</code>: <a href="../../interfaces/sync.ibeaconsync/">IBeaconSync</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/utils.ts#L5">packages/lodestar/src/api/impl/utils.ts:5</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>sync</code></td>
+<td><a href="../../interfaces/sync.ibeaconsync/">IBeaconSync</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
                 
               
               
@@ -652,15 +867,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

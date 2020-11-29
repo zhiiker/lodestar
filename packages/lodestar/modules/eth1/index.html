@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/eth1/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -505,8 +507,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#iethersabi" class="md-nav__link">
-    IEthersAbi
+  <a href="#ijson" class="md-nav__link">
+    IJson
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ijsonrpcclient" class="md-nav__link">
+    IJsonRpcClient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irpcpayload" class="md-nav__link">
+    IRpcPayload
   </a>
   
 </li>
@@ -546,8 +562,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#iethersabi_1" class="md-nav__link">
-    IEthersAbi
+  <a href="#ijson_1" class="md-nav__link">
+    IJson
   </a>
   
 </li>
@@ -564,13 +580,6 @@
   
     <nav class="md-nav" aria-label="Variables">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#const-eth1_block_retry" class="md-nav__link">
-    Const ETH1_BLOCK_RETRY
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#const-maxstringlengthtoprint" class="md-nav__link">
@@ -593,36 +602,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fetchblockrange" class="md-nav__link">
-    fetchBlockRange
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fetchblocksbynumber" class="md-nav__link">
-    fetchBlocksByNumber
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#fetchjson" class="md-nav__link">
     fetchJson
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fetchrpc" class="md-nav__link">
-    fetchRpc
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fetchrpcbatch" class="md-nav__link">
-    fetchRpcBatch
   </a>
   
 </li>
@@ -649,8 +630,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#parseblock" class="md-nav__link">
+    parseBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#parsejson" class="md-nav__link">
     parseJson
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parsejsonrpcerrorcode" class="md-nav__link">
+    parseJsonRpcErrorCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parserpcresponse" class="md-nav__link">
+    parseRpcResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tohex" class="md-nav__link">
+    toHex
   </a>
   
 </li>
@@ -669,15 +678,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#const-config" class="md-nav__link">
-    Const config
+  <a href="#const-defaulteth1options" class="md-nav__link">
+    Const defaultEth1Options
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#config-object" class="md-nav__link">
-    ▪ config: object
+  <a href="#defaulteth1options-object" class="md-nav__link">
+    ▪ defaultEth1Options: object
   </a>
   
 </li>
@@ -699,27 +708,6 @@
           <li class="md-nav__item">
   <a href="#providerurl" class="md-nav__link">
     providerUrl
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#const-depositcontract" class="md-nav__link">
-    Const depositContract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#depositcontract-object" class="md-nav__link">
-    ▪ depositContract: object
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abi" class="md-nav__link">
-    abi
   </a>
   
 </li>
@@ -746,10 +734,7 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">eth1</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">eth1</a></p>
 <h1 id="module-eth1">Module: eth1<a class="headerlink" href="#module-eth1" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
@@ -762,17 +747,23 @@
 <li><a href="./#ieth1provider">IEth1Provider</a></li>
 <li><a href="./#ieth1streamparams">IEth1StreamParams</a></li>
 <li><a href="./#ieth1streamer">IEth1Streamer</a></li>
-<li><a href="./#iethersabi">IEthersAbi</a></li>
+<li><a href="./#ijson">IJson</a></li>
+<li><a href="./#ijsonrpcclient">IJsonRpcClient</a></li>
+<li><a href="./#irpcpayload">IRpcPayload</a></li>
 <li><a href="./#getdepositsandblockstreamforgenesis">getDepositsAndBlockStreamForGenesis</a></li>
 <li><a href="./#getdepositsstream">getDepositsStream</a></li>
 </ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="../../classes/eth1.errorjsonrpcresponse/">ErrorJsonRpcResponse</a></li>
+<li><a href="../../classes/eth1.errorparsejson/">ErrorParseJson</a></li>
 <li><a href="../../classes/eth1.eth1datacache/">Eth1DataCache</a></li>
 <li><a href="../../classes/eth1.eth1depositscache/">Eth1DepositsCache</a></li>
 <li><a href="../../classes/eth1.eth1forblockproduction/">Eth1ForBlockProduction</a></li>
 <li><a href="../../classes/eth1.eth1forblockproductiondisabled/">Eth1ForBlockProductionDisabled</a></li>
+<li><a href="../../classes/eth1.eth1jsonrpcclient/">Eth1JsonRpcClient</a></li>
 <li><a href="../../classes/eth1.eth1provider/">Eth1Provider</a></li>
+<li><a href="../../classes/eth1.jsonrpchttpclient/">JsonRpcHttpClient</a></li>
 </ul>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
 <ul>
@@ -782,35 +773,35 @@
 <li><a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a></li>
 <li><a href="../../interfaces/eth1.ieth1streamer/">IEth1Streamer</a></li>
 <li><a href="../../interfaces/eth1.iethjsonrpctypes/">IEthJsonRpcTypes</a></li>
+<li><a href="../../interfaces/eth1.ijsonrpcclient/">IJsonRpcClient</a></li>
 <li><a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a></li>
 <li><a href="../../interfaces/eth1.irpcresponse/">IRpcResponse</a></li>
+<li><a href="../../interfaces/eth1.irpcresponseerror/">IRpcResponseError</a></li>
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#ieth1streamparams">IEth1StreamParams</a></li>
-<li><a href="./#iethersabi">IEthersAbi</a></li>
+<li><a href="./#ijson">IJson</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#const-eth1_block_retry">ETH1_BLOCK_RETRY</a></li>
 <li><a href="./#const-maxstringlengthtoprint">maxStringLengthToPrint</a></li>
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#fetchblockrange">fetchBlockRange</a></li>
-<li><a href="./#fetchblocksbynumber">fetchBlocksByNumber</a></li>
 <li><a href="./#fetchjson">fetchJson</a></li>
-<li><a href="./#fetchrpc">fetchRpc</a></li>
-<li><a href="./#fetchrpcbatch">fetchRpcBatch</a></li>
 <li><a href="./#getdepositsandblockstreamforgenesis">getDepositsAndBlockStreamForGenesis</a></li>
 <li><a href="./#getdepositsstream">getDepositsStream</a></li>
 <li><a href="./#getremotefollowblock">getRemoteFollowBlock</a></li>
+<li><a href="./#parseblock">parseBlock</a></li>
 <li><a href="./#parsejson">parseJson</a></li>
+<li><a href="./#parsejsonrpcerrorcode">parseJsonRpcErrorCode</a></li>
+<li><a href="./#parserpcresponse">parseRpcResponse</a></li>
+<li><a href="./#tohex">toHex</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#const-config">config</a></li>
-<li><a href="./#const-depositcontract">depositContract</a></li>
+<li><a href="./#const-defaulteth1options">defaultEth1Options</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
 <h3 id="eth1forblockproduction">Eth1ForBlockProduction<a class="headerlink" href="#eth1forblockproduction" title="Permanent link">&para;</a></h3>
@@ -837,8 +828,14 @@
 <h3 id="ieth1streamer">IEth1Streamer<a class="headerlink" href="#ieth1streamer" title="Permanent link">&para;</a></h3>
 <p>• <strong>IEth1Streamer</strong>:</p>
 <hr />
-<h3 id="iethersabi">IEthersAbi<a class="headerlink" href="#iethersabi" title="Permanent link">&para;</a></h3>
-<p>• <strong>IEthersAbi</strong>:</p>
+<h3 id="ijson">IJson<a class="headerlink" href="#ijson" title="Permanent link">&para;</a></h3>
+<p>• <strong>IJson</strong>:</p>
+<hr />
+<h3 id="ijsonrpcclient">IJsonRpcClient<a class="headerlink" href="#ijsonrpcclient" title="Permanent link">&para;</a></h3>
+<p>• <strong>IJsonRpcClient</strong>:</p>
+<hr />
+<h3 id="irpcpayload">IRpcPayload<a class="headerlink" href="#irpcpayload" title="Permanent link">&para;</a></h3>
+<p>• <strong>IRpcPayload</strong>:</p>
 <hr />
 <h3 id="getdepositsandblockstreamforgenesis">getDepositsAndBlockStreamForGenesis<a class="headerlink" href="#getdepositsandblockstreamforgenesis" title="Permanent link">&para;</a></h3>
 <p>• <strong>getDepositsAndBlockStreamForGenesis</strong>:</p>
@@ -848,86 +845,20 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="ieth1streamparams_1">IEth1StreamParams<a class="headerlink" href="#ieth1streamparams_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>IEth1StreamParams</strong>: <em>Pick‹IBeaconConfig["params"], "ETH1_FOLLOW_DISTANCE" | "MIN_GENESIS_TIME" | "GENESIS_DELAY" | "SECONDS_PER_ETH1_BLOCK"› &amp; object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/interface.ts#L14">packages/lodestar/src/eth1/interface.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/interface.ts#L40">packages/lodestar/src/eth1/interface.ts:40</a></em></p>
 <hr />
-<h3 id="iethersabi_1">IEthersAbi<a class="headerlink" href="#iethersabi_1" title="Permanent link">&para;</a></h3>
-<p>Ƭ <strong>IEthersAbi</strong>: <em>Array‹string | EventFragment | ParamType›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/interface.ts#L12">packages/lodestar/src/eth1/interface.ts:12</a></em></p>
+<h3 id="ijson_1">IJson<a class="headerlink" href="#ijson_1" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>IJson</strong>: <em>string | number | boolean | undefined | <a href="./#ijson">IJson</a>[] | object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/interface.ts#L47">packages/lodestar/src/eth1/interface.ts:47</a></em></p>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-eth1_block_retry"><code>Const</code> ETH1_BLOCK_RETRY<a class="headerlink" href="#const-eth1_block_retry" title="Permanent link">&para;</a></h3>
-<p>• <strong>ETH1_BLOCK_RETRY</strong>: <em>3</em> = 3</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/ethers.ts#L14">packages/lodestar/src/eth1/ethers.ts:14</a></em></p>
-<hr />
 <h3 id="const-maxstringlengthtoprint"><code>Const</code> maxStringLengthToPrint<a class="headerlink" href="#const-maxstringlengthtoprint" title="Permanent link">&para;</a></h3>
 <p>• <strong>maxStringLengthToPrint</strong>: <em>500</em> = 500</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpRpcClient.ts#L19">packages/lodestar/src/eth1/httpRpcClient.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L12">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:12</a></em></p>
 <p>Limits the amount of response text printed with RPC or parsing errors</p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="fetchblockrange">fetchBlockRange<a class="headerlink" href="#fetchblockrange" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fetchBlockRange</strong>(<code>url</code>: string, <code>fromBlockNumber</code>: number, <code>toBlockNumber</code>: number, <code>signal?</code>: AbortSignal): <em>Promise‹Eth1Block[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpEth1Client.ts#L20">packages/lodestar/src/eth1/httpEth1Client.ts:20</a></em></p>
-<p>Fetches a range of blocks by blockNumber, inclusive.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>url</code></td>
-<td>string</td>
-</tr>
-<tr>
-<td><code>fromBlockNumber</code></td>
-<td>number</td>
-</tr>
-<tr>
-<td><code>toBlockNumber</code></td>
-<td>number</td>
-</tr>
-<tr>
-<td><code>signal?</code></td>
-<td>AbortSignal</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹Eth1Block[]›</em></p>
-<hr />
-<h3 id="fetchblocksbynumber">fetchBlocksByNumber<a class="headerlink" href="#fetchblocksbynumber" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fetchBlocksByNumber</strong>(<code>url</code>: string, <code>blockNumbers</code>: number[], <code>signal?</code>: AbortSignal): <em>Promise‹Eth1Block[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpEth1Client.ts#L36">packages/lodestar/src/eth1/httpEth1Client.ts:36</a></em></p>
-<p>Fetches an arbitrary array of block numbers in batch</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>url</code></td>
-<td>string</td>
-</tr>
-<tr>
-<td><code>blockNumbers</code></td>
-<td>number[]</td>
-</tr>
-<tr>
-<td><code>signal?</code></td>
-<td>AbortSignal</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹Eth1Block[]›</em></p>
-<hr />
 <h3 id="fetchjson">fetchJson<a class="headerlink" href="#fetchjson" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fetchJson</strong>‹<strong>R</strong>, <strong>T</strong>›(<code>url</code>: string, <code>json</code>: T, <code>signal?</code>: AbortSignal): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpRpcClient.ts#L61">packages/lodestar/src/eth1/httpRpcClient.ts:61</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L66">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:66</a></em></p>
 <p>Fetches JSON and throws detailed errors in case the HTTP request is not ok</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>R</strong></p>
@@ -957,72 +888,9 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹R›</em></p>
 <hr />
-<h3 id="fetchrpc">fetchRpc<a class="headerlink" href="#fetchrpc" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fetchRpc</strong>‹<strong>R</strong>›(<code>url</code>: string, <code>rpcPayload</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>, <code>signal?</code>: AbortSignal): <em>Promise‹R›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpRpcClient.ts#L24">packages/lodestar/src/eth1/httpRpcClient.ts:24</a></em></p>
-<p>Perform RPC request</p>
-<p><strong>Type parameters:</strong></p>
-<p>▪ <strong>R</strong></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>url</code></td>
-<td>string</td>
-</tr>
-<tr>
-<td><code>rpcPayload</code></td>
-<td><a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a></td>
-</tr>
-<tr>
-<td><code>signal?</code></td>
-<td>AbortSignal</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹R›</em></p>
-<hr />
-<h3 id="fetchrpcbatch">fetchRpcBatch<a class="headerlink" href="#fetchrpcbatch" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>fetchRpcBatch</strong>‹<strong>R</strong>›(<code>url</code>: string, <code>rpcPayloadArr</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>[], <code>signal?</code>: AbortSignal): <em>Promise‹R[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpRpcClient.ts#L42">packages/lodestar/src/eth1/httpRpcClient.ts:42</a></em></p>
-<p>Perform RPC batched request
-Type-wise assumes all requests results have the same type</p>
-<p><strong>Type parameters:</strong></p>
-<p>▪ <strong>R</strong></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>url</code></td>
-<td>string</td>
-</tr>
-<tr>
-<td><code>rpcPayloadArr</code></td>
-<td><a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>[]</td>
-</tr>
-<tr>
-<td><code>signal?</code></td>
-<td>AbortSignal</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹R[]›</em></p>
-<hr />
 <h3 id="getdepositsandblockstreamforgenesis_1">getDepositsAndBlockStreamForGenesis<a class="headerlink" href="#getdepositsandblockstreamforgenesis_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositsAndBlockStreamForGenesis</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹[DepositEvent[], Eth1Block]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/stream.ts#L45">packages/lodestar/src/eth1/stream.ts:45</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/stream.ts#L45">packages/lodestar/src/eth1/stream.ts:45</a></em></p>
 <p>Phase 2 of genesis building.
 There are enough validators, stream deposits and blocks</p>
 <p><strong>Parameters:</strong></p>
@@ -1061,7 +929,7 @@ There are enough validators, stream deposits and blocks</p>
 <hr />
 <h3 id="getdepositsstream_1">getDepositsStream<a class="headerlink" href="#getdepositsstream_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDepositsStream</strong>(<code>fromBlock</code>: number, <code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>, <code>signal?</code>: AbortSignal): <em>AsyncGenerator‹<a href="../../interfaces/eth1.ibatchdepositevents/">IBatchDepositEvents</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/stream.ts#L17">packages/lodestar/src/eth1/stream.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/stream.ts#L17">packages/lodestar/src/eth1/stream.ts:17</a></em></p>
 <p>Phase 1 of genesis building.
 Not enough validators, only stream deposits</p>
 <p><strong>Parameters:</strong></p>
@@ -1100,7 +968,7 @@ Not enough validators, only stream deposits</p>
 <hr />
 <h3 id="getremotefollowblock">getRemoteFollowBlock<a class="headerlink" href="#getremotefollowblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getRemoteFollowBlock</strong>(<code>provider</code>: <a href="../../interfaces/eth1.ieth1provider/">IEth1Provider</a>, <code>params</code>: <a href="./#ieth1streamparams">IEth1StreamParams</a>): <em>Promise‹number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/stream.ts#L72">packages/lodestar/src/eth1/stream.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/stream.ts#L72">packages/lodestar/src/eth1/stream.ts:72</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1122,9 +990,29 @@ Not enough validators, only stream deposits</p>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹number›</em></p>
 <hr />
+<h3 id="parseblock">parseBlock<a class="headerlink" href="#parseblock" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>parseBlock</strong>(<code>blockRaw</code>: IEthJsonRpcTypes["eth_getBlockByNumber"]): <em>Eth1Block</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L113">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:113</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blockRaw</code></td>
+<td>IEthJsonRpcTypes["eth_getBlockByNumber"]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Eth1Block</em></p>
+<hr />
 <h3 id="parsejson">parseJson<a class="headerlink" href="#parsejson" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>parseJson</strong>‹<strong>T</strong>›(<code>json</code>: string): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/httpRpcClient.ts#L82">packages/lodestar/src/eth1/httpRpcClient.ts:82</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L91">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:91</a></em></p>
 <p>Util: Parse JSON but display the original source string in case of error
 Helps debug instances where an API returns a plain text instead of JSON,
 such as getting an HTML page due to a wrong API URL</p>
@@ -1146,26 +1034,86 @@ such as getting an HTML page due to a wrong API URL</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>T</em></p>
+<hr />
+<h3 id="parsejsonrpcerrorcode">parseJsonRpcErrorCode<a class="headerlink" href="#parsejsonrpcerrorcode" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>parseJsonRpcErrorCode</strong>(<code>code</code>: number): <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L127">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:127</a></em></p>
+<p>JSON RPC spec errors https://www.jsonrpc.org/specification#response_object</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>code</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>string</em></p>
+<hr />
+<h3 id="parserpcresponse">parseRpcResponse<a class="headerlink" href="#parserpcresponse" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>parseRpcResponse</strong>‹<strong>R</strong>›(<code>res</code>: <a href="../../interfaces/eth1.irpcresponse/">IRpcResponse</a>‹R›, <code>payload</code>: <a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a>): <em>R</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/jsonRpcHttpClient.ts#L58">packages/lodestar/src/eth1/jsonRpcHttpClient.ts:58</a></em></p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>R</strong></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>res</code></td>
+<td><a href="../../interfaces/eth1.irpcresponse/">IRpcResponse</a>‹R›</td>
+</tr>
+<tr>
+<td><code>payload</code></td>
+<td><a href="../../interfaces/eth1.irpcpayload/">IRpcPayload</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>R</em></p>
+<hr />
+<h3 id="tohex">toHex<a class="headerlink" href="#tohex" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>toHex</strong>(<code>n</code>: number): <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/eth1JsonRpcClient.ts#L109">packages/lodestar/src/eth1/eth1JsonRpcClient.ts:109</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>n</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>string</em></p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-config"><code>Const</code> config<a class="headerlink" href="#const-config" title="Permanent link">&para;</a></h3>
-<h3 id="config-object">▪ <strong>config</strong>: <em>object</em><a class="headerlink" href="#config-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
+<h3 id="const-defaulteth1options"><code>Const</code> defaultEth1Options<a class="headerlink" href="#const-defaulteth1options" title="Permanent link">&para;</a></h3>
+<h3 id="defaulteth1options-object">▪ <strong>defaultEth1Options</strong>: <em>object</em><a class="headerlink" href="#defaulteth1options-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/options.ts#L7">packages/lodestar/src/eth1/options.ts:7</a></em></p>
 <h3 id="depositcontractdeployblock">depositContractDeployBlock<a class="headerlink" href="#depositcontractdeployblock" title="Permanent link">&para;</a></h3>
 <p>• <strong>depositContractDeployBlock</strong>: <em>number</em> = 0</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/options.ts#L10">packages/lodestar/src/eth1/options.ts:10</a></em></p>
 <h3 id="enabled">enabled<a class="headerlink" href="#enabled" title="Permanent link">&para;</a></h3>
 <p>• <strong>enabled</strong>: <em>true</em> = true</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/options.ts#L8">packages/lodestar/src/eth1/options.ts:8</a></em></p>
 <h3 id="providerurl">providerUrl<a class="headerlink" href="#providerurl" title="Permanent link">&para;</a></h3>
 <p>• <strong>providerUrl</strong>: <em>string</em> = "http://localhost:8545"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
-<hr />
-<h3 id="const-depositcontract"><code>Const</code> depositContract<a class="headerlink" href="#const-depositcontract" title="Permanent link">&para;</a></h3>
-<h3 id="depositcontract-object">▪ <strong>depositContract</strong>: <em>object</em><a class="headerlink" href="#depositcontract-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/depositContract.ts#L3">packages/lodestar/src/eth1/depositContract.ts:3</a></em></p>
-<h3 id="abi">abi<a class="headerlink" href="#abi" title="Permanent link">&para;</a></h3>
-<p>• <strong>abi</strong>: <em>(object | object | object | object)[]</em> = [{"name": "DepositEvent", "inputs": [{"type": "bytes", "name": "pubkey", "indexed": false}, {"type": "bytes", "name": "withdrawal_credentials", "indexed": false}, {"type": "bytes", "name": "amount", "indexed": false}, {"type": "bytes", "name": "signature", "indexed": false}, {"type": "bytes", "name": "index", "indexed": false}], "anonymous": false, "type": "event"}, {"outputs": [], "inputs": [], "constant": false, "payable": false, "type": "constructor"}, {"name": "get_deposit_root", "outputs": [{"type": "bytes32", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 95628}, {"name": "get_deposit_count", "outputs": [{"type": "bytes", "name": "out"}], "inputs": [], "constant": true, "payable": false, "type": "function", "gas": 18231}, {"name": "deposit", "outputs": [], "inputs": [{"type": "bytes", "name": "pubkey"}, {"type": "bytes", "name": "withdrawal_credentials"}, {"type": "bytes", "name": "signature"}, {"type": "bytes32", "name": "deposit_data_root"}], "constant": false, "payable": true, "type": "function", "gas": 1342274}]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/eth1/depositContract.ts#L10">packages/lodestar/src/eth1/depositContract.ts:10</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/eth1/options.ts#L9">packages/lodestar/src/eth1/options.ts:9</a></em></p>
                 
               
               
@@ -1237,15 +1185,15 @@ such as getting an HTML page due to a wrong API URL</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

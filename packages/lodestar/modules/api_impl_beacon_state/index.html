@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_impl_beacon_state/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -387,6 +389,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
     Classes
   </a>
@@ -420,6 +429,68 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#references_1" class="md-nav__link">
+    References
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apistatecontext" class="md-nav__link">
+    ApiStateContext
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaconstateapi" class="md-nav__link">
+    BeaconStateApi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ibeaconstateapi" class="md-nav__link">
+    IBeaconStateApi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icommitteesfilters" class="md-nav__link">
+    ICommitteesFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ivalidatorfilters" class="md-nav__link">
+    IValidatorFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateid" class="md-nav__link">
+    StateId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatorstatus" class="md-nav__link">
+    ValidatorStatus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#type-aliases_1" class="md-nav__link">
     Type aliases
   </a>
@@ -428,8 +499,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#stateid" class="md-nav__link">
+  <a href="#apistatecontext_1" class="md-nav__link">
+    ApiStateContext
+  </a>
+  
+    <nav class="md-nav" aria-label="ApiStateContext">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateid_1" class="md-nav__link">
     StateId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatorstatus_1" class="md-nav__link">
+    ValidatorStatus
   </a>
   
 </li>
@@ -448,8 +546,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getepochbeaconcommittees" class="md-nav__link">
+    getEpochBeaconCommittees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#resolvestateid" class="md-nav__link">
     resolveStateId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tovalidatorresponse" class="md-nav__link">
+    toValidatorResponse
   </a>
   
 </li>
@@ -476,12 +588,19 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/impl/beacon/state</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/impl/beacon/state</a></p>
 <h1 id="module-apiimplbeaconstate">Module: api/impl/beacon/state<a class="headerlink" href="#module-apiimplbeaconstate" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#apistatecontext">ApiStateContext</a></li>
+<li><a href="./#beaconstateapi">BeaconStateApi</a></li>
+<li><a href="./#ibeaconstateapi">IBeaconStateApi</a></li>
+<li><a href="./#icommitteesfilters">ICommitteesFilters</a></li>
+<li><a href="./#ivalidatorfilters">IValidatorFilters</a></li>
+<li><a href="./#stateid">StateId</a></li>
+<li><a href="./#validatorstatus">ValidatorStatus</a></li>
+</ul>
 <h3 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../../classes/api_impl_beacon_state.beaconstateapi/">BeaconStateApi</a></li>
@@ -489,23 +608,100 @@
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../../interfaces/api_impl_beacon_state.ibeaconstateapi/">IBeaconStateApi</a></li>
+<li><a href="../../interfaces/api_impl_beacon_state.icommitteesfilters/">ICommitteesFilters</a></li>
+<li><a href="../../interfaces/api_impl_beacon_state.ivalidatorfilters/">IValidatorFilters</a></li>
 </ul>
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#apistatecontext">ApiStateContext</a></li>
 <li><a href="./#stateid">StateId</a></li>
+<li><a href="./#validatorstatus">ValidatorStatus</a></li>
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#getepochbeaconcommittees">getEpochBeaconCommittees</a></li>
 <li><a href="./#resolvestateid">resolveStateId</a></li>
+<li><a href="./#tovalidatorresponse">toValidatorResponse</a></li>
 </ul>
-<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
+<h3 id="apistatecontext">ApiStateContext<a class="headerlink" href="#apistatecontext" title="Permanent link">&para;</a></h3>
+<p>• <strong>ApiStateContext</strong>:</p>
+<hr />
+<h3 id="beaconstateapi">BeaconStateApi<a class="headerlink" href="#beaconstateapi" title="Permanent link">&para;</a></h3>
+<p>• <strong>BeaconStateApi</strong>:</p>
+<hr />
+<h3 id="ibeaconstateapi">IBeaconStateApi<a class="headerlink" href="#ibeaconstateapi" title="Permanent link">&para;</a></h3>
+<p>• <strong>IBeaconStateApi</strong>:</p>
+<hr />
+<h3 id="icommitteesfilters">ICommitteesFilters<a class="headerlink" href="#icommitteesfilters" title="Permanent link">&para;</a></h3>
+<p>• <strong>ICommitteesFilters</strong>:</p>
+<hr />
+<h3 id="ivalidatorfilters">IValidatorFilters<a class="headerlink" href="#ivalidatorfilters" title="Permanent link">&para;</a></h3>
+<p>• <strong>IValidatorFilters</strong>:</p>
+<hr />
 <h3 id="stateid">StateId<a class="headerlink" href="#stateid" title="Permanent link">&para;</a></h3>
+<p>• <strong>StateId</strong>:</p>
+<hr />
+<h3 id="validatorstatus">ValidatorStatus<a class="headerlink" href="#validatorstatus" title="Permanent link">&para;</a></h3>
+<p>• <strong>ValidatorStatus</strong>:</p>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h3 id="apistatecontext_1">ApiStateContext<a class="headerlink" href="#apistatecontext_1" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ApiStateContext</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/interface.ts#L42">packages/lodestar/src/api/impl/beacon/state/interface.ts:42</a></em></p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>epochCtx</strong>? : <em>EpochContext</em></p>
+</li>
+<li>
+<p><strong>state</strong>: <em>BeaconState</em></p>
+</li>
+</ul>
+<hr />
+<h3 id="stateid_1">StateId<a class="headerlink" href="#stateid_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>StateId</strong>: <em>string | "head" | "genesis" | "finalized" | "justified"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/impl/beacon/state/interface.ts#L7">packages/lodestar/src/api/impl/beacon/state/interface.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/interface.ts#L28">packages/lodestar/src/api/impl/beacon/state/interface.ts:28</a></em></p>
+<hr />
+<h3 id="validatorstatus_1">ValidatorStatus<a class="headerlink" href="#validatorstatus_1" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ValidatorStatus</strong>: <em>"active"</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/interface.ts#L30">packages/lodestar/src/api/impl/beacon/state/interface.ts:30</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="getepochbeaconcommittees">getEpochBeaconCommittees<a class="headerlink" href="#getepochbeaconcommittees" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getEpochBeaconCommittees</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>stateContext</code>: <a href="./#apistatecontext">ApiStateContext</a>, <code>epoch</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#epoch">Epoch</a>): <em><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/utils.ts#L64">packages/lodestar/src/api/impl/beacon/state/utils.ts:64</a></em></p>
+<p>Returns committees mapped by index -&gt; slot -&gt; validator index</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>IBeaconConfig</td>
+</tr>
+<tr>
+<td><code>chain</code></td>
+<td><a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a></td>
+</tr>
+<tr>
+<td><code>stateContext</code></td>
+<td><a href="./#apistatecontext">ApiStateContext</a></td>
+</tr>
+<tr>
+<td><code>epoch</code></td>
+<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#epoch">Epoch</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
+<hr />
 <h3 id="resolvestateid">resolveStateId<a class="headerlink" href="#resolvestateid" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>resolveStateId</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>stateId</code>: <a href="./#stateid">StateId</a>): <em>Promise‹BeaconState | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/impl/beacon/state/utils.ts#L9">packages/lodestar/src/api/impl/beacon/state/utils.ts:9</a></em></p>
+<p>▸ <strong>resolveStateId</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>stateId</code>: <a href="./#stateid">StateId</a>): <em>Promise‹<a href="./#apistatecontext">ApiStateContext</a> | null›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/utils.ts#L11">packages/lodestar/src/api/impl/beacon/state/utils.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -533,7 +729,31 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹BeaconState | null›</em></p>
+<p><strong>Returns:</strong> <em>Promise‹<a href="./#apistatecontext">ApiStateContext</a> | null›</em></p>
+<hr />
+<h3 id="tovalidatorresponse">toValidatorResponse<a class="headerlink" href="#tovalidatorresponse" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>toValidatorResponse</strong>(<code>index</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>validator</code>: Validator): <em>ValidatorResponse</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/impl/beacon/state/utils.ts#L52">packages/lodestar/src/api/impl/beacon/state/utils.ts:52</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index</code></td>
+<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
+</tr>
+<tr>
+<td><code>validator</code></td>
+<td>Validator</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>ValidatorResponse</em></p>
                 
               
               
@@ -605,15 +825,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

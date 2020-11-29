@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_blocks.blockprocessor/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -381,13 +383,6 @@
         <li class="md-nav__item">
   <a href="#hierarchy" class="md-nav__link">
     Hierarchy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implements" class="md-nav__link">
-    Implements
   </a>
   
 </li>
@@ -455,71 +450,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#private-readonly-attestationprocessor" class="md-nav__link">
-    Private Readonly attestationProcessor
+  <a href="#private-jobqueue" class="md-nav__link">
+    Private jobQueue
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#private-blockprocessingsource" class="md-nav__link">
-    Private blockProcessingSource
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-config" class="md-nav__link">
-    Private Readonly config
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-controller" class="md-nav__link">
-    Private controller
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-db" class="md-nav__link">
-    Private Readonly db
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-eventbus" class="md-nav__link">
-    Private Readonly eventBus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-forkchoice" class="md-nav__link">
-    Private Readonly forkChoice
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-logger" class="md-nav__link">
-    Private Readonly logger
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-readonly-metrics" class="md-nav__link">
-    Private Readonly metrics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#private-pendingblocks" class="md-nav__link">
-    Private pendingBlocks
+  <a href="#private-modules" class="md-nav__link">
+    Private modules
   </a>
   
 </li>
@@ -538,22 +477,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#receiveblock" class="md-nav__link">
-    receiveBlock
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop" class="md-nav__link">
-    stop
+  <a href="#processblockjob" class="md-nav__link">
+    processBlockJob
   </a>
   
 </li>
@@ -580,18 +505,12 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/chain_blocks/">chain/blocks</a> › <a href="./">BlockProcessor</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/chain_blocks/">chain/blocks</a> › <a href="./">BlockProcessor</a></p>
 <h1 id="class-blockprocessor">Class: BlockProcessor<a class="headerlink" href="#class-blockprocessor" title="Permanent link">&para;</a></h1>
+<p>BlockProcessor processes block jobs in a queued fashion, one after the other.</p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>BlockProcessor</strong></li>
-</ul>
-<h2 id="implements">Implements<a class="headerlink" href="#implements" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../interfaces/node.iservice/">IService</a></li>
 </ul>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">&para;</a></h3>
@@ -600,113 +519,19 @@
 </ul>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#private-readonly-attestationprocessor">attestationProcessor</a></li>
-<li><a href="./#private-blockprocessingsource">blockProcessingSource</a></li>
-<li><a href="./#private-readonly-config">config</a></li>
-<li><a href="./#private-controller">controller</a></li>
-<li><a href="./#private-readonly-db">db</a></li>
-<li><a href="./#private-readonly-eventbus">eventBus</a></li>
-<li><a href="./#private-readonly-forkchoice">forkChoice</a></li>
-<li><a href="./#private-readonly-logger">logger</a></li>
-<li><a href="./#private-readonly-metrics">metrics</a></li>
-<li><a href="./#private-pendingblocks">pendingBlocks</a></li>
+<li><a href="./#private-jobqueue">jobQueue</a></li>
+<li><a href="./#private-modules">modules</a></li>
 </ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#receiveblock">receiveBlock</a></li>
-<li><a href="./#start">start</a></li>
-<li><a href="./#stop">stop</a></li>
+<li><a href="./#processblockjob">processBlockJob</a></li>
 </ul>
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
-<p>+ <strong>new BlockProcessor</strong>(<code>config</code>: IBeaconConfig, <code>logger</code>: ILogger, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>metrics</code>: <a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a>, <code>eventBus</code>: <a href="../chain.chaineventemitter/">ChainEventEmitter</a>, <code>attestationProcessor</code>: <a href="../../interfaces/chain.iattestationprocessor/">IAttestationProcessor</a>): <em><a href="./">BlockProcessor</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L37">packages/lodestar/src/chain/blocks/processor.ts:37</a></em></p>
+<p>+ <strong>new BlockProcessor</strong>(<code>__namedParameters</code>: object): <em><a href="./">BlockProcessor</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/blocks/processor.ts#L28">packages/lodestar/src/chain/blocks/processor.ts:28</a></em></p>
 <p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>IBeaconConfig</td>
-</tr>
-<tr>
-<td><code>logger</code></td>
-<td>ILogger</td>
-</tr>
-<tr>
-<td><code>db</code></td>
-<td><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></td>
-</tr>
-<tr>
-<td><code>forkChoice</code></td>
-<td>IForkChoice</td>
-</tr>
-<tr>
-<td><code>metrics</code></td>
-<td><a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a></td>
-</tr>
-<tr>
-<td><code>eventBus</code></td>
-<td><a href="../chain.chaineventemitter/">ChainEventEmitter</a></td>
-</tr>
-<tr>
-<td><code>attestationProcessor</code></td>
-<td><a href="../../interfaces/chain.iattestationprocessor/">IAttestationProcessor</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em><a href="./">BlockProcessor</a></em></p>
-<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="private-readonly-attestationprocessor"><code>Private</code> <code>Readonly</code> attestationProcessor<a class="headerlink" href="#private-readonly-attestationprocessor" title="Permanent link">&para;</a></h3>
-<p>• <strong>attestationProcessor</strong>: <em><a href="../../interfaces/chain.iattestationprocessor/">IAttestationProcessor</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L28">packages/lodestar/src/chain/blocks/processor.ts:28</a></em></p>
-<hr />
-<h3 id="private-blockprocessingsource"><code>Private</code> blockProcessingSource<a class="headerlink" href="#private-blockprocessingsource" title="Permanent link">&para;</a></h3>
-<p>• <strong>blockProcessingSource</strong>: <em>Pushable‹<a href="../../interfaces/chain.iblockprocessjob/">IBlockProcessJob</a>›</em> = pushable<IBlockProcessJob>()</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L35">packages/lodestar/src/chain/blocks/processor.ts:35</a></em></p>
-<hr />
-<h3 id="private-readonly-config"><code>Private</code> <code>Readonly</code> config<a class="headerlink" href="#private-readonly-config" title="Permanent link">&para;</a></h3>
-<p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L22">packages/lodestar/src/chain/blocks/processor.ts:22</a></em></p>
-<hr />
-<h3 id="private-controller"><code>Private</code> controller<a class="headerlink" href="#private-controller" title="Permanent link">&para;</a></h3>
-<p>• <strong>controller</strong>: <em>AbortController</em> = new AbortController()</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L37">packages/lodestar/src/chain/blocks/processor.ts:37</a></em></p>
-<hr />
-<h3 id="private-readonly-db"><code>Private</code> <code>Readonly</code> db<a class="headerlink" href="#private-readonly-db" title="Permanent link">&para;</a></h3>
-<p>• <strong>db</strong>: <em><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L24">packages/lodestar/src/chain/blocks/processor.ts:24</a></em></p>
-<hr />
-<h3 id="private-readonly-eventbus"><code>Private</code> <code>Readonly</code> eventBus<a class="headerlink" href="#private-readonly-eventbus" title="Permanent link">&para;</a></h3>
-<p>• <strong>eventBus</strong>: <em><a href="../chain.chaineventemitter/">ChainEventEmitter</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L27">packages/lodestar/src/chain/blocks/processor.ts:27</a></em></p>
-<hr />
-<h3 id="private-readonly-forkchoice"><code>Private</code> <code>Readonly</code> forkChoice<a class="headerlink" href="#private-readonly-forkchoice" title="Permanent link">&para;</a></h3>
-<p>• <strong>forkChoice</strong>: <em>IForkChoice</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L25">packages/lodestar/src/chain/blocks/processor.ts:25</a></em></p>
-<hr />
-<h3 id="private-readonly-logger"><code>Private</code> <code>Readonly</code> logger<a class="headerlink" href="#private-readonly-logger" title="Permanent link">&para;</a></h3>
-<p>• <strong>logger</strong>: <em>ILogger</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L23">packages/lodestar/src/chain/blocks/processor.ts:23</a></em></p>
-<hr />
-<h3 id="private-readonly-metrics"><code>Private</code> <code>Readonly</code> metrics<a class="headerlink" href="#private-readonly-metrics" title="Permanent link">&para;</a></h3>
-<p>• <strong>metrics</strong>: <em><a href="../../interfaces/metrics.ibeaconmetrics/">IBeaconMetrics</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L26">packages/lodestar/src/chain/blocks/processor.ts:26</a></em></p>
-<hr />
-<h3 id="private-pendingblocks"><code>Private</code> pendingBlocks<a class="headerlink" href="#private-pendingblocks" title="Permanent link">&para;</a></h3>
-<p>• <strong>pendingBlocks</strong>: <em><a href="../chain_blocks.blockpool/">BlockPool</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L33">packages/lodestar/src/chain/blocks/processor.ts:33</a></em></p>
-<p>map where key is required parent block root and value are blocks that require that parent block</p>
-<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
-<h3 id="receiveblock">receiveBlock<a class="headerlink" href="#receiveblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>receiveBlock</strong>(<code>block</code>: SignedBeaconBlock, <code>trusted</code>: boolean, <code>reprocess</code>: boolean): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L89">packages/lodestar/src/chain/blocks/processor.ts:89</a></em></p>
-<p><strong>Parameters:</strong></p>
+<p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
 <thead>
 <tr>
@@ -717,34 +542,50 @@
 </thead>
 <tbody>
 <tr>
-<td><code>block</code></td>
-<td>SignedBeaconBlock</td>
+<td><code>modules</code></td>
+<td>modules</td>
 <td>-</td>
 </tr>
 <tr>
-<td><code>trusted</code></td>
-<td>boolean</td>
-<td>false</td>
+<td><code>queueSize</code></td>
+<td>number</td>
+<td>256</td>
 </tr>
 <tr>
-<td><code>reprocess</code></td>
-<td>boolean</td>
-<td>false</td>
+<td><code>signal</code></td>
+<td>AbortSignal</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>void</em></p>
+<p><strong>Returns:</strong> <em><a href="./">BlockProcessor</a></em></p>
+<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
+<h3 id="private-jobqueue"><code>Private</code> jobQueue<a class="headerlink" href="#private-jobqueue" title="Permanent link">&para;</a></h3>
+<p>• <strong>jobQueue</strong>: <em><a href="../util.jobqueue/">JobQueue</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/blocks/processor.ts#L28">packages/lodestar/src/chain/blocks/processor.ts:28</a></em></p>
 <hr />
-<h3 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>start</strong>(): <em>Promise‹void›</em></p>
-<p><em>Implementation of <a href="../../interfaces/node.iservice/">IService</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L58">packages/lodestar/src/chain/blocks/processor.ts:58</a></em></p>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="stop">stop<a class="headerlink" href="#stop" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>stop</strong>(): <em>Promise‹void›</em></p>
-<p><em>Implementation of <a href="../../interfaces/node.iservice/">IService</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/chain/blocks/processor.ts#L85">packages/lodestar/src/chain/blocks/processor.ts:85</a></em></p>
+<h3 id="private-modules"><code>Private</code> modules<a class="headerlink" href="#private-modules" title="Permanent link">&para;</a></h3>
+<p>• <strong>modules</strong>: <em><a href="../../modules/chain_blocks/#blockprocessormodules">BlockProcessorModules</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/blocks/processor.ts#L27">packages/lodestar/src/chain/blocks/processor.ts:27</a></em></p>
+<h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
+<h3 id="processblockjob">processBlockJob<a class="headerlink" href="#processblockjob" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>processBlockJob</strong>(<code>job</code>: <a href="../../interfaces/chain.iblockjob/">IBlockJob</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/chain/blocks/processor.ts#L42">packages/lodestar/src/chain/blocks/processor.ts:42</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>job</code></td>
+<td><a href="../../interfaces/chain.iblockjob/">IBlockJob</a></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
                 
               
@@ -817,15 +658,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

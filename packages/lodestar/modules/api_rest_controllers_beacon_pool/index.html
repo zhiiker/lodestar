@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_rest_controllers_beacon_pool/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -414,8 +416,57 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getattesterslashings" class="md-nav__link">
+    getAttesterSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getpoolattestations" class="md-nav__link">
     getPoolAttestations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproposerslashings" class="md-nav__link">
+    getProposerSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvoluntaryexits" class="md-nav__link">
+    getVoluntaryExits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitattesterslashing" class="md-nav__link">
+    submitAttesterSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitpoolattestation" class="md-nav__link">
+    submitPoolAttestation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitproposerslashing" class="md-nav__link">
+    submitProposerSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitvoluntaryexit" class="md-nav__link">
+    submitVoluntaryExit
   </a>
   
 </li>
@@ -434,6 +485,34 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#const-getattesterslashings" class="md-nav__link">
+    Const getAttesterSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattesterslashings-object" class="md-nav__link">
+    ▪ getAttesterSlashings: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#const-getpoolattestations" class="md-nav__link">
     Const getPoolAttestations
   </a>
@@ -448,14 +527,182 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
+  <a href="#url_1" class="md-nav__link">
     url
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#handler" class="md-nav__link">
+  <a href="#handler_1" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-getproposerslashings" class="md-nav__link">
+    Const getProposerSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproposerslashings-object" class="md-nav__link">
+    ▪ getProposerSlashings: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_2" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_2" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-getvoluntaryexits" class="md-nav__link">
+    Const getVoluntaryExits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvoluntaryexits-object" class="md-nav__link">
+    ▪ getVoluntaryExits: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_3" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_3" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-submitattesterslashing" class="md-nav__link">
+    Const submitAttesterSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitattesterslashing-object" class="md-nav__link">
+    ▪ submitAttesterSlashing: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_4" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_4" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-submitpoolattestation" class="md-nav__link">
+    Const submitPoolAttestation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitpoolattestation-object" class="md-nav__link">
+    ▪ submitPoolAttestation: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_5" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_5" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-submitproposerslashing" class="md-nav__link">
+    Const submitProposerSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitproposerslashing-object" class="md-nav__link">
+    ▪ submitProposerSlashing: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_6" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_6" class="md-nav__link">
+    handler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const-submitvoluntaryexit" class="md-nav__link">
+    Const submitVoluntaryExit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitvoluntaryexit-object" class="md-nav__link">
+    ▪ submitVoluntaryExit: object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_7" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handler_7" class="md-nav__link">
     handler
   </a>
   
@@ -483,33 +730,65 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon/pool</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon/pool</a></p>
 <h1 id="module-apirestcontrollersbeaconpool">Module: api/rest/controllers/beacon/pool<a class="headerlink" href="#module-apirestcontrollersbeaconpool" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#getattesterslashings">getAttesterSlashings</a></li>
 <li><a href="./#getpoolattestations">getPoolAttestations</a></li>
+<li><a href="./#getproposerslashings">getProposerSlashings</a></li>
+<li><a href="./#getvoluntaryexits">getVoluntaryExits</a></li>
+<li><a href="./#submitattesterslashing">submitAttesterSlashing</a></li>
+<li><a href="./#submitpoolattestation">submitPoolAttestation</a></li>
+<li><a href="./#submitproposerslashing">submitProposerSlashing</a></li>
+<li><a href="./#submitvoluntaryexit">submitVoluntaryExit</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#const-getattesterslashings">getAttesterSlashings</a></li>
 <li><a href="./#const-getpoolattestations">getPoolAttestations</a></li>
+<li><a href="./#const-getproposerslashings">getProposerSlashings</a></li>
+<li><a href="./#const-getvoluntaryexits">getVoluntaryExits</a></li>
+<li><a href="./#const-submitattesterslashing">submitAttesterSlashing</a></li>
+<li><a href="./#const-submitpoolattestation">submitPoolAttestation</a></li>
+<li><a href="./#const-submitproposerslashing">submitProposerSlashing</a></li>
+<li><a href="./#const-submitvoluntaryexit">submitVoluntaryExit</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
+<h3 id="getattesterslashings">getAttesterSlashings<a class="headerlink" href="#getattesterslashings" title="Permanent link">&para;</a></h3>
+<p>• <strong>getAttesterSlashings</strong>:</p>
+<hr />
 <h3 id="getpoolattestations">getPoolAttestations<a class="headerlink" href="#getpoolattestations" title="Permanent link">&para;</a></h3>
 <p>• <strong>getPoolAttestations</strong>:</p>
+<hr />
+<h3 id="getproposerslashings">getProposerSlashings<a class="headerlink" href="#getproposerslashings" title="Permanent link">&para;</a></h3>
+<p>• <strong>getProposerSlashings</strong>:</p>
+<hr />
+<h3 id="getvoluntaryexits">getVoluntaryExits<a class="headerlink" href="#getvoluntaryexits" title="Permanent link">&para;</a></h3>
+<p>• <strong>getVoluntaryExits</strong>:</p>
+<hr />
+<h3 id="submitattesterslashing">submitAttesterSlashing<a class="headerlink" href="#submitattesterslashing" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitAttesterSlashing</strong>:</p>
+<hr />
+<h3 id="submitpoolattestation">submitPoolAttestation<a class="headerlink" href="#submitpoolattestation" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitPoolAttestation</strong>:</p>
+<hr />
+<h3 id="submitproposerslashing">submitProposerSlashing<a class="headerlink" href="#submitproposerslashing" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitProposerSlashing</strong>:</p>
+<hr />
+<h3 id="submitvoluntaryexit">submitVoluntaryExit<a class="headerlink" href="#submitvoluntaryexit" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitVoluntaryExit</strong>:</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
-<h3 id="const-getpoolattestations"><code>Const</code> getPoolAttestations<a class="headerlink" href="#const-getpoolattestations" title="Permanent link">&para;</a></h3>
-<h3 id="getpoolattestations-object">▪ <strong>getPoolAttestations</strong>: <em>object</em><a class="headerlink" href="#getpoolattestations-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:4</a></em></p>
+<h3 id="const-getattesterslashings"><code>Const</code> getAttesterSlashings<a class="headerlink" href="#const-getattesterslashings" title="Permanent link">&para;</a></h3>
+<h3 id="getattesterslashings-object">▪ <strong>getAttesterSlashings</strong>: <em>object</em><a class="headerlink" href="#getattesterslashings-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts#L3">packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts:3</a></em></p>
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/pool/attestations"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:5</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/attester_slashings"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts:4</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L7">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:7</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -521,7 +800,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -531,7 +810,42 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts#L15">packages/lodestar/src/api/rest/controllers/beacon/pool/getAttesterSlashings.ts:15</a></em></p>
+<ul>
+<li><strong>schema</strong>(): <em>object</em></li>
+</ul>
+<hr />
+<h3 id="const-getpoolattestations"><code>Const</code> getPoolAttestations<a class="headerlink" href="#const-getpoolattestations" title="Permanent link">&para;</a></h3>
+<h3 id="getpoolattestations-object">▪ <strong>getPoolAttestations</strong>: <em>object</em><a class="headerlink" href="#getpoolattestations-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:4</a></em></p>
+<h3 id="url_1">url<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/attestations"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:5</a></em></p>
+<h3 id="handler_1">handler<a class="headerlink" href="#handler_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L7">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:7</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, object, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/getPoolAttestations.ts:19</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -570,6 +884,248 @@
 </li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="const-getproposerslashings"><code>Const</code> getProposerSlashings<a class="headerlink" href="#const-getproposerslashings" title="Permanent link">&para;</a></h3>
+<h3 id="getproposerslashings-object">▪ <strong>getProposerSlashings</strong>: <em>object</em><a class="headerlink" href="#getproposerslashings-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts#L3">packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts:3</a></em></p>
+<h3 id="url_2">url<a class="headerlink" href="#url_2" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/proposer_slashings"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts:4</a></em></p>
+<h3 id="handler_2">handler<a class="headerlink" href="#handler_2" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts:6</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts#L15">packages/lodestar/src/api/rest/controllers/beacon/pool/getProposerSlashings.ts:15</a></em></p>
+<ul>
+<li><strong>schema</strong>(): <em>object</em></li>
+</ul>
+<hr />
+<h3 id="const-getvoluntaryexits"><code>Const</code> getVoluntaryExits<a class="headerlink" href="#const-getvoluntaryexits" title="Permanent link">&para;</a></h3>
+<h3 id="getvoluntaryexits-object">▪ <strong>getVoluntaryExits</strong>: <em>object</em><a class="headerlink" href="#getvoluntaryexits-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts#L3">packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts:3</a></em></p>
+<h3 id="url_3">url<a class="headerlink" href="#url_3" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/voluntary_exits"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts:4</a></em></p>
+<h3 id="handler_3">handler<a class="headerlink" href="#handler_3" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts:6</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts#L15">packages/lodestar/src/api/rest/controllers/beacon/pool/getVoluntaryExits.ts:15</a></em></p>
+<ul>
+<li><strong>schema</strong>(): <em>object</em></li>
+</ul>
+<hr />
+<h3 id="const-submitattesterslashing"><code>Const</code> submitAttesterSlashing<a class="headerlink" href="#const-submitattesterslashing" title="Permanent link">&para;</a></h3>
+<h3 id="submitattesterslashing-object">▪ <strong>submitAttesterSlashing</strong>: <em>object</em><a class="headerlink" href="#submitattesterslashing-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts:5</a></em></p>
+<h3 id="url_4">url<a class="headerlink" href="#url_4" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/attester_slashings"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts:6</a></em></p>
+<h3 id="handler_4">handler<a class="headerlink" href="#handler_4" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts:8</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/submitAttesterSlashing.ts:19</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>body</strong>: <em>object</em></p>
+<ul>
+<li><strong>type</strong>: <em>string</em> = "object"</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="const-submitpoolattestation"><code>Const</code> submitPoolAttestation<a class="headerlink" href="#const-submitpoolattestation" title="Permanent link">&para;</a></h3>
+<h3 id="submitpoolattestation-object">▪ <strong>submitPoolAttestation</strong>: <em>object</em><a class="headerlink" href="#submitpoolattestation-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts:5</a></em></p>
+<h3 id="url_5">url<a class="headerlink" href="#url_5" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/attestations"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts:6</a></em></p>
+<h3 id="handler_5">handler<a class="headerlink" href="#handler_5" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts:8</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/submitPoolAttestation.ts:19</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>body</strong>: <em>object</em></p>
+<ul>
+<li><strong>type</strong>: <em>string</em> = "object"</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="const-submitproposerslashing"><code>Const</code> submitProposerSlashing<a class="headerlink" href="#const-submitproposerslashing" title="Permanent link">&para;</a></h3>
+<h3 id="submitproposerslashing-object">▪ <strong>submitProposerSlashing</strong>: <em>object</em><a class="headerlink" href="#submitproposerslashing-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts:5</a></em></p>
+<h3 id="url_6">url<a class="headerlink" href="#url_6" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/proposer_slashings"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts:6</a></em></p>
+<h3 id="handler_6">handler<a class="headerlink" href="#handler_6" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts:8</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/submitProposerSlashing.ts:19</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>body</strong>: <em>object</em></p>
+<ul>
+<li><strong>type</strong>: <em>string</em> = "object"</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="const-submitvoluntaryexit"><code>Const</code> submitVoluntaryExit<a class="headerlink" href="#const-submitvoluntaryexit" title="Permanent link">&para;</a></h3>
+<h3 id="submitvoluntaryexit-object">▪ <strong>submitVoluntaryExit</strong>: <em>object</em><a class="headerlink" href="#submitvoluntaryexit-object" title="Permanent link">&para;</a></h3>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts#L5">packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts:5</a></em></p>
+<h3 id="url_7">url<a class="headerlink" href="#url_7" title="Permanent link">&para;</a></h3>
+<p>• <strong>url</strong>: <em>string</em> = "/pool/voluntary_exits"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts:6</a></em></p>
+<h3 id="handler_7">handler<a class="headerlink" href="#handler_7" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts#L8">packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts:8</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>req</code></td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
+</tr>
+<tr>
+<td><code>resp</code></td>
+<td>FastifyReply‹ServerResponse‹››</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p>▪ <strong>opts</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts#L19">packages/lodestar/src/api/rest/controllers/beacon/pool/submitVoluntaryExit.ts:19</a></em></p>
+<ul>
+<li>
+<p><strong>schema</strong>: <em>object</em></p>
+</li>
+<li>
+<p><strong>body</strong>: <em>object</em></p>
+<ul>
+<li><strong>type</strong>: <em>string</em> = "object"</li>
 </ul>
 </li>
 </ul>
@@ -644,15 +1200,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

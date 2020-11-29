@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-fork-choice/classes/forkchoice.forkchoice-1/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -462,8 +464,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#balances" class="md-nav__link">
-    balances
+  <a href="#bestjustifiedbalances" class="md-nav__link">
+    bestJustifiedBalances
   </a>
   
 </li>
@@ -483,6 +485,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#justifiedbalances" class="md-nav__link">
+    justifiedBalances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#protoarray" class="md-nav__link">
     protoArray
   </a>
@@ -490,8 +499,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#queuedattesations" class="md-nav__link">
-    queuedAttesations
+  <a href="#queuedattestations" class="md-nav__link">
+    queuedAttestations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synced" class="md-nav__link">
+    synced
   </a>
   
 </li>
@@ -634,6 +650,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gettime" class="md-nav__link">
+    getTime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#hasblock" class="md-nav__link">
     hasBlock
   </a>
@@ -657,6 +680,13 @@
           <li class="md-nav__item">
   <a href="#iterateblocksummaries" class="md-nav__link">
     iterateBlockSummaries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteratenonancestors" class="md-nav__link">
+    iterateNonAncestors
   </a>
   
 </li>
@@ -777,8 +807,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#updatebalances" class="md-nav__link">
-    updateBalances
+  <a href="#private-updatebestjustified" class="md-nav__link">
+    Private updateBestJustified
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-updatejustified" class="md-nav__link">
+    Private updateJustified
   </a>
   
 </li>
@@ -846,9 +883,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <p><a href="../../">@chainsafe/lodestar-fork-choice</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/forkchoice/">forkChoice</a> › <a href="./">ForkChoice</a></p>
 <h1 id="class-forkchoice">Class: ForkChoice<a class="headerlink" href="#class-forkchoice" title="Permanent link">&para;</a></h1>
 <p>Provides an implementation of "Ethereum 2.0 Phase 0 -- Beacon Chain Fork Choice":</p>
@@ -880,11 +914,13 @@
 </ul>
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="./#balances">balances</a></li>
+<li><a href="./#bestjustifiedbalances">bestJustifiedBalances</a></li>
 <li><a href="./#config">config</a></li>
 <li><a href="./#fcstore">fcStore</a></li>
+<li><a href="./#justifiedbalances">justifiedBalances</a></li>
 <li><a href="./#protoarray">protoArray</a></li>
-<li><a href="./#queuedattesations">queuedAttesations</a></li>
+<li><a href="./#queuedattestations">queuedAttestations</a></li>
+<li><a href="./#synced">synced</a></li>
 <li><a href="./#votes">votes</a></li>
 </ul>
 <h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
@@ -902,10 +938,12 @@
 <li><a href="./#getheadroot">getHeadRoot</a></li>
 <li><a href="./#getjustifiedcheckpoint">getJustifiedCheckpoint</a></li>
 <li><a href="./#getlatestmessage">getLatestMessage</a></li>
+<li><a href="./#gettime">getTime</a></li>
 <li><a href="./#hasblock">hasBlock</a></li>
 <li><a href="./#isdescendant">isDescendant</a></li>
 <li><a href="./#isdescendantoffinalized">isDescendantOfFinalized</a></li>
 <li><a href="./#iterateblocksummaries">iterateBlockSummaries</a></li>
+<li><a href="./#iteratenonancestors">iterateNonAncestors</a></li>
 <li><a href="./#onattestation">onAttestation</a></li>
 <li><a href="./#onblock">onBlock</a></li>
 <li><a href="./#private-ontick">onTick</a></li>
@@ -913,7 +951,8 @@
 <li><a href="./#prune">prune</a></li>
 <li><a href="./#setprunethreshold">setPruneThreshold</a></li>
 <li><a href="./#private-shouldupdatejustifiedcheckpoint">shouldUpdateJustifiedCheckpoint</a></li>
-<li><a href="./#updatebalances">updateBalances</a></li>
+<li><a href="./#private-updatebestjustified">updateBestJustified</a></li>
+<li><a href="./#private-updatejustified">updateJustified</a></li>
 <li><a href="./#updatetime">updateTime</a></li>
 <li><a href="./#private-validateonattestation">validateOnAttestation</a></li>
 <li><a href="./#static-fromcheckpointstate">fromCheckpointState</a></li>
@@ -922,7 +961,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new ForkChoice</strong>(<code>__namedParameters</code>: object): <em><a href="./">ForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L72">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:72</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L84">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:84</a></em></p>
 <p>Instantiates a Fork Choice from some existing components</p>
 <p>This is useful if the existing components have been loaded from disk after a process restart.</p>
 <p><strong>Parameters:</strong></p>
@@ -948,50 +987,62 @@
 <td><a href="../protoarray.protoarray-1/">ProtoArray</a>‹›</td>
 </tr>
 <tr>
-<td><code>queuedAttesations</code></td>
+<td><code>queuedAttestations</code></td>
 <td>Set‹<a href="../../interfaces/forkchoice.iqueuedattestation/">IQueuedAttestation</a>›</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em><a href="./">ForkChoice</a></em></p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
-<h3 id="balances">balances<a class="headerlink" href="#balances" title="Permanent link">&para;</a></h3>
-<p>• <strong>balances</strong>: <em>Gwei[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L67">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:67</a></em></p>
+<h3 id="bestjustifiedbalances">bestJustifiedBalances<a class="headerlink" href="#bestjustifiedbalances" title="Permanent link">&para;</a></h3>
+<p>• <strong>bestJustifiedBalances</strong>: <em>Gwei[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L74">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:74</a></em></p>
+<p>Balances tracked in the protoArray, or soon to be tracked
+Indexed by validator index</p>
+<p>This should be the balances of the state at fcStore.bestJustifiedCheckpoint</p>
+<hr />
+<h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
+<p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L46">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:46</a></em></p>
+<hr />
+<h3 id="fcstore">fcStore<a class="headerlink" href="#fcstore" title="Permanent link">&para;</a></h3>
+<p>• <strong>fcStore</strong>: <em><a href="../../interfaces/forkchoice.iforkchoicestore/">IForkChoiceStore</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L50">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:50</a></em></p>
+<p>Storage for <code>ForkChoice</code>, modelled off the spec <code>Store</code> object.</p>
+<hr />
+<h3 id="justifiedbalances">justifiedBalances<a class="headerlink" href="#justifiedbalances" title="Permanent link">&para;</a></h3>
+<p>• <strong>justifiedBalances</strong>: <em>Gwei[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L67">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:67</a></em></p>
 <p>Balances currently tracked in the protoArray
 Indexed by validator index</p>
 <p>This should be the balances of the state at fcStore.justifiedCheckpoint</p>
 <hr />
-<h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
-<p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L46">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:46</a></em></p>
-<hr />
-<h3 id="fcstore">fcStore<a class="headerlink" href="#fcstore" title="Permanent link">&para;</a></h3>
-<p>• <strong>fcStore</strong>: <em><a href="../../interfaces/forkchoice.iforkchoicestore/">IForkChoiceStore</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L50">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:50</a></em></p>
-<p>Storage for <code>ForkChoice</code>, modelled off the spec <code>Store</code> object.</p>
-<hr />
 <h3 id="protoarray">protoArray<a class="headerlink" href="#protoarray" title="Permanent link">&para;</a></h3>
 <p>• <strong>protoArray</strong>: <em><a href="../protoarray.protoarray-1/">ProtoArray</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L54">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:54</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L54">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:54</a></em></p>
 <p>The underlying representation of the block DAG.</p>
 <hr />
-<h3 id="queuedattesations">queuedAttesations<a class="headerlink" href="#queuedattesations" title="Permanent link">&para;</a></h3>
-<p>• <strong>queuedAttesations</strong>: <em>Set‹<a href="../../interfaces/forkchoice.iqueuedattestation/">IQueuedAttestation</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L72">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:72</a></em></p>
+<h3 id="queuedattestations">queuedAttestations<a class="headerlink" href="#queuedattestations" title="Permanent link">&para;</a></h3>
+<p>• <strong>queuedAttestations</strong>: <em>Set‹<a href="../../interfaces/forkchoice.iqueuedattestation/">IQueuedAttestation</a>›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L79">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:79</a></em></p>
 <p>Attestations that arrived at the current slot and must be queued for later processing.
 NOT currently tracked in the protoArray</p>
 <hr />
+<h3 id="synced">synced<a class="headerlink" href="#synced" title="Permanent link">&para;</a></h3>
+<p>• <strong>synced</strong>: <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L84">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:84</a></em></p>
+<p>Avoid having to compute detas all the times.</p>
+<hr />
 <h3 id="votes">votes<a class="headerlink" href="#votes" title="Permanent link">&para;</a></h3>
 <p>• <strong>votes</strong>: <em><a href="../../interfaces/protoarray.ivotetracker/">IVoteTracker</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L60">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:60</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L60">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:60</a></em></p>
 <p>Votes currently tracked in the protoArray
 Indexed by validator index
 Each vote contains the latest message and previous message</p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-addlatestmessage"><code>Private</code> addLatestMessage<a class="headerlink" href="#private-addlatestmessage" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>addLatestMessage</strong>(<code>validatorIndex</code>: ValidatorIndex, <code>message</code>: <a href="../../interfaces/forkchoice.ilatestmessage/">ILatestMessage</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L705">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:705</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L771">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:771</a></em></p>
 <p>Add a validator's latest message to the tracked votes</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1017,13 +1068,13 @@ Each vote contains the latest message and previous message</p>
 <h3 id="forwarditerateblocksummaries">forwardIterateBlockSummaries<a class="headerlink" href="#forwarditerateblocksummaries" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>forwardIterateBlockSummaries</strong>(): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L516">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:516</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L560">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:560</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <hr />
 <h3 id="getancestor">getAncestor<a class="headerlink" href="#getancestor" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getAncestor</strong>(<code>blockRoot</code>: Root, <code>ancestorSlot</code>: Slot): <em>Uint8Array</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L158">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:158</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L172">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:172</a></em></p>
 <p>Returns the block root of an ancestor of <code>blockRoot</code> at the given <code>slot</code>.
 (Note: <code>slot</code> refers to the block that is <em>returned</em>, not the one that is supplied.)</p>
 <h2 id="specification">Specification<a class="headerlink" href="#specification" title="Permanent link">&para;</a></h2>
@@ -1053,7 +1104,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlock</strong>(<code>blockRoot</code>: Root): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a> | null</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L454">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:454</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L491">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:491</a></em></p>
 <p>Returns a <code>IBlockSummary</code> if the block is known <strong>and</strong> a descendant of the finalized root.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1075,7 +1126,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getblocksummariesatslot">getBlockSummariesAtSlot<a class="headerlink" href="#getblocksummariesatslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L525">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:525</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L569">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:569</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1096,7 +1147,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getblocksummariesbyparentroot">getBlockSummariesByParentRoot<a class="headerlink" href="#getblocksummariesbyparentroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockSummariesByParentRoot</strong>(<code>parentRoot</code>: Root): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L520">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:520</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L564">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:564</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1117,7 +1168,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot<a class="headerlink" href="#getcanonicalblocksummaryatslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a> | null</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L511">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:511</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L555">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:555</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1138,25 +1189,25 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getfinalizedblock">getFinalizedBlock<a class="headerlink" href="#getfinalizedblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalizedBlock</strong>(): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a></em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L468">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:468</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L505">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:505</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a></em></p>
 <hr />
 <h3 id="getfinalizedcheckpoint">getFinalizedCheckpoint<a class="headerlink" href="#getfinalizedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalizedCheckpoint</strong>(): <em>Checkpoint</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L218">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:218</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L243">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:243</a></em></p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="gethead">getHead<a class="headerlink" href="#gethead" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getHead</strong>(): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a></em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L199">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:199</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L214">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:214</a></em></p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a></em></p>
 <hr />
 <h3 id="getheadroot">getHeadRoot<a class="headerlink" href="#getheadroot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getHeadRoot</strong>(): <em>Uint8Array</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L195">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:195</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L209">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:209</a></em></p>
 <p>Run the fork choice rule to determine the head.</p>
 <h2 id="specification_1">Specification<a class="headerlink" href="#specification_1" title="Permanent link">&para;</a></h2>
 <p>Is equivalent to:</p>
@@ -1166,13 +1217,13 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getjustifiedcheckpoint">getJustifiedCheckpoint<a class="headerlink" href="#getjustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getJustifiedCheckpoint</strong>(): <em>Checkpoint</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L222">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:222</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L247">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:247</a></em></p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="getlatestmessage">getLatestMessage<a class="headerlink" href="#getlatestmessage" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getLatestMessage</strong>(<code>validatorIndex</code>: ValidatorIndex): <em><a href="../../interfaces/forkchoice.ilatestmessage/">ILatestMessage</a> | undefined</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L404">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:404</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L452">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:452</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1190,10 +1241,16 @@ Each vote contains the latest message and previous message</p>
 </table>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.ilatestmessage/">ILatestMessage</a> | undefined</em></p>
 <hr />
+<h3 id="gettime">getTime<a class="headerlink" href="#gettime" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getTime</strong>(): <em>Slot</em></p>
+<p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L477">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:477</a></em></p>
+<p><strong>Returns:</strong> <em>Slot</em></p>
+<hr />
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: Root): <em>boolean</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L447">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:447</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L484">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:484</a></em></p>
 <p>Returns <code>true</code> if the block is known <strong>and</strong> a descendant of the finalized root.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1215,7 +1272,7 @@ Each vote contains the latest message and previous message</p>
 <h3 id="isdescendant">isDescendant<a class="headerlink" href="#isdescendant" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isDescendant</strong>(<code>ancestorRoot</code>: Root, <code>descendantRoot</code>: Root): <em>boolean</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L492">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:492</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L529">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:529</a></em></p>
 <p>Returns true if the <code>descendantRoot</code> has an ancestor with <code>ancestorRoot</code>.</p>
 <p>Always returns <code>false</code> if either input roots are unknown.
 Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (and the roots are known)</p>
@@ -1243,7 +1300,7 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="isdescendantoffinalized">isDescendantOfFinalized<a class="headerlink" href="#isdescendantoffinalized" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isDescendantOfFinalized</strong>(<code>blockRoot</code>: Root): <em>boolean</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L482">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:482</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L519">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:519</a></em></p>
 <p>Return <code>true</code> if <code>block_root</code> is equal to the finalized root, or a known descendant of it.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1265,8 +1322,30 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="iterateblocksummaries">iterateBlockSummaries<a class="headerlink" href="#iterateblocksummaries" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>iterateBlockSummaries</strong>(<code>blockRoot</code>: Root): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L507">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:507</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L544">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:544</a></em></p>
 <p>Iterates backwards through block summaries, starting from a block root</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blockRoot</code></td>
+<td>Root</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
+<hr />
+<h3 id="iteratenonancestors">iterateNonAncestors<a class="headerlink" href="#iteratenonancestors" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>iterateNonAncestors</strong>(<code>blockRoot</code>: Root): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
+<p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L551">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:551</a></em></p>
+<p>The same to iterateBlockSummaries but this gets non-ancestor nodes instead of ancestor nodes.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1287,7 +1366,7 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="onattestation">onAttestation<a class="headerlink" href="#onattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onAttestation</strong>(<code>attestation</code>: IndexedAttestation): <em>void</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L361">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:361</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L409">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:409</a></em></p>
 <p>Register <code>attestation</code> with the fork choice DAG so that it may influence future calls to <code>getHead</code>.</p>
 <h2 id="specification_2">Specification<a class="headerlink" href="#specification_2" title="Permanent link">&para;</a></h2>
 <p>Approximates:</p>
@@ -1316,9 +1395,9 @@ will not be run here.</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onBlock</strong>(<code>block</code>: BeaconBlock, <code>state</code>: BeaconState): <em>void</em></p>
+<p>▸ <strong>onBlock</strong>(<code>block</code>: BeaconBlock, <code>state</code>: BeaconState, <code>justifiedBalances?</code>: Gwei[]): <em>void</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L242">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:242</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L270">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:270</a></em></p>
 <p>Add <code>block</code> to the fork choice DAG.</p>
 <h2 id="specification_3">Specification<a class="headerlink" href="#specification_3" title="Permanent link">&para;</a></h2>
 <p>Approximates:</p>
@@ -1327,6 +1406,8 @@ will not be run here.</p>
 That should have already been called upstream and it's too expensive to call again.</p>
 <h2 id="notes_1">Notes:<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h2>
 <p>The supplied block <strong>must</strong> pass the <code>state_transition</code> function as it will not be run here.</p>
+<p><code>justifiedBalances</code> balances of justified state which is updated synchronously.
+This ensures that the forkchoice is never out of sync.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1344,13 +1425,17 @@ That should have already been called upstream and it's too expensive to call aga
 <td><code>state</code></td>
 <td>BeaconState</td>
 </tr>
+<tr>
+<td><code>justifiedBalances?</code></td>
+<td>Gwei[]</td>
+</tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="private-ontick"><code>Private</code> onTick<a class="headerlink" href="#private-ontick" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onTick</strong>(<code>time</code>: Slot): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L749">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:749</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L816">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:816</a></em></p>
 <p>Called whenever the current time increases.</p>
 <h2 id="specification_4">Specification<a class="headerlink" href="#specification_4" title="Permanent link">&para;</a></h2>
 <p>Equivalent to:</p>
@@ -1374,21 +1459,36 @@ That should have already been called upstream and it's too expensive to call aga
 <hr />
 <h3 id="private-processattestationqueue"><code>Private</code> processAttestationQueue<a class="headerlink" href="#private-processattestationqueue" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processAttestationQueue</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L725">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:725</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L792">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:792</a></em></p>
 <p>Processes and removes from the queue any queued attestations which may now be eligible for
 processing due to the slot clock incrementing.</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="prune">prune<a class="headerlink" href="#prune" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>prune</strong>(): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
+<p>▸ <strong>prune</strong>(<code>finalizedRoot</code>: Root): <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L496">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:496</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L533">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:533</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>finalizedRoot</code></td>
+<td>Root</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/forkchoice.iblocksummary/">IBlockSummary</a>[]</em></p>
 <hr />
 <h3 id="setprunethreshold">setPruneThreshold<a class="headerlink" href="#setprunethreshold" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setPruneThreshold</strong>(<code>threshold</code>: number): <em>void</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L500">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:500</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L537">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:537</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1408,7 +1508,7 @@ processing due to the slot clock incrementing.</p>
 <hr />
 <h3 id="private-shouldupdatejustifiedcheckpoint"><code>Private</code> shouldUpdateJustifiedCheckpoint<a class="headerlink" href="#private-shouldupdatejustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>shouldUpdateJustifiedCheckpoint</strong>(<code>state</code>: BeaconState): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L539">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:539</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L600">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:600</a></em></p>
 <p>Returns <code>true</code> if the given <code>store</code> should be updated to set
 <code>state.current_justified_checkpoint</code> its <code>justified_checkpoint</code>.</p>
 <h2 id="specification_5">Specification<a class="headerlink" href="#specification_5" title="Permanent link">&para;</a></h2>
@@ -1431,10 +1531,9 @@ processing due to the slot clock incrementing.</p>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
-<h3 id="updatebalances">updateBalances<a class="headerlink" href="#updatebalances" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>updateBalances</strong>(<code>justifiedStateBalances</code>: Gwei[]): <em>void</em></p>
-<p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L415">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:415</a></em></p>
+<h3 id="private-updatebestjustified"><code>Private</code> updateBestJustified<a class="headerlink" href="#private-updatebestjustified" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>updateBestJustified</strong>(<code>justifiedCheckpoint</code>: Checkpoint, <code>justifiedBalances</code>: Gwei[]): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L585">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:585</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1445,7 +1544,35 @@ processing due to the slot clock incrementing.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>justifiedStateBalances</code></td>
+<td><code>justifiedCheckpoint</code></td>
+<td>Checkpoint</td>
+</tr>
+<tr>
+<td><code>justifiedBalances</code></td>
+<td>Gwei[]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>void</em></p>
+<hr />
+<h3 id="private-updatejustified"><code>Private</code> updateJustified<a class="headerlink" href="#private-updatejustified" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>updateJustified</strong>(<code>justifiedCheckpoint</code>: Checkpoint, <code>justifiedBalances</code>: Gwei[]): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L573">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:573</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>justifiedCheckpoint</code></td>
+<td>Checkpoint</td>
+</tr>
+<tr>
+<td><code>justifiedBalances</code></td>
 <td>Gwei[]</td>
 </tr>
 </tbody>
@@ -1455,7 +1582,7 @@ processing due to the slot clock incrementing.</p>
 <h3 id="updatetime">updateTime<a class="headerlink" href="#updatetime" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>updateTime</strong>(<code>currentSlot</code>: Slot): <em>void</em></p>
 <p><em>Implementation of <a href="../../interfaces/forkchoice.iforkchoice/">IForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L433">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:433</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L466">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:466</a></em></p>
 <p>Call <code>onTick</code> for all slots between <code>fcStore.getCurrentSlot()</code> and the provided <code>currentSlot</code>.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1476,7 +1603,7 @@ processing due to the slot clock incrementing.</p>
 <hr />
 <h3 id="private-validateonattestation"><code>Private</code> validateOnAttestation<a class="headerlink" href="#private-validateonattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>validateOnAttestation</strong>(<code>indexedAttestation</code>: IndexedAttestation): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L585">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:585</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L651">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:651</a></em></p>
 <p>Validates the <code>indexed_attestation</code> for application to fork choice.</p>
 <h2 id="specification_6">Specification<a class="headerlink" href="#specification_6" title="Permanent link">&para;</a></h2>
 <p>Equivalent to:</p>
@@ -1500,7 +1627,7 @@ processing due to the slot clock incrementing.</p>
 <hr />
 <h3 id="static-fromcheckpointstate"><code>Static</code> fromCheckpointState<a class="headerlink" href="#static-fromcheckpointstate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fromCheckpointState</strong>(<code>config</code>: IBeaconConfig, <code>fcStore</code>: <a href="../../interfaces/forkchoice.iforkchoicestore/">IForkChoiceStore</a>, <code>anchorState</code>: BeaconState): <em><a href="./">ForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L122">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:122</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L136">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:136</a></em></p>
 <p>Instantiates a ForkChoice from a weak subjectivity state</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1529,7 +1656,7 @@ processing due to the slot clock incrementing.</p>
 <hr />
 <h3 id="static-fromgenesis"><code>Static</code> fromGenesis<a class="headerlink" href="#static-fromgenesis" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fromGenesis</strong>(<code>config</code>: IBeaconConfig, <code>fcStore</code>: <a href="../../interfaces/forkchoice.iforkchoicestore/">IForkChoiceStore</a>, <code>genesisBlock</code>: BeaconBlock): <em><a href="./">ForkChoice</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L101">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:101</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts#L115">packages/lodestar-fork-choice/src/forkChoice/forkChoice.ts:115</a></em></p>
 <p>Instantiates a ForkChoice from genesis parameters</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1626,15 +1753,15 @@ processing due to the slot clock incrementing.</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

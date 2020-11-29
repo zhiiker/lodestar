@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/network_peers/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -387,6 +389,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#enumerations" class="md-nav__link">
     Enumerations
   </a>
@@ -420,12 +429,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#functions_1" class="md-nav__link">
-    Functions
+  <a href="#references_1" class="md-nav__link">
+    References
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="References">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default_rpc_score" class="md-nav__link">
+    DEFAULT_RPC_SCORE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipeermetadatastore" class="md-nav__link">
+    IPeerMetadataStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#irpcscoretracker" class="md-nav__link">
+    IRpcScoreTracker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#libp2ppeermetadatastore" class="md-nav__link">
+    Libp2pPeerMetadataStore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpcscoreevent" class="md-nav__link">
+    RpcScoreEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplerpcscoretracker" class="md-nav__link">
+    SimpleRpcScoreTracker
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#findmissingsubnets" class="md-nav__link">
@@ -449,6 +500,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gossippeerstodisconnect" class="md-nav__link">
+    gossipPeersToDisconnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#handlepeermetadatasequence" class="md-nav__link">
     handlePeerMetadataSequence
   </a>
@@ -456,8 +514,63 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#selectpeerstodisconnect" class="md-nav__link">
-    selectPeersToDisconnect
+  <a href="#syncpeerstodisconnect" class="md-nav__link">
+    syncPeersToDisconnect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findmissingsubnets_1" class="md-nav__link">
+    findMissingSubnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getimportantpeers_1" class="md-nav__link">
+    getImportantPeers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpeerswithsubnet_1" class="md-nav__link">
+    getPeersWithSubnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gossippeerstodisconnect_1" class="md-nav__link">
+    gossipPeersToDisconnect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handlepeermetadatasequence_1" class="md-nav__link">
+    handlePeerMetadataSequence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncpeerstodisconnect_1" class="md-nav__link">
+    syncPeersToDisconnect
   </a>
   
 </li>
@@ -484,12 +597,24 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">network/peers</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">network/peers</a></p>
 <h1 id="module-networkpeers">Module: network/peers<a class="headerlink" href="#module-networkpeers" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#default_rpc_score">DEFAULT_RPC_SCORE</a></li>
+<li><a href="./#ipeermetadatastore">IPeerMetadataStore</a></li>
+<li><a href="./#irpcscoretracker">IRpcScoreTracker</a></li>
+<li><a href="./#libp2ppeermetadatastore">Libp2pPeerMetadataStore</a></li>
+<li><a href="./#rpcscoreevent">RpcScoreEvent</a></li>
+<li><a href="./#simplerpcscoretracker">SimpleRpcScoreTracker</a></li>
+<li><a href="./#findmissingsubnets">findMissingSubnets</a></li>
+<li><a href="./#getimportantpeers">getImportantPeers</a></li>
+<li><a href="./#getpeerswithsubnet">getPeersWithSubnet</a></li>
+<li><a href="./#gossippeerstodisconnect">gossipPeersToDisconnect</a></li>
+<li><a href="./#handlepeermetadatasequence">handlePeerMetadataSequence</a></li>
+<li><a href="./#syncpeerstodisconnect">syncPeersToDisconnect</a></li>
+</ul>
 <h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../../enums/network_peers.metadatakey/">MetadataKey</a></li>
@@ -508,13 +633,50 @@
 <li><a href="./#findmissingsubnets">findMissingSubnets</a></li>
 <li><a href="./#getimportantpeers">getImportantPeers</a></li>
 <li><a href="./#getpeerswithsubnet">getPeersWithSubnet</a></li>
+<li><a href="./#gossippeerstodisconnect">gossipPeersToDisconnect</a></li>
 <li><a href="./#handlepeermetadatasequence">handlePeerMetadataSequence</a></li>
-<li><a href="./#selectpeerstodisconnect">selectPeersToDisconnect</a></li>
+<li><a href="./#syncpeerstodisconnect">syncPeersToDisconnect</a></li>
 </ul>
-<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
+<h3 id="default_rpc_score">DEFAULT_RPC_SCORE<a class="headerlink" href="#default_rpc_score" title="Permanent link">&para;</a></h3>
+<p>• <strong>DEFAULT_RPC_SCORE</strong>:</p>
+<hr />
+<h3 id="ipeermetadatastore">IPeerMetadataStore<a class="headerlink" href="#ipeermetadatastore" title="Permanent link">&para;</a></h3>
+<p>• <strong>IPeerMetadataStore</strong>:</p>
+<hr />
+<h3 id="irpcscoretracker">IRpcScoreTracker<a class="headerlink" href="#irpcscoretracker" title="Permanent link">&para;</a></h3>
+<p>• <strong>IRpcScoreTracker</strong>:</p>
+<hr />
+<h3 id="libp2ppeermetadatastore">Libp2pPeerMetadataStore<a class="headerlink" href="#libp2ppeermetadatastore" title="Permanent link">&para;</a></h3>
+<p>• <strong>Libp2pPeerMetadataStore</strong>:</p>
+<hr />
+<h3 id="rpcscoreevent">RpcScoreEvent<a class="headerlink" href="#rpcscoreevent" title="Permanent link">&para;</a></h3>
+<p>• <strong>RpcScoreEvent</strong>:</p>
+<hr />
+<h3 id="simplerpcscoretracker">SimpleRpcScoreTracker<a class="headerlink" href="#simplerpcscoretracker" title="Permanent link">&para;</a></h3>
+<p>• <strong>SimpleRpcScoreTracker</strong>:</p>
+<hr />
 <h3 id="findmissingsubnets">findMissingSubnets<a class="headerlink" href="#findmissingsubnets" title="Permanent link">&para;</a></h3>
+<p>• <strong>findMissingSubnets</strong>:</p>
+<hr />
+<h3 id="getimportantpeers">getImportantPeers<a class="headerlink" href="#getimportantpeers" title="Permanent link">&para;</a></h3>
+<p>• <strong>getImportantPeers</strong>:</p>
+<hr />
+<h3 id="getpeerswithsubnet">getPeersWithSubnet<a class="headerlink" href="#getpeerswithsubnet" title="Permanent link">&para;</a></h3>
+<p>• <strong>getPeersWithSubnet</strong>:</p>
+<hr />
+<h3 id="gossippeerstodisconnect">gossipPeersToDisconnect<a class="headerlink" href="#gossippeerstodisconnect" title="Permanent link">&para;</a></h3>
+<p>• <strong>gossipPeersToDisconnect</strong>:</p>
+<hr />
+<h3 id="handlepeermetadatasequence">handlePeerMetadataSequence<a class="headerlink" href="#handlepeermetadatasequence" title="Permanent link">&para;</a></h3>
+<p>• <strong>handlePeerMetadataSequence</strong>:</p>
+<hr />
+<h3 id="syncpeerstodisconnect">syncPeersToDisconnect<a class="headerlink" href="#syncpeerstodisconnect" title="Permanent link">&para;</a></h3>
+<p>• <strong>syncPeersToDisconnect</strong>:</p>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="findmissingsubnets_1">findMissingSubnets<a class="headerlink" href="#findmissingsubnets_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>findMissingSubnets</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>): <em>number[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/network/peers/utils.ts#L50">packages/lodestar/src/network/peers/utils.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L51">packages/lodestar/src/network/peers/utils.ts:51</a></em></p>
 <p>Find subnets that we don't have at least 1 connected peer.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -533,9 +695,9 @@
 </table>
 <p><strong>Returns:</strong> <em>number[]</em></p>
 <hr />
-<h3 id="getimportantpeers">getImportantPeers<a class="headerlink" href="#getimportantpeers" title="Permanent link">&para;</a></h3>
+<h3 id="getimportantpeers_1">getImportantPeers<a class="headerlink" href="#getimportantpeers_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getImportantPeers</strong>(<code>peers</code>: PeerId[], <code>peerMetadata</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>): <em>Set‹PeerId›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/network/peers/utils.ts#L118">packages/lodestar/src/network/peers/utils.ts:118</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L143">packages/lodestar/src/network/peers/utils.ts:143</a></em></p>
 <p>Peers that should not be disconnected because they are the only connected to a certain subnet.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -561,9 +723,9 @@
 </table>
 <p><strong>Returns:</strong> <em>Set‹PeerId›</em></p>
 <hr />
-<h3 id="getpeerswithsubnet">getPeersWithSubnet<a class="headerlink" href="#getpeerswithsubnet" title="Permanent link">&para;</a></h3>
+<h3 id="getpeerswithsubnet_1">getPeersWithSubnet<a class="headerlink" href="#getpeerswithsubnet_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getPeersWithSubnet</strong>(<code>peers</code>: PeerId[], <code>peerMetadata</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>, <code>subnetStr</code>: string): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/network/peers/utils.ts#L9">packages/lodestar/src/network/peers/utils.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L10">packages/lodestar/src/network/peers/utils.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -589,42 +751,11 @@
 </table>
 <p><strong>Returns:</strong> <em>PeerId[]</em></p>
 <hr />
-<h3 id="handlepeermetadatasequence">handlePeerMetadataSequence<a class="headerlink" href="#handlepeermetadatasequence" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handlePeerMetadataSequence</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>logger</code>: ILogger, <code>peer</code>: PeerId, <code>metadataSeq</code>: BigInt | null): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/network/peers/utils.ts#L24">packages/lodestar/src/network/peers/utils.ts:24</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>network</code></td>
-<td><a href="../../interfaces/network.inetwork/">INetwork</a></td>
-</tr>
-<tr>
-<td><code>logger</code></td>
-<td>ILogger</td>
-</tr>
-<tr>
-<td><code>peer</code></td>
-<td>PeerId</td>
-</tr>
-<tr>
-<td><code>metadataSeq</code></td>
-<td>BigInt &#124; null</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="selectpeerstodisconnect">selectPeersToDisconnect<a class="headerlink" href="#selectpeerstodisconnect" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>selectPeersToDisconnect</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>newPeer</code>: number, <code>maxPeer</code>: number, <code>retainRatio</code>: number): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/network/peers/utils.ts#L76">packages/lodestar/src/network/peers/utils.ts:76</a></em></p>
-<p>If we're too close to maxPeer, we may want to disconnect some peers
+<h3 id="gossippeerstodisconnect_1">gossipPeersToDisconnect<a class="headerlink" href="#gossippeerstodisconnect_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>gossipPeersToDisconnect</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>newPeer</code>: number, <code>maxPeer</code>: number, <code>retainRatio</code>: number): <em>PeerId[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L104">packages/lodestar/src/network/peers/utils.ts:104</a></em></p>
+<p>This is supposed to be called when the node is synced.
+If we're too close to maxPeer, we may want to disconnect some peers
 before connecting to new peers with missing subnets.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -660,6 +791,61 @@ before connecting to new peers with missing subnets.</p>
 <td>number</td>
 <td>0.9</td>
 <td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>PeerId[]</em></p>
+<hr />
+<h3 id="handlepeermetadatasequence_1">handlePeerMetadataSequence<a class="headerlink" href="#handlepeermetadatasequence_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>handlePeerMetadataSequence</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>logger</code>: ILogger, <code>peer</code>: PeerId, <code>metadataSeq</code>: BigInt | null): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L25">packages/lodestar/src/network/peers/utils.ts:25</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>network</code></td>
+<td><a href="../../interfaces/network.inetwork/">INetwork</a></td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>ILogger</td>
+</tr>
+<tr>
+<td><code>peer</code></td>
+<td>PeerId</td>
+</tr>
+<tr>
+<td><code>metadataSeq</code></td>
+<td>BigInt &#124; null</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="syncpeerstodisconnect_1">syncPeersToDisconnect<a class="headerlink" href="#syncpeerstodisconnect_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>syncPeersToDisconnect</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>): <em>PeerId[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/network/peers/utils.ts#L73">packages/lodestar/src/network/peers/utils.ts:73</a></em></p>
+<p>Disconnect useless peers when node is syncing:
++ Disconnect all peers that do not support sync protocols
++ Disconnect half of bad score sync peers, gradually we'll only have good score sync peers.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>network</code></td>
+<td><a href="../../interfaces/network.inetwork/">INetwork</a></td>
 </tr>
 </tbody>
 </table>
@@ -735,15 +921,15 @@ before connecting to new peers with missing subnets.</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

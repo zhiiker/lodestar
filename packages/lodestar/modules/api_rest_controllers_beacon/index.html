@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_rest_controllers_beacon/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -414,6 +416,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getattesterslashings" class="md-nav__link">
+    getAttesterSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getblock" class="md-nav__link">
     getBlock
   </a>
@@ -463,8 +472,92 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getproposerslashings" class="md-nav__link">
+    getProposerSlashings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatebeaconcommittees" class="md-nav__link">
+    getStateBeaconCommittees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getstatefinalitycheckpoints" class="md-nav__link">
     getStateFinalityCheckpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatefork" class="md-nav__link">
+    getStateFork
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatevalidator" class="md-nav__link">
+    getStateValidator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatevalidators" class="md-nav__link">
+    getStateValidators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatevalidatorsbalances" class="md-nav__link">
+    getStateValidatorsBalances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvoluntaryexits" class="md-nav__link">
+    getVoluntaryExits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishblock" class="md-nav__link">
+    publishBlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitattesterslashing" class="md-nav__link">
+    submitAttesterSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitpoolattestation" class="md-nav__link">
+    submitPoolAttestation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitproposerslashing" class="md-nav__link">
+    submitProposerSlashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitvoluntaryexit" class="md-nav__link">
+    submitVoluntaryExit
   </a>
   
 </li>
@@ -532,14 +625,12 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">@chainsafe/lodestar</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon</a></p>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">api/rest/controllers/beacon</a></p>
 <h1 id="module-apirestcontrollersbeacon">Module: api/rest/controllers/beacon<a class="headerlink" href="#module-apirestcontrollersbeacon" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#getattesterslashings">getAttesterSlashings</a></li>
 <li><a href="./#getblock">getBlock</a></li>
 <li><a href="./#getblockattestations">getBlockAttestations</a></li>
 <li><a href="./#getblockheader">getBlockHeader</a></li>
@@ -547,13 +638,28 @@
 <li><a href="./#getblockroot">getBlockRoot</a></li>
 <li><a href="./#getgenesis">getGenesis</a></li>
 <li><a href="./#getpoolattestations">getPoolAttestations</a></li>
+<li><a href="./#getproposerslashings">getProposerSlashings</a></li>
+<li><a href="./#getstatebeaconcommittees">getStateBeaconCommittees</a></li>
 <li><a href="./#getstatefinalitycheckpoints">getStateFinalityCheckpoints</a></li>
+<li><a href="./#getstatefork">getStateFork</a></li>
+<li><a href="./#getstatevalidator">getStateValidator</a></li>
+<li><a href="./#getstatevalidators">getStateValidators</a></li>
+<li><a href="./#getstatevalidatorsbalances">getStateValidatorsBalances</a></li>
+<li><a href="./#getvoluntaryexits">getVoluntaryExits</a></li>
+<li><a href="./#publishblock">publishBlock</a></li>
+<li><a href="./#submitattesterslashing">submitAttesterSlashing</a></li>
+<li><a href="./#submitpoolattestation">submitPoolAttestation</a></li>
+<li><a href="./#submitproposerslashing">submitProposerSlashing</a></li>
+<li><a href="./#submitvoluntaryexit">submitVoluntaryExit</a></li>
 </ul>
 <h3 id="object-literals">Object literals<a class="headerlink" href="#object-literals" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#const-getgenesis">getGenesis</a></li>
 </ul>
 <h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
+<h3 id="getattesterslashings">getAttesterSlashings<a class="headerlink" href="#getattesterslashings" title="Permanent link">&para;</a></h3>
+<p>• <strong>getAttesterSlashings</strong>:</p>
+<hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
 <p>• <strong>getBlock</strong>:</p>
 <hr />
@@ -575,18 +681,54 @@
 <h3 id="getpoolattestations">getPoolAttestations<a class="headerlink" href="#getpoolattestations" title="Permanent link">&para;</a></h3>
 <p>• <strong>getPoolAttestations</strong>:</p>
 <hr />
+<h3 id="getproposerslashings">getProposerSlashings<a class="headerlink" href="#getproposerslashings" title="Permanent link">&para;</a></h3>
+<p>• <strong>getProposerSlashings</strong>:</p>
+<hr />
+<h3 id="getstatebeaconcommittees">getStateBeaconCommittees<a class="headerlink" href="#getstatebeaconcommittees" title="Permanent link">&para;</a></h3>
+<p>• <strong>getStateBeaconCommittees</strong>:</p>
+<hr />
 <h3 id="getstatefinalitycheckpoints">getStateFinalityCheckpoints<a class="headerlink" href="#getstatefinalitycheckpoints" title="Permanent link">&para;</a></h3>
 <p>• <strong>getStateFinalityCheckpoints</strong>:</p>
+<hr />
+<h3 id="getstatefork">getStateFork<a class="headerlink" href="#getstatefork" title="Permanent link">&para;</a></h3>
+<p>• <strong>getStateFork</strong>:</p>
+<hr />
+<h3 id="getstatevalidator">getStateValidator<a class="headerlink" href="#getstatevalidator" title="Permanent link">&para;</a></h3>
+<p>• <strong>getStateValidator</strong>:</p>
+<hr />
+<h3 id="getstatevalidators">getStateValidators<a class="headerlink" href="#getstatevalidators" title="Permanent link">&para;</a></h3>
+<p>• <strong>getStateValidators</strong>:</p>
+<hr />
+<h3 id="getstatevalidatorsbalances">getStateValidatorsBalances<a class="headerlink" href="#getstatevalidatorsbalances" title="Permanent link">&para;</a></h3>
+<p>• <strong>getStateValidatorsBalances</strong>:</p>
+<hr />
+<h3 id="getvoluntaryexits">getVoluntaryExits<a class="headerlink" href="#getvoluntaryexits" title="Permanent link">&para;</a></h3>
+<p>• <strong>getVoluntaryExits</strong>:</p>
+<hr />
+<h3 id="publishblock">publishBlock<a class="headerlink" href="#publishblock" title="Permanent link">&para;</a></h3>
+<p>• <strong>publishBlock</strong>:</p>
+<hr />
+<h3 id="submitattesterslashing">submitAttesterSlashing<a class="headerlink" href="#submitattesterslashing" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitAttesterSlashing</strong>:</p>
+<hr />
+<h3 id="submitpoolattestation">submitPoolAttestation<a class="headerlink" href="#submitpoolattestation" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitPoolAttestation</strong>:</p>
+<hr />
+<h3 id="submitproposerslashing">submitProposerSlashing<a class="headerlink" href="#submitproposerslashing" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitProposerSlashing</strong>:</p>
+<hr />
+<h3 id="submitvoluntaryexit">submitVoluntaryExit<a class="headerlink" href="#submitvoluntaryexit" title="Permanent link">&para;</a></h3>
+<p>• <strong>submitVoluntaryExit</strong>:</p>
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-getgenesis"><code>Const</code> getGenesis<a class="headerlink" href="#const-getgenesis" title="Permanent link">&para;</a></h3>
 <h3 id="getgenesis-object">▪ <strong>getGenesis</strong>: <em>object</em><a class="headerlink" href="#getgenesis-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L3">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L3">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:3</a></em></p>
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
-<p>• <strong>url</strong>: <em>string</em> = "/v1/beacon/genesis"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:4</a></em></p>
+<p>• <strong>url</strong>: <em>string</em> = "/genesis"</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L4">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:4</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, object, object, object, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:6</a></em></p>
+<p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L6">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -598,7 +740,7 @@
 <tbody>
 <tr>
 <td><code>req</code></td>
-<td>FastifyRequest‹IncomingMessage‹›, object, object, object, any›</td>
+<td>FastifyRequest‹IncomingMessage‹›, DefaultQuery, DefaultParams, DefaultHeaders, any›</td>
 </tr>
 <tr>
 <td><code>resp</code></td>
@@ -608,7 +750,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹FastifyReply‹ServerResponse‹›››</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L16">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts#L16">packages/lodestar/src/api/rest/controllers/beacon/getGenesis.ts:16</a></em></p>
 <ul>
 <li><strong>schema</strong>(): <em>object</em></li>
 </ul>
@@ -683,15 +825,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

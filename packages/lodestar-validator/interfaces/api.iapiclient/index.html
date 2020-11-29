@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-validator/interfaces/api.iapiclient/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -463,6 +465,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#clock" class="md-nav__link">
+    clock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genesisvalidatorsroot" class="md-nav__link">
+    genesisValidatorsRoot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#node" class="md-nav__link">
     node
   </a>
@@ -510,27 +533,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#getcurrentslot" class="md-nav__link">
-    getCurrentSlot
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#onnewepoch" class="md-nav__link">
-    onNewEpoch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#onnewslot" class="md-nav__link">
-    onNewSlot
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -553,9 +555,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <p><a href="../../">@chainsafe/lodestar-validator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/api/">api</a> › <a href="./">IApiClient</a></p>
 <h1 id="interface-iapiclient-t-u-v">Interface: IApiClient ‹<strong>T, U, V</strong>›<a class="headerlink" href="#interface-iapiclient-t-u-v" title="Permanent link">&para;</a></h1>
 <h2 id="type-parameters">Type parameters<a class="headerlink" href="#type-parameters" title="Permanent link">&para;</a></h2>
@@ -564,7 +563,7 @@
 <p>▪ <strong>V</strong></p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
-<li>TypeRecord‹EventEmitter‹›, <a href="../api.iapiclientevents/">IApiClientEvents</a>, <a href="../api.iapiclientevents/">IApiClientEvents</a>› &amp; object &amp; object</li>
+<li>StrictEventEmitter‹EventEmitter‹›, <a href="../api.iapiclientevents/">IApiClientEvents</a>, <a href="../api.iapiclientevents/">IApiClientEvents</a>, "addEventListener" | "removeEventListener", "on" | "addListener" | "removeListener" | "once" | "emit"›</li>
 </ul>
 <p>↳ <strong>IApiClient</strong></p>
 <h2 id="implemented-by">Implemented by<a class="headerlink" href="#implemented-by" title="Permanent link">&para;</a></h2>
@@ -580,6 +579,9 @@
 <li><a href="./#optional--_emittertype"> _emitterType</a></li>
 <li><a href="./#optional--_eventstype"> _eventsType</a></li>
 <li><a href="./#beacon">beacon</a></li>
+<li><a href="./#clock">clock</a></li>
+<li><a href="./#events">events</a></li>
+<li><a href="./#genesisvalidatorsroot">genesisValidatorsRoot</a></li>
 <li><a href="./#node">node</a></li>
 <li><a href="./#url">url</a></li>
 <li><a href="./#validator">validator</a></li>
@@ -588,9 +590,6 @@
 <ul>
 <li><a href="./#connect">connect</a></li>
 <li><a href="./#disconnect">disconnect</a></li>
-<li><a href="./#getcurrentslot">getCurrentSlot</a></li>
-<li><a href="./#onnewepoch">onNewEpoch</a></li>
-<li><a href="./#onnewslot">onNewSlot</a></li>
 </ul>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="optional-_emittype"><code>Optional</code>  _emitType<a class="headerlink" href="#optional-_emittype" title="Permanent link">&para;</a></h3>
@@ -610,84 +609,43 @@
 <hr />
 <h3 id="beacon">beacon<a class="headerlink" href="#beacon" title="Permanent link">&para;</a></h3>
 <p>• <strong>beacon</strong>: <em><a href="../api_interface.ibeaconapi/">IBeaconApi</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L23">packages/lodestar-validator/src/api/interface.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L27">packages/lodestar-validator/src/api/interface.ts:27</a></em></p>
+<hr />
+<h3 id="clock">clock<a class="headerlink" href="#clock" title="Permanent link">&para;</a></h3>
+<p>• <strong>clock</strong>: <em><a href="../api.ibeaconclock/">IBeaconClock</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L31">packages/lodestar-validator/src/api/interface.ts:31</a></em></p>
+<hr />
+<h3 id="events">events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
+<p>• <strong>events</strong>: <em><a href="../api_interface.ieventsapi/">IEventsApi</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L29">packages/lodestar-validator/src/api/interface.ts:29</a></em></p>
+<hr />
+<h3 id="genesisvalidatorsroot">genesisValidatorsRoot<a class="headerlink" href="#genesisvalidatorsroot" title="Permanent link">&para;</a></h3>
+<p>• <strong>genesisValidatorsRoot</strong>: <em><a href="../../modules/reflection-10491.reflection-10492._.reflection-10494._lodestar_types_src_types/#root">Root</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L32">packages/lodestar-validator/src/api/interface.ts:32</a></em></p>
 <hr />
 <h3 id="node">node<a class="headerlink" href="#node" title="Permanent link">&para;</a></h3>
 <p>• <strong>node</strong>: <em><a href="../api_interface.inodeapi/">INodeApi</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L25">packages/lodestar-validator/src/api/interface.ts:25</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L28">packages/lodestar-validator/src/api/interface.ts:28</a></em></p>
 <hr />
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
 <p>• <strong>url</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L29">packages/lodestar-validator/src/api/interface.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L33">packages/lodestar-validator/src/api/interface.ts:33</a></em></p>
 <hr />
 <h3 id="validator">validator<a class="headerlink" href="#validator" title="Permanent link">&para;</a></h3>
 <p>• <strong>validator</strong>: <em><a href="../api_interface.ivalidatorapi/">IValidatorApi</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L27">packages/lodestar-validator/src/api/interface.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L30">packages/lodestar-validator/src/api/interface.ts:30</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="connect">connect<a class="headerlink" href="#connect" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>connect</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L34">packages/lodestar-validator/src/api/interface.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L38">packages/lodestar-validator/src/api/interface.ts:38</a></em></p>
 <p>Initiates connection to rpc server.</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="disconnect">disconnect<a class="headerlink" href="#disconnect" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>disconnect</strong>(): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L39">packages/lodestar-validator/src/api/interface.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-validator/src/api/interface.ts#L43">packages/lodestar-validator/src/api/interface.ts:43</a></em></p>
 <p>Destroys connection to rpc server.</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
-<hr />
-<h3 id="getcurrentslot">getCurrentSlot<a class="headerlink" href="#getcurrentslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getCurrentSlot</strong>(): <em>Slot</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L41">packages/lodestar-validator/src/api/interface.ts:41</a></em></p>
-<p><strong>Returns:</strong> <em>Slot</em></p>
-<hr />
-<h3 id="onnewepoch">onNewEpoch<a class="headerlink" href="#onnewepoch" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onNewEpoch</strong>(<code>cb</code>: <a href="../api.inewepochcallback/">INewEpochCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L55">packages/lodestar-validator/src/api/interface.ts:55</a></em></p>
-<p>Invokes callback on new epoch.
-Depending on implementation it will poll for new epoch or getting notified(Websockets)</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../api.inewepochcallback/">INewEpochCallback</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
-<h3 id="onnewslot">onNewSlot<a class="headerlink" href="#onnewslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onNewSlot</strong>(<code>cb</code>: <a href="../api.inewslotcallback/">INewSlotCallback</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-validator/src/api/interface.ts#L48">packages/lodestar-validator/src/api/interface.ts:48</a></em></p>
-<p>Invokes callback on new slot.
-Depending on implementation it will poll for new slot or getting notified(Websockets)</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>cb</code></td>
-<td><a href="../api.inewslotcallback/">INewSlotCallback</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
                 
               
               
@@ -759,15 +717,15 @@ Depending on implementation it will poll for new slot or getting notified(Websoc
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

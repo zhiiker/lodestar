@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/">
       
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,18 +52,20 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#chainsafelodestar" class="md-skip">
+        <a href="#event-iterator" class="md-skip">
           Skip to content
         </a>
       
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Getting started" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Packages" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -387,32 +389,304 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="./">@chainsafe/lodestar</a> › <a href="globals/">Globals</a></p>
-<h1 id="chainsafelodestar">@chainsafe/lodestar<a class="headerlink" href="#chainsafelodestar" title="Permanent link">&para;</a></h1>
-<h1 id="lodestar">Lodestar<a class="headerlink" href="#lodestar" title="Permanent link">&para;</a></h1>
-<p><a href="https://travis-ci.com/ChainSafe/lodestar"><img alt="" src="https://img.shields.io/travis/com/ChainSafe/lodestar/master.svg?label=master&amp;logo=travis" title="Master Branch (Travis)" /></a>
-<a href="https://discord.gg/aMxzVcr"><img alt="Discord" src="https://img.shields.io/discord/593655374469660673.svg?label=Discord&amp;logo=discord" /></a>
-<img alt="ETH2.0_Spec_Version 0.12.1" src="https://img.shields.io/badge/ETH2.0_Spec_Version-0.12.1-2e86c1.svg" />
-<img alt="ES Version" src="https://img.shields.io/badge/ES-2020-yellow" />
-<img alt="Node Version" src="https://img.shields.io/badge/node-12.x-green" /></p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+                <p><a href="./">event-iterator</a> › <a href="globals/">Globals</a></p>
+<h1 id="event-iterator">event-iterator<a class="headerlink" href="#event-iterator" title="Permanent link">&para;</a></h1>
+<h1 id="eventiterator-convert-any-js-event-emitter-to-async-iterators">EventIterator: convert any JS event emitter to async iterators<a class="headerlink" href="#eventiterator-convert-any-js-event-emitter-to-async-iterators" title="Permanent link">&para;</a></h1>
+<h2 id="highlights">Highlights<a class="headerlink" href="#highlights" title="Permanent link">&para;</a></h2>
+<p><code>EventIterator</code> is a small module that greatly simplifies converting event
+emitters, event targets, and similar objects into EcmaScript async iterators. It
+works in browser and Node.js environments.</p>
+<p>As a bonus you get utility functions:</p>
 <ul>
-<li><a href="https://github.com/lerna/lerna">Lerna</a></li>
-<li><a href="https://yarnpkg.com/">Yarn</a></li>
+<li><code>subscribe</code> to subscribe to events on a DOM event target with an async iterator</li>
+<li><code>stream</code> to consume data from a Node.js readable stream as an async iterator</li>
 </ul>
-<h2 id="what-you-need">What you need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h2>
-<p>You will need to go over the <a href="https://github.com/ethereum/eth2.0-specs">specification</a>. You will also need to have a <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQs">basic understanding of sharding</a>.</p>
-<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h2 id="basic-examples">Basic examples<a class="headerlink" href="#basic-examples" title="Permanent link">&para;</a></h2>
+<p>For client-side browser events:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="s2">&quot;core-js/es7/symbol&quot;</span> <span class="cm">/* If necessary */</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">subscribe</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+<span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;a.example&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">click</span> <span class="k">of</span> <span class="nx">subscribe</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">))</span> <span class="p">{</span>
+  <span class="cm">/* Asynchronously iterate over click events on the element. */</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>For server-side Node.js events:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="s2">&quot;core-js/es7/symbol&quot;</span> <span class="cm">/* If necessary */</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">stream</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+<span class="kr">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;fs&quot;</span><span class="p">).</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;example-file&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span>
+  <span class="cm">/* Asynchronously iterate over buffer chunks read from file. */</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="advanced-examples">Advanced examples<a class="headerlink" href="#advanced-examples" title="Permanent link">&para;</a></h2>
+<p>Let's look at how <code>subscribe()</code> and <code>stream()</code> are implemented.</p>
+<p>For client-side browser events:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="s2">&quot;core-js/es7/symbol&quot;</span> <span class="cm">/* If necessary */</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">EventIterator</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">subscribe</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* &quot;this&quot; refers to a DOM event target. */</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nx">EventIterator</span><span class="p">(</span>
+    <span class="p">({</span><span class="nx">push</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">push</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
+      <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">push</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>For server-side Node.js events:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="s2">&quot;core-js/es7/symbol&quot;</span> <span class="cm">/* If necessary */</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">EventIterator</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">stream</span><span class="p">()</span> <span class="p">{</span>
+  <span class="cm">/* &quot;this&quot; refers to a Node.js readable stream. */</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nx">EventIterator</span><span class="p">(</span>
+    <span class="nx">queue</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">push</span><span class="p">)</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">stop</span><span class="p">)</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">fail</span><span class="p">)</span>
+
+      <span class="nx">queue</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;highWater&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">pause</span><span class="p">())</span>
+      <span class="nx">queue</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;lowWater&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">resume</span><span class="p">())</span>
+
+      <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">push</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;close&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">stop</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">queue</span><span class="p">.</span><span class="nx">fail</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">destroy</span><span class="p">()</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="backpressure">Backpressure<a class="headerlink" href="#backpressure" title="Permanent link">&para;</a></h3>
+<p>If you cannot reasonably consume all emitted events with your async iterator;
+the internal <code>EventIterator</code> queue can fill up indefinitely.</p>
+<p>A warning will be emitted when the queue reaches the high water mark (100 items
+by default).</p>
+<p>However, if you are able to control the event stream then you can listen to the
+<code>highWater</code>, and <code>lowWater</code> events to exert backpressure.</p>
+<p>When these events are emitted can be changed or disabled by setting
+<code>highWaterMark</code> and <code>lowWaterMark</code> in the options of the <code>EventIterator</code>
+constructor.</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span><span class="nx">EventIterator</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+
+<span class="kr">const</span> <span class="nx">eventIterator</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EventIterator</span><span class="p">(</span>
+  <span class="p">({</span><span class="nx">push</span><span class="p">,</span> <span class="nx">on</span><span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;fs&quot;</span><span class="p">).</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;example-file&quot;</span><span class="p">)</span>
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">push</span><span class="p">)</span>
+    <span class="nx">on</span><span class="p">(</span><span class="s2">&quot;highWater&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">file</span><span class="p">.</span><span class="nx">pause</span><span class="p">())</span>
+    <span class="nx">on</span><span class="p">(</span><span class="s2">&quot;lowWater&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">file</span><span class="p">.</span><span class="nx">resume</span><span class="p">())</span>
+    <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">file</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">push</span><span class="p">)</span>
+  <span class="p">},</span>
+  <span class="p">{</span><span class="nx">highWaterMark</span><span class="o">:</span> <span class="mf">10</span><span class="p">,</span> <span class="nx">lowWaterMark</span><span class="o">:</span> <span class="mf">5</span><span class="p">}</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h2 id="api-specification">API specification<a class="headerlink" href="#api-specification" title="Permanent link">&para;</a></h2>
+<p>Create a new event iterator with <code>new EventIterator(listen)</code>. This
+object implements the async iterator protocol by having a <code>Symbol.asyncIterator</code>
+property.</p>
+<p>Note: you must set up any <code>Symbol.asyncIterator</code> polyfills <strong>before</strong> importing
+<code>EventIterator</code>.</p>
+<p>The <code>listen</code> handler is called every time a new iterator is created to set up
+your event listeners. The optional <code>remove</code> handler is called when the event
+listeners need to be removed. The <code>listen</code> handler returns the <code>remove</code>
+handler, making it easy to call <code>addListener</code>/<code>removeListener</code> or similar
+functions.</p>
+<p>Type definitions:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Queue</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="nx">push</span><span class="p">(</span><span class="nx">value</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span>
+  <span class="nx">stop</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span>
+  <span class="nx">fail</span><span class="p">(</span><span class="nx">error</span>: <span class="kt">Error</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span>
+  <span class="nx">on</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span> <span class="s2">&quot;highWater&quot;</span> <span class="o">|</span> <span class="s2">&quot;lowWater&quot;</span><span class="p">,</span> <span class="nx">fn</span><span class="o">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">void</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="nx">type</span> <span class="nx">RemoveHandler</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">void</span>
+<span class="kr">export</span> <span class="nx">type</span> <span class="nx">ListenHandler</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">(</span><span class="nx">queue</span>: <span class="kt">Queue</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="k">void</span> <span class="o">|</span> <span class="nx">RemoveHandler</span>
+
+<span class="cm">/* High water mark defaults to 100. Set to undefined to disable warnings. */</span>
+<span class="kr">interface</span> <span class="nx">EventIteratorOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">highWaterMark?</span>: <span class="kt">number</span><span class="p">,</span>
+  <span class="nx">lowWaterMark?</span>: <span class="kt">number</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="kr">class</span> <span class="nx">EventIterator</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">ListenHandler</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">options?</span>: <span class="kt">EventIteratorOptions</span><span class="p">)</span>
+
+    <span class="p">[</span><span class="nx">Symbol</span><span class="p">.</span><span class="nx">asyncIterator</span><span class="p">]()</span><span class="o">:</span> <span class="nx">AsyncIterator</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>The <code>EventIterator</code> class is an adapter to transform any browser or Node.js
+event emitter into an async iterator that iterates over events.</p>
+<p>Imagine you have a bunch of text files and in Node.js and you want to decide
+whether they are longer or shorter than a certain number of lines. The files
+should not be binary to avoid cluttering the results. To be more specific, we
+want a function that will:</p>
 <ul>
-<li>Follow the <a href="https://chainsafe.github.io/lodestar/installation">installation guide</a> to install Lodestar.</li>
-<li>Quickly try out the whole stack by <a href="https://chainsafe.github.io/lodestar/usage">starting a local testnet</a>.</li>
-<li>View the <a href="https://chainsafe.github.io/lodestar/packages">typedoc code docs</a>.</li>
+<li>return <code>true</code> if the number of lines is 1000 or greater</li>
+<li>return <code>false</code> if the number of lines is less than 1000</li>
+<li>throw an exception if the file appears to be binary (contains NULL bytes)</li>
+<li>returns as quickly as possible</li>
+<li>conserves memory by not reading entire files at once</li>
 </ul>
-<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
-<p>Read our <a href="/CONTRIBUTING.md">contributors document</a>, <a href="https://github.com/ChainSafe/lodestar/issues/new/choose">submit an issue</a> or talk to us on our <a href="https://discord.gg/yjyvFRP">discord</a>!</p>
+<p>A naive solution would look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">function</span> <span class="nx">countLines</span><span class="p">(</span><span class="nx">buffer</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">buffer</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s2">&quot;\0&quot;</span><span class="p">))</span> <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&quot;Binary file!&quot;</span><span class="p">)</span>
+  <span class="k">return</span> <span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\n/g</span><span class="p">)</span> <span class="o">||</span> <span class="p">[]).</span><span class="nx">length</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">lines</span> <span class="o">=</span> <span class="mf">1</span>
+
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">chunk</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">lines</span> <span class="o">+=</span> <span class="nx">countLines</span><span class="p">(</span><span class="nx">chunk</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">resolve</span><span class="p">(</span><span class="nx">lines</span> <span class="o">&gt;=</span> <span class="mf">1000</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Unfortunately, this solution has some problems:</p>
+<ul>
+<li>the entire file is read even if the file is way longer than 1000 lines</li>
+<li>the entire file is read even if an exception occurs (a NULL byte was found)</li>
+<li>multiple exceptions can be thrown if NULL bytes are found in multiple chunks</li>
+</ul>
+<p>So we improve our solution, and we arrive at something like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">function</span> <span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">lines</span> <span class="o">=</span> <span class="mf">1</span>
+
+  <span class="kr">const</span> <span class="nx">isLong</span> <span class="o">=</span> <span class="nx">n</span> <span class="p">=&gt;</span> <span class="nx">n</span> <span class="o">&gt;=</span> <span class="mf">1000</span>
+
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">chunk</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">try</span> <span class="p">{</span>
+        <span class="nx">lines</span> <span class="o">+=</span> <span class="nx">countLines</span><span class="p">(</span><span class="nx">chunk</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">isLong</span><span class="p">(</span><span class="nx">lines</span><span class="p">))</span> <span class="p">{</span>
+          <span class="nx">file</span><span class="p">.</span><span class="nx">close</span><span class="p">()</span>
+          <span class="nx">resolve</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+        <span class="p">}</span>
+      <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">file</span><span class="p">.</span><span class="nx">destroy</span><span class="p">()</span>
+        <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">resolve</span><span class="p">(</span><span class="nx">isLong</span><span class="p">(</span><span class="nx">lines</span><span class="p">))</span>
+    <span class="p">})</span>
+
+    <span class="nx">file</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre></div>
+
+<p>This works and we're happy to have solved the problem!</p>
+<p>But what if there were a nicer way to do this? Async iterators sure seem like a
+nice fit for this problem. They are a stage 3 EcmaScript proposal and can be
+used by using TypeScript or Babel.</p>
+<p>A similar solution using async iterators could look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">function</span> <span class="nx">async</span> <span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">lines</span> <span class="o">=</span> <span class="mf">1</span>
+  <span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// or file::stream()</span>
+    <span class="nx">lines</span> <span class="o">+=</span> <span class="nx">countLines</span><span class="p">(</span><span class="nx">chunk</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">lines</span> <span class="o">&gt;</span> <span class="mf">1000</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="kc">false</span>
+<span class="p">}</span>
+
+<span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)).</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+</code></pre></div>
+
+<p>The question is: how do you create an async iterator from a readable stream?
+Conceptually they are very similar; they both:</p>
+<ul>
+<li>can signal that a next value is available</li>
+<li>can signal when the end has been reached</li>
+<li>can emit an error, after which no new values will become available</li>
+</ul>
+<p>Async iterators have a few additional advantages that translate in simpler code:</p>
+<ul>
+<li>early returns and exceptions will stop the iterator and release resources</li>
+<li>exceptions in the iterator and in calling code can be handled without additional boilerplate</li>
+</ul>
+<p>So how do you transform a readble stream into an async iterator? With an <code>EventIterator</code>.</p>
+<p>We can define the <code>stream</code> function above as:</p>
+<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span><span class="nx">EventIterator</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
+
+<span class="kd">function</span> <span class="nx">stream</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nx">EventIterator</span><span class="p">(</span>
+    <span class="p">({</span> <span class="nx">push</span><span class="p">,</span> <span class="nx">stop</span><span class="p">,</span> <span class="nx">fail</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">push</span><span class="p">)</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="nx">stop</span><span class="p">)</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">fail</span><span class="p">)</span>
+
+      <span class="k">return</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="nx">push</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span> <span class="nx">stop</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">removeListener</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="nx">fail</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">destroy</span><span class="p">()</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>The <code>EventIterator</code> takes care of:</p>
+<ul>
+<li>conforming to the async iterator spec</li>
+<li>returning placeholder promises to the async iterator if no value is available</li>
+<li>queueing values when more data is ready than consumed by the iterator</li>
+<li>installing callbacks to release resources so you can remove any listener handlers or do other cleanup</li>
+</ul>
+<p>Why create an abstract <code>EventIterator</code> that requires you to define your own
+integration code? Several reasons:</p>
+<ul>
+<li>the event emitters as defined by Node.js have a different API than the event targets as defined in the DOM</li>
+<li>the events that you are interested in may have different names depending on your use case</li>
+<li>you may want to specify custom behaviour when the iterator throws or returns early</li>
+</ul>
+<h2 id="licensed-under-mit-license">Licensed under MIT license<a class="headerlink" href="#licensed-under-mit-license" title="Permanent link">&para;</a></h2>
+<p>Copyright (c) 2017-2020 Rolf Timmermans</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
                 
               
               
@@ -484,15 +758,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

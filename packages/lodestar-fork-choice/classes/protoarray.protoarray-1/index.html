@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-fork-choice/classes/protoarray.protoarray-1/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -531,6 +533,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getnodesbetween" class="md-nav__link">
+    getNodesBetween
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#hasblock" class="md-nav__link">
     hasBlock
   </a>
@@ -547,6 +556,13 @@
           <li class="md-nav__item">
   <a href="#iteratenodes" class="md-nav__link">
     iterateNodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteratenonancestornodes" class="md-nav__link">
+    iterateNonAncestorNodes
   </a>
   
 </li>
@@ -587,9 +603,6 @@
                   </a>
                 
                 
-                  
-                
-                
                 <p><a href="../../">@chainsafe/lodestar-fork-choice</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/protoarray/">protoArray</a> › <a href="./">ProtoArray</a></p>
 <h1 id="class-protoarray">Class: ProtoArray<a class="headerlink" href="#class-protoarray" title="Permanent link">&para;</a></h1>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
@@ -616,9 +629,11 @@
 <li><a href="./#getblock">getBlock</a></li>
 <li><a href="./#getnode">getNode</a></li>
 <li><a href="./#getnodebyindex">getNodeByIndex</a></li>
+<li><a href="./#getnodesbetween">getNodesBetween</a></li>
 <li><a href="./#hasblock">hasBlock</a></li>
 <li><a href="./#isdescendant">isDescendant</a></li>
 <li><a href="./#iteratenodes">iterateNodes</a></li>
+<li><a href="./#iteratenonancestornodes">iterateNonAncestorNodes</a></li>
 <li><a href="./#length">length</a></li>
 <li><a href="./#maybeprune">maybePrune</a></li>
 <li><a href="./#maybeupdatebestchildanddescendant">maybeUpdateBestChildAndDescendant</a></li>
@@ -631,7 +646,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new ProtoArray</strong>(<code>__namedParameters</code>: object): <em><a href="./">ProtoArray</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L15">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L15">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -660,27 +675,27 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="finalizedepoch">finalizedEpoch<a class="headerlink" href="#finalizedepoch" title="Permanent link">&para;</a></h3>
 <p>• <strong>finalizedEpoch</strong>: <em>Epoch</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L13">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:13</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L13">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:13</a></em></p>
 <hr />
 <h3 id="indices">indices<a class="headerlink" href="#indices" title="Permanent link">&para;</a></h3>
 <p>• <strong>indices</strong>: <em>Map‹<a href="../../modules/protoarray/#hexroot">HexRoot</a>, number›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L15">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L15">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:15</a></em></p>
 <hr />
 <h3 id="justifiedepoch">justifiedEpoch<a class="headerlink" href="#justifiedepoch" title="Permanent link">&para;</a></h3>
 <p>• <strong>justifiedEpoch</strong>: <em>Epoch</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L12">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L12">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:12</a></em></p>
 <hr />
 <h3 id="nodes">nodes<a class="headerlink" href="#nodes" title="Permanent link">&para;</a></h3>
 <p>• <strong>nodes</strong>: <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L14">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L14">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:14</a></em></p>
 <hr />
 <h3 id="prunethreshold">pruneThreshold<a class="headerlink" href="#prunethreshold" title="Permanent link">&para;</a></h3>
 <p>• <strong>pruneThreshold</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L11">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L11">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:11</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="applyscorechanges">applyScoreChanges<a class="headerlink" href="#applyscorechanges" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>applyScoreChanges</strong>(<code>deltas</code>: Gwei[], <code>justifiedEpoch</code>: Epoch, <code>finalizedEpoch</code>: Epoch): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L82">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:82</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L82">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:82</a></em></p>
 <p>Iterate backwards through the array, touching all nodes and their parents and potentially
 the best-child of each parent.</p>
 <p>The structure of the <code>self.nodes</code> array ensures that the child of each node is always
@@ -720,7 +735,7 @@ should become the best child.</li>
 <hr />
 <h3 id="findhead">findHead<a class="headerlink" href="#findhead" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>findHead</strong>(<code>justifiedRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../modules/protoarray/#hexroot">HexRoot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L180">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:180</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L180">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:180</a></em></p>
 <p>Follows the best-descendant links to find the best-block (i.e., head-block).</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -741,7 +756,7 @@ should become the best child.</li>
 <hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlock</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L509">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:509</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L561">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:561</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -761,7 +776,7 @@ should become the best child.</li>
 <hr />
 <h3 id="getnode">getNode<a class="headerlink" href="#getnode" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getNode</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L501">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:501</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L553">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:553</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -781,7 +796,7 @@ should become the best child.</li>
 <hr />
 <h3 id="getnodebyindex">getNodeByIndex<a class="headerlink" href="#getnodebyindex" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getNodeByIndex</strong>(<code>blockIndex</code>: number): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a> | undefined</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L492">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:492</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L529">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:529</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -799,9 +814,33 @@ should become the best child.</li>
 </table>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a> | undefined</em></p>
 <hr />
+<h3 id="getnodesbetween">getNodesBetween<a class="headerlink" href="#getnodesbetween" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getNodesBetween</strong>(<code>upperIndex</code>: number, <code>lowerIndex</code>: number): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L538">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:538</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>upperIndex</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>lowerIndex</code></td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
+<hr />
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L488">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:488</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L525">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:525</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -821,7 +860,7 @@ should become the best child.</li>
 <hr />
 <h3 id="isdescendant">isDescendant<a class="headerlink" href="#isdescendant" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isDescendant</strong>(<code>ancestorRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>, <code>descendantRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L524">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:524</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L576">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:576</a></em></p>
 <p>Returns <code>true</code> if the <code>descendantRoot</code> has an ancestor with <code>ancestorRoot</code>.
 Always returns <code>false</code> if either input roots are unknown.
 Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendantRoot</code> (and the roots are known)</p>
@@ -848,8 +887,31 @@ Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendan
 <hr />
 <h3 id="iteratenodes">iterateNodes<a class="headerlink" href="#iteratenodes" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>iterateNodes</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L450">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:450</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L450">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:450</a></em></p>
 <p>Iterate from a block root backwards over nodes</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>blockRoot</code></td>
+<td><a href="../../modules/protoarray/#hexroot">HexRoot</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
+<hr />
+<h3 id="iteratenonancestornodes">iterateNonAncestorNodes<a class="headerlink" href="#iteratenonancestornodes" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>iterateNonAncestorNodes</strong>(<code>blockRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L483">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:483</a></em></p>
+<p>The opposite of iterateNodes.
+iterateNodes is to find ancestor nodes of a blockRoot.
+this is to find non-ancestor nodes of a blockRoot.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -869,12 +931,12 @@ Still returns <code>true</code> if <code>ancestorRoot</code> === <code>descendan
 <hr />
 <h3 id="length">length<a class="headerlink" href="#length" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>length</strong>(): <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L540">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:540</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L592">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:592</a></em></p>
 <p><strong>Returns:</strong> <em>number</em></p>
 <hr />
 <h3 id="maybeprune">maybePrune<a class="headerlink" href="#maybeprune" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>maybePrune</strong>(<code>finalizedRoot</code>: <a href="../../modules/protoarray/#hexroot">HexRoot</a>): <em><a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L238">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:238</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L238">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:238</a></em></p>
 <p>Update the tree with new finalization information. The tree is only actually pruned if both
 of the two following criteria are met:</p>
 <ul>
@@ -907,7 +969,7 @@ of the two following criteria are met:</p>
 <hr />
 <h3 id="maybeupdatebestchildanddescendant">maybeUpdateBestChildAndDescendant<a class="headerlink" href="#maybeupdatebestchildanddescendant" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>maybeUpdateBestChildAndDescendant</strong>(<code>parentIndex</code>: number, <code>childIndex</code>: number): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L325">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:325</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L325">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:325</a></em></p>
 <p>Observe the parent at <code>parent_index</code> with respect to the child at <code>child_index</code> and
 potentially modify the <code>parent.best_child</code> and <code>parent.best_descendant</code> values.</p>
 <h2 id="detail">Detail<a class="headerlink" href="#detail" title="Permanent link">&para;</a></h2>
@@ -942,7 +1004,7 @@ best-descendant.</li>
 <hr />
 <h3 id="nodeisviableforhead">nodeIsViableForHead<a class="headerlink" href="#nodeisviableforhead" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>nodeIsViableForHead</strong>(<code>node</code>: <a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L440">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:440</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L440">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:440</a></em></p>
 <p>This is the equivalent to the <code>filter_block_tree</code> function in the eth2 spec:</p>
 <p>https://github.com/ethereum/eth2.0-specs/blob/v0.12.2/specs/phase0/fork-choice.md#filter_block_tree</p>
 <p>Any node that has a different finalized or justified epoch should not be viable for the
@@ -966,7 +1028,7 @@ head.</p>
 <hr />
 <h3 id="nodeleadstoviablehead">nodeLeadsToViableHead<a class="headerlink" href="#nodeleadstoviablehead" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>nodeLeadsToViableHead</strong>(<code>node</code>: <a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L413">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:413</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L413">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:413</a></em></p>
 <p>Indicates if the node itself is viable for the head, or if it's best descendant is viable
 for the head.</p>
 <p><strong>Parameters:</strong></p>
@@ -988,7 +1050,7 @@ for the head.</p>
 <hr />
 <h3 id="nodesatslot">nodesAtSlot<a class="headerlink" href="#nodesatslot" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>nodesAtSlot</strong>(<code>slot</code>: Slot): <em><a href="../../interfaces/protoarray.iprotonode/">IProtoNode</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L478">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:478</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L515">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:515</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1008,7 +1070,7 @@ for the head.</p>
 <hr />
 <h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onBlock</strong>(<code>block</code>: <a href="../../interfaces/protoarray.iprotoblock/">IProtoBlock</a>): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L148">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:148</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L148">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:148</a></em></p>
 <p>Register a block with the fork choice.</p>
 <p>It is only sane to supply an undefined parent for the genesis block</p>
 <p><strong>Parameters:</strong></p>
@@ -1030,7 +1092,7 @@ for the head.</p>
 <hr />
 <h3 id="static-initialize"><code>Static</code> initialize<a class="headerlink" href="#static-initialize" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>initialize</strong>(<code>__namedParameters</code>: object): <em><a href="./">ProtoArray</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L33">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:33</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-fork-choice/src/protoArray/protoArray.ts#L33">packages/lodestar-fork-choice/src/protoArray/protoArray.ts:33</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -1139,15 +1201,15 @@ for the head.</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

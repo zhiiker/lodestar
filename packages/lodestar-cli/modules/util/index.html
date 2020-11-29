@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -12,11 +9,12 @@
         <meta name="description" content="Lodestar documentation - Typescript Eth2.0 client">
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/modules/util/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
     
     
       
@@ -24,15 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d3202873.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6910b76c.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,11 +52,13 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="" data-md-color-accent="black">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -72,7 +74,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-header-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -105,7 +109,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
@@ -146,8 +150,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -158,7 +160,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://chainsafe.github.io/lodestar" title="Lodestar documentation" class="md-nav__button md-logo" aria-label="Lodestar documentation">
       
@@ -189,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Getting started" class="md-nav__link">
+    <a href="../../../.." class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -201,7 +205,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../installation/" title="Installation" class="md-nav__link">
+    <a href="../../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -214,8 +218,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/medalla/" title="Medalla testnet" class="md-nav__link">
+    <a href="../../../../usage/medalla/" class="md-nav__link">
       Medalla testnet
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/altona/" title="Altona testnet" class="md-nav__link">
+    <a href="../../../../usage/altona/" class="md-nav__link">
       Altona testnet
     </a>
   </li>
@@ -258,7 +261,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/local/" title="Local testnet" class="md-nav__link">
+    <a href="../../../../usage/local/" class="md-nav__link">
       Local testnet
     </a>
   </li>
@@ -270,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/key-management/" title="Key management" class="md-nav__link">
+    <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
     </a>
   </li>
@@ -282,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../usage/prometheus-grafana/" title="Prometheus & Grafana Setup" class="md-nav__link">
+    <a href="../../../../usage/prometheus-grafana/" class="md-nav__link">
       Prometheus & Grafana Setup
     </a>
   </li>
@@ -300,8 +303,7 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -320,7 +322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../reference/cli/" title="Command line" class="md-nav__link">
+    <a href="../../../../reference/cli/" class="md-nav__link">
       Command line
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../" title="Packages" class="md-nav__link">
+    <a href="../../../" class="md-nav__link">
       Packages
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../../../contributing/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -470,6 +472,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#objectkeys" class="md-nav__link">
+    ObjectKeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursivepartial" class="md-nav__link">
+    RecursivePartial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#yargserror" class="md-nav__link">
     YargsError
   </a>
@@ -477,15 +493,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ensuredirexists" class="md-nav__link">
-    ensureDirExists
+  <a href="#add0xprefix" class="md-nav__link">
+    add0xPrefix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getbeaconconfig" class="md-nav__link">
-    getBeaconConfig
+  <a href="#downloadfile" class="md-nav__link">
+    downloadFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadorcopyfile" class="md-nav__link">
+    downloadOrCopyFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadorloadfile" class="md-nav__link">
+    downloadOrLoadFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensuredirexists" class="md-nav__link">
+    ensureDirExists
   </a>
   
 </li>
@@ -500,13 +537,6 @@
           <li class="md-nav__item">
   <a href="#getetherssigner" class="md-nav__link">
     getEthersSigner
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getsubobject" class="md-nav__link">
-    getSubObject
   </a>
   
 </li>
@@ -561,8 +591,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#readfilesync" class="md-nav__link">
-    readFileSync
+  <a href="#readfileifexists" class="md-nav__link">
+    readFileIfExists
   </a>
   
 </li>
@@ -603,15 +633,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolvetildepath" class="md-nav__link">
-    resolveTildePath
+  <a href="#removeundefinedrecursive" class="md-nav__link">
+    removeUndefinedRecursive
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsubobject" class="md-nav__link">
-    setSubObject
+  <a href="#resolvetildepath" class="md-nav__link">
+    resolveTildePath
   </a>
   
 </li>
@@ -685,6 +715,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#recursivepartial_1" class="md-nav__link">
+    RecursivePartial
+  </a>
+  
+    <nav class="md-nav" aria-label="RecursivePartial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-declaration" class="md-nav__link">
+    Type declaration:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -740,8 +790,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add0xprefix" class="md-nav__link">
+  <a href="#objectkeys_1" class="md-nav__link">
+    ObjectKeys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add0xprefix_1" class="md-nav__link">
     add0xPrefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadfile_1" class="md-nav__link">
+    downloadFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadorcopyfile_1" class="md-nav__link">
+    downloadOrCopyFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloadorloadfile_1" class="md-nav__link">
+    downloadOrLoadFile
   </a>
   
 </li>
@@ -749,13 +827,6 @@
           <li class="md-nav__item">
   <a href="#ensuredirexists_1" class="md-nav__link">
     ensureDirExists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getbeaconconfig_1" class="md-nav__link">
-    getBeaconConfig
   </a>
   
 </li>
@@ -775,13 +846,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getsubobject_1" class="md-nav__link">
-    getSubObject
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#guessversion" class="md-nav__link">
     guessVersion
   </a>
@@ -791,6 +855,13 @@
           <li class="md-nav__item">
   <a href="#ispassphrasefile_1" class="md-nav__link">
     isPassphraseFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isurl" class="md-nav__link">
+    isUrl
   </a>
   
 </li>
@@ -817,8 +888,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#onprocesssigint" class="md-nav__link">
-    onProcessSIGINT
+  <a href="#ongracefulshutdown" class="md-nav__link">
+    onGracefulShutdown
   </a>
   
 </li>
@@ -845,8 +916,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#readfilesync_1" class="md-nav__link">
-    readFileSync
+  <a href="#readfileifexists_1" class="md-nav__link">
+    readFileIfExists
   </a>
   
 </li>
@@ -887,15 +958,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolvetildepath_1" class="md-nav__link">
-    resolveTildePath
+  <a href="#removeundefinedrecursive_1" class="md-nav__link">
+    removeUndefinedRecursive
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsubobject_1" class="md-nav__link">
-    setSubObject
+  <a href="#resolvetildepath_1" class="md-nav__link">
+    resolveTildePath
   </a>
   
 </li>
@@ -917,13 +988,6 @@
           <li class="md-nav__item">
   <a href="#stripoffnewlines_1" class="md-nav__link">
     stripOffNewlines
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#updateenr" class="md-nav__link">
-    updateENR
   </a>
   
 </li>
@@ -971,10 +1035,7 @@
                   </a>
                 
                 
-                  
-                
-                
-                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">util</a></p>
+                <p><a href="../../">@chainsafe/lodestar-cli</a> › <a href="../../globals/">Globals</a> › <a href="./">util</a></p>
 <h1 id="module-util">Module: util<a class="headerlink" href="#module-util" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
@@ -982,12 +1043,16 @@
 <li><a href="./#fileformat">FileFormat</a></li>
 <li><a href="./#iclicommand">ICliCommand</a></li>
 <li><a href="./#iclicommandoptions">ICliCommandOptions</a></li>
+<li><a href="./#objectkeys">ObjectKeys</a></li>
+<li><a href="./#recursivepartial">RecursivePartial</a></li>
 <li><a href="./#yargserror">YargsError</a></li>
+<li><a href="./#add0xprefix">add0xPrefix</a></li>
+<li><a href="./#downloadfile">downloadFile</a></li>
+<li><a href="./#downloadorcopyfile">downloadOrCopyFile</a></li>
+<li><a href="./#downloadorloadfile">downloadOrLoadFile</a></li>
 <li><a href="./#ensuredirexists">ensureDirExists</a></li>
-<li><a href="./#getbeaconconfig">getBeaconConfig</a></li>
 <li><a href="./#getdefaultgraffiti">getDefaultGraffiti</a></li>
 <li><a href="./#getetherssigner">getEthersSigner</a></li>
-<li><a href="./#getsubobject">getSubObject</a></li>
 <li><a href="./#ispassphrasefile">isPassphraseFile</a></li>
 <li><a href="./#isvotingkeystore">isVotingKeystore</a></li>
 <li><a href="./#joinifrelative">joinIfRelative</a></li>
@@ -995,14 +1060,14 @@
 <li><a href="./#parse">parse</a></li>
 <li><a href="./#randompassword">randomPassword</a></li>
 <li><a href="./#readfile">readFile</a></li>
-<li><a href="./#readfilesync">readFileSync</a></li>
+<li><a href="./#readfileifexists">readFileIfExists</a></li>
 <li><a href="./#readpassphrasefile">readPassphraseFile</a></li>
 <li><a href="./#readvalidatorpassphrase">readValidatorPassphrase</a></li>
 <li><a href="./#recursivelyfind">recursivelyFind</a></li>
 <li><a href="./#recursivelyfindvotingkeystores">recursivelyFindVotingKeystores</a></li>
 <li><a href="./#registercommandtoyargs">registerCommandToYargs</a></li>
+<li><a href="./#removeundefinedrecursive">removeUndefinedRecursive</a></li>
 <li><a href="./#resolvetildepath">resolveTildePath</a></li>
-<li><a href="./#setsubobject">setSubObject</a></li>
 <li><a href="./#sleep">sleep</a></li>
 <li><a href="./#stringify">stringify</a></li>
 <li><a href="./#stripoffnewlines">stripOffNewlines</a></li>
@@ -1026,6 +1091,7 @@
 <h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="./#iclicommandoptions">ICliCommandOptions</a></li>
+<li><a href="./#recursivepartial">RecursivePartial</a></li>
 </ul>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1036,33 +1102,35 @@
 </ul>
 <h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="./#objectkeys">ObjectKeys</a></li>
 <li><a href="./#add0xprefix">add0xPrefix</a></li>
+<li><a href="./#downloadfile">downloadFile</a></li>
+<li><a href="./#downloadorcopyfile">downloadOrCopyFile</a></li>
+<li><a href="./#downloadorloadfile">downloadOrLoadFile</a></li>
 <li><a href="./#ensuredirexists">ensureDirExists</a></li>
-<li><a href="./#getbeaconconfig">getBeaconConfig</a></li>
 <li><a href="./#getdefaultgraffiti">getDefaultGraffiti</a></li>
 <li><a href="./#getetherssigner">getEthersSigner</a></li>
-<li><a href="./#getsubobject">getSubObject</a></li>
 <li><a href="./#guessversion">guessVersion</a></li>
 <li><a href="./#ispassphrasefile">isPassphraseFile</a></li>
+<li><a href="./#isurl">isUrl</a></li>
 <li><a href="./#isvotingkeystore">isVotingKeystore</a></li>
 <li><a href="./#joinifrelative">joinIfRelative</a></li>
 <li><a href="./#mkdir">mkdir</a></li>
-<li><a href="./#onprocesssigint">onProcessSIGINT</a></li>
+<li><a href="./#ongracefulshutdown">onGracefulShutdown</a></li>
 <li><a href="./#parse">parse</a></li>
 <li><a href="./#randompassword">randomPassword</a></li>
 <li><a href="./#readfile">readFile</a></li>
-<li><a href="./#readfilesync">readFileSync</a></li>
+<li><a href="./#readfileifexists">readFileIfExists</a></li>
 <li><a href="./#readpassphrasefile">readPassphraseFile</a></li>
 <li><a href="./#readvalidatorpassphrase">readValidatorPassphrase</a></li>
 <li><a href="./#recursivelyfind">recursivelyFind</a></li>
 <li><a href="./#recursivelyfindvotingkeystores">recursivelyFindVotingKeystores</a></li>
 <li><a href="./#registercommandtoyargs">registerCommandToYargs</a></li>
+<li><a href="./#removeundefinedrecursive">removeUndefinedRecursive</a></li>
 <li><a href="./#resolvetildepath">resolveTildePath</a></li>
-<li><a href="./#setsubobject">setSubObject</a></li>
 <li><a href="./#sleep">sleep</a></li>
 <li><a href="./#stringify">stringify</a></li>
 <li><a href="./#stripoffnewlines">stripOffNewlines</a></li>
-<li><a href="./#updateenr">updateENR</a></li>
 <li><a href="./#writefile">writeFile</a></li>
 <li><a href="./#writefile600perm">writeFile600Perm</a></li>
 <li><a href="./#writevalidatorpassphrase">writeValidatorPassphrase</a></li>
@@ -1077,23 +1145,35 @@
 <h3 id="iclicommandoptions">ICliCommandOptions<a class="headerlink" href="#iclicommandoptions" title="Permanent link">&para;</a></h3>
 <p>• <strong>ICliCommandOptions</strong>:</p>
 <hr />
+<h3 id="objectkeys">ObjectKeys<a class="headerlink" href="#objectkeys" title="Permanent link">&para;</a></h3>
+<p>• <strong>ObjectKeys</strong>:</p>
+<hr />
+<h3 id="recursivepartial">RecursivePartial<a class="headerlink" href="#recursivepartial" title="Permanent link">&para;</a></h3>
+<p>• <strong>RecursivePartial</strong>:</p>
+<hr />
 <h3 id="yargserror">YargsError<a class="headerlink" href="#yargserror" title="Permanent link">&para;</a></h3>
 <p>• <strong>YargsError</strong>:</p>
 <hr />
+<h3 id="add0xprefix">add0xPrefix<a class="headerlink" href="#add0xprefix" title="Permanent link">&para;</a></h3>
+<p>• <strong>add0xPrefix</strong>:</p>
+<hr />
+<h3 id="downloadfile">downloadFile<a class="headerlink" href="#downloadfile" title="Permanent link">&para;</a></h3>
+<p>• <strong>downloadFile</strong>:</p>
+<hr />
+<h3 id="downloadorcopyfile">downloadOrCopyFile<a class="headerlink" href="#downloadorcopyfile" title="Permanent link">&para;</a></h3>
+<p>• <strong>downloadOrCopyFile</strong>:</p>
+<hr />
+<h3 id="downloadorloadfile">downloadOrLoadFile<a class="headerlink" href="#downloadorloadfile" title="Permanent link">&para;</a></h3>
+<p>• <strong>downloadOrLoadFile</strong>:</p>
+<hr />
 <h3 id="ensuredirexists">ensureDirExists<a class="headerlink" href="#ensuredirexists" title="Permanent link">&para;</a></h3>
 <p>• <strong>ensureDirExists</strong>:</p>
-<hr />
-<h3 id="getbeaconconfig">getBeaconConfig<a class="headerlink" href="#getbeaconconfig" title="Permanent link">&para;</a></h3>
-<p>• <strong>getBeaconConfig</strong>:</p>
 <hr />
 <h3 id="getdefaultgraffiti">getDefaultGraffiti<a class="headerlink" href="#getdefaultgraffiti" title="Permanent link">&para;</a></h3>
 <p>• <strong>getDefaultGraffiti</strong>:</p>
 <hr />
 <h3 id="getetherssigner">getEthersSigner<a class="headerlink" href="#getetherssigner" title="Permanent link">&para;</a></h3>
 <p>• <strong>getEthersSigner</strong>:</p>
-<hr />
-<h3 id="getsubobject">getSubObject<a class="headerlink" href="#getsubobject" title="Permanent link">&para;</a></h3>
-<p>• <strong>getSubObject</strong>:</p>
 <hr />
 <h3 id="ispassphrasefile">isPassphraseFile<a class="headerlink" href="#ispassphrasefile" title="Permanent link">&para;</a></h3>
 <p>• <strong>isPassphraseFile</strong>:</p>
@@ -1116,8 +1196,8 @@
 <h3 id="readfile">readFile<a class="headerlink" href="#readfile" title="Permanent link">&para;</a></h3>
 <p>• <strong>readFile</strong>:</p>
 <hr />
-<h3 id="readfilesync">readFileSync<a class="headerlink" href="#readfilesync" title="Permanent link">&para;</a></h3>
-<p>• <strong>readFileSync</strong>:</p>
+<h3 id="readfileifexists">readFileIfExists<a class="headerlink" href="#readfileifexists" title="Permanent link">&para;</a></h3>
+<p>• <strong>readFileIfExists</strong>:</p>
 <hr />
 <h3 id="readpassphrasefile">readPassphraseFile<a class="headerlink" href="#readpassphrasefile" title="Permanent link">&para;</a></h3>
 <p>• <strong>readPassphraseFile</strong>:</p>
@@ -1134,11 +1214,11 @@
 <h3 id="registercommandtoyargs">registerCommandToYargs<a class="headerlink" href="#registercommandtoyargs" title="Permanent link">&para;</a></h3>
 <p>• <strong>registerCommandToYargs</strong>:</p>
 <hr />
+<h3 id="removeundefinedrecursive">removeUndefinedRecursive<a class="headerlink" href="#removeundefinedrecursive" title="Permanent link">&para;</a></h3>
+<p>• <strong>removeUndefinedRecursive</strong>:</p>
+<hr />
 <h3 id="resolvetildepath">resolveTildePath<a class="headerlink" href="#resolvetildepath" title="Permanent link">&para;</a></h3>
 <p>• <strong>resolveTildePath</strong>:</p>
-<hr />
-<h3 id="setsubobject">setSubObject<a class="headerlink" href="#setsubobject" title="Permanent link">&para;</a></h3>
-<p>• <strong>setSubObject</strong>:</p>
 <hr />
 <h3 id="sleep">sleep<a class="headerlink" href="#sleep" title="Permanent link">&para;</a></h3>
 <p>• <strong>sleep</strong>:</p>
@@ -1163,19 +1243,26 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="iclicommandoptions_1">ICliCommandOptions<a class="headerlink" href="#iclicommandoptions_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>ICliCommandOptions</strong>: <em>Required‹object›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/command.ts#L3">packages/lodestar-cli/src/util/command.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/command.ts#L3">packages/lodestar-cli/src/util/command.ts:3</a></em></p>
+<hr />
+<h3 id="recursivepartial_1">RecursivePartial<a class="headerlink" href="#recursivepartial_1" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>RecursivePartial</strong>: <em>object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/types.ts#L5">packages/lodestar-cli/src/util/types.ts:5</a></em></p>
+<p>Recursively make all properties optional
+From https://stackoverflow.com/questions/45372227/how-to-implement-typescript-deep-partial-mapped-type-not-breaking-array-properti/49936686#49936686</p>
+<h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <h2 id="variables_1">Variables<a class="headerlink" href="#variables_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-default_password_len"><code>Const</code> DEFAULT_PASSWORD_LEN<a class="headerlink" href="#const-default_password_len" title="Permanent link">&para;</a></h3>
 <p>• <strong>DEFAULT_PASSWORD_LEN</strong>: <em>48</em> = 48</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/randomPassword.ts#L3">packages/lodestar-cli/src/util/randomPassword.ts:3</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/randomPassword.ts#L3">packages/lodestar-cli/src/util/randomPassword.ts:3</a></em></p>
 <hr />
 <h3 id="const-exitsignals"><code>Const</code> exitSignals<a class="headerlink" href="#const-exitsignals" title="Permanent link">&para;</a></h3>
-<p>• <strong>exitSignals</strong>: <em>("SIGABRT" | "SIGALRM" | "SIGBUS" | "SIGCHLD" | "SIGCONT" | "SIGFPE" | "SIGHUP" | "SIGILL" | "SIGINT" | "SIGIO" | "SIGIOT" | "SIGKILL" | "SIGPIPE" | "SIGPOLL" | "SIGPROF" | "SIGPWR" | "SIGQUIT" | "SIGSEGV" | "SIGSTKFLT" | "SIGSTOP" | "SIGSYS" | "SIGTERM" | "SIGTRAP" | "SIGTSTP" | "SIGTTIN" | "SIGTTOU" | "SIGUNUSED" | "SIGURG" | "SIGUSR1" | "SIGUSR2" | "SIGVTALRM" | "SIGWINCH" | "SIGXCPU" | "SIGXFSZ" | "SIGBREAK" | "SIGLOST" | "SIGINFO")[]</em> = ["SIGTERM", "SIGINT"] as NodeJS.Signals[]</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/process.ts#L1">packages/lodestar-cli/src/util/process.ts:1</a></em></p>
+<p>• <strong>exitSignals</strong>: <em>Signals[]</em> = ["SIGTERM", "SIGINT"] as NodeJS.Signals[]</p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/process.ts#L1">packages/lodestar-cli/src/util/process.ts:1</a></em></p>
 <hr />
 <h3 id="const-lodestarpackagename"><code>Const</code> lodestarPackageName<a class="headerlink" href="#const-lodestarpackagename" title="Permanent link">&para;</a></h3>
 <p>• <strong>lodestarPackageName</strong>: <em>"chainsafe/lodestar"</em> = "chainsafe/lodestar"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/graffiti.ts#L4">packages/lodestar-cli/src/util/graffiti.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/graffiti.ts#L4">packages/lodestar-cli/src/util/graffiti.ts:4</a></em></p>
 <hr />
 <h3 id="const-yamlschema"><code>Const</code> yamlSchema<a class="headerlink" href="#const-yamlschema" title="Permanent link">&para;</a></h3>
 <p>• <strong>yamlSchema</strong>: <em>Schema‹›</em> = new Schema({
@@ -1189,11 +1276,34 @@
     }),
   ],
 })</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L7">packages/lodestar-cli/src/util/file.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L9">packages/lodestar-cli/src/util/file.ts:9</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
-<h3 id="add0xprefix">add0xPrefix<a class="headerlink" href="#add0xprefix" title="Permanent link">&para;</a></h3>
+<h3 id="objectkeys_1">ObjectKeys<a class="headerlink" href="#objectkeys_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>ObjectKeys</strong>‹<strong>T</strong>›(<code>o</code>: T): <em>keyof T[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/types.ts#L17">packages/lodestar-cli/src/util/types.ts:17</a></em></p>
+<p>Typed <code>Object.keys(o: T)</code> function, returning <code>(keyof T)[]</code></p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>T</strong>: <em>object</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>o</code></td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>keyof T[]</em></p>
+<hr />
+<h3 id="add0xprefix_1">add0xPrefix<a class="headerlink" href="#add0xprefix_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>add0xPrefix</strong>(<code>hex</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/format.ts#L4">packages/lodestar-cli/src/util/format.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/format.ts#L4">packages/lodestar-cli/src/util/format.ts:4</a></em></p>
 <p>0x prefix a string if not prefixed already</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1212,9 +1322,83 @@
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
+<h3 id="downloadfile_1">downloadFile<a class="headerlink" href="#downloadfile_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>downloadFile</strong>(<code>pathDest</code>: string, <code>url</code>: string): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L123">packages/lodestar-cli/src/util/file.ts:123</a></em></p>
+<p>Downloads a genesis file per testnet if it does not exist</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pathDest</code></td>
+<td>string</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="downloadorcopyfile_1">downloadOrCopyFile<a class="headerlink" href="#downloadorcopyfile_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>downloadOrCopyFile</strong>(<code>pathDest</code>: string, <code>urlOrPathSrc</code>: string): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L111">packages/lodestar-cli/src/util/file.ts:111</a></em></p>
+<p>Download from URL or copy from local filesystem</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pathDest</code></td>
+<td>string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>urlOrPathSrc</code></td>
+<td>string</td>
+<td>"/path/to/file.szz"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<hr />
+<h3 id="downloadorloadfile_1">downloadOrLoadFile<a class="headerlink" href="#downloadorloadfile_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>downloadOrLoadFile</strong>(<code>pathOrUrl</code>: string): <em>Promise‹Uint8Array›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L134">packages/lodestar-cli/src/util/file.ts:134</a></em></p>
+<p>Download from URL to memory or load from local filesystem</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pathOrUrl</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>Promise‹Uint8Array›</em></p>
+<hr />
 <h3 id="ensuredirexists_1">ensureDirExists<a class="headerlink" href="#ensuredirexists_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>ensureDirExists</strong>(<code>dirPath</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/fs.ts#L16">packages/lodestar-cli/src/util/fs.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/fs.ts#L18">packages/lodestar-cli/src/util/fs.ts:18</a></em></p>
 <p>If <code>dirPath</code> does not exist, creates a directory recursively</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1233,42 +1417,15 @@
 </table>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
-<h3 id="getbeaconconfig_1">getBeaconConfig<a class="headerlink" href="#getbeaconconfig_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBeaconConfig</strong>(<code>preset</code>: string, <code>additionalParams</code>: Record‹string, unknown›): <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/config.ts#L6">packages/lodestar-cli/src/util/config.ts:6</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>preset</code></td>
-<td>string</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>additionalParams</code></td>
-<td>Record‹string, unknown›</td>
-<td>{}</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>IBeaconConfig</em></p>
-<hr />
 <h3 id="getdefaultgraffiti_1">getDefaultGraffiti<a class="headerlink" href="#getdefaultgraffiti_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getDefaultGraffiti</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/graffiti.ts#L20">packages/lodestar-cli/src/util/graffiti.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/graffiti.ts#L20">packages/lodestar-cli/src/util/graffiti.ts:20</a></em></p>
 <p>Computes a default graffiti fetching dynamically the package info</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="getetherssigner_1">getEthersSigner<a class="headerlink" href="#getetherssigner_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEthersSigner</strong>(<code>__namedParameters</code>: object): <em>Promise‹Signer›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/ethers.ts#L7">packages/lodestar-cli/src/util/ethers.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/ethers.ts#L7">packages/lodestar-cli/src/util/ethers.ts:7</a></em></p>
 <p>Returns a connected ethers signer from a variety of provider options</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
@@ -1308,40 +1465,15 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹Signer›</em></p>
 <hr />
-<h3 id="getsubobject_1">getSubObject<a class="headerlink" href="#getsubobject_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getSubObject</strong>(<code>obj</code>: any, <code>path</code>: string[]): <em>any</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/subObject.ts#L12">packages/lodestar-cli/src/util/subObject.ts:12</a></em></p>
-<p>Get sub-object obj[path[0]]...[path[N]]</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>obj</code></td>
-<td>any</td>
-</tr>
-<tr>
-<td><code>path</code></td>
-<td>string[]</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>any</em></p>
-<hr />
 <h3 id="guessversion">guessVersion<a class="headerlink" href="#guessversion" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>guessVersion</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/graffiti.ts#L9">packages/lodestar-cli/src/util/graffiti.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/graffiti.ts#L9">packages/lodestar-cli/src/util/graffiti.ts:9</a></em></p>
 <p>Guesses the package version finding up the closest package.json</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="ispassphrasefile_1">isPassphraseFile<a class="headerlink" href="#ispassphrasefile_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isPassphraseFile</strong>(<code>filename</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/recursivelyFind.ts#L59">packages/lodestar-cli/src/util/recursivelyFind.ts:59</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/recursivelyFind.ts#L59">packages/lodestar-cli/src/util/recursivelyFind.ts:59</a></em></p>
 <p>Returns true if filename is a BLS Keystore passphrase file</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1360,9 +1492,30 @@
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
+<h3 id="isurl">isUrl<a class="headerlink" href="#isurl" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>isUrl</strong>(<code>pathOrUrl</code>: string): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L146">packages/lodestar-cli/src/util/file.ts:146</a></em></p>
+<p>Returns boolean for whether the string is a URL.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pathOrUrl</code></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
+<hr />
 <h3 id="isvotingkeystore_1">isVotingKeystore<a class="headerlink" href="#isvotingkeystore_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isVotingKeystore</strong>(<code>filename</code>: string): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/recursivelyFind.ts#L34">packages/lodestar-cli/src/util/recursivelyFind.ts:34</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/recursivelyFind.ts#L34">packages/lodestar-cli/src/util/recursivelyFind.ts:34</a></em></p>
 <p>Returns <code>true</code> if we should consider the <code>filename</code> to represent a voting keystore.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1383,7 +1536,7 @@
 <hr />
 <h3 id="joinifrelative_1">joinIfRelative<a class="headerlink" href="#joinifrelative_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>joinIfRelative</strong>(<code>dir</code>: string, <code>base</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/paths.ts#L18">packages/lodestar-cli/src/util/paths.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/paths.ts#L18">packages/lodestar-cli/src/util/paths.ts:18</a></em></p>
 <p>path.join but when the base is an absolute path, does not join</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1407,8 +1560,8 @@
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="mkdir_1">mkdir<a class="headerlink" href="#mkdir_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>mkdir</strong>(<code>dirname</code>: string): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L22">packages/lodestar-cli/src/util/file.ts:22</a></em></p>
+<p>▸ <strong>mkdir</strong>(<code>dirname</code>: string): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L24">packages/lodestar-cli/src/util/file.ts:24</a></em></p>
 <p>Maybe create a directory</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1425,11 +1578,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p><strong>Returns:</strong> <em>void</em></p>
 <hr />
-<h3 id="onprocesssigint">onProcessSIGINT<a class="headerlink" href="#onprocesssigint" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onProcessSIGINT</strong>(<code>cleanUpFunction</code>: function, <code>logFn</code>: function): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/process.ts#L9">packages/lodestar-cli/src/util/process.ts:9</a></em></p>
+<h3 id="ongracefulshutdown">onGracefulShutdown<a class="headerlink" href="#ongracefulshutdown" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>onGracefulShutdown</strong>(<code>cleanUpFunction</code>: function, <code>logFn</code>: function): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/process.ts#L9">packages/lodestar-cli/src/util/process.ts:9</a></em></p>
 <p>All CLI handlers should register this callback to exit properly and not leave
 a process hanging forever. Pass a clean function that will be run until the
 user forcibly kills the process by doing CTRL+C again</p>
@@ -1456,8 +1609,9 @@ user forcibly kills the process by doing CTRL+C again</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="parse_1">parse<a class="headerlink" href="#parse_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>parse</strong>‹<strong>T</strong>›(<code>contents</code>: string, <code>fileFormat</code>: <a href="../../enums/util.fileformat/">FileFormat</a>): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L32">packages/lodestar-cli/src/util/file.ts:32</a></em></p>
+<p>▸ <strong>parse</strong>‹<strong>T</strong>›(<code>contents</code>: string, <code>fileFormat</code>: <a href="./#fileformat">FileFormat</a>): <em>T</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L38">packages/lodestar-cli/src/util/file.ts:38</a></em></p>
+<p>Parse file contents as Json.</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -1475,7 +1629,7 @@ user forcibly kills the process by doing CTRL+C again</p>
 </tr>
 <tr>
 <td><code>fileFormat</code></td>
-<td><a href="../../enums/util.fileformat/">FileFormat</a></td>
+<td><a href="./#fileformat">FileFormat</a></td>
 </tr>
 </tbody>
 </table>
@@ -1483,13 +1637,13 @@ user forcibly kills the process by doing CTRL+C again</p>
 <hr />
 <h3 id="randompassword_1">randomPassword<a class="headerlink" href="#randompassword_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>randomPassword</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/randomPassword.ts#L8">packages/lodestar-cli/src/util/randomPassword.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/randomPassword.ts#L8">packages/lodestar-cli/src/util/randomPassword.ts:8</a></em></p>
 <p>Generates a hex encoded random password</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="readfile_1">readFile<a class="headerlink" href="#readfile_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>readFile</strong>‹<strong>T</strong>›(<code>filename</code>: string): <em>Promise‹T›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L73">packages/lodestar-cli/src/util/file.ts:73</a></em></p>
+<p>▸ <strong>readFile</strong>‹<strong>T</strong>›(<code>filepath</code>: string): <em>T</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L85">packages/lodestar-cli/src/util/file.ts:85</a></em></p>
 <p>Read a JSON serializable object from a file</p>
 <p>Parse either from json, yaml, or toml</p>
 <p><strong>Type parameters:</strong></p>
@@ -1504,16 +1658,18 @@ user forcibly kills the process by doing CTRL+C again</p>
 </thead>
 <tbody>
 <tr>
-<td><code>filename</code></td>
+<td><code>filepath</code></td>
 <td>string</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹T›</em></p>
+<p><strong>Returns:</strong> <em>T</em></p>
 <hr />
-<h3 id="readfilesync_1">readFileSync<a class="headerlink" href="#readfilesync_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>readFileSync</strong>‹<strong>T</strong>›(<code>filename</code>: string): <em>T</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L79">packages/lodestar-cli/src/util/file.ts:79</a></em></p>
+<h3 id="readfileifexists_1">readFileIfExists<a class="headerlink" href="#readfileifexists_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>readFileIfExists</strong>‹<strong>T</strong>›(<code>filepath</code>: string): <em>T | null</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L95">packages/lodestar-cli/src/util/file.ts:95</a></em></p>
+<p><strong><code>see</code></strong> readFile
+If <code>filepath</code> does not exist returns null</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -1526,17 +1682,17 @@ user forcibly kills the process by doing CTRL+C again</p>
 </thead>
 <tbody>
 <tr>
-<td><code>filename</code></td>
+<td><code>filepath</code></td>
 <td>string</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>T</em></p>
+<p><strong>Returns:</strong> <em>T | null</em></p>
 <hr />
 <h3 id="readpassphrasefile_1">readPassphraseFile<a class="headerlink" href="#readpassphrasefile_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>readPassphraseFile</strong>(<code>passphraseFile</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/passphrase.ts#L10">packages/lodestar-cli/src/util/passphrase.ts:10</a></em></p>
-<p>Utility to read file as UTF8 and strip any trailing new lines
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/passphrase.ts#L10">packages/lodestar-cli/src/util/passphrase.ts:10</a></em></p>
+<p>Utility to read file as UTF8 and strip any trailing new lines.
 All passphrase files must be read with this function</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1557,7 +1713,7 @@ All passphrase files must be read with this function</p>
 <hr />
 <h3 id="readvalidatorpassphrase_1">readValidatorPassphrase<a class="headerlink" href="#readvalidatorpassphrase_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>readValidatorPassphrase</strong>(<code>__namedParameters</code>: object): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/passphrase.ts#L27">packages/lodestar-cli/src/util/passphrase.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/passphrase.ts#L27">packages/lodestar-cli/src/util/passphrase.ts:27</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -1582,7 +1738,7 @@ All passphrase files must be read with this function</p>
 <hr />
 <h3 id="recursivelyfind_1">recursivelyFind<a class="headerlink" href="#recursivelyfind_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>recursivelyFind</strong>(<code>dirPath</code>: string, <code>filenameMatcher</code>: function): <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/recursivelyFind.ts#L11">packages/lodestar-cli/src/util/recursivelyFind.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/recursivelyFind.ts#L11">packages/lodestar-cli/src/util/recursivelyFind.ts:11</a></em></p>
 <p>Find files recursively in <code>dirPath</code> whose filename matches a custom function</p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>dirPath</strong>: <em>string</em></p>
@@ -1608,7 +1764,7 @@ All passphrase files must be read with this function</p>
 <hr />
 <h3 id="recursivelyfindvotingkeystores_1">recursivelyFindVotingKeystores<a class="headerlink" href="#recursivelyfindvotingkeystores_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>recursivelyFindVotingKeystores</strong>(<code>dirPath</code>: string): <em>string[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/recursivelyFind.ts#L27">packages/lodestar-cli/src/util/recursivelyFind.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/recursivelyFind.ts#L27">packages/lodestar-cli/src/util/recursivelyFind.ts:27</a></em></p>
 <p>Find voting keystores recursively in <code>dirPath</code></p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1629,7 +1785,7 @@ All passphrase files must be read with this function</p>
 <hr />
 <h3 id="registercommandtoyargs_1">registerCommandToYargs<a class="headerlink" href="#registercommandtoyargs_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>registerCommandToYargs</strong>(<code>yargs</code>: Argv, <code>cliCommand</code>: <a href="../../interfaces/util.iclicommand/">ICliCommand</a>‹any, any›): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/command.ts#L23">packages/lodestar-cli/src/util/command.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/command.ts#L24">packages/lodestar-cli/src/util/command.ts:24</a></em></p>
 <p>Register a ICliCommand type to yargs. Recursively registers subcommands too.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1655,9 +1811,32 @@ All passphrase files must be read with this function</p>
 </table>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
+<h3 id="removeundefinedrecursive_1">removeUndefinedRecursive<a class="headerlink" href="#removeundefinedrecursive_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>removeUndefinedRecursive</strong>‹<strong>T</strong>›(<code>obj</code>: T): <em><a href="./#recursivepartial">RecursivePartial</a>‹T›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/object.ts#L7">packages/lodestar-cli/src/util/object.ts:7</a></em></p>
+<p>Removes (mutates) all properties with a value === undefined, recursively</p>
+<p><strong>Type parameters:</strong></p>
+<p>▪ <strong>T</strong>: <em>object</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obj</code></td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#recursivepartial">RecursivePartial</a>‹T›</em></p>
+<hr />
 <h3 id="resolvetildepath_1">resolveTildePath<a class="headerlink" href="#resolvetildepath_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>resolveTildePath</strong>(<code>unsafePath</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/paths.ts#L11">packages/lodestar-cli/src/util/paths.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/paths.ts#L11">packages/lodestar-cli/src/util/paths.ts:11</a></em></p>
 <p>Expands and resolves a path.
 Tilde expansion is particular to bash.
 See https://github.com/nodejs/node/issues/684</p>
@@ -1681,38 +1860,9 @@ See https://github.com/nodejs/node/issues/684</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <p>"/users/john/dir"</p>
 <hr />
-<h3 id="setsubobject_1">setSubObject<a class="headerlink" href="#setsubobject_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>setSubObject</strong>(<code>obj</code>: any, <code>path</code>: string[], <code>value</code>: any): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/subObject.ts#L30">packages/lodestar-cli/src/util/subObject.ts:30</a></em></p>
-<p>Update sub-object obj[path[0]]...[path[N]] with value</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>obj</code></td>
-<td>any</td>
-</tr>
-<tr>
-<td><code>path</code></td>
-<td>string[]</td>
-</tr>
-<tr>
-<td><code>value</code></td>
-<td>any</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
 <h3 id="sleep_1">sleep<a class="headerlink" href="#sleep_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>sleep</strong>(<code>ms</code>: number): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/sleep.ts#L1">packages/lodestar-cli/src/util/sleep.ts:1</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/sleep.ts#L1">packages/lodestar-cli/src/util/sleep.ts:1</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1731,8 +1881,9 @@ See https://github.com/nodejs/node/issues/684</p>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <hr />
 <h3 id="stringify_1">stringify<a class="headerlink" href="#stringify_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>stringify</strong>‹<strong>T</strong>›(<code>obj</code>: T, <code>fileFormat</code>: <a href="../../enums/util.fileformat/">FileFormat</a>): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L42">packages/lodestar-cli/src/util/file.ts:42</a></em></p>
+<p>▸ <strong>stringify</strong>‹<strong>T</strong>›(<code>obj</code>: T, <code>fileFormat</code>: <a href="./#fileformat">FileFormat</a>): <em>string</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L53">packages/lodestar-cli/src/util/file.ts:53</a></em></p>
+<p>Stringify file contents.</p>
 <p><strong>Type parameters:</strong></p>
 <p>▪ <strong>T</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -1750,7 +1901,7 @@ See https://github.com/nodejs/node/issues/684</p>
 </tr>
 <tr>
 <td><code>fileFormat</code></td>
-<td><a href="../../enums/util.fileformat/">FileFormat</a></td>
+<td><a href="./#fileformat">FileFormat</a></td>
 </tr>
 </tbody>
 </table>
@@ -1758,7 +1909,7 @@ See https://github.com/nodejs/node/issues/684</p>
 <hr />
 <h3 id="stripoffnewlines_1">stripOffNewlines<a class="headerlink" href="#stripoffnewlines_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>stripOffNewlines</strong>(<code>s</code>: string): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/stripOffNewlines.ts#L4">packages/lodestar-cli/src/util/stripOffNewlines.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/stripOffNewlines.ts#L4">packages/lodestar-cli/src/util/stripOffNewlines.ts:4</a></em></p>
 <p>Remove trailing new lines '\n' or '\r' if any</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1777,33 +1928,9 @@ See https://github.com/nodejs/node/issues/684</p>
 </table>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
-<h3 id="updateenr">updateENR<a class="headerlink" href="#updateenr" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>updateENR</strong>(<code>enr</code>: ENR, <code>args</code>: <a href="../../interfaces/cmds_beacon.ienrargs/">IENRArgs</a> &amp; IBeaconNodeOptions): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/enr.ts#L7">packages/lodestar-cli/src/util/enr.ts:7</a></em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>enr</code></td>
-<td>ENR</td>
-</tr>
-<tr>
-<td><code>args</code></td>
-<td><a href="../../interfaces/cmds_beacon.ienrargs/">IENRArgs</a> &amp; IBeaconNodeOptions</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>void</em></p>
-<hr />
 <h3 id="writefile_1">writeFile<a class="headerlink" href="#writefile_1" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>writeFile</strong>(<code>filename</code>: string, <code>obj</code>: Json): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/file.ts#L62">packages/lodestar-cli/src/util/file.ts:62</a></em></p>
+<p>▸ <strong>writeFile</strong>(<code>filepath</code>: string, <code>obj</code>: Json): <em>void</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/file.ts#L74">packages/lodestar-cli/src/util/file.ts:74</a></em></p>
 <p>Write a JSON serializable object to a file</p>
 <p>Serialize either to json, yaml, or toml</p>
 <p><strong>Parameters:</strong></p>
@@ -1816,7 +1943,7 @@ See https://github.com/nodejs/node/issues/684</p>
 </thead>
 <tbody>
 <tr>
-<td><code>filename</code></td>
+<td><code>filepath</code></td>
 <td>string</td>
 </tr>
 <tr>
@@ -1825,11 +1952,11 @@ See https://github.com/nodejs/node/issues/684</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise‹void›</em></p>
+<p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="writefile600perm_1">writeFile600Perm<a class="headerlink" href="#writefile600perm_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>writeFile600Perm</strong>(<code>filepath</code>: string, <code>data</code>: string): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/fs.ts#L8">packages/lodestar-cli/src/util/fs.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/fs.ts#L9">packages/lodestar-cli/src/util/fs.ts:9</a></em></p>
 <p>Create a file with <code>600 (-rw-------)</code> permissions
 <em>Note</em>: 600: Owner has full read and write access to the file,
 while no other user can access the file</p>
@@ -1856,7 +1983,7 @@ while no other user can access the file</p>
 <hr />
 <h3 id="writevalidatorpassphrase_1">writeValidatorPassphrase<a class="headerlink" href="#writevalidatorpassphrase_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>writeValidatorPassphrase</strong>(<code>__namedParameters</code>: object): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e049f46cae/packages/lodestar-cli/src/util/passphrase.ts#L37">packages/lodestar-cli/src/util/passphrase.ts:37</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/f47299e/packages/lodestar-cli/src/util/passphrase.ts#L37">packages/lodestar-cli/src/util/passphrase.ts:37</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -1953,15 +2080,15 @@ while no other user can access the file</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
