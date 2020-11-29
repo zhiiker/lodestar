@@ -874,7 +874,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="peerfilterconditioncallback">PeerFilterConditionCallback<a class="headerlink" href="#peerfilterconditioncallback" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>PeerFilterConditionCallback</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/peers.ts#L4">packages/lodestar/src/sync/utils/peers.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/peers.ts#L4">packages/lodestar/src/sync/utils/peers.ts:4</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <p>▸ (<code>peer</code>: PeerId): <em>boolean</em></p>
 <p><strong>Parameters:</strong></p>
@@ -895,7 +895,7 @@
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="checkbestpeer_1">checkBestPeer<a class="headerlink" href="#checkbestpeer_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>checkBestPeer</strong>(<code>peer</code>: PeerId, <code>forkChoice</code>: IForkChoice, <code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L267">packages/lodestar/src/sync/utils/sync.ts:267</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L267">packages/lodestar/src/sync/utils/sync.ts:267</a></em></p>
 <p>Check if a peer is good to be a best peer.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -924,7 +924,7 @@
 <hr />
 <h3 id="chunkify_1">chunkify<a class="headerlink" href="#chunkify_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>chunkify</strong>(<code>blocksPerChunk</code>: number, <code>currentSlot</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#slot">Slot</a>, <code>targetSlot</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#slot">Slot</a>): <em><a href="../../interfaces/sync.islotrange/">ISlotRange</a>[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/blocks.ts#L17">packages/lodestar/src/sync/utils/blocks.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/blocks.ts#L17">packages/lodestar/src/sync/utils/blocks.ts:17</a></em></p>
 <p>Creates slot chunks returned chunks represents (inclusive) start and (inclusive) end slot
 which should be fetched along all slotS(blocks) in between</p>
 <p><strong>Parameters:</strong></p>
@@ -958,7 +958,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="createstatus_1">createStatus<a class="headerlink" href="#createstatus_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>createStatus</strong>(<code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>): <em>Promise‹Status›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L214">packages/lodestar/src/sync/utils/sync.ts:214</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L214">packages/lodestar/src/sync/utils/sync.ts:214</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -978,7 +978,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="fetchblockchunks_1">fetchBlockChunks<a class="headerlink" href="#fetchblockchunks_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fetchBlockChunks</strong>(<code>logger</code>: ILogger, <code>reqResp</code>: <a href="../../interfaces/network.ireqresp/">IReqResp</a>, <code>getPeers</code>: function, <code>signal?</code>: AbortSignal): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L85">packages/lodestar/src/sync/utils/sync.ts:85</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L85">packages/lodestar/src/sync/utils/sync.ts:85</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>logger</strong>: <em>ILogger</em></p>
 <p>▪ <strong>reqResp</strong>: <em><a href="../../interfaces/network.ireqresp/">IReqResp</a></em></p>
@@ -1005,7 +1005,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getbesthead_1">getBestHead<a class="headerlink" href="#getbesthead_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBestHead</strong>(<code>peers</code>: PeerId[], <code>peerMetaStore</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L240">packages/lodestar/src/sync/utils/sync.ts:240</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L240">packages/lodestar/src/sync/utils/sync.ts:240</a></em></p>
 <p>Get best head from peers that support beacon_blocks_by_range.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1038,7 +1038,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getbestpeer_1">getBestPeer<a class="headerlink" href="#getbestpeer_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBestPeer</strong>(<code>config</code>: IBeaconConfig, <code>peers</code>: PeerId[], <code>peerMetaStore</code>: <a href="../../interfaces/network_peers.ipeermetadatastore/">IPeerMetadataStore</a>): <em>PeerId</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L257">packages/lodestar/src/sync/utils/sync.ts:257</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L257">packages/lodestar/src/sync/utils/sync.ts:257</a></em></p>
 <p>Get best peer that support beacon_blocks_by_range.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1067,7 +1067,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getblockrange_1">getBlockRange<a class="headerlink" href="#getblockrange_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockRange</strong>(<code>logger</code>: ILogger, <code>rpc</code>: <a href="../../interfaces/network.ireqresp/">IReqResp</a>, <code>peers</code>: PeerId[], <code>range</code>: <a href="../../interfaces/sync.islotrange/">ISlotRange</a>, <code>blocksPerChunk?</code>: undefined | number, <code>maxRetry</code>: number): <em>Promise‹SignedBeaconBlock[] | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/blocks.ts#L44">packages/lodestar/src/sync/utils/blocks.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/blocks.ts#L44">packages/lodestar/src/sync/utils/blocks.ts:44</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1114,7 +1114,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getblockrangefrompeer_1">getBlockRangeFromPeer<a class="headerlink" href="#getblockrangefrompeer_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockRangeFromPeer</strong>(<code>rpc</code>: <a href="../../interfaces/network.ireqresp/">IReqResp</a>, <code>peer</code>: PeerId, <code>chunk</code>: <a href="../../interfaces/sync.islotrange/">ISlotRange</a>): <em>Promise‹SignedBeaconBlock[] | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/blocks.ts#L32">packages/lodestar/src/sync/utils/blocks.ts:32</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/blocks.ts#L32">packages/lodestar/src/sync/utils/blocks.ts:32</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1142,7 +1142,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getcommonfinalizedcheckpoint_1">getCommonFinalizedCheckpoint<a class="headerlink" href="#getcommonfinalizedcheckpoint_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getCommonFinalizedCheckpoint</strong>(<code>config</code>: IBeaconConfig, <code>peerStatuses</code>: (Status | null)[]): <em>Checkpoint | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L50">packages/lodestar/src/sync/utils/sync.ts:50</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L50">packages/lodestar/src/sync/utils/sync.ts:50</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1166,7 +1166,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="gethighestcommonslot_1">getHighestCommonSlot<a class="headerlink" href="#gethighestcommonslot_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getHighestCommonSlot</strong>(<code>peerStatuses</code>: (Status | null)[]): <em><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#slot">Slot</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L19">packages/lodestar/src/sync/utils/sync.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L19">packages/lodestar/src/sync/utils/sync.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1186,7 +1186,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getstatusfinalizedcheckpoint_1">getStatusFinalizedCheckpoint<a class="headerlink" href="#getstatusfinalizedcheckpoint_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getStatusFinalizedCheckpoint</strong>(<code>status</code>: Status): <em>Checkpoint</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L46">packages/lodestar/src/sync/utils/sync.ts:46</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L46">packages/lodestar/src/sync/utils/sync.ts:46</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1206,7 +1206,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="getsyncpeers">getSyncPeers<a class="headerlink" href="#getsyncpeers" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getSyncPeers</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>condition</code>: <a href="./#peerfilterconditioncallback">PeerFilterConditionCallback</a>, <code>maxPeers</code>: number, <code>minScore</code>: number): <em>PeerId[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/peers.ts#L6">packages/lodestar/src/sync/utils/peers.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/peers.ts#L6">packages/lodestar/src/sync/utils/peers.ts:6</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1243,7 +1243,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="isvalidchainofblocks_1">isValidChainOfBlocks<a class="headerlink" href="#isvalidchainofblocks_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidChainOfBlocks</strong>(<code>config</code>: IBeaconConfig, <code>start</code>: BeaconBlockHeader, <code>signedBlocks</code>: SignedBeaconBlock[]): <em>boolean</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/blocks.ts#L98">packages/lodestar/src/sync/utils/blocks.ts:98</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/blocks.ts#L98">packages/lodestar/src/sync/utils/blocks.ts:98</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1271,7 +1271,7 @@ which should be fetched along all slotS(blocks) in between</p>
 <hr />
 <h3 id="processsyncblocks_1">processSyncBlocks<a class="headerlink" href="#processsyncblocks_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>processSyncBlocks</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>logger</code>: ILogger, <code>isInitialSync</code>: boolean, <code>lastProcessedBlock</code>: <a href="../../interfaces/sync.isynccheckpoint/">ISyncCheckpoint</a>, <code>trusted</code>: boolean): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L161">packages/lodestar/src/sync/utils/sync.ts:161</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L161">packages/lodestar/src/sync/utils/sync.ts:161</a></em></p>
 <p>Bufferes and orders block and passes them to chain.
 Returns last processed slot if it was successful,
 current head slot if there was consensus split,
@@ -1346,7 +1346,7 @@ or null if there was no slots</p>
 <hr />
 <h3 id="sortblocks_1">sortBlocks<a class="headerlink" href="#sortblocks_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>sortBlocks</strong>(<code>blocks</code>: SignedBeaconBlock[]): <em>SignedBeaconBlock[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/blocks.ts#L94">packages/lodestar/src/sync/utils/blocks.ts:94</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/blocks.ts#L94">packages/lodestar/src/sync/utils/blocks.ts:94</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1366,7 +1366,7 @@ or null if there was no slots</p>
 <hr />
 <h3 id="syncpeersstatus_1">syncPeersStatus<a class="headerlink" href="#syncpeersstatus_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>syncPeersStatus</strong>(<code>network</code>: <a href="../../interfaces/network.inetwork/">INetwork</a>, <code>status</code>: Status): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L226">packages/lodestar/src/sync/utils/sync.ts:226</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L226">packages/lodestar/src/sync/utils/sync.ts:226</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1390,7 +1390,7 @@ or null if there was no slots</p>
 <hr />
 <h3 id="validateblocks_1">validateBlocks<a class="headerlink" href="#validateblocks_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>validateBlocks</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>logger</code>: ILogger, <code>onBlockVerificationFail</code>: Function): <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/e9f60dd/packages/lodestar/src/sync/utils/sync.ts#L119">packages/lodestar/src/sync/utils/sync.ts:119</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/b16f2be/packages/lodestar/src/sync/utils/sync.ts#L119">packages/lodestar/src/sync/utils/sync.ts:119</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
