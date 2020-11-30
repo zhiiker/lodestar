@@ -1,4 +1,4 @@
-import {readOnlyMap, List} from "@chainsafe/ssz";
+import {List} from "@chainsafe/ssz";
 import {BeaconState, Eth1Data, PendingAttestation} from "@chainsafe/lodestar-types";
 import {bigIntMin, intDiv} from "@chainsafe/lodestar-utils";
 
@@ -31,7 +31,7 @@ export function processFinalUpdates(epochCtx: EpochContext, process: IEpochProce
   }
 
   // update effective balances with hysteresis
-  const balances = readOnlyMap(state.balances, (balance) => balance);
+  const balances = process.balances;
   for (let i = 0; i < process.statuses.length; i++) {
     const status = process.statuses[i];
     const balance = balances[i];

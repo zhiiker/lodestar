@@ -25,6 +25,8 @@ export interface IEpochProcess {
   prevEpoch: Epoch;
   currentEpoch: Epoch;
   statuses: IAttesterStatus[];
+  // only available after processRewardsAndPenalties
+  balances: Gwei[];
   totalActiveStake: Gwei;
   prevEpochUnslashedStake: IEpochStakeSummary;
   currEpochUnslashedTargetStake: Gwei;
@@ -45,6 +47,7 @@ export function createIEpochProcess(): IEpochProcess {
     prevEpoch: 0,
     currentEpoch: 0,
     statuses: [],
+    balances: [],
     totalActiveStake: BigInt(0),
     prevEpochUnslashedStake: {
       sourceStake: BigInt(0),
