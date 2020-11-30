@@ -647,7 +647,7 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="apistatecontext_1">ApiStateContext<a class="headerlink" href="#apistatecontext_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>ApiStateContext</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/interface.ts#L42">packages/lodestar/src/api/impl/beacon/state/interface.ts:42</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/interface.ts#L42">packages/lodestar/src/api/impl/beacon/state/interface.ts:42</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
@@ -660,15 +660,15 @@
 <hr />
 <h3 id="stateid_1">StateId<a class="headerlink" href="#stateid_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>StateId</strong>: <em>string | "head" | "genesis" | "finalized" | "justified"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/interface.ts#L28">packages/lodestar/src/api/impl/beacon/state/interface.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/interface.ts#L28">packages/lodestar/src/api/impl/beacon/state/interface.ts:28</a></em></p>
 <hr />
 <h3 id="validatorstatus_1">ValidatorStatus<a class="headerlink" href="#validatorstatus_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>ValidatorStatus</strong>: <em>"active"</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/interface.ts#L30">packages/lodestar/src/api/impl/beacon/state/interface.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/interface.ts#L30">packages/lodestar/src/api/impl/beacon/state/interface.ts:30</a></em></p>
 <h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
 <h3 id="getepochbeaconcommittees">getEpochBeaconCommittees<a class="headerlink" href="#getepochbeaconcommittees" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getEpochBeaconCommittees</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>stateContext</code>: <a href="./#apistatecontext">ApiStateContext</a>, <code>epoch</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#epoch">Epoch</a>): <em><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/utils.ts#L64">packages/lodestar/src/api/impl/beacon/state/utils.ts:64</a></em></p>
+<p>▸ <strong>getEpochBeaconCommittees</strong>(<code>config</code>: IBeaconConfig, <code>chain</code>: <a href="../../interfaces/chain.ibeaconchain/">IBeaconChain</a>, <code>stateContext</code>: <a href="./#apistatecontext">ApiStateContext</a>, <code>epoch</code>: <a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#epoch">Epoch</a>): <em><a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/utils.ts#L64">packages/lodestar/src/api/impl/beacon/state/utils.ts:64</a></em></p>
 <p>Returns committees mapped by index -&gt; slot -&gt; validator index</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -693,15 +693,15 @@
 </tr>
 <tr>
 <td><code>epoch</code></td>
-<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#epoch">Epoch</a></td>
+<td><a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#epoch">Epoch</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
+<p><strong>Returns:</strong> <em><a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>[][][]</em></p>
 <hr />
 <h3 id="resolvestateid">resolveStateId<a class="headerlink" href="#resolvestateid" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>resolveStateId</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: <a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a>, <code>forkChoice</code>: IForkChoice, <code>stateId</code>: <a href="./#stateid">StateId</a>): <em>Promise‹<a href="./#apistatecontext">ApiStateContext</a> | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/utils.ts#L11">packages/lodestar/src/api/impl/beacon/state/utils.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/utils.ts#L11">packages/lodestar/src/api/impl/beacon/state/utils.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -732,8 +732,8 @@
 <p><strong>Returns:</strong> <em>Promise‹<a href="./#apistatecontext">ApiStateContext</a> | null›</em></p>
 <hr />
 <h3 id="tovalidatorresponse">toValidatorResponse<a class="headerlink" href="#tovalidatorresponse" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>toValidatorResponse</strong>(<code>index</code>: <a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>validator</code>: Validator): <em>ValidatorResponse</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/2598d08/packages/lodestar/src/api/impl/beacon/state/utils.ts#L52">packages/lodestar/src/api/impl/beacon/state/utils.ts:52</a></em></p>
+<p>▸ <strong>toValidatorResponse</strong>(<code>index</code>: <a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>, <code>validator</code>: Validator): <em>ValidatorResponse</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3760b9d/packages/lodestar/src/api/impl/beacon/state/utils.ts#L52">packages/lodestar/src/api/impl/beacon/state/utils.ts:52</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -745,7 +745,7 @@
 <tbody>
 <tr>
 <td><code>index</code></td>
-<td><a href="../reflection-9834.reflection-9835._.reflection-9837._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
+<td><a href="../reflection-9835.reflection-9836._.reflection-9838._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
 </tr>
 <tr>
 <td><code>validator</code></td>
