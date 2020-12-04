@@ -821,7 +821,7 @@ Removed when included on chain or old</p>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new AttestationRepository</strong>(<code>config</code>: IBeaconConfig, <code>db</code>: IDatabaseController‹Buffer, Buffer›): <em><a href="./">AttestationRepository</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cb92997/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L12">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31b8092/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L12">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1177,8 +1177,8 @@ Removed when included on chain or old</p>
 <p><strong>Returns:</strong> <em>Promise‹Attestation | null›</em></p>
 <hr />
 <h3 id="geattestationsbytargetepoch">geAttestationsByTargetEpoch<a class="headerlink" href="#geattestationsbytargetepoch" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>geAttestationsByTargetEpoch</strong>(<code>epoch</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a>): <em>Promise‹Attestation[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cb92997/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L40">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:40</a></em></p>
+<p>▸ <strong>geAttestationsByTargetEpoch</strong>(<code>epoch</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a>): <em>Promise‹Attestation[]›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31b8092/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L40">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:40</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1190,7 +1190,7 @@ Removed when included on chain or old</p>
 <tbody>
 <tr>
 <td><code>epoch</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a></td>
 </tr>
 </tbody>
 </table>
@@ -1218,8 +1218,8 @@ Removed when included on chain or old</p>
 <p><strong>Returns:</strong> <em>Promise‹Attestation | null›</em></p>
 <hr />
 <h3 id="getattestationsbydataroot">getAttestationsByDataRoot<a class="headerlink" href="#getattestationsbydataroot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getAttestationsByDataRoot</strong>(<code>slot</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#slot">Slot</a>, <code>attestationDataRoot</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#root">Root</a>): <em>Promise‹Attestation[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cb92997/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L29">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:29</a></em></p>
+<p>▸ <strong>getAttestationsByDataRoot</strong>(<code>slot</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#slot">Slot</a>, <code>attestationDataRoot</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#root">Root</a>): <em>Promise‹Attestation[]›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31b8092/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L29">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:29</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1231,11 +1231,11 @@ Removed when included on chain or old</p>
 <tbody>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#slot">Slot</a></td>
 </tr>
 <tr>
 <td><code>attestationDataRoot</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
@@ -1263,8 +1263,8 @@ Removed when included on chain or old</p>
 <p><strong>Returns:</strong> <em>Promise‹Buffer | null›</em></p>
 <hr />
 <h3 id="getcommiteeattestations">getCommiteeAttestations<a class="headerlink" href="#getcommiteeattestations" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getCommiteeAttestations</strong>(<code>epoch</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a>, <code>committeeIndex</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#committeeindex">CommitteeIndex</a>): <em>Promise‹Attestation[]›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cb92997/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L17">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:17</a></em></p>
+<p>▸ <strong>getCommiteeAttestations</strong>(<code>epoch</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a>, <code>committeeIndex</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#committeeindex">CommitteeIndex</a>): <em>Promise‹Attestation[]›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31b8092/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L17">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:17</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1276,11 +1276,11 @@ Removed when included on chain or old</p>
 <tbody>
 <tr>
 <td><code>epoch</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a></td>
 </tr>
 <tr>
 <td><code>committeeIndex</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#committeeindex">CommitteeIndex</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#committeeindex">CommitteeIndex</a></td>
 </tr>
 </tbody>
 </table>
@@ -1389,8 +1389,8 @@ Removed when included on chain or old</p>
 <p><strong>Returns:</strong> <em>Promise‹Attestation | null›</em></p>
 <hr />
 <h3 id="prunefinalized">pruneFinalized<a class="headerlink" href="#prunefinalized" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>pruneFinalized</strong>(<code>finalizedEpoch</code>: <a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a>): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/cb92997/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L45">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:45</a></em></p>
+<p>▸ <strong>pruneFinalized</strong>(<code>finalizedEpoch</code>: <a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a>): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31b8092/packages/lodestar/src/db/api/beacon/repositories/attestation.ts#L45">packages/lodestar/src/db/api/beacon/repositories/attestation.ts:45</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1402,7 +1402,7 @@ Removed when included on chain or old</p>
 <tbody>
 <tr>
 <td><code>finalizedEpoch</code></td>
-<td><a href="../../modules/reflection-9855.reflection-9856._.reflection-9858._lodestar_types_src_types/#epoch">Epoch</a></td>
+<td><a href="../../modules/reflection-9856.reflection-9857._.reflection-9859._lodestar_types_src_types/#epoch">Epoch</a></td>
 </tr>
 </tbody>
 </table>
