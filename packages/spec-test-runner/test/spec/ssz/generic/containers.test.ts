@@ -1,7 +1,7 @@
 import fs from "fs";
 import yaml from "js-yaml";
 import {CompositeType, toHexString, Json, ObjectLike} from "@chainsafe/ssz";
-import {loadYaml} from "@chainsafe/lodestar-utils";
+import {loadYaml, toJson} from "@chainsafe/lodestar-utils";
 import path from "path";
 import {expect} from "chai";
 import {containerTypes} from "./containersTypes";
@@ -22,9 +22,13 @@ describe("ssz_generic/containers/valid", () => {
         runContainersTest(testName, containerTypes.SingleFieldTestStruct);
         break;
 
-      // case "SmallTestStruct":
-      //   runContainersTest(testName, containerTypes.SmallTestStruct);
-      //   break;
+      case "SmallTestStruct":
+        runContainersTest(testName, containerTypes.SmallTestStruct);
+        break;
+
+      case "FixedTestStruct":
+        runContainersTest(testName, containerTypes.FixedTestStruct);
+        break;
     }
   }
 
@@ -52,22 +56,30 @@ describe("ssz_generic/containers/valid", () => {
 
     // value.yaml
     // The object, encoded as a YAML structure. Using the same familiar encoding as YAML data in the other test suites
-    // const expectedJson = loadYaml(fs.readFileSync(valuePath, "utf8"), {preserveCase: true}) as Json;
-    const expectedJson = yaml.load(fs.readFileSync(valuePath, "utf8")) as Json;
+    const expectedJson = loadYaml(fs.readFileSync(valuePath, "utf8"), {preserveCase: true}) as Json;
+    // const expectedJson = yaml.load(fs.readFileSync(valuePath, "utf8")) as Json;
 
     // The conditions are the same for each type:
     describe(testName, () => {
       it("Encoding", () => {
         // - Encoding: After encoding the given value object, the output should match serialized.
         const typeFromJson = sszType.fromJson(expectedJson);
+
+        // TODO: Does not work, because SSZ cannot deserialize {A: 255}
+        // It deserializes to {A: Infinity}. It does not happen for 254, 256
+
+        // Sanity check for bad parsing
         const jsonAgain = sszType.toJson(typeFromJson);
-        console.log({expectedJson, jsonAgain, typeFromJson});
-        expect(typeFromJson).to.deep.equal(jsonAgain, "Wrong jsonAgain");
+        for (const [key, value] of Object.entries(jsonAgain!)) {
+          if (value === Infinity) {
+            throw Error(`${key} is Infinity`);
+          }
+        }
 
         const typeFromJsonBytes = sszType.serialize(typeFromJson);
         expect(toHexString(typeFromJsonBytes)).to.equal(
           toHexString(serializedRaw),
-          `Wrong serialized bytes\n${JSON.stringify(expectedJson, null, 2)}\n`
+          `Wrong serialized bytes\n${JSON.stringify(toJson(expectedJson), null, 2)}\n`
         );
         // expect(toHexString(serialized)).to.equal(toHexString(serializedRaw), "Wrong serialized bytes");
       });
@@ -75,7 +87,9 @@ describe("ssz_generic/containers/valid", () => {
       it("Decoding", () => {
         // - Decoding: After decoding the given serialized bytes, it should match the value object.
         const value = sszType.toJson(expectedType);
-        expect(value).to.deep.equal(expectedJson, "Wrong deserialized object");
+        const valueAsStrings = numberToStringDeep(value);
+        const expectedJsonAsStrings = numberToStringDeep(expectedJson);
+        expect(valueAsStrings).to.deep.equal(expectedJsonAsStrings, "Wrong deserialized object");
       });
 
       it("hashTreeRoot", () => {
@@ -86,3 +100,24 @@ describe("ssz_generic/containers/valid", () => {
     });
   }
 });
+
+/**
+ * Util to make sure comparison is done as string vs string
+ */
+function numberToStringDeep(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map((e) => numberToStringDeep(e));
+  }
+  if (typeof obj === "object") {
+    const _obj: typeof obj = {};
+    for (const [key, value] of Object.entries(obj)) _obj[key] = numberToStringDeep(value);
+    return _obj;
+  }
+  if (typeof obj === "number") {
+    return String(obj);
+  }
+  if (typeof obj === "bigint") {
+    return obj.toString();
+  }
+  return obj;
+}
