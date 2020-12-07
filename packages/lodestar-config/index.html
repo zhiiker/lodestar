@@ -403,15 +403,14 @@
 <p>Configuration variables for an Eth2 network -- consists of params and ssz types (from <a href="https://github.com/ChainSafe/lodestar/tree/master/packages/lodestar-params">lodestar-params</a> and <a href="https://github.com/ChainSafe/lodestar/tree/master/packages/lodestar-types">lodestar-types</a> respectively).</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code><span class="c1">// mainet and minimal presets are available under non-default exports</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">mainnetConfig</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@chainsafe/lodestar-config/lib/presets/mainnet&quot;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span><span class="nx">config</span> <span class="kr">as</span> <span class="nx">minimalConfig</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@chainsafe/lodestar-config/lib/presets/mainnet&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">config</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@chainsafe/lodestar-config/mainnet&quot;</span><span class="p">;</span>
+<span class="c1">// or</span>
+<span class="kr">import</span> <span class="p">{</span><span class="nx">config</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@chainsafe/lodestar-config/minimal&quot;</span><span class="p">;</span>
 
 <span class="c1">// params available under `params`</span>
-
 <span class="kr">const</span> <span class="nx">shardCount</span> <span class="o">=</span> <span class="nx">mainnetConfig</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">SHARD_COUNT</span><span class="p">;</span>
 
 <span class="c1">// types available under `types`</span>
-
 <span class="kr">const</span> <span class="nx">BeaconStateType</span> <span class="o">=</span> <span class="nx">mainnetConfig</span><span class="p">.</span><span class="nx">types</span><span class="p">.</span><span class="nx">BeaconState</span><span class="p">;</span>
 </code></pre></div>
 
