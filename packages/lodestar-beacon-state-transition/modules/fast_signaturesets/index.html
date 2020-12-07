@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-beacon-state-transition/modules/reflection-1182.reflection-1183._/">
+        <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-beacon-state-transition/modules/fast_signaturesets/">
       
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Reflection 1182.reflection 1183. - Lodestar documentation</title>
+        <title>Fast signaturesets - Lodestar documentation</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module" class="md-skip">
+        <a href="#module-fastsignaturesets" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Reflection 1182.reflection 1183. 
+              Fast signaturesets
             
           </span>
         </div>
@@ -389,8 +389,145 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
-    Modules
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    Enumerations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-aliases" class="md-nav__link">
+    Type aliases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references_1" class="md-nav__link">
+    References
+  </a>
+  
+    <nav class="md-nav" aria-label="References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isignatureset" class="md-nav__link">
+    ISignatureSet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signaturesettype" class="md-nav__link">
+    SignatureSetType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifysignatureset" class="md-nav__link">
+    verifySignatureSet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-aliases_1" class="md-nav__link">
+    Type aliases
+  </a>
+  
+    <nav class="md-nav" aria-label="Type aliases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isignatureset_1" class="md-nav__link">
+    ISignatureSet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getallblocksignaturesets" class="md-nav__link">
+    getAllBlockSignatureSets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getallblocksignaturesetsexceptproposer" class="md-nav__link">
+    getAllBlockSignatureSetsExceptProposer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattestationssignaturesets" class="md-nav__link">
+    getAttestationsSignatureSets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getattesterslashingssignaturesets" class="md-nav__link">
+    getAttesterSlashingsSignatureSets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproposerslashingssignaturesets" class="md-nav__link">
+    getProposerSlashingsSignatureSets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvoluntaryexitssignaturesets" class="md-nav__link">
+    getVoluntaryExitsSignatureSets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifysignatureset_1" class="md-nav__link">
+    verifySignatureSet
   </a>
   
 </li>
@@ -412,18 +549,243 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar-beacon-state-transition/modules/reflection-1182.reflection-1183._.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/chainsafe/lodestar/edit/master/docs/packages/lodestar-beacon-state-transition/modules/fast_signaturesets.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="../reflection-1182/"></a> › <a href="../reflection-1182.reflection-1183/"></a> › <a href="./">/</a></p>
-<h1 id="module">Module: /<a class="headerlink" href="#module" title="Permanent link">&para;</a></h1>
+                <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="./">fast/signatureSets</a></p>
+<h1 id="module-fastsignaturesets">Module: fast/signatureSets<a class="headerlink" href="#module-fastsignaturesets" title="Permanent link">&para;</a></h1>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
-<h3 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="../reflection-1182.reflection-1183._.reflection-1185/"></a></li>
+<li><a href="./#isignatureset">ISignatureSet</a></li>
+<li><a href="./#signaturesettype">SignatureSetType</a></li>
+<li><a href="./#verifysignatureset">verifySignatureSet</a></li>
 </ul>
+<h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../enums/fast_signaturesets.signaturesettype/">SignatureSetType</a></li>
+</ul>
+<h3 id="type-aliases">Type aliases<a class="headerlink" href="#type-aliases" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#isignatureset">ISignatureSet</a></li>
+</ul>
+<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="./#getallblocksignaturesets">getAllBlockSignatureSets</a></li>
+<li><a href="./#getallblocksignaturesetsexceptproposer">getAllBlockSignatureSetsExceptProposer</a></li>
+<li><a href="./#getattestationssignaturesets">getAttestationsSignatureSets</a></li>
+<li><a href="./#getattesterslashingssignaturesets">getAttesterSlashingsSignatureSets</a></li>
+<li><a href="./#getproposerslashingssignaturesets">getProposerSlashingsSignatureSets</a></li>
+<li><a href="./#getvoluntaryexitssignaturesets">getVoluntaryExitsSignatureSets</a></li>
+<li><a href="./#verifysignatureset">verifySignatureSet</a></li>
+</ul>
+<h2 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h2>
+<h3 id="isignatureset">ISignatureSet<a class="headerlink" href="#isignatureset" title="Permanent link">&para;</a></h3>
+<p>• <strong>ISignatureSet</strong>:</p>
+<hr />
+<h3 id="signaturesettype">SignatureSetType<a class="headerlink" href="#signaturesettype" title="Permanent link">&para;</a></h3>
+<p>• <strong>SignatureSetType</strong>:</p>
+<hr />
+<h3 id="verifysignatureset">verifySignatureSet<a class="headerlink" href="#verifysignatureset" title="Permanent link">&para;</a></h3>
+<p>• <strong>verifySignatureSet</strong>:</p>
+<h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
+<h3 id="isignatureset_1">ISignatureSet<a class="headerlink" href="#isignatureset_1" title="Permanent link">&para;</a></h3>
+<p>Ƭ <strong>ISignatureSet</strong>: <em>object | object</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/types.ts#L9">packages/lodestar-beacon-state-transition/src/fast/signatureSets/types.ts:9</a></em></p>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="getallblocksignaturesets">getAllBlockSignatureSets<a class="headerlink" href="#getallblocksignaturesets" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAllBlockSignatureSets</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/index.ts#L18">packages/lodestar-beacon-state-transition/src/fast/signatureSets/index.ts:18</a></em></p>
+<p>Includes all signatures on the block (except the deposit signatures) for verification.
+Deposits are not included because they can legally have invalid signatures.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="getallblocksignaturesetsexceptproposer">getAllBlockSignatureSetsExceptProposer<a class="headerlink" href="#getallblocksignaturesetsexceptproposer" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAllBlockSignatureSetsExceptProposer</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/index.ts#L33">packages/lodestar-beacon-state-transition/src/fast/signatureSets/index.ts:33</a></em></p>
+<p>Includes all signatures on the block (except the deposit signatures) for verification.
+Useful since block proposer signature is verified beforehand on gossip validation</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="getattestationssignaturesets">getAttestationsSignatureSets<a class="headerlink" href="#getattestationssignaturesets" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAttestationsSignatureSets</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/attestations.ts#L7">packages/lodestar-beacon-state-transition/src/fast/signatureSets/attestations.ts:7</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="getattesterslashingssignaturesets">getAttesterSlashingsSignatureSets<a class="headerlink" href="#getattesterslashingssignaturesets" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getAttesterSlashingsSignatureSets</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/attesterSlashings.ts#L7">packages/lodestar-beacon-state-transition/src/fast/signatureSets/attesterSlashings.ts:7</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="getproposerslashingssignaturesets">getProposerSlashingsSignatureSets<a class="headerlink" href="#getproposerslashingssignaturesets" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getProposerSlashingsSignatureSets</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/proposerSlashings.ts#L7">packages/lodestar-beacon-state-transition/src/fast/signatureSets/proposerSlashings.ts:7</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="getvoluntaryexitssignaturesets">getVoluntaryExitsSignatureSets<a class="headerlink" href="#getvoluntaryexitssignaturesets" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getVoluntaryExitsSignatureSets</strong>(<code>epochCtx</code>: <a href="../../classes/fast_util.epochcontext/">EpochContext</a>, <code>state</code>: BeaconState, <code>signedBlock</code>: SignedBeaconBlock): <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/voluntaryExits.ts#L7">packages/lodestar-beacon-state-transition/src/fast/signatureSets/voluntaryExits.ts:7</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>epochCtx</code></td>
+<td><a href="../../classes/fast_util.epochcontext/">EpochContext</a></td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td>BeaconState</td>
+</tr>
+<tr>
+<td><code>signedBlock</code></td>
+<td>SignedBeaconBlock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em><a href="./#isignatureset">ISignatureSet</a>[]</em></p>
+<hr />
+<h3 id="verifysignatureset_1">verifySignatureSet<a class="headerlink" href="#verifysignatureset_1" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>verifySignatureSet</strong>(<code>signatureSet</code>: <a href="./#isignatureset">ISignatureSet</a>): <em>boolean</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/160aace/packages/lodestar-beacon-state-transition/src/fast/signatureSets/verify.ts#L4">packages/lodestar-beacon-state-transition/src/fast/signatureSets/verify.ts:4</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>signatureSet</code></td>
+<td><a href="./#isignatureset">ISignatureSet</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>boolean</em></p>
                 
               
               
