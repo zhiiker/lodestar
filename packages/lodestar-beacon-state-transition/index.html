@@ -14,7 +14,7 @@
       
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6910b76c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19753c6b.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
@@ -407,7 +407,7 @@ works in browser and Node.js environments.</p>
 <span class="kr">import</span> <span class="p">{</span><span class="nx">subscribe</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
 <span class="kr">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;a.example&quot;</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">click</span> <span class="k">of</span> <span class="nx">subscribe</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">))</span> <span class="p">{</span>
+<span class="k">for</span> <span class="k">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">click</span> <span class="k">of</span> <span class="nx">subscribe</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">))</span> <span class="p">{</span>
   <span class="cm">/* Asynchronously iterate over click events on the element. */</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -417,7 +417,7 @@ works in browser and Node.js environments.</p>
 <span class="kr">import</span> <span class="p">{</span><span class="nx">stream</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;event-iterator&quot;</span>
 <span class="kr">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;fs&quot;</span><span class="p">).</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&quot;example-file&quot;</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span>
+<span class="k">for</span> <span class="k">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span>
   <span class="cm">/* Asynchronously iterate over buffer chunks read from file. */</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -610,9 +610,9 @@ want a function that will:</p>
 nice fit for this problem. They are a stage 3 EcmaScript proposal and can be
 used by using TypeScript or Babel.</p>
 <p>A similar solution using async iterators could look like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="kd">function</span> <span class="nx">async</span> <span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="kd">function</span> <span class="k">async</span> <span class="nx">isLongTextFile</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">let</span> <span class="nx">lines</span> <span class="o">=</span> <span class="mf">1</span>
-  <span class="k">for</span> <span class="nx">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// or file::stream()</span>
+  <span class="k">for</span> <span class="k">await</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">chunk</span> <span class="k">of</span> <span class="nx">stream</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">file</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// or file::stream()</span>
     <span class="nx">lines</span> <span class="o">+=</span> <span class="nx">countLines</span><span class="p">(</span><span class="nx">chunk</span><span class="p">)</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">lines</span> <span class="o">&gt;</span> <span class="mf">1000</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span>
   <span class="p">}</span>
@@ -758,8 +758,8 @@ SOFTWARE.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.fd16492e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
