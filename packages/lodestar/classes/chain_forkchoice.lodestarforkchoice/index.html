@@ -622,6 +622,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#getheads" class="md-nav__link">
+    getHeads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getjustifiedcheckpoint" class="md-nav__link">
     getJustifiedCheckpoint
   </a>
@@ -828,6 +835,7 @@
 <li><a href="./#getfinalizedcheckpoint">getFinalizedCheckpoint</a></li>
 <li><a href="./#gethead">getHead</a></li>
 <li><a href="./#getheadroot">getHeadRoot</a></li>
+<li><a href="./#getheads">getHeads</a></li>
 <li><a href="./#getjustifiedcheckpoint">getJustifiedCheckpoint</a></li>
 <li><a href="./#getlatestmessage">getLatestMessage</a></li>
 <li><a href="./#gettime">getTime</a></li>
@@ -848,7 +856,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new LodestarForkChoice</strong>(<code>__namedParameters</code>: object): <em><a href="./">LodestarForkChoice</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/d6f7fa2/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L17">packages/lodestar/src/chain/forkChoice/forkChoice.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/93c0890/packages/lodestar/src/chain/forkChoice/forkChoice.ts#L17">packages/lodestar/src/chain/forkChoice/forkChoice.ts:17</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -880,7 +888,7 @@
 <p><strong>Returns:</strong> <em><a href="./">LodestarForkChoice</a></em></p>
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="bestjustifiedbalances">bestJustifiedBalances<a class="headerlink" href="#bestjustifiedbalances" title="Permanent link">&para;</a></h3>
-<p>• <strong>bestJustifiedBalances</strong>: <em><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#gwei">Gwei</a>[]</em></p>
+<p>• <strong>bestJustifiedBalances</strong>: <em><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#gwei">Gwei</a>[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#bestjustifiedbalances">bestJustifiedBalances</a></em></p>
 <p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:54</p>
 <p>Balances tracked in the protoArray, or soon to be tracked
@@ -899,7 +907,7 @@ Indexed by validator index</p>
 <p>Storage for <code>ForkChoice</code>, modelled off the spec <code>Store</code> object.</p>
 <hr />
 <h3 id="justifiedbalances">justifiedBalances<a class="headerlink" href="#justifiedbalances" title="Permanent link">&para;</a></h3>
-<p>• <strong>justifiedBalances</strong>: <em><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#gwei">Gwei</a>[]</em></p>
+<p>• <strong>justifiedBalances</strong>: <em><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#gwei">Gwei</a>[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#justifiedbalances">justifiedBalances</a></em></p>
 <p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:47</p>
 <p>Balances currently tracked in the protoArray
@@ -936,11 +944,11 @@ Each vote contains the latest message and previous message</p>
 <h3 id="forwarditerateblocksummaries">forwardIterateBlockSummaries<a class="headerlink" href="#forwarditerateblocksummaries" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>forwardIterateBlockSummaries</strong>(): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#forwarditerateblocksummaries">forwardIterateBlockSummaries</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:183</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:184</p>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr />
 <h3 id="getancestor">getAncestor<a class="headerlink" href="#getancestor" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getAncestor</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>, <code>ancestorSlot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a>): <em>Uint8Array</em></p>
+<p>▸ <strong>getAncestor</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>, <code>ancestorSlot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a>): <em>Uint8Array</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getancestor">getAncestor</a></em></p>
 <p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:93</p>
 <p>Returns the block root of an ancestor of <code>blockRoot</code> at the given <code>slot</code>.
@@ -959,20 +967,20 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 <tr>
 <td><code>ancestorSlot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Uint8Array</em></p>
 <hr />
 <h3 id="getblock">getBlock<a class="headerlink" href="#getblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBlock</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary | null</em></p>
+<p>▸ <strong>getBlock</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary | null</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblock">getBlock</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:159</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:160</p>
 <p>Returns a <code>IBlockSummary</code> if the block is known <strong>and</strong> a descendant of the finalized root.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -985,15 +993,36 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>IBlockSummary | null</em></p>
 <hr />
 <h3 id="getblocksummariesatslot">getBlockSummariesAtSlot<a class="headerlink" href="#getblocksummariesatslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a>): <em>IBlockSummary[]</em></p>
+<p>▸ <strong>getBlockSummariesAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesatslot">getBlockSummariesAtSlot</a></em></p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:186</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slot</code></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
+<hr />
+<h3 id="getblocksummariesbyparentroot">getBlockSummariesByParentRoot<a class="headerlink" href="#getblocksummariesbyparentroot" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getBlockSummariesByParentRoot</strong>(<code>parentRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
+<p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesbyparentroot">getBlockSummariesByParentRoot</a></em></p>
 <p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:185</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1005,38 +1034,17 @@ Each vote contains the latest message and previous message</p>
 </thead>
 <tbody>
 <tr>
-<td><code>slot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
-<hr />
-<h3 id="getblocksummariesbyparentroot">getBlockSummariesByParentRoot<a class="headerlink" href="#getblocksummariesbyparentroot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getBlockSummariesByParentRoot</strong>(<code>parentRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
-<p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getblocksummariesbyparentroot">getBlockSummariesByParentRoot</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:184</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
 <td><code>parentRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr />
 <h3 id="getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot<a class="headerlink" href="#getcanonicalblocksummaryatslot" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a>): <em>IBlockSummary | null</em></p>
+<p>▸ <strong>getCanonicalBlockSummaryAtSlot</strong>(<code>slot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a>): <em>IBlockSummary | null</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getcanonicalblocksummaryatslot">getCanonicalBlockSummaryAtSlot</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:182</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:183</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1048,7 +1056,7 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>slot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
@@ -1057,13 +1065,13 @@ Each vote contains the latest message and previous message</p>
 <h3 id="getfinalizedblock">getFinalizedBlock<a class="headerlink" href="#getfinalizedblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalizedBlock</strong>(): <em>IBlockSummary</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getfinalizedblock">getFinalizedBlock</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:160</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:161</p>
 <p><strong>Returns:</strong> <em>IBlockSummary</em></p>
 <hr />
 <h3 id="getfinalizedcheckpoint">getFinalizedCheckpoint<a class="headerlink" href="#getfinalizedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getFinalizedCheckpoint</strong>(): <em>Checkpoint</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getfinalizedcheckpoint">getFinalizedCheckpoint</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:105</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:106</p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="gethead">getHead<a class="headerlink" href="#gethead" title="Permanent link">&para;</a></h3>
@@ -1082,16 +1090,22 @@ Each vote contains the latest message and previous message</p>
 <p>https://github.com/ethereum/eth2.0-specs/blob/v0.12.2/specs/phase0/fork-choice.md#get_head</p>
 <p><strong>Returns:</strong> <em>Uint8Array</em></p>
 <hr />
+<h3 id="getheads">getHeads<a class="headerlink" href="#getheads" title="Permanent link">&para;</a></h3>
+<p>▸ <strong>getHeads</strong>(): <em>IBlockSummary[]</em></p>
+<p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getheads">getHeads</a></em></p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:105</p>
+<p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
+<hr />
 <h3 id="getjustifiedcheckpoint">getJustifiedCheckpoint<a class="headerlink" href="#getjustifiedcheckpoint" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getJustifiedCheckpoint</strong>(): <em>Checkpoint</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getjustifiedcheckpoint">getJustifiedCheckpoint</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:106</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:107</p>
 <p><strong>Returns:</strong> <em>Checkpoint</em></p>
 <hr />
 <h3 id="getlatestmessage">getLatestMessage<a class="headerlink" href="#getlatestmessage" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getLatestMessage</strong>(<code>validatorIndex</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>): <em>ILatestMessage | undefined</em></p>
+<p>▸ <strong>getLatestMessage</strong>(<code>validatorIndex</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#validatorindex">ValidatorIndex</a>): <em>ILatestMessage | undefined</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#getlatestmessage">getLatestMessage</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:146</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:147</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1103,22 +1117,22 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>validatorIndex</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#validatorindex">ValidatorIndex</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>ILatestMessage | undefined</em></p>
 <hr />
 <h3 id="gettime">getTime<a class="headerlink" href="#gettime" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>getTime</strong>(): <em><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></em></p>
+<p>▸ <strong>getTime</strong>(): <em><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#gettime">getTime</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:151</p>
-<p><strong>Returns:</strong> <em><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></em></p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:152</p>
+<p><strong>Returns:</strong> <em><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></em></p>
 <hr />
 <h3 id="hasblock">hasBlock<a class="headerlink" href="#hasblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
+<p>▸ <strong>hasBlock</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#hasblock">hasBlock</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:155</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:156</p>
 <p>Returns <code>true</code> if the block is known <strong>and</strong> a descendant of the finalized root.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1131,16 +1145,16 @@ Each vote contains the latest message and previous message</p>
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
 <h3 id="isdescendant">isDescendant<a class="headerlink" href="#isdescendant" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>isDescendant</strong>(<code>ancestorRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>, <code>descendantRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
+<p>▸ <strong>isDescendant</strong>(<code>ancestorRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>, <code>descendantRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#isdescendant">isDescendant</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:171</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:172</p>
 <p>Returns true if the <code>descendantRoot</code> has an ancestor with <code>ancestorRoot</code>.</p>
 <p>Always returns <code>false</code> if either input roots are unknown.
 Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (and the roots are known)</p>
@@ -1155,20 +1169,20 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <tbody>
 <tr>
 <td><code>ancestorRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 <tr>
 <td><code>descendantRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
 <h3 id="isdescendantoffinalized">isDescendantOfFinalized<a class="headerlink" href="#isdescendantoffinalized" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>isDescendantOfFinalized</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
+<p>▸ <strong>isDescendantOfFinalized</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>boolean</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#isdescendantoffinalized">isDescendantOfFinalized</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:164</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:165</p>
 <p>Return <code>true</code> if <code>block_root</code> is equal to the finalized root, or a known descendant of it.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1181,16 +1195,16 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>boolean</em></p>
 <hr />
 <h3 id="iterateblocksummaries">iterateBlockSummaries<a class="headerlink" href="#iterateblocksummaries" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>iterateBlockSummaries</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
+<p>▸ <strong>iterateBlockSummaries</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#iterateblocksummaries">iterateBlockSummaries</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:177</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:178</p>
 <p>Iterates backwards through block summaries, starting from a block root</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1203,16 +1217,16 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>IBlockSummary[]</em></p>
 <hr />
 <h3 id="iteratenonancestors">iterateNonAncestors<a class="headerlink" href="#iteratenonancestors" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>iterateNonAncestors</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
+<p>▸ <strong>iterateNonAncestors</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#iteratenonancestors">iterateNonAncestors</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:181</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:182</p>
 <p>The same to iterateBlockSummaries but this gets non-ancestor nodes instead of ancestor nodes.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1225,7 +1239,7 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <tbody>
 <tr>
 <td><code>blockRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
@@ -1234,7 +1248,7 @@ Still returns <code>true</code> if <code>ancestorRoot===descendantRoot</code> (a
 <h3 id="onattestation">onAttestation<a class="headerlink" href="#onattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>onAttestation</strong>(<code>attestation</code>: IndexedAttestation): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#onattestation">onAttestation</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:145</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:146</p>
 <p>Register <code>attestation</code> with the fork choice DAG so that it may influence future calls to <code>getHead</code>.</p>
 <h2 id="specification_2">Specification<a class="headerlink" href="#specification_2" title="Permanent link">&para;</a></h2>
 <p>Approximates:</p>
@@ -1263,9 +1277,9 @@ will not be run here.</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="onblock">onBlock<a class="headerlink" href="#onblock" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>onBlock</strong>(<code>block</code>: BeaconBlock, <code>state</code>: BeaconState, <code>justifiedBalances?</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#gwei">Gwei</a>[]): <em>void</em></p>
+<p>▸ <strong>onBlock</strong>(<code>block</code>: BeaconBlock, <code>state</code>: BeaconState, <code>justifiedBalances?</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#gwei">Gwei</a>[]): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#onblock">onBlock</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:126</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:127</p>
 <p>Add <code>block</code> to the fork choice DAG.</p>
 <h2 id="specification_3">Specification<a class="headerlink" href="#specification_3" title="Permanent link">&para;</a></h2>
 <p>Approximates:</p>
@@ -1295,16 +1309,16 @@ This ensures that the forkchoice is never out of sync.</p>
 </tr>
 <tr>
 <td><code>justifiedBalances?</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#gwei">Gwei</a>[]</td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#gwei">Gwei</a>[]</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="prune">prune<a class="headerlink" href="#prune" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>prune</strong>(<code>finalizedRoot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
+<p>▸ <strong>prune</strong>(<code>finalizedRoot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a>): <em>IBlockSummary[]</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#prune">prune</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:172</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:173</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1316,7 +1330,7 @@ This ensures that the forkchoice is never out of sync.</p>
 <tbody>
 <tr>
 <td><code>finalizedRoot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#root">Root</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#root">Root</a></td>
 </tr>
 </tbody>
 </table>
@@ -1325,7 +1339,7 @@ This ensures that the forkchoice is never out of sync.</p>
 <h3 id="setprunethreshold">setPruneThreshold<a class="headerlink" href="#setprunethreshold" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setPruneThreshold</strong>(<code>threshold</code>: number): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#setprunethreshold">setPruneThreshold</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:173</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:174</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -1344,9 +1358,9 @@ This ensures that the forkchoice is never out of sync.</p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="updatetime">updateTime<a class="headerlink" href="#updatetime" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>updateTime</strong>(<code>currentSlot</code>: <a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a>): <em>void</em></p>
+<p>▸ <strong>updateTime</strong>(<code>currentSlot</code>: <a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a>): <em>void</em></p>
 <p><em>Inherited from <a href="./">LodestarForkChoice</a>.<a href="./#updatetime">updateTime</a></em></p>
-<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:150</p>
+<p>Defined in packages/lodestar-fork-choice/lib/forkChoice/forkChoice.d.ts:151</p>
 <p>Call <code>onTick</code> for all slots between <code>fcStore.getCurrentSlot()</code> and the provided <code>currentSlot</code>.</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -1359,7 +1373,7 @@ This ensures that the forkchoice is never out of sync.</p>
 <tbody>
 <tr>
 <td><code>currentSlot</code></td>
-<td><a href="../../modules/reflection-9865.reflection-9866._.reflection-9868._lodestar_types_src_types/#slot">Slot</a></td>
+<td><a href="../../modules/reflection-9915.reflection-9916._.reflection-9918._lodestar_types_src_types/#slot">Slot</a></td>
 </tr>
 </tbody>
 </table>
