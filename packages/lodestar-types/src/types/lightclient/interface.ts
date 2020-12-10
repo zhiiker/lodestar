@@ -6,4 +6,8 @@ export interface ILightclientSSZTypes {
   BeaconBlock: ContainerType<t.BeaconBlock>;
   BeaconBlockHeader: ContainerType<t.BeaconBlockHeader>;
   BeaconState: ContainerType<t.BeaconState>;
+
+  LightClientSnapshot: ContainerType<t.LightClientSnapshot>;
+  LightClientUpdate: ContainerType<t.LightClientUpdate>;
+  LightClientStore: ContainerType<t.LightClientStore>;
 }

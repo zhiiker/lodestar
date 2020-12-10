@@ -1,4 +1,4 @@
-import {BitVectorType, ContainerType, VectorType} from "@chainsafe/ssz";
+import {BitVectorType, ContainerType, VectorType, BitVector} from "@chainsafe/ssz";
 import * as t from "../../../types/lightclient/types";
 import {LightClientTypesGenerator} from "./interface";
 
@@ -52,6 +52,43 @@ export const BeaconState: LightClientTypesGenerator<ContainerType<t.BeaconState>
       ...phase0Types.BeaconState.fields,
       currentSyncCommittee: lightclientTypes.SyncCommittee,
       nextSyncCommittee: lightclientTypes.SyncCommittee,
+    },
+  });
+};
+
+export const LightClientSnapshot: LightClientTypesGenerator<
+  ContainerType<t.LightClientSnapshot>,
+  "SyncCommittee" | "BeaconBlockHeader"
+> = (params, phase0Types, lightclientTypes) => {
+  return new ContainerType({
+    fields: {
+      header: lightclientTypes.BeaconBlockHeader,
+      currentSyncCommittee: lightclientTypes.SyncCommittee,
+      nextSyncCommittee: lightclientTypes.SyncCommittee,
+    },
+  });
+};
+
+export const LightClientUpdate: LightClientTypesGenerator<
+  ContainerType<t.LightClientUpdate>,
+  "SyncCommittee" | "BeaconBlockHeader"
+> = (params, phase0Types, lightclientTypes) => {
+  return new ContainerType({
+    fields: {
+      header: lightclientTypes.BeaconBlockHeader,
+      nextSyncCommittee: lightclientTypes.SyncCommittee,
+      nextSyncCommitteeBranch: new VectorType({
+        elementType: phase0Types.Bytes32,
+        length: Math.log2(phase0Types.BeaconState.),
+      }),
+      finalityHeader: lightclientTypes.BeaconBlockHeader,
+      finalityBranch: new VectorType({
+        elementType: phase0Types.Bytes32,
+        length: Math.log2(params.lightclient.NEXT_SYNC_COMMITTEE_INDEX),
+      }),
+      syncCommitteeBits: new BitVectorType({length: params.lightclient.SYNC_COMMITTEE_SIZE}),
+      syncCommitteeSignature: phase0Types.BLSSignature,
+      forkVersion: phase0Types.Version,
     },
   });
 };
