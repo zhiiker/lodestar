@@ -239,20 +239,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../medalla/" class="md-nav__link">
-      Medalla testnet
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../altona/" class="md-nav__link">
-      Altona testnet
+    <a href="../testnet/" class="md-nav__link">
+      Mainnet or public testnet
     </a>
   </li>
 
@@ -599,34 +587,17 @@
 
 <h3 id="import-a-validator-keystore-from-deposit-launch-pad">Import a validator keystore from Deposit Launch Pad<a class="headerlink" href="#import-a-validator-keystore-from-deposit-launch-pad" title="Permanent link">&para;</a></h3>
 <p>To import a keystore that was created via the ETH2.0 Deposit Launch Pad:</p>
-<div class="codehilite"><pre><span></span><code>./lodestar account validator import --testnet medalla --directory &lt;path to your launchpad keys&gt;
+<div class="codehilite"><pre><span></span><code>./lodestar account validator import --testnet <span class="nv">$TESTNET_NAME</span> --directory &lt;path to your launchpad keys&gt;
 </code></pre></div>
 
 <p>You will be prompted to enter a password. Use the same one you used to create the keys initially.</p>
 <p>To confirm your keys have been imported run:</p>
-<div class="codehilite"><pre><span></span><code>./lodestar account validator list --testnet medalla
+<div class="codehilite"><pre><span></span><code>./lodestar account validator list --testnet <span class="nv">$TESTNET_NAME</span>
 </code></pre></div>
 
 <p>This command will print the public address of every active keystore.</p>
 <h3 id="submit-a-validator-deposit">Submit a validator deposit<a class="headerlink" href="#submit-a-validator-deposit" title="Permanent link">&para;</a></h3>
-<p>To submit the deposit transaction for a validator, use the following command with one of these options to connect to an Eth1 node:</p>
-<ul>
-<li>To fund the deposit with a local Keystore use the <code>--keystorePath</code> and <code>--keystorePassword</code> arguments. You should provide a <code>--rpcUrl</code> to connect to an Eth1 node and broadcast the transaction.</li>
-<li>To fund the deposit with your local node with accounts you can connect directly to it with</li>
-<li><code>--ipcPath</code> to connect to the node via IPC.</li>
-<li><code>--rpcUrl</code> and <code>--rpcPassword</code> to connect to the node's JSON RPC API and unlock its account.</li>
-<li><code>--rpcUrl</code> alone to connect to the node's JSON RPC API if it's already unlocked.</li>
-</ul>
-<div class="codehilite"><pre><span></span><code>lodestar account validator deposit --validator 0x88f920bb56d76c68e0d983e9772e67d2ba4afadd5eb162a51f7fc62212c138e5611d99f98f834fce43f310295ca35eca
-</code></pre></div>
-
-<p>The resulting transaction hash will be print to the terminal and also stored in the validator's dir.</p>
-<!-- prettier-ignore-start -->
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The existance of the transaction hash file will block subsecuent deposits for the same validator.</p>
-</div>
-<!-- prettier-ignore-end -->
+<p>DEPRECATED. Please use the official tools to perform your deposits - eth2.0-deposit-cli: https://github.com/ethereum/eth2.0-deposit-cli - Ethereum Foundation launchpad: https://medalla.launchpad.ethereum.org</p>
                 
               
               
