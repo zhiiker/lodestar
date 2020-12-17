@@ -476,6 +476,9 @@
                 
                 <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/network_gossip/">network/gossip</a> › <a href="./">IGossipMessageValidator</a></p>
 <h1 id="interface-igossipmessagevalidator">Interface: IGossipMessageValidator<a class="headerlink" href="#interface-igossipmessagevalidator" title="Permanent link">&para;</a></h1>
+<p>Contains various methods for validation of incoming gossip topic data.
+The conditions for valid gossip topics and how they are handled are specified here:
+https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md#global-topics</p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>IGossipMessageValidator</strong></li>
@@ -497,7 +500,7 @@
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="isvalidincomingaggregateandproof">isValidIncomingAggregateAndProof<a class="headerlink" href="#isvalidincomingaggregateandproof" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingAggregateAndProof</strong>(<code>signedAggregateAndProof</code>: SignedAggregateAndProof): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L90">packages/lodestar/src/network/gossip/interface.ts:90</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L103">packages/lodestar/src/network/gossip/interface.ts:103</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -517,7 +520,7 @@
 <hr />
 <h3 id="isvalidincomingattesterslashing">isValidIncomingAttesterSlashing<a class="headerlink" href="#isvalidincomingattesterslashing" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingAttesterSlashing</strong>(<code>attesterSlashing</code>: AttesterSlashing): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L93">packages/lodestar/src/network/gossip/interface.ts:93</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L106">packages/lodestar/src/network/gossip/interface.ts:106</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -537,7 +540,7 @@
 <hr />
 <h3 id="isvalidincomingblock">isValidIncomingBlock<a class="headerlink" href="#isvalidincomingblock" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingBlock</strong>(<code>signedBlock</code>: SignedBeaconBlock): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L88">packages/lodestar/src/network/gossip/interface.ts:88</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L101">packages/lodestar/src/network/gossip/interface.ts:101</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -557,7 +560,7 @@
 <hr />
 <h3 id="isvalidincomingcommitteeattestation">isValidIncomingCommitteeAttestation<a class="headerlink" href="#isvalidincomingcommitteeattestation" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingCommitteeAttestation</strong>(<code>attestation</code>: Attestation, <code>subnet</code>: number): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L89">packages/lodestar/src/network/gossip/interface.ts:89</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L102">packages/lodestar/src/network/gossip/interface.ts:102</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -581,7 +584,7 @@
 <hr />
 <h3 id="isvalidincomingproposerslashing">isValidIncomingProposerSlashing<a class="headerlink" href="#isvalidincomingproposerslashing" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingProposerSlashing</strong>(<code>proposerSlashing</code>: ProposerSlashing): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L92">packages/lodestar/src/network/gossip/interface.ts:92</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L105">packages/lodestar/src/network/gossip/interface.ts:105</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -601,7 +604,7 @@
 <hr />
 <h3 id="isvalidincomingvoluntaryexit">isValidIncomingVoluntaryExit<a class="headerlink" href="#isvalidincomingvoluntaryexit" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>isValidIncomingVoluntaryExit</strong>(<code>voluntaryExit</code>: SignedVoluntaryExit): <em>Promise‹<a href="../../enums/network_gossip.extendedvalidatorresult/">ExtendedValidatorResult</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/gossip/interface.ts#L91">packages/lodestar/src/network/gossip/interface.ts:91</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/gossip/interface.ts#L104">packages/lodestar/src/network/gossip/interface.ts:104</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

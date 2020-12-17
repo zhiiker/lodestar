@@ -490,6 +490,7 @@
                 
                 <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/network_peers/">network/peers</a> › <a href="./">IPeerMetadataStore</a></p>
 <h1 id="interface-ipeermetadatastore">Interface: IPeerMetadataStore<a class="headerlink" href="#interface-ipeermetadatastore" title="Permanent link">&para;</a></h1>
+<p>Get/set data about peers.</p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>IPeerMetadataStore</strong></li>
@@ -513,7 +514,7 @@
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="getencoding">getEncoding<a class="headerlink" href="#getencoding" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getEncoding</strong>(<code>peer</code>: PeerId): <em><a href="../../enums/constants.reqrespencoding/">ReqRespEncoding</a> | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L18">packages/lodestar/src/network/peers/interface.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L21">packages/lodestar/src/network/peers/interface.ts:21</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -533,7 +534,7 @@
 <hr />
 <h3 id="getmetadata">getMetadata<a class="headerlink" href="#getmetadata" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getMetadata</strong>(<code>peer</code>: PeerId): <em>Metadata | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L16">packages/lodestar/src/network/peers/interface.ts:16</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L19">packages/lodestar/src/network/peers/interface.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -553,7 +554,7 @@
 <hr />
 <h3 id="getrpcscore">getRpcScore<a class="headerlink" href="#getrpcscore" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getRpcScore</strong>(<code>peer</code>: PeerId): <em>number | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L9">packages/lodestar/src/network/peers/interface.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L12">packages/lodestar/src/network/peers/interface.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -573,7 +574,7 @@
 <hr />
 <h3 id="getstatus">getStatus<a class="headerlink" href="#getstatus" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getStatus</strong>(<code>peer</code>: PeerId): <em>Status | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L7">packages/lodestar/src/network/peers/interface.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L10">packages/lodestar/src/network/peers/interface.ts:10</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -593,7 +594,7 @@
 <hr />
 <h3 id="setencoding">setEncoding<a class="headerlink" href="#setencoding" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setEncoding</strong>(<code>peer</code>: PeerId, <code>encoding</code>: <a href="../../enums/constants.reqrespencoding/">ReqRespEncoding</a> | null): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L17">packages/lodestar/src/network/peers/interface.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L20">packages/lodestar/src/network/peers/interface.ts:20</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -617,7 +618,7 @@
 <hr />
 <h3 id="setmetadata">setMetadata<a class="headerlink" href="#setmetadata" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setMetadata</strong>(<code>peer</code>: PeerId, <code>metadata</code>: Metadata | null): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L15">packages/lodestar/src/network/peers/interface.ts:15</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L18">packages/lodestar/src/network/peers/interface.ts:18</a></em></p>
 <p>It will never store metadata with lower seq number</p>
 <p><strong>Parameters:</strong></p>
 <table>
@@ -645,7 +646,7 @@
 <hr />
 <h3 id="setrpcscore">setRpcScore<a class="headerlink" href="#setrpcscore" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setRpcScore</strong>(<code>peer</code>: PeerId, <code>score</code>: number | null): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L8">packages/lodestar/src/network/peers/interface.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L11">packages/lodestar/src/network/peers/interface.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -669,7 +670,7 @@
 <hr />
 <h3 id="setstatus">setStatus<a class="headerlink" href="#setstatus" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>setStatus</strong>(<code>peer</code>: PeerId, <code>status</code>: Status | null): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/peers/interface.ts#L6">packages/lodestar/src/network/peers/interface.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/peers/interface.ts#L9">packages/lodestar/src/network/peers/interface.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>

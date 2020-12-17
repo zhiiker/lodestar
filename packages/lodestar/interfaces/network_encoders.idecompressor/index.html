@@ -448,6 +448,8 @@
                 
                 <p><a href="../../">event-iterator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/network_encoders/">network/encoders</a> › <a href="./">IDecompressor</a></p>
 <h1 id="interface-idecompressor">Interface: IDecompressor<a class="headerlink" href="#interface-idecompressor" title="Permanent link">&para;</a></h1>
+<p>For more info about eth2 request/response encoding strategies, see:
+https://github.com/ethereum/eth2.0-specs/blob/v1.0.0-rc.0/specs/phase0/p2p-interface.md#encoding-strategies</p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>IDecompressor</strong></li>
@@ -465,12 +467,12 @@
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>reset</strong>(): <em>void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/encoders/interface.ts#L7">packages/lodestar/src/network/encoders/interface.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/encoders/interface.ts#L11">packages/lodestar/src/network/encoders/interface.ts:11</a></em></p>
 <p><strong>Returns:</strong> <em>void</em></p>
 <hr />
 <h3 id="uncompress">uncompress<a class="headerlink" href="#uncompress" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>uncompress</strong>(<code>chunk</code>: Buffer): <em>Buffer | null</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar/src/network/encoders/interface.ts#L5">packages/lodestar/src/network/encoders/interface.ts:5</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/31ce49a/packages/lodestar/src/network/encoders/interface.ts#L9">packages/lodestar/src/network/encoders/interface.ts:9</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
