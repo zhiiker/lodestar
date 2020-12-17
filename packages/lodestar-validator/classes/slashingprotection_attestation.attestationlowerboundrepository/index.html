@@ -516,6 +516,8 @@
                 
                 <p><a href="../../">@chainsafe/lodestar-validator</a> › <a href="../../globals/">Globals</a> › <a href="../../modules/slashingprotection_attestation/">slashingProtection/attestation</a> › <a href="./">AttestationLowerBoundRepository</a></p>
 <h1 id="class-attestationlowerboundrepository">Class: AttestationLowerBoundRepository<a class="headerlink" href="#class-attestationlowerboundrepository" title="Permanent link">&para;</a></h1>
+<p>Manages validator db storage of the minimum source and target epochs required of a validator
+attestation.</p>
 <h2 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>AttestationLowerBoundRepository</strong></li>
@@ -540,7 +542,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new AttestationLowerBoundRepository</strong>(<code>opts</code>: IDatabaseApiOptions): <em><a href="./">AttestationLowerBoundRepository</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L8">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L12">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:12</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -560,19 +562,19 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="protected-bucket"><code>Protected</code> bucket<a class="headerlink" href="#protected-bucket" title="Permanent link">&para;</a></h3>
 <p>• <strong>bucket</strong>: <em>Bucket</em> = Bucket.slashingProtectionAttestationLowerBound</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L8">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L12">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:12</a></em></p>
 <hr />
 <h3 id="protected-db"><code>Protected</code> db<a class="headerlink" href="#protected-db" title="Permanent link">&para;</a></h3>
 <p>• <strong>db</strong>: <em>IDatabaseController‹Buffer, Buffer›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L7">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:7</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L11">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:11</a></em></p>
 <hr />
 <h3 id="protected-type"><code>Protected</code> type<a class="headerlink" href="#protected-type" title="Permanent link">&para;</a></h3>
 <p>• <strong>type</strong>: <em>Type‹SlashingProtectionAttestationLowerBound›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L6">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:6</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L10">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:10</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-encodekey"><code>Private</code> encodeKey<a class="headerlink" href="#private-encodekey" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>encodeKey</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a>): <em>Buffer</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L24">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:24</a></em></p>
+<p>▸ <strong>encodeKey</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a>): <em>Buffer</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L28">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:28</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -584,15 +586,15 @@
 <tbody>
 <tr>
 <td><code>pubkey</code></td>
-<td><a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
+<td><a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Buffer</em></p>
 <hr />
 <h3 id="get">get<a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>get</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a>): <em>Promise‹SlashingProtectionAttestationLowerBound | null›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L15">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:15</a></em></p>
+<p>▸ <strong>get</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a>): <em>Promise‹SlashingProtectionAttestationLowerBound | null›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L19">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:19</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -604,15 +606,15 @@
 <tbody>
 <tr>
 <td><code>pubkey</code></td>
-<td><a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
+<td><a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>Promise‹SlashingProtectionAttestationLowerBound | null›</em></p>
 <hr />
 <h3 id="set">set<a class="headerlink" href="#set" title="Permanent link">&para;</a></h3>
-<p>▸ <strong>set</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>value</code>: SlashingProtectionAttestationLowerBound): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/0ddf479/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L20">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:20</a></em></p>
+<p>▸ <strong>set</strong>(<code>pubkey</code>: <a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a>, <code>value</code>: SlashingProtectionAttestationLowerBound): <em>Promise‹void›</em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/8e250a0/packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts#L24">packages/lodestar-validator/src/slashingProtection/attestation/attestationLowerBoundRepository.ts:24</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -624,7 +626,7 @@
 <tbody>
 <tr>
 <td><code>pubkey</code></td>
-<td><a href="../../modules/reflection-10615.reflection-10616._.reflection-10618._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
+<td><a href="../../modules/reflection-10614.reflection-10615._.reflection-10617._lodestar_types_src_types/#blspubkey">BLSPubkey</a></td>
 </tr>
 <tr>
 <td><code>value</code></td>
