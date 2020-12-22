@@ -10,11 +10,11 @@
       
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/modules/api_rest_controllers_validator_duties/">
       
-      
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.19753c6b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.73f7c429.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -33,7 +33,7 @@
     
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -59,6 +59,7 @@
         <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
       
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -87,18 +88,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             Lodestar documentation
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
               Api rest controllers validator duties
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -157,10 +160,14 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
+
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
@@ -192,6 +199,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../.." class="md-nav__link">
       Getting started
@@ -202,6 +210,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -216,9 +225,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -236,6 +249,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/testnet/" class="md-nav__link">
       Mainnet or public testnet
@@ -246,6 +260,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -260,6 +275,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
@@ -270,6 +286,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -289,9 +306,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -307,6 +328,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -326,6 +348,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../" class="md-nav__link">
       Packages
@@ -336,6 +359,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -352,7 +376,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -603,11 +628,11 @@
 <h2 id="type-aliases_1">Type aliases<a class="headerlink" href="#type-aliases_1" title="Permanent link">&para;</a></h2>
 <h3 id="body">Body<a class="headerlink" href="#body" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>Body</strong>: <em>number[]</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L9">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L9">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:9</a></em></p>
 <hr />
 <h3 id="params">Params<a class="headerlink" href="#params" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>Params</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L4">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L4">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:4</a></em></p>
 <h4 id="type-declaration">Type declaration:<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>epoch</strong>: <em>number</em></li>
@@ -615,7 +640,7 @@
 <hr />
 <h3 id="params_1">Params<a class="headerlink" href="#params_1" title="Permanent link">&para;</a></h3>
 <p>Ƭ <strong>Params</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L4">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:4</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L4">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:4</a></em></p>
 <h4 id="type-declaration_1">Type declaration:<a class="headerlink" href="#type-declaration_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>epoch</strong>: <em>number</em></li>
@@ -623,13 +648,13 @@
 <h2 id="object-literals_1">Object literals<a class="headerlink" href="#object-literals_1" title="Permanent link">&para;</a></h2>
 <h3 id="const-attesterdutiescontroller"><code>Const</code> attesterDutiesController<a class="headerlink" href="#const-attesterdutiescontroller" title="Permanent link">&para;</a></h3>
 <h3 id="attesterdutiescontroller-object">▪ <strong>attesterDutiesController</strong>: <em>object</em><a class="headerlink" href="#attesterdutiescontroller-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L11">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L11">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:11</a></em></p>
 <h3 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
 <p>• <strong>url</strong>: <em>string</em> = "/duties/attester/:epoch"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L12">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:12</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L12">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:12</a></em></p>
 <h3 id="handler">handler<a class="headerlink" href="#handler" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, <a href="./#params">Params</a>, DefaultHeaders, <a href="./#body">Body</a>›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L14">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:14</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L14">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:14</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -651,7 +676,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L26">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:26</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts#L26">packages/lodestar/src/api/rest/controllers/validator/duties/attesterDuties.ts:26</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -708,13 +733,13 @@
 <hr />
 <h3 id="const-proposerdutiescontroller"><code>Const</code> proposerDutiesController<a class="headerlink" href="#const-proposerdutiescontroller" title="Permanent link">&para;</a></h3>
 <h3 id="proposerdutiescontroller-object">▪ <strong>proposerDutiesController</strong>: <em>object</em><a class="headerlink" href="#proposerdutiescontroller-object" title="Permanent link">&para;</a></h3>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L8">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:8</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L8">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:8</a></em></p>
 <h3 id="url_1">url<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h3>
 <p>• <strong>url</strong>: <em>string</em> = "/duties/proposer/:epoch"</p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L9">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:9</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L9">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:9</a></em></p>
 <h3 id="handler_1">handler<a class="headerlink" href="#handler_1" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>handler</strong>(<code>req</code>: FastifyRequest‹IncomingMessage‹›, DefaultQuery, <a href="./#params">Params</a>, DefaultHeaders, any›, <code>resp</code>: FastifyReply‹ServerResponse‹››): <em>Promise‹void›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L11">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:11</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L11">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:11</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -736,7 +761,7 @@
 </table>
 <p><strong>Returns:</strong> <em>Promise‹void›</em></p>
 <p>▪ <strong>opts</strong>: <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L23">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:23</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts#L23">packages/lodestar/src/api/rest/controllers/validator/duties/proposerDuties.ts:23</a></em></p>
 <ul>
 <li>
 <p><strong>schema</strong>: <em>object</em></p>
@@ -838,15 +863,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.0ac82a11.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

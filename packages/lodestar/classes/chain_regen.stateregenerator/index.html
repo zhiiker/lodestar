@@ -10,11 +10,11 @@
       
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar/classes/chain_regen.stateregenerator/">
       
-      
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.19753c6b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.73f7c429.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -33,7 +33,7 @@
     
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -59,6 +59,7 @@
         <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
       
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -87,18 +88,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             Lodestar documentation
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
               Chain regen.stateregenerator
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -157,10 +160,14 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
+
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
@@ -192,6 +199,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../.." class="md-nav__link">
       Getting started
@@ -202,6 +210,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -216,9 +225,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -236,6 +249,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/testnet/" class="md-nav__link">
       Mainnet or public testnet
@@ -246,6 +260,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -260,6 +275,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
@@ -270,6 +286,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -289,9 +306,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -307,6 +328,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -326,6 +348,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../" class="md-nav__link">
       Packages
@@ -336,6 +359,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -352,7 +376,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -568,7 +593,7 @@
 <h2 id="constructors_1">Constructors<a class="headerlink" href="#constructors_1" title="Permanent link">&para;</a></h2>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new StateRegenerator</strong>(<code>__namedParameters</code>: object): <em><a href="./">StateRegenerator</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L20">packages/lodestar/src/chain/regen/regen.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L20">packages/lodestar/src/chain/regen/regen.ts:20</a></em></p>
 <p><strong>Parameters:</strong></p>
 <p>▪ <strong>__namedParameters</strong>: <em>object</em></p>
 <table>
@@ -601,23 +626,23 @@
 <h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
 <h3 id="private-config"><code>Private</code> config<a class="headerlink" href="#private-config" title="Permanent link">&para;</a></h3>
 <p>• <strong>config</strong>: <em>IBeaconConfig</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L17">packages/lodestar/src/chain/regen/regen.ts:17</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L17">packages/lodestar/src/chain/regen/regen.ts:17</a></em></p>
 <hr />
 <h3 id="private-db"><code>Private</code> db<a class="headerlink" href="#private-db" title="Permanent link">&para;</a></h3>
 <p>• <strong>db</strong>: <em><a href="../../interfaces/db_api_beacon.ibeacondb/">IBeaconDb</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L20">packages/lodestar/src/chain/regen/regen.ts:20</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L20">packages/lodestar/src/chain/regen/regen.ts:20</a></em></p>
 <hr />
 <h3 id="private-emitter"><code>Private</code> emitter<a class="headerlink" href="#private-emitter" title="Permanent link">&para;</a></h3>
 <p>• <strong>emitter</strong>: <em><a href="../chain.chaineventemitter/">ChainEventEmitter</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L18">packages/lodestar/src/chain/regen/regen.ts:18</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L18">packages/lodestar/src/chain/regen/regen.ts:18</a></em></p>
 <hr />
 <h3 id="private-forkchoice"><code>Private</code> forkChoice<a class="headerlink" href="#private-forkchoice" title="Permanent link">&para;</a></h3>
 <p>• <strong>forkChoice</strong>: <em>IForkChoice</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L19">packages/lodestar/src/chain/regen/regen.ts:19</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L19">packages/lodestar/src/chain/regen/regen.ts:19</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="getblockslotstate">getBlockSlotState<a class="headerlink" href="#getblockslotstate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getBlockSlotState</strong>(<code>blockRoot</code>: <a href="../../modules/reflection-10039.reflection-10040._.reflection-10042._lodestar_types_src_types/#root">Root</a>, <code>slot</code>: <a href="../../modules/reflection-10039.reflection-10040._.reflection-10042._lodestar_types_src_types/#slot">Slot</a>): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L73">packages/lodestar/src/chain/regen/regen.ts:73</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L73">packages/lodestar/src/chain/regen/regen.ts:73</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -641,7 +666,7 @@
 <hr />
 <h3 id="getcheckpointstate">getCheckpointState<a class="headerlink" href="#getcheckpointstate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getCheckpointState</strong>(<code>cp</code>: Checkpoint): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L68">packages/lodestar/src/chain/regen/regen.ts:68</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L68">packages/lodestar/src/chain/regen/regen.ts:68</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -661,7 +686,7 @@
 <hr />
 <h3 id="getprestate">getPreState<a class="headerlink" href="#getprestate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getPreState</strong>(<code>block</code>: BeaconBlock): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L39">packages/lodestar/src/chain/regen/regen.ts:39</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L39">packages/lodestar/src/chain/regen/regen.ts:39</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -681,7 +706,7 @@
 <hr />
 <h3 id="getstate">getState<a class="headerlink" href="#getstate" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>getState</strong>(<code>stateRoot</code>: <a href="../../modules/reflection-10039.reflection-10040._.reflection-10042._lodestar_types_src_types/#root">Root</a>): <em>Promise‹<a href="../../interfaces/db_api_beacon.itreestatecontext/">ITreeStateContext</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar/src/chain/regen/regen.ts#L108">packages/lodestar/src/chain/regen/regen.ts:108</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar/src/chain/regen/regen.ts#L108">packages/lodestar/src/chain/regen/regen.ts:108</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -769,15 +794,15 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.0ac82a11.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

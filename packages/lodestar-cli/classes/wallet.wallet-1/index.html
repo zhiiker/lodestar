@@ -10,11 +10,11 @@
       
       
       
+      
         <link rel="canonical" href="https://chainsafe.github.io/lodestar/packages/lodestar-cli/classes/wallet.wallet-1/">
       
-      
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.19753c6b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.73f7c429.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -33,7 +33,7 @@
     
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -59,6 +59,7 @@
         <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
       
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -87,18 +88,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             Lodestar documentation
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
               Wallet.wallet 1
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -157,10 +160,14 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
+
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
@@ -192,6 +199,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../.." class="md-nav__link">
       Getting started
@@ -202,6 +210,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -216,9 +225,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
     <label class="md-nav__link" for="nav-3">
       Usage
       <span class="md-nav__icon md-icon"></span>
@@ -236,6 +249,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/testnet/" class="md-nav__link">
       Mainnet or public testnet
@@ -246,6 +260,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -260,6 +275,7 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../../../usage/key-management/" class="md-nav__link">
       Key management
@@ -270,6 +286,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -289,9 +306,13 @@
       
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
     <label class="md-nav__link" for="nav-4">
       Reference
       <span class="md-nav__icon md-icon"></span>
@@ -307,6 +328,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -326,6 +348,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../../" class="md-nav__link">
       Packages
@@ -336,6 +359,7 @@
       
       
       
+
 
 
   <li class="md-nav__item">
@@ -352,7 +376,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -686,7 +711,7 @@
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link">&para;</a></h3>
 <p>+ <strong>new Wallet</strong>(<code>keystore</code>: Partial‹<a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a>›): <em><a href="./">Wallet</a></em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -728,11 +753,11 @@
 <hr />
 <h3 id="optional-name"><code>Optional</code> name<a class="headerlink" href="#optional-name" title="Permanent link">&para;</a></h3>
 <p>• <strong>name</strong>? : <em>undefined | string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L27">packages/lodestar-cli/src/wallet/Wallet.ts:27</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L27">packages/lodestar-cli/src/wallet/Wallet.ts:27</a></em></p>
 <hr />
 <h3 id="nextaccount">nextaccount<a class="headerlink" href="#nextaccount" title="Permanent link">&para;</a></h3>
 <p>• <strong>nextaccount</strong>: <em>number</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L28">packages/lodestar-cli/src/wallet/Wallet.ts:28</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L28">packages/lodestar-cli/src/wallet/Wallet.ts:28</a></em></p>
 <hr />
 <h3 id="path">path<a class="headerlink" href="#path" title="Permanent link">&para;</a></h3>
 <p>• <strong>path</strong>: <em>string</em></p>
@@ -746,7 +771,7 @@
 <hr />
 <h3 id="type">type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
 <p>• <strong>type</strong>: <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L30">packages/lodestar-cli/src/wallet/Wallet.ts:30</a></em></p>
 <hr />
 <h3 id="uuid">uuid<a class="headerlink" href="#uuid" title="Permanent link">&para;</a></h3>
 <p>• <strong>uuid</strong>: <em>string</em></p>
@@ -756,7 +781,7 @@
 <h3 id="version">version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
 <p>• <strong>version</strong>: <em>number</em></p>
 <p><em>Overrides void</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L29">packages/lodestar-cli/src/wallet/Wallet.ts:29</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L29">packages/lodestar-cli/src/wallet/Wallet.ts:29</a></em></p>
 <h2 id="methods_1">Methods<a class="headerlink" href="#methods_1" title="Permanent link">&para;</a></h2>
 <h3 id="decrypt">decrypt<a class="headerlink" href="#decrypt" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>decrypt</strong>(<code>password</code>: string | Uint8Array): <em>Promise‹Buffer›</em></p>
@@ -782,7 +807,7 @@
 <hr />
 <h3 id="nextvalidator">nextValidator<a class="headerlink" href="#nextvalidator" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>nextValidator</strong>(<code>walletPassword</code>: string, <code>passwords</code>: object): <em>Promise‹object›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L85">packages/lodestar-cli/src/wallet/Wallet.ts:85</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L85">packages/lodestar-cli/src/wallet/Wallet.ts:85</a></em></p>
 <p>Produces a <code>Keystore</code> (encrypted with <code>keystore_password</code>) for the validator at
 <code>self.nextaccount</code>, incrementing <code>self.nextaccount</code> if the keystore was successfully
 generated.</p>
@@ -811,7 +836,7 @@ used to encrypt <code>this</code>.</p>
 <hr />
 <h3 id="randompasswords">randomPasswords<a class="headerlink" href="#randompasswords" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>randomPasswords</strong>(): <em>object</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L118">packages/lodestar-cli/src/wallet/Wallet.ts:118</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L118">packages/lodestar-cli/src/wallet/Wallet.ts:118</a></em></p>
 <p>Utility function to generate passwords for the two eth2 pair keystores</p>
 <p><strong>Returns:</strong> <em>object</em></p>
 <hr />
@@ -831,13 +856,13 @@ used to encrypt <code>this</code>.</p>
 <hr />
 <h3 id="towalletjson">toWalletJSON<a class="headerlink" href="#towalletjson" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>toWalletJSON</strong>(): <em>string</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L73">packages/lodestar-cli/src/wallet/Wallet.ts:73</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L73">packages/lodestar-cli/src/wallet/Wallet.ts:73</a></em></p>
 <p>Returns wallet data to write to disk as stringified JSON</p>
 <p><strong>Returns:</strong> <em>string</em></p>
 <hr />
 <h3 id="towalletobject">toWalletObject<a class="headerlink" href="#towalletobject" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>toWalletObject</strong>(): <em><a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a></em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L59">packages/lodestar-cli/src/wallet/Wallet.ts:59</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L59">packages/lodestar-cli/src/wallet/Wallet.ts:59</a></em></p>
 <p>Returns wallet data to write to disk as a parsed object</p>
 <p><strong>Returns:</strong> <em><a href="../../interfaces/wallet.iwalletkeystorejson/">IWalletKeystoreJson</a></em></p>
 <hr />
@@ -915,7 +940,7 @@ used to encrypt <code>this</code>.</p>
 <hr />
 <h3 id="static-frommnemonic"><code>Static</code> fromMnemonic<a class="headerlink" href="#static-frommnemonic" title="Permanent link">&para;</a></h3>
 <p>▸ <strong>fromMnemonic</strong>(<code>mnemonic</code>: string, <code>password</code>: string, <code>name</code>: string): <em>Promise‹<a href="./">Wallet</a>›</em></p>
-<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/739f164/packages/lodestar-cli/src/wallet/Wallet.ts#L44">packages/lodestar-cli/src/wallet/Wallet.ts:44</a></em></p>
+<p><em>Defined in <a href="https://github.com/ChainSafe/lodestar/blob/3b87e5a/packages/lodestar-cli/src/wallet/Wallet.ts#L44">packages/lodestar-cli/src/wallet/Wallet.ts:44</a></em></p>
 <p>Creates a new builder for a seed specified as a BIP-39 <code>Mnemonic</code> (where the nmemonic itself does
 not have a passphrase).</p>
 <p><strong>Parameters:</strong></p>
@@ -1057,15 +1082,15 @@ not have a passphrase).</p>
       
     </div>
     
-      <script src="../../../../assets/javascripts/vendor.0ac82a11.min.js"></script>
-      <script src="../../../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
