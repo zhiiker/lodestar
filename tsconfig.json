@@ -21,7 +21,9 @@
     "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
     "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
     "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
-    "noUnusedLocals": true /* Report errors on unused locals. */,
+
+    /* Already checked by eslint */
+    // "noUnusedLocals": true /* Report errors on unused locals. */,
     // "noUnusedParameters": true,            /* Report errors on unused parameters. */
 
     /* Module Resolution Options */
