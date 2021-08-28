@@ -9,20 +9,23 @@ export interface INetworkArgs {
   "network.targetPeers": number;
   "network.bootMultiaddrs": string[];
   "network.localMultiaddrs": string[];
+  "network.subscribeAllSubnets": boolean;
 }
 
 export function parseArgs(args: INetworkArgs): IBeaconNodeOptions["network"] {
   return {
-    // @ts-ignore
     discv5: {
       enabled: args["network.discv5.enabled"],
       bindAddr: args["network.discv5.bindAddr"],
       bootEnrs: args["network.discv5.bootEnrs"],
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+      enr: undefined as any,
     },
     maxPeers: args["network.maxPeers"],
     targetPeers: args["network.targetPeers"],
     bootMultiaddrs: args["network.bootMultiaddrs"],
     localMultiaddrs: args["network.localMultiaddrs"],
+    subscribeAllSubnets: args["network.subscribeAllSubnets"],
   };
 }
 
@@ -74,6 +77,13 @@ export const options: ICliCommandOptions<INetworkArgs> = {
     type: "array",
     description: "Local listening addresses for req/resp and gossip",
     defaultDescription: JSON.stringify(defaultOptions.network.localMultiaddrs),
+    group: "network",
+  },
+
+  "network.subscribeAllSubnets": {
+    type: "boolean",
+    description: "Subscribe to all subnets regardless of validator count",
+    defaultDescription: String(defaultOptions.network.subscribeAllSubnets === true),
     group: "network",
   },
 };

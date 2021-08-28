@@ -1,39 +1,23 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment */
-import {AbortSignal} from "abort-controller";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {IForkChoice} from "@chainsafe/lodestar-fork-choice";
-import {phase0} from "@chainsafe/lodestar-types";
+import {AbortSignal} from "@chainsafe/abort-controller";
+import {allForks, ssz} from "@chainsafe/lodestar-types";
 
 import {IBlockJob, IChainSegmentJob} from "../interface";
-import {ChainEvent, ChainEventEmitter} from "../emitter";
-import {IBeaconClock} from "../clock";
-import {IStateRegenerator} from "../regen";
-import {JobQueue} from "../../util/queue";
-import {CheckpointStateCache} from "../stateCache";
+import {ChainEvent} from "../emitter";
+import {JobItemQueue} from "../../util/queue";
 import {BlockError, BlockErrorCode, ChainSegmentError} from "../errors";
-import {IMetrics} from "../../metrics";
-import {IBlsVerifier} from "../bls";
 
-import {processBlock, processChainSegment} from "./process";
-import {validateBlock} from "./validate";
+import {processBlock, processChainSegment, BlockProcessModules} from "./process";
+import {validateBlock, BlockValidateModules} from "./validate";
 
-type BlockProcessorModules = {
-  config: IBeaconConfig;
-  forkChoice: IForkChoice;
-  regen: IStateRegenerator;
-  emitter: ChainEventEmitter;
-  bls: IBlsVerifier;
-  metrics: IMetrics | null;
-  clock: IBeaconClock;
-  checkpointStateCache: CheckpointStateCache;
-};
+export type BlockProcessorModules = BlockProcessModules & BlockValidateModules;
 
 /**
  * BlockProcessor processes block jobs in a queued fashion, one after the other.
  */
 export class BlockProcessor {
+  readonly jobQueue: JobItemQueue<[IChainSegmentJob | IBlockJob], void>;
   private modules: BlockProcessorModules;
-  private jobQueue: JobQueue;
 
   constructor({
     signal,
@@ -44,18 +28,25 @@ export class BlockProcessor {
     maxLength?: number;
   }) {
     this.modules = modules;
-    this.jobQueue = new JobQueue(
+    this.jobQueue = new JobItemQueue(
+      (job) => {
+        if ((job as IBlockJob).signedBlock) {
+          return processBlockJob(this.modules, job as IBlockJob);
+        } else {
+          return processChainSegmentJob(this.modules, job as IChainSegmentJob);
+        }
+      },
       {maxLength, signal},
       modules.metrics ? modules.metrics.blockProcessorQueue : undefined
     );
   }
 
   async processBlockJob(job: IBlockJob): Promise<void> {
-    await this.jobQueue.push(async () => await processBlockJob(this.modules, job));
+    await this.jobQueue.push(job);
   }
 
   async processChainSegment(job: IChainSegmentJob): Promise<void> {
-    await this.jobQueue.push(async () => await processChainSegmentJob(this.modules, job));
+    await this.jobQueue.push(job);
   }
 }
 
@@ -83,10 +74,11 @@ export async function processBlockJob(modules: BlockProcessorModules, job: IBloc
  * Similar to processBlockJob but this process a chain segment
  */
 export async function processChainSegmentJob(modules: BlockProcessorModules, job: IChainSegmentJob): Promise<void> {
+  const config = modules.config;
   const blocks = job.signedBlocks;
 
   // Validate and filter out irrelevant blocks
-  const filteredChainSegment: phase0.SignedBeaconBlock[] = [];
+  const filteredChainSegment: allForks.SignedBeaconBlock[] = [];
   for (const [i, block] of blocks.entries()) {
     const child = blocks[i + 1];
     if (child) {
@@ -96,8 +88,8 @@ export async function processChainSegmentJob(modules: BlockProcessorModules, job
       // Without this check it would be possible to have a block verified using the
       // incorrect shuffling. That would be bad, mmkay.
       if (
-        !modules.config.types.Root.equals(
-          modules.config.types.phase0.BeaconBlock.hashTreeRoot(block.message),
+        !ssz.Root.equals(
+          config.getForkTypes(block.message.slot).BeaconBlock.hashTreeRoot(block.message),
           child.message.parentRoot
         )
       ) {

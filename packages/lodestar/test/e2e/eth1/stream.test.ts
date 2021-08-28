@@ -1,28 +1,38 @@
 import "mocha";
 import {expect} from "chai";
-import {AbortController} from "abort-controller";
+import {AbortController} from "@chainsafe/abort-controller";
 import {getTestnetConfig, testnet} from "../../utils/testnet";
 import {getDepositsStream, getDepositsAndBlockStreamForGenesis, Eth1Provider} from "../../../src/eth1";
 
 describe("Eth1 streams", function () {
   this.timeout("2 min");
 
+  let controller: AbortController;
+  beforeEach(() => (controller = new AbortController()));
+  afterEach(() => controller.abort());
+
   const config = getTestnetConfig();
-  const eth1Provider = new Eth1Provider(config, {
-    enabled: true,
-    providerUrl: testnet.providerUrl,
-    depositContractDeployBlock: testnet.depositBlock,
-  });
+
+  function getEth1Provider(): Eth1Provider {
+    return new Eth1Provider(
+      config,
+      {
+        enabled: true,
+        providerUrls: [testnet.providerUrl],
+        depositContractDeployBlock: testnet.depositBlock,
+      },
+      controller.signal
+    );
+  }
 
   const maxBlocksPerPoll = 1000;
   const depositsToFetch = 1000;
-  const eth1Params = {...config.params, maxBlocksPerPoll};
+  const eth1Params = {...config, maxBlocksPerPoll};
 
   it(`Should fetch ${depositsToFetch} deposits with getDepositsStream`, async function () {
-    const controller = new AbortController();
     const depositsStream = getDepositsStream(
       testnet.blockWithDepositActivity,
-      eth1Provider,
+      getEth1Provider(),
       eth1Params,
       controller.signal
     );
@@ -39,10 +49,9 @@ describe("Eth1 streams", function () {
   });
 
   it(`Should fetch ${depositsToFetch} deposits with getDepositsAndBlockStreamForGenesis`, async function () {
-    const controller = new AbortController();
     const stream = getDepositsAndBlockStreamForGenesis(
       testnet.blockWithDepositActivity,
-      eth1Provider,
+      getEth1Provider(),
       eth1Params,
       controller.signal
     );

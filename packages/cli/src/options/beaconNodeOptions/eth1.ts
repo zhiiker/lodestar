@@ -4,13 +4,21 @@ import {ICliCommandOptions} from "../../util";
 export interface IEth1Args {
   "eth1.enabled": boolean;
   "eth1.providerUrl": string;
+  "eth1.providerUrls": string[];
   "eth1.depositContractDeployBlock": number;
 }
 
 export function parseArgs(args: IEth1Args): IBeaconNodeOptions["eth1"] {
+  // Support deprecated flag 'eth1.providerUrl' only if 'eth1.providerUrls' is not defined
+  // Safe default to '--eth1.providerUrl' only if it's defined. Prevent returning providerUrls: [undefined]
+  let providerUrls = args["eth1.providerUrls"];
+  if (!providerUrls && args["eth1.providerUrl"]) {
+    providerUrls = [args["eth1.providerUrl"]];
+  }
+
   return {
     enabled: args["eth1.enabled"],
-    providerUrl: args["eth1.providerUrl"],
+    providerUrls: providerUrls,
     depositContractDeployBlock: args["eth1.depositContractDeployBlock"],
   };
 }
@@ -24,9 +32,16 @@ export const options: ICliCommandOptions<IEth1Args> = {
   },
 
   "eth1.providerUrl": {
-    description: "Url to Eth1 node with enabled rpc",
+    description: "[DEPRECATED] Url to Eth1 node with enabled rpc",
     type: "string",
-    defaultDescription: defaultOptions.eth1.providerUrl,
+    defaultDescription: "[DEPRECATED]",
+    group: "eth1",
+  },
+
+  "eth1.providerUrls": {
+    description: "Urls to Eth1 node with enabled rpc",
+    type: "array",
+    defaultDescription: JSON.stringify(defaultOptions.eth1.providerUrls),
     group: "eth1",
   },
 

@@ -1,24 +1,25 @@
-import {LogLevel} from "@chainsafe/lodestar-utils";
-import {ICliCommandOptions} from "../../util";
+import {ICliCommandOptions, ILogArgs} from "../../util";
 import {defaultValidatorPaths} from "./paths";
 import {accountValidatorOptions, IAccountValidatorArgs} from "../account/cmds/validator/options";
-import {beaconExtraOptions, beaconPathsOptions} from "../beacon/options";
+import {logOptions, beaconPathsOptions} from "../beacon/options";
+import {IBeaconPaths} from "../beacon/paths";
 
-export type IValidatorCliArgs = IAccountValidatorArgs & {
-  validatorsDbDir?: string;
-  server: string;
-  force: boolean;
-  graffiti: string;
-  logFile: string;
-  logLevel: LogLevel;
-  logLevelFile: LogLevel;
-};
+export type IValidatorCliArgs = IAccountValidatorArgs &
+  ILogArgs & {
+    validatorsDbDir?: string;
+    server: string;
+    force: boolean;
+    graffiti: string;
+    interopIndexes?: string;
+    fromMnemonic?: string;
+    mnemonicIndexes?: string;
+    logFile: IBeaconPaths["logFile"];
+  };
 
 export const validatorOptions: ICliCommandOptions<IValidatorCliArgs> = {
   ...accountValidatorOptions,
+  ...logOptions,
   logFile: beaconPathsOptions.logFile,
-  logLevel: beaconExtraOptions.logLevel,
-  logLevelFile: beaconExtraOptions.logLevelFile,
 
   validatorsDbDir: {
     description: "Data directory for validator databases.",
@@ -40,6 +41,24 @@ export const validatorOptions: ICliCommandOptions<IValidatorCliArgs> = {
   graffiti: {
     description: "Specify your custom graffiti to be included in blocks (plain UTF8 text, 32 characters max)",
     // Don't use a default here since it should be computed only if necessary by getDefaultGraffiti()
+    type: "string",
+  },
+
+  interopIndexes: {
+    hidden: true,
+    description: "Range (inclusive) of interop key indexes to validate with: 0..16",
+    type: "string",
+  },
+
+  fromMnemonic: {
+    hidden: true,
+    description: "UNSAFE. Run keys from a mnemonic. Requires mnemonicIndexes option",
+    type: "string",
+  },
+
+  mnemonicIndexes: {
+    hidden: true,
+    description: "UNSAFE. Range (inclusive) of mnemonic key indexes to validate with: 0..16",
     type: "string",
   },
 };

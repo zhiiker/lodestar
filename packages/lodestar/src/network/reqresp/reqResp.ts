@@ -2,10 +2,11 @@
  * @module network
  */
 import {Connection} from "libp2p";
+import {ForkName} from "@chainsafe/lodestar-params";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {allForks, phase0} from "@chainsafe/lodestar-types";
 import {ILogger} from "@chainsafe/lodestar-utils";
-import {AbortController} from "abort-controller";
+import {AbortController} from "@chainsafe/abort-controller";
 import LibP2p from "libp2p";
 import PeerId from "peer-id";
 import {timeoutOptions} from "../../constants";
@@ -18,7 +19,9 @@ import {IPeerMetadataStore, IPeerRpcScoreStore} from "../peers";
 import {assertSequentialBlocksInRange, formatProtocolId} from "./utils";
 import {MetadataController} from "../metadata";
 import {INetworkEventBus, NetworkEvent} from "../events";
-import {IReqRespHandler} from "./handlers";
+import {ReqRespHandlers} from "./handlers";
+import {IMetrics} from "../../metrics";
+import {RequestError, RequestErrorCode} from "./request";
 import {
   Method,
   Version,
@@ -42,7 +45,7 @@ export class ReqResp implements IReqResp {
   private libp2p: LibP2p;
   private logger: ILogger;
   private forkDigestContext: IForkDigestContext;
-  private reqRespHandler: IReqRespHandler;
+  private reqRespHandlers: ReqRespHandlers;
   private metadataController: MetadataController;
   private peerMetadata: IPeerMetadataStore;
   private peerRpcScores: IPeerRpcScoreStore;
@@ -51,18 +54,20 @@ export class ReqResp implements IReqResp {
   private options?: IReqRespOptions;
   private reqCount = 0;
   private respCount = 0;
+  private metrics: IMetrics | null;
 
   constructor(modules: IReqRespModules, options?: IReqRespOptions) {
     this.config = modules.config;
     this.libp2p = modules.libp2p;
     this.logger = modules.logger;
     this.forkDigestContext = modules.forkDigestContext;
-    this.reqRespHandler = modules.reqRespHandler;
+    this.reqRespHandlers = modules.reqRespHandlers;
     this.peerMetadata = modules.peerMetadata;
     this.metadataController = modules.metadata;
     this.peerRpcScores = modules.peerRpcScores;
     this.networkEventBus = modules.networkEventBus;
     this.options = options;
+    this.metrics = modules.metrics;
   }
 
   start(): void {
@@ -94,8 +99,10 @@ export class ReqResp implements IReqResp {
     return await this.sendRequest<phase0.Ping>(peerId, Method.Ping, [Version.V1], this.metadataController.seqNumber);
   }
 
-  async metadata(peerId: PeerId): Promise<phase0.Metadata> {
-    return await this.sendRequest<phase0.Metadata>(peerId, Method.Metadata, [Version.V1], null);
+  async metadata(peerId: PeerId, fork?: ForkName): Promise<allForks.Metadata> {
+    // Only request V1 if forcing phase0 fork. It's safe to not specify `fork` and let stream negotiation pick the version
+    const versions = fork === ForkName.phase0 ? [Version.V1] : [Version.V2, Version.V1];
+    return await this.sendRequest<allForks.Metadata>(peerId, Method.Metadata, versions, null);
   }
 
   async beaconBlocksByRange(
@@ -135,6 +142,8 @@ export class ReqResp implements IReqResp {
     maxResponses = 1
   ): Promise<T> {
     try {
+      this.metrics?.reqRespOutgoingRequests.inc({method});
+
       const encoding = this.peerMetadata.encoding.get(peerId) ?? Encoding.SSZ_SNAPPY;
       const result = await sendRequest<T>(
         {config: this.config, logger: this.logger, libp2p: this.libp2p, forkDigestContext: this.forkDigestContext},
@@ -151,7 +160,15 @@ export class ReqResp implements IReqResp {
 
       return result;
     } catch (e) {
+      this.metrics?.reqRespOutgoingErrors.inc({method});
+
       const peerAction = onOutgoingReqRespError(e as Error, method);
+      if (
+        e instanceof RequestError &&
+        (e.type.code === RequestErrorCode.DIAL_ERROR || e.type.code === RequestErrorCode.DIAL_TIMEOUT)
+      ) {
+        this.metrics?.reqRespDialErrors.inc();
+      }
       if (peerAction !== null) this.peerRpcScores.applyAction(peerId, peerAction);
 
       throw e;
@@ -169,6 +186,8 @@ export class ReqResp implements IReqResp {
       }
 
       try {
+        this.metrics?.reqRespIncomingRequests.inc({method});
+
         await handleRequest(
           {config: this.config, logger: this.logger, libp2p: this.libp2p, forkDigestContext: this.forkDigestContext},
           this.onRequest.bind(this),
@@ -180,21 +199,25 @@ export class ReqResp implements IReqResp {
         );
         // TODO: Do success peer scoring here
       } catch {
+        this.metrics?.reqRespIncomingErrors.inc({method});
+
         // TODO: Do error peer scoring here
         // Must not throw since this is an event handler
       }
     };
   }
 
-  private async *onRequest(method: Method, requestBody: RequestBody, peerId: PeerId): AsyncIterable<ResponseBody> {
-    const requestTyped = {method, body: requestBody} as RequestTypedContainer;
+  private async *onRequest(protocol: Protocol, requestBody: RequestBody, peerId: PeerId): AsyncIterable<ResponseBody> {
+    const requestTyped = {method: protocol.method, body: requestBody} as RequestTypedContainer;
 
     switch (requestTyped.method) {
       case Method.Ping:
         yield this.metadataController.seqNumber;
         break;
       case Method.Metadata:
-        yield this.metadataController.allPhase0;
+        // V1 -> phase0, V2 -> altair. But the type serialization of phase0.Metadata will just ignore the extra .syncnets property
+        // It's safe to return altair.Metadata here for all versions
+        yield this.metadataController.json;
         break;
       case Method.Goodbye:
         yield BigInt(0);
@@ -203,17 +226,17 @@ export class ReqResp implements IReqResp {
       // Don't bubble Ping, Metadata, and, Goodbye requests to the app layer
 
       case Method.Status:
-        yield* this.reqRespHandler.onStatus();
+        yield* this.reqRespHandlers.onStatus();
         break;
       case Method.BeaconBlocksByRange:
-        yield* this.reqRespHandler.onBeaconBlocksByRange(requestTyped.body);
+        yield* this.reqRespHandlers.onBeaconBlocksByRange(requestTyped.body);
         break;
       case Method.BeaconBlocksByRoot:
-        yield* this.reqRespHandler.onBeaconBlocksByRoot(requestTyped.body);
+        yield* this.reqRespHandlers.onBeaconBlocksByRoot(requestTyped.body);
         break;
 
       default:
-        throw Error(`Unsupported method ${method}`);
+        throw Error(`Unsupported method ${protocol.method}`);
     }
 
     // Allow onRequest to return and close the stream

@@ -1,6 +1,5 @@
 import {computeStartSlotAtEpoch, getBlockRootAtSlot} from "@chainsafe/lodestar-beacon-state-transition";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {Epoch, ForkDigest, Root, phase0} from "@chainsafe/lodestar-types";
+import {Epoch, ForkDigest, Root, phase0, ssz} from "@chainsafe/lodestar-types";
 import {LodestarError} from "@chainsafe/lodestar-utils";
 import {toHexString} from "@chainsafe/ssz";
 import {IBeaconChain} from "../../../chain";
@@ -28,11 +27,11 @@ export class IrrelevantPeerError extends LodestarError<IrrelevantPeerErrorType> 
  * Process a `Status` message to determine if a peer is relevant to us. If the peer is
  * irrelevant the reason is returned.
  */
-export function assertPeerRelevance(remote: phase0.Status, chain: IBeaconChain, config: IBeaconConfig): void {
+export function assertPeerRelevance(remote: phase0.Status, chain: IBeaconChain): void {
   const local = chain.getStatus();
 
   // The node is on a different network/fork
-  if (!config.types.ForkDigest.equals(local.forkDigest, remote.forkDigest)) {
+  if (!ssz.ForkDigest.equals(local.forkDigest, remote.forkDigest)) {
     throw new IrrelevantPeerError({
       code: IrrelevantPeerErrorCode.INCOMPATIBLE_FORKS,
       ours: local.forkDigest,
@@ -49,7 +48,7 @@ export function assertPeerRelevance(remote: phase0.Status, chain: IBeaconChain, 
   }
 
   // TODO: Is this check necessary?
-  if (remote.finalizedEpoch === GENESIS_EPOCH && !isZeroRoot(config, remote.finalizedRoot)) {
+  if (remote.finalizedEpoch === GENESIS_EPOCH && !isZeroRoot(remote.finalizedRoot)) {
     throw new IrrelevantPeerError({
       code: IrrelevantPeerErrorCode.GENESIS_NONZERO,
       root: toHexString(remote.finalizedRoot),
@@ -62,17 +61,17 @@ export function assertPeerRelevance(remote: phase0.Status, chain: IBeaconChain, 
 
   if (
     remote.finalizedEpoch <= local.finalizedEpoch &&
-    !isZeroRoot(config, remote.finalizedRoot) &&
-    !isZeroRoot(config, local.finalizedRoot)
+    !isZeroRoot(remote.finalizedRoot) &&
+    !isZeroRoot(local.finalizedRoot)
   ) {
     const remoteRoot = remote.finalizedRoot;
     const expectedRoot =
       remote.finalizedEpoch === local.finalizedEpoch
         ? local.finalizedRoot
         : // This will get the latest known block at the start of the epoch.
-          getRootAtHistoricalEpoch(config, chain, remote.finalizedEpoch);
+          getRootAtHistoricalEpoch(chain, remote.finalizedEpoch);
 
-    if (!config.types.Root.equals(remoteRoot, expectedRoot)) {
+    if (!ssz.Root.equals(remoteRoot, expectedRoot)) {
       throw new IrrelevantPeerError({
         code: IrrelevantPeerErrorCode.DIFFERENT_FINALIZED,
         expectedRoot: toHexString(expectedRoot), // forkChoice returns Tree BranchNode which the logger prints as {}
@@ -84,19 +83,19 @@ export function assertPeerRelevance(remote: phase0.Status, chain: IBeaconChain, 
   // Note: Accept request status finalized checkpoint in the future, we do not know if it is a true finalized root
 }
 
-export function isZeroRoot(config: IBeaconConfig, root: Root): boolean {
-  const ZERO_ROOT = config.types.Root.defaultValue();
-  return config.types.Root.equals(root, ZERO_ROOT);
+export function isZeroRoot(root: Root): boolean {
+  const ZERO_ROOT = ssz.Root.defaultValue();
+  return ssz.Root.equals(root, ZERO_ROOT);
 }
 
-function getRootAtHistoricalEpoch(config: IBeaconConfig, chain: IBeaconChain, epoch: Epoch): Root {
+function getRootAtHistoricalEpoch(chain: IBeaconChain, epoch: Epoch): Root {
   const headState = chain.getHeadState();
 
-  const slot = computeStartSlotAtEpoch(config, epoch);
+  const slot = computeStartSlotAtEpoch(epoch);
 
   // This will get the latest known block at the start of the epoch.
   // NOTE: Throws if the epoch if from a long-ago epoch
-  return getBlockRootAtSlot(config, headState, slot);
+  return getBlockRootAtSlot(headState, slot);
 
   // NOTE: Previous code tolerated long-ago epochs
   // ^^^^

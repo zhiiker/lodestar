@@ -1,6 +1,6 @@
 import LibP2p, {Connection} from "libp2p";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {phase0} from "@chainsafe/lodestar-types";
+import {allForks, altair, phase0} from "@chainsafe/lodestar-types";
 import {ILogger} from "@chainsafe/lodestar-utils";
 import PeerId from "peer-id";
 import {IBeaconChain} from "../../chain";
@@ -8,6 +8,8 @@ import {GoodByeReasonCode, GOODBYE_KNOWN_CODES, Libp2pEvent} from "../../constan
 import {IMetrics} from "../../metrics";
 import {NetworkEvent, INetworkEventBus} from "../events";
 import {IReqResp, ReqRespMethod, RequestTypedContainer} from "../reqresp";
+import {prettyPrintPeerId} from "../util";
+import {ISubnetsService} from "../subnets";
 import {Libp2pPeerMetadataStore} from "./metastore";
 import {PeerDiscovery} from "./discover";
 import {IPeerRpcScoreStore, ScoreState} from "./score";
@@ -19,20 +21,18 @@ import {
   prioritizePeers,
   IrrelevantPeerError,
 } from "./utils";
-import {prettyPrintPeerId} from "../util";
-import {IAttestationService} from "../attestationService";
 
 /** heartbeat performs regular updates such as updating reputations and performing discovery requests */
 const HEARTBEAT_INTERVAL_MS = 30 * 1000;
 /** The time in seconds between PING events. We do not send a ping if the other peer has PING'd us */
-const PING_INTERVAL_INBOUND_MS = 15 * 1000;
-const PING_INTERVAL_OUTBOUND_MS = 20 * 1000;
+const PING_INTERVAL_INBOUND_MS = 4 * 60 * 1000 - 11 * 1000; // Offset to not ping when outbound reqs
+const PING_INTERVAL_OUTBOUND_MS = 4 * 60 * 1000;
 /** The time in seconds between re-status's peers. */
 const STATUS_INTERVAL_MS = 5 * 60 * 1000;
 /** Expect a STATUS request from on inbound peer for some time. Afterwards the node does a request */
 const STATUS_INBOUND_GRACE_PERIOD = 15 * 1000;
 /** Internal interval to check PING and STATUS timeouts */
-const CHECK_PING_STATUS_INTERVAL = 2 * 1000;
+const CHECK_PING_STATUS_INTERVAL = 10 * 1000;
 
 // TODO:
 // maxPeers and targetPeers should be dynamic on the num of validators connected
@@ -53,7 +53,8 @@ export type PeerManagerModules = {
   logger: ILogger;
   metrics: IMetrics | null;
   reqResp: IReqResp;
-  attService: IAttestationService;
+  attnetsService: ISubnetsService;
+  syncnetsService: ISubnetsService;
   chain: IBeaconChain;
   config: IBeaconConfig;
   peerMetadata: Libp2pPeerMetadataStore;
@@ -74,7 +75,8 @@ export class PeerManager {
   private logger: ILogger;
   private metrics: IMetrics | null;
   private reqResp: IReqResp;
-  private attService: IAttestationService;
+  private attnetsService: ISubnetsService;
+  private syncnetsService: ISubnetsService;
   private chain: IBeaconChain;
   private config: IBeaconConfig;
   private peerMetadata: Libp2pPeerMetadataStore;
@@ -97,7 +99,8 @@ export class PeerManager {
     this.logger = modules.logger;
     this.metrics = modules.metrics;
     this.reqResp = modules.reqResp;
-    this.attService = modules.attService;
+    this.attnetsService = modules.attnetsService;
+    this.syncnetsService = modules.syncnetsService;
     this.chain = modules.chain;
     this.config = modules.config;
     this.peerMetadata = modules.peerMetadata;
@@ -116,8 +119,8 @@ export class PeerManager {
     // On start-up will connected to existing peers in libp2p.peerStore, same as autoDial behaviour
     this.heartbeat();
     this.intervals = [
-      setInterval(() => this.pingAndStatusTimeouts(), CHECK_PING_STATUS_INTERVAL),
-      setInterval(() => this.heartbeat(), HEARTBEAT_INTERVAL_MS),
+      setInterval(this.pingAndStatusTimeouts.bind(this), CHECK_PING_STATUS_INTERVAL),
+      setInterval(this.heartbeat.bind(this), HEARTBEAT_INTERVAL_MS),
     ];
   }
 
@@ -152,7 +155,7 @@ export class PeerManager {
   /**
    * Run after validator subscriptions request.
    */
-  onBeaconCommitteeSubscriptions(): void {
+  onCommitteeSubscriptions(): void {
     // TODO:
     // Only if the slot is more than epoch away, add an event to start looking for peers
 
@@ -200,10 +203,13 @@ export class PeerManager {
   /**
    * Handle a METADATA request + response (rpc handler responds with METADATA automatically)
    */
-  private onMetadata(peer: PeerId, metadata: phase0.Metadata): void {
+  private onMetadata(peer: PeerId, metadata: allForks.Metadata): void {
     // Store metadata always in case the peer updates attnets but not the sequence number
     // Trust that the peer always sends the latest metadata (From Lighthouse)
-    this.peerMetadata.metadata.set(peer, metadata);
+    this.peerMetadata.metadata.set(peer, {
+      ...metadata,
+      syncnets: (metadata as Partial<altair.Metadata>).syncnets || [],
+    });
   }
 
   /**
@@ -227,7 +233,7 @@ export class PeerManager {
     this.peersToStatus.requestAfter(peer);
 
     try {
-      assertPeerRelevance(status, this.chain, this.config);
+      assertPeerRelevance(status, this.chain);
     } catch (e) {
       if (e instanceof IrrelevantPeerError) {
         this.logger.debug("Irrelevant peer", {peer: prettyPrintPeerId(peer), reason: e.getMetadata()});
@@ -307,10 +313,12 @@ export class PeerManager {
       connectedHealthyPeers.map((peer) => ({
         id: peer,
         attnets: this.peerMetadata.metadata.get(peer)?.attnets ?? [],
+        syncnets: this.peerMetadata.metadata.get(peer)?.syncnets ?? [],
         score: this.peerRpcScores.getScore(peer),
       })),
       // Collect subnets which we need peers for in the current slot
-      this.attService.getActiveSubnets(),
+      this.attnetsService.getActiveSubnets(),
+      this.syncnetsService.getActiveSubnets(),
       this.opts
     );
 

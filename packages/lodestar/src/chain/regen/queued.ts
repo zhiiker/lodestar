@@ -1,4 +1,4 @@
-import {AbortSignal} from "abort-controller";
+import {AbortSignal} from "@chainsafe/abort-controller";
 import {Root, phase0, Slot, allForks} from "@chainsafe/lodestar-types";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {IForkChoice} from "@chainsafe/lodestar-fork-choice";
@@ -7,8 +7,8 @@ import {CheckpointStateCache, StateContextCache} from "../stateCache";
 import {ChainEventEmitter} from "../emitter";
 import {IMetrics} from "../../metrics";
 import {IBeaconDb} from "../../db";
-import {JobQueue} from "../../util/queue";
-import {IStateRegenerator} from "./interface";
+import {JobItemQueue} from "../../util/queue";
+import {IStateRegenerator, RegenCaller, RegenFnName} from "./interface";
 import {StateRegenerator} from "./regen";
 import {RegenError, RegenErrorCode} from "./errors";
 
@@ -25,33 +25,43 @@ type QueuedStateRegeneratorModules = {
   signal: AbortSignal;
 };
 
+type RegenRequestKey = keyof IStateRegenerator;
+type RegenRequestByKey = {[K in RegenRequestKey]: {key: K; args: Parameters<IStateRegenerator[K]>}};
+export type RegenRequest = RegenRequestByKey[RegenRequestKey];
+
 /**
  * Regenerates states that have already been processed by the fork choice
  *
  * All requests are queued so that only a single state at a time may be regenerated at a time
  */
 export class QueuedStateRegenerator implements IStateRegenerator {
+  readonly jobQueue: JobItemQueue<[RegenRequest], CachedBeaconState<allForks.BeaconState>>;
   private regen: StateRegenerator;
-  private jobQueue: JobQueue;
 
-  private config: IBeaconConfig;
   private forkChoice: IForkChoice;
   private stateCache: StateContextCache;
   private checkpointStateCache: CheckpointStateCache;
+  private metrics: IMetrics | null;
 
   constructor(modules: QueuedStateRegeneratorModules) {
     this.regen = new StateRegenerator(modules);
-    this.jobQueue = new JobQueue(
+    this.jobQueue = new JobItemQueue<[RegenRequest], CachedBeaconState<allForks.BeaconState>>(
+      this.jobQueueProcessor,
       {maxLength: REGEN_QUEUE_MAX_LEN, signal: modules.signal},
       modules.metrics ? modules.metrics.regenQueue : undefined
     );
-    this.config = modules.config;
     this.forkChoice = modules.forkChoice;
     this.stateCache = modules.stateCache;
     this.checkpointStateCache = modules.checkpointStateCache;
+    this.metrics = modules.metrics;
   }
 
-  async getPreState(block: allForks.BeaconBlock): Promise<CachedBeaconState<allForks.BeaconState>> {
+  async getPreState(
+    block: allForks.BeaconBlock,
+    rCaller: RegenCaller
+  ): Promise<CachedBeaconState<allForks.BeaconState>> {
+    this.metrics?.regenFnCallTotal.inc({caller: rCaller, entrypoint: RegenFnName.getPreState});
+
     // First attempt to fetch the state from caches before queueing
     const parentBlock = this.forkChoice.getBlock(block.parentRoot);
     if (!parentBlock) {
@@ -61,8 +71,8 @@ export class QueuedStateRegenerator implements IStateRegenerator {
       });
     }
 
-    const parentEpoch = computeEpochAtSlot(this.config, parentBlock.slot);
-    const blockEpoch = computeEpochAtSlot(this.config, block.slot);
+    const parentEpoch = computeEpochAtSlot(parentBlock.slot);
+    const blockEpoch = computeEpochAtSlot(block.slot);
 
     // Check the checkpoint cache (if the pre-state is a checkpoint state)
     if (parentEpoch < blockEpoch) {
@@ -78,30 +88,69 @@ export class QueuedStateRegenerator implements IStateRegenerator {
     }
 
     // The state is not immediately available in the caches, enqueue the job
-    return await this.jobQueue.push(async () => await this.regen.getPreState(block));
+    return this.jobQueue.push({key: "getPreState", args: [block, rCaller]});
   }
 
-  async getCheckpointState(cp: phase0.Checkpoint): Promise<CachedBeaconState<allForks.BeaconState>> {
+  async getCheckpointState(
+    cp: phase0.Checkpoint,
+    rCaller: RegenCaller
+  ): Promise<CachedBeaconState<allForks.BeaconState>> {
+    this.metrics?.regenFnCallTotal.inc({caller: rCaller, entrypoint: RegenFnName.getCheckpointState});
+
     // First attempt to fetch the state from cache before queueing
     const checkpointState = this.checkpointStateCache.get(cp);
     if (checkpointState) {
       return checkpointState;
     }
     // The state is not immediately available in the cache, enqueue the job
-    return await this.jobQueue.push(async () => await this.regen.getCheckpointState(cp));
+    return this.jobQueue.push({key: "getCheckpointState", args: [cp, rCaller]});
   }
 
-  async getBlockSlotState(blockRoot: Root, slot: Slot): Promise<CachedBeaconState<allForks.BeaconState>> {
-    return await this.jobQueue.push(async () => await this.regen.getBlockSlotState(blockRoot, slot));
+  async getBlockSlotState(
+    blockRoot: Root,
+    slot: Slot,
+    rCaller: RegenCaller
+  ): Promise<CachedBeaconState<allForks.BeaconState>> {
+    this.metrics?.regenFnCallTotal.inc({caller: rCaller, entrypoint: RegenFnName.getBlockSlotState});
+
+    return this.jobQueue.push({key: "getBlockSlotState", args: [blockRoot, slot, rCaller]});
   }
 
-  async getState(stateRoot: Root): Promise<CachedBeaconState<allForks.BeaconState>> {
+  async getState(stateRoot: Root, rCaller: RegenCaller): Promise<CachedBeaconState<allForks.BeaconState>> {
+    this.metrics?.regenFnCallTotal.inc({caller: rCaller, entrypoint: RegenFnName.getState});
+
     // First attempt to fetch the state from cache before queueing
     const state = this.stateCache.get(stateRoot);
     if (state) {
       return state;
     }
     // The state is not immediately available in the cache, enqueue the job
-    return await this.jobQueue.push(async () => await this.regen.getState(stateRoot));
+    return this.jobQueue.push({key: "getState", args: [stateRoot, rCaller]});
   }
+
+  private jobQueueProcessor = async (regenRequest: RegenRequest): Promise<CachedBeaconState<allForks.BeaconState>> => {
+    const metricsLabels = {
+      caller: regenRequest.args[regenRequest.args.length - 1] as RegenCaller,
+      entrypoint: regenRequest.key,
+    };
+    let timer;
+    try {
+      timer = this.metrics?.regenFnCallDuration.startTimer(metricsLabels);
+      switch (regenRequest.key) {
+        case "getPreState":
+          return await this.regen.getPreState(...regenRequest.args);
+        case "getCheckpointState":
+          return await this.regen.getCheckpointState(...regenRequest.args);
+        case "getBlockSlotState":
+          return await this.regen.getBlockSlotState(...regenRequest.args);
+        case "getState":
+          return await this.regen.getState(...regenRequest.args);
+      }
+    } catch (e) {
+      this.metrics?.regenFnTotalErrors.inc(metricsLabels);
+      throw e;
+    } finally {
+      if (timer) timer();
+    }
+  };
 }

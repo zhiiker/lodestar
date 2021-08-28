@@ -1,20 +1,17 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment */
+// eslint-disable-next-line no-restricted-imports
 import {toExpectedCase} from "@chainsafe/ssz/lib/util/json";
 
-/**
- * @module objects
- */
+/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment */
 
 function isObjectObject(val: unknown): boolean {
   return val != null && typeof val === "object" && Array.isArray(val) === false;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function isPlainObject(o: any): boolean {
+export function isPlainObject(o: unknown): boolean {
   if (isObjectObject(o) === false) return false;
 
   // If has modified constructor
-  const ctor = o.constructor;
+  const ctor = (o as Record<string, unknown>).constructor;
   if (typeof ctor !== "function") return false;
 
   // If has modified prototype
@@ -48,16 +45,16 @@ export function mapValues<T extends {[K: string]: any}, R>(
   return output;
 }
 
-export function objectToExpectedCase(
-  obj: Record<string, unknown>,
+export function objectToExpectedCase<T extends Record<string, unknown> | Record<string, unknown>[]>(
+  obj: T,
   expectedCase: "snake" | "camel" = "camel"
-): Record<string, unknown> {
+): T {
   if (Array.isArray(obj)) {
     const newArr: unknown[] = [];
     for (let i = 0; i < obj.length; i++) {
       newArr[i] = objectToExpectedCase(obj[i], expectedCase);
     }
-    return (newArr as unknown) as Record<string, unknown>;
+    return (newArr as unknown) as T;
   }
 
   if (Object(obj) === obj) {
@@ -68,9 +65,12 @@ export function objectToExpectedCase(
         throw new Error(`object already has a ${newName} property`);
       }
 
-      newObj[newName] = objectToExpectedCase(obj[name] as Record<string, unknown>, expectedCase);
+      newObj[newName] = objectToExpectedCase(
+        (obj as Record<string, unknown>)[name] as Record<string, unknown>,
+        expectedCase
+      );
     }
-    return newObj;
+    return newObj as T;
   }
 
   return obj;

@@ -2,18 +2,14 @@ import PeerId from "peer-id";
 import Multiaddr from "multiaddr";
 import {expect} from "chai";
 import {fromHexString} from "@chainsafe/ssz";
-import {config} from "@chainsafe/lodestar-config/minimal";
-import {ForkName} from "@chainsafe/lodestar-config";
+import {config} from "@chainsafe/lodestar-config/default";
+import {ForkName} from "@chainsafe/lodestar-params";
 import {createEnr, createPeerId} from "@chainsafe/lodestar-cli/src/config";
 import {Method, Version, Encoding} from "../../../src/network/reqresp/types";
 import {defaultNetworkOptions} from "../../../src/network/options";
 import {formatProtocolId, parseProtocolId} from "../../../src/network/reqresp/utils";
-import {
-  createNodeJsLibp2p,
-  getAgentVersionFromPeerStore,
-  getCurrentAndNextFork,
-  isLocalMultiAddr,
-} from "../../../src/network";
+import {createNodeJsLibp2p, getAgentVersionFromPeerStore, isLocalMultiAddr} from "../../../src/network";
+import {getCurrentAndNextFork} from "../../../src/network/forks";
 
 describe("Test isLocalMultiAddr", () => {
   it("should return true for 127.0.0.1", () => {

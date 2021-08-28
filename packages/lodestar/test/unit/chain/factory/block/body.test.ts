@@ -1,17 +1,23 @@
-import sinon from "sinon";
+import sinon, {SinonStubbedInstance} from "sinon";
 import {expect} from "chai";
 
-import {phase0} from "@chainsafe/lodestar-types";
-import {CachedBeaconState} from "@chainsafe/lodestar-beacon-state-transition";
-import {config} from "@chainsafe/lodestar-config/mainnet";
+import {ssz} from "@chainsafe/lodestar-types";
+import {
+  MAX_ATTESTATIONS,
+  MAX_ATTESTER_SLASHINGS,
+  MAX_PROPOSER_SLASHINGS,
+  MAX_VOLUNTARY_EXITS,
+} from "@chainsafe/lodestar-params";
+import {config} from "@chainsafe/lodestar-config/default";
 import {assembleBody} from "../../../../../src/chain/factory/block/body";
 import {generateCachedState} from "../../../../utils/state";
-import {generateEmptyAttesterSlashing, generateEmptyProposerSlashing} from "../../../../utils/slashings";
 import {generateEmptyAttestation} from "../../../../utils/attestation";
 import {generateEmptySignedVoluntaryExit} from "../../../../utils/voluntaryExits";
 import {generateDeposit} from "../../../../utils/deposit";
 import {StubbedBeaconDb} from "../../../../utils/stub";
 import {Eth1ForBlockProduction} from "../../../../../src/eth1/";
+import {BeaconChain} from "../../../../../src/chain";
+import {AggregatedAttestationPool} from "../../../../../src/chain/opPools";
 
 describe("blockAssembly - body", function () {
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
@@ -20,25 +26,29 @@ describe("blockAssembly - body", function () {
     const state = generateCachedState();
     const eth1 = sandbox.createStubInstance(Eth1ForBlockProduction);
     eth1.getEth1DataAndDeposits.resolves({eth1Data: state.eth1Data, deposits: [generateDeposit()]});
-
-    return {dbStub: new StubbedBeaconDb(sandbox), eth1};
+    const chain = sandbox.createStubInstance(BeaconChain);
+    const aggregatedAttestationPool = sinon.createStubInstance(AggregatedAttestationPool);
+    ((chain as unknown) as {
+      aggregatedAttestationPool: SinonStubbedInstance<AggregatedAttestationPool>;
+    }).aggregatedAttestationPool = aggregatedAttestationPool;
+    return {chain, aggregatedAttestationPool, dbStub: new StubbedBeaconDb(sandbox), eth1};
   }
 
   it("should generate block body", async function () {
-    const {dbStub, eth1} = getStubs();
-    dbStub.proposerSlashing.values.resolves([generateEmptyProposerSlashing()]);
-    dbStub.attesterSlashing.values.resolves([generateEmptyAttesterSlashing()]);
-    dbStub.aggregateAndProof.getBlockAttestations.resolves([generateEmptyAttestation()]);
+    const {chain, dbStub, eth1, aggregatedAttestationPool} = getStubs();
+    dbStub.proposerSlashing.values.resolves([ssz.phase0.ProposerSlashing.defaultValue()]);
+    dbStub.attesterSlashing.values.resolves([ssz.phase0.AttesterSlashing.defaultValue()]);
+    aggregatedAttestationPool.getAttestationsForBlock.returns([generateEmptyAttestation()]);
     dbStub.voluntaryExit.values.resolves([generateEmptySignedVoluntaryExit()]);
-    dbStub.depositDataRoot.getTreeBacked.resolves(config.types.phase0.DepositDataRootList.defaultTreeBacked());
+    dbStub.depositDataRoot.getTreeBacked.resolves(ssz.phase0.DepositDataRootList.defaultTreeBacked());
 
     const result = await assembleBody(
-      config,
-      dbStub,
-      eth1,
-      generateCachedState() as CachedBeaconState<phase0.BeaconState>,
+      {chain, config, db: dbStub, eth1},
+      generateCachedState(),
       Buffer.alloc(96, 0),
-      Buffer.alloc(32, 0)
+      Buffer.alloc(32, 0),
+      1,
+      {parentSlot: 0, parentBlockRoot: Buffer.alloc(32, 0)}
     );
     expect(result).to.not.be.null;
     expect(result.randaoReveal.length).to.be.equal(96);
@@ -50,34 +60,32 @@ describe("blockAssembly - body", function () {
   });
 
   it("should generate block body with max respective field lengths", async function () {
-    const {dbStub, eth1} = getStubs();
+    const {chain, dbStub, eth1, aggregatedAttestationPool} = getStubs();
     dbStub.proposerSlashing.values.resolves(
-      Array.from({length: config.params.MAX_PROPOSER_SLASHINGS}, generateEmptyProposerSlashing)
+      Array.from({length: MAX_PROPOSER_SLASHINGS}, () => ssz.phase0.ProposerSlashing.defaultValue())
     );
     dbStub.attesterSlashing.values.resolves(
-      Array.from({length: config.params.MAX_ATTESTER_SLASHINGS}, generateEmptyAttesterSlashing)
+      Array.from({length: MAX_ATTESTER_SLASHINGS}, () => ssz.phase0.AttesterSlashing.defaultValue())
     );
-    dbStub.aggregateAndProof.getBlockAttestations.resolves(
-      Array.from({length: config.params.MAX_ATTESTATIONS}, generateEmptyAttestation)
+    aggregatedAttestationPool.getAttestationsForBlock.returns(
+      Array.from({length: MAX_ATTESTATIONS}, generateEmptyAttestation)
     );
-    dbStub.voluntaryExit.values.resolves(
-      Array.from({length: config.params.MAX_VOLUNTARY_EXITS}, generateEmptySignedVoluntaryExit)
-    );
+    dbStub.voluntaryExit.values.resolves(Array.from({length: MAX_VOLUNTARY_EXITS}, generateEmptySignedVoluntaryExit));
 
     const result = await assembleBody(
-      config,
-      dbStub,
-      eth1,
-      generateCachedState() as CachedBeaconState<phase0.BeaconState>,
+      {chain, config, db: dbStub, eth1},
+      generateCachedState(),
       Buffer.alloc(96, 0),
-      Buffer.alloc(32, 0)
+      Buffer.alloc(32, 0),
+      1,
+      {parentSlot: 0, parentBlockRoot: Buffer.alloc(32, 0)}
     );
     expect(result).to.not.be.null;
     expect(result.randaoReveal.length).to.be.equal(96);
-    expect(result.attestations.length).to.be.equal(config.params.MAX_ATTESTATIONS);
-    expect(result.attesterSlashings.length).to.be.equal(config.params.MAX_ATTESTER_SLASHINGS);
-    expect(result.voluntaryExits.length).to.be.equal(config.params.MAX_VOLUNTARY_EXITS);
-    expect(result.proposerSlashings.length).to.be.equal(config.params.MAX_PROPOSER_SLASHINGS);
+    expect(result.attestations.length).to.be.equal(MAX_ATTESTATIONS);
+    expect(result.attesterSlashings.length).to.be.equal(MAX_ATTESTER_SLASHINGS);
+    expect(result.voluntaryExits.length).to.be.equal(MAX_VOLUNTARY_EXITS);
+    expect(result.proposerSlashings.length).to.be.equal(MAX_PROPOSER_SLASHINGS);
     expect(result.deposits.length).to.be.equal(1);
   });
 });

@@ -1,5 +1,6 @@
 import {computeForkDigest} from "@chainsafe/lodestar-beacon-state-transition";
-import {ForkName, IBeaconConfig} from "@chainsafe/lodestar-config";
+import {ForkName} from "@chainsafe/lodestar-params";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 import {ForkDigest, Root} from "@chainsafe/lodestar-types";
 import {ByteVector, toHexString} from "@chainsafe/ssz";
 
@@ -15,11 +16,12 @@ export type IForkDigestContext = {
  */
 export class ForkDigestContext implements IForkDigestContext {
   private forkDigestByForkName = new Map<ForkName, ForkDigest>();
+  /** Map of ForkDigest in hex format without prefix: `0011aabb` */
   private forkNameByForkDigest = new Map<ForkDigestHex, ForkName>();
 
-  constructor(config: IBeaconConfig, genesisValidatorsRoot: Root) {
+  constructor(config: IChainForkConfig, genesisValidatorsRoot: Root) {
     for (const fork of Object.values(config.forks)) {
-      const forkDigest = computeForkDigest(config, fork.version, genesisValidatorsRoot);
+      const forkDigest = computeForkDigest(fork.version, genesisValidatorsRoot);
       this.forkNameByForkDigest.set(toHexStringNoPrefix(forkDigest), fork.name);
       this.forkDigestByForkName.set(fork.name, forkDigest);
     }
@@ -43,7 +45,7 @@ export class ForkDigestContext implements IForkDigestContext {
   }
 }
 
-function toHexStringNoPrefix(hex: string | ByteVector): string {
+export function toHexStringNoPrefix(hex: string | ByteVector): string {
   return strip0xPrefix(typeof hex === "string" ? hex : toHexString(hex));
 }
 

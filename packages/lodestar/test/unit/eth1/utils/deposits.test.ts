@@ -1,20 +1,16 @@
 import chai, {expect} from "chai";
 import chaiAsPromised from "chai-as-promised";
-import {Root, phase0} from "@chainsafe/lodestar-types";
+import {Root, phase0, ssz} from "@chainsafe/lodestar-types";
 import {List, TreeBacked} from "@chainsafe/ssz";
-import {config} from "@chainsafe/lodestar-config/mainnet";
+import {MAX_DEPOSITS} from "@chainsafe/lodestar-params";
 import {verifyMerkleBranch} from "@chainsafe/lodestar-utils";
 import {filterBy} from "../../../utils/db";
 import {getTreeAtIndex} from "../../../../src/util/tree";
+import {Eth1ErrorCode} from "../../../../src/eth1/errors";
 import {generateDepositData, generateDepositEvent} from "../../../utils/deposit";
 import {generateState} from "../../../utils/state";
-import {
-  getDeposits,
-  getDepositsWithProofs,
-  DepositGetter,
-  ErrorDepositIndexTooHigh,
-  ErrorNotEnoughDeposits,
-} from "../../../../src/eth1/utils/deposits";
+import {expectRejectedWithLodestarError} from "../../../utils/errors";
+import {getDeposits, getDepositsWithProofs, DepositGetter} from "../../../../src/eth1/utils/deposits";
 
 chai.use(chaiAsPromised);
 
@@ -26,10 +22,9 @@ describe("eth1 / util / deposits", function () {
       eth1DepositIndex: number;
       depositIndexes: number[];
       expectedReturnedIndexes?: number[];
-      error?: unknown;
+      error?: Eth1ErrorCode;
     }
 
-    const {MAX_DEPOSITS} = config.params;
     const testCases: ITestCase[] = [
       {
         id: "Return first deposit",
@@ -64,14 +59,14 @@ describe("eth1 / util / deposits", function () {
         depositCount: 0,
         eth1DepositIndex: 1,
         depositIndexes: [],
-        error: ErrorDepositIndexTooHigh,
+        error: Eth1ErrorCode.DEPOSIT_INDEX_TOO_HIGH,
       },
       {
         id: "Should throw if DB returns less deposits than expected",
         depositCount: 1,
         eth1DepositIndex: 0,
         depositIndexes: [],
-        error: ErrorNotEnoughDeposits,
+        error: Eth1ErrorCode.NOT_ENOUGH_DEPOSITS,
       },
       {
         id: "Empty case",
@@ -91,13 +86,13 @@ describe("eth1 / util / deposits", function () {
         const depositsGetter: DepositGetter<phase0.DepositEvent> = async (indexRange) =>
           filterBy(deposits, indexRange, (deposit) => deposit.index);
 
-        const resultPromise = getDeposits(config, state, eth1Data, depositsGetter);
+        const resultPromise = getDeposits(state, eth1Data, depositsGetter);
 
         if (expectedReturnedIndexes) {
           const result = await resultPromise;
           expect(result.map((deposit) => deposit.index)).to.deep.equal(expectedReturnedIndexes);
         } else if (error) {
-          await expect(resultPromise).to.be.rejectedWith(error as Error);
+          await expectRejectedWithLodestarError(resultPromise, error);
         } else {
           throw Error("Test case must have 'result' or 'error'");
         }
@@ -108,11 +103,11 @@ describe("eth1 / util / deposits", function () {
   describe("getDepositsWithProofs", () => {
     it("return empty array if no pending deposits", function () {
       const initialValues = [Buffer.alloc(32)] as List<Root>;
-      const depositRootTree = config.types.phase0.DepositDataRootList.createTreeBackedFromStruct(initialValues);
+      const depositRootTree = ssz.phase0.DepositDataRootList.createTreeBackedFromStruct(initialValues);
       const depositCount = 0;
       const eth1Data = generateEth1Data(depositCount, depositRootTree);
 
-      const deposits = getDepositsWithProofs(config, [], depositRootTree, eth1Data);
+      const deposits = getDepositsWithProofs([], depositRootTree, eth1Data);
       expect(deposits).to.be.deep.equal([]);
     });
 
@@ -126,14 +121,14 @@ describe("eth1 / util / deposits", function () {
         })
       );
 
-      const depositRootTree = config.types.phase0.DepositDataRootList.defaultTreeBacked();
+      const depositRootTree = ssz.phase0.DepositDataRootList.defaultTreeBacked();
       for (const depositEvent of depositEvents) {
-        depositRootTree.push(config.types.phase0.DepositData.hashTreeRoot(depositEvent.depositData));
+        depositRootTree.push(ssz.phase0.DepositData.hashTreeRoot(depositEvent.depositData));
       }
       const depositCount = depositEvents.length;
       const eth1Data = generateEth1Data(depositCount, depositRootTree);
 
-      const deposits = getDepositsWithProofs(config, depositEvents, depositRootTree, eth1Data);
+      const deposits = getDepositsWithProofs(depositEvents, depositRootTree, eth1Data);
 
       // Should not return all deposits
       expect(deposits.length).to.be.equal(2);
@@ -142,7 +137,7 @@ describe("eth1 / util / deposits", function () {
       for (const [index, deposit] of deposits.entries()) {
         expect(
           verifyMerkleBranch(
-            config.types.phase0.DepositData.hashTreeRoot(deposit.data),
+            ssz.phase0.DepositData.hashTreeRoot(deposit.data),
             Array.from(deposit.proof).map((p) => p.valueOf() as Uint8Array),
             33,
             index,

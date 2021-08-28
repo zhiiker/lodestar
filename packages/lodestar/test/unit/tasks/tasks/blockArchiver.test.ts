@@ -1,7 +1,6 @@
 import {expect} from "chai";
 import sinon, {SinonStubbedInstance} from "sinon";
 
-import {config} from "@chainsafe/lodestar-config/mainnet";
 import {ZERO_HASH} from "@chainsafe/lodestar-beacon-state-transition";
 
 import {ForkChoice} from "../../../../src/chain";
@@ -9,6 +8,7 @@ import {ArchiveBlocksTask} from "../../../../src/tasks/tasks/archiveBlocks";
 import {generateBlockSummary, generateEmptySignedBlock} from "../../../utils/block";
 import {StubbedBeaconDb} from "../../../utils/stub";
 import {testLogger} from "../../../utils/logger";
+import {ssz} from "@chainsafe/lodestar-types";
 
 describe("block archiver task", function () {
   const sandbox = sinon.createSandbox();
@@ -22,24 +22,18 @@ describe("block archiver task", function () {
     forkChoiceStub = sinon.createStubInstance(ForkChoice);
   });
 
-  /**
-   * A - B - D - finalized - E
-   *      \
-   *       C
-   */
-  it("should archive finalized blocks on same chain", async function () {
-    const blockBuffer = Buffer.from(config.types.phase0.SignedBeaconBlock.serialize(generateEmptySignedBlock()));
+  it("should archive finalized blocks", async function () {
+    const blockBuffer = Buffer.from(ssz.phase0.SignedBeaconBlock.serialize(generateEmptySignedBlock()));
     dbStub.block.getBinary.resolves(blockBuffer);
-    const canonicalBlocks = [
-      generateBlockSummary({slot: 5}),
-      generateBlockSummary({slot: 4}),
-      generateBlockSummary({slot: 2}),
-      generateBlockSummary({slot: 1}),
-    ];
+    // block i has slot i+1
+    const blocks = Array.from({length: 5}, (_, i) =>
+      generateBlockSummary({slot: i + 1, blockRoot: Buffer.alloc(32, i + 1)})
+    );
+    const canonicalBlocks = [blocks[4], blocks[3], blocks[1], blocks[0]];
+    const nonCanonicalBlocks = [blocks[2]];
     forkChoiceStub.iterateBlockSummaries.returns(canonicalBlocks);
-    forkChoiceStub.iterateNonAncestors.returns([generateBlockSummary({slot: 3})]);
+    forkChoiceStub.iterateNonAncestors.returns(nonCanonicalBlocks);
     const archiverTask = new ArchiveBlocksTask(
-      config,
       {
         db: dbStub,
         forkChoice: forkChoiceStub,
@@ -61,8 +55,12 @@ describe("block archiver task", function () {
       )
     ).to.be.true;
     // delete canonical blocks
-    expect(dbStub.block.batchDelete.calledWith([ZERO_HASH, ZERO_HASH, ZERO_HASH, ZERO_HASH])).to.be.true;
+    expect(
+      dbStub.block.batchDelete.calledWith(
+        [blocks[4], blocks[3], blocks[1], blocks[0]].map((summary) => summary.blockRoot)
+      )
+    ).to.be.true;
     // delete non canonical blocks
-    expect(dbStub.block.batchDelete.calledWith([ZERO_HASH])).to.be.true;
+    expect(dbStub.block.batchDelete.calledWith([blocks[2]].map((summary) => summary.blockRoot))).to.be.true;
   });
 });

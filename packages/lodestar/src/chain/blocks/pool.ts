@@ -1,6 +1,7 @@
 import {fromHexString, toHexString} from "@chainsafe/ssz";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {Root, phase0, Slot} from "@chainsafe/lodestar-types";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
+import {Root, Slot, allForks} from "@chainsafe/lodestar-types";
+import {ILogger} from "@chainsafe/lodestar-utils";
 
 /**
  * The BlockPool is a cache of blocks that are pending processing.
@@ -10,29 +11,22 @@ import {Root, phase0, Slot} from "@chainsafe/lodestar-types";
  * - blocks with future slots
  */
 export class BlockPool {
-  private readonly config: IBeaconConfig;
   /**
    * Block metadata indexed by block root
    */
-  private blocks: Map<string, {parentRoot: string; slot: Slot}>;
+  private blocks = new Map<string, {parentRoot: string; slot: Slot}>();
   /**
    * Blocks indexed by parentRoot, then blockRoot
    */
-  private blocksByParent: Map<string, Set<string>>;
+  private blocksByParent = new Map<string, Set<string>>();
   /**
    * Blocks indexed by slot, then blockRoot
    */
-  private blocksBySlot: Map<Slot, Set<string>>;
+  private blocksBySlot = new Map<number, Set<string>>();
 
-  constructor({config}: {config: IBeaconConfig}) {
-    this.config = config;
+  constructor(private readonly config: IChainForkConfig, private readonly logger: ILogger) {}
 
-    this.blocks = new Map<string, {parentRoot: string; slot: Slot}>();
-    this.blocksByParent = new Map<string, Set<string>>();
-    this.blocksBySlot = new Map<number, Set<string>>();
-  }
-
-  addByParent(signedBlock: phase0.SignedBeaconBlock): void {
+  addByParent(signedBlock: allForks.SignedBeaconBlock): void {
     // put block in two indices:
     // blocks
     const blockKey = this.getBlockKey(signedBlock);
@@ -51,9 +45,11 @@ export class BlockPool {
     }
 
     blocksWithParent.add(blockKey);
+
+    this.logger.debug("Add block to pool", {blockKey});
   }
 
-  addBySlot(signedBlock: phase0.SignedBeaconBlock): void {
+  addBySlot(signedBlock: allForks.SignedBeaconBlock): void {
     // put block in two indices:
     // blocks
     const blockKey = this.getBlockKey(signedBlock);
@@ -72,9 +68,11 @@ export class BlockPool {
     }
 
     blocksAtSlot.add(blockKey);
+
+    this.logger.debug("Add block to pool", {blockKey});
   }
 
-  remove(signedBlock: phase0.SignedBeaconBlock): void {
+  remove(signedBlock: allForks.SignedBeaconBlock): void {
     // remove block from three indices:
     // blocks
     const blockKey = this.getBlockKey(signedBlock);
@@ -107,7 +105,11 @@ export class BlockPool {
     let root = toHexString(blockRoot);
 
     while (this.blocks.has(root)) {
-      root = this.blocks.get(root)!.parentRoot;
+      const block = this.blocks.get(root);
+      if (!block) {
+        throw Error(`Unknown root ${root}`);
+      }
+      root = block.parentRoot;
     }
 
     return fromHexString(root);
@@ -135,16 +137,16 @@ export class BlockPool {
     return Array.from(new Set(blockRoots)).map((root) => fromHexString(root));
   }
 
-  private getParentKey(block: phase0.SignedBeaconBlock): string {
+  private getParentKey(block: allForks.SignedBeaconBlock): string {
     return toHexString(block.message.parentRoot);
   }
 
-  private getSlotKey(block: phase0.SignedBeaconBlock): number {
+  private getSlotKey(block: allForks.SignedBeaconBlock): number {
     return block.message.slot;
   }
 
-  private getBlockKey(block: phase0.SignedBeaconBlock): string {
-    return toHexString(this.config.types.phase0.BeaconBlock.hashTreeRoot(block.message));
+  private getBlockKey(block: allForks.SignedBeaconBlock): string {
+    return toHexString(this.config.getForkTypes(block.message.slot).BeaconBlock.hashTreeRoot(block.message));
   }
 
   private getBlockKeyByRoot(root: Root): string {

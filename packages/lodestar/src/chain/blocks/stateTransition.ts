@@ -1,12 +1,12 @@
-import {byteArrayEquals} from "@chainsafe/ssz";
-import {allForks, Gwei, Slot} from "@chainsafe/lodestar-types";
+import {SLOTS_PER_EPOCH} from "@chainsafe/lodestar-params";
+import {byteArrayEquals, toHexString} from "@chainsafe/ssz";
+import {Gwei, Slot, ssz} from "@chainsafe/lodestar-types";
 import {assert} from "@chainsafe/lodestar-utils";
 import {
   CachedBeaconState,
   computeEpochAtSlot,
   computeStartSlotAtEpoch,
-  fast,
-  phase0,
+  allForks,
   getEffectiveBalances,
 } from "@chainsafe/lodestar-beacon-state-transition";
 import {IBlockSummary, IForkChoice} from "@chainsafe/lodestar-fork-choice";
@@ -28,9 +28,9 @@ export async function processSlotsByCheckpoint(
   preState: CachedBeaconState<allForks.BeaconState>,
   slot: Slot
 ): Promise<CachedBeaconState<allForks.BeaconState>> {
-  const postState = await processSlotsToNearestCheckpoint({emitter, metrics}, preState, slot);
+  let postState = await processSlotsToNearestCheckpoint({emitter, metrics}, preState, slot);
   if (postState.slot < slot) {
-    phase0.fast.processSlots(postState as CachedBeaconState<phase0.BeaconState>, slot, metrics);
+    postState = allForks.processSlots(postState, slot, metrics);
   }
   return postState;
 }
@@ -47,18 +47,16 @@ async function processSlotsToNearestCheckpoint(
   preState: CachedBeaconState<allForks.BeaconState>,
   slot: Slot
 ): Promise<CachedBeaconState<allForks.BeaconState>> {
-  const config = preState.config;
-  const {SLOTS_PER_EPOCH} = config.params;
   const preSlot = preState.slot;
   const postSlot = slot;
-  const preEpoch = computeEpochAtSlot(config, preSlot);
-  const postState = preState.clone();
+  const preEpoch = computeEpochAtSlot(preSlot);
+  let postState = preState.clone();
   for (
-    let nextEpochSlot = computeStartSlotAtEpoch(config, preEpoch + 1);
+    let nextEpochSlot = computeStartSlotAtEpoch(preEpoch + 1);
     nextEpochSlot <= postSlot;
     nextEpochSlot += SLOTS_PER_EPOCH
   ) {
-    phase0.fast.processSlots(postState as CachedBeaconState<phase0.BeaconState>, nextEpochSlot, metrics);
+    postState = allForks.processSlots(postState, nextEpochSlot, metrics);
     emitCheckpointEvent(emitter, postState.clone());
     // this avoids keeping our node busy processing blocks
     await sleep(0);
@@ -72,13 +70,18 @@ export async function runStateTransition(
   preState: CachedBeaconState<allForks.BeaconState>,
   job: IBlockJob
 ): Promise<CachedBeaconState<allForks.BeaconState>> {
-  const config = preState.config;
-  const {SLOTS_PER_EPOCH} = config.params;
   const postSlot = job.signedBlock.message.slot;
+  const preEpoch = preState.currentShuffling.epoch;
+  const postEpoch = computeEpochAtSlot(postSlot);
+  // if there're skipped slots at epoch transition, we want to cache all checkpoint states in the middle
+  const passCheckpoint = preEpoch < postEpoch && postSlot !== computeStartSlotAtEpoch(postEpoch);
+  const state = passCheckpoint
+    ? await processSlotsToNearestCheckpoint({emitter, metrics}, preState, postSlot)
+    : preState;
 
   // if block is trusted don't verify proposer or op signature
-  const postState = fast.fastStateTransition(
-    preState,
+  const postState = allForks.stateTransition(
+    state,
     job.signedBlock,
     {
       verifyStateRoot: true,
@@ -95,7 +98,13 @@ export async function runStateTransition(
   let justifiedBalances: Gwei[] = [];
   if (postState.currentJustifiedCheckpoint.epoch > forkChoice.getJustifiedCheckpoint().epoch) {
     const justifiedState = checkpointStateCache.get(postState.currentJustifiedCheckpoint);
-    justifiedBalances = getEffectiveBalances(justifiedState!);
+    if (!justifiedState) {
+      const epoch = postState.currentJustifiedCheckpoint.epoch;
+      const root = toHexString(postState.currentJustifiedCheckpoint.root);
+      throw Error(`State not available for justified checkpoint ${epoch} ${root}`);
+    }
+    // TODO - PERFORMANCE WARNING - NAIVE CODE
+    justifiedBalances = getEffectiveBalances(justifiedState);
   }
   forkChoice.onBlock(job.signedBlock.message, postState, justifiedBalances);
 
@@ -105,7 +114,8 @@ export async function runStateTransition(
     }
 
     emitBlockEvent(emitter, job, postState);
-    emitForkChoiceHeadEvents(emitter, forkChoice, forkChoice.getHead(), oldHead);
+    forkChoice.updateHead();
+    emitForkChoiceHeadEvents(emitter, forkChoice, forkChoice.getHead(), oldHead, metrics);
   }
 
   return postState;
@@ -122,16 +132,16 @@ function emitCheckpointEvent(
 ): void {
   const config = checkpointState.config;
   const slot = checkpointState.slot;
-  assert.true(slot % config.params.SLOTS_PER_EPOCH === 0, "Checkpoint state slot must be first in an epoch");
-  const blockHeader = config.types.phase0.BeaconBlockHeader.clone(checkpointState.latestBlockHeader);
-  if (config.types.Root.equals(blockHeader.stateRoot, ZERO_HASH)) {
-    blockHeader.stateRoot = config.getTypes(slot).BeaconState.hashTreeRoot(checkpointState);
+  assert.true(slot % SLOTS_PER_EPOCH === 0, "Checkpoint state slot must be first in an epoch");
+  const blockHeader = ssz.phase0.BeaconBlockHeader.clone(checkpointState.latestBlockHeader);
+  if (ssz.Root.equals(blockHeader.stateRoot, ZERO_HASH)) {
+    blockHeader.stateRoot = config.getForkTypes(slot).BeaconState.hashTreeRoot(checkpointState);
   }
   emitter.emit(
     ChainEvent.checkpoint,
     {
-      root: config.types.phase0.BeaconBlockHeader.hashTreeRoot(blockHeader),
-      epoch: computeEpochAtSlot(config, slot),
+      root: ssz.phase0.BeaconBlockHeader.hashTreeRoot(blockHeader),
+      epoch: computeEpochAtSlot(slot),
     },
     checkpointState
   );
@@ -141,7 +151,8 @@ function emitForkChoiceHeadEvents(
   emitter: ChainEventEmitter,
   forkChoice: IForkChoice,
   head: IBlockSummary,
-  oldHead: IBlockSummary
+  oldHead: IBlockSummary,
+  metrics: IMetrics | null
 ): void {
   const headRoot = head.blockRoot;
   const oldHeadRoot = oldHead.blockRoot;
@@ -154,8 +165,10 @@ function emitForkChoiceHeadEvents(
       const firstAncestor = headHistory.find((summary) => oldHeadHistory.includes(summary));
       const distance = oldHead.slot - (firstAncestor?.slot ?? oldHead.slot);
       emitter.emit(ChainEvent.forkChoiceReorg, head, oldHead, distance);
+      metrics?.forkChoiceReorg.inc();
     }
     emitter.emit(ChainEvent.forkChoiceHead, head);
+    metrics?.forkChoiceChangedHead.inc();
   }
 }
 

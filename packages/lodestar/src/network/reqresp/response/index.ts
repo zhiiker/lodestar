@@ -1,29 +1,29 @@
 import PeerId from "peer-id";
 import pipe from "it-pipe";
-import {AbortSignal} from "abort-controller";
+import {AbortSignal} from "@chainsafe/abort-controller";
 import {Libp2p} from "libp2p/src/connection-manager";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {Context, ILogger, TimeoutError, withTimeout} from "@chainsafe/lodestar-utils";
 import {IForkDigestContext} from "../../../util/forkDigestContext";
 import {REQUEST_TIMEOUT, RespStatus} from "../../../constants";
 import {getAgentVersionFromPeerStore, prettyPrintPeerId} from "../../util";
-import {Method, Protocol, RequestBody, ResponseBody} from "../types";
+import {Protocol, RequestBody, ResponseBody} from "../types";
 import {onChunk} from "../utils";
 import {Libp2pStream} from "../interface";
 import {requestDecode} from "../encoders/requestDecode";
 import {responseEncodeError, responseEncodeSuccess} from "../encoders/responseEncode";
 import {ResponseError} from "./errors";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 
 export {ResponseError};
 
 export type PerformRequestHandler = (
-  method: Method,
+  protocol: Protocol,
   requestBody: RequestBody,
   peerId: PeerId
 ) => AsyncIterable<ResponseBody>;
 
 type HandleRequestModules = {
-  config: IBeaconConfig;
+  config: IChainForkConfig;
   logger: ILogger;
   forkDigestContext: IForkDigestContext;
   libp2p: Libp2p;
@@ -56,10 +56,10 @@ export async function handleRequest(
     // Yields success chunks and error chunks in the same generator
     // This syntax allows to recycle stream.sink to send success and error chunks without returning
     // in case request whose body is a List fails at chunk_i > 0, without breaking out of the for..await..of
-    (async function* () {
+    (async function* requestHandlerSource() {
       try {
         const requestBody = await withTimeout(
-          () => pipe(stream.source, requestDecode(config, protocol)),
+          () => pipe(stream.source, requestDecode(protocol)),
           REQUEST_TIMEOUT,
           signal
         ).catch((e: unknown) => {
@@ -73,7 +73,7 @@ export async function handleRequest(
         logger.debug("Resp received request", {...logCtx, requestBody} as Context);
 
         yield* pipe(
-          performRequestHandler(protocol.method, requestBody, peerId),
+          performRequestHandler(protocol, requestBody, peerId),
           // NOTE: Do not log the resp chunk contents, logs get extremely cluttered
           onChunk(() => logger.debug("Resp sending chunk", logCtx)),
           responseEncodeSuccess(config, forkDigestContext, protocol)

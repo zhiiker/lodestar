@@ -1,19 +1,20 @@
 import {ILogger} from "@chainsafe/lodestar-utils";
-import {Slot, phase0} from "@chainsafe/lodestar-types";
+import {Slot} from "@chainsafe/lodestar-types";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {routes} from "@chainsafe/lodestar-api";
 import {INetwork} from "../network";
-import {BeaconGossipHandler} from "./gossip";
 import {IBeaconChain} from "../chain";
 import {IMetrics} from "../metrics";
 import {IBeaconDb} from "../db";
-import {AttestationCollector} from "./utils";
 import {SyncChainDebugState} from "./range/chain";
 export {SyncChainDebugState};
+
+export type SyncingStatus = routes.node.SyncingStatus;
 
 export interface IBeaconSync {
   state: SyncState;
   close(): void;
-  getSyncStatus(): phase0.SyncingStatus;
+  getSyncStatus(): SyncingStatus;
   isSynced(): boolean;
   isSyncing(): boolean;
   getSyncChainsDebugState(): SyncChainDebugState[];
@@ -54,6 +55,4 @@ export interface ISyncModules {
   metrics: IMetrics | null;
   logger: ILogger;
   chain: IBeaconChain;
-  gossipHandler?: BeaconGossipHandler;
-  attestationCollector?: AttestationCollector;
 }

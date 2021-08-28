@@ -1,9 +1,13 @@
-import {allForks, phase0} from "@chainsafe/lodestar-types";
-import {ATTESTATION_SUBNET_COUNT} from "@chainsafe/lodestar-params";
-import {createIBeaconConfig, ForkName} from "@chainsafe/lodestar-config";
-import {params} from "@chainsafe/lodestar-params/minimal";
+import {allForks} from "@chainsafe/lodestar-types";
+import {
+  ATTESTATION_SUBNET_COUNT,
+  EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION,
+  ForkName,
+  SLOTS_PER_EPOCH,
+} from "@chainsafe/lodestar-params";
+import {createIChainForkConfig} from "@chainsafe/lodestar-config";
 import {getCurrentSlot} from "@chainsafe/lodestar-beacon-state-transition";
-import * as stateTransitionUtils from "@chainsafe/lodestar-beacon-state-transition/lib/util/attestation";
+// eslint-disable-next-line no-restricted-imports
 import * as mathUtils from "@chainsafe/lodestar-utils/lib/math";
 import * as shuffleUtils from "../../../src/util/shuffle";
 import sinon, {SinonStubbedInstance} from "sinon";
@@ -15,41 +19,37 @@ import {expect} from "chai";
 import {SinonStubFn} from "../../utils/types";
 import {MetadataController} from "../../../src/network/metadata";
 import {Eth2Gossipsub, GossipType} from "../../../src/network/gossip";
-import {AttestationService} from "../../../src/network/attestationService";
+import {AttnetsService, CommitteeSubscription} from "../../../src/network/subnets";
 import {ChainEvent, IBeaconChain} from "../../../src/chain";
 
-describe("AttestationService", function () {
-  const {SLOTS_PER_EPOCH, SECONDS_PER_SLOT, EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION} = params;
+describe("AttnetsService", function () {
   const COMMITTEE_SUBNET_SUBSCRIPTION = 10;
-  const ALTAIR_FORK_EPOCH = 1 * params.EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION;
+  const ALTAIR_FORK_EPOCH = 1 * EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION;
   // eslint-disable-next-line @typescript-eslint/naming-convention
-  const config = createIBeaconConfig({...params, ALTAIR_FORK_EPOCH});
+  const config = createIChainForkConfig({ALTAIR_FORK_EPOCH});
+  const {SECONDS_PER_SLOT} = config;
 
-  let service: AttestationService;
+  let service: AttnetsService;
 
   const sandbox = sinon.createSandbox();
   // let clock: SinonFakeTimers;
-  let gossipStub: SinonStubbedInstance<Eth2Gossipsub>;
-  let computeSubnetUtil: SinonStubFn<typeof stateTransitionUtils["computeSubnetForCommitteesAtSlot"]>;
+  let gossipStub: SinonStubbedInstance<Eth2Gossipsub> & Eth2Gossipsub;
   let randomUtil: SinonStubFn<typeof mathUtils["randBetween"]>;
   let metadata: MetadataController;
 
   let chain: IBeaconChain;
   let state: allForks.BeaconState;
   const logger = testLogger();
-  const subscription: phase0.BeaconCommitteeSubscription = {
+  const subscription: CommitteeSubscription = {
     validatorIndex: 2021,
-    committeeIndex: 2,
-    committeesAtSlot: 10,
+    subnet: 10,
     slot: 100,
     isAggregator: false,
   };
 
   beforeEach(function () {
     sandbox.useFakeTimers(Date.now());
-    gossipStub = sandbox.createStubInstance(Eth2Gossipsub);
-    computeSubnetUtil = sandbox.stub(stateTransitionUtils, "computeSubnetForCommitteesAtSlot");
-    computeSubnetUtil.returns(COMMITTEE_SUBNET_SUBSCRIPTION);
+    gossipStub = sandbox.createStubInstance(Eth2Gossipsub) as SinonStubbedInstance<Eth2Gossipsub> & Eth2Gossipsub;
     randomUtil = sandbox.stub(mathUtils, "randBetween");
     randomUtil
       .withArgs(EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION, 2 * EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION)
@@ -71,13 +71,7 @@ describe("AttestationService", function () {
     // load getCurrentSlot first, vscode not able to debug without this
     getCurrentSlot(config, Math.floor(Date.now() / 1000));
     metadata = new MetadataController({}, {config, chain, logger});
-    service = new AttestationService({
-      config,
-      chain,
-      logger,
-      gossip: (gossipStub as unknown) as Eth2Gossipsub,
-      metadata,
-    });
+    service = new AttnetsService(config, chain, gossipStub, metadata, logger);
     service.start();
   });
 
@@ -94,23 +88,23 @@ describe("AttestationService", function () {
   it.skip("should subscribe to RANDOM_SUBNETS_PER_VALIDATOR per 1 validator", () => {
     randomUtil.withArgs(0, ATTESTATION_SUBNET_COUNT).returns(30);
     randomUtil.withArgs(0, ATTESTATION_SUBNET_COUNT - 1).returns(40);
-    service.addBeaconCommitteeSubscriptions([subscription]);
+    service.addCommitteeSubscriptions([subscription]);
     expect(gossipStub.subscribeTopic.calledOnce).to.be.true;
     expect(metadata.seqNumber).to.be.equal(BigInt(1));
     // subscribe with a different validator
     subscription.validatorIndex = 2022;
-    service.addBeaconCommitteeSubscriptions([subscription]);
+    service.addCommitteeSubscriptions([subscription]);
     expect(gossipStub.subscribeTopic.calledTwice).to.be.true;
     expect(metadata.seqNumber).to.be.equal(BigInt(2));
     // subscribe with same validator
     subscription.validatorIndex = 2021;
-    service.addBeaconCommitteeSubscriptions([subscription]);
+    service.addCommitteeSubscriptions([subscription]);
     expect(gossipStub.subscribeTopic.calledTwice).to.be.true;
     expect(metadata.seqNumber).to.be.equal(BigInt(2));
   });
 
   it("should handle validator expiry", async () => {
-    service.addBeaconCommitteeSubscriptions([subscription]);
+    service.addCommitteeSubscriptions([subscription]);
     expect(metadata.seqNumber).to.be.equal(BigInt(1));
     expect(EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION * SLOTS_PER_EPOCH).to.be.gt(150);
     sandbox.clock.tick(150 * SLOTS_PER_EPOCH * SECONDS_PER_SLOT * 1000);
@@ -120,12 +114,12 @@ describe("AttestationService", function () {
   });
 
   it.skip("should change subnet subscription after 2*EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION", async () => {
-    service.addBeaconCommitteeSubscriptions([subscription]);
+    service.addCommitteeSubscriptions([subscription]);
     expect(gossipStub.subscribeTopic.calledOnce).to.be.true;
     expect(metadata.seqNumber).to.be.equal(BigInt(1));
     for (let numEpoch = 0; numEpoch < 2 * EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION; numEpoch++) {
       // avoid known validator expiry
-      service.addBeaconCommitteeSubscriptions([subscription]);
+      service.addCommitteeSubscriptions([subscription]);
       sandbox.clock.tick(SLOTS_PER_EPOCH * SECONDS_PER_SLOT * 1000);
     }
     // may call 2 times, 1 for committee subnet, 1 for random subnet
@@ -135,17 +129,12 @@ describe("AttestationService", function () {
   });
 
   it("should prepare for a hard fork", async () => {
-    const altairEpoch = config.forks.altair.epoch;
-    service.addBeaconCommitteeSubscriptions([subscription]);
-    // run every epoch (or any num slots < 150)
-    while (chain.clock.currentSlot < altairEpoch * SLOTS_PER_EPOCH) {
-      // avoid known validator expiry
-      service.addBeaconCommitteeSubscriptions([subscription]);
-      sandbox.clock.tick(SLOTS_PER_EPOCH * SECONDS_PER_SLOT * 1000);
-    }
+    service.addCommitteeSubscriptions([subscription]);
+
+    // Run the pre-fork transition
+    service.subscribeSubnetsToNextFork(ForkName.altair);
 
     // Should have already subscribed to both forks
-
     const forkTransitionSubscribeCalls = gossipStub.subscribeTopic.getCalls().map((call) => call.args[0]);
     const subToPhase0 = forkTransitionSubscribeCalls.find((topic) => topic.fork === ForkName.phase0);
     const subToAltair = forkTransitionSubscribeCalls.find((topic) => topic.fork === ForkName.altair);
@@ -153,11 +142,7 @@ describe("AttestationService", function () {
     if (!subToAltair) throw Error("Must subscribe to one subnet on altair");
 
     // Advance through the fork transition so it un-subscribes from all phase0 subs
-
-    while (chain.clock.currentSlot * SLOTS_PER_EPOCH < altairEpoch + EPOCHS_PER_RANDOM_SUBNET_SUBSCRIPTION) {
-      service.addBeaconCommitteeSubscriptions([subscription]);
-      sandbox.clock.tick(SLOTS_PER_EPOCH * SECONDS_PER_SLOT * 1000);
-    }
+    service.unsubscribeSubnetsFromPrevFork(ForkName.phase0);
 
     const forkTransitionUnSubscribeCalls = gossipStub.unsubscribeTopic.getCalls().map((call) => call.args[0]);
     const unsubbedPhase0Subnets = new Set<number>();
@@ -173,8 +158,8 @@ describe("AttestationService", function () {
 
   it.skip("handle committee subnet the same to random subnet", () => {
     randomUtil.withArgs(0, ATTESTATION_SUBNET_COUNT).returns(COMMITTEE_SUBNET_SUBSCRIPTION);
-    const aggregatorSubscription: phase0.BeaconCommitteeSubscription = {...subscription, isAggregator: true};
-    service.addBeaconCommitteeSubscriptions([aggregatorSubscription]);
+    const aggregatorSubscription: CommitteeSubscription = {...subscription, isAggregator: true};
+    service.addCommitteeSubscriptions([aggregatorSubscription]);
     expect(service.getActiveSubnets()).to.be.deep.equal([COMMITTEE_SUBNET_SUBSCRIPTION]);
     // committee subnet is same to random subnet
     expect(gossipStub.subscribeTopic.calledOnce).to.be.true;

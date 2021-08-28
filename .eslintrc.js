@@ -78,9 +78,10 @@ module.exports = {
       "error",
       {
         varsIgnorePattern: "^_",
+        argsIgnorePattern: "^_",
       },
     ],
-    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/ban-ts-comment": "error",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/semi": "error",
     "@typescript-eslint/type-annotation-spacing": "error",
@@ -90,6 +91,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-call": "error",
     "@typescript-eslint/no-unsafe-member-access": "error",
     "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -101,6 +103,7 @@ module.exports = {
     "func-call-spacing": "off",
     //if --fix is run it messes imports like /lib/presets/minimal & /lib/presets/mainnet
     "import/no-duplicates": "off",
+    "import/no-relative-packages": "error",
     "node/no-deprecated-api": "error",
     "new-parens": "error",
     "no-caller": "error",
@@ -115,6 +118,9 @@ module.exports = {
     "prefer-const": "error",
     quotes: ["error", "double"],
     semi: "off",
+    "no-restricted-imports": ["error", {patterns: ["../lib/*", "@chainsafe/*/lib/*"]}],
+    // Force to add names to all functions to ease CPU profiling
+    "func-names": ["error", "always"],
 
     // Prevents accidentally pushing a commit with .only in Mocha tests
     "no-only-tests/no-only-tests": "error",
@@ -125,6 +131,7 @@ module.exports = {
       rules: {
         "import/no-extraneous-dependencies": "off",
         "@typescript-eslint/no-explicit-any": "off",
+        "func-names": "off",
       },
     },
     {

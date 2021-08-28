@@ -1,21 +1,24 @@
-import {AbortController} from "abort-controller";
+import {AbortController} from "@chainsafe/abort-controller";
 
 import {ErrorAborted} from "@chainsafe/lodestar-utils";
 import {LevelDbController} from "@chainsafe/lodestar-db";
 import {BeaconNode, BeaconDb, createNodeJsLibp2p} from "@chainsafe/lodestar";
+// eslint-disable-next-line no-restricted-imports
+import {createDbMetrics} from "@chainsafe/lodestar/lib/metrics";
+import {createIBeaconConfig} from "@chainsafe/lodestar-config";
 
 import {IGlobalArgs} from "../../options";
 import {parseEnrArgs} from "../../options/enrOptions";
+import {initBLS, onGracefulShutdown, getCliLogger} from "../../util";
+import {FileENR, overwriteEnrWithCliArgs, readPeerId} from "../../config";
 import {initializeOptionsAndConfig, persistOptionsAndConfig} from "../init/handler";
 import {IBeaconArgs} from "./options";
 import {getBeaconPaths} from "./paths";
-import {initBLS, onGracefulShutdown, getCliLogger} from "../../util";
-import {readLodestarGitData} from "../../util/gitData";
-import {FileENR, overwriteEnrWithCliArgs, readPeerId} from "../../config";
 import {initBeaconState} from "./initBeaconState";
+import {getVersion, getVersionGitData} from "../../util/version";
 
 /**
- * Run a beacon node
+ * Runs a beacon node.
  */
 export async function beaconHandler(args: IBeaconArgs & IGlobalArgs): Promise<void> {
   await initBLS();
@@ -23,12 +26,13 @@ export async function beaconHandler(args: IBeaconArgs & IGlobalArgs): Promise<vo
   const {beaconNodeOptions, config} = await initializeOptionsAndConfig(args);
   await persistOptionsAndConfig(args, beaconNodeOptions, config);
 
-  const lodestarGitData = readLodestarGitData();
+  const version = getVersion();
+  const gitData = getVersionGitData();
   const beaconPaths = getBeaconPaths(args);
   // TODO: Rename db.name to db.path or db.location
   beaconNodeOptions.set({db: {name: beaconPaths.dbDir}});
   // Add metrics metadata to show versioning + network info in Prometheus + Grafana
-  beaconNodeOptions.set({metrics: {metadata: {...lodestarGitData, network: args.network}}});
+  beaconNodeOptions.set({metrics: {metadata: {...gitData, version, network: args.network}}});
 
   // ENR setup
   const peerId = await readPeerId(beaconPaths.peerIdFile);
@@ -40,17 +44,25 @@ export async function beaconHandler(args: IBeaconArgs & IGlobalArgs): Promise<vo
   const options = beaconNodeOptions.getWithDefaults();
 
   const abortController = new AbortController();
-  const logger = getCliLogger(args, beaconPaths);
+  const logger = getCliLogger(args, beaconPaths, config);
 
   onGracefulShutdown(async () => {
     abortController.abort();
   }, logger.info.bind(logger));
 
-  logger.info("Lodestar", {version: lodestarGitData.version, network: args.network});
+  logger.info("Lodestar", {version: version, network: args.network});
 
+  let dbMetrics: null | ReturnType<typeof createDbMetrics> = null;
+  // additional metrics registries
+  const metricsRegistries = [];
+  if (options.metrics.enabled) {
+    dbMetrics = createDbMetrics();
+    metricsRegistries.push(dbMetrics.registry);
+  }
   const db = new BeaconDb({
     config,
     controller: new LevelDbController(options.db, {logger: logger.child(options.logger.db)}),
+    metrics: dbMetrics?.metrics,
   });
 
   await db.start();
@@ -58,13 +70,15 @@ export async function beaconHandler(args: IBeaconArgs & IGlobalArgs): Promise<vo
   // BeaconNode setup
   try {
     const anchorState = await initBeaconState(options, args, config, db, logger, abortController.signal);
+    const beaconConfig = createIBeaconConfig(config, anchorState.genesisValidatorsRoot);
     const node = await BeaconNode.init({
       opts: options,
-      config,
+      config: beaconConfig,
       db,
       logger,
       libp2p: await createNodeJsLibp2p(peerId, options.network, {peerStoreDir: beaconPaths.peerStoreDir}),
       anchorState,
+      metricsRegistries,
     });
 
     abortController.signal.addEventListener("abort", () => node.close(), {once: true});

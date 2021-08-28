@@ -2,13 +2,11 @@
  * @module db/api/beacon
  */
 
-import {phase0} from "@chainsafe/lodestar-types";
+import {allForks} from "@chainsafe/lodestar-types";
+import {IDbMetrics} from "@chainsafe/lodestar-db";
 
 import {
-  AggregateAndProofRepository,
-  AttestationRepository,
   AttesterSlashingRepository,
-  BadBlockRepository,
   BlockArchiveRepository,
   BlockRepository,
   DepositEventRepository,
@@ -17,12 +15,18 @@ import {
   ProposerSlashingRepository,
   StateArchiveRepository,
   VoluntaryExitRepository,
+  BestUpdatePerCommitteePeriod,
+  LightclientFinalizedCheckpoint,
+  LightClientInitProofRepository,
+  LightClientSyncCommitteeProofRepository,
 } from "./repositories";
-import {PreGenesisState, PreGenesisStateLastProcessedBlock} from "./single";
-import {SeenAttestationCache} from "./seenAttestationCache";
+import {
+  PreGenesisState,
+  PreGenesisStateLastProcessedBlock,
+  LatestFinalizedUpdate,
+  LatestNonFinalizedUpdate,
+} from "./single";
 import {PendingBlockRepository} from "./repositories/pendingBlock";
-import {SyncCommitteeSignatureRepository} from "./repositories/syncCommitteeSignature";
-import {ContributionAndProofRepository} from "./repositories/contributionAndProof";
 
 /**
  * The DB service manages the data layer of the beacon chain
@@ -30,17 +34,13 @@ import {ContributionAndProofRepository} from "./repositories/contributionAndProo
  * but instead expose relevent beacon chain objects
  */
 export interface IBeaconDb {
-  // bad blocks
-  badBlock: BadBlockRepository;
+  metrics?: IDbMetrics;
 
   // unfinalized blocks
   block: BlockRepository;
 
   // pending block
   pendingBlock: PendingBlockRepository;
-
-  // cache for attestations that have already been seen via gossip or other sources
-  seenAttestationCache: SeenAttestationCache;
 
   // finalized blocks
   blockArchive: BlockArchiveRepository;
@@ -49,8 +49,6 @@ export interface IBeaconDb {
   stateArchive: StateArchiveRepository;
 
   // op pool
-  attestation: AttestationRepository;
-  aggregateAndProof: AggregateAndProofRepository;
   voluntaryExit: VoluntaryExitRepository;
   proposerSlashing: ProposerSlashingRepository;
   attesterSlashing: AttesterSlashingRepository;
@@ -65,10 +63,14 @@ export interface IBeaconDb {
   eth1Data: Eth1DataRepository;
 
   // altair
-  syncCommitteeSignature: SyncCommitteeSignatureRepository;
-  contributionAndProof: ContributionAndProofRepository;
+  bestUpdatePerCommitteePeriod: BestUpdatePerCommitteePeriod;
+  latestFinalizedUpdate: LatestFinalizedUpdate;
+  latestNonFinalizedUpdate: LatestNonFinalizedUpdate;
+  lightclientFinalizedCheckpoint: LightclientFinalizedCheckpoint;
+  lightClientInitProof: LightClientInitProofRepository;
+  lightClientSyncCommitteeProof: LightClientSyncCommitteeProofRepository;
 
-  processBlockOperations(signedBlock: phase0.SignedBeaconBlock): Promise<void>;
+  processBlockOperations(signedBlock: allForks.SignedBeaconBlock): Promise<void>;
 
   /**
    * Start the connection to the db instance and open the db store.

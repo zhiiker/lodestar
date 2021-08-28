@@ -2,8 +2,9 @@ import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
 import pipe from "it-pipe";
 import all from "it-all";
-import {params} from "@chainsafe/lodestar-params/minimal";
-import {ForkName, createIBeaconConfig} from "@chainsafe/lodestar-config";
+import {ForkName, SLOTS_PER_EPOCH} from "@chainsafe/lodestar-params";
+import {chainConfig} from "@chainsafe/lodestar-config/default";
+import {createIChainForkConfig} from "@chainsafe/lodestar-config";
 import {LodestarError} from "@chainsafe/lodestar-utils";
 import {Method, Version, Encoding, Protocol, ResponseBody} from "../../../../../src/network/reqresp/types";
 import {getResponseSzzTypeByMethod} from "../../../../../src/network/reqresp/types";
@@ -39,12 +40,12 @@ describe("network / reqresp / encoders / response - Success and error cases", ()
   // Set the altair fork to happen between the two precomputed SSZ snappy blocks
   const slotBlockPhase0 = sszSnappySignedBeaconBlockPhase0.body.message.slot;
   const slotBlockAltair = sszSnappySignedBeaconBlockAltair.body.message.slot;
-  if (slotBlockAltair - slotBlockPhase0 < params.SLOTS_PER_EPOCH) {
+  if (slotBlockAltair - slotBlockPhase0 < SLOTS_PER_EPOCH) {
     throw Error("phase0 block slot must be an epoch apart from altair block slot");
   }
-  const ALTAIR_FORK_EPOCH = Math.floor(slotBlockAltair / params.SLOTS_PER_EPOCH);
+  const ALTAIR_FORK_EPOCH = Math.floor(slotBlockAltair / SLOTS_PER_EPOCH);
   // eslint-disable-next-line @typescript-eslint/naming-convention
-  const config = createIBeaconConfig({...params, ALTAIR_FORK_EPOCH});
+  const config = createIChainForkConfig({...chainConfig, ALTAIR_FORK_EPOCH});
 
   const forkDigestContext = new ForkDigestContext(config, Buffer.alloc(32, 0));
 
@@ -269,11 +270,7 @@ describe("network / reqresp / encoders / response - Success and error cases", ()
 
     if (chunks) {
       it(`${id} - responseDecode`, async () => {
-        const responseDecodePromise = pipe(
-          arrToSource(chunks),
-          responseDecode(config, forkDigestContext, protocol),
-          all
-        );
+        const responseDecodePromise = pipe(arrToSource(chunks), responseDecode(forkDigestContext, protocol), all);
 
         if (decodeError) {
           await expectRejectedWithLodestarError(responseDecodePromise, decodeError);
@@ -281,7 +278,7 @@ describe("network / reqresp / encoders / response - Success and error cases", ()
           const responses = await responseDecodePromise;
           const typeArr = responses.map((body) => {
             const forkName = getForkNameFromResponseBody(config, protocol, body);
-            return getResponseSzzTypeByMethod(config, method, forkName);
+            return getResponseSzzTypeByMethod(protocol, forkName);
           });
           expectIsEqualSszTypeArr(typeArr, responses, onlySuccessChunks(responseChunks), "Response chunks");
         } else {

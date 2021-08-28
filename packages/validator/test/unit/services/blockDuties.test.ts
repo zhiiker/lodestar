@@ -1,23 +1,22 @@
-import {AbortController} from "abort-controller";
+import {AbortController} from "@chainsafe/abort-controller";
 import {expect} from "chai";
 import sinon from "sinon";
 import bls from "@chainsafe/bls";
-import {config} from "@chainsafe/lodestar-config/mainnet";
-import {phase0, Root} from "@chainsafe/lodestar-types";
+import {Root} from "@chainsafe/lodestar-types";
+import {routes} from "@chainsafe/lodestar-api";
 import {BlockDutiesService} from "../../../src/services/blockDuties";
 import {ValidatorStore} from "../../../src/services/validatorStore";
-import {ApiClientStub} from "../../utils/apiStub";
-import {testLogger} from "../../utils/logger";
+import {getApiClientStub} from "../../utils/apiStub";
+import {loggerVc} from "../../utils/logger";
 import {ClockMock} from "../../utils/clock";
 
-type ProposerDutiesRes = {dependentRoot: Root; data: phase0.ProposerDuty[]};
+type ProposerDutiesRes = {dependentRoot: Root; data: routes.validator.ProposerDuty[]};
 
 describe("BlockDutiesService", function () {
   const sandbox = sinon.createSandbox();
-  const logger = testLogger();
   const ZERO_HASH = Buffer.alloc(32, 0);
 
-  const apiClient = ApiClientStub(sandbox);
+  const api = getApiClientStub(sandbox);
   const validatorStore = sinon.createStubInstance(ValidatorStore) as ValidatorStore &
     sinon.SinonStubbedInstance<ValidatorStore>;
   let pubkeys: Uint8Array[]; // Initialize pubkeys in before() so bls is already initialized
@@ -26,6 +25,8 @@ describe("BlockDutiesService", function () {
     const secretKeys = Array.from({length: 2}, (_, i) => bls.SecretKey.fromBytes(Buffer.alloc(32, i + 1)));
     pubkeys = secretKeys.map((sk) => sk.toPublicKey().toBytes());
     validatorStore.votingPubkeys.returns(pubkeys);
+    validatorStore.hasVotingPubkey.returns(true);
+    validatorStore.hasSomeValidators.returns(true);
   });
 
   let controller: AbortController; // To stop clock
@@ -39,19 +40,12 @@ describe("BlockDutiesService", function () {
       dependentRoot: ZERO_HASH,
       data: [{slot: slot, validatorIndex: 0, pubkey: pubkeys[0]}],
     };
-    apiClient.validator.getProposerDuties.resolves(duties);
+    api.validator.getProposerDuties.resolves(duties);
 
     const notifyBlockProductionFn = sinon.stub(); // Returns void
 
     const clock = new ClockMock();
-    const dutiesService = new BlockDutiesService(
-      config,
-      logger,
-      apiClient,
-      clock,
-      validatorStore,
-      notifyBlockProductionFn
-    );
+    const dutiesService = new BlockDutiesService(loggerVc, api, clock, validatorStore, notifyBlockProductionFn);
 
     // Trigger clock onSlot for slot 0
     await clock.tickSlotFns(0, controller.signal);
@@ -86,21 +80,14 @@ describe("BlockDutiesService", function () {
 
     // Clock will call runAttesterDutiesTasks() immediatelly
     const clock = new ClockMock();
-    const dutiesService = new BlockDutiesService(
-      config,
-      logger,
-      apiClient,
-      clock,
-      validatorStore,
-      notifyBlockProductionFn
-    );
+    const dutiesService = new BlockDutiesService(loggerVc, api, clock, validatorStore, notifyBlockProductionFn);
 
     // Trigger clock onSlot for slot 0
-    apiClient.validator.getProposerDuties.resolves(dutiesBeforeReorg);
+    api.validator.getProposerDuties.resolves(dutiesBeforeReorg);
     await clock.tickSlotFns(0, controller.signal);
 
     // Trigger clock onSlot for slot 1 - Return different duties for slot 1
-    apiClient.validator.getProposerDuties.resolves(dutiesAfterReorg);
+    api.validator.getProposerDuties.resolves(dutiesAfterReorg);
     await clock.tickSlotFns(1, controller.signal);
 
     // Should persist the dutiesAfterReorg

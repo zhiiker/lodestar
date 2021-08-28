@@ -1,4 +1,4 @@
-import {AbortController} from "abort-controller";
+import {AbortController} from "@chainsafe/abort-controller";
 import pipe from "it-pipe";
 import {timeoutOptions} from "../../../constants";
 import {abortableSource} from "../../../util/abortableSource";
@@ -20,7 +20,7 @@ export function responseTimeoutsHandler<T>(
   responseDecoder: (source: AsyncIterable<Buffer>) => AsyncGenerator<T>,
   options?: Partial<typeof timeoutOptions>
 ): (source: AsyncIterable<Buffer>) => AsyncGenerator<T> {
-  return async function* (source) {
+  return async function* responseTimeoutsHandlerTransform(source) {
     const {TTFB_TIMEOUT, RESP_TIMEOUT} = {...timeoutOptions, ...options};
 
     const ttfbTimeoutController = new AbortController();

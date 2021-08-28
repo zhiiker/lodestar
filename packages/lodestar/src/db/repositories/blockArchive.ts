@@ -1,11 +1,11 @@
 import all from "it-all";
 import {ArrayLike} from "@chainsafe/ssz";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {IDatabaseController, Repository, IKeyValue, IFilterOptions, Bucket} from "@chainsafe/lodestar-db";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
+import {IDatabaseController, Repository, IKeyValue, IFilterOptions, Bucket, IDbMetrics} from "@chainsafe/lodestar-db";
 import {IBlockSummary} from "@chainsafe/lodestar-fork-choice";
-import {Slot, Root, allForks} from "@chainsafe/lodestar-types";
+import {Slot, Root, allForks, ssz} from "@chainsafe/lodestar-types";
 import {bytesToInt} from "@chainsafe/lodestar-utils";
-import {getBlockTypeFromBlock, getBlockTypeFromBytes} from "./utils/multifork";
+import {getSignedBlockTypeFromBytes} from "../../util/multifork";
 import {getRootIndexKey, getParentRootIndexKey} from "./blockArchiveIndex";
 import {deleteParentRootIndex, deleteRootIndex, storeParentRootIndex, storeRootIndex} from "./blockArchiveIndex";
 
@@ -21,19 +21,19 @@ export interface IKeyValueSummary<K, V, S> extends IKeyValue<K, V> {
  * Stores finalized blocks. Block slot is identifier.
  */
 export class BlockArchiveRepository extends Repository<Slot, allForks.SignedBeaconBlock> {
-  constructor(config: IBeaconConfig, db: IDatabaseController<Buffer, Buffer>) {
-    const type = config.types.phase0.SignedBeaconBlock; // Pick some type but won't be used
-    super(config, db, Bucket.allForks_blockArchive, type);
+  constructor(config: IChainForkConfig, db: IDatabaseController<Buffer, Buffer>, metrics?: IDbMetrics) {
+    const type = ssz.phase0.SignedBeaconBlock; // Pick some type but won't be used
+    super(config, db, Bucket.allForks_blockArchive, type, metrics);
   }
 
   // Overrides for multi-fork
 
   encodeValue(value: allForks.SignedBeaconBlock): Buffer {
-    return getBlockTypeFromBlock(this.config, value).serialize(value) as Buffer;
+    return this.config.getForkTypes(value.message.slot).SignedBeaconBlock.serialize(value) as Buffer;
   }
 
   decodeValue(data: Buffer): allForks.SignedBeaconBlock {
-    return getBlockTypeFromBytes(this.config, data).deserialize(data);
+    return getSignedBlockTypeFromBytes(this.config, data).deserialize(data);
   }
 
   // Handle key as slot
@@ -49,7 +49,7 @@ export class BlockArchiveRepository extends Repository<Slot, allForks.SignedBeac
   // Overrides to index
 
   async put(key: Slot, value: allForks.SignedBeaconBlock): Promise<void> {
-    const blockRoot = getBlockTypeFromBlock(this.config, value).fields["message"].hashTreeRoot(value.message);
+    const blockRoot = this.config.getForkTypes(value.message.slot).BeaconBlock.hashTreeRoot(value.message);
     const slot = value.message.slot;
     await Promise.all([
       super.put(key, value),
@@ -63,9 +63,7 @@ export class BlockArchiveRepository extends Repository<Slot, allForks.SignedBeac
       super.batchPut(items),
       Array.from(items).map((item) => {
         const slot = item.value.message.slot;
-        const blockRoot = getBlockTypeFromBlock(this.config, item.value).fields["message"].hashTreeRoot(
-          item.value.message
-        );
+        const blockRoot = this.config.getForkTypes(slot).BeaconBlock.hashTreeRoot(item.value.message);
         return storeRootIndex(this.db, slot, blockRoot);
       }),
       Array.from(items).map((item) => {
@@ -87,7 +85,7 @@ export class BlockArchiveRepository extends Repository<Slot, allForks.SignedBeac
   async remove(value: allForks.SignedBeaconBlock): Promise<void> {
     await Promise.all([
       super.remove(value),
-      deleteRootIndex(this.db, getBlockTypeFromBlock(this.config, value), value),
+      deleteRootIndex(this.db, this.config.getForkTypes(value.message.slot).SignedBeaconBlock, value),
       deleteParentRootIndex(this.db, value),
     ]);
   }
@@ -95,7 +93,9 @@ export class BlockArchiveRepository extends Repository<Slot, allForks.SignedBeac
   async batchRemove(values: ArrayLike<allForks.SignedBeaconBlock>): Promise<void> {
     await Promise.all([
       super.batchRemove(values),
-      Array.from(values).map((value) => deleteRootIndex(this.db, getBlockTypeFromBlock(this.config, value), value)),
+      Array.from(values).map((value) =>
+        deleteRootIndex(this.db, this.config.getForkTypes(value.message.slot).SignedBeaconBlock, value)
+      ),
       Array.from(values).map((value) => deleteParentRootIndex(this.db, value)),
     ]);
   }

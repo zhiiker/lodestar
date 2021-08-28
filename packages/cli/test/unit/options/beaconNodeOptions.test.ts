@@ -7,14 +7,19 @@ describe("options / beaconNodeOptions", () => {
   it("Should parse BeaconNodeArgs", () => {
     // Cast to match the expected fully defined type
     const beaconNodeArgsPartial = {
+      "api.maxGindicesInProof": 1000,
       "api.rest.api": [],
       "api.rest.cors": "*",
       "api.rest.enabled": true,
       "api.rest.host": "127.0.0.1",
       "api.rest.port": 7654,
 
+      "chain.useSingleThreadVerifier": true,
+      "chain.disableBlsBatchVerify": true,
+
       "eth1.enabled": true,
       "eth1.providerUrl": "http://my.node:8545",
+      "eth1.providerUrls": ["http://my.node:8545"],
       "eth1.depositContractDeployBlock": 1625314,
 
       "logger.eth1.level": "debug",
@@ -33,12 +38,15 @@ describe("options / beaconNodeOptions", () => {
       "network.targetPeers": 25,
       "network.bootMultiaddrs": [],
       "network.localMultiaddrs": [],
+      "network.subscribeAllSubnets": true,
 
       "sync.isSingleNode": true,
+      "sync.disableProcessAsChainSegment": true,
     } as IBeaconNodeArgs;
 
     const expectedOptions: RecursivePartial<IBeaconNodeOptions> = {
       api: {
+        maxGindicesInProof: 1000,
         rest: {
           api: [],
           cors: "*",
@@ -47,9 +55,13 @@ describe("options / beaconNodeOptions", () => {
           port: 7654,
         },
       },
+      chain: {
+        useSingleThreadVerifier: true,
+        disableBlsBatchVerify: true,
+      },
       eth1: {
         enabled: true,
-        providerUrl: "http://my.node:8545",
+        providerUrls: ["http://my.node:8545"],
         depositContractDeployBlock: 1625314,
       },
       logger: {
@@ -74,9 +86,11 @@ describe("options / beaconNodeOptions", () => {
         targetPeers: 25,
         bootMultiaddrs: [],
         localMultiaddrs: [],
+        subscribeAllSubnets: true,
       },
       sync: {
         isSingleNode: true,
+        disableProcessAsChainSegment: true,
       },
     };
 

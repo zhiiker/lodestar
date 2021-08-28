@@ -17,7 +17,7 @@ export enum Bucket {
   index_blockArchiveParentRootIndex = 3, // parent Root -> Slot
   index_blockArchiveRootIndex = 4, // Root -> Slot
   // known bad block
-  index_invalidBlock = 5, // Root -> boolean
+  // index_invalidBlock = 5, // DEPRECATED on v0.25.0
   // finalized chain
   index_mainChain = 6, // Slot -> Root<BeaconBlock>
   // justified, finalized state and block hashes
@@ -29,8 +29,8 @@ export enum Bucket {
   phase0_preGenesisState = 30, // Single = phase0.BeaconState
   phase0_preGenesisStateLastProcessedBlock = 31, // Single = Uint8
   // op pool
-  phase0_attestation = 10, // Root -> Attestation
-  phase0_aggregateAndProof = 11, // Root -> AggregateAndProof
+  // phase0_attestation = 10, // DEPRECATED on v0.25.0
+  // phase0_aggregateAndProof = 11, // Root -> AggregateAndProof, DEPRECATED on v.27.0
   phase0_depositData = 12, // [DEPRECATED] index -> DepositData
   phase0_exit = 13, // ValidatorIndex -> VoluntaryExit
   phase0_proposerSlashing = 14, // ValidatorIndex -> ProposerSlashing
@@ -49,8 +49,16 @@ export enum Bucket {
 
   index_stateArchiveRootIndex = 26, // State Root -> slot
 
-  altair_syncCommitteeSignature = 31, // Root => SyncCommitteeSignature
-  altair_contributionAndProof = 32, // Root => ContributionAndProof
+  // Lightclient server
+  altair_bestUpdatePerCommitteePeriod = 30, // SyncPeriod -> LightClientUpdate
+  // TODO: Review if it's really necessary to persist these two
+  altair_latestFinalizedUpdate = 31, // Single: LightClientUpdate
+  altair_latestNonFinalizedUpdate = 32, // Single: LightClientUpdate
+  // TODO: Review if it's really necessary
+  altair_lightclientFinalizedCheckpoint = 33, // Epoch -> FinalizedCheckpointData
+  // Note: this is the state root for the checkpoint block, NOT necessarily the state root at the epoch boundary
+  altair_lightClientInitProof = 34, // Epoch -> Proof
+  altair_lightClientSyncCommitteeProof = 35, // SyncPeriod -> Proof
 }
 
 export enum Key {

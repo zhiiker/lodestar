@@ -3,7 +3,7 @@
  */
 
 import {phase0} from "@chainsafe/lodestar-types";
-import {AbortSignal} from "abort-controller";
+import {AbortSignal} from "@chainsafe/abort-controller";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {ILogger} from "@chainsafe/lodestar-utils";
 
@@ -13,7 +13,7 @@ import {ArchiveBlocksTask} from "./tasks/archiveBlocks";
 import {StatesArchiver} from "./tasks/archiveStates";
 import {IBeaconSync} from "../sync";
 import {INetwork} from "../network";
-import {JobQueue} from "../util/queue";
+import {JobItemQueue} from "../util/queue";
 
 export interface ITasksModules {
   db: IBeaconDb;
@@ -33,7 +33,7 @@ export class TasksService {
   private readonly chain: IBeaconChain;
   private readonly network: INetwork;
   private readonly logger: ILogger;
-  private jobQueue: JobQueue;
+  private jobQueue: JobItemQueue<[phase0.Checkpoint], void>;
 
   private readonly statesArchiver: StatesArchiver;
 
@@ -53,7 +53,7 @@ export class TasksService {
     this.logger = modules.logger;
     this.network = modules.network;
     this.statesArchiver = new StatesArchiver(this.config, modules);
-    this.jobQueue = new JobQueue({maxLength, signal});
+    this.jobQueue = new JobItemQueue<[phase0.Checkpoint], void>(this.processFinalizedCheckpoint, {maxLength, signal});
   }
 
   start(): void {
@@ -69,13 +69,14 @@ export class TasksService {
   }
 
   private onFinalizedCheckpoint = async (finalized: phase0.Checkpoint): Promise<void> => {
-    return this.jobQueue.push(async () => await this.processFinalizedCheckpoint(finalized));
+    return this.jobQueue.push(finalized);
   };
 
   private processFinalizedCheckpoint = async (finalized: phase0.Checkpoint): Promise<void> => {
     try {
+      const finalizedEpoch = finalized.epoch;
+      this.logger.verbose("Start processing finalized checkpoint", {epoch: finalizedEpoch});
       await new ArchiveBlocksTask(
-        this.config,
         {db: this.db, forkChoice: this.chain.forkChoice, logger: this.logger},
         finalized
       ).run();
@@ -83,14 +84,9 @@ export class TasksService {
       // should be after ArchiveBlocksTask to handle restart cleanly
       await this.statesArchiver.maybeArchiveState(finalized);
 
-      const finalizedEpoch = finalized.epoch;
       await Promise.all([
         this.chain.checkpointStateCache.pruneFinalized(finalizedEpoch),
         this.chain.stateCache.deleteAllBeforeEpoch(finalizedEpoch),
-        this.db.attestation.pruneFinalized(finalizedEpoch),
-        this.db.aggregateAndProof.pruneFinalized(finalizedEpoch),
-        this.db.syncCommitteeSignature.pruneFinalized(finalizedEpoch),
-        this.db.contributionAndProof.pruneFinalized(finalizedEpoch),
       ]);
 
       // tasks rely on extended fork choice

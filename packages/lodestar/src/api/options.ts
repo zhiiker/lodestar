@@ -1,9 +1,11 @@
-import {defaultApiRestOptions, IRestApiOptions} from "./rest/options";
+import {restApiOptionsDefault, RestApiOptions} from "./rest";
 
 export interface IApiOptions {
-  rest: IRestApiOptions;
+  maxGindicesInProof?: number;
+  rest: RestApiOptions;
 }
 
 export const defaultApiOptions: IApiOptions = {
-  rest: defaultApiRestOptions,
+  maxGindicesInProof: 512,
+  rest: restApiOptionsDefault,
 };

@@ -1,14 +1,14 @@
-import {AbortSignal} from "abort-controller";
+import {AbortSignal} from "@chainsafe/abort-controller";
 import {Slot} from "@chainsafe/lodestar-types";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 import {getCurrentSlot} from "@chainsafe/lodestar-beacon-state-transition";
-import {sleep} from "@chainsafe/lodestar-utils/lib/sleep";
-import {ErrorAborted} from "@chainsafe/lodestar-utils/lib/errors";
+import {ErrorAborted, sleep} from "@chainsafe/lodestar-utils";
 
 type OnSlotFn = (slot: Slot, signal: AbortSignal) => Promise<void>;
 
 export interface IClock {
   readonly currentSlot: Slot;
+  readonly genesisTime: number;
   start(signal: AbortSignal): void;
   runEverySlot(fn: OnSlotFn): void;
 }
@@ -17,8 +17,8 @@ export class Clock implements IClock {
   private readonly fns: OnSlotFn[] = [];
 
   constructor(
-    private readonly config: IBeaconConfig,
-    private readonly genesisTime: number,
+    private readonly config: IChainForkConfig,
+    readonly genesisTime: number,
     private readonly onError?: (e: Error) => void
   ) {}
 
@@ -61,7 +61,7 @@ export class Clock implements IClock {
   }
 
   private timeUntilNextSlot(): number {
-    const miliSecondsPerSlot = this.config.params.SECONDS_PER_SLOT * 1000;
+    const miliSecondsPerSlot = this.config.SECONDS_PER_SLOT * 1000;
     const msFromGenesis = Date.now() - this.genesisTime * 1000;
     return miliSecondsPerSlot - Math.abs(msFromGenesis % miliSecondsPerSlot);
   }

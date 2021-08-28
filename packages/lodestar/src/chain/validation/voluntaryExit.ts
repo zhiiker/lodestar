@@ -1,38 +1,43 @@
-import {isValidVoluntaryExit, fast} from "@chainsafe/lodestar-beacon-state-transition";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {phase0} from "@chainsafe/lodestar-types";
+import {phase0, allForks} from "@chainsafe/lodestar-beacon-state-transition";
 import {IBeaconChain} from "..";
-import {VoluntaryExitError, VoluntaryExitErrorCode} from "../errors/voluntaryExitError";
+import {VoluntaryExitError, VoluntaryExitErrorCode, GossipAction} from "../errors";
 import {IBeaconDb} from "../../db";
+import {RegenCaller} from "../regen";
 
 export async function validateGossipVoluntaryExit(
-  config: IBeaconConfig,
   chain: IBeaconChain,
   db: IBeaconDb,
   voluntaryExit: phase0.SignedVoluntaryExit
 ): Promise<void> {
   if (await db.voluntaryExit.has(voluntaryExit.message.validatorIndex)) {
-    throw new VoluntaryExitError({
-      code: VoluntaryExitErrorCode.EXIT_ALREADY_EXISTS,
+    throw new VoluntaryExitError(GossipAction.IGNORE, {
+      code: VoluntaryExitErrorCode.ALREADY_EXISTS,
     });
   }
 
-  const state = await chain.regen.getCheckpointState({
-    root: chain.forkChoice.getHeadRoot(),
-    epoch: voluntaryExit.message.epoch,
-  });
+  const state = await chain.regen.getCheckpointState(
+    {
+      root: chain.forkChoice.getHeadRoot(),
+      epoch: voluntaryExit.message.epoch,
+    },
+    RegenCaller.validateGossipVoluntaryExit
+  );
 
-  // verifySignature = false, verified in batch below
-  if (!isValidVoluntaryExit(config, state, voluntaryExit, false)) {
-    throw new VoluntaryExitError({
-      code: VoluntaryExitErrorCode.INVALID_EXIT,
+  try {
+    // verifySignature = false, verified in batch below
+    allForks.assertValidVoluntaryExit(state, voluntaryExit, false);
+  } catch (e) {
+    throw new VoluntaryExitError(GossipAction.REJECT, {
+      code: VoluntaryExitErrorCode.INVALID,
+      error: e as Error,
     });
   }
 
-  const signatureSet = fast.getVoluntaryExitSignatureSet(state, voluntaryExit);
-  if (!(await chain.bls.verifySignatureSets([signatureSet]))) {
-    throw new VoluntaryExitError({
-      code: VoluntaryExitErrorCode.INVALID_EXIT,
+  const signatureSet = allForks.getVoluntaryExitSignatureSet(state, voluntaryExit);
+  if (!(await chain.bls.verifySignatureSets([signatureSet], {batchable: true}))) {
+    throw new VoluntaryExitError(GossipAction.REJECT, {
+      code: VoluntaryExitErrorCode.INVALID,
+      error: Error("Invalid signature"),
     });
   }
 }

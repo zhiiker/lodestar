@@ -1,45 +1,25 @@
 import {BLSPubkey, Slot} from "@chainsafe/lodestar-types";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {ILogger, prettyBytes} from "@chainsafe/lodestar-utils";
+import {prettyBytes} from "@chainsafe/lodestar-utils";
 import {toHexString} from "@chainsafe/ssz";
-import {IApiClient} from "../api";
-import {extendError, notAborted} from "../util";
+import {Api} from "@chainsafe/lodestar-api";
+import {IClock, extendError, ILoggerVc} from "../util";
 import {ValidatorStore} from "./validatorStore";
 import {BlockDutiesService, GENESIS_SLOT} from "./blockDuties";
-import {IClock} from "../util/clock";
 
 /**
  * Service that sets up and handles validator block proposal duties.
  */
 export class BlockProposingService {
-  private readonly config: IBeaconConfig;
-  private readonly logger: ILogger;
-  private readonly apiClient: IApiClient;
-  private readonly validatorStore: ValidatorStore;
   private readonly dutiesService: BlockDutiesService;
-  private readonly graffiti?: string;
 
   constructor(
-    config: IBeaconConfig,
-    logger: ILogger,
-    apiClient: IApiClient,
+    private readonly logger: ILoggerVc,
+    private readonly api: Api,
     clock: IClock,
-    validatorStore: ValidatorStore,
-    graffiti?: string
+    private readonly validatorStore: ValidatorStore,
+    private readonly graffiti?: string
   ) {
-    this.config = config;
-    this.logger = logger;
-    this.apiClient = apiClient;
-    this.validatorStore = validatorStore;
-    this.graffiti = graffiti;
-    this.dutiesService = new BlockDutiesService(
-      config,
-      logger,
-      apiClient,
-      clock,
-      validatorStore,
-      this.notifyBlockProductionFn
-    );
+    this.dutiesService = new BlockDutiesService(logger, api, clock, validatorStore, this.notifyBlockProductionFn);
   }
 
   /**
@@ -57,7 +37,7 @@ export class BlockProposingService {
     }
 
     Promise.all(proposers.map((pubkey) => this.createAndPublishBlock(pubkey, slot))).catch((e) => {
-      if (notAborted(e)) this.logger.error("Error on block duties", {slot}, e);
+      this.logger.error("Error on block duties", {slot}, e);
     });
   };
 
@@ -72,18 +52,18 @@ export class BlockProposingService {
       const graffiti = this.graffiti || "";
 
       this.logger.debug("Producing block", logCtx);
-      const block = await this.apiClient.validator.produceBlock(slot, randaoReveal, graffiti).catch((e) => {
+      const block = await this.api.validator.produceBlock(slot, randaoReveal, graffiti).catch((e) => {
         throw extendError(e, "Failed to produce block");
       });
       this.logger.debug("Produced block", logCtx);
 
-      const signedBlock = await this.validatorStore.signBlock(pubkey, block, slot);
-      await this.apiClient.beacon.blocks.publishBlock(signedBlock).catch((e) => {
+      const signedBlock = await this.validatorStore.signBlock(pubkey, block.data, slot);
+      await this.api.beacon.publishBlock(signedBlock).catch((e) => {
         throw extendError(e, "Failed to publish block");
       });
       this.logger.info("Published block", {...logCtx, graffiti});
     } catch (e) {
-      if (notAborted(e)) this.logger.error("Error proposing block", logCtx, e);
+      this.logger.error("Error proposing block", logCtx, e);
     }
   }
 }

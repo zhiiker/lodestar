@@ -1,4 +1,4 @@
-import {ForkName, IBeaconConfig} from "@chainsafe/lodestar-config";
+import {ForkName} from "@chainsafe/lodestar-params";
 import {RespStatus, RpcResponseStatusError} from "../../../constants";
 import {IForkDigestContext} from "../../../util/forkDigestContext";
 import {writeEncodedPayload} from "../encodingStrategies";
@@ -13,6 +13,7 @@ import {
   contextBytesTypeByProtocol,
   getResponseSzzTypeByMethod,
 } from "../types";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 
 /**
  * Yields byte chunks for a `<response>` with a zero response code `<result>`
@@ -24,13 +25,13 @@ import {
  * Note: `response` has zero or more chunks (denoted by `<>*`)
  */
 export function responseEncodeSuccess(
-  config: IBeaconConfig,
+  config: IChainForkConfig,
   forkDigestContext: IForkDigestContext,
   protocol: Protocol
 ): (source: AsyncIterable<ResponseBody>) => AsyncIterable<Buffer> {
   const contextBytesType = contextBytesTypeByProtocol(protocol);
 
-  return async function* (source) {
+  return async function* responseEncodeSuccessTransform(source) {
     for await (const chunk of source) {
       // <result>
       yield Buffer.from([RespStatus.SUCCESS]);
@@ -40,7 +41,7 @@ export function responseEncodeSuccess(
       yield* writeContextBytes(forkDigestContext, contextBytesType, forkName);
 
       // <encoding-dependent-header> | <encoded-payload>
-      const type = getResponseSzzTypeByMethod(config, protocol.method, forkName);
+      const type = getResponseSzzTypeByMethod(protocol, forkName);
       yield* writeEncodedPayload(chunk, protocol.encoding, type);
     }
   };
@@ -90,7 +91,7 @@ export async function* writeContextBytes(
 }
 
 export function getForkNameFromResponseBody<K extends Method>(
-  config: IBeaconConfig,
+  config: IChainForkConfig,
   protocol: Protocol,
   body: ResponseBodyByMethod[K]
 ): ForkName {

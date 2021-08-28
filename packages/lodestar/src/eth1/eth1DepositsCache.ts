@@ -1,16 +1,17 @@
-import {phase0} from "@chainsafe/lodestar-types";
+import {phase0, ssz} from "@chainsafe/lodestar-types";
 import {IFilterOptions} from "@chainsafe/lodestar-db";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 import {IBeaconDb} from "../db";
 import {getEth1DataForBlocks} from "./utils/eth1Data";
 import {assertConsecutiveDeposits} from "./utils/eth1DepositEvent";
 import {getDepositsWithProofs} from "./utils/deposits";
+import {Eth1Error, Eth1ErrorCode} from "./errors";
 
 export class Eth1DepositsCache {
   db: IBeaconDb;
-  config: IBeaconConfig;
+  config: IChainForkConfig;
 
-  constructor(config: IBeaconConfig, db: IBeaconDb) {
+  constructor(config: IChainForkConfig, db: IBeaconDb) {
     this.config = config;
     this.db = db;
   }
@@ -25,7 +26,7 @@ export class Eth1DepositsCache {
   async get(indexRange: IFilterOptions<number>, eth1Data: phase0.Eth1Data): Promise<phase0.Deposit[]> {
     const depositEvents = await this.db.depositEvent.values(indexRange);
     const depositRootTree = await this.db.depositDataRoot.getDepositRootTree();
-    return getDepositsWithProofs(this.config, depositEvents, depositRootTree, eth1Data);
+    return getDepositsWithProofs(depositEvents, depositRootTree, eth1Data);
   }
 
   /**
@@ -38,17 +39,19 @@ export class Eth1DepositsCache {
     const lastLog = await this.db.depositEvent.lastValue();
     const firstEvent = depositEvents[0];
     if (lastLog && firstEvent) {
-      if (firstEvent.index <= lastLog.index) {
-        throw Error("DuplicateDistinctLog");
+      const newIndex = firstEvent.index;
+      const prevIndex = lastLog.index;
+      if (newIndex <= prevIndex) {
+        throw new Eth1Error({code: Eth1ErrorCode.DUPLICATE_DISTINCT_LOG, newIndex, prevIndex});
       }
-      if (firstEvent.index > lastLog.index + 1) {
-        throw Error("Non consecutive logs");
+      if (newIndex > prevIndex + 1) {
+        throw new Eth1Error({code: Eth1ErrorCode.NON_CONSECUTIVE_LOGS, newIndex, prevIndex});
       }
     }
 
     const depositRoots = depositEvents.map((depositEvent) => ({
       index: depositEvent.index,
-      root: this.config.types.phase0.DepositData.hashTreeRoot(depositEvent.depositData),
+      root: ssz.phase0.DepositData.hashTreeRoot(depositEvent.depositData),
     }));
 
     // Store events after verifying that data is consecutive

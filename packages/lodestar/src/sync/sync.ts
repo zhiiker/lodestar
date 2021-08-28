@@ -1,15 +1,15 @@
 import PeerId from "peer-id";
-import {IBeaconSync, ISyncModules} from "./interface";
+import {IBeaconSync, ISyncModules, SyncingStatus} from "./interface";
 import {INetwork, NetworkEvent} from "../network";
 import {ILogger} from "@chainsafe/lodestar-utils";
+import {SLOTS_PER_EPOCH} from "@chainsafe/lodestar-params";
 import {IBeaconConfig} from "@chainsafe/lodestar-config";
 import {Slot, phase0} from "@chainsafe/lodestar-types";
 import {toHexString} from "@chainsafe/ssz";
 import {ChainEvent, IBeaconChain} from "../chain";
 import {BlockError, BlockErrorCode} from "../chain/errors";
-import {BeaconGossipHandler} from "./gossip";
 import {RangeSync, RangeSyncStatus, RangeSyncEvent} from "./range/range";
-import {AttestationCollector, fetchUnknownBlockRoot, getPeerSyncType, PeerSyncType} from "./utils";
+import {fetchUnknownBlockRoot, getPeerSyncType, PeerSyncType} from "./utils";
 import {MIN_EPOCH_TO_START_GOSSIP} from "./constants";
 import {SyncState, SyncChainDebugState, syncStateMetric} from "./interface";
 import {ISyncOptions} from "./options";
@@ -22,8 +22,6 @@ export class BeaconSync implements IBeaconSync {
   private readonly opts: ISyncOptions;
 
   private readonly rangeSync: RangeSync;
-  private readonly gossip: BeaconGossipHandler;
-  private readonly attestationCollector: AttestationCollector;
 
   // avoid finding same root at the same time
   private readonly processingRoots = new Set<string>();
@@ -45,11 +43,8 @@ export class BeaconSync implements IBeaconSync {
     this.network = network;
     this.chain = chain;
     this.logger = logger;
-    this.rangeSync = new RangeSync(modules);
-    this.gossip =
-      modules.gossipHandler || new BeaconGossipHandler(modules.config, modules.chain, modules.network, modules.db);
-    this.attestationCollector = modules.attestationCollector || new AttestationCollector(modules.config, modules);
-    this.slotImportTolerance = modules.config.params.SLOTS_PER_EPOCH;
+    this.rangeSync = new RangeSync(modules, this.opts);
+    this.slotImportTolerance = SLOTS_PER_EPOCH;
 
     // Subscribe to RangeSync completing a SyncChain and recompute sync state
     this.rangeSync.on(RangeSyncEvent.completedChain, this.updateSyncState);
@@ -58,7 +53,6 @@ export class BeaconSync implements IBeaconSync {
     // TODO: It's okay to start this on initial sync?
     this.chain.emitter.on(ChainEvent.errorBlock, this.onUnknownBlockRoot);
     this.chain.emitter.on(ChainEvent.clockEpoch, this.onClockEpoch);
-    this.attestationCollector.start();
 
     if (metrics) {
       metrics.syncStatus.addCollect(() => metrics.syncStatus.set(syncStateMetric[this.state]));
@@ -71,12 +65,9 @@ export class BeaconSync implements IBeaconSync {
     this.chain.emitter.off(ChainEvent.errorBlock, this.onUnknownBlockRoot);
     this.chain.emitter.off(ChainEvent.clockEpoch, this.onClockEpoch);
     this.rangeSync.close();
-    this.attestationCollector.stop();
-    this.gossip.stop();
-    this.gossip.close();
   }
 
-  getSyncStatus(): phase0.SyncingStatus {
+  getSyncStatus(): SyncingStatus {
     const currentSlot = this.chain.clock.currentSlot;
     const headSlot = this.chain.forkChoice.getHead().slot;
     switch (this.state) {
@@ -84,13 +75,13 @@ export class BeaconSync implements IBeaconSync {
       case SyncState.SyncingHead:
       case SyncState.Stalled:
         return {
-          headSlot: BigInt(headSlot),
-          syncDistance: BigInt(currentSlot - headSlot),
+          headSlot: headSlot,
+          syncDistance: currentSlot - headSlot,
         };
       case SyncState.Synced:
         return {
-          headSlot: BigInt(headSlot),
-          syncDistance: BigInt(0),
+          headSlot: headSlot,
+          syncDistance: 0,
         };
       default:
         throw new Error("Node is stopped, cannot get sync status");
@@ -178,19 +169,19 @@ export class BeaconSync implements IBeaconSync {
     // We have become synced, subscribe to all the gossip core topics
     if (
       state === SyncState.Synced &&
-      !this.gossip.isStarted &&
+      !this.network.isSubscribedToGossipCoreTopics() &&
       this.chain.clock.currentSlot >= MIN_EPOCH_TO_START_GOSSIP
     ) {
-      this.gossip.start();
+      this.network.subscribeGossipCoreTopics();
       this.logger.info("Subscribed gossip core topics");
     }
 
     // If we stopped being synced and falled significantly behind, stop gossip
-    if (state !== SyncState.Synced && this.gossip.isStarted) {
+    if (state !== SyncState.Synced && this.network.isSubscribedToGossipCoreTopics()) {
       const syncDiff = this.chain.clock.currentSlot - this.chain.forkChoice.getHead().slot;
       if (syncDiff > this.slotImportTolerance * 2) {
         this.logger.warn(`Node sync has fallen behind by ${syncDiff} slots`);
-        this.gossip.stop();
+        this.network.unsubscribeGossipCoreTopics();
         this.logger.info("Un-subscribed gossip core topics");
       }
     }
@@ -207,7 +198,8 @@ export class BeaconSync implements IBeaconSync {
   private onUnknownBlockRoot = async (err: BlockError): Promise<void> => {
     if (err.type.code !== BlockErrorCode.PARENT_UNKNOWN) return;
 
-    const blockRoot = this.config.types.phase0.BeaconBlock.hashTreeRoot(err.job.signedBlock.message);
+    const block = err.signedBlock.message;
+    const blockRoot = this.config.getForkTypes(block.slot).BeaconBlock.hashTreeRoot(block);
     const parentRoot = this.chain.pendingBlocks.getMissingAncestor(blockRoot);
     const parentRootHex = toHexString(parentRoot);
 

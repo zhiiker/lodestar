@@ -1,5 +1,5 @@
-import {ForkName, IBeaconConfig} from "@chainsafe/lodestar-config";
-import {allForks, phase0} from "@chainsafe/lodestar-types";
+import {ForkName} from "@chainsafe/lodestar-params";
+import {allForks, phase0, ssz} from "@chainsafe/lodestar-types";
 
 export const protocolPrefix = "/eth2/beacon_chain/req";
 
@@ -38,6 +38,7 @@ export const protocolsSupported: [Method, Version, Encoding][] = [
   [Method.Goodbye, Version.V1, Encoding.SSZ_SNAPPY],
   [Method.Ping, Version.V1, Encoding.SSZ_SNAPPY],
   [Method.Metadata, Version.V1, Encoding.SSZ_SNAPPY],
+  [Method.Metadata, Version.V2, Encoding.SSZ_SNAPPY],
   [Method.BeaconBlocksByRange, Version.V1, Encoding.SSZ_SNAPPY],
   [Method.BeaconBlocksByRange, Version.V2, Encoding.SSZ_SNAPPY],
   [Method.BeaconBlocksByRoot, Version.V1, Encoding.SSZ_SNAPPY],
@@ -92,20 +93,20 @@ export function contextBytesTypeByProtocol(protocol: Protocol): ContextBytesType
 
 /** Request SSZ type for each method and ForkName */
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/explicit-function-return-type
-export function getRequestSzzTypeByMethod(config: IBeaconConfig, method: Method) {
+export function getRequestSzzTypeByMethod(method: Method) {
   switch (method) {
     case Method.Status:
-      return config.types.phase0.Status;
+      return ssz.phase0.Status;
     case Method.Goodbye:
-      return config.types.phase0.Goodbye;
+      return ssz.phase0.Goodbye;
     case Method.Ping:
-      return config.types.phase0.Ping;
+      return ssz.phase0.Ping;
     case Method.Metadata:
       return null;
     case Method.BeaconBlocksByRange:
-      return config.types.phase0.BeaconBlocksByRangeRequest;
+      return ssz.phase0.BeaconBlocksByRangeRequest;
     case Method.BeaconBlocksByRoot:
-      return config.types.phase0.BeaconBlocksByRootRequest;
+      return ssz.phase0.BeaconBlocksByRootRequest;
   }
 }
 
@@ -120,24 +121,23 @@ export type RequestBodyByMethod = {
 
 /** Response SSZ type for each method and ForkName */
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/explicit-function-return-type
-export function getResponseSzzTypeByMethod(config: IBeaconConfig, method: Method, forkName: ForkName) {
-  switch (method) {
+export function getResponseSzzTypeByMethod(protocol: Protocol, forkName: ForkName) {
+  switch (protocol.method) {
     case Method.Status:
-      return config.types.phase0.Status;
+      return ssz.phase0.Status;
     case Method.Goodbye:
-      return config.types.phase0.Goodbye;
+      return ssz.phase0.Goodbye;
     case Method.Ping:
-      return config.types.phase0.Ping;
-    case Method.Metadata:
-      return config.types.phase0.Metadata;
+      return ssz.phase0.Ping;
+    case Method.Metadata: {
+      // V1 -> phase0.Metadata, V2 -> altair.Metadata
+      const fork = protocol.version === Version.V1 ? ForkName.phase0 : ForkName.altair;
+      return ssz[fork].Metadata;
+    }
     case Method.BeaconBlocksByRange:
     case Method.BeaconBlocksByRoot:
-      switch (forkName) {
-        case ForkName.phase0:
-          return config.types.phase0.SignedBeaconBlock;
-        case ForkName.altair:
-          return config.types.altair.SignedBeaconBlock;
-      }
+      // SignedBeaconBlock type is changed in altair
+      return ssz[forkName].SignedBeaconBlock;
   }
 }
 

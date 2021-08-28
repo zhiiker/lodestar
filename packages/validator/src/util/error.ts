@@ -9,8 +9,8 @@ export function extendError(e: Error, prependMessage: string): Error {
 }
 
 /**
- * Returns true if arg `e` is not an instance of `ErrorAborted`
+ * Returns true if arg `e` is an instance of `ErrorAborted`
  */
-export function notAborted(e: Error): boolean {
-  return !(e instanceof ErrorAborted);
+export function isAbortedError(e: Error): boolean {
+  return e instanceof ErrorAborted;
 }

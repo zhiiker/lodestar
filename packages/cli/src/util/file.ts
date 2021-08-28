@@ -11,7 +11,7 @@ export const yamlSchema = new Schema({
   implicit: [
     new Type("tag:yaml.org,2002:str", {
       kind: "scalar",
-      construct: function (data) {
+      construct: function construct(data) {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return data !== null ? data : "";
       },
@@ -44,7 +44,7 @@ export function parse<T = Json>(contents: string, fileFormat: FileFormat): T {
     case FileFormat.yml:
       return load(contents, {schema: yamlSchema}) as T;
     default:
-      throw new Error("Invalid filetype");
+      return (contents as unknown) as T;
   }
 }
 
@@ -62,7 +62,7 @@ export function stringify<T = Json>(obj: T, fileFormat: FileFormat): string {
       contents = dump(obj, {schema: yamlSchema});
       break;
     default:
-      throw new Error("Invalid filetype");
+      contents = (obj as unknown) as string;
   }
   return contents;
 }
@@ -82,9 +82,11 @@ export function writeFile(filepath: string, obj: Json): void {
  * Read a JSON serializable object from a file
  *
  * Parse either from json, yaml, or toml
+ * Optional acceptedFormats object can be passed which can be an array of accepted formats, in future can be extended to include parseFn for the accepted formats
  */
-export function readFile<T = Json>(filepath: string): T {
+export function readFile<T = Json>(filepath: string, acceptedFormats?: Json[]): T {
   const fileFormat = path.extname(filepath).substr(1);
+  if (acceptedFormats && !acceptedFormats.includes(fileFormat)) throw new Error(`UnsupportedFileFormat: ${filepath}`);
   const contents = fs.readFileSync(filepath, "utf-8");
   return parse(contents, fileFormat as FileFormat);
 }
@@ -93,9 +95,9 @@ export function readFile<T = Json>(filepath: string): T {
  * @see readFile
  * If `filepath` does not exist returns null
  */
-export function readFileIfExists<T = Json>(filepath: string): T | null {
+export function readFileIfExists<T = Json>(filepath: string, acceptedFormats?: Json[]): T | null {
   try {
-    return readFile(filepath);
+    return readFile(filepath, acceptedFormats);
   } catch (e) {
     if ((e as {code: string}).code === "ENOENT") {
       return null;

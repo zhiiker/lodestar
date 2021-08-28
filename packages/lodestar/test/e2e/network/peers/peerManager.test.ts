@@ -2,27 +2,26 @@ import {Connection} from "libp2p";
 import {EventEmitter} from "events";
 import sinon from "sinon";
 import {expect} from "chai";
-import {config} from "@chainsafe/lodestar-config/mainnet";
+import {config} from "@chainsafe/lodestar-config/default";
 import {IReqResp, ReqRespMethod} from "../../../../src/network/reqresp";
 import {PeerRpcScoreStore, PeerManager, Libp2pPeerMetadataStore} from "../../../../src/network/peers";
 import {NetworkEvent, NetworkEventBus} from "../../../../src/network";
-import {createMetrics} from "../../../../src/metrics";
-import {createNode, getAttnets} from "../../../utils/network";
+import {createNode, getAttnets, getSyncnets} from "../../../utils/network";
 import {MockBeaconChain} from "../../../utils/mocks/chain/chain";
 import {generateEmptySignedBlock} from "../../../utils/block";
 import {generateState} from "../../../utils/state";
-import {phase0} from "@chainsafe/lodestar-types";
+import {altair, phase0, ssz} from "@chainsafe/lodestar-types";
 import {sleep} from "@chainsafe/lodestar-utils";
 import {waitForEvent} from "../../../utils/events/resolver";
 import {testLogger} from "../../../utils/logger";
 import {getValidPeerId} from "../../../utils/peer";
-import {IAttestationService} from "../../../../src/network/attestationService";
+import {IAttnetsService} from "../../../../src/network/subnets";
+import {createIBeaconConfig} from "@chainsafe/lodestar-config";
 
 const logger = testLogger();
 
 describe("network / peers / PeerManager", function () {
   const peerId1 = getValidPeerId();
-  const metrics = createMetrics();
 
   const afterEachCallbacks: (() => Promise<void> | void)[] = [];
   afterEach(async () => {
@@ -39,15 +38,16 @@ describe("network / peers / PeerManager", function () {
     const state = generateState({
       finalizedCheckpoint: {
         epoch: 0,
-        root: config.types.phase0.BeaconBlock.hashTreeRoot(block.message),
+        root: ssz.phase0.BeaconBlock.hashTreeRoot(block.message),
       },
     });
+    const beaconConfig = createIBeaconConfig(config, state.genesisValidatorsRoot);
     const chain = new MockBeaconChain({
       genesisTime: 0,
       chainId: 0,
       networkId: BigInt(0),
       state,
-      config,
+      config: beaconConfig,
     });
     const libp2p = await createNode("/ip4/127.0.0.1/tcp/0");
 
@@ -57,14 +57,18 @@ describe("network / peers / PeerManager", function () {
     });
 
     const reqResp = new ReqRespFake();
-    const peerMetadata = new Libp2pPeerMetadataStore(config, libp2p.peerStore.metadataBook);
+    const peerMetadata = new Libp2pPeerMetadataStore(libp2p.peerStore.metadataBook);
     const peerRpcScores = new PeerRpcScoreStore(peerMetadata);
     const networkEventBus = new NetworkEventBus();
-    const mockAttService: IAttestationService = {
+    /* eslint-disable @typescript-eslint/no-empty-function */
+    const mockSubnetsService: IAttnetsService = {
       getActiveSubnets: () => [],
-      shouldProcessAttestation: () => true,
-      // eslint-disable-next-line @typescript-eslint/no-empty-function
-      addBeaconCommitteeSubscriptions: () => {},
+      shouldProcess: () => true,
+      addCommitteeSubscriptions: () => {},
+      start: () => {},
+      stop: () => {},
+      subscribeSubnetsToNextFork: () => {},
+      unsubscribeSubnetsFromPrevFork: () => {},
     };
 
     const peerManager = new PeerManager(
@@ -72,13 +76,14 @@ describe("network / peers / PeerManager", function () {
         libp2p,
         reqResp,
         logger,
-        metrics,
+        metrics: null,
         chain,
-        config,
+        config: beaconConfig,
         peerMetadata,
         peerRpcScores,
         networkEventBus,
-        attService: mockAttService,
+        attnetsService: mockSubnetsService,
+        syncnetsService: mockSubnetsService,
       },
       {targetPeers: 30, maxPeers: 50}
     );
@@ -156,7 +161,7 @@ describe("network / peers / PeerManager", function () {
 
     // Simulate peer1 returning a PING and STATUS message
     const remoteStatus = chain.getStatus();
-    const remoteMetadata: phase0.Metadata = {seqNumber: BigInt(1), attnets: getAttnets()};
+    const remoteMetadata: altair.Metadata = {seqNumber: BigInt(1), attnets: getAttnets(), syncnets: getSyncnets()};
     reqResp.ping.resolves(remoteMetadata.seqNumber);
     reqResp.status.resolves(remoteStatus);
     reqResp.metadata.resolves(remoteMetadata);

@@ -6,17 +6,18 @@ import {
   initPeerId,
   initEnr,
   readPeerId,
+  readEnr,
 } from "../../config";
 import {IGlobalArgs, parseBeaconNodeArgs} from "../../options";
 import {mkdir} from "../../util";
 import {fetchBootnodes} from "../../networks";
 import {getBeaconPaths} from "../beacon/paths";
 import {IBeaconArgs} from "../beacon/options";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 
 export type ReturnType = {
   beaconNodeOptions: BeaconNodeOptions;
-  config: IBeaconConfig;
+  config: IChainForkConfig;
 };
 
 /**
@@ -60,7 +61,7 @@ export async function initializeOptionsAndConfig(args: IBeaconArgs & IGlobalArgs
 export async function persistOptionsAndConfig(
   args: IBeaconArgs & IGlobalArgs,
   beaconNodeOptions: BeaconNodeOptions,
-  beaconConfig: IBeaconConfig
+  beaconConfig: IChainForkConfig
 ): Promise<void> {
   const beaconPaths = getBeaconPaths(args);
 
@@ -69,16 +70,27 @@ export async function persistOptionsAndConfig(
   mkdir(beaconPaths.beaconDir);
   mkdir(beaconPaths.dbDir);
 
-  // initialize peer id & ENR, if either doesn't exist
-  if (!fs.existsSync(beaconPaths.peerIdFile) || !fs.existsSync(beaconPaths.enrFile)) {
+  // Initialize peerId if does not exist
+  if (!fs.existsSync(beaconPaths.peerIdFile)) {
     await initPeerId(beaconPaths.peerIdFile);
-    const peerId = await readPeerId(beaconPaths.peerIdFile);
-    // initialize local enr
+  }
+
+  const peerId = await readPeerId(beaconPaths.peerIdFile);
+
+  // Initialize ENR if does not exist
+  if (!fs.existsSync(beaconPaths.enrFile)) {
     initEnr(beaconPaths.enrFile, peerId);
+  } else {
+    // Verify that the peerId matches the ENR
+    const enr = readEnr(beaconPaths.enrFile);
+    const peerIdPrev = await enr.peerId();
+    if (peerIdPrev.toB58String() !== peerId.toB58String()) {
+      initEnr(beaconPaths.enrFile, peerId);
+    }
   }
 
   if (!fs.existsSync(beaconPaths.paramsFile)) {
-    writeBeaconParams(beaconPaths.paramsFile, beaconConfig.params);
+    writeBeaconParams(beaconPaths.paramsFile, beaconConfig);
   }
 
   // initialize beacon configuration file, if it doesn't exist

@@ -1,4 +1,4 @@
-import {ForkName, IBeaconConfig} from "@chainsafe/lodestar-config";
+import {ForkName} from "@chainsafe/lodestar-params";
 import {RespStatus} from "../../../constants";
 import {IForkDigestContext} from "../../../util/forkDigestContext";
 import {BufferedSource, decodeErrorMessage} from "../utils";
@@ -30,11 +30,10 @@ enum StreamStatus {
  * ```
  */
 export function responseDecode(
-  config: IBeaconConfig,
   forkDigestContext: IForkDigestContext,
   protocol: Protocol
 ): (source: AsyncIterable<Buffer>) => AsyncGenerator<ResponseBody> {
-  return async function* (source) {
+  return async function* responseDecodeSink(source) {
     const deserializeToTree = deserializeToTreeByMethod[protocol.method];
     const contextBytesType = contextBytesTypeByProtocol(protocol);
     const bufferedSource = new BufferedSource(source as AsyncGenerator<Buffer>);
@@ -57,7 +56,7 @@ export function responseDecode(
       }
 
       const forkName = await readForkName(forkDigestContext, bufferedSource, contextBytesType);
-      const type = getResponseSzzTypeByMethod(config, protocol.method, forkName);
+      const type = getResponseSzzTypeByMethod(protocol, forkName);
 
       yield await readEncodedPayload(bufferedSource, protocol.encoding, type, {deserializeToTree});
     }

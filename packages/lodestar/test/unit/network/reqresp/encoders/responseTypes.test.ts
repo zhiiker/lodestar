@@ -2,8 +2,8 @@ import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
 import pipe from "it-pipe";
 import all from "it-all";
-import {ForkName} from "@chainsafe/lodestar-config";
-import {config} from "@chainsafe/lodestar-config/minimal";
+import {ForkName} from "@chainsafe/lodestar-params";
+import {config} from "@chainsafe/lodestar-config/default";
 import {
   Method,
   Version,
@@ -51,14 +51,15 @@ describe("network / reqresp / encoders / responseTypes", () => {
       for (const version of versions) {
         for (const [i, responseChunks] of responsesChunks.entries()) {
           it(`${encoding} v${version} ${method} - resp ${i}`, async function () {
+            const protocol = {method, version, encoding};
             const returnedResponses = await pipe(
               arrToSource(responseChunks),
-              responseEncodeSuccess(config, forkDigestContext, {method, version, encoding}),
-              responseDecode(config, forkDigestContext, {method, version, encoding}),
+              responseEncodeSuccess(config, forkDigestContext, protocol),
+              responseDecode(forkDigestContext, protocol),
               all
             );
 
-            const type = getResponseSzzTypeByMethod(config, method, forkName);
+            const type = getResponseSzzTypeByMethod(protocol, forkName);
             if (!type) throw Error("no type");
 
             expectIsEqualSszTypeArr(type, returnedResponses, responseChunks, "Response chunks");

@@ -1,5 +1,4 @@
-import {GENESIS_SLOT} from "@chainsafe/lodestar-beacon-state-transition";
-import {MAX_REQUEST_BLOCKS} from "@chainsafe/lodestar-params";
+import {GENESIS_SLOT, MAX_REQUEST_BLOCKS} from "@chainsafe/lodestar-params";
 import {allForks, phase0} from "@chainsafe/lodestar-types";
 import {IBlockFilterOptions} from "../../../db/repositories";
 import {IBeaconChain} from "../../../chain";
@@ -20,6 +19,7 @@ export async function* onBeaconBlocksByRange(
   if (requestBody.count < 1) {
     throw new ResponseError(RespStatus.INVALID_REQUEST, "count < 1");
   }
+  // TODO: validate against MIN_EPOCHS_FOR_BLOCK_REQUESTS
   if (requestBody.startSlot < GENESIS_SLOT) {
     throw new ResponseError(RespStatus.INVALID_REQUEST, "startSlot < genesis");
   }
@@ -37,12 +37,14 @@ export async function* onBeaconBlocksByRange(
 }
 
 export async function* injectRecentBlocks(
-  archiveStream: AsyncIterable<phase0.SignedBeaconBlock>,
+  archiveStream: AsyncIterable<allForks.SignedBeaconBlock>,
   chain: IBeaconChain,
   request: phase0.BeaconBlocksByRangeRequest
-): AsyncGenerator<phase0.SignedBeaconBlock> {
+): AsyncGenerator<allForks.SignedBeaconBlock> {
+  let totalBlock = 0;
   let slot = -1;
   for await (const archiveBlock of archiveStream) {
+    totalBlock++;
     yield archiveBlock;
     slot = archiveBlock.message.slot;
   }
@@ -57,7 +59,11 @@ export async function* injectRecentBlocks(
   const blocks = (await chain.getUnfinalizedBlocksAtSlots(slots)) || [];
   for (const block of blocks) {
     if (block) {
+      totalBlock++;
       yield block;
     }
+  }
+  if (totalBlock === 0) {
+    throw new ResponseError(RespStatus.RESOURCE_UNAVAILABLE, "No block found");
   }
 }

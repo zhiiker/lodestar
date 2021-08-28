@@ -1,6 +1,7 @@
 import PeerId from "peer-id";
-import {Epoch, phase0} from "@chainsafe/lodestar-types";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {allForks, Epoch, phase0} from "@chainsafe/lodestar-types";
+import {SLOTS_PER_EPOCH} from "@chainsafe/lodestar-params";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
 import {LodestarError} from "@chainsafe/lodestar-utils";
 import {computeStartSlotAtEpoch} from "@chainsafe/lodestar-beacon-state-transition";
 import {BATCH_SLOT_OFFSET, MAX_BATCH_DOWNLOAD_ATTEMPTS, MAX_BATCH_PROCESSING_ATTEMPTS} from "../constants";
@@ -8,7 +9,6 @@ import {hashBlocks} from "./utils";
 
 export type BatchOpts = {
   epochsPerBatch: Epoch;
-  logAfterAttempts?: number;
 };
 
 /**
@@ -43,7 +43,7 @@ export type Attempt = {
 export type BatchState =
   | {status: BatchStatus.AwaitingDownload}
   | {status: BatchStatus.Downloading; peer: PeerId}
-  | {status: BatchStatus.AwaitingProcessing; peer: PeerId; blocks: phase0.SignedBeaconBlock[]}
+  | {status: BatchStatus.AwaitingProcessing; peer: PeerId; blocks: allForks.SignedBeaconBlock[]}
   | {status: BatchStatus.Processing; attempt: Attempt}
   | {status: BatchStatus.AwaitingValidation; attempt: Attempt};
 
@@ -72,11 +72,11 @@ export class Batch {
   readonly failedProcessingAttempts: Attempt[] = [];
   /** The number of download retries this batch has undergone due to a failed request. */
   private readonly failedDownloadAttempts: PeerId[] = [];
-  private readonly config: IBeaconConfig;
+  private readonly config: IChainForkConfig;
 
-  constructor(startEpoch: Epoch, config: IBeaconConfig, opts: BatchOpts) {
-    const startSlot = computeStartSlotAtEpoch(config, startEpoch) + BATCH_SLOT_OFFSET;
-    const endSlot = startSlot + opts.epochsPerBatch * config.params.SLOTS_PER_EPOCH;
+  constructor(startEpoch: Epoch, config: IChainForkConfig, opts: BatchOpts) {
+    const startSlot = computeStartSlotAtEpoch(startEpoch) + BATCH_SLOT_OFFSET;
+    const endSlot = startSlot + opts.epochsPerBatch * SLOTS_PER_EPOCH;
 
     this.config = config;
     this.startEpoch = startEpoch;
@@ -112,7 +112,7 @@ export class Batch {
   /**
    * Downloading -> AwaitingProcessing
    */
-  downloadingSuccess(blocks: phase0.SignedBeaconBlock[]): void {
+  downloadingSuccess(blocks: allForks.SignedBeaconBlock[]): void {
     if (this.state.status !== BatchStatus.Downloading) {
       throw new BatchError(this.wrongStatusErrorType(BatchStatus.Downloading));
     }
@@ -139,7 +139,7 @@ export class Batch {
   /**
    * AwaitingProcessing -> Processing
    */
-  startProcessing(): phase0.SignedBeaconBlock[] {
+  startProcessing(): allForks.SignedBeaconBlock[] {
     if (this.state.status !== BatchStatus.AwaitingProcessing) {
       throw new BatchError(this.wrongStatusErrorType(BatchStatus.AwaitingProcessing));
     }

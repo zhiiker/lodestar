@@ -8,11 +8,6 @@
 // Gossip constants
 
 /**
- * Rationale: https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md#why-are-there-attestation_subnet_count-attestation-subnets
- */
-export const ATTESTATION_SUBNET_COUNT = 64;
-
-/**
  * The maximum number of slots during which an attestation can be propagated.
  */
 export const ATTESTATION_PROPAGATION_SLOT_RANGE = 23;
@@ -33,6 +28,10 @@ export enum RespStatus {
    * The responder encountered an error while processing the request. The response payload adheres to the ErrorMessage schema
    */
   SERVER_ERROR = 2,
+  /**
+   * The responder does not have requested resource.  The response payload adheres to the ErrorMessage schema (described below). Note: This response code is only valid as a response to BlocksByRange
+   */
+  RESOURCE_UNAVAILABLE = 3,
 }
 
 export type RpcResponseStatusError = Exclude<RespStatus, RespStatus.SUCCESS>;

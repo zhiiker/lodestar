@@ -1,18 +1,30 @@
-import {AbortController, AbortSignal} from "abort-controller";
+import {AbortController, AbortSignal} from "@chainsafe/abort-controller";
 import {SecretKey} from "@chainsafe/bls";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {ssz} from "@chainsafe/lodestar-types";
+import {createIBeaconConfig, IBeaconConfig, IChainForkConfig} from "@chainsafe/lodestar-config";
 import {Genesis} from "@chainsafe/lodestar-types/phase0";
 import {fromHex, ILogger} from "@chainsafe/lodestar-utils";
-import {ApiClientOverInstance, IApiClientValidator} from "./api";
-import {ApiClientOverRest} from "./api/rest";
-import {IValidatorOptions} from "./options";
+import {getClient, Api} from "@chainsafe/lodestar-api";
 import {Clock, IClock} from "./util/clock";
 import {signAndSubmitVoluntaryExit} from "./voluntaryExit";
-import {ForkService} from "./services/fork";
+import {waitForGenesis} from "./genesis";
 import {ValidatorStore} from "./services/validatorStore";
 import {BlockProposingService} from "./services/block";
 import {AttestationService} from "./services/attestation";
-import {waitForGenesis} from "./genesis";
+import {IndicesService} from "./services/indices";
+import {SyncCommitteeService} from "./services/syncCommittee";
+import {ISlashingProtection} from "./slashingProtection";
+import {assertEqualParams, getLoggerVc} from "./util";
+import {ChainHeaderTracker} from "./services/chainHeaderTracker";
+
+export type ValidatorOptions = {
+  slashingProtection: ISlashingProtection;
+  config: IChainForkConfig;
+  api: Api | string;
+  secretKeys: SecretKey[];
+  logger: ILogger;
+  graffiti?: string;
+};
 
 // TODO: Extend the timeout, and let it be customizable
 /// The global timeout for HTTP requests to the beacon node.
@@ -30,35 +42,56 @@ type State = {status: Status.running; controller: AbortController} | {status: St
  */
 export class Validator {
   private readonly config: IBeaconConfig;
-  private readonly apiClient: IApiClientValidator;
+  private readonly api: Api;
   private readonly secretKeys: SecretKey[];
   private readonly clock: IClock;
+  private readonly chainHeaderTracker: ChainHeaderTracker;
   private readonly logger: ILogger;
   private state: State = {status: Status.stopped};
 
-  constructor(opts: IValidatorOptions, genesis: Genesis) {
-    const {config, logger, slashingProtection, secretKeys, graffiti} = opts;
+  constructor(opts: ValidatorOptions, genesis: Genesis) {
+    const {config: chainForkConfig, logger, slashingProtection, secretKeys, graffiti} = opts;
+    const config = createIBeaconConfig(chainForkConfig, genesis.genesisValidatorsRoot);
 
-    const apiClient =
-      typeof opts.api === "string" ? ApiClientOverRest(config, opts.api) : ApiClientOverInstance(opts.api);
+    const api =
+      typeof opts.api === "string"
+        ? getClient(config, {
+            baseUrl: opts.api,
+            timeoutMs: config.SECONDS_PER_SLOT * 1000,
+            getAbortSignal: this.getAbortSignal,
+          })
+        : opts.api;
+
     const clock = new Clock(config, logger, {genesisTime: Number(genesis.genesisTime)});
-    const forkService = new ForkService(apiClient, logger, clock);
-    const validatorStore = new ValidatorStore(config, forkService, slashingProtection, secretKeys, genesis);
-    new BlockProposingService(config, logger, apiClient, clock, validatorStore, graffiti);
-    new AttestationService(config, logger, apiClient, clock, validatorStore);
+    const validatorStore = new ValidatorStore(config, slashingProtection, secretKeys, genesis);
+    const indicesService = new IndicesService(logger, api, validatorStore);
+    this.chainHeaderTracker = new ChainHeaderTracker(logger, api);
+    const loggerVc = getLoggerVc(logger, clock);
+    new BlockProposingService(loggerVc, api, clock, validatorStore, graffiti);
+    new AttestationService(loggerVc, api, clock, validatorStore, indicesService);
+    new SyncCommitteeService(config, loggerVc, api, clock, validatorStore, this.chainHeaderTracker, indicesService);
 
     this.config = config;
     this.logger = logger;
-    this.apiClient = apiClient;
+    this.api = api;
     this.clock = clock;
     this.secretKeys = secretKeys;
   }
 
   /** Waits for genesis and genesis time */
-  static async initializeFromBeaconNode(opts: IValidatorOptions, signal?: AbortSignal): Promise<Validator> {
-    const apiClient = typeof opts.api === "string" ? ApiClientOverRest(opts.config, opts.api) : opts.api;
-    const genesis = await waitForGenesis(apiClient, opts.logger, signal);
+  static async initializeFromBeaconNode(opts: ValidatorOptions, signal?: AbortSignal): Promise<Validator> {
+    const api =
+      typeof opts.api === "string"
+        ? getClient(opts.config, {baseUrl: opts.api, timeoutMs: 12000, getAbortSignal: () => signal})
+        : opts.api;
+
+    const genesis = await waitForGenesis(api, opts.logger, signal);
     opts.logger.info("Genesis available");
+
+    const {data: nodeParams} = await api.config.getSpec();
+    assertEqualParams(opts.config, nodeParams);
+    opts.logger.info("Verified node and validator have same config");
+
     return new Validator(opts, genesis);
   }
 
@@ -69,9 +102,9 @@ export class Validator {
     if (this.state.status === Status.running) return;
     const controller = new AbortController();
     this.state = {status: Status.running, controller};
-
-    this.clock.start(controller.signal);
-    this.apiClient.registerAbortSignal(controller.signal);
+    const {signal} = controller;
+    this.clock.start(signal);
+    this.chainHeaderTracker.start(signal);
   }
 
   /**
@@ -88,11 +121,16 @@ export class Validator {
    */
   async voluntaryExit(publicKey: string, exitEpoch: number): Promise<void> {
     const secretKey = this.secretKeys.find((sk) =>
-      this.config.types.BLSPubkey.equals(sk.toPublicKey().toBytes(), fromHex(publicKey))
+      ssz.BLSPubkey.equals(sk.toPublicKey().toBytes(), fromHex(publicKey))
     );
     if (!secretKey) throw new Error(`No matching secret key found for public key ${publicKey}`);
 
-    await signAndSubmitVoluntaryExit(publicKey, exitEpoch, secretKey, this.apiClient, this.config);
+    await signAndSubmitVoluntaryExit(publicKey, exitEpoch, secretKey, this.api, this.config);
     this.logger.info(`Submitted voluntary exit for ${publicKey} to the network`);
   }
+
+  /** Provide the current AbortSignal to the api instance */
+  private getAbortSignal = (): AbortSignal | undefined => {
+    return this.state.status === Status.running ? this.state.controller.signal : undefined;
+  };
 }

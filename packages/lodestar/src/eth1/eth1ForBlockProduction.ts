@@ -1,8 +1,8 @@
-import {allForks, phase0} from "@chainsafe/lodestar-types";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {CachedBeaconState, fast} from "@chainsafe/lodestar-beacon-state-transition";
-import {ILogger, sleep} from "@chainsafe/lodestar-utils";
-import {AbortSignal} from "abort-controller";
+import {phase0} from "@chainsafe/lodestar-types";
+import {IChainForkConfig} from "@chainsafe/lodestar-config";
+import {CachedBeaconState, allForks} from "@chainsafe/lodestar-beacon-state-transition";
+import {ErrorAborted, ILogger, sleep} from "@chainsafe/lodestar-utils";
+import {AbortSignal} from "@chainsafe/abort-controller";
 import {IBeaconDb} from "../db";
 import {Eth1DepositsCache} from "./eth1DepositsCache";
 import {Eth1DataCache} from "./eth1DataCache";
@@ -10,13 +10,23 @@ import {getEth1VotesToConsider, pickEth1Vote} from "./utils/eth1Vote";
 import {getDeposits} from "./utils/deposits";
 import {IEth1ForBlockProduction, IEth1Provider} from "./interface";
 import {IEth1Options} from "./options";
+import {HttpRpcError} from "./provider/jsonRpcHttpClient";
+
+const MAX_BLOCKS_PER_BLOCK_QUERY = 1000;
+const MAX_BLOCKS_PER_LOG_QUERY = 1000;
+/** Eth1 blocks happen every 14s approx, not need to update too often once synced */
+const AUTO_UPDATE_PERIOD_MS = 60 * 1000;
+/** Miliseconds to wait after getting 429 Too Many Requests */
+const RATE_LIMITED_WAIT_MS = 30 * 1000;
+/** Min time to wait on auto update loop on unknown error */
+const MIN_WAIT_ON_ERORR_MS = 1 * 1000;
 
 /**
  * Main class handling eth1 data fetching, processing and storing
  * Upon instantiation, starts fetcheing deposits and blocks at regular intervals
  */
 export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
-  private config: IBeaconConfig;
+  private config: IChainForkConfig;
   private logger: ILogger;
   private signal: AbortSignal;
 
@@ -25,10 +35,6 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
   private eth1DataCache: Eth1DataCache;
   private eth1Provider: IEth1Provider;
   private lastProcessedDepositBlockNumber: number | null;
-  // eslint-disable-next-line @typescript-eslint/naming-convention
-  private MAX_BLOCKS_PER_BLOCK_QUERY = 1000;
-  // eslint-disable-next-line @typescript-eslint/naming-convention
-  private MAX_BLOCKS_PER_LOG_QUERY = 1000;
 
   constructor({
     config,
@@ -38,7 +44,7 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
     opts,
     signal,
   }: {
-    config: IBeaconConfig;
+    config: IChainForkConfig;
     db: IBeaconDb;
     eth1Provider: IEth1Provider;
     logger: ILogger;
@@ -57,9 +63,10 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
       this.logger.warn("No depositContractDeployBlock provided");
     }
 
-    const autoUpdateIntervalMs = 1000 * config.params.SECONDS_PER_ETH1_BLOCK;
-    this.runAutoUpdate(autoUpdateIntervalMs).catch((e) => {
-      this.logger.error("Aborted", e);
+    this.runAutoUpdate().catch((e) => {
+      if (!(e instanceof ErrorAborted)) {
+        this.logger.error("Error on eth1 loop", {}, e);
+      }
     });
   }
 
@@ -87,7 +94,7 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
       state,
       this.eth1DataCache.get.bind(this.eth1DataCache)
     );
-    return pickEth1Vote(this.config, state, eth1VotesToConsider);
+    return pickEth1Vote(state, eth1VotesToConsider);
   }
 
   /**
@@ -99,27 +106,36 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
     eth1DataVote: phase0.Eth1Data
   ): Promise<phase0.Deposit[]> {
     // Eth1 data may change due to the vote included in this block
-    const newEth1Data = fast.getNewEth1Data(state, eth1DataVote) || state.eth1Data;
-    return await getDeposits(this.config, state, newEth1Data, this.depositsCache.get.bind(this.depositsCache));
+    const newEth1Data = allForks.getNewEth1Data(state, eth1DataVote) || state.eth1Data;
+    return await getDeposits(state, newEth1Data, this.depositsCache.get.bind(this.depositsCache));
   }
 
   /**
    * Abortable async setInterval that runs its callback once at max between `ms` at minimum
    */
-  private async runAutoUpdate(intervalMs: number): Promise<void> {
+  private async runAutoUpdate(): Promise<void> {
     let lastRunMs = 0;
 
     // eslint-disable-next-line no-constant-condition
     while (true) {
       lastRunMs = Date.now();
 
-      const hasCatchedUp = await this.update().catch((e) => {
-        this.logger.error("Error updating eth1 chain cache", e);
-      });
+      try {
+        const hasCatchedUp = await this.update();
 
-      if (hasCatchedUp) {
-        const sleepTime = Math.max(intervalMs + lastRunMs - Date.now(), 0);
-        await sleep(sleepTime, this.signal);
+        if (hasCatchedUp) {
+          const sleepTime = Math.max(AUTO_UPDATE_PERIOD_MS + lastRunMs - Date.now(), 0);
+          await sleep(sleepTime, this.signal);
+        }
+      } catch (e) {
+        // From Infura: 429 Too Many Requests
+        if (e instanceof HttpRpcError && e.status === 429) {
+          this.logger.debug("Eth1 provider rate limited", {}, e);
+          await sleep(RATE_LIMITED_WAIT_MS, this.signal);
+        } else {
+          this.logger.error("Error updating eth1 chain cache", {}, e);
+          await sleep(MIN_WAIT_ON_ERORR_MS, this.signal);
+        }
       }
     }
   }
@@ -130,7 +146,7 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
    */
   private async update(): Promise<boolean> {
     const remoteHighestBlock = await this.eth1Provider.getBlockNumber();
-    const remoteFollowBlock = Math.max(0, remoteHighestBlock - this.config.params.ETH1_FOLLOW_DISTANCE);
+    const remoteFollowBlock = Math.max(0, remoteHighestBlock - this.config.ETH1_FOLLOW_DISTANCE);
     const catchedUpDeposits = await this.updateDepositCache(remoteFollowBlock);
     const catchedUpBlocks = await this.updateBlockCache(remoteFollowBlock);
     return catchedUpDeposits && catchedUpBlocks;
@@ -143,7 +159,7 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
   private async updateDepositCache(remoteFollowBlock: number): Promise<boolean> {
     const lastProcessedDepositBlockNumber = await this.getLastProcessedDepositBlockNumber();
     const fromBlock = this.getFromBlockToFetch(lastProcessedDepositBlockNumber);
-    const toBlock = Math.min(remoteFollowBlock, fromBlock + this.MAX_BLOCKS_PER_LOG_QUERY - 1);
+    const toBlock = Math.min(remoteFollowBlock, fromBlock + MAX_BLOCKS_PER_LOG_QUERY - 1);
 
     const depositEvents = await this.eth1Provider.getDepositEvents(fromBlock, toBlock);
     this.logger.verbose("Fetched deposits", {depositCount: depositEvents.length, fromBlock, toBlock});
@@ -177,11 +193,11 @@ export class Eth1ForBlockProduction implements IEth1ForBlockProduction {
     const fromBlock = Math.max(this.getFromBlockToFetch(lastCachedBlock), lowestEventBlockNumber);
     const toBlock = Math.min(
       remoteFollowBlock,
-      fromBlock + this.MAX_BLOCKS_PER_BLOCK_QUERY - 1, // Block range is inclusive
+      fromBlock + MAX_BLOCKS_PER_BLOCK_QUERY - 1, // Block range is inclusive
       lastProcessedDepositBlockNumber
     );
 
-    const eth1Blocks = await this.eth1Provider.getBlocksByNumber(fromBlock, toBlock, this.signal);
+    const eth1Blocks = await this.eth1Provider.getBlocksByNumber(fromBlock, toBlock);
     this.logger.verbose("Fetched eth1 blocks", {blockCount: eth1Blocks.length, fromBlock, toBlock});
 
     const eth1Datas = await this.depositsCache.getEth1DataForBlocks(eth1Blocks, lastProcessedDepositBlockNumber);

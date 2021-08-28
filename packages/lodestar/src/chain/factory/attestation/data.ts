@@ -1,5 +1,4 @@
-import {phase0, CommitteeIndex, Slot, Root} from "@chainsafe/lodestar-types";
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
+import {phase0, CommitteeIndex, Slot, Root, allForks} from "@chainsafe/lodestar-types";
 import {
   computeStartSlotAtEpoch,
   getBlockRootAtSlot,
@@ -7,20 +6,19 @@ import {
 } from "@chainsafe/lodestar-beacon-state-transition";
 
 export function assembleAttestationData(
-  config: IBeaconConfig,
-  headState: phase0.BeaconState,
+  headState: allForks.BeaconState,
   headBlockRoot: Uint8Array,
   slot: Slot,
   index: CommitteeIndex
 ): phase0.AttestationData {
-  const currentEpoch = getCurrentEpoch(config, headState);
-  const epochStartSlot = computeStartSlotAtEpoch(config, currentEpoch);
+  const currentEpoch = getCurrentEpoch(headState);
+  const epochStartSlot = computeStartSlotAtEpoch(currentEpoch);
 
   let epochBoundaryBlockRoot: Root;
   if (epochStartSlot === headState.slot) {
     epochBoundaryBlockRoot = headBlockRoot;
   } else {
-    epochBoundaryBlockRoot = getBlockRootAtSlot(config, headState, epochStartSlot);
+    epochBoundaryBlockRoot = getBlockRootAtSlot(headState, epochStartSlot);
   }
 
   if (!epochBoundaryBlockRoot) {

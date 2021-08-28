@@ -1,5 +1,5 @@
-import {IBeaconConfig} from "@chainsafe/lodestar-config";
-import {allForks, phase0} from "@chainsafe/lodestar-types";
+import {IBeaconConfig, IChainForkConfig} from "@chainsafe/lodestar-config";
+import {allForks, phase0, ssz} from "@chainsafe/lodestar-types";
 import {interopDeposits} from "./interop/deposits";
 import {getInteropState} from "./interop/state";
 import {mkdirSync, writeFileSync} from "fs";
@@ -8,12 +8,12 @@ import {IBeaconDb} from "../../db";
 import {TreeBacked} from "@chainsafe/ssz";
 
 export async function initDevState(
-  config: IBeaconConfig,
+  config: IChainForkConfig,
   db: IBeaconDb,
   validatorCount: number,
   genesisTime?: number
 ): Promise<TreeBacked<allForks.BeaconState>> {
-  const deposits = interopDeposits(config, config.types.phase0.DepositDataRootList.defaultTreeBacked(), validatorCount);
+  const deposits = interopDeposits(config, ssz.phase0.DepositDataRootList.defaultTreeBacked(), validatorCount);
   await storeDeposits(config, db, deposits);
   const state = getInteropState(
     config,
@@ -26,10 +26,10 @@ export async function initDevState(
 
 export function storeSSZState(config: IBeaconConfig, state: TreeBacked<allForks.BeaconState>, path: string): void {
   mkdirSync(dirname(path), {recursive: true});
-  writeFileSync(path, config.getTypes(state.slot).BeaconState.serialize(state));
+  writeFileSync(path, config.getForkTypes(state.slot).BeaconState.serialize(state));
 }
 
-async function storeDeposits(config: IBeaconConfig, db: IBeaconDb, deposits: phase0.Deposit[]): Promise<void> {
+async function storeDeposits(config: IChainForkConfig, db: IBeaconDb, deposits: phase0.Deposit[]): Promise<void> {
   for (let i = 0; i < deposits.length; i++) {
     await Promise.all([
       db.depositEvent.put(i, {
@@ -37,7 +37,7 @@ async function storeDeposits(config: IBeaconConfig, db: IBeaconDb, deposits: pha
         index: i,
         depositData: deposits[i].data,
       }),
-      db.depositDataRoot.put(i, config.types.phase0.DepositData.hashTreeRoot(deposits[i].data)),
+      db.depositDataRoot.put(i, ssz.phase0.DepositData.hashTreeRoot(deposits[i].data)),
     ]);
   }
 }
