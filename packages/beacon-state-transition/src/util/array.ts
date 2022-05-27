@@ -22,3 +22,32 @@ export function newZeroedBigIntArray(n: number): bigint[] {
   }
   return arr;
 }
+
+export function newFilledArray<T>(n: number, val: T): T[] {
+  const arr = new Array<T>(n);
+  for (let i = 0; i < n; ++i) {
+    arr[i] = val;
+  }
+  return arr;
+}
+
+/**
+ * Returns an array with all values not in the participants array.
+ * - All elements in values must be unique
+ * - Does NOT require sorting
+ */
+export function getUnparticipantValues<T>(participants: T[], values: T[]): T[] {
+  const unparticipants: T[] = [];
+
+  let j = 0;
+  for (let i = 0; i < values.length; i++) {
+    if (values[i] === participants[j]) {
+      // Included
+      j++;
+    } else {
+      unparticipants.push(values[i]);
+    }
+  }
+
+  return unparticipants;
+}
